@@ -1,4 +1,6 @@
 ﻿l_english:
+ HOL_ideas:0 "Holand Ideas"
+ HOL_ideas_start:0 "Holand Traditions"
  building_grand_shipyard_desc:0 "Requirements\n · Local Development: 20\n"
  building_conscription_center_desc:0 "Requirements\n · Local Development: 20\n"
  montpellier_node:0 "Toulouse"

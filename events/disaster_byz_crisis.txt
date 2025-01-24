@@ -1306,9 +1306,14 @@ country_event = {
 		NOT = { exists = RUM }
 		any_owned_province = {
 			OR = {
-				region = opsikion_region
+				area = optimaton_area
+				area = nikaia_area
+				area = mysia_area
+				area = troas_area
 				area = lydia_area
 				area = ionia_area
+				area = caria_area
+				area = doris_area
 				area = kotiaeion_area
 			}
 		}
@@ -1320,9 +1325,14 @@ country_event = {
 			every_owned_province = {
 				limit = {
 					OR = {
-						region = opsikion_region
+						area = optimaton_area
+						area = nikaia_area
+						area = mysia_area
+						area = troas_area
 						area = lydia_area
 						area = ionia_area
+						area = caria_area
+						area = doris_area
 						area = kotiaeion_area
 					}
 				}

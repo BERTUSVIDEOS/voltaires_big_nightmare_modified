@@ -580,8 +580,14 @@ province_event = {
 			factor = 3
 			NOT = {
 				OR = {
-					region = opsikion_region
-					region = thrakesion_region
+					area = optimaton_area
+					area = nikaia_area
+					area = mysia_area
+					area = troas_area
+					area = lydia_area
+					area = ionia_area
+					area = caria_area
+					area = doris_area
 				}
 			}
 		}

@@ -745,9 +745,8 @@ merc_zeybeks = {
 		religion_group = muslim
 		any_owned_province = {
 			OR = {
-				region = greekislands_region
-				region = opsikion_region
-				region = thrakesion_region
+				region = hellas_region
+				region = west_anatolia_region
 			}
 		}
 	}

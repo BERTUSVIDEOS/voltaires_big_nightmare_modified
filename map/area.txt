@@ -1542,7 +1542,7 @@ arezzo_area = {
 }
 
 siena_area = {
-    1024 1843 117 4531 1813
+    1024 1843 117 4531 
 }
 
 scansano_area = {
@@ -1554,7 +1554,8 @@ pisa_area = {
 }
 
 florence_area = {
-    640 1847 976 2978 642 
+    640 1847 976 642 
+    1813
 }
 
 lucca_area = {

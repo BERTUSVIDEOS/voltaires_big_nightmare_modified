@@ -243,9 +243,10 @@ kolonialimperium0 = {
 	bonus = {
 		diplomatic_upkeep = 2
 	}
-        trigger = {
+    trigger = {
+		always = no 	#bertus mod
 		adm_tech = 9
-        }
+    }
 	kolonialimperium2 = {
 		colonists = 1
 	}

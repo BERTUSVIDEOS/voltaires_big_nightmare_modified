@@ -1,5 +1,5 @@
 ##BranchStart 0
- = {
+cordoba_missions_1 = {	#absolute habibi mod
 	slot = 1
 	generic = no
 	ai = yes
@@ -50,7 +50,7 @@
 }
 ##BranchEnd 0
 ##BranchStart 1
- = {
+cordoba_missions_2 = {	#absolute habibi mod
 	slot = 2
 	generic = no
 	ai = yes
@@ -101,7 +101,7 @@
 }
 ##BranchEnd 1
 ##BranchStart 2
- = {
+cordoba_missions_3 = {	#absolute habibi mod
 	slot = 3
 	generic = no
 	ai = yes
@@ -166,7 +166,7 @@
 	}
 	##Mission End
 	##Mission Start
-	CCR_conquer_caceres = {
+	CCR_conquer_caceres_2 = {
 		icon = Mission_eliminate_pretenders
 		required_missions {
 			CCR_conquere_caceres
@@ -260,7 +260,7 @@
 }
 ##BranchEnd 2
 ##BranchStart 3
- = {
+cordoba_missions_4 = {	#absolute habibi mod
 	slot = 4
 	generic = no
 	ai = yes
@@ -347,7 +347,7 @@
 }
 ##BranchEnd 3
 ##BranchStart 4
- = {
+cordoba_missions_5 = {	#absolute habibi mod
 	slot = 5
 	generic = no
 	ai = yes

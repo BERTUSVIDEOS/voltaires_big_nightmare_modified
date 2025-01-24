@@ -1212,17 +1212,47 @@ vn_lem_missions_slot_5 = {
         required_missions = { vn_lem_conquer_bithynia }
         provinces_to_highlight = {
             OR = {
-                region = opsikion_region
-                region = thrakesion_region
+				optimaton_area = { owned_by = BYZ }
+				nikaia_area = { owned_by = BYZ }
+				mysia_area = { owned_by = BYZ }
+				troas_area = { owned_by = BYZ }
+				lydia_area = { owned_by = BYZ }
+				ionia_area = { owned_by = BYZ }
+				caria_area = { owned_by = BYZ }
+				doris_area = { owned_by = BYZ }
             }
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
-            opsikion_region = {
+            optimaton_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
             }
-            thrakesion_region = {
+            nikaia_area = {
+                type = all
+                country_or_non_sovereign_subject_holds = ROOT
+            }
+            mysia_area = {
+                type = all
+                country_or_non_sovereign_subject_holds = ROOT
+            }
+            troas_area = {
+                type = all
+                country_or_non_sovereign_subject_holds = ROOT
+            }
+            lydia_area = {
+                type = all
+                country_or_non_sovereign_subject_holds = ROOT
+            }
+            ionia_area = {
+                type = all
+                country_or_non_sovereign_subject_holds = ROOT
+            }
+            caria_area = {
+                type = all
+                country_or_non_sovereign_subject_holds = ROOT
+            }
+            doris_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
             }

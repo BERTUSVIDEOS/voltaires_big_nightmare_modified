@@ -38,7 +38,28 @@ vn_tre_missions_slot_1 = {
                 }
                 add_permanent_claim = ROOT
             }
-            opsikion_region = {
+            optimaton_area = {
+                limit = {
+                    NOT = { is_core = ROOT }
+                    NOT = { is_permanent_claim = ROOT }
+                }
+                add_permanent_claim = ROOT
+            }
+            nikaia_area = {
+                limit = {
+                    NOT = { is_core = ROOT }
+                    NOT = { is_permanent_claim = ROOT }
+                }
+                add_permanent_claim = ROOT
+            }
+            mysia_area = {
+                limit = {
+                    NOT = { is_core = ROOT }
+                    NOT = { is_permanent_claim = ROOT }
+                }
+                add_permanent_claim = ROOT
+            }
+            troas_area = {
                 limit = {
                     NOT = { is_core = ROOT }
                     NOT = { is_permanent_claim = ROOT }
@@ -257,11 +278,44 @@ vn_tre_missions_slot_2 = {
         position = 3
         required_missions = { vn_tre_expel_latins }
         provinces_to_highlight = {
-            region = opsikion_region
+			OR = {
+				area = optimaton_area
+				area = nikaia_area
+				area = mysia_area
+				area = troas_area
+			}
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
-            opsikion_region = {
+            optimaton_area = {
+                type = all
+                country_or_non_sovereign_subject_holds = ROOT
+            }
+            nikaia_area = {
+                type = all
+                country_or_non_sovereign_subject_holds = ROOT
+            }
+            mysia_area = {
+                type = all
+                country_or_non_sovereign_subject_holds = ROOT
+            }
+            troas_area = {
+                type = all
+                country_or_non_sovereign_subject_holds = ROOT
+            }
+            lydia_area = {
+                type = all
+                country_or_non_sovereign_subject_holds = ROOT
+            }
+            ionia_area = {
+                type = all
+                country_or_non_sovereign_subject_holds = ROOT
+            }
+            caria_area = {
+                type = all
+                country_or_non_sovereign_subject_holds = ROOT
+            }
+            doris_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
             }
@@ -275,7 +329,28 @@ vn_tre_missions_slot_2 = {
                     key = tre_secure_marmara_mission
                 }
             }
-            thrakesion_region = {
+			lydia_area = {
+                limit = {
+                    NOT = { is_core = ROOT }
+                    NOT = { is_permanent_claim = ROOT }
+                }
+                add_permanent_claim = ROOT
+            }
+			ionia_area = {
+                limit = {
+                    NOT = { is_core = ROOT }
+                    NOT = { is_permanent_claim = ROOT }
+                }
+                add_permanent_claim = ROOT
+            }
+			caria_area = {
+                limit = {
+                    NOT = { is_core = ROOT }
+                    NOT = { is_permanent_claim = ROOT }
+                }
+                add_permanent_claim = ROOT
+            }
+			doris_area = {
                 limit = {
                     NOT = { is_core = ROOT }
                     NOT = { is_permanent_claim = ROOT }
@@ -291,7 +366,12 @@ vn_tre_missions_slot_2 = {
         provinces_to_highlight = {
             OR = {
                 AND = {
-                    region = thrakesion_region
+                    OR = {
+                        area = lydia_area
+                        area = ionia_area
+                        area = caria_area
+                        area = doris_area
+                    }
                     NOT = { country_or_non_sovereign_subject_holds = ROOT }
                 }
                 owned_by = NKA
@@ -301,7 +381,12 @@ vn_tre_missions_slot_2 = {
             NOT = { exists = NKA }
             num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
                 value = 15
-                region = thrakesion_region
+                OR = {
+                    area = lydia_area
+                    area = ionia_area
+                    area = caria_area
+                    area = doris_area
+                }
             }
         }
         effect = {

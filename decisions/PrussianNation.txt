@@ -45,6 +45,13 @@ country_decisions = {
 		allow = {
 			NOT = { exists = PRU }
 			adm_tech = 10
+			OR = { 	#bertus mod
+				religion = protestant
+				religion = reformed
+				religion = hussite
+				religion = anglican
+				religion = anabaptist
+			}
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
 			owns_core_province = 4854			# Koningsberg

@@ -978,13 +978,34 @@ vn_sjk_missions_slot_3 = {
             }          
         }
         effect = {
-            thrakesion_region = {
+			lydia_area = {
                 limit = {
                     NOT = { is_core = ROOT }
                     NOT = { is_permanent_claim = ROOT }
                 }
                 add_permanent_claim = ROOT
-            } 
+            }
+			ionia_area = {
+                limit = {
+                    NOT = { is_core = ROOT }
+                    NOT = { is_permanent_claim = ROOT }
+                }
+                add_permanent_claim = ROOT
+            }
+			caria_area = {
+                limit = {
+                    NOT = { is_core = ROOT }
+                    NOT = { is_permanent_claim = ROOT }
+                }
+                add_permanent_claim = ROOT
+            }
+			doris_area = {
+                limit = {
+                    NOT = { is_core = ROOT }
+                    NOT = { is_permanent_claim = ROOT }
+                }
+                add_permanent_claim = ROOT
+            }
             anatolikon_region = {
                 limit = {
                     NOT = { is_core = ROOT }
@@ -1013,8 +1034,11 @@ vn_sjk_missions_slot_3 = {
         position = 11
         required_missions = { vn_sjk_anatolian_breach }
         provinces_to_highlight = {
-			OR = {
-				region = thrakesion_region
+            OR = {
+				area = lydia_area
+				area = ionia_area
+				area = caria_area
+				area = doris_area
 				region = anatolikon_region
 				region = phrygia_region
 			    region = charsianon_region
@@ -1022,10 +1046,22 @@ vn_sjk_missions_slot_3 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }          
         }        
 		trigger = {
-            thrakesion_region = {
+			lydia_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
             }  
+			ionia_area = {
+                type = all
+                country_or_non_sovereign_subject_holds = ROOT
+            }  
+			caria_area = {
+                type = all
+                country_or_non_sovereign_subject_holds = ROOT
+            }  
+			doris_area = {
+                type = all
+                country_or_non_sovereign_subject_holds = ROOT
+            }
             anatolikon_region = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT

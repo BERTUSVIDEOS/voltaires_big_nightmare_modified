@@ -212,8 +212,14 @@ country_event = {
 		has_dlc = "Purple Phoenix"
 		started_in = 1371.9.27
 		owns = 1052
-		opsikion_region = { type = all NOT = { owned_by = TUR }}
-		thrakesion_region = { type = all NOT = { owned_by = TUR }}
+		optimaton_area = { type = all NOT = { owned_by = TUR }}
+		nikaia_area = { type = all NOT = { owned_by = TUR }}
+		mysia_area = { type = all NOT = { owned_by = TUR }}
+		troas_area = { type = all NOT = { owned_by = TUR }}
+		lydia_area = { type = all NOT = { owned_by = TUR }}
+		ionia_area = { type = all NOT = { owned_by = TUR }}
+		caria_area = { type = all NOT = { owned_by = TUR }}
+		doris_area = { type = all NOT = { owned_by = TUR }}
 	}
 	
 	mean_time_to_happen = {

@@ -112,20 +112,38 @@ country_decisions = {
 			has_dlc = "Purple Phoenix"
 			NOT = { has_country_flag = triumph_asia }
 			OR = {
-				opsikion_region = { owned_by = BYZ }
-				thrakesion_region = { owned_by = BYZ }
+				optimaton_area = { owned_by = BYZ }
+				nikaia_area = { owned_by = BYZ }
+				mysia_area = { owned_by = BYZ }
+				troas_area = { owned_by = BYZ }
+				lydia_area = { owned_by = BYZ }
+				ionia_area = { owned_by = BYZ }
+				caria_area = { owned_by = BYZ }
+				doris_area = { owned_by = BYZ }
 			}
 		}
 		provinces_to_highlight = {
 			OR = {
-				region = opsikion_region
-				region = thrakesion_region
+				area = optimaton_area
+				area = nikaia_area
+				area = mysia_area
+				area = troas_area
+				area = lydia_area
+				area = ionia_area
+				area = caria_area
+				area = doris_area
 			}
 			NOT = { owned_by = ROOT }
 		}
 		allow = {
-			opsikion_region = { type = all owned_by = BYZ }
-			thrakesion_region = { type = all owned_by = BYZ }
+			optimaton_area = { type = all owned_by = BYZ }
+			nikaia_area = { type = all owned_by = BYZ }
+			mysia_area = { type = all owned_by = BYZ }
+			troas_area = { type = all owned_by = BYZ }
+			lydia_area = { type = all owned_by = BYZ }
+			ionia_area = { type = all owned_by = BYZ }
+			caria_area = { type = all owned_by = BYZ }
+			doris_area = { type = all owned_by = BYZ }
 		}
 		effect = {
 			add_prestige = 10

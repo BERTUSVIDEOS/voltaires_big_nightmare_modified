@@ -1367,20 +1367,50 @@ vn_mam_missions_slot_3 = {
         required_missions = { vn_mam_conquer_crete vn_mam_conquer_phrygia }
         provinces_to_highlight = {
 			OR = {
-                region = thrakesion_region
-                region = opsikion_region
+                area = optimaton_area
+                area = nikaia_area
+                area = mysia_area
+                area = troas_area
+                area = lydia_area
+                area = ionia_area
+                area = caria_area
+                area = doris_area
                 province_id = 2233
             }
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
-            thrakesion_region = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+            optimaton_area = {
+                type = all
+                country_or_non_sovereign_subject_holds = ROOT
             }
-            opsikion_region = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+            nikaia_area = {
+                type = all
+                country_or_non_sovereign_subject_holds = ROOT
+            }
+            mysia_area = {
+                type = all
+                country_or_non_sovereign_subject_holds = ROOT
+            }
+            troas_area = {
+                type = all
+                country_or_non_sovereign_subject_holds = ROOT
+            }
+            lydia_area = {
+                type = all
+                country_or_non_sovereign_subject_holds = ROOT
+            }
+            ionia_area = {
+                type = all
+                country_or_non_sovereign_subject_holds = ROOT
+            }
+            caria_area = {
+                type = all
+                country_or_non_sovereign_subject_holds = ROOT
+            }
+            doris_area = {
+                type = all
+                country_or_non_sovereign_subject_holds = ROOT
             }
             2233 = { country_or_non_sovereign_subject_holds = ROOT }
         }
@@ -1389,13 +1419,48 @@ vn_mam_missions_slot_3 = {
                 name = mam_conquer_constantinople_mission
                 duration = 9125
             }
-            thrakesion_region = {
+            add_province_modifier = {
+                name = mam_conquer_cappadocia_mission
+                duration = 7300
+            }
+        }
+			ionia_area = {
 				add_province_modifier = {
                     name = mam_conquer_cappadocia_mission
                     duration = 7300
                 }
             }
-            opsikion_region = {
+			caria_area = {
+				add_province_modifier = {
+                    name = mam_conquer_cappadocia_mission
+                    duration = 7300
+                }
+            }
+			doris_area = {
+				add_province_modifier = {
+                    name = mam_conquer_cappadocia_mission
+                    duration = 7300
+                }
+            }
+			optimaton_area = {
+				add_province_modifier = {
+                    name = mam_conquer_cappadocia_mission
+                    duration = 7300
+                }
+            }
+			nikaia_area = {
+				add_province_modifier = {
+                    name = mam_conquer_cappadocia_mission
+                    duration = 7300
+                }
+            }
+			mysia_area = {
+				add_province_modifier = {
+                    name = mam_conquer_cappadocia_mission
+                    duration = 7300
+                }
+            }
+			troas_area = {
 				add_province_modifier = {
                     name = mam_conquer_cappadocia_mission
                     duration = 7300
@@ -1770,12 +1835,33 @@ vn_mam_missions_slot_4 = {
 			}
         }
         effect = {
-            thrakesion_region = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
+			lydia_area = {
+                limit = {
+                    NOT = { is_core = ROOT }
+                    NOT = { is_permanent_claim = ROOT }
+                }
+                add_permanent_claim = ROOT
+            }
+			ionia_area = {
+                limit = {
+                    NOT = { is_core = ROOT }
+                    NOT = { is_permanent_claim = ROOT }
+                }
+                add_permanent_claim = ROOT
+            }
+			caria_area = {
+                limit = {
+                    NOT = { is_core = ROOT }
+                    NOT = { is_permanent_claim = ROOT }
+                }
+                add_permanent_claim = ROOT
+            }
+			doris_area = {
+                limit = {
+                    NOT = { is_core = ROOT }
+                    NOT = { is_permanent_claim = ROOT }
+                }
+                add_permanent_claim = ROOT
             }
             opsikion_region = {
 				limit = {

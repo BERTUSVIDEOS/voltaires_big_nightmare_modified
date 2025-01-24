@@ -141,3 +141,46 @@ turn_vassal_into_appanage = {
 		always = yes
 	}
 }
+give_resources_to_pope = {
+	category = papacy
+
+	require_acceptance = no
+
+	is_visible = {
+		OR = {
+			religion = catholic
+			religion = catholique
+		}
+	}
+	is_allowed = {
+		is_at_war = no
+		if = {
+			limit = {
+				FROM = { tag = PAP }
+			}
+			FROM = {
+				at_war_with_religious_enemy = yes
+			}
+		}
+		else = {
+			any_country = {
+				crusade_target = {
+					exists = yes
+					war_with = FROM
+				}
+			}
+		}
+		manpower_percentage = 0.10
+	}
+	on_accept = {
+		#custom_tooltip = give_resources_to_pope_tt
+		add_papal_influence = 5
+		transfer_manpower_fraction = { fraction = 0.10 giver = ROOT receiver = FROM }
+	}
+	on_decline = {
+	}
+
+	ai_will_do = { # this is a trigger
+		always = no
+	}
+}

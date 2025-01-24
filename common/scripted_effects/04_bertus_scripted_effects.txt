@@ -1,5 +1,20 @@
 
 
+transfer_manpower_fraction = {
+	$giver$ = {
+		set_variable = { which = max_manpower_var value = 0 }
+		set_variable = { which = manpower_to_transfer value = 1 }
+		export_to_variable = { which = max_manpower_var value = max_manpower }
+		subtract_variable = { which = manpower_to_transfer value = $fraction$ }
+		multiply_variable = { which = manpower_to_transfer which = max_manpower_var }
+		while = {
+			limit = { check_variable = { which = max_manpower_var which = manpower_to_transfer } }
+			subtract_variable = { which = max_manpower_var value = 0.1 }
+			add_manpower = -0.1
+			$receiver$ = {add_manpower = 0.1}
+		}
+	}
+}
 bertus_setup = {
 	if = {
 		limit = {

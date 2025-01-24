@@ -87,6 +87,18 @@ fort_14th = yes
 	controller = XJA
 	add_core = XJA
 	remove_core = CTL
+	set_base_tax = 10
+	set_base_production = 10
+	set_base_manpower = 10
+	fort_15th = yes
+	ramparts = yes
+	post_office = yes
+	conscription_center = yes
+	trade_depot = yes
+	add_province_modifier = {
+		name = strong_city
+		duration = -1
+	}
 }
 1464.5.1 = { unrest = 3 }
 1468.9.18 = { unrest = 0 }

@@ -59,6 +59,19 @@ extra_cost = 8
 	add_core = AGV
 	remove_core = CSE
 	remove_core = POR
+	set_base_tax = 10
+	set_base_production = 10
+	set_base_manpower = 10
+	fort_15th = yes
+	ramparts = yes
+	post_office = yes
+	conscription_center = yes
+	trade_depot = yes
+	add_center_of_trade_level = 2
+	add_province_modifier = {
+		name = strong_city
+		duration = -1
+	}
 }
 1640.1.1 = { unrest = 8 }
 1640.12.1 = { unrest = 0 }

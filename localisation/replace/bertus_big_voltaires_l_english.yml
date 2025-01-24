@@ -1,4 +1,8 @@
 ﻿l_english:
+ is_crusade_target_tt:0 "Is the target of a Crusade"
+ give_resources_to_pope_title:0 "Contribute to Crusade"
+ give_resources_to_pope_tooltip:0 "Give §Y10.0%§! of our maximum manpower to the §YPapay§! to contribute to the CrusadenGet §G+5§! Papal Influence"
+ give_resources_to_pope_desc:0 "Give §Y10.0%§! of our maximum manpower to the §YPapay§! to contribute to the Crusade\nGet §G+5§! Papal Influence"
  HOL_ideas:0 "Holand Ideas"
  HOL_ideas_start:0 "Holand Traditions"
  building_grand_shipyard_desc:0 "Requirements\n · Local Development: 20\n"

@@ -6094,11 +6094,12 @@ MON_ideas = {
 RMN_ideas = {
 	start = {
 		discipline = 0.05
-		tolerance_own = 2
+		shock_damage = 0.20 #0→0.20	
 	}
 
 	bonus = {
-		improve_relation_modifier = 0.25
+		#improve_relation_modifier = 0.25 	#0.25→0
+		morale_damage = 0.10 	#0→0.10
 	}
 
 	trigger = {
@@ -6109,29 +6110,33 @@ RMN_ideas = {
 
 	flexible_recruiting = {
 		manpower_recovery_speed = 0.2
+		reinforce_cost_modifier = -0.20 	#0→-0.20
 	}
 	skilled_commanders = {
 		leader_land_manuever = 1
+		max_general_shock = 1 	#0→1
+		leader_land_shock = 1 	#0→1
 	}
 	scorch_the_land_and_poison_the_wells = {
-		hostile_attrition = 1
+		hostile_attrition = 2 	#1→2
+		max_hostile_attrition = 2 	#0→2
 	}
-	latin_island = {
-		legitimacy = 1
-		devotion = 1
-		republican_tradition = 0.3
-		meritocracy = 1
-		horde_unity = 1
+	latin_island = { 	#bertus mod
+		tolerance_own = 4 	#2→4
+		global_missionary_strength = 0.02 	#0→0.02
 	}
 	rom_peasant_soldiers = {
-		infantry_cost = -0.1
-		global_manpower_modifier = 0.1
+		#infantry_cost = -0.10 	#-0.10→0
+		global_regiment_cost = -0.10 	#0→-0.10
+		global_manpower_modifier = 0.33 	#0.20→0.33
 	}
 	phanariote_traders = {
 		global_trade_power = 0.15
+		merchants = 1 	#0→1
 	}
 	phanariote_taxes = {
-		global_tax_modifier = 0.1
+		#33% extra tax on deving
+		global_tax_modifier = 0.15 	#0.10→0.15
 	}
 }
 

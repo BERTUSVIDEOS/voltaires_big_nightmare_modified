@@ -87,7 +87,6 @@ carthusians = {
 hieronymites = {
     icon = GFX_holy_order_hieronymites
     trigger = {
-    	
         OR = { 
 			AND = { 
                 OR = {
@@ -131,7 +130,6 @@ hieronymites = {
 jesuit_order = {
     icon = GFX_holy_order_jesuits
     trigger = {
-    	
         OR = { 
 			AND = { 
                 OR = {
@@ -178,7 +176,6 @@ jesuit_order = {
 augustinians = {
     icon = GFX_holy_order_augustinians
     trigger = {
-    	
         OR = { 
 			AND = { 
                 OR = {
@@ -222,7 +219,6 @@ augustinians = {
 carmelites = {
     icon = GFX_holy_order_carmelites
     trigger = {
-        
         OR = { 
 			AND = { 
                 OR = {
@@ -266,7 +262,6 @@ carmelites = {
 dominican_order = { #founded 1215
     icon = GFX_holy_order_dominicans
     trigger = {
-        
         OR = { 
 			AND = { 
                 OR = {
@@ -327,7 +322,6 @@ dominican_order = { #founded 1215
 franciscan_order = {
     icon = GFX_holy_order_franciscans
     trigger = {
-        
         OR = { 
 			AND = { 
                 OR = {
@@ -379,7 +373,6 @@ franciscan_order = {
 alcantara_order = {
     icon = GFX_holy_order_alcantara
     trigger = {
-        
         OR = { 
             AND = { 
                 OR = {
@@ -394,10 +387,6 @@ alcantara_order = {
             has_country_flag = enable_holy_orders_flag 
         }
         religion_group = christian
-		OR = { 
-			primary_culture = leonese
-			accepted_culture = leonese
-		}
     }
     color = { 71 41 0 } 
     cost = 50
@@ -427,7 +416,6 @@ alcantara_order = {
 avis_order = {
     icon = GFX_holy_order_avis
     trigger = {
-        
         OR = { 
             AND = { 
                 OR = {
@@ -446,7 +434,6 @@ avis_order = {
 			has_country_flag = enable_holy_orders_flag 
 			is_or_was_tag = { tag = POR }
             is_or_was_tag = { tag = PCA }
-			accepted_culture = portugese
 		}
     }
     color = { 65 77 86 }
@@ -593,12 +580,6 @@ san_juan_order = {
 		OR = {	
 			alliance_with = KNI 
 			KNI = { is_subject_of = ROOT }
-			KNI = {
-				has_opinion = {
-					who = ROOT 
-					value = 190 
-				}
-			}
 			has_country_flag = enable_holy_orders_flag 
 			has_country_flag = spa_enable_san_juan_holy_order_flag
 		}
@@ -808,7 +789,6 @@ aissawa_order = { #founded 1490
 mevlevi_order = {
     icon = GFX_holy_order_mevlevi
     trigger = {
-        
         OR = {
             AND = {
                 #has_government_attribute = unlock_ottoman_holy_orders

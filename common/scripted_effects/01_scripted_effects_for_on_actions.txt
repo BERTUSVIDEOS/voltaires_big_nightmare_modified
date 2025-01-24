@@ -3420,7 +3420,14 @@ on_adm_development_effect = {
 		}
 	}
 	if = {	#bertus mod
-		limit = {culture_group = latin owner = { has_idea = italian_tax_reform}}
+		limit = {
+			owner = {
+				OR = {
+					has_idea = italian_tax_reform
+					has_idea = phanariote_taxes
+				}
+			}
+		}
 		random = { 
 			chance = 33 
 			add_base_tax = 1

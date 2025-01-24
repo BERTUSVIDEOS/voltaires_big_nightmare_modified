@@ -62,9 +62,9 @@ discovered_by = ottoman
 	capital = "Iznatoraf"
 }
 1444.11.12 = {	#BERTUS MOD
-	owner = XJA
-	controller = XJA
-	add_core = XJA
+	owner = CCR
+	controller = CCR
+	add_core = CCR
 	remove_core = CAS
 	remove_core = CMU
 }

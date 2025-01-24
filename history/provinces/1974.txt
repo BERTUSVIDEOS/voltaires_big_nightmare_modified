@@ -81,6 +81,7 @@ discovered_by = muslim
 	owner = XJA
 	controller = XJA
 	add_core = XJA
+	add_core = CCR
 	remove_core = CAS
 	remove_core = CTL
 	add_permanent_province_modifier = {

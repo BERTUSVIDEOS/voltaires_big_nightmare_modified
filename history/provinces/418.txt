@@ -19,6 +19,14 @@ add_core = HOL
 	remove_core = FLA
 }
 1285.1.1 = { capital = "Brouwershaven" }
+
+1444.11.12 = {	#BERTUS MOD
+	owner = ZEE
+	controller = ZEE
+	add_core = ZEE
+	remove_core = FLA
+}
+
 1549.11.4 = { 
 	owner = NED 
 	controller = NED 

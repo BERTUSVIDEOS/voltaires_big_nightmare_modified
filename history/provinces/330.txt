@@ -20,6 +20,9 @@ add_core = HOL
 }
 1444.11.12 = {	#bertus mod
 	fort_14th = yes
+	owner = ZEE
+	controller = ZEE
+	remove_core = BRA
 }
 1549.11.4 = { 
 	owner = NED 

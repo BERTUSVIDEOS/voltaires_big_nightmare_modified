@@ -13,6 +13,7 @@ country_decisions = {
 			OR = {
 				primary_culture = prussian
 				primary_culture = pommeranian	#bertus mod
+				primary_culture = central_margravian #bertus mod
 			}
 			NOT = { tag = PRU }
 			OR = {

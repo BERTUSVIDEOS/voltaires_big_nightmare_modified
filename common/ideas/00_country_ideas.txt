@@ -3310,12 +3310,15 @@ ETH_ideas = {
 
 SAV_ideas = {
 	start = {
-		diplomatic_upkeep = 1
-		improve_relation_modifier = 0.25
+		#diplomatic_upkeep = 1 	#1→0
+		#improve_relation_modifier = 0.25 	#0.25→0
+		manpower_recovery_speed = 0.20 	#0→0.20
+		idea_cost = -0.10
 	}
 	
 	bonus = {
-		global_tax_modifier = 0.10
+		#global_tax_modifier = 0.10 	#0.10→0
+		global_trade_goods_size_modifier = 0.10 	#0→0.10
 	}
 	
 	trigger = {
@@ -3323,27 +3326,33 @@ SAV_ideas = {
 	}
 	free = yes		#will be added at load.
 	
+	crush_the_vaudois = {
+		global_missionary_strength = 0.02
+		prestige_per_development_from_conversion = 0.20 	#0→0.20
+	}
 	repel_the_french = {
-		defensiveness = 0.2
+		defensiveness = 0.20
+		own_territory_dice_roll_bonus = 1 	#0→1
 	}
 	the_shroud_of_turin = {
 		papal_influence = 1
 		prestige = 0.5
 	}
 	sav_mercenary_tradition = {
+		mercenary_manpower = 0.20 	#0→0.20
 		merc_maintenance_modifier = -0.15
 	}
-	crush_the_vaudois = {
-		global_missionary_strength = 0.02
-	}
 	savoyard_flexibility = {
-		idea_cost = -0.1
+		#burhger mountain development privilege
+		development_cost_modifier = -0.05 	#0→-0.05
+		build_cost = -0.10 	#0→-0.10
 	}
 	alpine_tolls = {
-   		global_prov_trade_power_modifier = 0.10
-
+   		global_prov_trade_power_modifier = 0.50 	#0.10→0.50
+		embargo_efficiency = 0.20 	#0→0.20
 	}
 	savoyard_legitimacy = {
+		max_absolutism = 15 	#0→15
 		legitimacy = 1   
 		devotion = 1
 		republican_tradition = 0.3
@@ -4155,7 +4164,7 @@ SON_ideas = {
 BRI_ideas = {
 	start = {
 		navy_tradition = 1
-		trade_efficiency = 0.15	#bertus mod 0.10 -> 0.15
+		trade_efficiency = 0.15	#bertus mod
 	}
 	
 	bonus = {
@@ -4168,7 +4177,7 @@ BRI_ideas = {
 	free = yes
 	
 	legacy_of_breton_independence = {
-		infantry_shock = 0.15 # 0->0.15
+		infantry_shock = 0.15 # 0→0.15
 	}
 
 	estates_of_brittany = {
@@ -4176,7 +4185,7 @@ BRI_ideas = {
 		all_estate_loyalty_equilibrium = 0.10 	#0→0.10	
 	}
 	breton_march = {
-		defensiveness = 0.2
+		defensiveness = 0.20
 		land_forcelimit_modifier = 0.25 	#0→0.25
 	}
 	breton_catholicism = {
@@ -4184,7 +4193,7 @@ BRI_ideas = {
 		global_missionary_strength = 0.01
 	}
 	protect_the_coastline = {
-		global_ship_cost = -0.1
+		global_ship_cost = -0.10
 		own_coast_naval_combat_bonus = 1 	#0→1
 	}
 	league_of_the_public_weal = {
@@ -14286,7 +14295,7 @@ FLY_ideas = {
 CRN_ideas = {
 	start = {
 		global_regiment_recruit_speed = -0.10
-		production_efficiency = 0.1
+		production_efficiency = 0.10
 	}
 	
 	bonus = {
@@ -14300,24 +14309,30 @@ CRN_ideas = {
 	
 	crn_stannary_parliaments = {
 		global_unrest = -2
+		advisor_cost = -0.10 	#0→-0.10
 	}
 	crn_cornish_rebels = {
-		hostile_attrition = 1
+		hostile_attrition = 2 	#1→2
+		max_hostile_attrition = 2 	#0→2
 	}
 	crn_prayer_book_traditionaliism = {
 		tolerance_own = 2
 	}
 	crn_pirates_of_penzance = {
-		capture_ship_chance = 0.1
-		privateer_efficiency = 0.2
+		capture_ship_chance = 0.20 		#0.10→0.20
+		privateer_efficiency = 0.10 	#0.20→0.10
 	}
 	crn_royalist_army = {
-		land_forcelimit_modifier = 0.2
+		land_forcelimit_modifier = 0.20
+		naval_forcelimit_modifier = 0.20 	#0→0.20
 	}
 	crn_gear_rout = {
 		movement_speed = 0.15
+		landing_penalty = -1 	#0→-1
+		regiment_disembark_speed = 0.50 	#0→0.50
 	}
 	crn_arthurian_romanticism = {
+		monthly_splendor = 3 	#0→3
 		prestige_decay = -0.01
 	}
 }

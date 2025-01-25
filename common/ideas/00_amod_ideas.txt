@@ -12276,11 +12276,14 @@ WSX_ideas = {
 
 MCI_ideas = {
     start = {
-        trade_steering = 0.2
-        diplomatic_reputation = 1
+        #trade_steering = 0.2   #0.20→0
+        global_own_trade_power = 0.20   #0→0.20
+        mercenary_discipline = 0.05     #0→0.05
+        #diplomatic_reputation = 1  #1→0
     }
     bonus = {
-        diplomatic_upkeep = 1
+        #diplomatic_upkeep = 1  #1→0
+        trade_efficiency = 0.20     #0→0.20
     }
     
     trigger = {
@@ -12290,25 +12293,30 @@ MCI_ideas = {
 
     MCI_idea_1 = {
         fabricate_claims_cost = -0.25
+        core_creation = -0.15   #0→-0.15
     }
     MCI_idea_2 = {
-        global_tax_modifier = 0.1
+        development_cost = -0.10     #0→-0.10
+        #global_tax_modifier = 0.1  #0.10→0
     }
     MCI_idea_3 = {
         autonomy_change_time = -0.25
-        global_trade_goods_size_modifier = 0.1
+        global_trade_goods_size_modifier = 0.10
     }
     MCI_idea_4 = {
         num_accepted_cultures = 1
+        advisor_pool = 2   #0→2
     }
     MCI_idea_5 = {
-        fort_maintenance_modifier = -0.2
+        fort_maintenance_modifier = -0.20
+        own_territory_dice_roll_bonus = 1    #0→1
     }
     MCI_idea_6 = {
         papal_influence = 2
     }
     MCI_idea_7 = {
-        war_exhaustion = -0.02
+        reinforce_speed = 0.33  #0→0.33
+        war_exhaustion = -0.05  #-0.02→-0.05
     }
 }
 

@@ -323,7 +323,7 @@ fixed_capital = 1273
 }
 1436.1.1 = {
 	monarch = {
-		name = "Nabi IV"
+		name = "Gaston IV"
 		dynasty = "de Foix"
 		birth_date = 1425.2.26
 		dip = 5
@@ -332,6 +332,17 @@ fixed_capital = 1273
 	}
 }
 1437.1.1 = { religion = catholic }
+1444.11.12 = {	#bertus mod
+	monarch = {
+		name = "Nabi IV"
+		dynasty = "de Foix"
+		birth_date = 1424.1.1
+		dip = 5
+		adm = 4
+		mil = 5
+	}
+	clear_scipted_personalities = yes
+}
 1467.1.1 = {
 	heir = {
 		name = "Fran ois Ph bus"

@@ -1868,7 +1868,8 @@ estate_burghers_mountain_expansion = {
 			has_unlocked_estate_privilege = { estate_privilege = estate_burghers_mountain_expansion }
 			has_idea = oasis_of_peace_and_prosperity
 			has_idea = ARS_idea_4
-			has_idea = alhambra
+			has_idea = alhambra 
+			has_idea = savoyard_flexibility
 			443 = {
 				owned_by = ROOT
 				has_great_project = {

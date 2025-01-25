@@ -236,6 +236,10 @@ vn_bri_missions_slot_1_b = {
 			}
         }
         effect = {
+            add_country_modifier = { 	#bertus mod
+				name = thriving_arms_industry
+				duration = 3650
+			}
             add_country_modifier = {
 				name = "bri_up_the_peninsula_mission"
 				duration = -1

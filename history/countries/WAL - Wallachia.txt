@@ -203,6 +203,18 @@ capital = 5685 # Tîrgoviste
 		mil = 2
 	}
 }
+1444.11.12 = {	#bertus mod
+	monarch = {
+		name = "Vlad III"
+		dynasty = "Draculesti"
+		birth_date = 1424.1.1
+		dip = 3
+		adm = 3
+		mil = 3
+	}
+	clear_scipted_personalities = yes
+	kill_heir = {}
+}
 1447.11.1 = {
 	monarch = {
 		name = "Vladislav II"

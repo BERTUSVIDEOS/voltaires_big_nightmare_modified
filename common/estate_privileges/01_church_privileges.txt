@@ -305,9 +305,18 @@ estate_church_clerical_ministers = {
 				}
 				NOT = { religion = apostolic }
 			}
+			uses_piety = no 	#bertus mod
 		}
 		modifier = {
 			missionary_maintenance_cost = -0.2
+		}
+	}
+	conditional_modifier = { 	#bertus mod
+		trigger = {
+			uses_piety = yes
+		}
+		modifier = {
+			monthly_piety_accelerator = 0.05
 		}
 	}
 	conditional_modifier = {

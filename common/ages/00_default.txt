@@ -127,16 +127,13 @@ age_of_discovery = {
 				factor = 10
 			}
 		}
-		ab_colony_boost_development = {
+		ab_colony_boost_development = { 	#bertus mod
 			modifier = {
-				colony_development_boost = 1
+				build_cost = -0.10
+				build_time = -0.10
 			}
 			ai_will_do = {
 				factor = 10
-				modifier = {
-					factor = 0
-					NOT = { num_of_colonists = 1 }
-				}
 			}
 		}
 		
@@ -149,52 +146,46 @@ age_of_discovery = {
 			}
 		}
 
-		ab_papal_reunions = {
+		ab_papal_reunions = { 	#bertus mod
 			allow = {
-				tag = PAP
+				culture_group = latin
 			}
 			modifier = {
-				diplomatic_annexation_cost = -0.5
+				no_claim_cost_increasement = yes
+				relation_with_same_religion = 25
+				reverse_relation_with_same_religion = 25
 			}
 			ai_will_do = {
 				factor = 100
 			}
 		}
-		ab_brandenburg_efficiency = {
+		ab_brandenburg_efficiency = { 	#bertus mod
 			allow = {
-				tag = BRA
+				culture_group = germanic
 			}
 			modifier = {
-				all_power_cost = -0.1
+				ae_impact = -0.20
 			}
 			ai_will_do = {
 				factor = 100
 			}
 		}
-		ab_burgundy_reduced_lib_desire = {
+		ab_burgundy_reduced_lib_desire = { 	#bertus mod
 		
 			allow = {
-				tag = BUR
+				culture_group = french
 			}
 			modifier = {
-				reduced_liberty_desire = 30
+				global_tax_modifier = 0.20
 			}
 			ai_will_do = {
 				factor = 100
-				modifier = {
-					factor = 0
-					NOT = {
-						any_subject_country = {
-							liberty_desire = 20
-						}
-					}
-				}
 			}
 		}
-		ab_venice_ship_trade = {
+		ab_venice_ship_trade = { 	#bertus mod
 		
 			allow = {
-				tag = VEN
+				num_of_merchants = 3
 			}
 			modifier = {
 				global_ship_trade_power = 0.5

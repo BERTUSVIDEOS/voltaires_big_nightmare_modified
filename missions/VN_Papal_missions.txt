@@ -1788,7 +1788,7 @@ vn_pap_missions_slot_5 = {
         }
         trigger = {
             num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-                value = 12
+                value = 9
                 OR = {
                     area = bologna_area
                     area = cesena_area

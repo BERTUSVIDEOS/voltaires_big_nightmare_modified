@@ -192,9 +192,7 @@ capital = 2911
 	}
 	clear_scripted_personalities = yes
 	add_ruler_personality = conqueror_personality
-	change_religion = hussite
-	add_prestige = ´-200
-	add_prestige = 9
+	religion = hussite
 	every_owned_province = {
 		change_religion = hussite
 	}

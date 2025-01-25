@@ -93,3 +93,13 @@ capital = 504
 	}
 }
 #1265 done
+1444.11.12 = {
+	monarch = {
+		name = "Guichard VI"
+		dynasty = "de Beaujeu"
+		birth_date = 1400.4.5
+		adm = 1
+		dip = 3
+		mil = 4
+	}
+}

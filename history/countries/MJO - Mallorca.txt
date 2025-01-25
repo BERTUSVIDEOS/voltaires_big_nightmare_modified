@@ -75,3 +75,13 @@ capital = 653
 	}
 }
 1344.1.1 = { capital = 1949 }
+1444.11.12 = {
+	monarch = {
+		name = "Jaume IV"
+		dynasty = "d'Aragó"
+		birth_date = 1400.4.5
+		adm = 1
+		dip = 3
+		mil = 4
+	}
+}

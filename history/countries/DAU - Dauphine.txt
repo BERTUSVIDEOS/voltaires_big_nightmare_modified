@@ -272,3 +272,13 @@ capital = 544	# Vienne
 	}
 }
 #1349 done
+1444.11.12 = {
+	monarch = {
+		name = "Humbert III"
+		dynasty = "de la Tour"
+		birth_date = 1400.4.5
+		adm = 1
+		dip = 3
+		mil = 4
+	}
+}

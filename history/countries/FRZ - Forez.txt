@@ -207,3 +207,13 @@ fixed_capital = 526
 }
 
 #done 1417
+1444.11.12 = {
+	monarch = {
+		name = "Anne II"
+		dynasty = "d'Auvergne"
+		birth_date = 1400.4.5
+		adm = 1
+		dip = 3
+		mil = 4
+	}
+}

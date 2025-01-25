@@ -11873,7 +11873,6 @@ RSO_ideas = {
 		production_efficiency = 0.1
 	}
 }
-
 MVA_ideas = {
 	start = {
 		global_trade_goods_size_modifier = 0.1

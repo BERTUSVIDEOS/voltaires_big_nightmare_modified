@@ -184,6 +184,7 @@ capital = 2911
 		name = "Otakar II"
 		dynasty = "Premyslovci"
 		culture = moravian
+		religion = hussite
 		birth_date = 1414.1.13
 		adm = 4
 		dip = 4
@@ -191,4 +192,10 @@ capital = 2911
 	}
 	clear_scripted_personalities = yes
 	add_ruler_personality = conqueror_personality
+	change_religion = hussite
+	add_prestige = ´-200
+	add_prestige = 9
+	every_owned_province = {
+		change_religion = hussite
+	}
 }

@@ -654,7 +654,7 @@ historical_friend = PIE
 		death_date = 1472.3.30
 		claim = 95
 		adm = 5
-		dip = 55
+		dip = 5
 		mil = 5
 	}
 }

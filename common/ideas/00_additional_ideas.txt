@@ -5822,3 +5822,47 @@ RHI_ideas = {
 		}
     }
 }
+
+MRV_ideas = {
+	start = {
+        shock_damage_received = -0.10
+        church_power_modifier = 0.20
+	}
+	bonus = {
+        artillery_power = 0.10
+	}
+	trigger = {
+		tag = MRV
+	}
+	free = yes
+	
+	MRV_margraviate = {
+        trade_goods_size_modifier = 0.10
+	}
+	MRV_jesuit_university = {
+        country_admin_power = 1
+        adm_advisor_cost = -0.10
+	}
+	MRV_cities_of_moravia = {
+        build_cost = -0.15
+        development_cost = -0.10
+	}
+	MRV_land_of_vinyards = {
+        production_efficiency = 0.10
+	}
+	MRV_legacy_of_great_moravia = {
+		legitimacy = 1
+		devotion = 1
+		republican_tradition = 0.3
+		meritocracy = 1
+		horde_unity = 1
+        tolerance_own = 2
+	}
+	MRV_religious_refuge = {
+        missionaries = 1
+        warscore_cost_vs_other_religion = -0.1
+	}
+	MRV_german_quarters = {
+        infantry_fire = 0.20
+	}
+}

@@ -219,17 +219,24 @@ vn_taifa_missions_slot_3 = {
         effect = {
             add_army_tradition = 10
             add_army_professionalism = 0.025
-            iberia_superregion = {
+            cordoba_area = {
                 limit = {
                     NOT = { is_core = ROOT }
                     NOT = { is_permanent_claim = ROOT }
-                    owner = {
-                        religion_group = muslim
-                        OR = {
-                            primary_culture = mozarabic
-                            primary_culture = andalucian
-                        }
-                    }
+                }
+                add_permanent_claim = ROOT
+            } 
+            sevilla_area = {
+                limit = {
+                    NOT = { is_core = ROOT }
+                    NOT = { is_permanent_claim = ROOT }
+                }
+                add_permanent_claim = ROOT
+            } 
+            murcia_area = {
+                limit = {
+                    NOT = { is_core = ROOT }
+                    NOT = { is_permanent_claim = ROOT }
                 }
                 add_permanent_claim = ROOT
             } 

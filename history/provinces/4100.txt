@@ -4,9 +4,9 @@ culture = gascon
 religion = catholic
 hre = no
 trade_goods = wine
-base_tax = 2
-base_production = 2
-base_manpower = 1
+base_tax = 4
+base_production = 4
+base_manpower = 2
 capital = "Saint-Sever"
 is_city = yes
 add_core = XMS
@@ -61,9 +61,9 @@ discovered_by = north_american
 	remove_core = ENG
 }
 1444.11.12 = {	#BERTUS MOD
-	owner = GUY
-	controller = GUY
-	add_core = GUY
+	owner = FOI
+	controller = FOI
+	add_core = FOI
 	remove_core = FRA
 	fort_15th = yes
 }

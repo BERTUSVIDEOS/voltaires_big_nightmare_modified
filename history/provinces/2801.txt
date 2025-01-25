@@ -19,6 +19,12 @@ discovered_by = north_american
 
 1171.1.1 = { religion = cathar }
 1217.1.1 = { religion = catholic }
+1444.11.12 = {	#BERTUS MOD
+	owner = KMM
+	controller = KMM
+	add_core = KMM
+	add_core = FOI
+}
 1453.1.1 = {
 	owner = FRA
 	controller = FRA

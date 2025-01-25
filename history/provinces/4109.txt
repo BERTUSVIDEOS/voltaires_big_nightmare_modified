@@ -33,10 +33,10 @@ add_core = GUY
 	remove_core = ENG
 }
 1444.11.12 = {	#BERTUS MOD
-	owner = GUY
-	controller = GUY
-	add_core = GUY
-	remove_core = FRA
+	owner = ABR
+	controller = ABR
+	add_core = ABR
+	remove_core = GUY
 }
 1555.1.1 = { religion = reformed }
 1565.1.1 = { unrest = 8 }

@@ -4,7 +4,7 @@ religion = catholic
 trade_goods = zinc
 base_tax = 2
 base_production = 2
-base_manpower = 1
+base_manpower = 3
 is_city = yes
 hre = no
 owner = KMM
@@ -22,6 +22,13 @@ add_core = KMM
 	owner = KMM
 	controller  = KMM
 	remove_core = XPS
+}
+1444.11.12 = {	#BERTUS MOD
+	owner = FOI
+	controller = FOI
+	add_core = FOI
+	remove_core = KMM
+	fort_15th = yes
 }
 1453.1.1 = {
 	owner = FRA

@@ -44,10 +44,9 @@ add_core = XTT
 	remove_core = XTT
 }
 1444.11.12 = {	#BERTUS MOD
-	owner = GUY
-	controller = GUY
-	add_core = GUY
-	remove_core = ABR
+	owner = ABR
+	controller = ABR
+	add_core = ABR
 }
 1522.1.1 = {
 	owner = FOI

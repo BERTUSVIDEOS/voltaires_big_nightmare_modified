@@ -1512,11 +1512,11 @@ AMG_ideas = {
 
 FOI_ideas = {
     start = {
-        trade_efficiency = 0.1
-        advisor_cost = -0.1
+        global_tax_modifier = 0.15
+        advisor_cost = -0.15
     }
     bonus = {
-        global_tax_modifier = 0.1
+        fire_damage = 0.1
     }
     free = yes
     trigger = {
@@ -1524,21 +1524,26 @@ FOI_ideas = {
     }
     FOI_neighbour_connections = {
         improve_relation_modifier = 0.3
+        prestige_from_land = 0.25
     }
     FOI_vassals_in_name = {
-        land_forcelimit_modifier = 0.2
+        leader_land_shock = 1
+        leader_land_fire = 1
     }
     FOI_provincial_lords = {
         global_unrest = -1
+        tolerance_own = 1
     }
     FOI_chateau_foix = {
         defensiveness = 0.2
     }
     FOI_dynastic_expansion = {
-        enemy_core_creation = 0.25
+        land_morale = 0.05
+        core_creation = -0.15
     }
     FOI_mediators_of_war = {
-        leader_land_shock = 1
+        war_exhaustion = -0.02
+        prestige = 0.5
     }
     FOI_navarrese_influence = {
         idea_cost = -0.1
@@ -5559,7 +5564,7 @@ SMB_ideas = {
 AQT_ideas = {
     start = {
         land_attrition = -0.20  #-0.10→-0.20
-        production_efficiency = 0.20    #0.10→0.20
+        advisor_cost = -0.25    #Changed to advisor cost
     }
     bonus = {
         fire_damage = 0.20  #0.10→0.20
@@ -5573,8 +5578,9 @@ AQT_ideas = {
         army_tradition_from_battle = 0.50   #0→0.50
     }
     AQT_idea_2 = {
-        merc_maintenance_modifier = -0.15
-        mercenary_discipline = 0.10     #0→0.10
+        leader_land_shock = 1
+	max_general_shock = 1
+        leader_land_fire = 1
     }
     AQT_idea_3 = {
         defensiveness = 0.33    #0.20→0.33
@@ -5597,6 +5603,7 @@ AQT_ideas = {
     }
     AQT_idea_7 = {
         global_trade_power = 0.10
+	idea_cost = -0.15
         embargo_efficiency = 0.25   #0→0.25
     }
 }

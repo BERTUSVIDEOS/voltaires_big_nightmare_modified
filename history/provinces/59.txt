@@ -50,9 +50,9 @@ add_province_triggered_modifier = religious_center
 	remove_core = ANH
 }
 1444.11.12 = {	#BERTUS MOD
-	owner = MAG
-	controller = MAG
-	add_core = MAG
+	owner = BRA
+	controller = BRA
+	add_core = BRA
 	remove_core = SAX
 	fort_14th = yes
 }

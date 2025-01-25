@@ -21,9 +21,9 @@ discovered_by = muslim
 	add_core = SXT
 }
 1444.11.12 = {	#BERTUS MOD
-	owner = LUN
-	controller = LUN
-	add_core = LUN
+	owner = SXT
+	controller = SXT
+	add_core = SXT
 }
 1529.1.1 = { religion = protestant }
 1645.5.31 = {

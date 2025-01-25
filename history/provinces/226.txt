@@ -17,9 +17,9 @@ add_core = HHN
 	add_core = SXT
 }
 1444.11.12 = {	#BERTUS MOD
-	owner = HES
-	controller = HES
-	add_core = HES
+	owner = SXT
+	controller = SXT
+	add_core = SXT
 	fort_14th = yes
 }
 1529.1.1 = { religion = protestant }

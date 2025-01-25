@@ -45,9 +45,9 @@ fort_14th = yes
 }
 1337.1.1 = { fort_14th = no fort_15th = yes }
 1444.11.12 = {	#BERTUS MOD
-	owner = MAG
-	controller = MAG
-	add_core = MAG
+	owner = SDL
+	controller = SDL
+	add_core = SDL
 	remove_core = BRA
 }
 1524.1.1 = { religion = protestant }

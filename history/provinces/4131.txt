@@ -39,6 +39,11 @@ discovered_by = north_american
 	remove_core = SDL
 	remove_core = BRA
 }
+1444.11.12 = {	#BERTUS MOD
+	owner = SDL
+	controller = SDL
+	add_core = SDL
+}
 1524.1.1 = { religion = protestant }
 1680.6.4 = {
 	owner = BRA

@@ -230,70 +230,7 @@ trade_ideas = {
 
 # EXPLORATION IDEAS removed
 
-
-
-########################################################
-####### Colonial Empire
-########################################################
-
-
-kolonialimperium0 = {
-	category = DIP
-
-	bonus = {
-		diplomatic_upkeep = 2
-	}
-    trigger = {
-		always = no 	#bertus mod
-		adm_tech = 9
-    }
-	kolonialimperium2 = {
-		colonists = 1
-	}
-	kolonialimperium1 = {
-		trade_company_governing_cost = -0.15
-	}
-	kolonialimperium4 = {
-		global_tariffs = 0.1
-		# <<WIKI>> global_tariffs = 0.1/Colonial Nation
-		# <<WIKI>> Inflation reduction = -5/Colonial Nation
-	}
-	kolonialimperium3 = {
-		global_manpower_modifier = 0.1
-		global_sailors_modifier = 0.1
-	}
-	kolonialimperium6 = {
-		naval_forcelimit_modifier = 0.25
-		# <<WIKI>> naval_forcelimit_modifier = 0.05/Colonial Nation
-	}
-	kolonialimperium5 = {
-		build_cost = -0.05
-		# MECHANIC build_cost_in_colo_nation = -0.0025
-	}
-	kolonialimperium7 = {
-		liberty_desire_from_subject_development = -0.2
-	}
-	
-	ai_will_do = {
-		factor = 1.0
-		modifier = {
-			factor = 0
-			is_colonial_nation = yes
-		}
-		modifier = {
-			factor = 0
-			is_tribal = yes
-		}
-		modifier = {
-			factor = 0
-			primitives = yes
-		}
-		modifier = {
-			factor = 0
-			num_of_ports = 0
-		}
-	}
-}
+# Colonial Empire Ideas removed 
 
 # MARITIME IDEAS
 maritime_ideas = {

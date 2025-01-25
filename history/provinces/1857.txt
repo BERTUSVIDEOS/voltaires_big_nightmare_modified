@@ -31,9 +31,9 @@ add_core = SWX
 	remove_core = SHL
 }
 1444.11.12 = {	#BERTUS MOD
-	owner = HAM
-	controller = HAM
-	add_core = HAM
+	owner = LAU
+	controller = LAU
+	add_core = LAU
 }
 1529.1.1 = { religion = protestant }
 1689.1.1 = {	

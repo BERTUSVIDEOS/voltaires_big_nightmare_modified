@@ -18,9 +18,9 @@ add_core = RSB
 	remove_core = SHL
 }
 1444.11.12 = {	#BERTUS MOD
-	owner = HAM
-	controller = HAM
-	add_core = HAM
+	owner = RSB
+	controller = RSB
+	add_core = RSB
 	set_base_tax = 2
 	set_base_production = 2
 	set_base_manpower = 2

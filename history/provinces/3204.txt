@@ -37,9 +37,9 @@ add_core = SDL
 	add_core = BRA
 }
 1444.11.12 = {	#BERTUS MOD
-	owner = MAG
-	controller = MAG
-	add_core = MAG
+	owner = SDL
+	controller = SDL
+	add_core = SDL
 	remove_core = BRA
 	set_base_tax = 2
 	set_base_production = 2

@@ -4155,7 +4155,7 @@ SON_ideas = {
 BRI_ideas = {
 	start = {
 		navy_tradition = 1
-		trade_efficiency = 0.10	#bertus mod
+		trade_efficiency = 0.15	#bertus mod 0.10 -> 0.15
 	}
 	
 	bonus = {
@@ -4168,12 +4168,9 @@ BRI_ideas = {
 	free = yes
 	
 	legacy_of_breton_independence = {
-		legitimacy = 1
-		devotion = 1
-		republican_tradition = 0.3
-		meritocracy = 1
-		horde_unity = 1
+		infantry_shock = 0.15 # 0->0.15
 	}
+
 	estates_of_brittany = {
 		global_unrest = -1	
 		all_estate_loyalty_equilibrium = 0.10 	#0→0.10	

@@ -12,9 +12,9 @@ is_city = yes
 add_core = MFX
 
 1444.11.12 = {	#BERTUS MOD
-	owner = MAG
-	controller = MAG
-	add_core = MAG
+	owner = MFX
+	controller = MFX
+	add_core = MFX
 }
 1525.1.1 = { religion = protestant }
 1780.3.31 = {

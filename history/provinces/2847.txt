@@ -12,6 +12,12 @@ controller = BOH
 add_core = BOH
 
 1415.7.6 = { religion = hussite }
+1444.11.12 = {	#BERTUS MOD
+	owner = MMB
+	controller = MMB
+	add_core = MMB
+	remove_core = SAX
+}
 1457.1.1 = { unrest = 5 }
 1464.1.1 = { unrest = 1 }
 1471.1.1 = { unrest = 0 }

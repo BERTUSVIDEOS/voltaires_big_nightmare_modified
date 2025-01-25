@@ -20,9 +20,9 @@ add_core = SOR
 1419.12.1 = { unrest = 5 }
 1436.7.5 = { unrest = 0 }
 1444.11.12 = {	#BERTUS MOD
-	owner = BRA
-	controller = BRA
-	add_core = BRA
+	owner = SOR
+	controller = SOR
+	add_core = SOR
 	remove_core = BOH
 	set_base_tax = 2
 	set_base_production = 2

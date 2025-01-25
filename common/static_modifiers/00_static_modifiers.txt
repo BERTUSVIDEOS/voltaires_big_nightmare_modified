@@ -255,6 +255,7 @@ blockaded = {
 	regiment_recruit_speed = 0.2
 	ship_recruit_speed = 0.2
 	local_monthly_devastation = 0.25
+	local_autonomy = 0.10	#0→0.10
 	province_trade_power_modifier = -1
 }
 

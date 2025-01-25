@@ -1423,7 +1423,6 @@ vn_mam_missions_slot_3 = {
                 name = mam_conquer_cappadocia_mission
                 duration = 7300
             }
-        }
 			ionia_area = {
 				add_province_modifier = {
                     name = mam_conquer_cappadocia_mission

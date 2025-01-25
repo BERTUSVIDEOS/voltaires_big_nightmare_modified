@@ -628,6 +628,7 @@ vn_nrm_missions_slot_3_b = {
 	ai = yes
 	potential = {
 		tag = NRM
+		always = no 	#bertus mod  todo
 		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes

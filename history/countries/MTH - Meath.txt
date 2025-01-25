@@ -192,7 +192,7 @@ capital = 2312
 		duration = -1
 	}
 }
-1304.4.11 = {
+1444.11.12 = { 	#bertus mod
 	monarch = {
 		name = "Geoffrey II"
 		dynasty = "de Joinville"
@@ -201,4 +201,6 @@ capital = 2312
 		dip = 3
 		mil = 3
 	}
+	clear_ruler_personalities = yes
+	remove_country_modifier = kilkennystatutesmod
 }

@@ -1926,6 +1926,30 @@ has_completed_idea_group_of_category = {
 				full_idea_group = administrative_ideas
 				full_idea_group = humanist_ideas
 				full_idea_group = infrastructure_ideas
+				full_idea_group = justiz0
+				full_idea_group = entwicklung0
+				full_idea_group = gesundheit0
+				full_idea_group = monarchie0
+				full_idea_group = republik0
+				full_idea_group = theocracy0
+				full_idea_group = horde0
+				full_idea_group = trademanagement0
+				full_idea_group = zentra0
+				full_idea_group = dezentra0
+				full_idea_group = stateaffairs0
+				full_idea_group = trademanagement0
+				full_idea_group = katholisch0
+				full_idea_group = protestant0
+				full_idea_group = reformiert0
+				full_idea_group = orthodox0
+				full_idea_group = islam0
+				full_idea_group = coptic0 
+				full_idea_group = jew0 
+				full_idea_group = ancli0
+				full_idea_group = shia0
+				full_idea_group = ibadi0
+				full_idea_group = hussite0
+				full_idea_group = religious_ideas
 			}
 		}
 	]
@@ -1940,6 +1964,16 @@ has_completed_idea_group_of_category = {
 				full_idea_group = maritime_ideas
 				full_idea_group = influence_ideas
 				full_idea_group = court_ideas
+				full_idea_group = flottenbasis0
+				full_idea_group = gross0
+				full_idea_group = galle0
+				full_idea_group = handel0
+				full_idea_group = assimilation0
+				full_idea_group = gesellschaft0
+				full_idea_group = propaganda0
+				full_idea_group = nationalismus0
+				full_idea_group = konigreich0
+				full_idea_group = imperialismus0
 			}
 		}
 	]
@@ -1958,6 +1992,17 @@ has_completed_idea_group_of_category = {
 				full_idea_group = horde_gov_ideas
 				full_idea_group = plutocracy_ideas
 				full_idea_group = mercenary_ideas
+				full_idea_group = generalstab0
+				full_idea_group = stehendesheer0
+				full_idea_group = wehrpflicht0
+				full_idea_group = mercenary0
+				full_idea_group = waffenqualitat0
+				full_idea_group = festung0
+				full_idea_group = kriegsproduktion0
+				full_idea_group = logistics0
+				full_idea_group = militarismus0
+				full_idea_group = shock0
+				full_idea_group = fire0
 			}
 		}
 	]
@@ -1972,7 +2017,30 @@ num_of_completed_idea_groups_adm = {
 		full_idea_group = expansion_ideas
 		full_idea_group = administrative_ideas
 		full_idea_group = humanist_ideas
-		full_idea_group = infrastructure_ideas
+		full_idea_group = justiz0
+		full_idea_group = entwicklung0
+		full_idea_group = gesundheit0
+		full_idea_group = monarchie0
+		full_idea_group = republik0
+		full_idea_group = theocracy0
+		full_idea_group = horde0
+		full_idea_group = trademanagement0
+		full_idea_group = zentra0
+		full_idea_group = dezentra0
+		full_idea_group = stateaffairs0
+		full_idea_group = trademanagement0
+		full_idea_group = katholisch0
+		full_idea_group = protestant0
+		full_idea_group = reformiert0
+		full_idea_group = orthodox0
+		full_idea_group = islam0
+		full_idea_group = coptic0 
+		full_idea_group = jew0 
+		full_idea_group = ancli0
+		full_idea_group = shia0
+		full_idea_group = ibadi0
+		full_idea_group = hussite0
+		full_idea_group = religious_ideas
 		amount = $amount$
 	}
 }
@@ -1986,7 +2054,16 @@ num_of_completed_idea_groups_dip = {
 		full_idea_group = exploration_ideas
 		full_idea_group = maritime_ideas
 		full_idea_group = influence_ideas
-		full_idea_group = court_ideas
+		full_idea_group = flottenbasis0
+		full_idea_group = gross0
+		full_idea_group = galle0
+		full_idea_group = handel0
+		full_idea_group = assimilation0
+		full_idea_group = gesellschaft0
+		full_idea_group = propaganda0
+		full_idea_group = nationalismus0
+		full_idea_group = konigreich0
+		full_idea_group = imperialismus0
 		amount = $amount$
 	}
 }
@@ -2004,7 +2081,17 @@ num_of_completed_idea_groups_mil = {
 		full_idea_group = indigenous_ideas
 		full_idea_group = horde_gov_ideas
 		full_idea_group = plutocracy_ideas
-		full_idea_group = mercenary_ideas
+		full_idea_group = generalstab0
+		full_idea_group = stehendesheer0
+		full_idea_group = wehrpflicht0
+		full_idea_group = mercenary0
+		full_idea_group = waffenqualitat0
+		full_idea_group = festung0
+		full_idea_group = kriegsproduktion0
+		full_idea_group = logistics0
+		full_idea_group = militarismus0
+		full_idea_group = shock0
+		full_idea_group = fire0
 		amount = $amount$
 	}
 }

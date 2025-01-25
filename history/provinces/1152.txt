@@ -31,9 +31,9 @@ add_core = ANM
 	add_core = FRA
 }
 1444.11.12 = {	#BERTUS MOD
-	owner = AMG
-	controller = AMG
-	add_core = AMG
+	owner = SKR
+	controller = SKR
+	add_core = SKR
 	remove_core = FRA
 	remove_core = TOU
 	add_center_of_trade_level = 2

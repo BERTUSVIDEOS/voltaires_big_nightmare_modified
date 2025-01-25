@@ -48,9 +48,9 @@ discovered_by = north_american
 	remove_core = TOU
 }
 1444.11.12 = {	#BERTUS MOD
-	owner = AMG
-	controller = AMG
-	add_core = AMG
+	owner = SKR
+	controller = SKR
+	add_core = SKR
 	remove_core = FRA
 	remove_core = GUY
 }

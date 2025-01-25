@@ -1,5 +1,5 @@
-owner = AMG
-controller = AMG
+owner = FOI
+controller = FOI
 culture = gascon
 religion = catholic
 hre = no
@@ -22,6 +22,11 @@ add_core = AMG
 	controller = AMG
 	remove_core = GUY
 	remove_core = FRA
+}
+1444.11.12 = {	#BERTUS MOD
+	owner = FOI
+	controller = FOI
+	add_core = FOI
 }
 1497.6.3 = {
 	owner = ALE

@@ -7,7 +7,7 @@ base_tax = 3
 base_production = 3
 trade_goods = vegetables
 base_manpower = 2
-capital = "Angoul�me"
+capital = "Angoul me"
 is_city = yes
 add_core = AGO
 discovered_by = eastern
@@ -68,10 +68,9 @@ discovered_by = north_american
 	remove_core = ORL
 }
 1444.11.12 = {	#BERTUS MOD
-	owner = GUY
-	controller = GUY
-	add_core = GUY
-	remove_core = AGO
+	owner = AGO
+	controller = AGO
+	add_core = AGO
 }
 1515.1.1 = {
 	owner = FRA

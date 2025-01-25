@@ -3,10 +3,10 @@ controller = TOU
 culture = occitain
 religion = catholic
 hre = no
-base_tax = 2
-base_production = 1
+base_tax = 7
+base_production = 3
 trade_goods = lumber
-base_manpower = 1
+base_manpower = 2
 capital = "L'Isle-Jourdain"
 is_city = yes
 add_core = TOU
@@ -30,6 +30,11 @@ discovered_by = muslim
 	add_core = AMG
 	remove_core = TOU
 	remove_core = FRA
+}
+1444.11.12 = {	#BERTUS MOD
+	owner = FOI
+	controller = FOI
+	add_core = FOI
 }
 1497.6.3 = {
 	owner = ALE

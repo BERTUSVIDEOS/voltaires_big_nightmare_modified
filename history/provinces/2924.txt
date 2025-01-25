@@ -23,9 +23,9 @@ add_core = GEV
 	add_core = FRA
 }
 1444.11.12 = {	#BERTUS MOD
-	owner = AMG
-	controller = AMG
-	add_core = AMG
+	owner = RDZ
+	controller = RDZ
+	add_core = RDZ
 	remove_core = FRA
 }
 1560.1.1 = { religion = reformed }

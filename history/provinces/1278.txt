@@ -29,6 +29,11 @@ add_core = XLM
 	remove_core = GUY
 	remove_core = FRA
 }
+1444.11.12 = {	#BERTUS MOD
+	owner = FOI
+	controller = FOI
+	add_core = FOI
+}
 1497.6.3 = {
 	owner = ALE
 	controller = ALE

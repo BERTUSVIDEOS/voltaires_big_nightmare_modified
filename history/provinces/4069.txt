@@ -51,6 +51,12 @@ discovered_by = north_american
 	remove_core = GUY
 	remove_core = FRA
 }
+1444.11.12 = {	#BERTUS MOD
+	owner = GUY
+	controller = GUY
+	add_core = GUY
+	remove_core = GUY
+}
 1497.6.3 = {
 	owner = ALE
 	controller = ALE

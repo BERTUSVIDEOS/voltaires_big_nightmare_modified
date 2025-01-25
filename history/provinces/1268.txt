@@ -30,6 +30,12 @@ add_core = RDZ
 	add_core = AMG
 	remove_core = BER
 }
+1444.11.12 = {	#BERTUS MOD
+	owner = RDZ
+	controller = RDZ
+	add_core = RDZ
+	remove_core = FRA
+}
 1477.8.4 = {
 	owner = BOU
 	controller = BOU

@@ -40,6 +40,13 @@ add_core = XRU
 	remove_core = GUY
 	remove_core = FRA
 }
+1444.11.12 = {	#BERTUS MOD
+	owner = SKR
+	controller = SKR 
+	add_core = SKR
+	remove_core = FRA
+	remove_core = TOU
+}
 1497.6.3 = {
 	owner = ALE
 	controller = ALE

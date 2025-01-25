@@ -25,9 +25,9 @@ discovered_by = north_american
 	remove_core = UIL
 }
 1444.11.12 = {	#BERTUS MOD
-	owner = MTH
-	controller = MTH
-	add_core = MTH
+	owner = UIL
+	controller = UIL
+	add_core = UIL
 }
 1596.1.1 = {
 	owner = ENG

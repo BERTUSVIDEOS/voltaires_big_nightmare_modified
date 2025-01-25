@@ -27,12 +27,9 @@ center_of_trade = 1
 	remove_core = MNS
 }
 1444.11.12 = {	#BERTUS MOD
-	owner = MTH
-	controller = MTH
-	add_core = MTH
-	add_base_tax = -3
-	add_base_production = -3
-	add_base_manpower = -1
+	owner = MCM
+	controller = MCM
+	add_core = MCM
 }
 1583.1.1 = {
 	owner = ENG

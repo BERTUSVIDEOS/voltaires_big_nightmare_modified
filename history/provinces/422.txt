@@ -13,12 +13,9 @@ add_core = UML
 
 1171.5.1 = { culture = irish }
 1444.11.12 = {	#BERTUS MOD
-	owner = MTH
-	controller = MTH
-	add_core = MTH
-	add_base_tax = -1
-	add_base_production = -1
-	add_base_manpower = -1
+	owner = UML
+	controller = UML
+	add_core = UML
 }
 1603.3.31 = {
 	owner = ENG

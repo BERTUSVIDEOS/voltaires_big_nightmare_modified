@@ -19,12 +19,9 @@ add_core = UIL
 	remove_core = UIL
 }
 1444.11.12 = {	#BERTUS MOD
-	owner = MTH
-	controller = MTH
-	add_core = MTH
-	add_base_tax = -1
-	add_base_production = -1
-	add_base_manpower = -1
+	owner = UIL
+	controller = UIL
+	add_core = UIL
 }
 1596.1.1 = {
 	owner = ENG

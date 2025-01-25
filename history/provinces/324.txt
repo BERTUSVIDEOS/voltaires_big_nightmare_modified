@@ -19,11 +19,9 @@ is_city = yes
 	remove_core = ACN
 }
 1444.11.12 = {	#BERTUS MOD
-	owner = MTH
-	controller = MTH
-	add_core = MTH
-	add_base_tax = -1
-	add_base_production = -1
+	owner = ACN
+	controller = ACN
+	add_core = ACN
 }
 1635.1.1 = {
 	owner = ENG

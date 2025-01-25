@@ -19,9 +19,9 @@ discovered_by = north_american
 
 1171.5.1 = { culture = irish }
 1444.11.12 = {	#BERTUS MOD
-	owner = MTH
-	controller = MTH
-	add_core = MTH
+	owner = ACN
+	controller = ACN
+	add_core = ACN
 }
 1603.3.31 = {
 	owner = ENG

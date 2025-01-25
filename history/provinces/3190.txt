@@ -20,11 +20,9 @@ discovered_by = north_american
 1118.1.1 = { culture = eoganachta }
 1171.5.1 = { culture = irish }
 1444.11.12 = {	#BERTUS MOD
-	owner = MTH
-	controller = MTH
-	add_core = MTH
-	add_base_tax = -1
-	add_base_production = -1
+	owner = DMS
+	controller = DMS
+	add_core = DMS
 }
 1583.1.1 = {
 	owner = ENG

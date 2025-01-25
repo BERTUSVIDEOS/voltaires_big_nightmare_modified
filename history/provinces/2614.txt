@@ -30,11 +30,11 @@ extra_cost = 8
 	remove_core = PMK
 }
 1444.11.12 = {	#BERTUS MOD
-	owner = ORD
-	controller = ORD
-	add_core = ORD
+	owner = WXF
+	controller = WXF
+	add_core = WXF
 	add_base_tax = 7
-	add_base_production = 6
+	add_base_production = 7
 	add_base_manpower = 8
 	fort_15th = yes
 	ramparts = yes

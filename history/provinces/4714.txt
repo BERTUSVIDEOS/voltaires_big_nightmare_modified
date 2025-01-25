@@ -31,9 +31,9 @@ discovered_by = north_american
 	remove_core = LCH
 }
 1444.11.12 = {	#BERTUS MOD
-	owner = MTH
-	controller = MTH
-	add_core = MTH
+	owner = MCM
+	controller = MCM
+	add_core = MCM
 }
 1596.1.1 = {
 	owner = ENG

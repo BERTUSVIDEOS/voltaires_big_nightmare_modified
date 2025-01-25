@@ -1116,9 +1116,9 @@ bri_three_great_cities_mission = {
 	build_cost = -0.1
 }
 bri_up_the_peninsula_mission = {
-	land_morale = 0.05
-	naval_morale = 0.05
-	army_tradition = 0.5
+	land_morale = 0.15
+	naval_morale = 0.15
+	army_tradition = 0.75
 }
 bri_celtic_sea_empire_mission = {
 	navy_tradition = 0.5
@@ -1132,7 +1132,8 @@ bri_foothold_in_ireland_mission = {
 	global_ship_cost = -0.1
 }
 bri_unify_ireland_mission = {
-	cavalry_cost = -0.1
+	cavalry_cost = -0.15
+	cavalry_power = 0.2
 	global_trade_power = 0.1
 	global_unrest = -1
 }
@@ -1185,6 +1186,7 @@ bri_coast_of_normandy_mission = {
 }
 bri_conquer_wales_mission = {
 	local_defensiveness = 0.2
+	infantry_power = 0.05
 }
 bri_liberate_cornwall_mission = {
 	local_unrest = -1

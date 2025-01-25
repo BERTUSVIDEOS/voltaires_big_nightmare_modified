@@ -22,9 +22,9 @@ discovered_by = muslim
 	remove_core = SHL
 }
 1444.11.12 = {	#BERTUS MOD
-	owner = HAM
-	controller = HAM
-	add_core = HAM
+	owner = RSB
+	controller = RSB
+	add_core = RSB
 }
 1474.1.1 = {
 	owner = SHL

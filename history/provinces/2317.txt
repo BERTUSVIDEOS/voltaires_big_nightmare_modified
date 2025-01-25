@@ -16,9 +16,9 @@ discovered_by = western
 discovered_by = muslim
 
 1444.11.12 = {	#BERTUS MOD
-	owner = HAM
-	controller = HAM
-	add_core = HAM
+	owner = DTT
+	controller = DTT
+	add_core = DTT
 }
 1533.1.1 = { religion = protestant }
 1559.1.1 = {

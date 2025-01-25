@@ -1693,7 +1693,7 @@ DAL_ideas = {
 	}
 	
 	trigger = {
-		tag = DAL
+		tag = DLM
 
 	}
 	free = yes		#will be added at load.

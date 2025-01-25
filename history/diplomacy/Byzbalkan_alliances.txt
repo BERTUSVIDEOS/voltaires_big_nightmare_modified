@@ -90,15 +90,6 @@ alliance = {
 	end_date = 1254.5.22
 }
 
-# Athens, a Morean vassal
-vassal = {
-	first = MOE
-	second = ATH
-	start_date = 1444.6.1
-	end_date = 1458.8.1
-}
-
-
 #Overlord of Thessaly
 guarantee = {
 	first = NKA

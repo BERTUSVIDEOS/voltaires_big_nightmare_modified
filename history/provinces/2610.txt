@@ -21,9 +21,9 @@ fort_14th = yes
 	remove_core = ANC
 }
 1444.11.12 = {	#BERTUS MOD
-	owner = FER
-	controller = FER
-	add_core = FER
+	owner = URB
+	controller = URB
+	add_core = URB
 	remove_core = PAP
 }
 1502.1.1 = {

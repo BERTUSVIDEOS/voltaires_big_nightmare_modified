@@ -26,9 +26,9 @@ add_core = XCG
 	remove_core = XCG
 }
 1444.11.12 = {	#BERTUS MOD
-	owner = FER
-	controller = FER
-	add_core = FER
+	owner = URB
+	controller = URB
+	add_core = URB
 	remove_core = PAP
 }
 1502.1.1 = {

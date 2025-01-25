@@ -30,10 +30,9 @@ add_core = WOL
 	capital = "Köslin"
 }
 1444.11.12 = {	#BERTUS MOD
-	owner = STP
-	controller = STP
-	add_core = STP
-	remove_core = cmm
+	owner = CMM
+	controller = CMM
+	add_core = CMM
 	add_base_tax = 3
 	add_base_production = 3
 	add_base_manpower = 3

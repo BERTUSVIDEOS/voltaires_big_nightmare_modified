@@ -63,6 +63,12 @@ is_city = yes
 	controller = TUR
 	add_core = TUR
 }
+1444.11.12 = {	#BERTUS MOD
+	owner = EPI
+	controller = EPI
+	add_core = EPI
+	remove_core = TUR
+}
 1502.1.1 = { remove_core = EPI remove_core = BYZ }
 1555.1.1 = { unrest = 5 }
 1556.1.1 = { unrest = 0 }

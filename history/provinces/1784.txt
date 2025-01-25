@@ -40,9 +40,9 @@ add_core = PSO
 	remove_core = RMI
 }
 1444.11.12 = {	#BERTUS MOD
-	owner = FER
-	controller = FER
-	add_core = FER
+	owner = PSO
+	controller = PSO
+	add_core = PSO
 	remove_core = PAP
 }
 1500.1.1 = {

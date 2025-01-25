@@ -1186,7 +1186,7 @@ bri_coast_of_normandy_mission = {
 }
 bri_conquer_wales_mission = {
 	local_defensiveness = 0.2
-	infantry_power = 0.05
+	infantry_power = 0.00625
 }
 bri_liberate_cornwall_mission = {
 	local_unrest = -1

@@ -18,6 +18,15 @@ add_core = SOR
 	remove_core = SOR
 	culture = central_margravian
 }
+1444.11.12 = {	#BERTUS MOD
+	owner = BRA
+	controller = BRA
+	add_core = BRA
+	remove_core = BOH
+	set_base_tax = 2
+	set_base_production = 2
+	set_base_manpower = 2
+}
 1524.1.1 = { religion = protestant }
 1680.6.4 = {
 	owner = SAX

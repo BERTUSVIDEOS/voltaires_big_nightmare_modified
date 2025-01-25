@@ -28,9 +28,9 @@ add_core = LII
 	}
 }
 1444.11.12 = {	#BERTUS MOD
-	owner = MAG
-	controller = MAG
-	add_core = MAG
+	owner = HVB
+	controller = HVB
+	add_core = HVB
 }
 1548.5.4 = { religion = protestant }
 1598.1.9 = {

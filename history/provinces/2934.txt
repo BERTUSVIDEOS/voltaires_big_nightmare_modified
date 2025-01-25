@@ -25,10 +25,9 @@ discovered_by = muslim
 	hre = yes
 }
 1444.11.12 = {	#BERTUS MOD
-	owner = MAG
-	controller = MAG
-	add_core = MAG
-	remove_core = BRA
+	owner = BRA
+	controller = BRA
+	add_core = BRA
 }
 1539.1.1 = { religion = protestant }
 1701.1.18 = {

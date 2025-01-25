@@ -57,9 +57,9 @@ discovered_by = north_american
 	remove_core = SAX
 }
 1444.11.12 = {	#BERTUS MOD
-	owner = MAG
-	controller = MAG
-	add_core = MAG
+	owner = ANH
+	controller = ANH
+	add_core = ANH
 }
 1529.1.1 = { religion = protestant }
 1547.1.1 = { unrest = 2 }

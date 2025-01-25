@@ -22,9 +22,9 @@ add_core = MZZ
 	remove_core = MZZ
 }
 1444.11.12 = {	#BERTUS MOD
-	owner = MAG
-	controller = MAG
-	add_core = MAG
+	owner = HVB
+	controller = HVB
+	add_core = HVB
 	set_base_tax = 2
 	set_base_production = 2
 	set_base_manpower = 2

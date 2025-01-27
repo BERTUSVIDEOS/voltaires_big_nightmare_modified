@@ -49,8 +49,13 @@ vn_fra_missions_slot_1_a = {
 		completed_by = 1147.5.1
         required_missions = { vn_fra_alliance_with_church }
         trigger = {
-			is_in_war = {
-				casus_belli = cb_grand_crusade
+			OR = {
+				is_in_war = {
+					casus_belli = cb_crusade   #BERTUS MOD
+				}
+				is_in_war = {
+					casus_belli = cb_grand_crusade
+				}
 			}
         }
         effect = {

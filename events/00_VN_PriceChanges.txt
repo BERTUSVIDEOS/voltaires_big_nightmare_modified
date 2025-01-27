@@ -146,9 +146,15 @@ country_event = {
 			religion = catholic
 			religion = catholique
 		}
-		is_in_war = {
-			casus_belli = cb_grand_crusade
-			attackers = ROOT
+		OR = {
+			is_in_war = {
+				casus_belli = cb_grand_crusade
+				attackers = ROOT
+			}
+			is_in_war = {
+				casus_belli = cb_crusade   #BERTUS MOD
+				attackers = ROOT
+			}
 		}
 	}
 	

@@ -1,5 +1,6 @@
 
 
-central_germany_region= {
+
+lotharingia_region= {
 	cede_province = ROOT
 }

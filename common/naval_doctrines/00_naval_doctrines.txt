@@ -524,7 +524,13 @@ polynesian_navigation_seas = {
 	can_select = {
 		is_primitive = no
 		
-		culture_group = latin
+		if = {
+			limit = { culture_group = muslim_latin }
+			culture_group = muslim_latin
+		}
+		else = {
+			culture_group = latin
+		}
 		NOT = { primary_culture = venetian }
 		NOT = { primary_culture = ligurian }
 	}

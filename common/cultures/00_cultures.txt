@@ -747,6 +747,181 @@ latin = {
 	}
 }
 
+muslim_latin = {
+	graphical_culture = westerngfx
+	country = { has_galleass = yes }
+	province = { local_has_galleass = yes }
+	muslim_lombard = {
+		dynasty_names = {
+			Visconti Sforza Scarito Odescalchi Beccaria
+			"d'Ivrea" "di Cremona" Zorzi Rossi Mocenigo Maggi
+			Valente Moneta Pallavicini Sfondrati Colleoni Borri
+		}
+	}
+	muslim_ligurian = {
+		dynasty_names = {
+			Fieschi Doria Grimaldi Spinola Gattilusio Giustiniano
+			"di Ventimiglia" "di Campofregoso" Zaccaria Egidio Zoagli Riario
+			"di Ponzone" Adorno
+		}
+	}
+	muslim_venetian = {
+		dynasty_names = {
+			Contarini Cornaro Dandolo Falier Loredan Mocenigo Morosini
+			Ghisi Navigajoso Sanudo Quirino Foscolo Foscarini Barozzi Venier Zeno
+			"dalle Carceri" "di Verona" "della Scala" "di Treviso" "de Candia"
+			"da Romano" Vendramin Tiepolo Crispo Malipiero Orseolo Sommaripa
+			Ziani Condulmer
+		}
+	}
+	muslim_piedmontese = {
+		dynasty_names = {
+			"di Savoia" "di Saluzzo" "di Monferrato" "di Biandrate"
+			Crivelli Mazzetti Avogadro Ferrero
+		}
+	}
+	muslim_emilian = {
+		dynasty_names = {
+			"d'Este" "da Correggio" Pico Gonzaga Malaspina Bentivoglio Cybo
+			"de Bonacolsi" Parentucelli Scannabecchi Caccianemici Gozzadini
+			Pepoli Rangoni Ariosti Rocchi
+		}
+	}
+	muslim_romagnan = {
+		dynasty_names = {
+			"della Rovere" "da Montefeltro" Ordelaffi Guido Traversari
+			"da Polenta" Alidosi Manfredi "di Carpegna" Theodoli
+		}
+	}
+	muslim_tuscan = {
+		dynasty_names = {
+			Appiano "de' Medici" "degli Albizzi" Aldobrandeschi Senni
+			Petrucci Castracani Ludovisi Aldobrandini Borghese Capponi
+			Colonna "de' Bardi" "degli Alberti" "di Lucca" "di Piombino"
+			"di San Bonifazio" Antelminelli Strozzi "degli Ubaldini"
+			Bandinelli Allucingolli Patrizi Concini Borromeo Ricci
+		}
+	}
+	muslim_sardinian = {
+		dynasty_names = {
+			"d'Arborea" "di Gallura" "di Torres" "di Cagliari"
+			"de Cervera" "de Serra" "de Lacon" "de Gunale"
+		}
+	}
+	muslim_corsican = {
+		dynasty_names = {
+			"d'Oristano" "della Rocca" "d'Istria" Paoli Buonaparte Corsu
+			"di Cinarca" "d'Alando" "di Leca" "da Mare" "di Torquati"
+		}
+	}
+	muslim_umbrian = {
+		dynasty_names = {
+			Giannini Tuccimei Serlupi Pietromarchi
+			Baglioni Orsini Borgia Farnese Ruspoli
+			Massimo Fortebraccio Piccolomini Malatesta
+			"da Varano" "de Sanseverino" Crescenzi
+			Monaldeschi "di Castello" "di Conti"
+			Savelli Datti "Naro Montoro" Cenci Mancini
+		}
+	}
+	muslim_neapolitan = {
+		dynasty_names = {
+			Aquavita Caracciolo Carafa Malato Marzano
+			Pignatelli Sersale Tocco Caetani Celano
+			"di Amalfi" "d'Avalos" Sergii "di Morra"
+		}
+	}
+	muslim_sicilian = {
+		dynasty_names = {
+			Alliata Asmundo Chiaramonte Filangieri Lanza Sturzo
+			Lentini Lombardo Melfi Miossi Samon� Sangro Zacco
+			"di Squillache"
+		}
+	}
+	muslim_maltese = {
+		dynasty_names = {
+			Attard Axiaq Axisa Bajjada Boffa Bugeja
+			Calleja Ciantar Curmi Cutajar Decelis
+			Difesa Drago Ebejer Ellul Fiteni Fsadni
+			Grixti Laferla Micallef Mifsud Naudi Psaila
+			Rapa Said Sciriha Xerri Xuereb Zahra Zarb Zerafa
+		}
+	}
+	muslim_nissard = {
+		male_names = {
+			Giraud Daumas Dourgaut Denavis Fernsso Fulconis Falqui Faraud Galli Gaglio Gal Gaudenzi
+			"Giaon Antoine" Groupet Gazille Grinde Grierni Garraccio Gilletta Gibelli Imbert Isoard
+			Jaume Jourdan Joanfroi Laurenti Laugier Limon Lanteri Macario Martinet Moisins Mazenat
+			Massiera Massena Michel Malaussena Millo Malbechi Maraudi Martin Mathieu Nollo Orengo
+			Pons Passeron Pellegrin Passa Peirani Pastour Roux Regis Richier Rich� Rubini Rostan
+			Revel Rous Rostagni Raybaud Revelat Simon Steva Seren Suquet Salamito Tancou Thereze
+			Truqui Thaon Ugo Vallagai Veran Violin Verola
+		}
+		dynasty_names = {
+			"de Ni�a" "d'Aspremonte" "de la Bollena" "de l'Escar�ne" "d'Apricale"
+			"de Levens" "de Chateauneuf" "d'Utelle" "de Luceram" "d'Yvernaz"
+			"de Coaraza" "de Vallecrosin" "de Roccabigliera" "de St Agnes"
+			"de Camporosso" "de Duranus" "de Berra" "de Pigna" "de Tourrete"
+			"du Toet" "de la Roquette" "de Coni" "de Lantosca" "de la Trinit�"
+			"de Sospello" "de Villars" "de Soargio" "de Bendigiun" "de Roquebillere" 
+			"de St �tienne" "de St Martin" "de Breglio" "de Drap" "de la Turbie"
+			"de Valdeblore" "de Clans"
+		}
+	}
+	male_names = {
+		Abbondanzio Abbondio Abelardo Abelino Achille Adalberto Adelfo Adelmio Adelmo Adone 
+		Agapito Agostino Aimone Alamanno Alarico Adriano
+		Albano Alberico Alberto Albino Alboino Alcide Aldobrandino Aleardo Aleramo Alessandro 
+		Alessio Alighiero Alvise Ambrogio Amedeo Anastasio Andrea Angelo
+		Anselmo Antonino Antonio Antoniotto Arcibaldo Arderico Armando Arnolfo 
+		Arsenio Artemio Ascanio Astorre Arrigo Annibale
+		Atenolfo Attilio Augusto Aurelio Ausilio Ausonio Averado Azzo Azzone Baldassarre 
+		Barnaba Bartolomeo Basilio Basil Bassiano Basso Baldovino
+		Battista Beltrano Benedetto Benvenuto Berardo Bernab� Bernardo Berto 
+		Bertoldo Biagio Bonaventura Bonifacio Borso Bruno Bruto Buonconte
+		Buoso Callisto Camillo Candido Cangrande Carlo Cassio Castore Cataldo Catone Cecco 
+		Chiaffredo Chiano Ciro Ciuccio Claudio Clemente Costanzo Cesare
+		Comita Conone Cornelio Corradino Corrado Cosimo Cosma Costante Costantino 
+		Cristoforo Damiano Davide Demetrio Dioniso Dom�nico 
+		Durante Edoardo Elio Emmanuele Ennio Enrico Enzio Enzo Ercole 
+		Ermenegildo Ettore Eugenio Ezio Ezzelino Fabrizio Fausto Federigo
+		Felice Ferdinando Ferruccio Filippo Fiorello Flavio Folco Fortunato 
+		Fosco Francesco Fresco Gabriele Gabrino Gaetano Galasso Galeazzo Eriprando
+		Galeotto Gaspare Gastone Gelasio Gentile Geraldo Gerardo Germano Gerolamo 
+		Gherardo Giacinto Giacomo Gian Gianfranco Gianleone Giano
+		Giberto Gilberto Giolio Giordano Giorgio Giovanni Giulio Giuseppe Goffredo 
+		Gregorio Gualtiero Guarnito Guerrino Guglielmo Guido Guidone
+		Guigliadore Iacopo Igino Innocenzo Ippolito Isnardo Jacopo Lamberto Landolfo 
+		Lanfranco Lattanzio Lazzarino Lazzaro Landone
+		Lealdo Leonardo Leone Leonello Leopoldo Libero Lionello Livio Lodovico Lorenzo Luca Luchino 
+		Lucio Luigi Malacresta Manfredo Manuele
+		Marco Mariano Marino Mario Marsiglio Martino Mastino Matteo 
+		Merigo Michelangelo Michele Napoleone Nazareno Nestore Niccol� Nicola
+		Nino Nolfo Oberto Obizzino Obizzo Oddone Omero Onorio Oreste Orlando Ottavio Ottobono Ottone 
+		Pagano Pancrazio Pandolfo Paolo Pasquale Otto
+		Patrizio Pellegrino Pericle Pietro Pio Prospero Rafaello Raimondo 
+		Ranerio Raniero Riccardo Rinaldo Rizzardo Roberto Rodolfo Rolando
+		Rosso Ruggiero Salinguerra Salvatore Salvestro Sante Sancho Saverio Sciarra Sebastiano 
+		Secondotto Serafino Sergio Sesto Settimio Severino Severo
+		Silvano Silvestro Simone Simonetto Sinibaldo Sinucello Sozzo Spinetto Stefano
+		Taddeo Tedaldo Tedice Teodoro Tibaldo Tiziano Tommaso Lupo
+	}
+	female_names = {
+		Abelina Adalberta Adalgisa Adelaida Adelasia Adelia Adela Adriana Agalina Agnese 
+		Agostina Albina Alda Alessandra Alfonsina Alisia Aloisia
+		Amalia Amelia Ambrosia Anastasia Anna Antonella Antonia Argentina Augusta Aurelia 
+		Ausilia Ausonia Beatrice Benedetta Benilde Berenice Berta Bianca Bona Brunilde Camilla Candida Caracosa Carla Carola 
+		Cecilia Chiara Claudia Clorinda Caterina
+		Clotilde Costanza Cornelia Delinda Dora Edda Elena Eleonora
+		Elisabetta Ermenegilda Eudossia Eugenia Elisa
+		Fausta Felicia Felicita Filippa Filomena Flavia Fiora Fortunata Fosca Francesca 
+		Froizza Giacinta Ginevra Giovanna Giuditta Giulia Giuliana 
+		Giuseppa Ippolita Isabella Joscella Laura Lavinia Leonide Letizia Lidia Livia 
+		Lodovica Lucia Lucinetta Lucrezia Maddalena Marcella 
+		Margherita Maria Mariana Marietta Martina Matilda Micaela Nunzia Paola 
+		Patrizia Renata Ricciarda Silvana Sofia Stefania Tiziana Tomasina Valentina Violante Virginia
+	}
+}
 rhaetic = {
 	graphical_culture = westerngfx
 	ladin = {

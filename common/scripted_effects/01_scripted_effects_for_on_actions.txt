@@ -3367,6 +3367,13 @@ on_adm_development_effect = {
 			add_base_tax = 1
 		}
 	}
+	if = {	#bertus mod
+		limit = { owner = { has_idea = GRE_idea_1 } OR = { has_terrain = mountain has_terrain = hills has_terrain = highlands } }
+		random = {
+			chance = 20 
+			add_base_tax = 1
+		}
+	}
 	if = {
 		limit = { has_building = customs_house }
 		random_list = {
@@ -3477,6 +3484,13 @@ on_dip_development_effect = {
 			add_base_production = 1
 		}
 	}
+	if = {	#bertus mod
+		limit = { owner = { has_idea = GRE_idea_1 } OR = { has_terrain = mountain has_terrain = hills has_terrain = highlands } }
+		random = {
+			chance = 20 
+			add_base_production = 1
+		}
+	}
 	if = {
 		limit = { has_building = customs_house }
 		random_list = {
@@ -3560,6 +3574,13 @@ on_mil_development_effect = {
 		}
 		random = { 
 			chance = 33 
+			add_base_manpower = 1
+		}
+	}
+	if = {	#bertus mod
+		limit = { owner = { has_idea = GRE_idea_1 } OR = { has_terrain = mountain has_terrain = hills has_terrain = highlands } }
+		random = {
+			chance = 20 
 			add_base_manpower = 1
 		}
 	}

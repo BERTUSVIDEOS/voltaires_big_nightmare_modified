@@ -8,6 +8,7 @@ vn_sic_missions_slot_1 = {
     generic = no
     ai = yes
     potential = {
+        NOT = { religion_group = muslim }
         OR = {
             AND = {
                 tag = SIC
@@ -296,6 +297,7 @@ vn_sic_missions_slot_2 = {
     generic = no
     ai = yes
     potential = {
+        NOT = { religion_group = muslim }
         OR = {
             AND = {
                 tag = SIC
@@ -736,6 +738,7 @@ vn_sic_missions_slot_3 = {
     generic = no
     ai = yes
     potential = {
+        NOT = { religion_group = muslim }
         OR = {
             AND = {
                 tag = SIC
@@ -1135,6 +1138,7 @@ vn_sic_missions_slot_4 = {
     generic = no
     ai = yes
     potential = {
+        NOT = { religion_group = muslim }
         OR = {
             AND = {
                 tag = SIC
@@ -1879,6 +1883,7 @@ vn_sic_missions_slot_5 = {
     generic = no
     ai = yes
     potential = {
+        NOT = { religion_group = muslim }
         OR = {
             AND = {
                 tag = SIC

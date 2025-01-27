@@ -1,0 +1,25 @@
+TO DO
+	- nerf PAL ideas
+	- Estate privilege Noble Levies
+		- manpower/tax 11/22/33 land share +-22/44/66%→22/33/44%
+	- Moravian ideas
+		- trade goods 10%→7.5%
+		- build cost -15%→-7.5% 
+		- production efficiency 10%→7.5% 
+
+- 2024-new
+	- Independent cities 
+		- modifier liberty desire 0→100
+		- gets removed once vassalized
+	- hre princes threshold 180→100
+	- hre authority per prince 0.075→0.025
+	- fixed some mission using non existant CB
+	- added some trade goods to some monopolies
+	- monthly War Goal score 0.666→1.0 (7.5→5 years)
+	- bufed latin empire ideas
+	- fixed franconia formable requirements
+	- fixed dalmatian formable and ideas
+	- removed colonial regions 
+	- added bohemian formable and bufed ideas
+	- added trade companies on africa (alexandria, tunis, algiers, fez, safi, sahara oases)
+	- fixed trade node/company provinces on mixed areas and/or not matching trade node/company in several nodes/ trade copmanies (ragusa/beograd/budapest, szeged/pressburg/wien/praha, sofia/varna, polots/vilna, some others maybe)

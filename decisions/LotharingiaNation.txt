@@ -26,12 +26,12 @@ country_decisions = {
 		provinces_to_highlight = {
 			OR = {
 				AND = {
-					superregion = lotharingia_region
+					region = lotharingia_region
 					root = {
 						NOT = {
-							development_in_provinces = {
+							development_in_provinces = { 	#development requirement since small region
 								value = 1500
-								superregion = lotharingia_region
+								region = lotharingia_region
 							}
 						}
 					}
@@ -46,9 +46,9 @@ country_decisions = {
 			is_at_war = no
 			is_free_or_tributary_trigger = yes	
 			NOT = { exists = LOT }
-			development_in_provinces = {
+			development_in_provinces = { 	#development requirement since small region
 				value = 1500
-				superregion = lotharingia_region
+				region = lotharingia_region
 			}
 		}
 		effect = {

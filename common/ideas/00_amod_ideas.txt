@@ -3703,47 +3703,6 @@ WDS_ideas = {
     }
 }
 
-LEM_ideas = {
-	start = {
-		missionaries = 1
-		blockade_efficiency = 0.33
-	}
-
-	bonus = {
-		core_creation = -0.1
-	}
-
-	trigger = {
-		tag = LAE
-	}
-	free = yes
-
-	LEM_idea_1 = {
-		land_morale = 0.1
-        curia_powers_cost = -0.1
-	}
-	LEM_idea_2 = {
-		diplomatic_reputation = 1
-	}
-	LEM_idea_3 = {
-		tolerance_heathen = 2
-	}
-	LEM_idea_4 = {
-		spy_offence = 0.1
-		improve_relation_modifier = 0.25
-	}
-	LEM_idea_5 = {
-		diplomatic_annexation_cost = -0.15
-	}
-	LEM_idea_6 = {
-		galley_power = 0.2
-	}
-	LEM_idea_7 = {
-        papal_influence = 1
-        church_loyalty_modifier = 0.05
-	}
-}
-
 BSL_ideas = {
     start = {
         advisor_pool = 1
@@ -4196,7 +4155,7 @@ DIE_ideas = {
 
     die_idea_1 = {
         great_project_upgrade_cost = -0.1
-	tolerance_own = 2
+	    tolerance_own = 2
     }
     die_idea_2 = {
         manpower_recovery_speed = 0.15
@@ -5573,50 +5532,52 @@ SMB_ideas = {
     }
 }
 
-AQT_ideas = {
+AQT_ideas = {   #bertus mod
     start = {
-        land_attrition = -0.20  #-0.10→-0.20
-        advisor_cost = -0.25    #Changed to advisor cost
-    }
-    bonus = {
-        fire_damage = 0.20  #0.10→0.20
+        land_attrition = -0.20
+        advisor_cost = -0.25
     }
     trigger = {
         tag = AQT
     }
     free = yes
     AQT_idea_1 = {
-        prestige_from_land = 0.5
-        army_tradition_from_battle = 0.50   #0→0.50
+        naval_tradition_from_trade = 0.50
+        leader_naval_shock = 1
+        max_admiral_shock = 1
     }
     AQT_idea_2 = {
+        army_tradition_from_battle = 0.50
         leader_land_shock = 1
-	max_general_shock = 1
-        leader_land_fire = 1
+	    max_general_shock = 1
     }
     AQT_idea_3 = {
-        defensiveness = 0.33    #0.20→0.33
-        garrison_size = 0.33    #0→0.33
-        fort_maintenance_modifier = -0.33   #0→-0.33
+        defensiveness = 0.33
+        garrison_size = 0.33
+        fort_maintenance_modifier = -0.33
     }
     AQT_idea_4 = {
-        manpower_recovery_speed = 0.15
-        reinforce_speed = 0.30  #0→0.30
+        land_morale = 0.10
+        manpower_recovery_speed = 0.20
+        reinforce_speed = 0.30
     }
     AQT_idea_5 = {
-        prestige = 0.5
-        land_morale = 0.10  #0→0.10
-        recover_army_morale_speed = 0.10    #0→0.10
+        naval_forcelimit_modifier = 0.20
+        allowed_marine_fraction = 0.20
+        shock_damage_received = -0.10
     }
     AQT_idea_6 = {
-        development_cost = -0.15    #0→-0.15
-        tolerance_heretic = 4   #2→4
-        tolerance_of_heretics_capacity = 3  #0→3
+        development_cost = -0.15
+        tolerance_heretic = 4
+        tolerance_of_heretics_capacity = 3
     }
     AQT_idea_7 = {
-        global_trade_power = 0.10
-	idea_cost = -0.15
-        embargo_efficiency = 0.25   #0→0.25
+        global_own_trade_power = 0.15
+	    idea_cost = -0.15
+        embargo_efficiency = 0.25
+    }
+    bonus = {
+        shock_damage = 0.20
     }
 }
 
@@ -14489,7 +14450,7 @@ TCK_ideas = {
     free = yes
 
     TCK_idea_1 = {
-	global_trade_goods_size_modifier = 0.1
+	    global_trade_goods_size_modifier = 0.1
     }
     TCK_idea_2 = {
      	shock_damage_received = -0.1
@@ -14501,15 +14462,57 @@ TCK_ideas = {
        advisor_pool = 1
     }
     TCK_idea_5 = {
-	global_foreign_trade_power = 0.1
+	    global_foreign_trade_power = 0.1
     }
     TCK_idea_6 = {
-	female_advisor_chance = 0.1
-	spy_offence = 0.2
+        female_advisor_chance = 0.1
+        spy_offence = 0.2
     }
     TCK_idea_7 = {
-	global_missionary_strength = 0.01
-	monthly_fervor_increase = 0.25
-	church_power_modifier = 0.1
+        global_missionary_strength = 0.01
+        monthly_fervor_increase = 0.25
+        church_power_modifier = 0.1
+    }
+}
+
+GRE_ideas = {   #bertus mod
+    trigger = {
+        tag = GRE
+    }
+    free = yes
+    start = {
+        shock_damage_received = -0.20
+        shock_damage = 0.20
+    }
+    GRE_idea_1 = {
+		#burhger mountain development privilege
+        #extra dev chance on mountains/hills/highlands  20%
+        centralize_state_cost = -0.20
+    }
+    GRE_idea_2 = {
+        global_defender_dice_roll_bonus = 2
+        own_coast_naval_combat_bonus = 2
+    }
+    GRE_idea_3 = {
+        idea_cost = -0.15
+        advisor_cost = -0.15
+    }
+    GRE_idea_4 = {
+        global_allowed_num_of_buildings = 1
+    }
+    GRE_idea_5 = {
+        army_tradition_from_battle = 0.50
+        naval_tradition_from_battle = 0.50
+    }
+    GRE_idea_6 = {
+		landing_penalty = -2 	#0→-2
+		regiment_disembark_speed = 0.50 	#0→0.50
+    }
+    GRE_idea_7 = {
+        max_general_shock = 1
+        max_admiral_shock = 1
+    }
+    bonus = {
+        global_trade_power = 0.33
     }
 }

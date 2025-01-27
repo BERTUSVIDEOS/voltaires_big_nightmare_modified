@@ -651,7 +651,11 @@ estate_church_monopoly_of_wine = {
 			has_country_flag = buffed_monopolies
 		}
 		any_owned_province = {
-			trade_goods = wine
+			OR = {
+				trade_goods = wine
+				trade_goods = beer 	#bertus mod
+				trade_goods = spirits 	#bertus mod
+			}
 		}
 	}
 	can_select = {
@@ -676,14 +680,22 @@ estate_church_monopoly_of_wine = {
 	on_granted = {
 		if = {
 			limit = {
-				wine = 1
+				OR = {
+					wine = 1
+					beer = 1 	#bertus mod
+					spirits = 1 	#bertus mod
+				}
 			}
 			add_mercantilism = 1
 		}
 		add_years_of_owned_provinces_production_income = {
 			years = 8
 			trigger = {
-				trade_goods = wine
+				OR = {
+					trade_goods = wine
+					trade_goods = beer 	#bertus mod
+					trade_goods = spirits 	#bertus mod
+				}
 			}
 			custom_tooltip = MONOPOLY_INCOME_WINE_DESC
 		}
@@ -692,7 +704,11 @@ estate_church_monopoly_of_wine = {
 	on_granted_province = {
 		if = {
 			limit = {
-				trade_goods = wine
+				OR = {
+					trade_goods = wine
+					trade_goods = beer 	#bertus mod
+					trade_goods = spirits 	#bertus mod
+				}
 			}
 			add_province_modifier = {
 				name = estate_church_monopoly_of_wine_mod

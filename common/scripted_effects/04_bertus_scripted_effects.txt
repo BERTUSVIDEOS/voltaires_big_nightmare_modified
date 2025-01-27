@@ -186,6 +186,7 @@ on_action_culture_promotion_effect = {
 		limit = {
 			OR = {
 				culture_group = latin
+				culture_group = muslim_latin
 				culture_group = byzantine
 			}
 		}

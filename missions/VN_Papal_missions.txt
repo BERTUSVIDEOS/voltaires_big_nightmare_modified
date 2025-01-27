@@ -684,16 +684,21 @@ vn_pap_missions_slot_2 = {
         required_missions = {  }
         trigger = {
             OR = {
-				current_age = age_of_discovery
-                current_age = age_of_reformation
+				#current_age = age_of_discovery   #BERTUS MOD
+                #current_age = age_of_reformation   #BERTUS MOD
                 current_age = age_of_absolutism
                 current_age = age_of_revolutions
                 custom_trigger_tooltip = {
                     tooltip = vn_pap_council_of_clermont.tt
                     OR = {
                         any_country = {
-                            is_in_war = {
-                                casus_belli = cb_grand_crusade
+                            OR = {
+                                is_in_war = {
+                                    casus_belli = cb_crusade   #BERTUS MOD
+                                }
+                                is_in_war = {
+                                    casus_belli = cb_grand_crusade
+                                }
                             }
                             ROOT = {
                                 war_score_against = {
@@ -703,8 +708,13 @@ vn_pap_missions_slot_2 = {
                             }
                         }
                         any_country = {
-                            is_in_war = {
-                                casus_belli = cb_grand_heretic
+                            OR = {
+                                is_in_war = {
+                                    casus_belli = cb_heretic   #BERTUS MOD
+                                }
+                                is_in_war = {
+                                    casus_belli = cb_grand_heretic
+                                }
                             }
                             ROOT = {
                                 war_score_against = {
@@ -727,6 +737,12 @@ vn_pap_missions_slot_2 = {
                         religion = catholic
                         NOT = { war_with = ROOT }
                         OR = {
+                            is_in_war = {
+                                casus_belli = cb_crusade   #BERTUS MOD
+                            }
+                            is_in_war = {
+                                casus_belli = cb_heretic   #BERTUS MOD
+                            }
                             is_in_war = {
                                 casus_belli = cb_grand_crusade
                             }

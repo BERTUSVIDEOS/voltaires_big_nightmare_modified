@@ -3510,7 +3510,7 @@ country_event = {
 		tag = BYZ
 		exists = TUR
 		TUR = { ai = yes }
-		has_estate_privilege = estate_church_union_of_the_churches
+		has_estate_privilege = estate_church_union_of_the_churches 	#bertus mod - privilege isnt added
 		is_in_war = {
 			defender_leader = root
 			attacker_leader = TUR

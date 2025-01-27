@@ -552,12 +552,20 @@ vn_ven_missions_slot_2 = {
         required_missions = {  }
         trigger = {
             OR = {
-                is_in_war = {
-                    casus_belli = cb_grand_crusade
+                OR = {
+                    is_in_war = {
+                        casus_belli = cb_crusade   #BERTUS MOD
+                    }
+                    is_in_war = {
+                        casus_belli = cb_heretic   #BERTUS MOD
+                    }
+                    is_in_war = {
+                        casus_belli = cb_grand_crusade
+                    }
+                    is_in_war = {
+                        casus_belli = cb_grand_heretic
+                    }
                 }
-                is_in_war = {
-                    casus_belli = cb_grand_heretic
-                }  
             }
         }
         effect = {

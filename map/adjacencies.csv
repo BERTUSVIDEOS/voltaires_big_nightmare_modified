@@ -505,8 +505,8 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;Comment
 112;2103;sea;1627;-1;-1;-1;-1;venice
 4688;142;sea;;-1;-1;-1;-1;dover strait
 136;1167;sea;1395;-1;-1;-1;-1;jersey island
-761;4626;sea;1342;-1;-1;-1;-1;gibraltar strait
-2920;4625;sea;1342;-1;-1;-1;-1;gibraltar strait
+761;4626;sea;;-1;-1;-1;-1;gibraltar strait
+2920;4625;sea;;-1;-1;-1;-1;gibraltar strait
 5113;5111;sea;6880;-1;-1;-1;-1;canary islands
 5110;5111;sea;6880;-1;-1;-1;-1;canary islands
 5110;5109;sea;6880;-1;-1;-1;-1;canary islands

@@ -1246,15 +1246,33 @@ bologna_university = {
 	on_built = { }
 	on_destroyed = { }
 	build_trigger = {
-		culture_group = latin
+		if = {
+			limit = { culture_group = muslim_latin }
+			culture_group = muslim_latin
+		}
+		else = {
+			culture_group = latin
+		}
 		province_is_or_accepts_culture = yes
 	}
 	can_use_modifiers_trigger = {
-		culture_group = latin
+		if = {
+			limit = { culture_group = muslim_latin }
+			culture_group = muslim_latin
+		}
+		else = {
+			culture_group = latin
+		}
 		province_is_or_accepts_culture = yes
 	}
 	can_upgrade_trigger = {
-		culture_group = latin
+		if = {
+			limit = { owner = { culture_group = muslim_latin } }
+			culture_group = muslim_latin
+		}
+		else = {
+			culture_group = latin
+		}
 		province_is_or_accepts_culture = yes
 	}
 	keep_trigger = { }

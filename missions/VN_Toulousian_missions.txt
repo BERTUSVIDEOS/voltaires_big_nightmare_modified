@@ -1351,8 +1351,13 @@ vn_tou_missions_slot_5 = {
 		icon = mission_crusade
 		required_missions = { vn_tou_crusading_army }
 		trigger = {
-			is_in_war = {
-				casus_belli = cb_grand_crusade
+			OR = {
+				is_in_war = {
+					casus_belli = cb_crusade   #BERTUS MOD
+				}
+				is_in_war = {
+					casus_belli = cb_grand_crusade
+				}
 			}
 		}
 		effect = {

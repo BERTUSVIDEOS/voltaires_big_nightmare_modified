@@ -633,7 +633,7 @@ historical_friend = PIE
 }
 1437.1.1 = { religion = catholique }
 1444.11.12 = {	#bertus mod
-	religion = catholi
+	religion = catholic
 	every_owned_province = {
 		add_local_autonomy = -10
 	}

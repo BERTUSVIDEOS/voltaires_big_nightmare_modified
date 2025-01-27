@@ -440,7 +440,13 @@ estate_nobles_monopoly_of_metals = {
 			OR = {
 				trade_goods = iron
 				trade_goods = copper
-				trade_goods = silver
+				trade_goods = gold 	#bertus mod
+				trade_goods = zinc 	#bertus mod
+				trade_goods = mercury 	#bertus mod
+				trade_goods = minerals 	#bertus mod
+				trade_goods = tin 	#bertus mod
+				trade_goods = plumbum 	#bertus mod
+				trade_goods = steel 	#bertus mod
 			}
 		}
 	}
@@ -469,7 +475,13 @@ estate_nobles_monopoly_of_metals = {
 				OR = {
 					iron = 1
 					copper = 1
-					silver = 1
+					gold = 1 	#bertus mod
+					zinc = 1 	#bertus mod
+					mercury = 1 	#bertus mod
+					minerals = 1 	#bertus mod
+					tin = 1 	#bertus mod
+					plumbum = 1 	#bertus mod
+					steel = 1 	#bertus mod
 				}
 			}
 			add_mercantilism = 1
@@ -480,7 +492,13 @@ estate_nobles_monopoly_of_metals = {
 				OR = {
 					trade_goods = iron
 					trade_goods = copper
-					trade_goods = silver
+					trade_goods = gold 	#bertus mod
+					trade_goods = zinc 	#bertus mod
+					trade_goods = mercury 	#bertus mod
+					trade_goods = minerals 	#bertus mod
+					trade_goods = tin 	#bertus mod
+					trade_goods = plumbum 	#bertus mod
+					trade_goods = steel 	#bertus mod
 				}
 			}
 			custom_tooltip = MONOPOLY_INCOME_IRON_AND_COPPER_DESC
@@ -493,7 +511,13 @@ estate_nobles_monopoly_of_metals = {
 				OR = {
 					trade_goods = iron
 					trade_goods = copper
-					trade_goods = silver
+					trade_goods = gold 	#bertus mod
+					trade_goods = zinc 	#bertus mod
+					trade_goods = mercury 	#bertus mod
+					trade_goods = minerals 	#bertus mod
+					trade_goods = tin 	#bertus mod
+					trade_goods = plumbum 	#bertus mod
+					trade_goods = steel 	#bertus mod
 				}
 			}
 			add_province_modifier = {

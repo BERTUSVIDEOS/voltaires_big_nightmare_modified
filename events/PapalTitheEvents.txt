@@ -565,6 +565,10 @@ country_event = {
 					attacker_leader = THIS
 					casus_belli = cb_grand_heretic
 				}
+				is_in_war = {
+					attacker_leader = THIS
+					casus_belli = cb_heretic   #BERTUS MOD
+				}
 			}
 			religion = catholic
 			NOT = { tag = PAP }
@@ -596,6 +600,10 @@ country_event = {
 							attacker_leader = THIS
 							casus_belli = cb_grand_heretic
 						}
+						is_in_war = {
+							attacker_leader = THIS
+							casus_belli = cb_heretic   #BERTUS MOD
+						}
 					}
 					religion = catholic
 					NOT = { tag = PAP }
@@ -624,6 +632,11 @@ country_event = {
 								attacker_leader = PREV
 								defender_leader = THIS
 								casus_belli = cb_grand_heretic
+							}
+							is_in_war = {
+								attacker_leader = PREV
+								defender_leader = THIS
+								casus_belli = cb_heretic   #BERTUS MOD
 							}
 						}
 					}

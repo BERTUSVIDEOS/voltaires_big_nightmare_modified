@@ -1685,7 +1685,7 @@ VEN_ideas = {
 DAL_ideas = {
 	start = {
 		trade_efficiency = 0.15
-		land_morale = 0.1
+		land_morale = 0.10
 	}
 	
 	bonus = {
@@ -1703,10 +1703,13 @@ DAL_ideas = {
 		global_unrest = -1
 	}
 	DAL_principalities = {
-		global_foreign_trade_power = 0.15
+		#unlocks burghers coastal rights #betus mod
+		#global_foreign_trade_power = 0.15 	#0.15→0
+		global_own_trade_power = 0.33 	#0→0.33
 	}
 	DAL_language = {
 		num_accepted_cultures = 2
+		sailors_recovery_speed = 0.20 	#0→0.20
 	}
 	DAL_art_and_lit = {
 		global_institution_spread = 0.1
@@ -1714,12 +1717,15 @@ DAL_ideas = {
 	}
 	DAL_independent_army = {
 		infantry_power = 0.15
+		allowed_marine_fraction = 0.20 	#0→0.20
 	}
 	DAL_arsenal = {
+		galley_hullsize = 0.20 	#0→0.20
 		naval_forcelimit_modifier = 0.25
 	}
 	DAL_illyria = {
 		core_creation = -0.15
+		expand_infrastructure_cost_modifier = -0.25 	#0→-0.25
 	}
 }
 
@@ -2933,8 +2939,9 @@ KOR_ideas = {
 
 BOH_ideas = {
 	start = {
-		imperial_authority = 0.10
-		advisor_cost = -0.1
+		#imperial_authority = 0.10 	#0.10→0
+		advisor_cost = -0.10
+		shock_damage_received = -0.10 	#-0.05→-0.10
 	}
 	
 	bonus = {
@@ -2948,29 +2955,38 @@ BOH_ideas = {
 	
 	compacta_of_prague = {
 		tolerance_heretic = 3
+		papal_influence = 2 	#0→2
+		monthly_fervor_increase = 1	#0.25→1
+		church_power_modifier = 0.25	#0.1→0.25
+		monthly_piety_accelerator = 0.002	#0→0.002
 	}
 	boh_elective_monarchy = {
 		legitimacy = 1
 		devotion = 1
 		republican_tradition = 0.3
-		meritocracy = 1	#For completion's sake
+		meritocracy = 1
 		horde_unity = 1
 	}
 	wagenburg = {
 		infantry_power = 0.10
-		shock_damage_received = -0.05
+		infantry_fire = 0.20 	#0→0.20
 	}
 	letter_of_majesty = {
 		global_unrest = -1
+		development_cost = -0.10 	#0→-0.10
 	}
 	hussite_legacy = {
-		technology_cost = -0.1
+		technology_cost = -0.075 	#-0.10→-0.075
+		warscore_cost_vs_other_religion = -0.10 	#0→-0.10
 	}
 	kutnohorian_deal = {
 		stability_cost_modifier = -0.10
+		build_cost = -0.10 	#0→-0.10
 	}
 	czech_nationalism = {
-		same_culture_advisor_cost = -0.25
+		#same_culture_advisor_cost = -0.25 	#-0.25→0
+		trade_goods_size_modifier = 0.10 	#0→0.10
+		production_efficiency = 0.10 	#0→0.10
 	}
 }
 
@@ -16286,11 +16302,11 @@ EPI_ideas = {
 LAE_ideas = {
 	start = {
         discipline = 0.05
-        global_heretic_missionary_strength = 0.03
+		shock_damage = 0.20	#0→0.20
 	}
 	
 	bonus = {
-		missionaries = 1
+		morale_damage = 0.15 	#0→0.15
 	}
 	
 	trigger = {
@@ -16304,29 +16320,35 @@ LAE_ideas = {
 		republican_tradition = 0.3
 		meritocracy = 1
 		horde_unity = 1
-        vassal_forcelimit_bonus = 1
+        vassal_forcelimit_bonus = 1.0
+		vassal_manpower_bonus = 1.0 	#0→1.0
     }
     lae_latin_patriarch = {
+        global_heretic_missionary_strength = 0.03
+		missionaries = 1
         papal_influence = 2
         curia_powers_cost = -0.1
     }
     lae_byzantine_bureaucracy = {
-        advisor_cost = -0.1
-        stability_cost_modifier = -0.1
+        advisor_cost = -0.10
+        stability_cost_modifier = -0.10
     }
     lae_guilds_pera = {
-        global_trade_power = 0.1
-        galley_power = 0.1
+		burghers_loyalty_modifier = 0.10 	#0→0.10
+		burghers_influence_modifier = 0.10 	#0→0.10
+        global_trade_power = 0.10
+        galley_power = 0.10
     }
     epi_latin_knights = {
         #cavalry_power = 0.15 same as Epirus
     }
     lae_partitio_graeci = {
-        warscore_cost_vs_other_religion = -0.1
+        warscore_cost_vs_other_religion = -0.10
         unjustified_demands = -0.25
     }
     lae_frankokratia = {
-        diplomatic_reputation = 1
+        diplomatic_reputation = 3 	#1→3
+		tolerance_own = 3 	#0→3
         manpower_in_true_faith_provinces = 0.15
     }
 }

@@ -281,7 +281,7 @@ country_decisions = {
 					}
 					root = {
 						NOT = {
-							num_of_owned_provinces_with = {
+							development_in_provinces = {
 								value = 500
 								OR = {
 									area = nassau_area
@@ -307,7 +307,7 @@ country_decisions = {
 			is_at_war = no
 			is_nomad = no
 			owns_core_province = 2523 #wurzburg
-			num_of_owned_provinces_with = {
+			development_in_provinces = {
 				value = 500
 				OR = {
 					area = nassau_area
@@ -1632,11 +1632,11 @@ country_decisions = {
 				primary_culture = gascon
 				primary_culture = auvergnat
 				primary_culture = limousin
+				primary_culture = poitevin
 			}
 			NOT = { tag = FRA }
-			NOT = { tag = KNI }
-			was_never_end_game_tag_trigger = yes
 			NOT = { exists = AQT }
+			was_never_end_game_tag_trigger = yes
 		}
 		provinces_to_highlight = {
 			OR = {
@@ -1646,7 +1646,7 @@ country_decisions = {
 					root = {
 						NOT = {
 							development_in_provinces = {
-								value = 500
+								value = 1500
 								region = aquitaine_region
 							}
 						}
@@ -1660,12 +1660,9 @@ country_decisions = {
 		}
 		allow = {
 			is_at_war = no
-			is_nomad = no
-			NOT = { exists = AQT }
-			government = monarchy
 			owns_core_province = 2324		# Bordeaux
-			development_in_provinces = {
-				value = 750
+			development_in_provinces = { 	#development requirement since small region
+				value = 1500
 				region = aquitaine_region
 			}
 		}
@@ -1677,6 +1674,13 @@ country_decisions = {
 			remove_non_electors_emperors_from_empire_effect = yes
 			if = {
 				limit = {
+					NOT = { government = monarchy }
+				}
+				change_government = monarchy
+				add_government_reform = feudalism_reform
+			}
+			if = {
+				limit = {
 					NOT = { government_rank = 5 }
 				}
 				set_government_rank = 5
@@ -1685,7 +1689,7 @@ country_decisions = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
-				add_permanent_claim = AQT
+				add_permanent_claim = ROOT
 			}
 			add_country_modifier = {
 				name = "centralization_modifier"
@@ -1695,7 +1699,7 @@ country_decisions = {
 				limit = { has_custom_ideas = no NOT = { has_idea_group = AQT_ideas }}
 				country_event = { id = ideagroups.1 } #Swap Ideas
 			}
-			add_prestige = 20
+			add_prestige = 25
 		}
 		ai_will_do = {
 			factor = 1
@@ -2426,17 +2430,29 @@ country_decisions = {
 		}
 		provinces_to_highlight = {
 			OR = {
-				province_id = 137
-				province_id = 1083
-				province_id = 507
-				province_id = 1804
+				province_id = 507 #split
 				AND = {
-					province_id = 2421
-					ROOT = { NOT = { owns_core_province = 2418 } }
-				}
-				AND = {
-					province_id = 2418
-					ROOT = { NOT = { owns_core_province = 2421 } }
+					OR = {
+						area = dalmatia_area
+						area = split_area
+						area = senj_area
+						area = ragusa_area
+						area = south_hum_area
+					}
+					root = {
+						NOT = {
+							development_in_provinces = {
+								value = 500
+								OR = {
+									area = dalmatia_area
+									area = split_area
+									area = senj_area
+									area = ragusa_area
+									area = south_hum_area
+								}
+							}
+						}
+					}
 				}
 			}
 			OR = {
@@ -2448,25 +2464,36 @@ country_decisions = {
 			adm_tech = 10
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
-			is_nomad = no
 			NOT = { exists = DLM }
-			owns_core_province = 137 #dubrovnik
-			owns_core_province = 1083 #zadar
 			owns_core_province = 507 #split
-			owns_core_province = 1804 #poljicka
-			OR = {
-				owns_core_province = 2421 #brac
-				owns_core_province = 2418 #krk
+			development_in_provinces = {
+				value = 500
+				OR = {
+					area = dalmatia_area
+					area = split_area
+					area = senj_area
+					area = ragusa_area
+					area = south_hum_area
+				}
 			}
 		}
 		effect = {
 			change_tag = DLM
 			on_change_tag_effect = yes
 			hidden_effect = { restore_country_name = yes }
-			remove_non_electors_emperors_from_empire_effect = yes
 			add_country_modifier = {
 				name = "centralization_modifier"
 				duration = 7300
+			}
+			if = {
+				limit = {
+					NOT = { government_rank = 3 }
+				}
+				set_government_rank = 3
+			}
+			if = {
+				limit = { has_custom_ideas = no NOT = { has_idea_group = IFQ_ideas }}
+				country_event = { id = ideagroups.1 } #Swap Ideas
 			}
 			add_prestige = 10
 		}
@@ -3561,10 +3588,8 @@ country_decisions = {
 		allow = {
 			adm_tech = 10
 			is_free_or_tributary_trigger = yes
-			is_nomad = no
 			is_at_war = no
-			NOT = { exists = PIE }
-			owns_core_province = 1009 #Turin
+			1009 = { owned_by = ROOT is_state = yes }	#Turin
 			development_in_provinces = {
 				value = 500
 				OR = {
@@ -3654,10 +3679,9 @@ country_decisions = {
 		}
 		allow = {
 			is_free_or_tributary_trigger = yes
-			is_nomad = no
 			is_at_war = no
 			NOT = { exists = BRI }
-			owns_core_province = 2173	#Nantes
+			2173 = { owned_by = ROOT is_state = yes }	#Nantes
 			development_in_provinces = {
 				value = 300
 				OR = {
@@ -3715,29 +3739,41 @@ country_decisions = {
 			}
 			NOT = { government = republic }
 			NOT = { has_reform = celestial_empire }
-			OR = {
-				owns = 2233
-				AND = {
-					ai = no
-					OR = {
-						tag = KNI
-						tag = NAP
-						tag = SIC
-						tag = TEU
-						tag = LIV
-					}
-				}
-			}
-			OR = {
-				NOT = { is_year = 1600 }
-				has_country_flag = can_form_latin_empire_later_too
-			}
 		}
 		provinces_to_highlight = {
 			OR = {
 				province_id = 2233 #Constantinople
-				province_id = 573 #Adrianople
-				province_id = 2398 #Thessaloniki
+				AND = {
+					OR = {
+						area = thrace_area
+						area = sozopol_area
+						area = hellespont_area
+						area = traianople_area
+						area = optimaton_area
+						area = nikaia_area
+						area = troas_area
+						area = mysia_area
+						area = zagore_area
+					}
+					root = {
+						NOT = {
+							development_in_provinces = {
+								value = 500
+								OR = {
+									area = thrace_area
+									area = sozopol_area
+									area = hellespont_area
+									area = traianople_area
+									area = optimaton_area
+									area = nikaia_area
+									area = troas_area
+									area = mysia_area
+									area = zagore_area
+								}
+							}
+						}
+					}
+				}
 			}
 			OR = {
 				NOT = { owned_by = ROOT }
@@ -3745,45 +3781,29 @@ country_decisions = {
 			}
 		}
 		allow = {
+			is_free_or_tributary_trigger = yes
 			is_at_war = no
-			owns_core_province = 2233 #Constantinople
-			owns_core_province = 573 #Adrianople
-			owns_core_province = 2398 #Thessaloniki
-			2233 = { is_state = yes }
+			2233 = { owned_by = ROOT is_state = yes }	#Constantinople
+			development_in_provinces = {
+				value = 500
+				OR = {
+					area = thrace_area
+					area = sozopol_area
+					area = hellespont_area
+					area = traianople_area
+					area = optimaton_area
+					area = nikaia_area
+					area = troas_area
+					area = mysia_area
+					area = zagore_area
+				}
+			}
 		}
 		effect = {
-			add_prestige = 25
-			if = {
-				limit = {
-					NOT = { tag = KNI }
-					NOT = { tag = NAP }
-					NOT = { tag = SIC }
-					NOT = { tag = TEU }
-					NOT = { tag = LIV }
-					NOT = { capital_scope = { superregion = balkans_superregion } }
-				}
-				release = LAE
-				LAE = { define_ruler = { culture = ROOT } }
-			}
-			if = {
-				limit = {
-					OR = {
-						tag = KNI
-						tag = NAP
-						tag = SIC
-						tag = TEU
-						tag = LIV
-						capital_scope = { superregion = balkans_superregion }
-					}
-				}
-				change_tag = LAE
-				on_change_tag_effect = yes
-				change_primary_culture = outremer
-				if = {
-					limit = { has_custom_ideas = no }
-					country_event = { id = ideagroups.1 }
-				}
-			}
+			change_tag = LAE
+			hidden_effect = { restore_country_name = yes }
+			on_change_tag_effect = yes
+			set_capital = 2233 #Constantinople
 			2233 = {
 				if = {
 					limit = { ROOT = { religion = catholic } }
@@ -3793,29 +3813,29 @@ country_decisions = {
 					change_religion = catholique
 				}
 			}
-			LAE = {
-				hidden_effect = { restore_country_name = yes }
-				set_capital = 2233 #Constantinople
-				if = {
-					limit = { ROOT = { religion = catholic } }
-					change_religion = catholic
-				}
-				else = {
-					change_religion = catholique
-				}
-				if = {
-					limit = { NOT = { government = monarchy } }
-					change_government = monarchy
-					add_government_reform = feudalism_reform
-				}
-				if = {
-					limit = {
-						NOT = { government_rank = 6 }
-					}
-					set_government_rank = 6
-				}
-				set_country_flag = formed_latin_empire
+			if = {
+				limit = { NOT = { government = monarchy } }
+				change_government = monarchy
+				add_government_reform = feudalism_reform
 			}
+			if = {
+				limit = {
+					NOT = { government_rank = 6 }
+				}
+				set_government_rank = 6
+			}
+			every_province = {
+				limit = {
+					owned_by = BYZ
+				}
+				add_permanent_claim = ROOT
+			}
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 }
+			}
+			set_country_flag = formed_latin_empire
+			add_prestige = 25
 		}
 		ai_will_do = {
 			factor = 1

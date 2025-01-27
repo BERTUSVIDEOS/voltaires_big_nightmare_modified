@@ -3431,6 +3431,7 @@ on_adm_development_effect = {
 			owner = {
 				OR = {
 					has_idea = italian_tax_reform
+					has_idea = english_common_law
 					has_idea = phanariote_taxes
 				}
 			}
@@ -4124,6 +4125,10 @@ on_seize_land_effect = {
 }
 
 on_heir_disinherited_or_death_effect = {
+	if = { 	#bertus mod
+		limit = { has_idea = the_many_thrones }
+		add_prestige = 15
+	}
 	if = {
 		limit = { has_country_flag = heir_dip_education }
 		clr_country_flag = heir_dip_education

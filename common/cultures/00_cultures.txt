@@ -748,7 +748,7 @@ latin = {
 }
 
 muslim_latin = {
-	graphical_culture = westerngfx
+	graphical_culture = muslimgfx
 	country = { has_galleass = yes }
 	province = { local_has_galleass = yes }
 	muslim_lombard = {

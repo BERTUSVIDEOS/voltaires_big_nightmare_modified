@@ -1,6 +1,6 @@
 
 
 
-lotharingia_region= {
+british_isles_region = {
 	cede_province = ROOT
 }

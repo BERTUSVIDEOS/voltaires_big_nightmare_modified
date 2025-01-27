@@ -3,6 +3,7 @@ english_french_act_of_union = {
 	category = 4
 
 	allow = {
+		adm_tech = 10
 		has_government_attribute = english_parliament
 		has_not_enacted_parliament_action = {
 			parliament_action = english_french_act_of_union
@@ -11,29 +12,18 @@ english_french_act_of_union = {
 			issue = english_french_act_of_union
 		}
 		is_free_or_tributary_trigger = yes
-		is_nomad = no
 		is_at_war = no
-		OR = {
-			AND = {
-				owns_core_province = 237		# Oxfordshire
-				owns_core_province = 234		# Wessex
-				owns_core_province = 236		# London
-				owns_core_province = 177		# Maine
-				owns_core_province = 183		# Paris
-				owns_core_province = 178		# Anjou
-				178 = {							# Anjou
-					is_state = yes
-				}
+		num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+			OR = {
+				region = france_region      #114 main france
+				region = aquitaine_region      #90 aquitaine france
 			}
-			AND = {
-				OR = {
-					FRA = {	junior_union_with = ENG	}
-					FRA = {	is_subject_of = ENG	}
-				}
-				FRA = { NOT = { num_of_cities = 40 } }
-			}
+			value = 102		#	 102/204
 		}
-		adm_tech = 10
+		num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+			region = british_isles_region
+			value = 62		#	 62/125 britain region
+		}
 	}
 	
 	effect = {
@@ -46,7 +36,6 @@ english_french_act_of_union = {
 					exists = yes
 					ai = yes
 					is_subject_of = ROOT
-					NOT = { num_of_cities = 40 }
 				}
 			}
 			tooltip = {
@@ -94,9 +83,9 @@ english_french_act_of_union = {
 			remove_non_electors_emperors_from_empire_effect = yes
 			if = {
 				limit = {
-					NOT = { government_rank = 2 }
+					NOT = { government_rank = 5 }
 				}
-				set_government_rank = 2
+				set_government_rank = 5
 			}
 			if = {
 				limit = { 

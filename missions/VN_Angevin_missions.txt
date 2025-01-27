@@ -387,22 +387,40 @@ vn_anj_missions_slot_2_a = {
         icon = mission_the_angevin_age
         required_missions = { vn_anj_prepare_for_invasion }
         provinces_to_highlight = {
-            OR = {
-                area = wessex_area
-                area = devon_area
-                area = somerset_area
-				area = norwich_area
-				area = middlesex_area
-				area = sussex_area
-				area = west_midlands_area
-				area = cheshire_area
-				area = lincoln_area
-                area = east_riding_area
-                area = west_riding_area
-                area = cumberland_area
-                area = northumberland_area
-            }
-            NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			AND = {
+                OR = {
+                    region = france_region
+                    region = aquitaine_region
+                }
+				root = {
+					NOT = {
+						num_of_owned_provinces_with = {
+							is_core = ROOT
+							OR = {
+                                region = france_region      #114 main france
+                                region = aquitaine_region      #90 aquitaine france
+                            }
+							value = 102		#	 102/204
+						}
+					}
+				}
+			}
+			AND = {
+				region = british_isles_region
+				root = {
+					NOT = {
+						num_of_owned_provinces_with = {
+							is_core = ROOT
+							region = british_isles_region
+							value = 62		#	 62/125 britain region
+						}
+					}
+				}
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
         }
         trigger = {
             is_subject = no
@@ -424,139 +442,37 @@ vn_anj_missions_slot_2_a = {
                     is_subject_of = ROOT
                 }
             }
-			wessex_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			devon_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			somerset_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			norwich_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			middlesex_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			sussex_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			west_midlands_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			cheshire_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			lincoln_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			east_riding_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			west_riding_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			cumberland_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			northumberland_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
+            num_of_owned_provinces_with = {
+                is_core = ROOT
+                OR = {
+                    region = france_region      #114 main france
+                    region = aquitaine_region      #90 aquitaine france
+                }
+                value = 102		#	 102/204
+            }
+            num_of_owned_provinces_with = {
+                is_core = ROOT
+                region = british_isles_region
+                value = 62		#	 62/125 britain region
+            }
         }
         effect = {
             country_event = { id = vn_flavor_aqt.1 }
-			bearn_area = {
+			france_region = {
                 limit = {
                     NOT = { is_core = ROOT }
                     NOT = { is_permanent_claim = ROOT }
                 }
                 add_permanent_claim = ROOT
             }
-			labourd_area = {
+			aquitaine_region = {
                 limit = {
                     NOT = { is_core = ROOT }
                     NOT = { is_permanent_claim = ROOT }
                 }
                 add_permanent_claim = ROOT
             }
-			armagnac_area = {
-                limit = {
-                    NOT = { is_core = ROOT }
-                    NOT = { is_permanent_claim = ROOT }
-                }
-                add_permanent_claim = ROOT
-            }
-            raozhon_area = {
-                limit = {
-                    NOT = { is_core = ROOT }
-                    NOT = { is_permanent_claim = ROOT }
-                }
-                add_permanent_claim = ROOT
-            }
-            nantes_area = {
-                limit = {
-                    NOT = { is_core = ROOT }
-                    NOT = { is_permanent_claim = ROOT }
-                }
-                add_permanent_claim = ROOT
-            }
-            finistere_area = {
-                limit = {
-                    NOT = { is_core = ROOT }
-                    NOT = { is_permanent_claim = ROOT }
-                }
-                add_permanent_claim = ROOT
-            }
-            auvergne_area = {
-                limit = {
-                    NOT = { is_core = ROOT }
-                    NOT = { is_permanent_claim = ROOT }
-                }
-                add_permanent_claim = ROOT
-            }
-            viviers_area = {
-                limit = {
-                    NOT = { is_core = ROOT }
-                    NOT = { is_permanent_claim = ROOT }
-                }
-                add_permanent_claim = ROOT
-            }
-            rodez_area = {
-                limit = {
-                    NOT = { is_core = ROOT }
-                    NOT = { is_permanent_claim = ROOT }
-                }
-                add_permanent_claim = ROOT
-            }
-            montlaur_area = {
-                limit = {
-                    NOT = { is_core = ROOT }
-                    NOT = { is_permanent_claim = ROOT }
-                }
-                add_permanent_claim = ROOT
-            }
-            perigord_area = {
-                limit = {
-                    NOT = { is_core = ROOT }
-                    NOT = { is_permanent_claim = ROOT }
-                }
-                add_permanent_claim = ROOT
-            }
-            cahors_area = {
+			british_isles_region = {
                 limit = {
                     NOT = { is_core = ROOT }
                     NOT = { is_permanent_claim = ROOT }

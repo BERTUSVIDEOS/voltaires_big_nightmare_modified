@@ -235,14 +235,14 @@ GBR_ideas = {	#bertus mod
 
 AVE_ideas = {
 	start = {
-		global_manpower_modifier = 0.2
-		land_morale = 0.15	#0→0.15
+		global_manpower_modifier = 0.33 	#0.20→0.33
+		land_morale = 0.20	#0→0.20
 		#improve_relation_modifier = 0.3	#0.3→0
 	}
 
 	bonus = {
 		#years_of_nationalism = -5	#-5→0
-		discipline = 0.05
+		ship_durability = 0.20 	#0→0.20
 	}
 	
 	trigger = {
@@ -256,21 +256,24 @@ AVE_ideas = {
 		governing_cost = -0.10	#0→-0.10
 	}
 	english_common_law = {
+		#33% extra tax on deving
 		global_tax_modifier = 0.20	#0.15→0.20
 		num_of_parliament_issues = 1
 	}
 	the_many_thrones = {
 		#years_to_integrate_personal_union = -10	#-10→0
-		heir_chance = 0.5	#0.50→0
+		#prestige on disinherit 15 	#0→15
+		heir_chance = 0.50	#0.50→0
 		global_trade_goods_size_modifier = 0.20	#0→0.20
 	}
 	reformed_angevin_infantry = {
-		infantry_power = 0.15	#0.1→0.15
+		discipline = 0.05
+		infantry_power = 0.20	#0.1→0.20
 		drill_gain_modifier = 0.50	#0→0.50
 	}
 	seneschal_of_france = {
-		technology_cost = -0.05	#0→-0.05
-		idea_cost = -0.05	#0→-0.05
+		technology_cost = -0.10	#0→-0.10
+		idea_cost = -0.10	#0→-0.10
 	}
 	rule_of_the_plantagenet = {
 		max_absolutism_effect = 0.20	#0→0.20
@@ -283,8 +286,8 @@ AVE_ideas = {
 	}
 	lessons_of_the_anglo_french_wars = {
 		shock_damage_received = -0.10	#0→-0.10
-		army_tradition = 0.50	#0→0.50
-		navy_tradition = 0.50	#0→0.50
+		army_tradition = 1.0	#0→1.0
+		navy_tradition = 1.0	#0→1.0
 	}
 }
 

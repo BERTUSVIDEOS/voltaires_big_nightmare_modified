@@ -384,53 +384,93 @@ country_decisions = {
 			}
 		}
 		allow = {
+			adm_tech = 10
 			has_issue_unlocked_tooltip = {
 				issue = english_french_act_of_union
 			}
 			has_active_debate = no
 			is_free_or_tributary_trigger = yes
-			is_nomad = no
 			is_at_war = no
-			OR = {
-				AND = {
-					owns_core_province = 986		# Oxfordshire
-					owns_core_province = 722		# Wessex
-					owns_core_province = 2268		# London
-					owns_core_province = 2177		# Maine
-					owns_core_province = 548		# Paris
-					owns_core_province = 1289		# Anjou
-					1289 = {							# Anjou
-						is_state = yes
-					}
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				OR = {
+					region = france_region      #114 main france
+					region = aquitaine_region      #90 aquitaine france
 				}
-				AND = {
-					OR = {
-						FRA = {	junior_union_with = ROOT }
-						FRA = {	is_subject_of = ROOT }
-					}
-					FRA = { NOT = { num_of_cities = 80 } }
-				}
+				value = 102		#	 102/204
+			}
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				region = british_isles_region
+				value = 62		#	 62/125 britain region
 			}
 		}
 		effect = {
 			start_debate = english_french_act_of_union
 			custom_tooltip = DEBATE_EFFECT_TT
-			tooltip = {
-				if = {
-					limit = {
-						FRA = {
-							exists = yes
-							ai = yes
-							is_subject_of = ROOT
-							NOT = { num_of_cities = 80 }
+			if = {
+				limit = {
+					FRA = {
+						exists = yes
+						ai = yes
+						is_subject_of = ROOT
+					}
+				}
+				tooltip = {
+					inherit = FRA
+				}
+				custom_tooltip = english_french_act_of_union_ct
+				hidden_effect = {
+					FRA = {
+						every_subject_country = {
+							limit = {
+								capital_scope = {
+									superregion = french_superregion
+								}
+								NOT = { num_of_cities = 5 }
+							}
+							FRA = {
+								inherit = PREV
+							}
 						}
 					}
 					inherit = FRA
-					custom_tooltip = english_french_act_of_union_ct
 				}
-				change_tag = AVE
-				add_prestige = 25
 			}
+			change_tag = AVE
+			hidden_effect = {
+				on_change_tag_effect = yes
+				if = {
+					limit = {
+						OR = {
+							NOT = { has_country_flag = ave_theocracy_name }
+							NOT = { has_country_flag = ave_republic_name }
+							NOT = { has_country_flag = ave_state_name }
+							NOT = { has_country_flag = ave_empire_name }
+						}
+					}
+					restore_country_name = yes
+				}
+				if = {
+					limit = {
+						has_country_modifier = ave_anglo_french_imperium
+					}
+					country_event = { id = flavor_gbr.20 }	#Renew renaming
+				}
+				remove_non_electors_emperors_from_empire_effect = yes
+				if = {
+					limit = {
+						NOT = { government_rank = 5 }
+					}
+					set_government_rank = 5
+				}
+				if = {
+					limit = { 
+						has_custom_ideas = no
+						NOT = { has_idea_group = AVE_ideas }
+					}
+					country_event = { id = ideagroups.1 } #Swap Ideas
+				}
+			}
+			add_prestige = 25
 		}
 		ai_will_do = {
 			factor = 1

@@ -829,7 +829,7 @@ lowlands_superregion_polders = {
 	local_development_cost = -0.35
 }
 estate_burghers_coastline_rights_coastline = {
-	local_development_cost = -0.20
+	local_development_cost = -0.10
 }
 sic_religious_muslim_war_mission = {
 	warscore_cost_vs_other_religion = -0.1

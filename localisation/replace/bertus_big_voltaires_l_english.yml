@@ -20,7 +20,7 @@
  DAL_principalities_desc:0 "We exercise very loose control over our principalities, and as such the governmental practices across the Dalmatian coast are varied and highly practiced. By expanding the rulership of the Principalities to all of Dalmatia's overseas holdings, we shall be secure in the knowledge that our subjects will dutifully pass their goods and wealth back home to the heart of Dalmatia.\nEnable the [Root.GetBurghersName] privilege '§YCoastal Rights§!'"
  estate_burghers_coastline_rights:0 "Coastal Rights"
  estate_burghers_coastline_rights_desc:0 "The management of coasts has always been a topic the remote villages worry about. Through allowing the [Root.GetBurghersName] taking a more direct control over the rights of coasts we can ensure a fair and efficient management of those."
- estate_burghers_coastline_rights_gt:0 "Reduce the Development Cost caused by Terrain type of every owned §YCoastal§! province by §G80.0%§!."
+ estate_burghers_coastline_rights_gt:0 "Reduce the Development Cost caused by Terrain type of every owned §YCoastal§! province by §G66.6%§!."
  estate_burghers_coastline_rights_coastline:0 "Improved Watering"
  desc_estate_burghers_coastline_rights_coastline:0 "This province sees great improvements to access to water due to the interference of the local Burghers."
  estate_burghers_coastline_rights_rt:0 "Remove the Development Cost Reduction of every owned §YCoastline§! province."

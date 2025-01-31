@@ -4584,6 +4584,10 @@ on_province_owner_change = {
 	events = {
 		flavor_tur.207	#Victory over the Knights
 	}
+	add_province_modifier = {
+		name = PR_new_conquest_fort_delay_modifier
+		duration = 182
+	}
 	on_province_owner_change_government_effect = yes	
 	if = {
 		limit = {

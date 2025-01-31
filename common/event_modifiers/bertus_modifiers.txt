@@ -887,3 +887,4 @@ sic_conquer_lombardy_mission = {
 	missionaries = 1
 	global_trade_goods_size_modifier = 0.10
 }
+PR_new_conquest_fort_delay_modifier = {}

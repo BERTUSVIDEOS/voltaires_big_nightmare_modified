@@ -8,6 +8,7 @@ TO DO
 		- production efficiency 10%→7.5% 
 
 - 2024-new
+	- Fort rules implemented ingame
 	- Independent cities 
 		- modifier liberty desire 0→100
 		- gets removed once vassalized
@@ -19,6 +20,7 @@ TO DO
 	- bufed latin empire ideas
 	- fixed franconia formable requirements
 	- fixed dalmatian formable and ideas
+	- fixed luneburg primary culture lower saxon→eastphalian
 	- bufed angevin ideas
 	- removed colonial regions 
 	- added bohemian formable and bufed ideas

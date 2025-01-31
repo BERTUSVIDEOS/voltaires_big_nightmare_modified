@@ -34,6 +34,84 @@ fort_14th = {
 		fort_level = 1
 	}
 
+	build_trigger = {
+		OR = {
+			is_capital = yes
+			NOT = {
+				ROOT = {
+					any_neighbor_province = {
+						owner = {
+							tag = ROOT
+						}
+						OR = {
+							has_building = fort_14th
+							has_construction = fort_14th
+							has_building = fort_15th
+							has_construction = fort_15th
+							has_building = fort_16th
+							has_construction = fort_16th
+							has_building = fort_17th
+							has_construction = fort_17th
+							has_building = fort_18th
+							has_construction = fort_18th
+						}
+						NOT = { is_capital = yes }
+					}
+				}
+			}
+		}
+	}	
+	keep_trigger = {
+		OR = {
+			has_province_modifier = PR_new_conquest_fort_delay_modifier
+			is_capital = yes
+			
+			NOT = {
+				ROOT = {
+					any_neighbor_province = {
+						owner = {
+							tag = ROOT
+						}
+						OR = {
+							has_building = fort_14th
+							has_construction = fort_14th
+							has_building = fort_15th
+							has_construction = fort_15th
+							has_building = fort_16th
+							has_construction = fort_16th
+							has_building = fort_17th
+							has_construction = fort_17th
+							has_building = fort_18th
+							has_construction = fort_18th
+						}
+						NOT = { is_capital = yes }
+					}
+				}	
+			}
+			NOT = {
+				ROOT = {
+					any_neighbor_province = {
+						owner = {
+							tag = ROOT
+						}
+						OR = {
+							has_building = fort_14th
+							has_construction = fort_14th
+							has_building = fort_15th
+							has_construction = fort_15th
+							has_building = fort_16th
+							has_construction = fort_16th
+							has_building = fort_17th
+							has_construction = fort_17th
+							has_building = fort_18th
+							has_construction = fort_18th
+						}
+						NOT = { has_province_modifier = PR_new_conquest_fort_delay_modifier }
+					}
+				}
+			}
+		}
+	}	
 	# THIS = Province, FROM = Builder(not nessecairly owner, can be overlord)
 	on_built = {
 		if = {
@@ -783,6 +861,84 @@ fort_15th = {
 		fort_level = 2
 	}
 
+	build_trigger = {
+		OR = {
+			is_capital = yes
+			NOT = {
+				ROOT = {
+					any_neighbor_province = {
+						owner = {
+							tag = ROOT
+						}
+						OR = {
+							has_building = fort_14th
+							has_construction = fort_14th
+							has_building = fort_15th
+							has_construction = fort_15th
+							has_building = fort_16th
+							has_construction = fort_16th
+							has_building = fort_17th
+							has_construction = fort_17th
+							has_building = fort_18th
+							has_construction = fort_18th
+						}
+						NOT = { is_capital = yes }
+					}
+				}
+			}
+		}
+	}	
+	keep_trigger = {
+		OR = {
+			has_province_modifier = PR_new_conquest_fort_delay_modifier
+			is_capital = yes
+			
+			NOT = {
+				ROOT = {
+					any_neighbor_province = {
+						owner = {
+							tag = ROOT
+						}
+						OR = {
+							has_building = fort_14th
+							has_construction = fort_14th
+							has_building = fort_15th
+							has_construction = fort_15th
+							has_building = fort_16th
+							has_construction = fort_16th
+							has_building = fort_17th
+							has_construction = fort_17th
+							has_building = fort_18th
+							has_construction = fort_18th
+						}
+						NOT = { is_capital = yes }
+					}
+				}	
+			}
+			NOT = {
+				ROOT = {
+					any_neighbor_province = {
+						owner = {
+							tag = ROOT
+						}
+						OR = {
+							has_building = fort_14th
+							has_construction = fort_14th
+							has_building = fort_15th
+							has_construction = fort_15th
+							has_building = fort_16th
+							has_construction = fort_16th
+							has_building = fort_17th
+							has_construction = fort_17th
+							has_building = fort_18th
+							has_construction = fort_18th
+						}
+						NOT = { has_province_modifier = PR_new_conquest_fort_delay_modifier }
+					}
+				}
+			}
+		}
+	}	
 	# THIS = Province, FROM = Builder(not nessecairly owner, can be overlord)
 	on_built = {
 		if = {
@@ -1135,6 +1291,84 @@ fort_16th = {
 		fort_level = 4
 	}
 
+	build_trigger = {
+		OR = {
+			is_capital = yes
+			NOT = {
+				ROOT = {
+					any_neighbor_province = {
+						owner = {
+							tag = ROOT
+						}
+						OR = {
+							has_building = fort_14th
+							has_construction = fort_14th
+							has_building = fort_15th
+							has_construction = fort_15th
+							has_building = fort_16th
+							has_construction = fort_16th
+							has_building = fort_17th
+							has_construction = fort_17th
+							has_building = fort_18th
+							has_construction = fort_18th
+						}
+						NOT = { is_capital = yes }
+					}
+				}
+			}
+		}
+	}	
+	keep_trigger = {
+		OR = {
+			has_province_modifier = PR_new_conquest_fort_delay_modifier
+			is_capital = yes
+			
+			NOT = {
+				ROOT = {
+					any_neighbor_province = {
+						owner = {
+							tag = ROOT
+						}
+						OR = {
+							has_building = fort_14th
+							has_construction = fort_14th
+							has_building = fort_15th
+							has_construction = fort_15th
+							has_building = fort_16th
+							has_construction = fort_16th
+							has_building = fort_17th
+							has_construction = fort_17th
+							has_building = fort_18th
+							has_construction = fort_18th
+						}
+						NOT = { is_capital = yes }
+					}
+				}	
+			}
+			NOT = {
+				ROOT = {
+					any_neighbor_province = {
+						owner = {
+							tag = ROOT
+						}
+						OR = {
+							has_building = fort_14th
+							has_construction = fort_14th
+							has_building = fort_15th
+							has_construction = fort_15th
+							has_building = fort_16th
+							has_construction = fort_16th
+							has_building = fort_17th
+							has_construction = fort_17th
+							has_building = fort_18th
+							has_construction = fort_18th
+						}
+						NOT = { has_province_modifier = PR_new_conquest_fort_delay_modifier }
+					}
+				}
+			}
+		}
+	}	
 	# THIS = Province, FROM = Builder(not nessecairly owner, can be overlord)
 	on_built = {
 		if = {
@@ -1607,6 +1841,84 @@ fort_17th = {
 
 	make_obsolete = fort_16th
 
+	build_trigger = {
+		OR = {
+			is_capital = yes
+			NOT = {
+				ROOT = {
+					any_neighbor_province = {
+						owner = {
+							tag = ROOT
+						}
+						OR = {
+							has_building = fort_14th
+							has_construction = fort_14th
+							has_building = fort_15th
+							has_construction = fort_15th
+							has_building = fort_16th
+							has_construction = fort_16th
+							has_building = fort_17th
+							has_construction = fort_17th
+							has_building = fort_18th
+							has_construction = fort_18th
+						}
+						NOT = { is_capital = yes }
+					}
+				}
+			}
+		}
+	}	
+	keep_trigger = {
+		OR = {
+			has_province_modifier = PR_new_conquest_fort_delay_modifier
+			is_capital = yes
+			
+			NOT = {
+				ROOT = {
+					any_neighbor_province = {
+						owner = {
+							tag = ROOT
+						}
+						OR = {
+							has_building = fort_14th
+							has_construction = fort_14th
+							has_building = fort_15th
+							has_construction = fort_15th
+							has_building = fort_16th
+							has_construction = fort_16th
+							has_building = fort_17th
+							has_construction = fort_17th
+							has_building = fort_18th
+							has_construction = fort_18th
+						}
+						NOT = { is_capital = yes }
+					}
+				}	
+			}
+			NOT = {
+				ROOT = {
+					any_neighbor_province = {
+						owner = {
+							tag = ROOT
+						}
+						OR = {
+							has_building = fort_14th
+							has_construction = fort_14th
+							has_building = fort_15th
+							has_construction = fort_15th
+							has_building = fort_16th
+							has_construction = fort_16th
+							has_building = fort_17th
+							has_construction = fort_17th
+							has_building = fort_18th
+							has_construction = fort_18th
+						}
+						NOT = { has_province_modifier = PR_new_conquest_fort_delay_modifier }
+					}
+				}
+			}
+		}
+	}	
 	modifier = {
 		fort_level = 6
 	}
@@ -2005,6 +2317,84 @@ fort_18th = {
 
 	make_obsolete = fort_17th
 
+	build_trigger = {
+		OR = {
+			is_capital = yes
+			NOT = {
+				ROOT = {
+					any_neighbor_province = {
+						owner = {
+							tag = ROOT
+						}
+						OR = {
+							has_building = fort_14th
+							has_construction = fort_14th
+							has_building = fort_15th
+							has_construction = fort_15th
+							has_building = fort_16th
+							has_construction = fort_16th
+							has_building = fort_17th
+							has_construction = fort_17th
+							has_building = fort_18th
+							has_construction = fort_18th
+						}
+						NOT = { is_capital = yes }
+					}
+				}
+			}
+		}
+	}	
+	keep_trigger = {
+		OR = {
+			has_province_modifier = PR_new_conquest_fort_delay_modifier
+			is_capital = yes
+			
+			NOT = {
+				ROOT = {
+					any_neighbor_province = {
+						owner = {
+							tag = ROOT
+						}
+						OR = {
+							has_building = fort_14th
+							has_construction = fort_14th
+							has_building = fort_15th
+							has_construction = fort_15th
+							has_building = fort_16th
+							has_construction = fort_16th
+							has_building = fort_17th
+							has_construction = fort_17th
+							has_building = fort_18th
+							has_construction = fort_18th
+						}
+						NOT = { is_capital = yes }
+					}
+				}	
+			}
+			NOT = {
+				ROOT = {
+					any_neighbor_province = {
+						owner = {
+							tag = ROOT
+						}
+						OR = {
+							has_building = fort_14th
+							has_construction = fort_14th
+							has_building = fort_15th
+							has_construction = fort_15th
+							has_building = fort_16th
+							has_construction = fort_16th
+							has_building = fort_17th
+							has_construction = fort_17th
+							has_building = fort_18th
+							has_construction = fort_18th
+						}
+						NOT = { has_province_modifier = PR_new_conquest_fort_delay_modifier }
+					}
+				}
+			}
+		}
+	}	
 	modifier = {
 		fort_level = 8
 	}

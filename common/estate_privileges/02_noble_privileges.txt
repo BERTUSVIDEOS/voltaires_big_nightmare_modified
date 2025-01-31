@@ -1116,6 +1116,7 @@ estate_nobles_statesman_servitude = {
 	can_select = {
 	}
 	on_granted = {
+		custom_tooltip = "Revoked After Cooldown"
 		estate_action = {
 			estate_action = RECRUIT_MINISTER_NOBLES
 		}
@@ -1206,6 +1207,7 @@ estate_nobles_diet_right = {
 		has_dlc = "Domination"
 	}
 	on_granted = {
+		custom_tooltip = "Revoked After Cooldown"
 		estate_action = {
 			estate_action = CALL_DIET_NOBLES
 		}
@@ -1238,6 +1240,7 @@ estate_nobles_force_conscription = {
 		has_dlc = "Domination"
 	}
 	on_granted = {
+		custom_tooltip = "Revoked After Cooldown"
 		estate_action = {
 			estate_action = DEMAND_MORE_TROOPS_NOBLES
 		}
@@ -1264,6 +1267,7 @@ estate_nobles_noble_officer_right = {
 		has_dlc = "Domination"
 	}
 	on_granted = {
+		custom_tooltip = "Revoked After Cooldown"
 		estate_action = {
 			estate_action = GRANT_GENERALSHIP_NOBLES
 		}

@@ -589,14 +589,11 @@ country_decisions = {
 			}
 		}
 		effect = {
-			1758 = {
+			2230 = {
 				move_capital_effect = yes
 			}
 			change_tag = HAN
 			restore_country_name_effect = yes
-			1758 = {
-				add_base_tax = 1
-			}
 			add_country_modifier = {
 				name = "centralization_modifier"
 				duration = 7300

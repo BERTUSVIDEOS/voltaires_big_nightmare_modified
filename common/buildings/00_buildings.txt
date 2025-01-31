@@ -2479,9 +2479,6 @@ fort_18th = {
 manufactory = {
 	cost = 500
 	time = 60
-	build_trigger = {
-		development = 10
-	}
 	modifier = {
 		trade_goods_size = 1.0
 	}
@@ -2490,6 +2487,9 @@ manufactory = {
 #If trade good assignment changes, also update scripted trigger "has_manufactory trigger"!
 
 wharf = {
+	build_trigger = {
+		development = 10
+	}
 	manufactory = {
 		fish
 		whales
@@ -2562,6 +2562,9 @@ wharf = {
 }
 
 weapons = {
+	build_trigger = {
+		development = 10
+	}
 	manufactory = {
 		iron
 		copper
@@ -2607,6 +2610,9 @@ weapons = {
 }
 
 textile = {
+	build_trigger = {
+		development = 10
+	}
 	manufactory = {
 		silk
 		cloth
@@ -2652,6 +2658,9 @@ textile = {
 }
 
 plantations = {
+	build_trigger = {
+		development = 10
+	}
 	manufactory = {
 		sugar
 		tobacco
@@ -2697,6 +2706,9 @@ plantations = {
 }
 
 tradecompany = {
+	build_trigger = {
+		development = 10
+	}
 	manufactory = {
 		gems
 		glass
@@ -2742,6 +2754,9 @@ tradecompany = {
 }
 
 farm_estate = {
+	build_trigger = {
+		development = 10
+	}
 	manufactory = {
 		horses
 		livestock
@@ -2802,6 +2817,9 @@ farm_estate = {
 }
 
 mills = {
+	build_trigger = {
+		development = 10
+	}
 	manufactory = {
 		grain
 		barley
@@ -2847,6 +2865,9 @@ mills = {
 }
 
 furnace = {
+	build_trigger = {
+		development = 10
+	}
 	manufactory = {
 		coal
 		steel
@@ -2957,6 +2978,9 @@ ramparts = {
 }
 
 soldier_households = {
+	build_trigger = {
+		development = 10
+	}
 	manufactory = {
 		all
 	}
@@ -3029,6 +3053,9 @@ soldier_households = {
 }
 
 impressment_offices = {	#bertus mod
+	build_trigger = {
+		development = 10
+	}
 	manufactory = {
 		all
 	}
@@ -3098,6 +3125,9 @@ impressment_offices = {	#bertus mod
 }
 
 state_house = {
+	build_trigger = {
+		development = 10
+	}
 	manufactory = {
 		all
 	}

@@ -7,7 +7,8 @@ TO DO
 		- build cost -15%→-7.5% 
 		- production efficiency 10%→7.5% 
 
-- 2024-new
+- 2025-new
+- 2025-01-31
 	- Fort rules implemented ingame
 	- Independent cities 
 		- modifier liberty desire 0→100

@@ -791,7 +791,7 @@ wartburg = {
 		cost_to_upgrade = { factor = 1000 }
 		province_modifiers = {
 			local_defensiveness = 0.10
-			locla_garrison_size = 0.10
+			local_garrison_size = 0.10
 		}
 		area_modifier = {
 			local_manpower_modifier = 0.25
@@ -805,7 +805,7 @@ wartburg = {
 		cost_to_upgrade = { factor = 2500 }
 		province_modifiers = {
 			local_defensiveness = 0.20
-			locla_garrison_size = 0.20
+			local_garrison_size = 0.20
 		}
 		area_modifier = {
 			local_manpower_modifier = 0.50
@@ -820,7 +820,7 @@ wartburg = {
 		cost_to_upgrade = { factor = 5000 }
 		province_modifiers = {
 			local_defensiveness = 0.40
-			locla_garrison_size = 0.40
+			local_garrison_size = 0.40
 		}
 		area_modifier = {
 			local_manpower_modifier = 1.0
@@ -3023,7 +3023,7 @@ hohenzollern_castle = {
 		cost_to_upgrade = { factor = 1000 }
 		province_modifiers = {
 			local_defensiveness = 0.10
-			local_garrison_sige = 0.10
+			local_garrison_size = 0.10
 		}
 		area_modifier = {
 		}
@@ -3039,7 +3039,7 @@ hohenzollern_castle = {
 		cost_to_upgrade = { factor = 2500 }
 		province_modifiers = {
 			local_defensiveness = 0.20
-			local_garrison_sige = 0.20
+			local_garrison_size = 0.20
 			local_defender_dice_roll_bonus = 1
 		}
 		area_modifier = {
@@ -3056,7 +3056,7 @@ hohenzollern_castle = {
 		cost_to_upgrade = { factor = 5000 }
 		province_modifiers = {
 			local_defensiveness = 0.30
-			local_garrison_sige = 0.30
+			local_garrison_size = 0.30
 			local_defender_dice_roll_bonus = 2
 		}
 		area_modifier = {
@@ -3386,7 +3386,7 @@ stahleck_castle = {
 		cost_to_upgrade = { factor = 1000 }
 		province_modifiers = {
 			local_defensiveness = 0.10
-			local_garrison_sige = 0.10
+			local_garrison_size = 0.10
 		}
 		area_modifier = {			
 		}
@@ -3402,7 +3402,7 @@ stahleck_castle = {
 		cost_to_upgrade = { factor = 2500 }
 		province_modifiers = {
 			local_defensiveness = 0.20
-			local_garrison_sige = 0.20
+			local_garrison_size = 0.20
 		}
 		area_modifier = {
 
@@ -3420,7 +3420,7 @@ stahleck_castle = {
 		cost_to_upgrade = { factor = 5000 }
 		province_modifiers = {
 			local_defensiveness = 0.40
-			local_garrison_sige = 0.40
+			local_garrison_size = 0.40
 		}
 		area_modifier = {
 		}

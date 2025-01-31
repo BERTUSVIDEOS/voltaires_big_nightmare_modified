@@ -1186,7 +1186,7 @@ ambras_castle = {
 		cost_to_upgrade = { factor = 1000 }
 		province_modifiers = {
 			local_defensiveness = 0.10
-			local_garrison_sige = 0.10
+			local_garrison_size = 0.10
 		}
 
 		area_modifier = {}
@@ -1212,7 +1212,7 @@ ambras_castle = {
 
 		area_modifier = {
 			local_defensiveness = 0.10
-			local_garrison_sige = 0.10
+			local_garrison_size = 0.10
 		}
 
 		country_modifiers = {
@@ -1236,7 +1236,7 @@ ambras_castle = {
 
 		area_modifier = {
 			local_defensiveness = 0.20
-			local_garrison_sige = 0.20
+			local_garrison_size = 0.20
 		}
 
 		country_modifiers = {

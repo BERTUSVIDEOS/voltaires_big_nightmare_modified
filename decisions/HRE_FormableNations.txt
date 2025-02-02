@@ -348,7 +348,7 @@ country_decisions = {
 					}
 					root = {
 						NOT = {
-							num_of_owned_provinces_with = {
+							development_in_provinces = {
 								value = 500
 								OR = {
 									area = ulm_area

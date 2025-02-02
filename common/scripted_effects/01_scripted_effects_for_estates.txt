@@ -6456,7 +6456,7 @@ estate_action_RECRUIT_TREASURER_JEWS = {
 					skill = 2
 					religion = jewish
 					culture = PREV
-					cost_multiplier = 0.25
+					cost_multiplier = 0.33
 				}
 			}
 		}
@@ -6472,7 +6472,7 @@ estate_action_RECRUIT_TREASURER_JEWS = {
 					skill = 2
 					religion = jewish
 					culture = PREV
-					cost_multiplier = 0.25
+					cost_multiplier = 0.33
 				}
 			}
 		}
@@ -6500,7 +6500,7 @@ estate_action_RECRUIT_MINISTER_JEWS = {
 					skill = 2
 					religion = jewish
 					culture = PREV
-					cost_multiplier = 0.25
+					cost_multiplier = 0.33
 				}
 			}
 		}
@@ -6516,7 +6516,7 @@ estate_action_RECRUIT_MINISTER_JEWS = {
 					skill = 2
 					religion = jewish
 					culture = PREV
-					cost_multiplier = 0.25
+					cost_multiplier = 0.33
 				}
 			}
 		}
@@ -6544,7 +6544,7 @@ estate_action_RECRUIT_FORT_MASTER_JEWS = {
 					skill = 2
 					religion = jewish
 					culture = PREV
-					cost_multiplier = 0.25
+					cost_multiplier = 0.33
 				}
 			}
 		}
@@ -6560,7 +6560,7 @@ estate_action_RECRUIT_FORT_MASTER_JEWS = {
 					skill = 2
 					religion = jewish
 					culture = PREV
-					cost_multiplier = 0.25
+					cost_multiplier = 0.33
 				}
 			}
 		}

@@ -26,29 +26,80 @@ country_decisions = {
 		}
 		provinces_to_highlight = {
 			OR = {
-				province_id = 448
-				province_id = 2061
-				province_id = 5660
-				province_id = 5685
-				province_id = 5647
-				province_id = 676
-			}
-			OR = {
-				NOT = { owned_by = ROOT }
-				NOT = { is_core = ROOT }
+				province_id = 5685 	#dambovita
+				AND = {
+					OR = {
+						area = buzau_area
+						area = dobruja_area
+						area = ilfov_area
+						area = teleorman_area
+						area = dambovita_area
+						area = oltenia_area
+						area = severin_area
+						area = kukullo_area
+						area = haromszek_area
+						area = hunyad_area
+						area = torda_area
+						area = silistra_area
+						area = tarnovo_area
+						area = vidin_area
+					}
+					root = {
+						NOT = {
+							num_of_owned_provinces_with = {
+								is_core = ROOT
+								OR = {
+									area = buzau_area
+									area = dobruja_area
+									area = ilfov_area
+									area = teleorman_area
+									area = dambovita_area
+									area = oltenia_area
+									area = severin_area
+									area = kukullo_area
+									area = haromszek_area
+									area = hunyad_area
+									area = torda_area
+									area = silistra_area
+									area = tarnovo_area
+									area = vidin_area
+								}
+								value = 82		#	 82/125 south germany region
+							}
+						}
+					}
+				}
+				OR = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
 			}
 		}
 		allow = {
 			is_free_or_tributary_trigger = yes
-			is_nomad = no
 			is_at_war = no
 			adm_tech = 10
-			owns_core_province = 448	# Transylvania
-			owns_core_province = 2061	# Silistria
-			owns_core_province = 5660	# Oltenia
-			owns_core_province = 5685	# Wallachia
-			owns_core_province = 5647	# Bessarabia
-			owns_core_province = 676	# Budjak
+			owns_core_province = 5685 	#dambovita
+			num_of_owned_provinces_with = {
+				is_core = ROOT
+				OR = {
+					area = buzau_area
+					area = dobruja_area
+					area = ilfov_area
+					area = teleorman_area
+					area = dambovita_area
+					area = oltenia_area
+					area = severin_area
+					area = kukullo_area
+					area = haromszek_area
+					area = hunyad_area
+					area = torda_area
+					area = silistra_area
+					area = tarnovo_area
+					area = vidin_area
+				}
+				value = 82		#	 82/125 south germany region
+			}
 		}
 		effect = {
 			change_tag = RMN
@@ -57,14 +108,9 @@ country_decisions = {
 			remove_non_electors_emperors_from_empire_effect = yes
 			if = {
 				limit = {
-					NOT = {
-						government_rank = 5
-					}
+					NOT = { government_rank = 5 }
 				}
 				set_government_rank = 5
-			}
-			random_owned_province = {
-				add_base_tax = 1
 			}
 			add_country_modifier = {
 				name = "centralization_modifier"
@@ -72,7 +118,7 @@ country_decisions = {
 			}
 			add_prestige = 25
 			RMN = {
-				set_capital = 5685
+				set_capital = 5685 	#dambovita
 			}
 			if = {
 				limit = { has_custom_ideas = no }

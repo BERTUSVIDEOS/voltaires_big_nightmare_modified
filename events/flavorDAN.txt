@@ -1164,63 +1164,6 @@ country_event = {
 	}
 }
 
-# Death of Adolf VIII
-country_event = {
-	id = flavor_dan.4
-	title = "flavor_dan.4.t"
-	picture = DEATH_OF_HEIR_eventPicture
-	major = yes
-	major_trigger = {
-		OR = {
-			tag = SVG
-			tag = RSB
-		}
-	}
-	
-	desc = {
-		trigger = {
-			NOT = { dynasty = "von Oldenburg" }
-		}
-		desc = "flavor_dan.4.da"
-	}
-	desc = {
-		trigger = {
-			dynasty = "von Oldenburg"
-		}
-		desc = "flavor_dan.4.db"
-	}
-	
-	fire_only_once = yes
-	is_triggered_only = yes
-	
-	option = {
-		name = "flavor_dan.4.a"
-		ai_chance = {
-			factor = 75
-		}
-		custom_tooltip = flavor_dan.4.a.tt
-		if = {
-			limit = { dynasty = "von Oldenburg" }
-			add_years_of_income = -0.75
-		}
-		if = {
-			limit = { NOT = { dynasty = "von Oldenburg" } }
-			add_years_of_income = -1
-		}
-		inherit = SVG
-		create_union = RSB
-		country_event = { id = flavor_dan.5 }
-	}
-	option = {
-		name = "flavor_dan.4.b"
-		ai_chance = {
-			factor = 25
-		}
-		custom_tooltip = flavor_dan.4.b.tt
-		inherit = SVG
-	}
-}
-
 #Treaty of Ribe
 country_event = {
 	id = flavor_dan.5

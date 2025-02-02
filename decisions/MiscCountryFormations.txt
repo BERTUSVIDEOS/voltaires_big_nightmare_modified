@@ -64,7 +64,7 @@ country_decisions = {
 			set_capital = 2828
 			if = {
 				limit = {
-					NOT = { government_rank = 45 }
+					NOT = { government_rank = 5 }
 				}
 				set_government_rank = 5
 			}

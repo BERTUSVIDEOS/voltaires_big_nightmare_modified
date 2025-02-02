@@ -208,6 +208,10 @@ vassal = {
 	divert_trade = yes
 	seize_territory = yes
 
+	modifier_subject = {	#bertus mod
+		trigger = {ai = no}
+		modifier = subject_player_colony_modifier
+	}
 	# Modifiers:
 	modifier_subject = {
 		modifier = vassal_nation

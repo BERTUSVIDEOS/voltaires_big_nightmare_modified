@@ -71,11 +71,9 @@ country_decisions = {
 			}
 			if = {
 				limit = {
-					NOT = {
-						government_rank = 5
-					}
+					NOT = { government_rank = 5 }
 				}
-				NED = { set_government_rank = 5 }
+				set_government_rank = 5
 			}
 			set_country_flag = formed_netherlands_flag
 			set_country_flag = super_formable_flag

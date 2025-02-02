@@ -652,6 +652,7 @@ ai_nation = {
 	free_leader_pool = 1					# ai needs to have enough pool for 1 general & 1 admiral
 	sailors_recovery_speed = 0.25
 	diplomatic_upkeep = -1 	#0→-1
+	global_monthly_devastation = -0.10 	#0→-0.10
 }
 
 war_taxes = {
@@ -944,7 +945,7 @@ army_tradition = {
 	#allowed_samurai_fraction = 0.1	#0.1→0
 	yearly_army_professionalism = 0.01	#0→0.01
 	monthly_hussite_ecumene = -0.15
-	monthly_military_reform_power = 1	#0→1
+	monthly_military_reform_power = 0.5	#0→0.5
 	monthly_militarized_society = 0.416					#bertus mod
 	monthly_prussian_militarized_society_1 = 0.416		#bertus mod
 	monthly_prussian_militarized_society_2 = 0.416		#bertus mod
@@ -1633,6 +1634,7 @@ subject_player_colony_modifier = {
 }
 
 vassal_subject = {
+	war_exhaustion = -0.05 	#0→-0.05
 	land_forcelimit = 1
 }
 

@@ -383,7 +383,8 @@ monument = {
 	cost = 100
 	time = 12
 	modifier = {
-		local_tax_modifier = 0.2
+		local_missionary_strength = 0.01 	#0→0.01
+		local_tax_modifier = 0.25 	#0.20→0.25
 	}
 	on_built = {
 		on_built_tax_building_effect = yes
@@ -618,7 +619,8 @@ temple = {
 	cost = 150
 	time = 12
 	modifier = {
-		local_tax_modifier = 0.4
+		local_missionary_strength = 0.02 	#0→0.02
+		local_tax_modifier = 0.50 	#0.40→0.50
 	}
 	on_built = {
 		on_built_tax_building_effect = yes
@@ -1470,7 +1472,7 @@ cathedral = {
 	time = 12
 	modifier = {
 		local_missionary_strength = 0.03
-		local_tax_modifier = 0.6
+		local_tax_modifier = 1.0 	#0.60→1.0
 	}
 	on_built = {
 		on_built_tax_building_effect = yes
@@ -3055,6 +3057,7 @@ soldier_households = {
 impressment_offices = {	#bertus mod
 	build_trigger = {
 		development = 10
+		has_port = yes
 	}
 	manufactory = {
 		all
@@ -3069,10 +3072,6 @@ impressment_offices = {	#bertus mod
 		whales
 		crabs
 		pearls
-	}
-
-	build_trigger = {
-		has_port = yes
 	}
 
 	modifier = {
@@ -3125,9 +3124,6 @@ impressment_offices = {	#bertus mod
 }
 
 state_house = {
-	build_trigger = {
-		development = 10
-	}
 	manufactory = {
 		all
 	}
@@ -3141,6 +3137,7 @@ state_house = {
 		carpet
 	}
 	build_trigger = {
+		development = 10
 		NOT = {
 			area_for_scope_province = {
 				owner = {

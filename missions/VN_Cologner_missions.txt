@@ -783,20 +783,27 @@ vn_kol_missions_slot_5 = {
 	}
     has_country_shield = yes
 
-    vn_kol_rhine_infrastructure = {
+    vn_kol_rhine_infrastructure = {     #bertus mod 
         position = 1
         icon = mission_roads
         required_missions = {  }
+        provinces_to_highlight = {
+            OR = {
+                area = cologne_area
+                area = mark_area
+            }
+             has_manufactory_trigger = no
+        }
         trigger = {
             num_of_owned_provinces_with = {
                 value = 3
                 area = cologne_area
-                has_building = post_office
+                has_manufactory_trigger = yes
             }
             num_of_owned_provinces_with = {
                 value = 3
                 area = mark_area
-                has_building = post_office
+                has_manufactory_trigger = yes
             }
         }
         effect = {

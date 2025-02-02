@@ -13,16 +13,6 @@ spriteTypes = {
 	}	
 
 	spriteType = {
-		name = "GFX_dst_cot_upgrade_1_to_2_button"
-		texturefile = "gfx//interface//custom_graphics//dst_cot_upgrade_1_to_2_button.dds"
-		loadType = "INGAME"
-	}
-	spriteType = {
-		name = "GFX_dst_cot_upgrade_2_to_3_button"
-		texturefile = "gfx//interface//custom_graphics//dst_cot_upgrade_2_to_3_button.dds"
-		loadType = "INGAME"
-	}
-	spriteType = {
 		name = "GFX_dst_natural_development_button"
 		texturefile = "gfx//interface//custom_graphics//dst_natural_development_button.dds"
 		loadType = "INGAME"

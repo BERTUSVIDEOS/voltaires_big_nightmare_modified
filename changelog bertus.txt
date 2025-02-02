@@ -5,9 +5,37 @@ TO DO
 	- Moravian ideas
 		- trade goods 10%→7.5%
 		- build cost -15%→-7.5% 
-		- production efficiency 10%→7.5% 
+		- production efficiency 10%→7.5%
+	- trade nodes 
+		- dorylaion
+			- flow into antioch
+		- ankara 
+			- flow into trebizond 
+		- sicily/corsega/sardinia islands trade node?
 
 - 2025-new
+	- Military reform if Soloing +100%
+	- hre princes threshold 100→20
+	- changed some greece & italy steppe provinces into grasslands
+	- Pacifism Hussite Church Aspect
+		- loses the stability even if defensive war
+		- Gets removed if at war
+	- player usbjects
+		- allpower cost 0→+20%
+		- min autonomy 0→+20%
+	- Jewish Advisors cost 25%→33%
+	- Manufactory requirement tooltip added
+	- tax building
+		- missionary strenght 0/0/0.03→0.01/0.02/0.03
+		- tax 20%/40%/60%→25%/50%/100%
+	- spy network growth distance divider 0.10→0.50
+	- fixed moroco formation 
+	- fixed rumanian formation (t3) and ideas
+	- fixed cologne missions
+	- holy orders cost 50→100
+	- army tradition 
+		- yearly military reform progress 1.0→0.5
+	
 - 2025-01-31
 	- Fort rules implemented ingame
 	- Independent cities 

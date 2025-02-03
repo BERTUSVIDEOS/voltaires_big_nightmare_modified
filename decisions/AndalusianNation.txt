@@ -30,12 +30,15 @@ country_decisions = {
 			OR = {
 				province_id = 2670 # Cordoba
 				AND = {
-					region = south_castille_region
+					AND = {
+						region = south_castille_region
+					}
 					root = {
 						NOT = {
-							development_in_provinces = {
-								value = 500
+							num_of_owned_provinces_with = {
+								is_core = ROOT
 								region = south_castille_region
+								value = 77	#77/117 of iberia except beiras & alentejo regions
 							}
 						}
 					}
@@ -53,9 +56,10 @@ country_decisions = {
 			is_at_war = no
 			is_tribal = no
 			owns_core_province = 2670 # Cordoba
-			development_in_provinces = {
-				value = 500
+			num_of_owned_provinces_with = {
+				is_core = ROOT
 				region = south_castille_region
+				value = 77	#77/117 of iberia except beiras & alentejo regions
 			}
 		}
 		effect = {

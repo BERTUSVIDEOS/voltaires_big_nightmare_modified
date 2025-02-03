@@ -64,7 +64,7 @@ country_decisions = {
 									area = tarnovo_area
 									area = vidin_area
 								}
-								value = 82		#	 82/125 south germany region
+								value = 82		#	 82/125 bulgaria + transylvania region areas
 							}
 						}
 					}
@@ -98,7 +98,7 @@ country_decisions = {
 					area = tarnovo_area
 					area = vidin_area
 				}
-				value = 82		#	 82/125 south germany region
+				value = 82		#	 	82/125 bulgaria + transylvania region areas
 			}
 		}
 		effect = {

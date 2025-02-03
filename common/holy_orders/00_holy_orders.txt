@@ -1,287 +1,13 @@
-benedictines = {
-    icon = GFX_holy_order_benedictines
-    trigger = {
-        OR = { 
-			AND = { 
-                OR = {
-                    culture_group = iberian
-                    culture_group = basquegroup
-                }
-				OR = {
-                    religion = catholic
-                    religion = catholique
-                }
-			}
-			has_country_flag = enable_holy_orders_flag 
-		}
-		religion_group = christian
-    }
-    color = { 141 153 119 }
-    cost = 100   #50→100
-    cost_type = adm_power
-    per_province_effect = {
-        add_base_tax = 1
-    }
-    per_province_abandon_effect = {
-        add_base_tax = -1
-        hidden_effect = {
-            if = {
-                limit = { NOT = { base_tax = 1 } }
-                set_base_tax = 1
-            }
-        }
-    }
-    modifier = {
-        local_unrest = -1 
-		trade_goods_size_modifier = 0.1
-    }
-    ai_priority = {
-        factor = 2
-    }
-    localization = holy_order
-}
-
-carthusians = {
-    icon = GFX_holy_order_carthusians
-    trigger = {
-        OR = { 
-			AND = { 
-                OR = {
-                    culture_group = iberian
-                    culture_group = basquegroup
-                }
-				OR = {
-                    religion = catholic
-                    religion = catholique
-                }
-			}
-			has_country_flag = enable_holy_orders_flag 
-		}
-		religion_group = christian
-    }
-    color = { 35 113 186 } 
-    cost = 100   #50→100
-    cost_type = adm_power
-    per_province_effect = {
-        add_base_tax = 1
-    }
-    per_province_abandon_effect = {
-        add_base_tax = -1
-        hidden_effect = {
-            if = {
-                limit = { NOT = { base_tax = 1 } }
-                set_base_tax = 1
-            }
-        }
-    }
-    modifier = {
-		local_build_cost = -0.1
-		local_state_maintenance_modifier = -0.2
-    }
-    ai_priority = {
-        factor = 2
-    }
-    localization = holy_order
-}
-
-hieronymites = {
-    icon = GFX_holy_order_hieronymites
-    trigger = {
-        OR = { 
-			AND = { 
-                OR = {
-                    culture_group = iberian
-                    culture_group = basquegroup
-                }
-				OR = {
-                    religion = catholic
-                    religion = catholique
-                }
-			}
-			has_country_flag = enable_holy_orders_flag 
-		}
-		religion_group = christian
-    }
-    color = { 174 178 193 }
-    cost = 100   #50→100
-    cost_type = adm_power
-    per_province_effect = {
-        add_base_tax = 1
-    }
-    per_province_abandon_effect = {
-        add_base_tax = -1
-        hidden_effect = {
-            if = {
-                limit = { NOT = { base_tax = 1 } }
-                set_base_tax = 1
-            }
-        }
-    }
-    modifier = {
-		local_tax_modifier = 0.25
-		local_governing_cost = -0.05
-    }
-    ai_priority = {
-        factor = 2
-    }
-    localization = holy_order
-}
-
-jesuit_order = {
-    icon = GFX_holy_order_jesuits
-    trigger = {
-        OR = { 
-			AND = { 
-                OR = {
-                    culture_group = iberian
-                    culture_group = basquegroup
-                }
-				OR = {
-                    religion = catholic
-                    religion = catholique
-                }
-			}
-			has_country_flag = enable_holy_orders_flag 
-		}
-		religion_group = christian
-    }
-    color = { 255 240 200 }
-    cost = 100   #50→100
-    cost_type = adm_power
-    per_province_effect = {
-        add_base_tax = 1
-    }
-    per_province_abandon_effect = {
-        add_base_tax = -1
-        hidden_effect = {
-            if = {
-                limit = { NOT = { base_tax = 1 } }
-                set_base_tax = 1
-            }
-        }
-    }
-    modifier = {
-		local_development_cost_modifier = -0.05
-    }
-    ai_priority = {
-        factor = 2
-        modifier = {
-            factor = 2.0
-            NOT = { religion = ROOT }
-        }
-    }
-    localization = holy_order
-}
-
-augustinians = {
-    icon = GFX_holy_order_augustinians
-    trigger = {
-        OR = { 
-			AND = { 
-                OR = {
-                    culture_group = iberian
-                    culture_group = basquegroup
-                }
-				OR = {
-                    religion = catholic
-                    religion = catholique
-                }
-			}
-			has_country_flag = enable_holy_orders_flag 
-		}
-		religion_group = christian
-    }
-    color = { 19 79 44 } 
-    cost = 100   #50→100
-    cost_type = dip_power
-    per_province_effect = {
-        add_base_production = 1
-    }
-    per_province_abandon_effect = {
-        add_base_production = -1
-        hidden_effect = {
-            if = {
-                limit = { NOT = { base_production = 1 } }
-                set_base_production = 1
-            }
-        }
-    }
-    modifier = {
-		institution_growth = 6 
-		local_missionary_maintenance_cost = -0.5
-    }
-    ai_priority = {
-        factor = 2
-    }
-    localization = holy_order
-}
-
-carmelites = {
-    icon = GFX_holy_order_carmelites
-    trigger = {
-        OR = { 
-			AND = { 
-                OR = {
-                    culture_group = iberian
-                    culture_group = basquegroup
-                }
-				OR = {
-                    religion = catholic
-                    religion = catholique
-                }
-			}
-			has_country_flag = enable_holy_orders_flag 
-		}
-		religion_group = christian
-    }
-    color = { 54 216 132 } 
-    cost = 100   #50→100
-    cost_type = dip_power
-    per_province_effect = {
-        add_base_production = 1
-    }
-    per_province_abandon_effect = {
-        add_base_production = -1
-        hidden_effect = {
-            if = {
-                limit = { NOT = { base_production = 1 } }
-                set_base_production = 1
-            }
-        }
-    }
-    modifier = {
-		local_religious_conversion_resistance = 0.2
-		local_centralize_state_cost = -0.05
-    }
-    ai_priority = {
-        factor = 2
-    }
-    localization = holy_order
-}
 
 dominican_order = { #founded 1215
     icon = GFX_holy_order_dominicans
     trigger = {
-        OR = { 
-			AND = { 
-                OR = {
-                    culture_group = iberian
-                    culture_group = basquegroup
-                }
-				OR = {
-                    religion = catholic
-                    religion = catholique
-                }
-			}
-			has_country_flag = enable_holy_orders_flag 
-		}
 		religion_group = christian
     }
     color = { 200 100 255 }
     cost = 100   #50→100
     cost_type = dip_power
     per_province_effect = {
-        add_base_production = 1
         tooltip = { custom_tooltip = removes_slaves_tooltip }
         hidden_effect = {
             if = {
@@ -293,13 +19,6 @@ dominican_order = { #founded 1215
         }
     }
     per_province_abandon_effect = {
-        add_base_production = -1
-        hidden_effect = {
-            if = {
-                limit = { NOT = { base_production = 1 } }
-                set_base_production = 1
-            }
-        }
     } 
     modifier = {
         local_missionary_strength = 0.02
@@ -307,14 +26,50 @@ dominican_order = { #founded 1215
     }
     ai_priority = {
         factor = 1
-        modifier = {
-            factor = 2.0
-            trade_goods = slaves
-        }
-        modifier = {
-            factor = 2.0
-            NOT = { culture = ROOT }
-        }
+    }
+    localization = holy_order
+}
+
+augustinians = {
+    icon = GFX_holy_order_augustinians
+    trigger = {
+		has_country_flag = enable_holy_orders_flag 
+		religion_group = christian
+    }
+    color = { 19 79 44 } 
+    cost = 100   #50→100
+    cost_type = adm_power
+    per_province_effect = {
+    }
+    per_province_abandon_effect = {
+    }
+    modifier = {
+        local_tax_modifier = 0.50
+    }
+    ai_priority = {
+        factor = 2
+    }
+    localization = holy_order
+}
+
+carmelites = {
+    icon = GFX_holy_order_carmelites
+    trigger = {
+		has_country_flag = enable_holy_orders_flag 
+		religion_group = christian
+    }
+    color = { 54 216 132 } 
+    cost = 100   #50→100
+    cost_type = dip_power
+    per_province_effect = {
+    }
+    per_province_abandon_effect = {
+    }
+    modifier = {
+		trade_goods_size_modifier = 0.10
+    }
+    ai_priority = {
+        factor = 2
     }
     localization = holy_order
 }
@@ -322,90 +77,98 @@ dominican_order = { #founded 1215
 franciscan_order = {
     icon = GFX_holy_order_franciscans
     trigger = {
-        OR = { 
-			AND = { 
-                OR = {
-                    culture_group = iberian
-                    culture_group = basquegroup
-                }
-				OR = {
-                    religion = catholic
-                    religion = catholique
-                }
-			}
-			has_country_flag = enable_holy_orders_flag 
-		}
+		has_country_flag = enable_holy_orders_flag 
 		religion_group = christian
     }
     color = { 110 190 240 }
     cost = 100   #50→100
-    cost_type = dip_power
+    cost_type = mil_power
     per_province_effect = {
-        add_base_production = 1
     }
     per_province_abandon_effect = {
-        add_base_production = -1
-        hidden_effect = {
-            if = {
-                limit = { NOT = { base_production = 1 } }
-                set_base_production = 1
-            }
-        }
     }
     modifier = {
-        local_unrest = -1
-        local_prosperity_growth = 0.1
+        local_manpower_modifier = 0.50
     }
     ai_priority = {
         factor = 1
-        modifier = {
-            factor = 1.5
-            unrest = 5
-        }
-        modifier = {
-            factor = 1.5
-            devastation = 50
-        }
     }
     localization = holy_order
 }
 
-alcantara_order = {
-    icon = GFX_holy_order_alcantara
+carthusians = {
+    icon = GFX_holy_order_carthusians
     trigger = {
-        OR = { 
-            AND = { 
-                OR = {
-                    culture_group = iberian
-                    culture_group = basquegroup
-                }
-                OR = {
-                    religion = catholic
-                    religion = catholique
-                }
-            }
-            has_country_flag = enable_holy_orders_flag 
+        OR = {
+            culture_group = french
+            culture_group = british
+            culture_group = germanic
         }
-        religion_group = christian
+		religion_group = christian
     }
-    color = { 71 41 0 } 
+    color = { 35 113 186 } 
+    cost = 100   #50→100
+    cost_type = adm_power
+    per_province_effect = {
+    }
+    per_province_abandon_effect = {
+    }
+    modifier = {
+		local_build_cost = -0.1
+		local_state_maintenance_modifier = -0.2
+    }
+    ai_priority = {
+        factor = 2
+    }
+    localization = holy_order
+}
+benedictines = {
+    icon = GFX_holy_order_benedictines
+    trigger = {
+        OR = {
+            culture_group = french
+            culture_group = british
+            culture_group = germanic
+        }
+		religion_group = christian
+    }
+    color = { 141 153 119 }
+    cost = 100   #50→100
+    cost_type = dip_power
+    per_province_effect = {
+    }
+    per_province_abandon_effect = {
+    }
+    modifier = {
+        local_unrest = -1 
+		trade_goods_size_modifier = 0.10
+    }
+    ai_priority = {
+        factor = 2
+    }
+    localization = holy_order
+}
+
+hieronymites = {
+    icon = GFX_holy_order_hieronymites
+    trigger = {
+        OR = {
+            culture_group = french
+            culture_group = british
+            culture_group = germanic
+        }
+		religion_group = christian
+    }
+    color = { 174 178 193 }
     cost = 100   #50→100
     cost_type = mil_power
     per_province_effect = {
-        add_base_manpower = 1
     }
     per_province_abandon_effect = {
-        add_base_manpower = -1
-        hidden_effect = {
-            if = {
-                limit = { NOT = { base_manpower = 1 } }
-                set_base_manpower = 1
-            }
-        }
     }
     modifier = {
-		local_fort_maintenance_modifier = -0.5
-		local_build_time = -0.2
+        local_manpower_modifier = 0.33
+        local_garrison_size = 0.33
     }
     ai_priority = {
         factor = 2
@@ -416,22 +179,8 @@ alcantara_order = {
 avis_order = {
     icon = GFX_holy_order_avis
     trigger = {
-        OR = { 
-            AND = { 
-                OR = {
-                    culture_group = iberian
-                    culture_group = basquegroup
-                }
-                OR = {
-                    religion = catholic
-                    religion = catholique
-                }
-            }
-            has_country_flag = enable_holy_orders_flag 
-        }
         religion_group = christian
 		OR = {
-			has_country_flag = enable_holy_orders_flag 
 			is_or_was_tag = { tag = POR }
             is_or_was_tag = { tag = PCA }
 		}
@@ -440,20 +189,39 @@ avis_order = {
     cost = 100   #50→100
     cost_type = mil_power
     per_province_effect = {
-        add_base_manpower = 1
     }
     per_province_abandon_effect = {
-        add_base_manpower = -1
-        hidden_effect = {
-            if = {
-                limit = { NOT = { base_manpower = 1 } }
-                set_base_manpower = 1
-            }
-        }
     }
     modifier = {
 		local_defensiveness = 0.15
-		local_hostile_attrition = 1
+        max_attrition = 2
+		local_hostile_attrition = 2
+    }
+    ai_priority = {
+        factor = 2
+    }
+    localization = holy_order
+}
+
+alcantara_order = {
+    icon = GFX_holy_order_alcantara
+    trigger = {
+        OR = {
+            culture_group = iberian
+            culture_group = basquegroup
+            culture_group = celtic
+        }
+		religion_group = christian
+    }
+    color = { 71 41 0 } 
+    cost = 100   #50→100
+    cost_type = adm_power
+    per_province_effect = {
+    }
+    per_province_abandon_effect = {
+    }
+    modifier = {
+        allowed_num_of_buildings = 1
     }
     ai_priority = {
         factor = 2
@@ -464,42 +232,20 @@ avis_order = {
 calatrava_order = {
     icon = GFX_holy_order_calatrava
     trigger = {
-        
-        OR = { 
-            AND = { 
-                OR = {
-                    culture_group = iberian
-                    culture_group = basquegroup
-                }
-                OR = {
-                    religion = catholic
-                    religion = catholique
-                }
-            }
-            has_country_flag = enable_holy_orders_flag 
+        OR = {
+            culture_group = iberian
+            culture_group = basquegroup
+            culture_group = dutch_group
+            culture_group = celtic
         }
         religion_group = christian
-		OR = { 
-			tag = CAS
-			tag = SPA 
-			is_or_was_tag = { tag = NAV }
-			has_country_flag = enable_holy_orders_flag 
-		}
     }
     color = { 106 147 116 } 
     cost = 100   #50→100
     cost_type = mil_power
     per_province_effect = {
-        add_base_manpower = 1
     }
     per_province_abandon_effect = {
-        add_base_manpower = -1
-        hidden_effect = {
-            if = {
-                limit = { NOT = { base_manpower = 1 } }
-                set_base_manpower = 1
-            }
-        }
     }
     modifier = {
 		local_defender_dice_roll_bonus = 1 
@@ -510,48 +256,27 @@ calatrava_order = {
     localization = holy_order
 }
 
-montesa_order = {
-    icon = GFX_holy_order_montesa
+santiago_order = {
+    icon = GFX_holy_order_santiago
     trigger = {
-        
-        OR = { 
-            AND = { 
-                OR = {
-                    culture_group = iberian
-                    culture_group = basquegroup
-                }
-                OR = {
-                    religion = catholic
-                    religion = catholique
-                }
-            }
-            has_country_flag = enable_holy_orders_flag 
+        OR = {
+            culture_group = iberian
+            culture_group = basquegroup
+            culture_group = dutch_group
+            culture_group = celtic
         }
         religion_group = christian
-		OR = {
-			has_country_flag = enable_holy_orders_flag 
-			is_or_was_tag = { tag = ARA } 
-			tag = SPA
-		}
     }
-    color = { 140 120 134 }
+    color = { 35 42 140 } 
     cost = 100   #50→100
     cost_type = mil_power
     per_province_effect = {
-        add_base_manpower = 1
     }
     per_province_abandon_effect = {
-        add_base_manpower = -1
-        hidden_effect = {
-            if = {
-                limit = { NOT = { base_manpower = 1 } }
-                set_base_manpower = 1
-            }
-        }
     }
     modifier = {
-		local_garrison_size = 0.25
-		local_garrison_damage = 0.5
+		local_manpower_modifier = 0.25
+		local_hostile_movement_speed = -0.1
     }
     ai_priority = {
         factor = 2
@@ -562,42 +287,15 @@ montesa_order = {
 san_juan_order = {
     icon = GFX_holy_order_san_juan
     trigger = {
-        
-        OR = { 
-            AND = { 
-                OR = {
-                    culture_group = iberian
-                    culture_group = basquegroup
-                }
-                OR = {
-                    religion = catholic
-                    religion = catholique
-                }
-            }
-            has_country_flag = enable_holy_orders_flag 
-        }
+        culture_group = latin
         religion_group = christian
-		OR = {	
-			alliance_with = KNI 
-			KNI = { is_subject_of = ROOT }
-			has_country_flag = enable_holy_orders_flag 
-			has_country_flag = spa_enable_san_juan_holy_order_flag
-		}
     }
     color = { 188 192 242 }
     cost = 100   #50→100
-    cost_type = mil_power
+    cost_type = adm_power
     per_province_effect = {
-        add_base_manpower = 1
     }
     per_province_abandon_effect = {
-        add_base_manpower = -1
-        hidden_effect = {
-            if = {
-                limit = { NOT = { base_manpower = 1 } }
-                set_base_manpower = 1
-            }
-        }
     }
     modifier = {
 		block_slave_raid = yes 
@@ -609,43 +307,47 @@ san_juan_order = {
     localization = holy_order
 }
 
-santiago_order = {
-    icon = GFX_holy_order_santiago
+jesuit_order = {
+    icon = GFX_holy_order_jesuits
     trigger = {
-        
-        OR = { 
-            AND = { 
-                OR = {
-                    culture_group = iberian
-                    culture_group = basquegroup
-                }
-                OR = {
-                    religion = catholic
-                    religion = catholique
-                }
-            }
-            has_country_flag = enable_holy_orders_flag 
+        OR = {
+            culture_group = dutch_group
+            culture_group = latin
         }
+		religion_group = christian
+    }
+    color = { 255 240 200 }
+    cost = 100   #50→100
+    cost_type = dip_power
+    per_province_effect = {
+    }
+    per_province_abandon_effect = {
+    }
+    modifier = {
+		local_development_cost_modifier = -0.05
+    }
+    ai_priority = {
+        factor = 2
+    }
+    localization = holy_order
+}
+
+montesa_order = {
+    icon = GFX_holy_order_montesa
+    trigger = {
+        culture_group = latin
         religion_group = christian
     }
-    color = { 35 42 140 } 
+    color = { 140 120 134 }
     cost = 100   #50→100
     cost_type = mil_power
     per_province_effect = {
-        add_base_manpower = 1
     }
     per_province_abandon_effect = {
-        add_base_manpower = -1
-        hidden_effect = {
-            if = {
-                limit = { NOT = { base_manpower = 1 } }
-                set_base_manpower = 1
-            }
-        }
     }
     modifier = {
-		local_manpower_modifier = 0.05
-		local_hostile_movement_speed = -0.1
+		local_garrison_size = 0.50
+		local_garrison_damage = 0.50
     }
     ai_priority = {
         factor = 2
@@ -656,7 +358,6 @@ santiago_order = {
 shadhili_order = { #founded 1227
     icon = GFX_holy_order_shadhili
     trigger = {
-        
         OR = {
             primary_culture = andalucian
             has_country_flag = ARB_grant_access_to_muslim_holy_orders_flag
@@ -668,29 +369,15 @@ shadhili_order = { #founded 1227
     cost = 100   #50→100
     cost_type = adm_power
     per_province_effect = {
-        add_base_tax = 1
-        owner = { add_piety = -0.02 }
-        custom_tooltip = order_piety_tooltip
     }
     per_province_abandon_effect = {
-        add_base_tax = -1
-        hidden_effect = {
-            if = {
-                limit = { NOT = { base_tax = 1 } }
-                set_base_tax = 1
-            }
-        }
     }
     modifier = {
-        local_missionary_strength = 0.015
-        local_institution_spread = 0.10
+        local_tax_modifier = 0.50
+        local_development_cost = -0.05
     }
     ai_priority = {
         factor = 2
-        modifier = {
-            factor = 2.0
-            NOT = { religion = ROOT }
-        }
     }
     localization = holy_order
 }
@@ -698,7 +385,6 @@ shadhili_order = { #founded 1227
 qadiri_order = { #founded 1119
     icon = GFX_holy_order_qadiri
     trigger = {
-        
         OR = {
             primary_culture = andalucian
             has_country_flag = ARB_grant_access_to_muslim_holy_orders_flag
@@ -710,29 +396,15 @@ qadiri_order = { #founded 1119
     cost = 100   #50→100
     cost_type = dip_power
     per_province_effect = {
-        add_base_production = 1
-        owner = { add_piety = -0.02 }
-        custom_tooltip = order_piety_tooltip
     }
     per_province_abandon_effect = {
-        add_base_production = -1
-        hidden_effect = {
-            if = {
-                limit = { NOT = { base_production = 1 } }
-                set_base_production = 1
-            }
-        }
     }
     modifier = {
-        local_culture_conversion_cost = -0.3
-        local_build_cost = -0.1
+        local_culture_conversion_cost = -0.30
+        local_build_cost = -0.10
     }
     ai_priority = {
         factor = 1
-        modifier = {
-            factor = 2.0
-            NOT = { culture = ROOT }
-        }
     }
     localization = holy_order
 }
@@ -740,7 +412,6 @@ qadiri_order = { #founded 1119
 aissawa_order = { #founded 1490
     icon = GFX_holy_order_aissawa
     trigger = {
-        
         OR = {
             primary_culture = andalucian
             has_country_flag = ARB_grant_access_to_muslim_holy_orders_flag
@@ -752,33 +423,15 @@ aissawa_order = { #founded 1490
     cost = 100   #50→100
     cost_type = mil_power
     per_province_effect = {
-        add_base_manpower = 1
-        owner = { add_piety = -0.02 }
-        custom_tooltip = order_piety_tooltip
     }
     per_province_abandon_effect = {
-        add_base_manpower = -1
-        hidden_effect = {
-            if = {
-                limit = { NOT = { base_manpower = 1 } }
-                set_base_manpower = 1
-            }
-        }
     }
     modifier = {
-        local_unrest = -1
-        local_monthly_devastation = -0.25
+        local_manpower = 0.250
+        local_defensiveness = 0.10
     }
     ai_priority = {
         factor = 1
-        modifier = {
-            factor = 1.5
-            unrest = 5
-        }
-        modifier = {
-            factor = 1.5
-            devastation = 50
-        }
     }
     localization = holy_order
 }
@@ -789,35 +442,18 @@ aissawa_order = { #founded 1490
 mevlevi_order = {
     icon = GFX_holy_order_mevlevi
     trigger = {
+        religion_group = muslim
         OR = {
-            AND = {
-                #has_government_attribute = unlock_ottoman_holy_orders
-                primary_culture = turkish
-                OR = {
-                    religion = sunni
-                    religion = ibadi
-                    religion = zikri
-                }
-            }
+            primary_culture = turkish
             has_reform = sufi_reform
         }
     }
     color = { 150 130 200 }
     cost = 100   #50→100
-    cost_type = dip_power
+    cost_type = adm_power
     per_province_effect = {
-        add_base_production = 1
-        owner = { add_piety = -0.02 }
-        custom_tooltip = order_piety_tooltip
     }
     per_province_abandon_effect = {
-        add_base_production = -1
-        hidden_effect = {
-            if = {
-                limit = { NOT = { base_production = 1 } }
-                set_base_production = 1
-            }
-        }
     }
     modifier = {
         local_unrest = -1
@@ -825,14 +461,6 @@ mevlevi_order = {
     }
     ai_priority = {
         factor = 1
-        modifier = {
-            factor = 1.5
-            unrest = 5
-        }
-        modifier = {
-            factor = 1.5
-            devastation = 50
-        }
     }
     localization = holy_order
 }
@@ -840,17 +468,9 @@ mevlevi_order = {
 bektashi_order = {
     icon = GFX_holy_order_bektashi
     trigger = {
-        
+        religion_group = muslim
         OR = {
-            AND = {
-                #has_government_attribute = unlock_ottoman_holy_orders
-                primary_culture = turkish
-                OR = {
-                    religion = shiite
-                    religion = ibadi
-                    religion = zikri
-                }
-            }
+            primary_culture = turkish
             has_reform = sufi_reform
         }
     }
@@ -858,33 +478,15 @@ bektashi_order = {
     cost = 100   #50→100
     cost_type = dip_power
     per_province_effect = {
-        add_base_production = 1
-        owner = { add_piety = -0.02 }
-        custom_tooltip = order_piety_tooltip
     }
     per_province_abandon_effect = {
-        add_base_production = -1
-        hidden_effect = {
-            if = {
-                limit = { NOT = { base_production = 1 } }
-                set_base_production = 1
-            }
-        }
     }
     modifier = {
-        local_unrest = -1
-        production_efficiency = 0.1
+        local_build_cost = -0.10
+        production_efficiency = 0.33
     }
     ai_priority = {
         factor = 1
-        modifier = {
-            factor = 1.5
-            unrest = 5
-        }
-        modifier = {
-            factor = 1.5
-            devastation = 50
-        }
     }
     localization = holy_order
 }
@@ -893,41 +495,25 @@ bektashi_order = {
 buzhengshi = {
     icon = GFX_holy_order_buzhengshi
     trigger = {
-        has_dlc = "Domination"
+        religion_group = christian
         OR = {
             tag = BYZ
-            was_tag = BYZ
+            culture_group = byzantine
         }
-		# custom_trigger_tooltip = {
-		# 	tooltip = mng_has_enabled_grand_coordinator_offices_tt
-		# 	has_country_flag = mng_enable_3_grand_coordinators_offices_flag
-        # } 
     }
     color = { 0 230 210 }
     cost = 100   #50→100
     cost_type = adm_power
     per_province_effect = {
-        add_base_tax = 1 
     }
     per_province_abandon_effect = {
-        add_base_tax = -1 
-        hidden_effect = {
-            if = {
-                limit = { NOT = { base_tax = 1 } }
-                set_base_tax = 1
-            }
-        }
     }
     modifier = {
-       local_tax_modifier = 0.2 
-	   local_governing_cost = -0.1
+       local_tax_modifier = 0.25
+	   local_governing_cost = -0.10
     }
     ai_priority = {
         factor = 2
-        modifier = {
-            factor = 1.25
-            owner = { governing_capacity_percentage = 0.9 }
-        }
     }
     localization = coordinator_office
 }
@@ -935,41 +521,24 @@ buzhengshi = {
 anchasi = {
     icon = GFX_holy_order_anchasi
     trigger = {
-        has_dlc = "Domination"
+        religion_group = christian
         OR = {
             tag = BYZ
-            was_tag = BYZ
+            culture_group = byzantine
         }
-		# custom_trigger_tooltip = {
-		# 	tooltip = mng_has_enabled_grand_coordinator_offices_tt
-		# 	has_country_flag = mng_enable_3_grand_coordinators_offices_flag
-        # } 
     }
     color = { 80 255 190 }
     cost = 100   #50→100
     cost_type = dip_power
     per_province_effect = {
-        add_base_production = 1 
     }
     per_province_abandon_effect = {
-        add_base_production = -1 
-        hidden_effect = {
-            if = {
-                limit = { NOT = { base_production = 1 } }
-                set_base_production = 1
-            }
-        }
     }
     modifier = {
-       local_unrest = -1 
-	   local_production_efficiency = 0.1
+       province_trade_power_value = 2.0
     }
     ai_priority = {
         factor = 2
-        modifier = {
-            factor = 1.25
-			owner = { production_income_percentage = 0.33 }
-        }
     }
     localization = coordinator_office
 }
@@ -977,41 +546,24 @@ anchasi = {
 du_si = {
     icon = GFX_holy_order_du_si
     trigger = {
-        has_dlc = "Domination"
+        religion_group = christian
         OR = {
             tag = BYZ
-            was_tag = BYZ
+            culture_group = byzantine
         }
-		# custom_trigger_tooltip = {
-		# 	tooltip = mng_has_enabled_grand_coordinator_offices_tt
-		# 	has_country_flag = mng_enable_3_grand_coordinators_offices_flag
-        # } 
     }
     color = { 240 255 10 }
     cost = 100   #50→100
     cost_type = mil_power
     per_province_effect = {
-        add_base_manpower = 1 
     }
     per_province_abandon_effect = {
-        add_base_manpower = -1 
-        hidden_effect = {
-            if = {
-                limit = { NOT = { base_manpower = 1 } }
-                set_base_manpower = 1
-            }
-        }
     }
     modifier = {
-		local_friendly_movement_speed = 0.1 
-		regiment_recruit_speed = -0.2
+        local_manpower_modifier = 0.50
     }
     ai_priority = {
         factor = 2
-        modifier = {
-            factor = 1.25
-			owner = { mil = 5 } 
-        }
     }
     localization = coordinator_office
 }
@@ -1019,36 +571,28 @@ du_si = {
 kashifs = {
     icon = GFX_holy_order_kashifs
     trigger = {
-		custom_trigger_tooltip = {
-			tooltip = mam_has_access_to_kashifs_tt
-			has_country_flag = mam_enable_kashifs_local_organizations_flag
-		} 
-    }
-    color = { 240 255 10 }
-    cost = 100   #50→100
-    cost_type = mil_power
-    per_province_effect = {
-        add_base_manpower = 1
-    }
-    per_province_abandon_effect = {
-        add_base_manpower = -1 
-        hidden_effect = {
-            if = {
-                limit = { NOT = { base_manpower = 1 } }
-                set_base_manpower = 1
+        religion_group = muslim
+        OR = {
+            culture_group = turko_semitic
+            custom_trigger_tooltip = {
+                tooltip = mam_has_access_to_kashifs_tt
+                has_country_flag = mam_enable_kashifs_local_organizations_flag
             }
         }
     }
+    color = { 240 255 10 }
+    cost = 100   #50→100
+    cost_type = adm_power
+    per_province_effect = {
+    }
+    per_province_abandon_effect = {
+    }
     modifier = {
-		local_governing_cost = -0.1
         local_development_cost = -0.1
+		local_governing_cost = -0.1
     }
     ai_priority = {
         factor = 2
-        modifier = {
-            factor = 1.25
-			owner = { adm = 5 } 
-        }
     }
     localization = coordinator_office #TODO
 }
@@ -1057,34 +601,25 @@ kashifs = {
 savafid_order = {
     icon = GFX_holy_order_savafid_order  
     trigger = {
+        religion_group = muslim
         OR = {
-            has_government_attribute = unlock_persia_holy_orders
-            unlocked_holy_order = { type = savafid_order }
-            is_or_was_tag = { tag = PER }
+            culture_group = turko_semitic
+            custom_trigger_tooltip = {
+                tooltip = mam_has_access_to_kashifs_tt
+                has_country_flag = mam_enable_kashifs_local_organizations_flag
+            }
         }
-        religion = shiite
+        has_estate = estate_qizilbash
     }
     color = { 68 110 35 }
     cost = 100
     cost_type = mil_power
     per_province_effect = {
-        add_base_manpower = 2
-        owner = { add_piety = -0.02 }
-        custom_tooltip = order_piety_tooltip
     }
     per_province_abandon_effect = {
-        add_base_manpower = -2
-        hidden_effect = {
-            if = {
-                limit = { NOT = { base_manpower = 1 } }
-                set_base_manpower = 1
-            }
-        }
     }
     modifier = {
-        local_manpower_modifier = 0.1
-        regiment_recruit_speed = -0.2
-        local_missionary_strength = 0.015
+        amount_of_qizilbash = 1
         local_has_qizilbash = yes
     }
     ai_priority = {
@@ -1096,34 +631,24 @@ savafid_order = {
 zahediyeh_order = {
     icon = GFX_holy_order_zahediyeh_order  
     trigger = {
-        OR = {
-            has_government_attribute = unlock_persia_holy_orders
-            unlocked_holy_order = { type = zahediyeh_order }
-        }
         religion_group = muslim
+        OR = {
+            culture_group = turko_semitic
+            custom_trigger_tooltip = {
+                tooltip = mam_has_access_to_kashifs_tt
+                has_country_flag = mam_enable_kashifs_local_organizations_flag
+            }
+        }
     }
     color = { 217 144 88 }
     cost = 100
     cost_type = dip_power
     per_province_effect = {
-        add_base_production = 2
-        owner = { add_piety = -0.02 }
-        custom_tooltip = order_piety_tooltip
     }
     per_province_abandon_effect = {
-        add_base_production = -2
-        hidden_effect = {
-            if = {
-                limit = { NOT = { base_production = 1 } }
-                set_base_production = 1
-            }
-        }
     }
     modifier = {
-        local_development_cost = -0.1
         trade_goods_size_modifier = 0.1
-        local_missionary_strength = 0.015
-        local_has_qizilbash = yes
     }
     ai_priority = {
         factor = 10

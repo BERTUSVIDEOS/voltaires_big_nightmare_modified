@@ -3024,45 +3024,6 @@ LIC_ideas = {
     }
 }
 
-LOM_ideas = {
-    start = {
-        global_own_trade_power = 0.15
-        reinforce_speed = 0.15
-    }
-    bonus = {
-        light_ship_cost = -0.2
-    }
-    
-    trigger = {
-        tag = LOM
-    }
-    free = yes
-
-    LOM_idea_1 = {
-        tolerance_own = 2
-    }
-    LOM_idea_2 = {
-        free_mil_policy = 1
-    }
-    LOM_idea_3 = {
-        yearly_corruption = -0.1
-        vassal_forcelimit_bonus = 1
-    }
-    LOM_idea_4 = {
-        stability_cost_modifier = -0.1
-    }
-    LOM_idea_5 = {
-        prestige = 0.5
-        papal_influence = 1
-    }
-    LOM_idea_6 = {
-        hostile_attrition = 1
-    }
-    LOM_idea_7 = {
-        spy_offence = 0.2
-    }
-}
-
 LOZ_ideas = {
     start = {
         shock_damage = 0.1

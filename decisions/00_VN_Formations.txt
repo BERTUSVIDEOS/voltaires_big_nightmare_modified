@@ -14,17 +14,29 @@ country_decisions = {
 				ai = no
 			}
 			NOT = { exists = MGF }
-			NOT = { tag = BYZ }
 			culture_group = south_slavic
 		}
 		provinces_to_highlight = {
 			OR = {
-				province_id = 539
-				province_id = 2066
-				province_id = 137
-				province_id = 2236
-				province_id = 2433
-				province_id = 2118
+				province_id = 539 #Belgrade
+				AND = {
+					OR = {
+						region = croatia_region
+						region = serbia_region
+					}
+					root = {
+						NOT = {
+							num_of_owned_provinces_with = {
+								is_core = ROOT
+								OR = {
+									region = croatia_region
+									region = serbia_region
+								}
+								value = 96		#	 96/192 south germany region
+							}
+						}
+					}
+				}
 			}
 			OR = {
 				NOT = { owned_by = ROOT }
@@ -38,11 +50,14 @@ country_decisions = {
 			adm_tech = 10
 			NOT = { exists = BYZ }
 			owns_core_province = 539 #Belgrade
-			owns_core_province = 2066 #Skopje
-			owns_core_province = 137 #Dubrovnik
-			owns_core_province = 2236 #Zagreb
-			owns_core_province = 2433 #Bobovac
-			owns_core_province = 2118 #Zeta
+			num_of_owned_provinces_with = {
+				is_core = ROOT
+				OR = {
+					region = croatia_region
+					region = serbia_region
+				}
+				value = 96		#	 96/192 south germany region
+			}
 		}
 		effect = {
 			change_tag = MGF
@@ -53,18 +68,35 @@ country_decisions = {
 				name = "centralization_modifier"
 				duration = 7300
 			}
-			balkans_superregion = {
+			if = {
+				limit = { 
+					NOT = { government = republic }
+					is_revolutionary = no
+				}
+				change_government = republic
+			}
+			if = {
+				limit = { is_revolutionary = no }
+				add_government_reform = peasants_republic
+			}
+			croatia_region = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
-				add_permanent_claim = MGF
+				add_permanent_claim = ROOT
+			}
+			serbia_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
 			}
 			add_prestige = 25
 			if = {
 				limit = {
-					NOT = { government_rank = 5 }
+					NOT = { government_rank = 4 }
 				}
-				set_government_rank = 5
+				set_government_rank = 4
 			}
 		}
 		ai_will_do = {
@@ -414,10 +446,6 @@ country_decisions = {
 					}
 				}
 			}
-			OR = {
-				NOT = { owned_by = ROOT }
-				NOT = { is_core = ROOT }
-			}
 		}
 		allow = {
 			adm_tech = 10
@@ -465,14 +493,14 @@ country_decisions = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
-				add_permanent_claim = XKK
+				add_permanent_claim = ROOT
 			}
 			add_prestige = 25
 			if = {
 				limit = {
-					NOT = { government_rank = 4 }
+					NOT = { government_rank = 3 }
 				}
-				set_government_rank = 4
+				set_government_rank = 3
 			}
 			if = {
 				limit = { has_custom_ideas = no NOT = { has_idea_group = KLK_ideas } }

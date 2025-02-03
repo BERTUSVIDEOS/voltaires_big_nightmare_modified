@@ -23,10 +23,11 @@ regional_port = {
     type = coastal
     province_modifiers = {
         province_trade_power_value = 50
+        local_development_cost = -0.10
         local_institution_spread = 0.25
     }
     state_modifiers = {
-        local_development_cost = -0.10
+        local_development_cost = -0.05
         allowed_num_of_buildings = 1
     }
 }
@@ -45,7 +46,7 @@ world_port = {
         local_institution_spread = 0.25
         local_development_cost = -0.10
         allowed_num_of_buildings = 1
-	    trade_value_modifier = 0.05
+	    trade_value_modifier = 0.10
     }
     global_modifiers = {
     }
@@ -57,15 +58,15 @@ world_port_2 = {
     province_modifiers = {
         province_trade_power_value = 100
         local_institution_spread = 0.50
-        local_development_cost = -0.20
+        local_development_cost = -0.15
         naval_forcelimit = 10
     }
     state_modifiers = {
         local_institution_spread = 0.50
-        local_development_cost = -0.20
+        local_development_cost = -0.15
         allowed_num_of_buildings = 2
         allowed_num_of_manufactories = 1
-	    trade_value_modifier = 0.10
+	    trade_value_modifier = 0.20
     }
     global_modifiers = {
     }
@@ -96,10 +97,11 @@ regional_hub = {
     type = inland
     province_modifiers = {
         province_trade_power_value = 50
+        local_development_cost = -0.10
         local_institution_spread = 0.25
     }
     state_modifiers = {
-        local_development_cost = -0.1
+        local_development_cost = -0.05
         allowed_num_of_buildings = 1
     }
 }
@@ -119,7 +121,7 @@ world_trade_center = {
         local_institution_spread = 0.25
         local_development_cost = -0.10
         allowed_num_of_buildings = 1
-	    trade_value_modifier = 0.05
+	    trade_value_modifier = 0.10
     }
     global_modifiers = {
     }
@@ -131,14 +133,14 @@ world_trade_center_2 = {
     province_modifiers = {
         province_trade_power_value = 100
         local_institution_spread = 0.50
-        local_development_cost = -0.20
+        local_development_cost = -0.15
     }
     state_modifiers = {
         local_institution_spread = 0.50
-        local_development_cost = -0.20
+        local_development_cost = -0.15
         allowed_num_of_buildings = 2
         allowed_num_of_manufactories = 1
-	    trade_value_modifier = 0.10
+	    trade_value_modifier = 0.20
     }
     global_modifiers = {
     }

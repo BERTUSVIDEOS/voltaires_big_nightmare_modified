@@ -12,8 +12,23 @@ TO DO
 		- ankara 
 			- flow into trebizond 
 		- sicily/corsega/sardinia islands trade node?
+	- nerf capital growth mission
+	- nerf starting country ideas to tier 1 (savoy, provence, milan, etc)
 
 - 2025-new
+	- muladi estate
+		- no longer require specific gov reform
+		- nolonger incompatible with western tech group
+	- tweaked CoT lvl modifiers
+	- holy orders
+		- no longer give dev
+		- modifiers changed
+		- conditions simplified: religion & culture/reform
+	- templars estate 
+		- now requires to be christian
+		- no longer requires to be monarchy
+		- privileges with estate actions autorevoked after cooldown
+		- holy orders privilege fixed, unlocks 3 holy orders 
 	- Military reform if Soloing +100%
 	- hre princes threshold 100→20
 	- changed some greece & italy steppe provinces into grasslands
@@ -29,9 +44,15 @@ TO DO
 		- missionary strenght 0/0/0.03→0.01/0.02/0.03
 		- tax 20%/40%/60%→25%/50%/100%
 	- spy network growth distance divider 0.10→0.50
-	- fixed moroco formation 
+	- fixed yugoslavia formation
+	- fixed andalusia fomrable to tier 3 idea lvl and conditions
+	- fixed moroco formation
+	- fixed sardinia piedmont formable & ideas
+	- fixed yugoslavia formation & ideas
+	- fixed lotharingia formable conditions
 	- fixed rumanian formation (t3) and ideas
 	- fixed cologne missions
+	- fixed lombardy ideas to tier 2
 	- holy orders cost 50→100
 	- army tradition 
 		- yearly military reform progress 1.0→0.5

@@ -19,21 +19,16 @@ country_decisions = {
 				ai = no
 				NOT = { exists = LOT }
 			}
-			capital_scope = {	#bertus mod
-				region = lotharingia_region
-			}
+			culture_group = french
 		}
 		provinces_to_highlight = {
-			OR = {
-				AND = {
-					region = lotharingia_region
-					root = {
-						NOT = {
-							development_in_provinces = { 	#development requirement since small region
-								value = 1500
-								region = lotharingia_region
-							}
-						}
+			region = lotharingia_region
+			root = {
+				NOT = {
+					num_of_owned_provinces_with = {
+						is_core = ROOT
+						region = lotharingia_region
+						value = 82		#	 82/125 lotharingia region
 					}
 				}
 			}
@@ -46,8 +41,12 @@ country_decisions = {
 			is_at_war = no
 			is_free_or_tributary_trigger = yes	
 			NOT = { exists = LOT }
-			development_in_provinces = { 	#development requirement since small region
-				value = 1500
+			num_of_owned_provinces_with = {
+				is_core = ROOT
+				region = lotharingia_region
+				value = 82		#	 82/125 lotharingia region
+			}
+			capital_scope = {	#bertus mod
 				region = lotharingia_region
 			}
 		}
@@ -60,23 +59,9 @@ country_decisions = {
 			swap_non_generic_missions = yes
 			if = {
 				limit = {
-					NOT = { government_rank = 5 }
+					NOT = { government_rank = 4 }
 				}
-				set_government_rank = 5
-			}
-			lowlands_superregion = {
-				limit = {
-					NOT = { owned_by = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = LOT
-			}
-			french_superregion = {
-				limit = {
-					NOT = { owned_by = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = LOT
+				set_government_rank = 4
 			}
 			add_country_modifier = {
 				name = "centralization_modifier"

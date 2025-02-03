@@ -1,22 +1,8 @@
-
-
 every_province = {
 	limit = {
+		NOT = { owned_by = ROOT }
 		OR = {
-			area = buzau_area
-			area = dobruja_area
-			area = ilfov_area
-			area = teleorman_area
-			area = dambovita_area
-			area = oltenia_area
-			area = severin_area
-			area = kukullo_area
-			area = haromszek_area
-			area = hunyad_area
-			area = torda_area
-			area = silistra_area
-			area = tarnovo_area
-			area = vidin_area
+			region = lotharingia_region
 		}
 	}
 	cede_province = ROOT

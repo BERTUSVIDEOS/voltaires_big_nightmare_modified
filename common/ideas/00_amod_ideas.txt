@@ -1967,14 +1967,13 @@ karling_ideas = {
     }
 }
 
-KLK_ideas = {
+KLK_ideas = {   #lombardy   #bertus mod
     start = {
         reinforce_speed = 0.15
-        manpower_in_own_culture_provinces = 0.33    #0→0.33
+        manpower_in_own_culture_provinces = 0.33
     }
     bonus = {
-        #light_ship_cost = -0.2 #-0.20→0
-        land_morale = 0.20  #0→0.20
+        land_morale = 0.15
     }
     
     trigger = {
@@ -1983,40 +1982,38 @@ KLK_ideas = {
     free = yes
 
     KLK_idea_1 = {
-        tolerance_own = 4   #2→4
-        culture_conversion_cost = -0.20     #0→-0.20
+        tolerance_own = 3
+        culture_conversion_cost = -0.20
     }
     KLK_idea_2 = {
         free_mil_policy = 1
-        possible_mil_policy = 1 #0→1
-        mil_advisor_cost = -0.10    #0→-0.10
+        possible_mil_policy = 1
+        mil_advisor_cost = -0.05
     }
     KLK_idea_3 = {
         yearly_corruption = -0.10
-        development_cost_in_primary_culture = -0.20     #0→-0.20
-        #vassal_forcelimit_bonus = 1    #1→0
+        development_cost_in_primary_culture = -0.20
     }
     KLK_idea_4 = {
-        global_own_trade_power = 0.15  
-        global_ship_cost = -0.20    #0→-0.20
+        global_own_trade_power = 0.15
+        global_ship_cost = -0.15
         stability_cost_modifier = -0.1
     }
     KLK_idea_5 = {
-        all_estate_loyalty_equilibrium = 0.10   #0.05→0.10
-        papal_influence = 2 #1→2
-		monthly_fervor_increase = 1.0	#0→1.0
-		church_power_modifier = 0.25	#0→0.25
-		monthly_piety_accelerator = 0.002	#0→0.002
+        all_estate_loyalty_equilibrium = 0.05
+        papal_influence = 2
+		monthly_fervor_increase = 1.0
+		church_power_modifier = 0.25
+		monthly_piety_accelerator = 0.002
     }
     KLK_idea_6 = {
-        #hostile_attrition = 1  #1→0
-        own_territory_dice_roll_bonus = 1   #0→1
-        defensiveness = 0.33    #0→0.33
-        garrison_size = 0.33    #0→0.33
+        own_territory_dice_roll_bonus = 1
+        defensiveness = 0.20
+        garrison_size = 0.20
     }
     KLK_idea_7 = {
         spy_offence = 0.20
-        army_tradition_from_battle = 0.50   #0→0.50
+        army_tradition_from_battle = 0.25
     }
 }
 
@@ -14514,5 +14511,47 @@ GRE_ideas = {   #bertus mod
     }
     bonus = {
         global_trade_power = 0.33
+    }
+}
+MGF_ideas = {   #bertus mod
+    trigger = {
+        tag = MGF
+    }
+    free = yes
+    start = {
+        morale_damage_received = -0.15
+        recover_army_morale_speed = 0.10
+    }
+    GRE_idea_1 = {
+		#burhger mountain development privilege
+        #extra dev chance on mountains/hills/highlands  20%
+        centralize_state_cost = -0.20
+    }
+    MGF_idea_2 = {
+        infantry_cost = -0.20
+        reinforce_cost_modifier = -0.20
+    }
+    MGF_idea_3 = {
+        manpower_in_culture_group_provinces = 0.50
+        manpower_in_own_culture_provinces = 0.50
+    }
+    MGF_idea_4 = {
+        infantry_fire = 0.30
+    }
+    MGF_idea_5 = {
+        global_tax_modifier = 0.20
+        production_efficiency = 0.20
+    }
+    MGF_idea_6 = {
+        naval_forcelimit_modifier = 0.33
+        reduced_trade_penalty_on_non_main_tradenode = 0.33
+    }
+    MGF_idea_7 = {
+        artillery_levels_available_vs_fort = 3
+        artillery_level_modifier = 0.50
+        artillery_barrage_cost = -0.50 
+    }
+    bonus = {
+        backrow_artillery_damage = 0.20
     }
 }

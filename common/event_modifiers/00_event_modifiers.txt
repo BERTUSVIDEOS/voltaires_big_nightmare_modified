@@ -13108,7 +13108,7 @@ estate_burghers_marsh_expansion_marsh = {	#bertus mod
 }
 
 estate_burghers_mountain_expansion_mountains = {
-	local_development_cost = -0.175
+	local_development_cost = -0.25
 }
 
 estate_burghers_mountain_expansion_highlands = {

@@ -1268,7 +1268,7 @@
  crush_the_vaudois:0 "Crush the Vaudois"
  crush_the_vaudois_desc:0 "The Reformation might be raging throughout Christendom, but in our lands a rather older movement threatens us, the medieval heresy of the Waldensians locally known as the Vaudois. Putting the Vaudois in their place will ease religious tensions in our lands."
  savoyard_flexibility:0 "Savoyard Flexibility"
- savoyard_flexibility_desc:0 "The House of Savoy hasn't ruled this land since the 11th century by ignoring change, rather, we've developed a reputation as shameless opportunists, always eager to find some new opening to advance our state. Though distasteful in the eyes of traditionalists, opportunism has its upsides."
+ savoyard_flexibility_desc:0 "The House of Savoy hasn't ruled this land since the 11th century by ignoring change, rather, we've developed a reputation as shameless opportunists, always eager to find some new opening to advance our state. Though distasteful in the eyes of traditionalists, opportunism has its upsides.\nEnable the [Root.GetBurghersName] privilege '§YMountain Expansion§!'."
  alpine_tolls:0 "Alpine Tolls"
  alpine_tolls_desc:0 "Having a small number of usable passages in our land allows us to tax any merchant trying to cross our borders along the trade routes."
  savoyard_legitimacy:0 "Savoyard Legitimacy"

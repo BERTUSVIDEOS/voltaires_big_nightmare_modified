@@ -52,11 +52,7 @@ estate_holy_orders = {
 			has_enabled_estate = { estate = estate_holy_orders }
 			has_unlocked_estate = { estate = estate_holy_orders }
 			AND = {
-				OR = {
-					religion = catholic
-					religion = catholique
-				}
-				government = monarchy
+				religion_group = christian
 				primitives = no
 				is_nomad = no
 				NOT = { has_reform = cossacks_reform }

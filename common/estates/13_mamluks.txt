@@ -46,20 +46,8 @@ estate_mamluks = {
 			has_enabled_estate = { estate = estate_mamluks }
 			has_unlocked_estate = { estate = estate_mamluks }
 			AND = {
-				OR = {
-					has_reform = iqta
-					has_reform = barbary_sultanate_reform
-					has_reform = barbary_eyalet_government
-					has_reform = feudal_theocracy
-					has_reform = fatimid_caliphate_reform
-					has_reform = mamluk_government
-					has_reform = pirate_republic_reform
-					has_reform = caliphate_reform
-					has_reform = caliphate_theocracy_reform
-				}
 				is_nomad = no
 				primitives = no
-				NOT = { technology_group = western }
 				NOT = { has_country_modifier = the_abolish_slavery_act }
 				OR = {
 					AND = {

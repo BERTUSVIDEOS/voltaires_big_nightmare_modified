@@ -390,7 +390,7 @@ estate_burghers_patronage_of_the_arts = {
 estate_burghers_land_trade_rights = {
 	icon = privilege_land_rights
 	land_share = 5
-	max_absolutism = -5
+	max_absolutism = 0	#-5→0
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	loyalty = 0.1
 	influence = 0.1
@@ -412,6 +412,7 @@ estate_burghers_land_trade_rights = {
 		modifier = {
 			global_manpower_modifier = -0.20
 			global_trade_power = 0.40
+			max_absolutism = -20
 		}
 	}
 	influence_scaled_conditional_modifier = {
@@ -422,6 +423,7 @@ estate_burghers_land_trade_rights = {
 		modifier = {
 			global_manpower_modifier = -0.10
 			global_trade_power = 0.20
+			max_absolutism = -10
 		}
 	}
 	influence_scaled_conditional_modifier = {
@@ -432,6 +434,7 @@ estate_burghers_land_trade_rights = {
 		modifier = {
 			global_manpower_modifier = -0.05
 			global_trade_power = 0.10
+			max_absolutism = -5
 		}
 	}
 	penalties = {
@@ -1491,6 +1494,7 @@ estate_burghers_economical_boost = {
 		modifier = {
 			placed_merchant_power = 5
 			global_prov_trade_power_modifier = 0.25
+			max_absolutism = -5
 		}
 	}
 	influence_scaled_conditional_modifier = {	#Modifier that are applied if the specified conditions are true. At 100% Influence you gain 100% of the modifier.
@@ -1503,6 +1507,7 @@ estate_burghers_economical_boost = {
 		modifier = {
 			placed_merchant_power = 10
 			global_prov_trade_power_modifier = 0.5
+			max_absolutism = -10
 		}
 	}
 	ai_will_do = {
@@ -1783,6 +1788,7 @@ estate_burghers_forest_expansion = {
 		OR = {
 			has_unlocked_estate_privilege = { estate_privilege = estate_burghers_forest_expansion }
 			has_idea = RHI_idea_1
+			has_idea = sca_unified_scandinavian
 		}
 	}
 	can_select = {

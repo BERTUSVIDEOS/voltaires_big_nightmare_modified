@@ -4,38 +4,11 @@ country_decisions = {	#bertus mod
 		major = yes
 		potential = {
 			normal_or_historical_nations = yes
-			OR = {
-				ai = no
-				is_playing_custom_nation = no
-			}
-			OR = {
-				is_free_or_tributary_trigger = yes
-				ai = no
-			}
-			capital_scope = {
-				OR = {
-					superregion = french_superregion
-				}
-			}
-			NOT = { tag = HLR }
-			NOT = { tag = FRA }
+			is_free_or_tributary_trigger = yes
+			NOT = { is_formable_tier = { tier = 4 } }
+			NOT = { exists = FRA }
 			NOT = { tag = PAP }
-			NOT = { tag = SPA }		# Basque is a valid culture for both FRA and SPA
-			NOT = { tag = AVE }		# Anglois is also valid
-			was_never_end_game_tag_trigger = yes
-			OR = {
-				ai = no
-				NOT = { exists = FRA }
-			}
 			culture_group = french
-			is_colonial_nation = no
-			OR = {
-				is_former_colonial_nation = no
-				AND = {
-					is_former_colonial_nation = yes
-					ai = no
-				}
-			}
 		}
 		provinces_to_highlight = {
 			OR = {
@@ -61,21 +34,20 @@ country_decisions = {	#bertus mod
 			}
 		}
 		allow = {
+			adm_tech = 15
 			is_at_war = no
-			is_free_or_tributary_trigger = yes	
-			is_nomad = no
-			NOT = { exists = FRA }
+			548 = { owned_by = ROOT is_state = yes }	# Île-de-France
 			num_of_owned_provinces_with = {
 				is_core = ROOT
 				superregion = french_superregion
 				value = 182	#182/277
 			}
-			548 = { owned_by = ROOT is_state = yes }	# Île-de-France
 		}
 		effect = {
 			change_tag = FRA
 			on_change_tag_effect = yes
 			hidden_effect = { restore_country_name = yes }
+			set_formable_tier = { tier = 4 }
 			swap_non_generic_missions = yes
 			remove_non_electors_emperors_from_empire_effect = yes
 			if = {
@@ -100,25 +72,6 @@ country_decisions = {	#bertus mod
 					NOT = { owned_by = ROOT }
 				}
 				add_permanent_claim = FRA
-			}
-			if = {
-				limit = {
-					NOT = { is_year = 1600 }
-					NOT = {
-						calc_true_if = {
-							all_province = {  
-								OR = {
-									superregion = french_superregion
-									region = lotharingia_region
-								}
-								owned_by = ROOT
-							}
-							amount = 175
-						}
-					}
-				}
-				change_government = monarchy
-				add_government_reform = feudal_france_reform
 			}
 			if = {
 				limit = { has_custom_ideas = no }

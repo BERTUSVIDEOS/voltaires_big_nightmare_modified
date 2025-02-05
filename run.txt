@@ -2,7 +2,7 @@ every_province = {
 	limit = {
 		NOT = { owned_by = ROOT }
 		OR = {
-			region = lotharingia_region
+			region = morocco_region
 		}
 	}
 	cede_province = ROOT

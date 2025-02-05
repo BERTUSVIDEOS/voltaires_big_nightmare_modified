@@ -4,21 +4,11 @@ country_decisions = {
 		major = yes
 		potential = {
 			normal_or_historical_nations = yes
-			was_never_end_game_tag_trigger = yes
+			is_free_or_tributary_trigger = yes	
 			NOT = { has_country_flag = formed_lotharingia_flag }
-			NOT = { has_country_flag = super_formable_flag }
-			OR = {
-				ai = no
-				is_playing_custom_nation = no
-			}
-			OR = {	
-				is_free_or_tributary_trigger = yes	
-				ai = no	
-			}
-			OR = {
-				ai = no
-				NOT = { exists = LOT }
-			}
+			NOT = { is_formable_tier = { tier = 3 } }
+			NOT = { is_formable_tier = { tier = 4 } }
+			NOT = { exists = LOT }
 			culture_group = french
 		}
 		provinces_to_highlight = {
@@ -39,8 +29,6 @@ country_decisions = {
 		}
 		allow = {
 			is_at_war = no
-			is_free_or_tributary_trigger = yes	
-			NOT = { exists = LOT }
 			num_of_owned_provinces_with = {
 				is_core = ROOT
 				region = lotharingia_region
@@ -57,6 +45,7 @@ country_decisions = {
 			}
 			change_tag = LOT
 			swap_non_generic_missions = yes
+			set_formable_tier = { tier = 3 }
 			if = {
 				limit = {
 					NOT = { government_rank = 4 }

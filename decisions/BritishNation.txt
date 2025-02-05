@@ -3,53 +3,22 @@ country_decisions = {
 	british_nation = {
 		major = yes
 		potential = {
-			OR = {
-				NOT = { has_government_attribute = english_parliament }	#Formation through the Parliament
-				ai = yes
-			}
 			normal_or_historical_nations = yes
-			OR = {
-				ai = no
-				is_playing_custom_nation = no
-			}
-			OR = {
-				is_free_or_tributary_trigger = yes
-				ai = no
-			}
+			is_free_or_tributary_trigger = yes
+			NOT = { is_formable_tier = { tier = 4 } }
 			NOT = { exists = GBR }
 			NOT = { tag = PAP }
-			NOT = { tag = HLR }
-			NOT = { tag = FKE }
-			NOT = { tag = AVE }
-			was_never_end_game_tag_trigger = yes
 			OR = {
 				culture_group = british
 				primary_culture = welsh
 				primary_culture = cornish
-			}
-			OR = {
-				ai = no
-				AND = {
-					ai = yes
-					num_of_cities = 8
-				}
-			}
-			is_colonial_nation = no
-			OR = {
-				is_former_colonial_nation = no
-				AND = {
-					is_former_colonial_nation = yes
-					ai = no
-				}
 			}
 		}
 		provinces_to_highlight = {
 			OR = {
 				province_id = 2268		# London
 				AND = {
-					OR = {
-						superregion = british_isles_superregion
-					}
+					superregion = british_isles_superregion
 					root = {
 						NOT = {
 							num_of_owned_provinces_with = {
@@ -67,22 +36,20 @@ country_decisions = {
 			}
 		}
 		allow = {
-			adm_tech = 10
-			is_free_or_tributary_trigger = yes
-			is_nomad = no
+			adm_tech = 15
 			is_at_war = no
-			owns_core_province = 2268		# London
+			2268 = { owned_by = ROOT is_state = yes }	# London
 			num_of_owned_provinces_with = {
 				is_core = ROOT
 				superregion = british_isles_superregion
 				value = 166	#166/252	of british islands superregion
 			}
-			2268 = { is_state = yes }
 		}
 		effect = {
 			change_tag = GBR
 			on_change_tag_effect = yes
 			hidden_effect = { restore_country_name = yes }
+			set_formable_tier = { tier = 4 }
 			swap_non_generic_missions = yes
 			remove_non_electors_emperors_from_empire_effect = yes
 			if = {
@@ -120,30 +87,6 @@ country_decisions = {
 		}
 		ai_will_do = {
 			factor = 1
-			modifier = {
-				factor = 0
-				tag = SCO
-				NOT = { is_enemy = ENG }
-				NOT = { is_rival = ENG }
-			}
-			modifier = {
-				factor = 0
-				tag = HSC
-				NOT = { is_enemy = ENG }
-				NOT = { is_rival = ENG }
-			}
-			modifier = {
-				factor = 0
-				tag = SCO
-				NOT = { is_enemy = ASE }
-				NOT = { is_rival = ASE }
-			}
-			modifier = {
-				factor = 0
-				tag = HSC
-				NOT = { is_enemy = ASE }
-				NOT = { is_rival = ASE }
-			}
 		}
 		ai_importance = 400
 	}
@@ -363,44 +306,75 @@ country_decisions = {
 		major = yes
 		potential = {
 			has_government_attribute = english_parliament
-			ai = no
 			normal_or_historical_nations = yes
-			was_never_end_game_tag_trigger = yes
+			is_free_or_tributary_trigger = yes
+			NOT = { is_formable_tier = { tier = 4 } }
 			NOT = { exists = GBR }
 			NOT = { tag = AVE }
 			has_not_enacted_parliament_action = { parliament_action = english_french_act_of_union }
 		}
 		provinces_to_highlight = {
 			OR = {
-				province_id = 2268
-				province_id = 986
-				province_id = 722
-				province_id = 2621
-				province_id = 4704
-			}
-			OR = {
-				NOT = { owned_by = ROOT }
-				NOT = { is_core = ROOT }
+				AND = {
+					OR = {
+						province_id = 2268	# London
+						AND = {
+							OR = {
+								region = british_isles_region
+							}
+							root = {
+								NOT = {
+									num_of_owned_provinces_with = {
+										is_core = ROOT
+										region = british_isles_region
+										value = 62	#	 62/125 britain region
+									}
+								}
+							}
+						}
+					}
+					OR = {
+						NOT = { owned_by = ROOT }
+						NOT = { is_core = ROOT }
+					}
+				}
+				AND = {
+					OR = {
+						province_id = 548	# Île-de-France
+						AND = {
+							superregion = french_superregion
+							root = {
+								NOT = {
+									num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+										superregion = french_superregion
+										value = 138	#138/277
+									}
+								}
+							}
+						}
+					}
+					NOT = { country_or_non_sovereign_subject_holds = ROOT }
+				}
 			}
 		}
 		allow = {
-			adm_tech = 10
+			adm_tech = 15
 			has_issue_unlocked_tooltip = {
 				issue = english_french_act_of_union
 			}
 			has_active_debate = no
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
-			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-				OR = {
-					region = france_region      #114 main france
-					region = aquitaine_region      #90 aquitaine france
-				}
-				value = 102		#	 102/204
+			owns = 2268 	# London
+			owns_or_non_sovereign_subject_of = 548	# Île-de-France
+			num_of_owned_provinces_with = {
+				is_core = ROOT
+				region = british_isles_region
+				value = 62	#	 62/125 britain region
 			}
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-				region = british_isles_region
-				value = 62		#	 62/125 britain region
+				superregion = french_superregion
+				value = 138	#138/277
 			}
 		}
 		effect = {
@@ -436,39 +410,38 @@ country_decisions = {
 				}
 			}
 			change_tag = AVE
-			hidden_effect = {
-				on_change_tag_effect = yes
-				if = {
-					limit = {
-						OR = {
-							NOT = { has_country_flag = ave_theocracy_name }
-							NOT = { has_country_flag = ave_republic_name }
-							NOT = { has_country_flag = ave_state_name }
-							NOT = { has_country_flag = ave_empire_name }
-						}
+			on_change_tag_effect = yes
+			set_formable_tier = { tier = 4 }
+			if = {
+				limit = {
+					OR = {
+						NOT = { has_country_flag = ave_theocracy_name }
+						NOT = { has_country_flag = ave_republic_name }
+						NOT = { has_country_flag = ave_state_name }
+						NOT = { has_country_flag = ave_empire_name }
 					}
-					restore_country_name = yes
 				}
-				if = {
-					limit = {
-						has_country_modifier = ave_anglo_french_imperium
-					}
-					country_event = { id = flavor_gbr.20 }	#Renew renaming
+				restore_country_name = yes
+			}
+			if = {
+				limit = {
+					has_country_modifier = ave_anglo_french_imperium
 				}
-				remove_non_electors_emperors_from_empire_effect = yes
-				if = {
-					limit = {
-						NOT = { government_rank = 5 }
-					}
-					set_government_rank = 5
+				country_event = { id = flavor_gbr.20 }	#Renew renaming
+			}
+			remove_non_electors_emperors_from_empire_effect = yes
+			if = {
+				limit = {
+					NOT = { government_rank = 5 }
 				}
-				if = {
-					limit = { 
-						has_custom_ideas = no
-						NOT = { has_idea_group = AVE_ideas }
-					}
-					country_event = { id = ideagroups.1 } #Swap Ideas
+				set_government_rank = 5
+			}
+			if = {
+				limit = { 
+					has_custom_ideas = no
+					NOT = { has_idea_group = AVE_ideas }
 				}
+				country_event = { id = ideagroups.1 } #Swap Ideas
 			}
 			add_prestige = 25
 		}

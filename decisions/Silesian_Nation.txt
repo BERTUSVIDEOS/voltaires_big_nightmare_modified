@@ -3,21 +3,12 @@ country_decisions = {
 		major = yes
 		potential = {
 			normal_or_historical_nations = yes
-			was_never_end_game_tag_trigger = yes
-			NOT = { tag = SIL }
+			is_free_or_tributary_trigger = yes
+			NOT = { is_formable_tier = { tier = 2 } }
+			NOT = { is_formable_tier = { tier = 3 } }
+			NOT = { is_formable_tier = { tier = 4 } }
 			NOT = { has_country_flag = formed_silesia_flag }
-			OR = {
-				ai = no
-				is_playing_custom_nation = no
-			}
-			OR = {	
-				is_free_or_tributary_trigger = yes	
-				ai = no	
-			}
-			OR = {
-				ai = no
-				NOT = { exists = SIL }
-			}
+			NOT = { exists = SIL }
 			OR = {
 				primary_culture = schlesian
 				primary_culture = lusatian
@@ -38,10 +29,6 @@ country_decisions = {
 					}
 				}
 			}
-			OR = {
-				NOT = { owned_by = ROOT }
-				NOT = { is_core = ROOT }
-			}
 		}
 		allow = {
 			is_at_war = no
@@ -56,6 +43,7 @@ country_decisions = {
 		effect = {
 			change_tag = SIL
 			swap_non_generic_missions = yes
+			set_formable_tier = { tier = 2 }
 			if = {
 				limit = {
 					NOT = { government_rank = 3 }

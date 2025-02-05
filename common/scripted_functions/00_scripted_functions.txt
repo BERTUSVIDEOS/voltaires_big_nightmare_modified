@@ -144,6 +144,9 @@ can_colonize_province = {
 	condition = {
 		potential = {
 			has_province_flag = cant_colonize_flag
+			NOT = {
+				has_province_flag = @FROM_can_colonize_flag
+			}
 		}
 		allow = {
 			always = no

@@ -209,7 +209,7 @@ estate_nobles_officer_corp = {
 
 estate_nobles_levies = {
 	icon = privilege_demand_more_troops
-	max_absolutism = -5
+	max_absolutism = 0	#-5→0
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes NOT = { has_government_attribute = free_noble_levies } } modifier = { max_absolutism = 1 } }
 	influence = 0.1
 	loyalty = 0.1
@@ -249,6 +249,7 @@ estate_nobles_levies = {
 		modifier = {
 			global_tax_modifier = -0.66
 			global_manpower_modifier = 0.66
+			max_absolutism = -20
 		}
 	}
 	influence_scaled_conditional_modifier = {
@@ -259,6 +260,7 @@ estate_nobles_levies = {
 		modifier = {
 			global_tax_modifier = -0.44
 			global_manpower_modifier = 0.44
+			max_absolutism = -10
 		}
 	}
 	influence_scaled_conditional_modifier = {
@@ -269,6 +271,7 @@ estate_nobles_levies = {
 		modifier = {
 			global_tax_modifier = -0.22
 			global_manpower_modifier = 0.22
+			max_absolutism = -5
 		}
 	}
 	mechanics = {
@@ -1180,6 +1183,7 @@ estate_nobles_royal_court_tasks = {
 		}
 		modifier = {
 			prestige_decay = -0.005
+			max_absolutism = -5
 		}
 	}
 	influence_scaled_conditional_modifier = {	#Modifier that are applied if the specified conditions are true. At 100% Influence you gain 100% of the modifier.
@@ -1191,6 +1195,7 @@ estate_nobles_royal_court_tasks = {
 		}
 		modifier = {
 			prestige_decay = -0.01
+			max_absolutism = -10
 		}
 	}
 	ai_will_do = {

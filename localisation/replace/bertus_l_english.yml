@@ -1,4 +1,5 @@
 ﻿l_english:
+ sca_unified_scandinavian_desc:0 "For untold centuries the Kingdoms of the North have been divided and locked in internecine power struggles. While this delighted their European neighbors, it at least forced each of the kingdoms to develop their own policies; learn their own lessons.\nNow they have been finally united under one banner, and all their hardship finally pays off as they will serve the realm of Scandinavia.\nEnable the [Root.GetBurghersName] privilege '§YForest Expansion§!'."
  cultural_ties_desc:0 "Different cultures have different customs, and for some reason tend to resist attempts from above to change said customs. We can turn this weakness into a strength by incorporating local leaders into our system of government and having them carry out our will in a way that is palatable to them.\n§OLenguage Ties§! - Accepted culture Governing Capacity: §G+25§!"
  has_dip_advisor_4_tooltip:0 "Have a at least lvl 4 diplomatic advisor"
  has_dip_advisor_5_tooltip:0 "Have a at least lvl 5 diplomatic advisor"

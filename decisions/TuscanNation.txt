@@ -4,35 +4,12 @@ country_decisions = {
 		major = yes
 		potential = {
 			normal_or_historical_nations = yes
-			primitives = no
-			OR = {
-				ai = no
-				is_playing_custom_nation = no
-			}
-			OR = {
-				is_free_or_tributary_trigger = yes
-				ai = no
-			}
-			was_never_end_game_tag_trigger = yes
-			NOT = { tag = TUS }
-			NOT = { tag = XKK }
-			OR = {
-				ai = no
-				AND = {
-					ai = yes
-					num_of_cities = 6
-					NOT = { exists = TUS }
-				}
-			}
+			is_free_or_tributary_trigger = yes
+			NOT = { is_formable_tier = { tier = 2 } }
+			NOT = { is_formable_tier = { tier = 3 } }
+			NOT = { is_formable_tier = { tier = 4 } }
+			NOT = { exists = TUS }
 			primary_culture = tuscan
-			is_colonial_nation = no
-			OR = {
-				is_former_colonial_nation = no
-				AND = {
-					is_former_colonial_nation = yes
-					ai = no
-				}
-			}
 		}
 		provinces_to_highlight = {
 			OR = {
@@ -63,10 +40,6 @@ country_decisions = {
 					}
 				}
 			}
-			OR = {
-				NOT = { owned_by = ROOT }
-				NOT = { is_core = ROOT }
-			}
 		}
 		allow = {
 			adm_tech = 10
@@ -90,6 +63,7 @@ country_decisions = {
 			on_change_tag_effect = yes
 			hidden_effect = { restore_country_name = yes }
 			swap_non_generic_missions = yes
+			set_formable_tier = { tier = 2 }
 			every_province = {
 				limit = {
 					culture = tuscan

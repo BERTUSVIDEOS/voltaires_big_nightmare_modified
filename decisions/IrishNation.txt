@@ -4,22 +4,10 @@ country_decisions = {
 		major = yes
 		potential = {
 			normal_or_historical_nations = yes
-			primitives = no
-			OR = {
-				ai = no
-				is_playing_custom_nation = no
-			}
-			OR = {
-				is_free_or_tributary_trigger = yes
-				ai = no
-			}
+			is_free_or_tributary_trigger = yes
+			NOT = { is_formable_tier = { tier = 3 } }
+			NOT = { is_formable_tier = { tier = 4 } }
 			NOT = { exists = IRE }
-			NOT = { tag = ENG }
-			NOT = { tag = ASE }
-			NOT = { tag = GBR }
-			NOT = { tag = LOI }
-			NOT = { tag = MAF }
-			was_never_end_game_tag_trigger = yes
 			capital_scope = { region = 	ireland_region }
 			OR = {
 				primary_culture = dalcassian
@@ -32,33 +20,22 @@ country_decisions = {
 				primary_culture = hiberno_norman
 				primary_culture = gallowglass
 			}
-			OR = {
-				ai = no
-				AND = {
-					ai = yes
-					num_of_cities = 6
-				}
-			}
-			is_colonial_nation = no
-			OR = {
-				is_former_colonial_nation = no
-				AND = {
-					is_former_colonial_nation = yes
-					ai = no
-				}
-			}
 		}
 		provinces_to_highlight = {
 			OR = {
-				province_id = 393
-				province_id = 2737
-				province_id = 2619
-				province_id = 921
-				province_id = 2373
-				province_id = 258
-				province_id = 426
-				province_id = 853
-				province_id = 773
+				province_id = 2739 # dublin
+				AND = {
+					region = ireland_region
+					ROOT = {
+						NOT = {
+							num_of_owned_provinces_with = {
+								is_core = ROOT
+								region = ireland_region
+								value = 48		#	 48/60 ireland region (80% since small region)
+							}
+						}
+					}
+				}
 			}
 			OR = {
 				NOT = { owned_by = ROOT }
@@ -70,22 +47,11 @@ country_decisions = {
 			is_nomad = no
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
-			owns = 393			# Ulster
-			owns = 2737			# Meath
-			owns = 2619			# Leinster
-			owns = 921			# Munster
-			owns = 2373			# Connaught
-			owns = 258			# Desmond
-			owns = 426			# Sligo
-			owns = 853			# Kildare
-			owns = 773			# Ulster
-			OR = {
-				primary_culture = irish
-				primary_culture = hiberno_norman
-				AND = {
-					any_province = { culture = irish }
-					primary_culture = gallowglass
-				}
+			2739 = { owned_by = ROOT is_state = yes }	# dublin
+			num_of_owned_provinces_with = {
+				is_core = ROOT
+				region = ireland_region
+				value = 48		#	 48/60 ireland region (80% since small region)
 			}
 		}
 		effect = {
@@ -93,6 +59,7 @@ country_decisions = {
 			on_change_tag_effect = yes
 			hidden_effect = { restore_country_name = yes }
 			swap_non_generic_missions = yes
+			set_formable_tier = { tier = 3 }
 			ireland_region = {
 				limit = {
 					NOT = { owned_by = ROOT }

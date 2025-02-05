@@ -4,35 +4,18 @@ country_decisions = {
 		major = yes
 		potential = {
 			normal_or_historical_nations = yes
-			OR = {
-				ai = no
-				is_playing_custom_nation = no
-			}
-			OR = {
-				is_free_or_tributary_trigger = yes
-				ai = no
-			}
-			was_never_end_game_tag_trigger = yes
-			NOT = { tag = ADU }
-			is_colonial_nation = no
-			OR = {
-				is_former_colonial_nation = no
-				AND = {
-					is_former_colonial_nation = yes
-					ai = no
-				}
-			}
+			is_free_or_tributary_trigger = yes
+			NOT = { is_formable_tier = { tier = 3 } }
+			NOT = { is_formable_tier = { tier = 4 } }
+			NOT = { exists = ADU }
 			primary_culture = andalucian
 			religion_group = muslim
-			NOT = { exists = ADU }
 		}
 		provinces_to_highlight = {
 			OR = {
 				province_id = 2670 # Cordoba
 				AND = {
-					AND = {
-						region = south_castille_region
-					}
+					region = south_castille_region
 					root = {
 						NOT = {
 							num_of_owned_provinces_with = {
@@ -50,12 +33,8 @@ country_decisions = {
 			}
 		}
 		allow = {
-			NOT = { exists = ADU }
-			is_free_or_tributary_trigger = yes
-			is_nomad = no
 			is_at_war = no
-			is_tribal = no
-			owns_core_province = 2670 # Cordoba
+			2670 = { owned_by = ROOT is_state = yes }	# Cordoba
 			num_of_owned_provinces_with = {
 				is_core = ROOT
 				region = south_castille_region

@@ -26,7 +26,7 @@
  south_italy_superregion:0 "South Italy"
  italy_superregion:0 "North Italy"
  emilia_romagna_region:0 "Emilia-Romagna"
- jourdan_law_desc:0 "A successful military legislative attempt, the Jourdan law forces all men between the ages of 20 and 25 liable for military service without spouses or offsprings. The poor and the destitute within our borders will be a great source of manpower to further our revolutionary ambitions across the old continent.\n\n'§YSlacken Recruiting Standards§!' Monthly Manpower: §G+50.0%§!"
+ jourdan_law_desc:0 "A successful military legislative attempt, the Jourdan law forces all men between the ages of 20 and 25 liable for military service without spouses or offsprings. The poor and the destitute within our borders will be a great source of manpower to further our revolutionary ambitions across the old continent.\n\n'§YSlacken Recruiting Standards§!' Monthly Manpower: §G+100.0%§!\n'§YSlacken Recruiting Standards§!' Monthly Sailors: §G+100.0%§!"
  napoleonic_tactics_desc:0 "A series of intense drilling exercises as well as renewed military tactics in the battlefield define our era. By utilizing new speedy maneuvers in the battlefield in conjunction with cavalry and artillery, our might will tower above our enemies.\nMilitary Tactics: §G+10.0%§!"
  improve_heir_adm_button_title:0 "Educate Heir Administrative Skill"
  improve_heir_dip_button_title:0 "Educate Heir Diplomatic Skill"

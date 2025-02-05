@@ -24,11 +24,16 @@ TO DO
 		- no longer give dev
 		- modifiers changed
 		- conditions simplified: religion & culture/reform
-	- templars estate 
-		- now requires to be christian
-		- no longer requires to be monarchy
-		- privileges with estate actions autorevoked after cooldown
-		- holy orders privilege fixed, unlocks 3 holy orders 
+	- Estates
+		- buffed crownland tiers
+		- influence scaled privileges 
+			- max absolutism -5→0 
+			- influence scaled max absolutism 0→-5/-10/-20
+		- templars estate 
+			- now requires to be christian
+			- no longer requires to be monarchy
+			- privileges with estate actions autorevoked after cooldown
+			- holy orders privilege fixed, unlocks 3 holy orders 
 	- Military reform if Soloing +100%
 	- hre princes threshold 100→20
 	- changed some greece & italy steppe provinces into grasslands
@@ -53,6 +58,12 @@ TO DO
 	- fixed rumanian formation (t3) and ideas
 	- fixed cologne missions
 	- fixed lombardy ideas to tier 2
+	- fixed germany formable requirements (south/central/north germany regions)
+	- fixed two sicilies formable requirements
+	- fixed scandinavia formable & ideas 
+	- fixed mamluks formable & ideas
+	- fixed genoa missions 
+	- updated tier 4 formables ideas, and now require adm tech 15
 	- holy orders cost 50→100
 	- army tradition 
 		- yearly military reform progress 1.0→0.5

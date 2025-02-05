@@ -1,5 +1,8 @@
 
 
+set_formable_tier = {
+	set_country_flag = tier_$tier$_formable_flag
+}
 transfer_manpower_fraction = {
 	$giver$ = {
 		set_variable = { which = max_manpower_var value = 0 }

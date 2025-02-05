@@ -5,6 +5,10 @@
 # if used extensivley it might make loading time longer.
 #
 #GENERAL TRIGGERS Se elimiaron todo los que no sean de anbennar
+
+is_formable_tier = {
+	has_country_flag = tier_$tier$_formable_flag
+}
 has_adm_advisor_4 = {
 	custom_trigger_tooltip = {
 		tooltip = has_adm_advisor_4_tooltip

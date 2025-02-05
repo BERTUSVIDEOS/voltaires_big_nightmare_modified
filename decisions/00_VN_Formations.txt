@@ -4,15 +4,9 @@ country_decisions = {
 		major = yes
 		potential = {
 			normal_or_historical_nations = yes
-			was_never_end_game_tag_trigger = yes
-			OR = {
-				ai = no
-				is_playing_custom_nation = no
-			}
-			OR = {
-				is_free_or_tributary_trigger = yes
-				ai = no
-			}
+			is_free_or_tributary_trigger = yes
+			NOT = { is_formable_tier = { tier = 3 } }
+			NOT = { is_formable_tier = { tier = 4 } }
 			NOT = { exists = MGF }
 			culture_group = south_slavic
 		}
@@ -44,11 +38,8 @@ country_decisions = {
 			}
 		}
 		allow = {
-			is_free_or_tributary_trigger = yes
-			is_at_war = no
-			is_nomad = no
 			adm_tech = 10
-			NOT = { exists = BYZ }
+			is_at_war = no
 			owns_core_province = 539 #Belgrade
 			num_of_owned_provinces_with = {
 				is_core = ROOT
@@ -64,6 +55,7 @@ country_decisions = {
 			on_change_tag_effect = yes
 			hidden_effect = { restore_country_name = yes }
 			remove_non_electors_emperors_from_empire_effect = yes
+			set_formable_tier = { tier = 3 }
 			add_country_modifier = {
 				name = "centralization_modifier"
 				duration = 7300
@@ -113,17 +105,11 @@ country_decisions = {
 		major = yes
 		potential = {
 			normal_or_historical_nations = yes
-			was_never_end_game_tag_trigger = yes
-			OR = {
-				ai = no
-				is_playing_custom_nation = no
-			}
-			OR = {
-				is_free_or_tributary_trigger = yes
-				ai = no
-			}
-			NOT = { tag = SAV }
+			is_free_or_tributary_trigger = yes
 			NOT = { exists = XAP }
+			NOT = { is_formable_tier = { tier = 2 } }
+			NOT = { is_formable_tier = { tier = 3 } }
+			NOT = { is_formable_tier = { tier = 4 } }
 			OR = {
 				primary_culture = arpitan
 				primary_culture = vivaro_alpine
@@ -159,15 +145,10 @@ country_decisions = {
 					}
 				}
 			}
-			OR = {
-				NOT = { owned_by = ROOT }
-				NOT = { is_core = ROOT }
-			}
 		}
 		allow = {
-			is_free_or_tributary_trigger = yes
-			is_at_war = no
 			adm_tech = 10
+			is_at_war = no
 			owns_core_province = 989 #Arles
 			development_in_provinces = {
 				value = 500
@@ -185,6 +166,7 @@ country_decisions = {
 			change_tag = XAP
 			on_change_tag_effect = yes
 			hidden_effect = { restore_country_name = yes }
+			set_formable_tier = { tier = 2 }
 			add_country_modifier = {
 				name = "centralization_modifier"
 				duration = 7300
@@ -211,6 +193,9 @@ country_decisions = {
 		major = yes
 		potential = {
 			normal_or_historical_nations = yes
+			NOT = { is_formable_tier = { tier = 2 } }
+			NOT = { is_formable_tier = { tier = 3 } }
+			NOT = { is_formable_tier = { tier = 4 } }
 			primitives = no
 			OR = {
 				tag = URC
@@ -246,6 +231,7 @@ country_decisions = {
 			change_tag = WUR
 			on_change_tag_effect = yes
 			hidden_effect = { restore_country_name = yes }
+			set_formable_tier = { tier = 2 }
 			if = {
 				limit = {
 					NOT = { government = monarchy }
@@ -281,16 +267,10 @@ country_decisions = {
 		major = yes
 		potential = {
 			normal_or_historical_nations = yes
-			primitives = no
-			OR = {
-				ai = no
-				is_playing_custom_nation = no
-			}
-			OR = {
-				is_free_or_tributary_trigger = yes
-				ai = no
-			}
-			was_never_end_game_tag_trigger = yes
+			is_free_or_tributary_trigger = yes
+			NOT = { is_formable_tier = { tier = 2 } }
+			NOT = { is_formable_tier = { tier = 3 } }
+			NOT = { is_formable_tier = { tier = 4 } }
 			NOT = { exists = FKN }
 			OR = {
 				primary_culture = franconian
@@ -328,10 +308,6 @@ country_decisions = {
 					}
 				}
 			}
-			OR = {
-				NOT = { owned_by = ROOT }
-				NOT = { is_core = ROOT }
-			}
 		}
 		allow = {
 			adm_tech = 10
@@ -355,6 +331,7 @@ country_decisions = {
 			change_tag = FKN
 			on_change_tag_effect = yes
 			hidden_effect = { restore_country_name = yes }
+			set_formable_tier = { tier = 2 }
 			swap_non_generic_missions = yes
 			if = {
 				limit = {
@@ -400,16 +377,10 @@ country_decisions = {
 		major = yes
 		potential = {
 			normal_or_historical_nations = yes
-			primitives = no
-			OR = {
-				ai = no
-				is_playing_custom_nation = no
-			}
-			OR = {
-				is_free_or_tributary_trigger = yes
-				ai = no
-			}
-			was_never_end_game_tag_trigger = yes
+			is_free_or_tributary_trigger = yes
+			NOT = { is_formable_tier = { tier = 2 } }
+			NOT = { is_formable_tier = { tier = 3 } }
+			NOT = { is_formable_tier = { tier = 4 } }
 			capital_scope = { superregion = italy_superregion }
 			NOT = { exists = XKK }
 			OR = {
@@ -469,6 +440,7 @@ country_decisions = {
 			on_change_tag_effect = yes
 			hidden_effect = { restore_country_name = yes }
 			custom_tooltip = langobardic_culture_provinces_tooltip
+			set_formable_tier = { tier = 2 }
 			hidden_effect = {
 				every_owned_province = {
 					limit = {
@@ -519,12 +491,6 @@ country_decisions = {
 		}
 		ai_will_do = {
 			factor = 1
-			modifier = {
-				factor = 0
-				NOT = { adm = 5 }
-				NOT = { dip = 5 }
-				NOT = { mil = 5 }
-			}
 		}
 	}
 
@@ -532,20 +498,15 @@ country_decisions = {
 		major = yes
 		potential = {
 			normal_or_historical_nations = yes
-			OR = {
-				ai = no
-				is_playing_custom_nation = no
-			}
-			OR = {
-				is_free_or_tributary_trigger = yes
-				ai = no
-			}
+			is_free_or_tributary_trigger = yes
+			NOT = { is_formable_tier = { tier = 2 } }
+			NOT = { is_formable_tier = { tier = 3 } }
+			NOT = { is_formable_tier = { tier = 4 } }
 			OR = {
 				NOT = { exists = SIC }
 				tag = APL
 			}
 			NOT = { tag = LBV }
-			was_never_end_game_tag_trigger = yes
 			capital_scope = { region = south_italy_region }
 			OR = {
 				culture_group = latin
@@ -579,10 +540,6 @@ country_decisions = {
 					}
 				}
 			}
-			OR = {
-				NOT = { owned_by = ROOT }
-				NOT = { is_core = ROOT }
-			}
 		}
 		allow = {
 			adm_tech = 10
@@ -603,16 +560,17 @@ country_decisions = {
 			}
 		}
 		effect = {
+			change_tag = SIC
+			on_change_tag_effect = yes
 			remove_non_electors_emperors_from_empire_effect = yes
+			hidden_effect = { restore_country_name = yes }
+			set_formable_tier = { tier = 2 }
 			if = {
 				limit = {
 					NOT = { government_rank = 3 }
 				}
 				set_government_rank = 3
 			}
-			change_tag = SIC
-			on_change_tag_effect = yes
-			hidden_effect = { restore_country_name = yes }
 			if = {
 				limit = { 
 					NOT = { was_tag = APL } 
@@ -647,9 +605,11 @@ country_decisions = {
 		major = yes
 		potential = {
 			normal_or_historical_nations = yes
-			primitives = no
+			is_free_or_tributary_trigger = yes
+			NOT = { is_formable_tier = { tier = 2 } }
+			NOT = { is_formable_tier = { tier = 3 } }
+			NOT = { is_formable_tier = { tier = 4 } }
 			NOT = { exists = RMG }
-			was_never_end_game_tag_trigger = yes
 			NOT = { tag = XKK }
 			OR = {
 				primary_culture = romagnan
@@ -683,10 +643,6 @@ country_decisions = {
 					}
 				}
 			}
-			OR = {
-				NOT = { owned_by = ROOT }
-				NOT = { is_core = ROOT }
-			}
 		}
 		allow = {
 			is_at_war = no
@@ -706,6 +662,7 @@ country_decisions = {
 			change_tag = RMG
 			on_change_tag_effect = yes
 			hidden_effect = { restore_country_name = yes }
+			set_formable_tier = { tier = 2 }
 			if = {
 				limit = {
 					NOT = { government = monarchy }
@@ -740,11 +697,10 @@ country_decisions = {
 		major = yes
 		potential = {
 			normal_or_historical_nations = yes
-			OR = {
-				is_free_or_tributary_trigger = yes
-				ai = no
-			}
-			was_never_end_game_tag_trigger = yes
+			is_free_or_tributary_trigger = yes
+			NOT = { is_formable_tier = { tier = 2 } }
+			NOT = { is_formable_tier = { tier = 3 } }
+			NOT = { is_formable_tier = { tier = 4 } }
 			NOT = { exists = BGU }
 			NOT = { tag = NED }
 			OR = {
@@ -776,10 +732,6 @@ country_decisions = {
 					}
 				}
 			}
-			OR = {
-				NOT = { owned_by = ROOT }
-				NOT = { is_core = ROOT }
-			}
 		}
 		allow = {
 			adm_tech = 10
@@ -800,6 +752,7 @@ country_decisions = {
 			on_change_tag_effect = yes
 			hidden_effect = { restore_country_name = yes }
 			remove_non_electors_emperors_from_empire_effect = yes
+			set_formable_tier = { tier = 2 }
 			add_country_modifier = {
 				name = "centralization_modifier"
 				duration = 7300
@@ -811,9 +764,9 @@ country_decisions = {
 			}
 			if = {
 				limit = {
-					NOT = { government_rank = 4 }
+					NOT = { government_rank = 3 }
 				}
-				set_government_rank = 4
+				set_government_rank = 3
 			}
 		}
 		ai_will_do = {
@@ -829,15 +782,10 @@ country_decisions = {
 		major = yes
 		potential = {
 			normal_or_historical_nations = yes
-			OR = {
-				ai = no
-				is_playing_custom_nation = no
-			}
-			OR = {
-				is_free_or_tributary_trigger = yes
-				ai = no
-			}
-			was_never_end_game_tag_trigger = yes
+			is_free_or_tributary_trigger = yes
+			NOT = { is_formable_tier = { tier = 2 } }
+			NOT = { is_formable_tier = { tier = 3 } }
+			NOT = { is_formable_tier = { tier = 4 } }
 			NOT = { exists = SLV }
 			primary_culture = slovenian
 		}
@@ -868,15 +816,10 @@ country_decisions = {
 					}
 				}
 			}
-			OR = {
-				NOT = { owned_by = ROOT }
-				NOT = { is_core = ROOT }
-			}
 		}
 		allow = {
-			is_free_or_tributary_trigger = yes
-			is_at_war = no
 			adm_tech = 10
+			is_at_war = no
 			owns_core_province = 958 #ljubljana
 			development_in_provinces = {
 				value = 500
@@ -894,6 +837,7 @@ country_decisions = {
 			on_change_tag_effect = yes
 			hidden_effect = { restore_country_name = yes }
 			remove_non_electors_emperors_from_empire_effect = yes
+			set_formable_tier = { tier = 2 }
 			add_country_modifier = {
 				name = "centralization_modifier"
 				duration = 7300
@@ -921,22 +865,14 @@ country_decisions = {
 		major = yes
 		potential = {
 			normal_or_historical_nations = yes
-			primitives = no
-			OR = {
-				ai = no
-				is_playing_custom_nation = no
-			}
-			OR = {
-				is_free_or_tributary_trigger = yes
-				ai = no
-			}
-			was_never_end_game_tag_trigger = yes
+			is_free_or_tributary_trigger = yes
+			NOT = { is_formable_tier = { tier = 3 } }
+			NOT = { is_formable_tier = { tier = 4 } }
 			NOT = { exists = SGC }
 			culture_group = germanic
 			capital_scope = {
 				region = south_germany_region
 			}
-			NOT = { has_country_flag = super_formable_flag }
 		}
 		provinces_to_highlight = {
 			AND = {
@@ -971,6 +907,7 @@ country_decisions = {
 			on_change_tag_effect = yes
 			hidden_effect = { restore_country_name = yes }
 			remove_non_electors_emperors_from_empire_effect = yes
+			set_formable_tier = { tier = 3 }
 			if = {
 				limit = { has_dlc = "Rights of Man" }
 				change_government = monarchy
@@ -994,9 +931,9 @@ country_decisions = {
 			add_prestige = 25
 			if = {
 				limit = {
-					NOT = { government_rank = 5 }
+					NOT = { government_rank = 4 }
 				}
-				set_government_rank = 5
+				set_government_rank = 4
 			}
 			if = {
 				limit = { has_custom_ideas = no NOT = { has_idea_group = SGC_ideas } }
@@ -1013,22 +950,15 @@ country_decisions = {
 		major = yes
 		potential = {
 			normal_or_historical_nations = yes
-			primitives = no
-			OR = {
-				ai = no
-				is_playing_custom_nation = no
-			}
-			OR = {
-				is_free_or_tributary_trigger = yes
-				ai = no
-			}
-			was_never_end_game_tag_trigger = yes
+			is_free_or_tributary_trigger = yes
+			NOT = { is_formable_tier = { tier = 2 } }
+			NOT = { is_formable_tier = { tier = 3 } }
+			NOT = { is_formable_tier = { tier = 4 } }
 			NOT = { exists = NGC }
 			culture_group = germanic
 			capital_scope = {
 				region = north_germany_region
 			}
-			NOT = { has_country_flag = super_formable_flag }
 		}
 		provinces_to_highlight = {
 			AND = {
@@ -1050,7 +980,6 @@ country_decisions = {
 		}
 		allow = {
 			adm_tech = 10
-			is_free_or_tributary_trigger = yes
 			is_at_war = no
 			num_of_owned_provinces_with = {
 				is_core = ROOT
@@ -1063,6 +992,7 @@ country_decisions = {
 			on_change_tag_effect = yes
 			hidden_effect = { restore_country_name = yes }
 			remove_non_electors_emperors_from_empire_effect = yes
+			set_formable_tier = { tier = 3 }
 			if = {
 				limit = { has_dlc = "Rights of Man" }
 				change_government = monarchy
@@ -1086,9 +1016,9 @@ country_decisions = {
 			add_prestige = 25
 			if = {
 				limit = {
-					NOT = { government_rank = 5 }
+					NOT = { government_rank = 4 }
 				}
-				set_government_rank = 5
+				set_government_rank = 4
 			}
 			if = {
 				limit = { has_custom_ideas = no NOT = { has_idea_group = NGC_ideas }}
@@ -1105,6 +1035,9 @@ country_decisions = {
 		major = yes
 		potential = {
 			normal_or_historical_nations = yes
+			NOT = { is_formable_tier = { tier = 2 } }
+			NOT = { is_formable_tier = { tier = 3 } }
+			NOT = { is_formable_tier = { tier = 4 } }
 			OR = {
 				tag = SWX
 				tag = SGX
@@ -1149,6 +1082,7 @@ country_decisions = {
 			change_tag = MKL
 			on_change_tag_effect = yes
 			hidden_effect = { restore_country_name = yes }
+			set_formable_tier = { tier = 2 }
 			if = {
 				limit = {
 					NOT = { government = monarchy }
@@ -1196,6 +1130,9 @@ country_decisions = {
 		major = yes
 		potential = {
 			normal_or_historical_nations = yes
+			NOT = { is_formable_tier = { tier = 2 } }
+			NOT = { is_formable_tier = { tier = 3 } }
+			NOT = { is_formable_tier = { tier = 4 } }
 			OR = {
 				tag = RSB
 				tag = KIL
@@ -1234,10 +1171,6 @@ country_decisions = {
 					}
 				}
 			}
-			OR = {
-				NOT = { owned_by = ROOT }
-				NOT = { is_core = ROOT }
-			}
 		}
 		allow = {
 			is_at_war = no
@@ -1258,6 +1191,7 @@ country_decisions = {
 			change_tag = SHL
 			on_change_tag_effect = yes
 			hidden_effect = { restore_country_name = yes }
+			set_formable_tier = { tier = 2 }
 			if = {
 				limit = {
 					NOT = { government = monarchy }
@@ -1287,7 +1221,9 @@ country_decisions = {
 		major = yes
 		potential = {
 			normal_or_historical_nations = yes
-			primitives = no
+			NOT = { is_formable_tier = { tier = 2 } }
+			NOT = { is_formable_tier = { tier = 3 } }
+			NOT = { is_formable_tier = { tier = 4 } }
 			OR = {
 				AND = {
 					tag = UPA
@@ -1298,13 +1234,7 @@ country_decisions = {
 					dynasty = "von Wittelsbach"
 				}
 			}
-			OR = {
-				AND = {
-					ai = no
-					tag = PAL
-				}
-				NOT = { exists = PAL }
-			}
+			NOT = { exists = PAL }
 		}
 		provinces_to_highlight = {
 			OR = {
@@ -1333,10 +1263,6 @@ country_decisions = {
 					}
 				}
 			}
-			OR = {
-				NOT = { owned_by = ROOT }
-				NOT = { is_core = ROOT }
-			}
 		}
 		allow = {
 			is_free_or_tributary_trigger = yes
@@ -1358,6 +1284,7 @@ country_decisions = {
 			change_tag = PAL
 			on_change_tag_effect = yes
 			hidden_effect = { restore_country_name = yes }
+			set_formable_tier = { tier = 2 }
 			swap_non_generic_missions = yes
 			if = {
 				limit = {
@@ -1393,6 +1320,9 @@ country_decisions = {
 		major = yes
 		potential = {
 			normal_or_historical_nations = yes
+			NOT = { is_formable_tier = { tier = 2 } }
+			NOT = { is_formable_tier = { tier = 3 } }
+			NOT = { is_formable_tier = { tier = 4 } }
 			primary_culture = eastphalian
 			OR = {
 				ai = no
@@ -1424,10 +1354,6 @@ country_decisions = {
 					}
 				}
 			}
-			OR = {
-				NOT = { owned_by = ROOT }
-				NOT = { is_core = ROOT }
-			}
 		}
 		allow = {
 			is_free_or_tributary_trigger = yes
@@ -1448,6 +1374,7 @@ country_decisions = {
 			change_tag = BRU
 			on_change_tag_effect = yes
 			hidden_effect = { restore_country_name = yes }
+			set_formable_tier = { tier = 2 }
 			swap_non_generic_missions = yes
 			if = {
 				limit = {
@@ -1479,18 +1406,11 @@ country_decisions = {
 		major = yes
 		potential = {
 			normal_or_historical_nations = yes
-			primitives = no
+			is_free_or_tributary_trigger = yes
+			NOT = { is_formable_tier = { tier = 2 } }
+			NOT = { is_formable_tier = { tier = 3 } }
+			NOT = { is_formable_tier = { tier = 4 } }
 			primary_culture = schlesian
-			was_never_end_game_tag_trigger = yes
-			NOT = { tag = BOH }
-			OR = {
-				ai = no
-				is_playing_custom_nation = no
-			}
-			OR = {
-				is_free_or_tributary_trigger = yes
-				ai = no
-			}
 			NOT = { exists = SIL }
 		}
 		provinces_to_highlight = {
@@ -1508,10 +1428,6 @@ country_decisions = {
 					}
 				}
 			}
-			OR = {
-				NOT = { owned_by = ROOT }
-				NOT = { is_core = ROOT }
-			}
 		}
 		allow = {
 			is_at_war = no
@@ -1527,6 +1443,7 @@ country_decisions = {
 			change_tag = SIL
 			on_change_tag_effect = yes
 			hidden_effect = { restore_country_name = yes }
+			set_formable_tier = { tier = 2 }
 			if = {
 				limit = {
 					NOT = { government = monarchy }
@@ -1547,9 +1464,9 @@ country_decisions = {
 			add_prestige = 25
 			if = {
 				limit = {
-					NOT = { government_rank = 4 }
+					NOT = { government_rank = 3 }
 				}
-				set_government_rank = 4
+				set_government_rank = 3
 			}
 		}
 		ai_will_do = {
@@ -1561,17 +1478,11 @@ country_decisions = {
 		major = yes
 		potential = {
 			normal_or_historical_nations = yes
-			primitives = no
+			is_free_or_tributary_trigger = yes
+			NOT = { is_formable_tier = { tier = 2 } }
+			NOT = { is_formable_tier = { tier = 3 } }
+			NOT = { is_formable_tier = { tier = 4 } }
 			primary_culture = boden_alemannic
-			was_never_end_game_tag_trigger = yes
-			OR = {
-				ai = no
-				is_playing_custom_nation = no
-			}
-			OR = {
-				is_free_or_tributary_trigger = yes
-				ai = no
-			}
 			NOT = { exists = ALS }
 		}
 		provinces_to_highlight = {
@@ -1599,10 +1510,6 @@ country_decisions = {
 					}
 				}
 			}
-			OR = {
-				NOT = { owned_by = ROOT }
-				NOT = { is_core = ROOT }
-			}
 		}
 		allow = {
 			is_free_or_tributary_trigger = yes
@@ -1623,6 +1530,7 @@ country_decisions = {
 			change_tag = ALS
 			on_change_tag_effect = yes
 			hidden_effect = { restore_country_name = yes }
+			set_formable_tier = { tier = 2 }
 			if = {
 				limit = {
 					NOT = { government = monarchy }
@@ -1655,6 +1563,9 @@ country_decisions = {
 		major = yes
 		potential = {
 			normal_or_historical_nations = yes
+			is_free_or_tributary_trigger = yes
+			NOT = { is_formable_tier = { tier = 3 } }
+			NOT = { is_formable_tier = { tier = 4 } }
 			OR = {
 				primary_culture = occitain
 				primary_culture = gascon
@@ -1664,7 +1575,6 @@ country_decisions = {
 			}
 			NOT = { tag = FRA }
 			NOT = { exists = AQT }
-			was_never_end_game_tag_trigger = yes
 		}
 		provinces_to_highlight = {
 			OR = {
@@ -1673,9 +1583,10 @@ country_decisions = {
 					region = aquitaine_region
 					root = {
 						NOT = {
-							development_in_provinces = {
-								value = 1500
+							num_of_owned_provinces_with = {
+								is_core = ROOT
 								region = aquitaine_region
+								value = 72	#72/90 aquitaine region (80% since small region)
 							}
 						}
 					}
@@ -1689,9 +1600,10 @@ country_decisions = {
 		allow = {
 			is_at_war = no
 			owns_core_province = 2324		# Bordeaux
-			development_in_provinces = { 	#development requirement since small region
-				value = 1500
+			num_of_owned_provinces_with = {
+				is_core = ROOT
 				region = aquitaine_region
+				value = 72	#72/90 aquitaine region (80% since small region)
 			}
 		}
 		effect = {
@@ -1700,6 +1612,7 @@ country_decisions = {
 			hidden_effect = { restore_country_name = yes }
 			swap_non_generic_missions = yes
 			remove_non_electors_emperors_from_empire_effect = yes
+			set_formable_tier = { tier = 3 }
 			if = {
 				limit = {
 					NOT = { government = monarchy }
@@ -1709,9 +1622,9 @@ country_decisions = {
 			}
 			if = {
 				limit = {
-					NOT = { government_rank = 5 }
+					NOT = { government_rank = 4 }
 				}
-				set_government_rank = 5
+				set_government_rank = 4
 			}
 			aquitaine_region = {
 				limit = {
@@ -1739,21 +1652,13 @@ country_decisions = {
 		major = yes
 		potential = {
 			normal_or_historical_nations = yes
+			is_free_or_tributary_trigger = yes
+			NOT = { is_formable_tier = { tier = 2 } }
+			NOT = { is_formable_tier = { tier = 3 } }
+			NOT = { is_formable_tier = { tier = 4 } }
 			primary_culture = welsh
-			was_never_end_game_tag_trigger = yes
 			government = monarchy
-			OR = {
-				ai = no
-				is_playing_custom_nation = no
-			}
-			OR = {
-				is_free_or_tributary_trigger = yes
-				ai = no
-			}
 			NOT = { exists = WLS }
-			NOT = { tag = ASE }
-			NOT = { tag = ENG }
-			NOT = { tag = GBR }
 		}
 		provinces_to_highlight = {
 			OR = {
@@ -1778,15 +1683,10 @@ country_decisions = {
 					}
 				}
 			}
-			OR = {
-				NOT = { owned_by = ROOT }
-				NOT = { is_core = ROOT }
-			}
 		}
 		allow = {
-			is_free_or_tributary_trigger = yes
+			adm_tech = 10
 			is_at_war = no
-			is_nomad = no
 			NOT = { exists = WLS }
 			owns_core_province = 1067 #glamorgan
 			development_in_provinces = {
@@ -1803,6 +1703,7 @@ country_decisions = {
 			on_change_tag_effect = yes
 			hidden_effect = { restore_country_name = yes }
 			remove_non_electors_emperors_from_empire_effect = yes
+			set_formable_tier = { tier = 2 }
 			add_country_modifier = {
 				name = "centralization_modifier"
 				duration = 7300
@@ -1828,20 +1729,12 @@ country_decisions = {
 		major = yes
 		potential = {
 			normal_or_historical_nations = yes
+			is_free_or_tributary_trigger = yes
+			NOT = { is_formable_tier = { tier = 2 } }
+			NOT = { is_formable_tier = { tier = 3 } }
+			NOT = { is_formable_tier = { tier = 4 } }
 			primary_culture = sardinian
-			was_never_end_game_tag_trigger = yes
-			NOT = { tag = SIC }
-			NOT = { tag = SPI }
-			OR = {
-				ai = no
-				is_playing_custom_nation = no
-			}
-			OR = {
-				is_free_or_tributary_trigger = yes
-				ai = no
-			}
 			NOT = { exists = SAR }
-			NOT = { exists = SPI }
 		}
 		provinces_to_highlight = {
 			OR = {
@@ -1882,33 +1775,16 @@ country_decisions = {
 			hidden_effect = { restore_country_name = yes }
 			swap_non_generic_missions = yes
 			remove_non_electors_emperors_from_empire_effect = yes
+			set_formable_tier = { tier = 2 }
 			add_country_modifier = {
 				name = "centralization_modifier"
 				duration = 7300
 			}
-			sassari_area = {
-				limit = {
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = SAR
-			}
-			gallura_area = {
-				limit = {
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = SAR
-			}
-			arborea_area = {
-				limit = {
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = SAR
-			}
 			if = {
 				limit = {
-					NOT = { government_rank = 5 }
+					NOT = { government_rank = 3 }
 				}
-				set_government_rank = 5
+				set_government_rank = 3
 			}
 			if = {
 				limit = { has_custom_ideas = no NOT = { has_idea_group = SAR_ideas }}
@@ -1925,16 +1801,11 @@ country_decisions = {
 		major = yes
 		potential = {
 			normal_or_historical_nations = yes
+			is_free_or_tributary_trigger = yes
+			NOT = { is_formable_tier = { tier = 2 } }
+			NOT = { is_formable_tier = { tier = 3 } }
+			NOT = { is_formable_tier = { tier = 4 } }
 			primary_culture = moldovan
-			was_never_end_game_tag_trigger = yes
-			OR = {
-				ai = no
-				is_playing_custom_nation = no
-			}
-			OR = {
-				is_free_or_tributary_trigger = yes
-				ai = no
-			}
 			NOT = { exists = MOL }
 			NOT = { tag = RMN }
 		}
@@ -1953,10 +1824,6 @@ country_decisions = {
 					}
 				}
 			}
-			OR = {
-				NOT = { owned_by = ROOT }
-				NOT = { is_core = ROOT }
-			}
 		}
 		allow = {
 			adm_tech = 10
@@ -1974,6 +1841,7 @@ country_decisions = {
 			change_tag = MOL
 			on_change_tag_effect = yes
 			hidden_effect = { restore_country_name = yes }
+			set_formable_tier = { tier = 2 } }
 			if = {
 				limit = { is_tribal = yes }
 				change_government = monarchy
@@ -1992,9 +1860,9 @@ country_decisions = {
 			}
 			if = {
 				limit = {
-					NOT = { government_rank = 4 }
+					NOT = { government_rank = 3 }
 				}
-				set_government_rank = 4
+				set_government_rank = 3
 			}
 			if = {
 				limit = { has_custom_ideas = no NOT = { has_idea_group = MOL_ideas }}
@@ -2011,18 +1879,12 @@ country_decisions = {
 		major = yes
 		potential = {
 			normal_or_historical_nations = yes
+			is_free_or_tributary_trigger = yes
+			NOT = { is_formable_tier = { tier = 2 } }
+			NOT = { is_formable_tier = { tier = 3 } }
+			NOT = { is_formable_tier = { tier = 4 } }
 			primary_culture = wallachian
-			was_never_end_game_tag_trigger = yes
-			OR = {
-				ai = no
-				is_playing_custom_nation = no
-			}
-			OR = {
-				is_free_or_tributary_trigger = yes
-				ai = no
-			}
 			NOT = { exists = WAL }
-			NOT = { tag = RMN }
 		}
 		provinces_to_highlight = {
 			OR = {
@@ -2049,17 +1911,10 @@ country_decisions = {
 					}
 				}
 			}
-			OR = {
-				NOT = { owned_by = ROOT }
-				NOT = { is_core = ROOT }
-			}
 		}
 		allow = {
 			adm_tech = 10
-			is_free_or_tributary_trigger = yes
 			is_at_war = no
-			is_nomad = no
-			NOT = { exists = WAL }
 			owns_core_province = 5685 #tirgoviste
 			development_in_provinces = {
 				value = 500
@@ -2075,6 +1930,7 @@ country_decisions = {
 			change_tag = WAL
 			on_change_tag_effect = yes
 			hidden_effect = { restore_country_name = yes }
+			set_formable_tier = { tier = 2 }
 			if = {
 				limit = { is_tribal = yes }
 				change_government = monarchy
@@ -2087,9 +1943,9 @@ country_decisions = {
 			}
 			if = {
 				limit = {
-					NOT = { government_rank = 4 }
+					NOT = { government_rank = 3 }
 				}
-				set_government_rank = 4
+				set_government_rank = 3
 			}
 			if = {
 				limit = { has_custom_ideas = no NOT = { has_idea_group = WAL_ideas }}
@@ -2106,18 +1962,12 @@ country_decisions = {
 		major = yes
 		potential = {
 			normal_or_historical_nations = yes
+			is_free_or_tributary_trigger = yes
+			NOT = { is_formable_tier = { tier = 2 } }
+			NOT = { is_formable_tier = { tier = 3 } }
+			NOT = { is_formable_tier = { tier = 4 } }
 			primary_culture = serbian
-			was_never_end_game_tag_trigger = yes
-			OR = {
-				ai = no
-				is_playing_custom_nation = no
-			}
-			OR = {
-				is_free_or_tributary_trigger = yes
-				ai = no
-			}
 			NOT = { exists = SER }
-			NOT = { tag = MGF }
 		}
 		provinces_to_highlight = {
 			OR = {
@@ -2145,10 +1995,6 @@ country_decisions = {
 						}
 					}
 				}
-			}
-			OR = {
-				NOT = { owned_by = ROOT }
-				NOT = { is_core = ROOT }
 			}
 		}
 		allow = {
@@ -2178,15 +2024,16 @@ country_decisions = {
 			hidden_effect = { restore_country_name = yes }
 			swap_non_generic_missions = yes
 			remove_non_electors_emperors_from_empire_effect = yes
+			set_formable_tier = { tier = 2 }
 			add_country_modifier = {
 				name = "centralization_modifier"
 				duration = 7300
 			}
 			if = {
 				limit = {
-					NOT = { government_rank = 4 }
+					NOT = { government_rank = 3 }
 				}
-				set_government_rank = 4
+				set_government_rank = 3
 			}
 			if = {
 				limit = { has_custom_ideas = no NOT = { has_idea_group = SER_ideas }}
@@ -2203,18 +2050,12 @@ country_decisions = {
 		major = yes
 		potential = {
 			normal_or_historical_nations = yes
+			is_free_or_tributary_trigger = yes
+			NOT = { is_formable_tier = { tier = 2 } }
+			NOT = { is_formable_tier = { tier = 3 } }
+			NOT = { is_formable_tier = { tier = 4 } }
 			primary_culture = albanian
-			was_never_end_game_tag_trigger = yes
-			OR = {
-				ai = no
-				is_playing_custom_nation = no
-			}
-			OR = {
-				is_free_or_tributary_trigger = yes
-				ai = no
-			}
 			NOT = { exists = ALB }
-			NOT = { tag = DRZ }
 		}
 		provinces_to_highlight = {
 			OR = {
@@ -2255,6 +2096,7 @@ country_decisions = {
 			change_tag = ALB
 			on_change_tag_effect = yes
 			hidden_effect = { restore_country_name = yes }
+			set_formable_tier = { tier = 2 }
 			if = {
 				limit = { is_tribal = yes }
 				change_government = monarchy
@@ -2267,9 +2109,9 @@ country_decisions = {
 			}
 			if = {
 				limit = {
-					NOT = { government_rank = 4 }
+					NOT = { government_rank = 3 }
 				}
-				set_government_rank = 4
+				set_government_rank = 3
 			}
 			add_prestige = 10
 		}
@@ -2282,19 +2124,11 @@ country_decisions = {
 		major = yes
 		potential = {
 			normal_or_historical_nations = yes
+			is_free_or_tributary_trigger = yes
+			NOT = { is_formable_tier = { tier = 2 } }
+			NOT = { is_formable_tier = { tier = 3 } }
+			NOT = { is_formable_tier = { tier = 4 } }
 			culture_group = south_slavic
-			OR = {
-				tag = PRP
-				tag = VZH
-			}
-			OR = {
-				ai = no
-				is_playing_custom_nation = no
-			}
-			OR = {
-				is_free_or_tributary_trigger = yes
-				ai = no
-			}
 			NOT = { exists = MXD }
 		}
 		provinces_to_highlight = {
@@ -2314,7 +2148,6 @@ country_decisions = {
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
 			is_nomad = no
-			NOT = { exists = MXD }
 			owns_core_province = 562
 			owns_core_province = 613
 			owns_core_province = 2066
@@ -2325,6 +2158,7 @@ country_decisions = {
 			on_change_tag_effect = yes
 			hidden_effect = { restore_country_name = yes }
 			remove_non_electors_emperors_from_empire_effect = yes
+			set_formable_tier = { tier = 2 }
 			add_country_modifier = {
 				name = "centralization_modifier"
 				duration = 7300
@@ -2339,19 +2173,12 @@ country_decisions = {
 	hungarian_nation = {
 		major = yes
 		potential = {
-			primitives = no
 			normal_or_historical_nations = yes
+			is_free_or_tributary_trigger = yes
+			NOT = { is_formable_tier = { tier = 3 } }
+			NOT = { is_formable_tier = { tier = 4 } }
 			primary_culture = hungarian
-			was_never_end_game_tag_trigger = yes
-			OR = {
-				ai = no
-				is_playing_custom_nation = no
-			}
-			OR = {
-				is_free_or_tributary_trigger = yes
-				ai = no
-			}
-			NOT = { tag = HUN }
+			NOT = { exists = HUN }
 		}
 		provinces_to_highlight = {
 			OR = {
@@ -2404,33 +2231,22 @@ country_decisions = {
 			hidden_effect = { restore_country_name = yes }
 			swap_non_generic_missions = yes
 			remove_non_electors_emperors_from_empire_effect = yes
+			set_formable_tier = { tier = 3 }
 			add_country_modifier = {
 				name = "centralization_modifier"
 				duration = 7300
 			}
-			hungary_region = {
-				limit = {
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = HUN
-			}
-			transylvania_region = {
-				limit = {
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = HUN
-			}
 			if = {
 				limit = {
-					NOT = { government_rank = 5 }
+					NOT = { government_rank = 4 }
 				}
-				set_government_rank = 5
+				set_government_rank = 4
 			}
 			if = {
 				limit = { has_custom_ideas = no NOT = { has_idea_group = HUN_ideas }}
 				country_event = { id = ideagroups.1 } #Swap Ideas
 			}
-			add_prestige = 20
+			add_prestige = 25
 		}
 		ai_will_do = {
 			factor = 1
@@ -2441,20 +2257,12 @@ country_decisions = {
 		major = yes
 		potential = {
 			normal_or_historical_nations = yes
+			is_free_or_tributary_trigger = yes
+			NOT = { is_formable_tier = { tier = 2 } }
+			NOT = { is_formable_tier = { tier = 3 } }
+			NOT = { is_formable_tier = { tier = 4 } }
 			primary_culture = dalmatian
-			was_never_end_game_tag_trigger = yes
-			OR = {
-				ai = no
-				is_playing_custom_nation = no
-			}
-			OR = {
-				is_free_or_tributary_trigger = yes
-				ai = no
-			}
 			NOT = { exists = DLM }
-			NOT = { tag = LBV }
-			NOT = { tag = XKK }
-			NOT = { tag = SIC }
 		}
 		provinces_to_highlight = {
 			OR = {
@@ -2483,10 +2291,6 @@ country_decisions = {
 					}
 				}
 			}
-			OR = {
-				NOT = { owned_by = ROOT }
-				NOT = { is_core = ROOT }
-			}
 		}
 		allow = {
 			adm_tech = 10
@@ -2509,6 +2313,7 @@ country_decisions = {
 			change_tag = DLM
 			on_change_tag_effect = yes
 			hidden_effect = { restore_country_name = yes }
+			set_formable_tier = { tier = 2 }
 			add_country_modifier = {
 				name = "centralization_modifier"
 				duration = 7300
@@ -2534,17 +2339,12 @@ country_decisions = {
 		major = yes
 		potential = {
 			normal_or_historical_nations = yes
-			primitives = no
+			is_free_or_tributary_trigger = yes
+			NOT = { is_formable_tier = { tier = 2 } }
+			NOT = { is_formable_tier = { tier = 3 } }
+			NOT = { is_formable_tier = { tier = 4 } }
 			tag = NRM
 			primary_culture = normand
-			OR = {
-				ai = no
-				is_playing_custom_nation = no
-			}
-			OR = {
-				is_free_or_tributary_trigger = yes
-				ai = no
-			}
 			exists = ASE
 			ASE = { ai = yes }
 			always = no
@@ -2559,6 +2359,7 @@ country_decisions = {
 			always = no
 		}
 		effect = {
+			set_formable_tier = { tier = 2 }
 			custom_tooltip = normand_english_tooltip
 			hidden_effect = {
 				remove_non_electors_emperors_from_empire_effect = yes
@@ -2668,26 +2469,15 @@ country_decisions = {
 		major = yes
 		potential = {
 			normal_or_historical_nations = yes
+			is_free_or_tributary_trigger = yes
+			NOT = { is_formable_tier = { tier = 3 } }
+			NOT = { is_formable_tier = { tier = 4 } }
 			OR = {
 				primary_culture = lithuanian
 				primary_culture = samogitian
 				primary_culture = sudovian
 			}
-			was_never_end_game_tag_trigger = yes
-			NOT = { exists = PLC }
-			NOT = { tag = LIT }
-			OR = {
-				ai = no
-				is_playing_custom_nation = no
-			}
-			OR = {
-				is_free_or_tributary_trigger = yes
-				ai = no
-			}
-			OR = {
-				ai = no
-				NOT = { exists = LIT }
-			}
+			NOT = { exists = LIT }
 		}
 		provinces_to_highlight = {
 			OR = {
@@ -2711,10 +2501,7 @@ country_decisions = {
 		}
 		allow = {
 			adm_tech = 10
-			is_free_or_tributary_trigger = yes
 			is_at_war = no
-			is_nomad = no
-			NOT = { exists = LIT }
 			owns_core_province = 5732 #Vilna
 			owns_core_province = 5752 #Kaunas
 			owns_core_province = 5739 #Svencionys
@@ -2730,6 +2517,7 @@ country_decisions = {
 			hidden_effect = { restore_country_name = yes }
 			swap_non_generic_missions = yes
 			remove_non_electors_emperors_from_empire_effect = yes
+			set_formable_tier = { tier = 3 }
 			if = {
 				limit = { government = native }
 				change_government = tribal
@@ -2754,21 +2542,13 @@ country_decisions = {
 		major = yes
 		potential = {
 			normal_or_historical_nations = yes
+			is_free_or_tributary_trigger = yes
+			NOT = { is_formable_tier = { tier = 3 } }
+			NOT = { is_formable_tier = { tier = 4 } }
 			OR = {
 				primary_culture = tunisian
 				primary_culture = algerian
 				culture_group = maghrebi
-			}
-			was_never_end_game_tag_trigger = yes
-			NOT = { tag = MOR }
-			NOT = { tag = EGY }
-			OR = {
-				ai = no
-				is_playing_custom_nation = no
-			}
-			OR = {
-				is_free_or_tributary_trigger = yes
-				ai = no
 			}
 			NOT = { exists = IFQ }
 		}
@@ -2779,9 +2559,10 @@ country_decisions = {
 					region = tunis_region
 					root = {
 						NOT = {
-							development_in_provinces = {
-								value = 500
+							num_of_owned_provinces_with = {
+								is_core = ROOT
 								region = tunis_region
+								value = 85	#85/130 tunis region
 							}
 						}
 					}
@@ -2793,14 +2574,12 @@ country_decisions = {
 			}
 		}
 		allow = {
-			is_free_or_tributary_trigger = yes
 			is_at_war = no
-			is_nomad = no
-			NOT = { exists = IFQ }
 			owns_core_province = 586 #Tunis
-			development_in_provinces = {
-				value = 500
+			num_of_owned_provinces_with = {
+				is_core = ROOT
 				region = tunis_region
+				value = 85	#85/130 tunis region
 			}
 		}
 		effect = {
@@ -2809,6 +2588,7 @@ country_decisions = {
 			hidden_effect = { restore_country_name = yes }
 			swap_non_generic_missions = yes
 			remove_non_electors_emperors_from_empire_effect = yes
+			set_formable_tier = { tier = 3 }
 			if = {
 				limit = { government = tribal }
 				change_government = monarchy
@@ -2820,15 +2600,15 @@ country_decisions = {
 			}
 			if = {
 				limit = {
-					NOT = { government_rank = 5 }
+					NOT = { government_rank = 4 }
 				}
-				set_government_rank = 5
+				set_government_rank = 4
 			}
 			if = {
 				limit = { has_custom_ideas = no NOT = { has_idea_group = IFQ_ideas }}
 				country_event = { id = ideagroups.1 } #Swap Ideas
 			}
-			add_prestige = 10
+			add_prestige = 25
 		}
 		ai_will_do = {
 			factor = 1
@@ -2840,6 +2620,9 @@ country_decisions = {
 		potential = {
 			normal_or_historical_nations = yes
 			was_never_end_game_tag_trigger = yes
+			NOT = { is_formable_tier = { tier = 2 } }
+			NOT = { is_formable_tier = { tier = 3 } }
+			NOT = { is_formable_tier = { tier = 4 } }
 			OR = {
 				ai = no
 				is_playing_custom_nation = no
@@ -2894,11 +2677,12 @@ country_decisions = {
 			hidden_effect = { restore_country_name = yes }
 			set_capital = 6301
 			remove_non_electors_emperors_from_empire_effect = yes
+			set_formable_tier = { tier = 2 }
 			if = {
 				limit = {
-					NOT = { government_rank = 5 }
+					NOT = { government_rank = 3 }
 				}
-				set_government_rank = 5
+				set_government_rank = 3
 			}
 			if = {
 				limit = { government = tribal }
@@ -2907,14 +2691,6 @@ country_decisions = {
 			add_country_modifier = {
 				name = "centralization_modifier"
 				duration = 7300
-			}
-			lower_mesopotamia_region = {
-				limit = { NOT = { owned_by = ROOT } }
-				add_permanent_claim = IRQ
-			}
-			assyria_region = {
-				limit = { NOT = { owned_by = ROOT } }
-				add_permanent_claim = IRQ
 			}
 			if = {
 				limit = { has_custom_ideas = no NOT = { has_idea_group = IRQ_ideas }}
@@ -2931,15 +2707,10 @@ country_decisions = {
 		major = yes
 		potential = {
 			normal_or_historical_nations = yes
-			was_never_end_game_tag_trigger = yes
-			OR = {
-				ai = no
-				is_playing_custom_nation = no
-			}
-			OR = {
-				is_free_or_tributary_trigger = yes
-				ai = no
-			}
+			is_free_or_tributary_trigger = yes
+			NOT = { is_formable_tier = { tier = 2 } }
+			NOT = { is_formable_tier = { tier = 3 } }
+			NOT = { is_formable_tier = { tier = 4 } }
 			NOT = { tag = ILK }
 			NOT = { tag = GLH }
 			NOT = { tag = PER }
@@ -2989,11 +2760,12 @@ country_decisions = {
 			hidden_effect = { restore_country_name = yes }
 			set_capital = 3065
 			remove_non_electors_emperors_from_empire_effect = yes
+			set_formable_tier = { tier = 2 }
 			if = {
 				limit = {
-					NOT = { government_rank = 5 }
+					NOT = { government_rank = 3 }
 				}
-				set_government_rank = 5
+				set_government_rank = 3
 			}
 			if = {
 				limit = { government = tribal }
@@ -3002,18 +2774,6 @@ country_decisions = {
 			add_country_modifier = {
 				name = "centralization_modifier"
 				duration = 7300
-			}
-			al_jazira_region = {
-				limit = { NOT = { owned_by = ROOT } }
-				add_permanent_claim = SYR
-			}
-			syria_region = {
-				limit = { NOT = { owned_by = ROOT } }
-				add_permanent_claim = SYR
-			}
-			transjordan_region = {
-				limit = { NOT = { owned_by = ROOT } }
-				add_permanent_claim = SYR
 			}
 			if = {
 				limit = { has_custom_ideas = no NOT = { has_idea_group = SYR_ideas }}
@@ -3030,15 +2790,8 @@ country_decisions = {
 		major = yes
 		potential = {
 			normal_or_historical_nations = yes
-			was_never_end_game_tag_trigger = yes
-			OR = {
-				ai = no
-				is_playing_custom_nation = no
-			}
-			OR = {
-				is_free_or_tributary_trigger = yes
-				ai = no
-			}
+			is_free_or_tributary_trigger = yes
+			NOT = { is_formable_tier = { tier = 4 } }
 			NOT = { tag = ILK }
 			NOT = { tag = GLH }
 			NOT = { tag = PER }
@@ -3081,7 +2834,6 @@ country_decisions = {
 		allow = {
 			NOT = { exists = ASY }
 			is_free_or_tributary_trigger = yes
-			is_nomad = no
 			is_at_war = no
 			owns_core_province = 6330 #Assur
 			owns_core_province = 3690 #Nineveh
@@ -3103,11 +2855,12 @@ country_decisions = {
 			swap_non_generic_missions = yes
 			set_capital = 6330
 			remove_non_electors_emperors_from_empire_effect = yes
+			set_formable_tier = { tier = 4 }
 			if = {
 				limit = {
-					NOT = { government_rank = 6 }
+					NOT = { government_rank = 5 }
 				}
-				set_government_rank = 6
+				set_government_rank = 5
 			}
 			if = {
 				limit = { government = tribal }
@@ -3117,14 +2870,6 @@ country_decisions = {
 			add_country_modifier = {
 				name = "centralization_modifier"
 				duration = 7300
-			}
-			assyria_region = {
-				limit = { NOT = { owned_by = ROOT } }
-				add_permanent_claim = ASY
-			}
-			al_jazira_region = {
-				limit = { NOT = { owned_by = ROOT } }
-				add_permanent_claim = ASY
 			}
 			if = {
 				limit = { has_custom_ideas = no NOT = { has_idea_group = ASY_ideas }}
@@ -3141,15 +2886,10 @@ country_decisions = {
 		major = yes
 		potential = {
 			normal_or_historical_nations = yes
-			was_never_end_game_tag_trigger = yes
-			OR = {
-				ai = no
-				is_playing_custom_nation = no
-			}
-			OR = {
-				is_free_or_tributary_trigger = yes
-				ai = no
-			}
+			is_free_or_tributary_trigger = yes
+			NOT = { is_formable_tier = { tier = 2 } }
+			NOT = { is_formable_tier = { tier = 3 } }
+			NOT = { is_formable_tier = { tier = 4 } }
 			NOT = { tag = ILK }
 			NOT = { tag = GLH }
 			NOT = { exists = CIR }
@@ -3183,6 +2923,7 @@ country_decisions = {
 			on_change_tag_effect = yes
 			hidden_effect = { restore_country_name = yes }
 			remove_non_electors_emperors_from_empire_effect = yes
+			set_formable_tier = { tier = 2 }
 			if = {
 				limit = {
 					NOT = { government_rank = 3 }
@@ -3192,10 +2933,6 @@ country_decisions = {
 			add_country_modifier = {
 				name = "centralization_modifier"
 				duration = 7300
-			}
-			circassia_region = {
-				limit = { NOT = { owned_by = ROOT } }
-				add_permanent_claim = CIR
 			}
 			if = {
 				limit = { has_custom_ideas = no NOT = { has_idea_group = CIR_ideas } }
@@ -3212,18 +2949,11 @@ country_decisions = {
 		major = yes
 		potential = {
 			normal_or_historical_nations = yes
-			was_never_end_game_tag_trigger = yes
-			OR = {
-				ai = no
-				is_playing_custom_nation = no
-			}
-			OR = {
-				is_free_or_tributary_trigger = yes
-				ai = no
-			}
-			NOT = { tag = GLH }
+			is_free_or_tributary_trigger = yes
+			NOT = { is_formable_tier = { tier = 2 } }
+			NOT = { is_formable_tier = { tier = 3 } }
+			NOT = { is_formable_tier = { tier = 4 } }
 			NOT = { exists = FIN }
-			NOT = { has_reform = celestial_empire }
 			OR = {
 				primary_culture = finnish
 				primary_culture = tavastian
@@ -3246,7 +2976,6 @@ country_decisions = {
 		allow = {
 			adm_tech = 10
 			is_free_or_tributary_trigger = yes
-			is_nomad = no
 			is_at_war = no
 			owns_core_province = 3252 #Turku
 			owns_core_province = 3264 #Helsinki
@@ -3264,11 +2993,12 @@ country_decisions = {
 			on_change_tag_effect = yes
 			hidden_effect = { restore_country_name = yes }
 			remove_non_electors_emperors_from_empire_effect = yes
+			set_formable_tier = { tier = 2 }
 			if = {
 				limit = {
-					NOT = { government_rank = 4 }
+					NOT = { government_rank = 3 }
 				}
-				set_government_rank = 4
+				set_government_rank = 3
 			}
 			if = {
 				limit = { government = tribal }
@@ -3278,10 +3008,6 @@ country_decisions = {
 			add_country_modifier = {
 				name = "centralization_modifier"
 				duration = 7300
-			}
-			finland_region = {
-				limit = { NOT = { owned_by = ROOT } }
-				add_permanent_claim = FIN
 			}
 			if = {
 				limit = { has_custom_ideas = no NOT = { has_idea_group = FIN_ideas } }
@@ -3298,17 +3024,11 @@ country_decisions = {
 		major = yes
 		potential = {
 			normal_or_historical_nations = yes
-			was_never_end_game_tag_trigger = yes
-			OR = {
-				ai = no
-				is_playing_custom_nation = no
-			}
-			OR = {
-				is_free_or_tributary_trigger = yes
-				ai = no
-			}
+			is_free_or_tributary_trigger = yes
+			NOT = { is_formable_tier = { tier = 2 } }
+			NOT = { is_formable_tier = { tier = 3 } }
+			NOT = { is_formable_tier = { tier = 4 } }
 			NOT = { exists = EST }
-			NOT = { has_reform = celestial_empire }
 			OR = {
 				primary_culture = estonian
 				primary_culture = livlander
@@ -3329,8 +3049,6 @@ country_decisions = {
 		}
 		allow = {
 			adm_tech = 10
-			is_free_or_tributary_trigger = yes
-			is_nomad = no
 			is_at_war = no
 			owns_core_province = 5889 #Reval
 			owns_core_province = 5875 #Tartu
@@ -3349,11 +3067,12 @@ country_decisions = {
 			on_change_tag_effect = yes
 			hidden_effect = { restore_country_name = yes }
 			remove_non_electors_emperors_from_empire_effect = yes
+			set_formable_tier = { tier = 2 }
 			if = {
 				limit = {
-					NOT = { government_rank = 4 }
+					NOT = { government_rank = 3 }
 				}
-				set_government_rank = 4
+				set_government_rank = 3
 			}
 			if = {
 				limit = { government = tribal }
@@ -3363,14 +3082,6 @@ country_decisions = {
 			add_country_modifier = {
 				name = "centralization_modifier"
 				duration = 7300
-			}
-			estonia_region = {
-				limit = { NOT = { owned_by = ROOT } }
-				add_permanent_claim = EST
-			}
-			livonia_region = {
-				limit = { NOT = { owned_by = ROOT } }
-				add_permanent_claim = EST
 			}
 			if = {
 				limit = { has_custom_ideas = no NOT = { has_idea_group = EST_ideas } }
@@ -3387,20 +3098,11 @@ country_decisions = {
 		major = yes
 		potential = {
 			normal_or_historical_nations = yes
-			was_never_end_game_tag_trigger = yes
-			OR = {
-				ai = no
-				is_playing_custom_nation = no
-			}
-			OR = {
-				is_free_or_tributary_trigger = yes
-				ai = no
-			}
+			is_free_or_tributary_trigger = yes
+			NOT = { is_formable_tier = { tier = 2 } }
+			NOT = { is_formable_tier = { tier = 3 } }
+			NOT = { is_formable_tier = { tier = 4 } }
 			NOT = { exists = LTG }
-			NOT = { tag = LIT }
-			NOT = { tag = LIV }
-			NOT = { tag = TEU }
-			NOT = { has_reform = celestial_empire }
 			OR = {
 				primary_culture = latvian
 				primary_culture = semigallian
@@ -3443,11 +3145,12 @@ country_decisions = {
 			on_change_tag_effect = yes
 			hidden_effect = { restore_country_name = yes }
 			remove_non_electors_emperors_from_empire_effect = yes
+			set_formable_tier = { tier = 2 }
 			if = {
 				limit = {
-					NOT = { government_rank = 4 }
+					NOT = { government_rank = 3 }
 				}
-				set_government_rank = 4
+				set_government_rank = 3
 			}
 			if = {
 				limit = { government = tribal }
@@ -3457,14 +3160,6 @@ country_decisions = {
 			add_country_modifier = {
 				name = "centralization_modifier"
 				duration = 7300
-			}
-			latvian_region = {
-				limit = { NOT = { owned_by = ROOT } }
-				add_permanent_claim = LVA
-			}
-			curoniasemigallia_region = {
-				limit = { NOT = { owned_by = ROOT } }
-				add_permanent_claim = LVA
 			}
 			if = {
 				limit = { has_custom_ideas = no }
@@ -3481,19 +3176,11 @@ country_decisions = {
 		major = yes
 		potential = {
 			normal_or_historical_nations = yes
-			primitives = no
-			OR = {
-				ai = no
-				is_playing_custom_nation = no
-			}
-			OR = {
-				is_free_or_tributary_trigger = yes
-				ai = no
-			}
+			is_free_or_tributary_trigger = yes
+			NOT = { is_formable_tier = { tier = 2 } }
+			NOT = { is_formable_tier = { tier = 3 } }
+			NOT = { is_formable_tier = { tier = 4 } }
 			NOT = { exists = MAZ }
-			was_never_end_game_tag_trigger = yes
-			NOT = { tag = POL }
-			NOT = { tag = PTH }
 			primary_culture = mazovian
 		}
 		provinces_to_highlight = {
@@ -3518,8 +3205,6 @@ country_decisions = {
 		}
 		allow = {
 			adm_tech = 10
-			is_free_or_tributary_trigger = yes
-			is_nomad = no
 			is_at_war = no
 			NOT = { exists = MAZ }
 			owns_core_province = 1138 #Warsaw
@@ -3538,6 +3223,7 @@ country_decisions = {
 			swap_non_generic_missions = yes
 			set_capital = 1138
 			remove_non_electors_emperors_from_empire_effect = yes
+			set_formable_tier = { tier = 2 }
 			if = {
 				limit = {
 					NOT = { government_rank = 3 }
@@ -3563,22 +3249,11 @@ country_decisions = {
 		major = yes
 		potential = {
 			normal_or_historical_nations = yes
-			primitives = no
-			OR = {
-				ai = no
-				is_playing_custom_nation = no
-			}
-			OR = {
-				is_free_or_tributary_trigger = yes
-				ai = no
-			}
-			was_never_end_game_tag_trigger = yes
+			is_free_or_tributary_trigger = yes
+			NOT = { is_formable_tier = { tier = 2 } }
+			NOT = { is_formable_tier = { tier = 3 } }
+			NOT = { is_formable_tier = { tier = 4 } }
 			NOT = { exists = PIE }
-			NOT = { exists = SPI }
-			NOT = { tag = SPI }
-			NOT = { tag = SAV }
-			NOT = { tag = LBV }
-			NOT = { tag = XKK }
 			primary_culture = piedmontese
 		}
 		provinces_to_highlight = {
@@ -3608,14 +3283,9 @@ country_decisions = {
 					}
 				}
 			}
-			OR = {
-				NOT = { owned_by = ROOT }
-				NOT = { is_core = ROOT }
-			}
 		}
 		allow = {
 			adm_tech = 10
-			is_free_or_tributary_trigger = yes
 			is_at_war = no
 			1009 = { owned_by = ROOT is_state = yes }	#Turin
 			development_in_provinces = {
@@ -3634,6 +3304,7 @@ country_decisions = {
 			on_change_tag_effect = yes
 			hidden_effect = { restore_country_name = yes }
 			swap_non_generic_missions = yes
+			set_formable_tier = { tier = 2 }
 			set_capital = 1009
 			if = {
 				limit = {
@@ -3660,20 +3331,10 @@ country_decisions = {
 		major = yes
 		potential = {
 			normal_or_historical_nations = yes
-			primitives = no
-			OR = {
-				ai = no
-				is_playing_custom_nation = no
-			}
-			OR = {
-				is_free_or_tributary_trigger = yes
-				ai = no
-			}
-			OR = {
-				ai = no
-				NOT = { exists = BRI }
-			}
-			was_never_end_game_tag_trigger = yes
+			is_free_or_tributary_trigger = yes
+			NOT = { is_formable_tier = { tier = 2 } }
+			NOT = { is_formable_tier = { tier = 3 } }
+			NOT = { is_formable_tier = { tier = 4 } }
 			NOT = { exists = BRI }
 			primary_culture = breton
 		}
@@ -3700,10 +3361,6 @@ country_decisions = {
 					}
 				}
 			}
-			OR = {
-				NOT = { owned_by = ROOT }
-				NOT = { is_core = ROOT }
-			}
 		}
 		allow = {
 			is_free_or_tributary_trigger = yes
@@ -3724,6 +3381,7 @@ country_decisions = {
 			on_change_tag_effect = yes
 			hidden_effect = { restore_country_name = yes }
 			swap_non_generic_missions = yes
+			set_formable_tier = { tier = 2 }
 			set_capital = 2173
 			if = {
 				limit = {
@@ -3749,24 +3407,18 @@ country_decisions = {
 	latin_empire = {
 		major = yes
 		potential = {
-			NOT = { has_country_flag = formed_latin_empire }
-			was_never_end_game_tag_trigger = yes
-			NOT = { exists = LAE }
 			normal_or_historical_nations = yes
-			OR = {
-				ai = no
-				is_playing_custom_nation = no
-			}
-			OR = {
-				is_free_or_tributary_trigger = yes
-				ai = no
-			}
+			is_free_or_tributary_trigger = yes
+			NOT = { is_formable_tier = { tier = 2 } }
+			NOT = { is_formable_tier = { tier = 3 } }
+			NOT = { is_formable_tier = { tier = 4 } }
+			NOT = { has_country_flag = formed_latin_empire }
+			NOT = { exists = LAE }
 			OR = {
 				religion = catholic
 				religion = catholique
 			}
 			NOT = { government = republic }
-			NOT = { has_reform = celestial_empire }
 		}
 		provinces_to_highlight = {
 			OR = {
@@ -3803,10 +3455,6 @@ country_decisions = {
 					}
 				}
 			}
-			OR = {
-				NOT = { owned_by = ROOT }
-				NOT = { is_core = ROOT }
-			}
 		}
 		allow = {
 			is_free_or_tributary_trigger = yes
@@ -3831,6 +3479,7 @@ country_decisions = {
 			change_tag = LAE
 			hidden_effect = { restore_country_name = yes }
 			on_change_tag_effect = yes
+			set_formable_tier = { tier = 2 }
 			set_capital = 2233 #Constantinople
 			2233 = {
 				if = {
@@ -3848,9 +3497,9 @@ country_decisions = {
 			}
 			if = {
 				limit = {
-					NOT = { government_rank = 6 }
+					NOT = { government_rank = 3 }
 				}
-				set_government_rank = 6
+				set_government_rank = 3
 			}
 			every_province = {
 				limit = {

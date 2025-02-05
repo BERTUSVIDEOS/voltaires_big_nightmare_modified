@@ -32,10 +32,7 @@ country_decisions = {
 									NOT = {
 										is_part_of_hre = yes
 										capital_scope = { 
-											OR = {
-												superregion = italy_superregion
-												region = south_italy_region
-											}
+											superregion = italy_superregion
 										}
 									}
 								}
@@ -59,10 +56,7 @@ country_decisions = {
 								NOT = {
 									is_part_of_hre = yes
 									capital_scope = { 
-										OR = {
-											superregion = italy_superregion
-											region = south_italy_region
-										}
+										superregion = italy_superregion
 									}
 								}
 							}

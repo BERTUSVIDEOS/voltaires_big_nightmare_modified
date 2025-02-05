@@ -4,29 +4,14 @@ country_decisions = {
 		major = yes
 		potential = {
 			normal_or_historical_nations = yes
+			is_free_or_tributary_trigger = yes
+			NOT = { is_formable_tier = { tier = 2 } }
+			NOT = { is_formable_tier = { tier = 3 } }
+			NOT = { is_formable_tier = { tier = 4 } }
 			NOT = { has_country_flag = formed_portugal_flag }
-			OR = {
-				ai = no
-				is_playing_custom_nation = no
-			}
-			OR = {
-				is_free_or_tributary_trigger = yes
-				ai = no
-			}
-			was_never_end_game_tag_trigger = yes
 			NOT = { religion_group = muslim }
 			NOT = { exists = POR }
-			NOT = { tag = CAS }
-			NOT = { tag = SPA }
 			primary_culture = portugese
-			is_colonial_nation = no
-			OR = {
-				is_former_colonial_nation = no
-				AND = {
-					is_former_colonial_nation = yes
-					ai = no
-				}
-			}
 		}
 		provinces_to_highlight = {
 			OR = {
@@ -42,10 +27,6 @@ country_decisions = {
 						}
 					}
 				}
-			}
-			OR = {
-				NOT = { owned_by = ROOT }
-				NOT = { is_core = ROOT }
 			}
 		}
 		allow = {
@@ -66,9 +47,10 @@ country_decisions = {
 			hidden_effect = { restore_country_name = yes }
 			swap_non_generic_missions = yes
 			remove_non_electors_emperors_from_empire_effect = yes
+			set_formable_tier = { tier = 2 }
 			if = {
-				limit = { NOT = { government_rank = 5 } }
-				set_government_rank = 5
+				limit = { NOT = { government_rank = 3 } }
+				set_government_rank = 3
 			}
 			if = {
 				limit = {
@@ -93,17 +75,6 @@ country_decisions = {
 			if = {
 				limit = { is_revolutionary = no }
 				add_government_reform = portuguese_monarchy_reform
-			}
-			hidden_effect = {
-				portugal_region = {
-					if = {
-						limit = {
-							NOT = { is_core = ROOT }
-							NOT = { is_permanent_claim = ROOT }
-						}
-						add_permanent_claim = POR
-					}
-				}
 			}
 			add_country_modifier = {
 				name = "centralization_modifier"

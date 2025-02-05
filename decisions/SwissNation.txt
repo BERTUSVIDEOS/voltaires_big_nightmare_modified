@@ -3,24 +3,12 @@ country_decisions = {
 		major = yes
 		potential = {
 			normal_or_historical_nations = yes
-			was_never_end_game_tag_trigger = yes
-			NOT = { tag = SWI }
+			is_free_or_tributary_trigger = yes
 			NOT = { has_country_flag = formed_switzerland_flag }
-			OR = {
-				ai = no
-				is_playing_custom_nation = no
-			}
-			OR = {
-				is_free_or_tributary_trigger = yes
-				ai = no
-			}
-			OR = {
-				ai = no
-				NOT = { exists = SWI }
-			}
-			OR = {
-				primary_culture = swiss
-			}
+			NOT = { is_formable_tier = { tier = 3 } }
+			NOT = { is_formable_tier = { tier = 4 } }
+			NOT = { exists = SWI }
+			primary_culture = swiss
 			OR = {
 				NOT = { has_dlc = "Mandate of Heaven" }
 				has_global_flag = empire_of_china_dismantled
@@ -49,8 +37,8 @@ country_decisions = {
 		}
 		allow = {
 			is_at_war = no
-			is_free_or_tributary_trigger = yes	
-			NOT = { exists = SWI }
+			is_free_or_tributary_trigger = yes
+			1869 = { owned_by = ROOT is_state = yes }	# 
 			if = {
 				limit = { is_emperor_of_china = yes }
 				custom_trigger_tooltip = {
@@ -71,6 +59,9 @@ country_decisions = {
 		effect = {
 			change_tag = SWI
 			swap_non_generic_missions = yes
+			set_country_flag = formed_switzerland_flag
+			set_formable_tier = { tier = 3 }
+			set_capital = 1869
 			every_country = {
 				limit = {
 					NOT = { tag = SWI }
@@ -114,7 +105,6 @@ country_decisions = {
 					add_government_reform = united_cantons_reform
 				}
 			}
-			set_country_flag = formed_switzerland_flag
 		}
 		ai_will_do = {
 			factor = 1

@@ -315,6 +315,7 @@ vn_gen_missions_slot_2 = {
             3702 = { country_or_non_sovereign_subject_holds = ROOT }
             num_of_owned_provinces_with = {
                 value = 5
+                is_city = yes
                 region = crimea_region
             }
         }
@@ -388,6 +389,21 @@ vn_gen_missions_slot_2 = {
                     }
                     add_permanent_claim = ROOT	
                 }	
+            }
+            custom_tooltip = "Allows to Colonize Azov Region & Wild Fields Region"
+            hidden_effect = {
+                azov_region = {
+                    set_province_flag = @ROOT_can_colonize_flag
+                }
+                wild_fields_region = {
+                    set_province_flag = @ROOT_can_colonize_flag
+                }
+                circassia_region = {
+                    set_province_flag = @ROOT_can_colonize_flag
+                }
+                georgia_region = {
+                    set_province_flag = @ROOT_can_colonize_flag
+                }
             }
         }
     }
@@ -543,6 +559,19 @@ vn_gen_missions_slot_3 = {
 					}
 					add_permanent_claim = ROOT	
 				}		
+            }
+            add_country_modifier = {
+                name = temporary_colonist
+                duration = -1
+            }
+            custom_tooltip = "Allows to Colonize Crimea Region & Tanais"
+            hidden_effect = {
+                crimea_region = {
+                    set_province_flag = @ROOT_can_colonize_flag
+                }
+                3702 = {
+                    set_province_flag = @ROOT_can_colonize_flag
+                }
             }
         }
     }

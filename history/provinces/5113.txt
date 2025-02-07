@@ -25,7 +25,6 @@ discovered_by = north_american
 }
 1424.1.1 = { religion = catholic }
 1444.11.12 = {
-	city = no
 	owner = ---
 	controller = ---
 	remove_core = CNA

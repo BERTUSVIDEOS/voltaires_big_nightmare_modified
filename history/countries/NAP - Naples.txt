@@ -252,7 +252,7 @@ capital = 564 # Napoli
 		dip = 5
 		mil = 5
 	}
-	clear_scipted_personalities = yes
+	clear_scripted_personalities = yes
 	add_ruler_personality = strict_personality
 	add_ruler_personality = conqueror_personality
 	add_ruler_personality = careful_personality

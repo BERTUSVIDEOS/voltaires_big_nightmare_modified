@@ -49,7 +49,7 @@ add_core = BNB
 	controller = KBA
 	add_core = KBA
 	remove_core = TUN
-	fort_11th = yes
+	fort_14th = yes
 }
 1494.5.17 = {
 	owner = BNB

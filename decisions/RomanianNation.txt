@@ -55,17 +55,16 @@ country_decisions = {
 						}
 					}
 				}
-				OR = {
-					NOT = { owned_by = ROOT }
-					NOT = { is_core = ROOT }
-				}
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
 			}
 		}
 		allow = {
-			adm_tech = 15
+			adm_tech = 10
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
-			adm_tech = 10
 			5685 = { owned_by = ROOT is_state = yes }	# dambovita
 			num_of_owned_provinces_with = {
 				is_core = ROOT

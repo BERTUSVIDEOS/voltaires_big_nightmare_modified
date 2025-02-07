@@ -35,7 +35,7 @@ is_city = yes
 	add_core = WLS
 	remove_core = ENG
 	add_base_tax = -1
-	add_base_prodution = -1
+	add_base_production = -1
 }
 1453.1.1 = { unrest = 5 }
 1471.1.1 = { unrest = 8 } 

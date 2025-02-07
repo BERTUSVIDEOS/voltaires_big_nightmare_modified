@@ -212,7 +212,7 @@ capital = 5685 # Tîrgoviste
 		adm = 3
 		mil = 3
 	}
-	clear_scipted_personalities = yes
+	clear_scripted_personalities = yes
 	kill_heir = {}
 }
 1447.11.1 = {

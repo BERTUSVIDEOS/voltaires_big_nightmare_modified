@@ -375,7 +375,7 @@ add_army_professionalism = 0.05
 		dip = 4
 		mil = 4
 	}
-	clear_scipted_personalities = yes
+	clear_scripted_personalities = yes
 }
 1457.10.24 = {
 	monarch = {

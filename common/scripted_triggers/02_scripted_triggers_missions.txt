@@ -44,33 +44,13 @@ BYZ_roman_empire_decision_trigger = {
 		region = switzerland_region
 		region = austria_region
 		#England
-		region = midlands_region
-		region = southeast_england_region
-		region = southwest_england_region
-		region = northumbria_region
+		region = british_isles_region
 		#Areas within South Germany
-		region = rhenish_region
-		region = alsace_region
-		region = palatinate_region
-		region = luxemburg_region
-		region = wallonian_region
-		region = netherlands_region
-		region = bavaria_region
-		region = swabia_region
-		region = baden_region
-		region = wurttemburg_region
+		region = central_germany_region
 		#Carthage
-		region = rif_region
-		region = tlemcen_region
-		region = inner_tunisia_region
-		region = coastal_tunisia_region
-		region = kabylia_region
-		region = coastal_libya_region
-		region = inner_egypt_region
-		region = lower_egypt_region
-		region = middle_egypt_region
+		region = morocco_region
+		region = tunis_region
 		#Danubia
-		region = wallachia_region
 		region = transylvania_region
 	}
 }

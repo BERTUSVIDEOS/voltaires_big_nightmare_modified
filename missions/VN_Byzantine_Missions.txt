@@ -290,7 +290,7 @@ VN_BYZ_missions_slot_3_a = {
 		required_missions = {}
 		trigger = {
 			treasury = 5000
-			NOT = { inflation = 10 }
+			NOT = { inflation = 2 }
 			NOT = { num_of_loans = 1 }
 		}
 		effect = {
@@ -582,6 +582,10 @@ VN_BYZ_missions_slot_4_a = {
 				religion = sunni
 				culture = al_suryah_arabic
 			}
+			add_country_modifier = { 	#bertus mod
+				name = byz_court_eunuchs_mission
+				duration = -1
+			}
 		}
 	}
 }
@@ -704,6 +708,10 @@ VN_BYZ_missions_slot_5_a = {
 				name = "byz_orthodox_icons_mission"
 				duration = 9125
 			}
+			add_country_modifier = {
+				name = "byz_root_out_heresies_mission"
+				duration = -1
+			}
 		}
 	}
 	vn_byz_restore_the_pentarchy = {
@@ -779,10 +787,10 @@ VN_BYZ_missions_slot_5_a = {
 			custom_tooltip = vn_byz_fortify_coasts.ss
 			hidden_effect = {
 				every_owned_province = {
-					limit = { has_port = yes }
+					limit = { has_port = yes has_fort_trigger = yes }
 					add_province_modifier = {
 						name = byz_fortify_coasts_mission
-						duration = 9125
+						duration = -1
 					}
 				}
 			}
@@ -3179,9 +3187,10 @@ VN_BYZ_missions_slot_5 = {
 			grown_by_development = 250
 		}
 		effect = {
+			custom_tooltip = byz_rise_of_the_phoenix_mission_tt 	#bertus mod
 			add_country_modifier = {
 				name = byz_rise_of_the_phoenix_mission
-				duration = 9125
+				duration = -1
 			}
 		}
 	}

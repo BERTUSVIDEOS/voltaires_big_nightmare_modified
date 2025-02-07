@@ -391,3 +391,7 @@
  estate_burghers_dutch_water_lines_effect_tooltip:0 "Every owned coastal province in the Lowlands Superregion gets:\n  · Local Hostile Movement Speed §G-25.0%§!\n  · Local Hostile Attrition: §G1.0§!\n  · Local Defensiveness: §G25.0%§!\n  · Local Development Cost: §R-50.0%§!\n  · Local State Maintenance Modifier: §R25.0%§!"
  MACRO_BUILDING_GENERIC_MANUFACTORY_TITLE: "§YManufactory§!\n§ORequires§!\n · Local Development 10\n"
  GRE_idea_1:0 "Mountain People"
+ byz_unification_movement_modifier:0 "Unification Movement"
+ desc_byz_unification_movement_modifier:0 "The people of these territories have demanded their reunification with the Byzantine Empire!"
+ byz_rise_of_the_phoenix_mission_tt:0 "Anatolia Superregion Claimed Provinces will cost §G20.0%§! less"
+ 

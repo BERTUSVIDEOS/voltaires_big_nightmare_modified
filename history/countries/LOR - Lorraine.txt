@@ -367,7 +367,7 @@ historical_friend = BAR
 		dip = 4
 		mil = 4
 	}
-	clear_scipted_personalities = yes
+	clear_scripted_personalities = yes
 	add_ruler_personality = conqueror_personality
 	add_ruler_personality = careful_personality
 }

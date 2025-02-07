@@ -564,7 +564,7 @@
  vn_byz_fortify_coasts_title: "Fortify Coasts"
  vn_byz_fortify_coasts_desc: "After we lost naval dominance in the Mediterranean, pirates of different origins and religions have sprung up and ravaged our coast. We need to rebuild our fleet and fortify our coasts to protect ourselves from these raids."
  vn_byz_fortify_coasts.tt: "Have at least §Y5§! forts in coastal provinces"
- vn_byz_fortify_coasts.ss: "Every owned coastal province gets '§YFortified Coasts§!' for §Y25 years§!, giving the following effects:\nLocal Trade Power: §G+10.0%§!\nLocal Tax Modifier: §G+10.0%§!\nLocal Sailors Modifier: §G+25.0%§!"
+ vn_byz_fortify_coasts.ss: "Every owned coastal province with a Fort gets '§YFortified Coasts§!' until the end of the game, giving the following effects:\nLocal Trade Power: §G+25.0%§!\nLocal Defensiveness: §G+10.0%§!\nLocal Sailors Modifier: §G+25.0%§!\nNaval Combat Local Bonus off owned coast: §+1§!"
  vn_byz_conquer_caria_title: "Conquest of Asia"
  vn_byz_conquer_caria_desc: "The self-proclaimed Sultan of Rûm has been brought to his knees and the rest of his land was brought back to our rule and freed from their wretched faith. It will take a long time to repair the damages but this is another important step to restore our rule in Asia Minor."
  vn_byz_conquer_bithynia_title: "Cross the Bosporus"

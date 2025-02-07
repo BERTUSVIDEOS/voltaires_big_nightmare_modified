@@ -265,7 +265,7 @@ fixed_capital = 2956
 		dip = 5
 		mil = 5
 	}
-	clear_scipted_personalities = yes
+	clear_scripted_personalities = yes
 	set_capital = 2956
 }
 1469.1.1 = {

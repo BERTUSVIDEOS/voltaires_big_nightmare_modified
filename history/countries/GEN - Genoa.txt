@@ -339,7 +339,7 @@ add_army_professionalism = 0.05
 		dip = 2
 		mil = 2
 	}
-	clear_scipted_personalities = yes
+	clear_scripted_personalities = yes
 	add_ruler_personality = entrepreneur_personality
 }
 1447.1.4 = {

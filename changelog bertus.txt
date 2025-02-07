@@ -63,6 +63,7 @@ TO DO
 	- fixed scandinavia formable & ideas 
 	- fixed mamluks formable & ideas
 	- fixed genoa missions 
+	- tweaked some byzantium missions 
 	- updated tier 4 formables ideas, and now require adm tech 15
 	- holy orders cost 50→100
 	- army tradition 

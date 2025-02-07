@@ -51,7 +51,7 @@ discovered_by = muslim
 	controller = WLS
 	add_core = WLS
 	remove_core = ENG
-	add_base_prodution = -1
+	add_base_production = -1
 }
 1453.1.1 = { unrest = 5 }
 1461.6.1 = { unrest = 2 }

@@ -341,7 +341,7 @@ fixed_capital = 1273
 		adm = 4
 		mil = 5
 	}
-	clear_scipted_personalities = yes
+	clear_scripted_personalities = yes
 }
 1467.1.1 = {
 	heir = {

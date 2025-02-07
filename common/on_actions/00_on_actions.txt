@@ -992,6 +992,25 @@ on_siege_won_province = {
 			}
 		}
 	}
+	if = { 	#bertus mod
+		limit = {
+			has_province_modifier = byz_unification_movement_modifier
+		}
+		remove_province_modifier = byz_unification_movement_modifier
+	}
+	if = { 	#bertus mod
+		limit = {
+			superregion = anatolia_superregion
+			NOT = { owned_by = controller }
+			controller = {
+				has_country_modifier = byz_rise_of_the_phoenix_mission
+			}
+		}
+		add_province_modifier = {
+			name = byz_unification_movement_modifier
+			duration = -1
+		}
+	}
 }
 
 # province
@@ -1021,7 +1040,6 @@ on_great_project_constructed = {
 on_new_monarch = {
 	on_new_monarch_effect = yes
 	crimean_succession_effect = yes
-	slesvig_question_effect = yes
 	# ambrosian_republic_effect = yes
 	succession_culture_religion_effect = yes
 	sheik_ul_islam_effect = yes

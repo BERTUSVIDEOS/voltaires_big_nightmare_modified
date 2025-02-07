@@ -1,3 +1,10 @@
+
+vn_byz_conquer_bithynia_modifier = {
+	governing_capacity = 100
+}
+byz_unification_movement_modifier = {	
+	local_warscore_cost_modifier = -0.20
+}
 papal_fanatics_reform_modifier = {
 	discipline = 0.10
 	infantry_power = 0.20

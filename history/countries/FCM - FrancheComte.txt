@@ -283,5 +283,5 @@ capital = 2582	# Dole
 		dip = 3
 		mil = 3
 	}
-	clear_scipted_personalities = yes
+	clear_scripted_personalities = yes
 }

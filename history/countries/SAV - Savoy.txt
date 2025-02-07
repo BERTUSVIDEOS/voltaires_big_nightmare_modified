@@ -645,7 +645,7 @@ historical_friend = PIE
 		dip = 4
 		mil = 4
 	}
-	clear_scipted_personalities = yes
+	clear_scripted_personalities = yes
 	add_ruler_personality = scholar_personality
 	heir = {
 		name = "Amedeo"

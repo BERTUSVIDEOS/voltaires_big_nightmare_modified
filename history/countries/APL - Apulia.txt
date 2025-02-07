@@ -167,5 +167,5 @@ add_army_professionalism = 0.1
 		dip = 3
 		mil = 3
 	}
-	clear_scipted_personalities = yes
+	clear_scripted_personalities = yes
 }

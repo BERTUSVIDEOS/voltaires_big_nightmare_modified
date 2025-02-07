@@ -38,7 +38,7 @@ add_core = MCI
 	add_core = WLS
 	remove_core = ENG
 	add_base_tax = -2
-	add_base_prodution = -1
+	add_base_production = -1
 	add_base_manpower = -1
 	fort_15th = yes
 }

@@ -294,7 +294,7 @@ fixed_capital = 1959
 		dip = 5
 		mil = 5
 	}
-	clear_scipted_personalities = yes
+	clear_scripted_personalities = yes
 	add_ruler_personality = conqueror_personality
 }
 1478.10.18 = {

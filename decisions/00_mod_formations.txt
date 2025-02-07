@@ -110,7 +110,6 @@ country_decisions = {
 		}
 		allow = {
 			is_free_or_tributary_trigger = yes
-			set_formable_tier = { tier = 1 }
 			is_at_war = no
 			NOT = { exists = FRI }
 			owns_core_province = 417 #Oaveriessel
@@ -225,7 +224,6 @@ country_decisions = {
 			NOT = { is_formable_tier = { tier = 4 } }
 			NOT = { exists = FKE }
 			religion_group = christian
-			has_country_flag = super_formable_flag
 			capital_scope = {
 				OR = {
 					superregion = french_superregion
@@ -262,8 +260,7 @@ country_decisions = {
 		}
 		allow = {
 			is_at_war = no
-			is_free_or_tributary_trigger = yes	
-			set_formable_tier = { tier = 4 }
+			is_free_or_tributary_trigger = yes
 			government = monarchy
 			num_of_owned_provinces_with = {
 				value = 1121	#1121/1697
@@ -375,11 +372,6 @@ country_decisions = {
 			NOT = { is_formable_tier = { tier = 4 } }
 			primary_culture = austrian
 			NOT = { exists = EAH }
-			OR = {
-				is_part_of_hre = no
-				revolution_target_exists = yes
-				is_emperor = yes
-			}
 		}
 		provinces_to_highlight = {
 			OR = {
@@ -393,7 +385,7 @@ country_decisions = {
 			root = {
 				NOT = {
 					num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-						value = 390 	#391/592
+						value = 391 	#391/592
 						OR = {
 							region = austria_region
 							region = bohemia_region
@@ -413,9 +405,9 @@ country_decisions = {
 		allow = {
 			is_at_war = no
 			government = monarchy
-			adm_tech = 10
+			adm_tech = 15
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-				value = 390 	#391/592
+				value = 391 	#391/592
 				OR = {
 					region = austria_region
 					region = bohemia_region
@@ -432,6 +424,11 @@ country_decisions = {
 			if = {
 				limit = { senior_union_with = HUN }
 				total_development = HUN
+			}
+			OR = {
+				is_part_of_hre = no
+				revolution_target_exists = yes
+				is_emperor = yes
 			}
 		}
 		effect = {

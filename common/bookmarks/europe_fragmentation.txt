@@ -2,7 +2,7 @@ bookmark =
 {
 	name = "EUROPE_FRAGMENTATION"
 	desc = "EUROPE_FRAGMENTATION_DESC"
-	date = 1444.11.13
+	date = 1444.12.1
 	effect = {
     }
 }

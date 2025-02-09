@@ -66,6 +66,7 @@ country_decisions = {
 					is_revolutionary = no
 				}
 				change_government = republic
+				add_republican_tradition = 100
 			}
 			if = {
 				limit = { is_revolutionary = no }

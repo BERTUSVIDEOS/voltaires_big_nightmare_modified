@@ -722,7 +722,7 @@ vn_fla_missions_slot_5 = {
 			num_of_owned_provinces_with = {
                 value = 5
                 trade_goods = cloth
-                has_building = plantations
+                has_building = textile
             }
 		}
 		effect = {

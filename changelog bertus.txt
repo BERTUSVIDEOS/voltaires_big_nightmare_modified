@@ -14,8 +14,32 @@ TO DO
 		- sicily/corsega/sardinia islands trade node?
 	- nerf capital growth mission
 	- nerf starting country ideas to tier 1 (savoy, provence, milan, etc)
+	- byzantium tier 4 but starts as tier 1, through missions gets to tier 4
+	- Aragon tier 3 but starts as tier 1, through missions gets to tier 3
+	- Portugal tier 3 but starts as tier 1, through missions gets to tier 3 (also gets rid of the small region issue on fomration)
+	- Pope tier 3 but starts as tier 1, through missions gets to tier 3
+	- Savoy tier 2 but starts as tier 1, through missions gets to tier 2
+	- Morocco tier 3 but starts as tier 1, through missions gets to tier 3
+	- Tunis tier 3 but starts as tier 1, through missions gets to tier 3
+	- Serbia tier 2 but starts as tier 1, through missions gets to tier 2
+	- Wallachia tier 2 but starts as tier 1, through missions gets to tier 2
+	- Bohemia tier 2 but starts as tier 1, through missions gets to tier 2
+	- Brandenburgo tier 2 but starts as tier 1, through missions gets to tier 2
+	- Dinamarca tier 2 but starts as tier 1, through missions gets to tier 2
+	- Scotland tier 2 but starts as tier 1, through missions gets to tier 2
+	- Naples tier 2 but starts as tier 1, through missions gets to tier 2
+	- Venice tier 2 but starts as tier 1, through missions gets to tier 2
+	- Holand tier 2 but starts as tier 1, through missions gets to tier 2
+	- Lubeck tier 2 but starts as tier 1, through missions gets to tier 2
+	- Sweeden tier 2 but starts as tier 1, through missions gets to tier 2
+	- Norway tier 2 but starts as tier 1, through missions gets to tier 2
+	- Palatinate tier 2 but starts as tier 1, through missions gets to tier 2
+	- Venice formable 
 
+	
 - 2025-new
+
+- 2025-02-07
 	- muladi estate
 		- no longer require specific gov reform
 		- nolonger incompatible with western tech group

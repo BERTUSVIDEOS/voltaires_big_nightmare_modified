@@ -65,6 +65,7 @@ monarchy = {
 				lithuanian_grand_kingdom
 				lithuanian_grand_empire
 				#mod
+				frankish_monarchy_reform	#bertus mod
 				germanic_monarchy
 				eastern_monarchy
 				andalusian_slave_state

@@ -514,6 +514,10 @@ iqta = {
 		global_tax_modifier = 0.05
 	}
 
+	custom_attributes = {
+		has_harem_events = yes
+	}
+
 	conditional = {
 		allow = { has_dlc = "Cradle of Civilization" }
 		government_abilities = {

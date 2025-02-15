@@ -149,6 +149,7 @@ country_event = {
 				hidden = yes
 			}
 		}
+		custom_tooltip = "Extra 1 ADM Skill and Maximum of 5 DIP Skill"
 		add_faction_influence = {
 			faction = tur_pacifists
 			influence = 10
@@ -192,6 +193,7 @@ country_event = {
 				age = 10
 			}
 		}
+		custom_tooltip = "Extra 1 MIL Skill and Maximum of 5 DIP Skill"
 		add_faction_influence = {
 			faction = tur_militarists
 			influence = 10
@@ -236,6 +238,7 @@ country_event = {
 				hidden = yes
 			}
 		}
+		custom_tooltip = "Extra 1 ADM Skill and Maximum of 5 MIL Skill"
 		add_faction_influence = {
 			faction = tur_pacifists
 			influence = 10
@@ -280,6 +283,7 @@ country_event = {
 				hidden = yes
 			}
 		}
+		custom_tooltip = "Extra 1 MIL Skill and Maximum of 5 ADM Skill"
 		add_faction_influence = {
 			faction = tur_militarists
 			influence = 10
@@ -324,6 +328,7 @@ country_event = {
 				hidden = yes
 			}
 		}
+		custom_tooltip = "Extra 1 DIP Skill and Maximum of 5 MIL Skill"
 		add_faction_influence = {
 			faction = tur_lalas
 			influence = 3
@@ -396,6 +401,7 @@ country_event = {
 				hidden = yes
 			}
 		}
+		custom_tooltip = "Extra 1 DIP Skill and Maximum of 5 ADM Skill"
 		add_faction_influence = {
 			faction = tur_lalas
 			influence = 10
@@ -456,6 +462,7 @@ country_event = {
 				hidden = yes
 			}
 		}
+		custom_tooltip = "Extra 1 ADM/DIP/MIL Skill"
 		add_faction_influence = {
 			faction = tur_militarists
 			influence = 10

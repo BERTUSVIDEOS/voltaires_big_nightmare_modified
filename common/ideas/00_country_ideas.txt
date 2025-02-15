@@ -140,15 +140,14 @@ GER_ideas = { 	#bertus mod
 	}
 }
 
-ENG_ideas = {
+ENG_ideas = { 	#bertus mod
 	start = {
-		#global_unrest = -1 	#-1→0	 magna carta, parliament
-		infantry_power = 0.10 # agincourt
-		same_culture_advisor_cost = -0.10	#0→-0.10
+		infantry_power = 0.10
+		same_culture_advisor_cost = -0.10
 	}
 
 	bonus = {
-		naval_morale = 0.1
+		naval_morale = 0.10
 	}
 	
 	trigger = {
@@ -157,34 +156,34 @@ ENG_ideas = {
 	free = yes		#will be added at load.
 	
 	royal_navy = {
-		#navy_tradition = 0.25	#0.25→0
-		heavy_ship_cost = -0.10	#0→-0.10
+		heavy_ship_cost = -0.10
 		heavy_ship_power = 0.10
 	}
 	navigation_acts = {
-		trade_efficiency = 0.1
-		naval_forcelimit_modifier = 0.20	#0→0.20
+		trade_efficiency = 0.10
+		naval_forcelimit_modifier = 0.20
 	}
 	eltham_ordinance = {
 		production_efficiency = 0.1
-		build_cost = -0.10	#0→-0.10
+		build_cost = -0.10
 	}
 	secretaries_of_state = {
-		#diplomatic_upkeep = 1	#1→0
-		state_maintenance_modifier = -0.33	#0→-0.33
-		spy_offence = 0.20	#0→0.20
+		state_maintenance_modifier = -0.33
+		global_spy_defence = 0.20
 	}
 	eng_red_coats = {
-		fire_damage = 0.1
-		allowed_marine_fraction = 0.25
+		fire_damage = 0.10
+		allowed_marine_fraction = 0.20
 	}
 	sick_and_hurt_board = {
-		sailors_recovery_speed = 0.10
-		sailor_maintenance_modifer = -0.1
+		sailors_recovery_speed = 0.15
+		sailor_maintenance_modifer = -0.10
 	}
 	british_bill_of_rights = {
 		years_of_nationalism = -5
 		num_of_parliament_issues = 1
+		parliament_backing_chance = 0.10
+
 	}
 }
 
@@ -199,7 +198,7 @@ GBR_ideas = {	#bertus mod
 		military_tactics = 0.25
 	}
 	gbr_acts_of_union = {
-		governing_capacity_modifier = 0.25 	#0.10→0.25
+		governing_capacity_modifier = 0.25
 		parliament_backing_chance = 0.25
 		manpower_in_own_culture_provinces = 0.50
 	}
@@ -211,7 +210,7 @@ GBR_ideas = {	#bertus mod
 	the_british_parliament = {
 		technology_cost = -0.10
 		num_of_parliament_issues = 1
-		yearly_innovativeness = 0.50 	#0.25→0.50
+		yearly_innovativeness = 0.50
 	}
 	gbr_the_royal_society = {
 		yearly_army_professionalism = 0.02
@@ -222,13 +221,14 @@ GBR_ideas = {	#bertus mod
 	}
 	reform_of_comission_buying = {
 		special_unit_manpower_cost_modifier = -0.20
-		special_unit_forcelimit = 0.50
+		special_unit_forcelimit = 0.33
 		fire_damage = 0.20
+		sailors_recovery_speed = 0.20
 	}
 	british_industrialization = {
 		#Extra Base Production chance on deving provinces with a Manufactory
 		global_trade_goods_size_modifier = 0.20
-		development_cost_in_primary_culture = -0.20 	#-0.15→-0.20
+		development_cost_in_primary_culture = -0.20
 	}
 	britanna_rules_the_waves = {
 		leader_naval_manuever = 2
@@ -236,8 +236,7 @@ GBR_ideas = {	#bertus mod
 		heavy_ship_power = 0.15
 	}
 	bonus = {
-		#possible_policy = 1 	#1→0
-		allowed_marine_fraction = 0.33 	#0→0.33
+		allowed_marine_fraction = 0.33
 	}
 }
 

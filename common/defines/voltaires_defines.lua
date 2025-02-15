@@ -34,6 +34,7 @@ NDefines.NDiplomacy.CELESTIAL_EMPIRE_MANDATE_PER_HUNDRED_DEVASTATION = -10.0
 NDefines.NDiplomacy.CELESTIAL_EMPIRE_MANDATE_PER_HUNDRED_TRIBUTARY_DEV = 1.0
 NDefines.NDiplomacy.MONTHS_BEFORE_TOTAL_OCCUPATION = 12	                        --60→12
 NDefines.NDiplomacy.CRUSADE_TIMEOUT_YEARS = 10 		            --30→10			-- Crusade timeout (years)
+NDefines.NDiplomacy.PEACE_COST_CHANGE_HRE_RELIGION = 50     --100→50
 
 --dev half reduction	NDefines.NDiplomacy.VASSALIZE_BASE_DEVELOPMENT_CAP = 200                        --100→200
 --dev half reduction	NDefines.NDiplomacy.MARCH_BASE_DEVELOPMENT_CAP = 400                            --200→500

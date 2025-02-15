@@ -35,10 +35,14 @@ TO DO
 	- Norway tier 2 but starts as tier 1, through missions gets to tier 2
 	- Palatinate tier 2 but starts as tier 1, through missions gets to tier 2
 	- Venice formable 
-
 	
 - 2025-new
-
+	- fixed religious league change hre religion base cost 100→50
+	- Fixed Iqta Harem mechanic
+	- fixed frankish gov reform 
+	- Tweaked English ideas
+	- Tweaked GBR ideas
+	
 - 2025-02-07
 	- muladi estate
 		- no longer require specific gov reform

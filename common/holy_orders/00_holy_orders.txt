@@ -33,8 +33,10 @@ dominican_order = { #founded 1215
 augustinians = {
     icon = GFX_holy_order_augustinians
     trigger = {
-        FROM = { holy_order = augustinians }
-		has_country_flag = enable_holy_orders_flag 
+        OR = {
+            FROM = { holy_order = augustinians }
+            has_country_flag = enable_holy_orders_flag 
+        }
 		religion_group = christian
     }
     color = { 19 79 44 } 
@@ -56,8 +58,10 @@ augustinians = {
 carmelites = {
     icon = GFX_holy_order_carmelites
     trigger = {
-        FROM = { holy_order = carmelites }
-		has_country_flag = enable_holy_orders_flag 
+        OR = {
+            FROM = { holy_order = carmelites }
+            has_country_flag = enable_holy_orders_flag 
+        }
 		religion_group = christian
     }
     color = { 54 216 132 } 
@@ -79,8 +83,10 @@ carmelites = {
 franciscan_order = {
     icon = GFX_holy_order_franciscans
     trigger = {
-        FROM = { holy_order = franciscan_order }
-		has_country_flag = enable_holy_orders_flag 
+        OR ={
+            FROM = { holy_order = franciscan_order }
+            has_country_flag = enable_holy_orders_flag 
+        }
 		religion_group = christian
     }
     color = { 110 190 240 }

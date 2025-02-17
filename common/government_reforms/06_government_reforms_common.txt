@@ -4092,7 +4092,7 @@ lockean_proviso_reform = {	#bertus mod
 	}
 	modifiers = {
 		development_cost = -0.05
-		development_cost_modifier = -0.10
+		development_cost_modifier = -0.05
 	}
 	ai = {
 		factor = 1

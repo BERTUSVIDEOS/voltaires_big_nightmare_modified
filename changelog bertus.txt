@@ -6,6 +6,7 @@ TO DO
 		- trade goods 10%→7.5%
 		- build cost -15%→-7.5% 
 		- production efficiency 10%→7.5%
+		- ICA 20%→10%
 	- trade nodes 
 		- dorylaion
 			- flow into antioch
@@ -37,6 +38,8 @@ TO DO
 	- Venice formable 
 	
 - 2025-new
+
+- 2025-02-15
 	- fixed religious league change hre religion base cost 100→50
 	- Fixed Iqta Harem mechanic
 	- fixed frankish gov reform 

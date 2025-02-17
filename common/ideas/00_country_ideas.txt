@@ -2988,10 +2988,6 @@ BOH_ideas = {
 		infantry_power = 0.10
 		infantry_fire = 0.20 	#0→0.20
 	}
-	letter_of_majesty = {
-		global_unrest = -1
-		development_cost = -0.10 	#0→-0.10
-	}
 	hussite_legacy = {
 		technology_cost = -0.075 	#-0.10→-0.075
 		warscore_cost_vs_other_religion = -0.10 	#0→-0.10
@@ -3000,9 +2996,13 @@ BOH_ideas = {
 		stability_cost_modifier = -0.10
 		build_cost = -0.10 	#0→-0.10
 	}
+	letter_of_majesty = {
+		global_unrest = -1
+		development_cost = -0.10 	#0→-0.10
+	}
 	czech_nationalism = {
 		#same_culture_advisor_cost = -0.25 	#-0.25→0
-		trade_goods_size_modifier = 0.10 	#0→0.10
+		global_trade_goods_size_modifier = 0.10 	#0→0.10
 		production_efficiency = 0.10 	#0→0.10
 	}
 }

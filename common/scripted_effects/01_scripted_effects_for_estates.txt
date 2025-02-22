@@ -2188,6 +2188,21 @@ on_province_owner_change_estate_privileges_effect = {
 			}
 		}
 	}
+	if = { 	#bertus mod
+		limit = {
+			owner = { has_reform = lockean_proviso_reform }
+		}
+		if = {
+			limit = {
+				has_medical_building_trigger = yes
+			}
+			add_province_modifier = {
+				name = hospice_bonus_prod
+				duration = -1
+				hidden = yes
+			}
+		}
+	}
 	if = {
 		limit = {
 			owner = {

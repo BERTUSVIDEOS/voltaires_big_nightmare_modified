@@ -1,4 +1,6 @@
 ﻿l_english:
+ mechanic_extra_dev_cost_on_hospices_yes: "Every owned province with an §YApothecary§! or a §YHospice§! gains the following bonus:\nLocal Development Cost: §G-5.0§!\nLocal Trade Goods Size: §G+10.0§!%"
+ hospice_bonus_prod:0 "Proviso Hospices"
  RHI:0 "Rhineland"
  RHI_ADJ:0 "Rhenish"
  vn_sic_muslim_conquer_jerusalem:0 ""

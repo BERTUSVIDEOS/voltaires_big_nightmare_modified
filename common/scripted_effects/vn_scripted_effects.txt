@@ -607,6 +607,15 @@ on_province_medical_building_built_estate_privileges_effect = {
 			duration = -1
 		}
 	}
+	if = {
+		limit = {
+			owner = { has_reform = lockean_proviso_reform }
+		}
+		add_province_modifier = {
+			name = hospice_bonus_prod
+			duration = -1
+		}
+	}
 }
 
 on_province_manpower_building_destroyed_estate_privileges_effect = {

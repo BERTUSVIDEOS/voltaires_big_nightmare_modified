@@ -4091,8 +4091,39 @@ lockean_proviso_reform = {	#bertus mod
 		}
 	}
 	modifiers = {
-		development_cost = -0.05
 		development_cost_modifier = -0.05
+	}
+	effect = {
+		hidden_effect = {
+			every_owned_province = {
+				if = {
+					limit = {
+						OR = {
+							has_building = customs_house
+							has_building = arsenal
+						}
+					}
+					add_province_modifier = { 
+						name = hospice_bonus_prod
+						duration = -1
+						hidden = yes
+					}
+				}
+			}
+		}
+	}
+	removed_effect = {
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					has_province_modifier = hospice_bonus_prod
+				}
+				remove_province_modifier = hospice_bonus_prod
+			}
+		}
+	}
+	custom_attributes = {
+		extra_dev_cost_on_hospices = yes
 	}
 	ai = {
 		factor = 1

@@ -1164,7 +1164,10 @@ joan_de_trastamara_heir_died_effect = {
 
 on_province_owner_change_government_effect = {
 	if = {	#bertus mod
-		limit = {FROM = { has_government_attribute = trade_buildings_boost }}
+		limit = {
+			FROM = { has_government_attribute = trade_buildings_boost }
+			has_trade_building_trigger = yes
+		}
 		add_province_modifier = {name = trade_buildings_boost_modifier duration = -1}
 	}
 	if = {

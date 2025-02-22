@@ -442,6 +442,10 @@ estate_holy_orders_development_of_hospitals_mod = {
 	#local_unrest = -1	#-1→0
 	local_manpower_modifier = 0.20	#0→0.20
 }
+hospice_bonus_prod = {
+	local_development_cost = -0.05
+	trade_goods_size_modifier = 0.10
+}
 estate_mamluks_development_of_barracks_mod = {
 	local_manpower_modifier = 0.05
 	local_regiment_cost = -0.05

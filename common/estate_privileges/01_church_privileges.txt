@@ -316,7 +316,7 @@ estate_church_clerical_ministers = {
 			uses_piety = yes
 		}
 		modifier = {
-			monthly_piety_accelerator = 0.05
+			monthly_piety_accelerator = 0.005
 		}
 	}
 	conditional_modifier = {

@@ -4529,7 +4529,7 @@ on_province_religion_converted = {
 			for_variable_amount = {
 				variable = enforce_poverty_value
 				effect = "
-					add_years_of_income = 0.1
+					add_years_of_income = 0.005
 				"
 			}
 			change_variable = {
@@ -5865,7 +5865,7 @@ on_expanded_infrastructure = {
 		set_province_flag = better_expanded_infrastructure_flag
 		owner = {
 			add_years_of_owned_provinces_production_income = {
-				years = 10
+				years = 1 	#10→1
 				trigger = {
 					has_province_flag = better_expanded_infrastructure_flag
 				}

@@ -36,8 +36,40 @@ TO DO
 	- Norway tier 2 but starts as tier 1, through missions gets to tier 2
 	- Palatinate tier 2 but starts as tier 1, through missions gets to tier 2
 	- Venice formable 
+	- buf aragon ideas
+	- import anbennar mil reforms rework
+	- Nerf north germany ideas 
+	- Nerf south germany
+	- add central germany formable
+	- buf two sicily ideas
+	- gold/silver mines on farmlands dev cost malus 
 	
 - 2025-new
+	- fixed french compte mission
+	- reform
+		- impose monastic poverty
+			- years of income per dev converted 0.1→0.005 (WTF)
+		- Aquisition of ghranges 
+			- expand infrastructure years of production 10→1
+
+
+- 2025-02-22
+	- Lockean proviso reform
+		- dev cost -10%→0
+		- hospices lvl 1 or 2
+			- local dev cost 0→-5%
+			- local trade goods modifier 0→10%
+	- fixed trade reform
+	- rhineland added flag and idea localisation
+	- fixed bohemia ideas
+	- nerfed moravia ideas
+	- fixed holy orders
+	- updated bavarian ideas to tier 2
+		- tax 10%→20%
+		- cav shock 0→0.50 
+		- adm advisor cost 0→-15%
+		- cav cost 0→-5% 
+	- fixed piety form privilege 5→0.5 monthly
 
 - 2025-02-15
 	- fixed religious league change hre religion base cost 100→50

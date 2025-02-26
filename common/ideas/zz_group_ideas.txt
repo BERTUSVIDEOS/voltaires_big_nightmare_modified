@@ -371,12 +371,12 @@ anatolian_beyliks_ideas = {
 
 BAV_ideas = {
 	start = {
-		cavalry_power = 0.1
-		heir_chance = 0.5
+		cavalry_power = 0.10
+		heir_chance = 0.50
 	}
 	
 	bonus = {
-		development_cost = -0.1
+		development_cost = -0.10
 	}
 	
 	trigger = {
@@ -392,24 +392,30 @@ BAV_ideas = {
 		horde_unity = 1
 	}
 	bavarian_purity_law = {
-		production_efficiency = 0.1
+		production_efficiency = 0.10
+		cavalry_cost = -0.05 	#0→-0.05
 	}
 	bavarian_state_orchestra = {
 		prestige = 0.5
+		adm_advisor_cost = -0.15 	#0→-0.15
 	}
 	geistlicher_rat = {
 		global_heretic_missionary_strength = 0.03
 		papal_influence = 1
+		monthly_fervor_increase = 0.5
+		church_power_modifier = 0.10
+		monthly_piety_accelerator = 0.001
 	}
 	brewmaster_general = {
         #33% EXTRA BASE TAX
-		global_tax_modifier = 0.1
+		global_tax_modifier = 0.20	#0.10→0.20
 	}
 	professional_army = {
 		discipline = 0.05
 	}
 	royal_order_of_st_george = {
 		army_tradition = 0.5
+		cavalry_shock = 0.50 	#0→0.50
 	}
 }
 

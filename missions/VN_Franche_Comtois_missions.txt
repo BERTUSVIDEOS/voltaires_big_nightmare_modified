@@ -867,12 +867,18 @@ vn_fcm_missions_slot_5 = {
         icon = les_invalides
         position = 4
         required_missions = { vn_fcm_comte_cheese vn_fcm_conquer_burgundy }
-        trigger = {
-            calc_true_if = {
-                amount = 3
-                employed_advisor = {
-                    culture = ROOT
-                }
+        trigger = {     #BERTUS MOD
+            employed_advisor = {
+                category = ADM
+                culture = ROOT
+            }
+            employed_advisor = {
+                category = DIP
+                culture = ROOT
+            }
+            employed_advisor = {
+                category = MIL
+                culture = ROOT
             }
 			num_of_owned_provinces_with = {
 				value = 3

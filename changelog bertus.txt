@@ -56,7 +56,10 @@ TO DO
 		- ghazi warriors
 			- cav CA 0→10%
 		- impose monastic poverty
-			- years of income per dev converted 0.1→0.005 (WTF)
+			- per dev converted 0.1 years of income → 5 ducats
+		- discipline in body and mind
+			- discipline 5%→0
+			- reinforce cost 0→-10%
 		- Aquisition of ghranges 
 			- expand infrastructure years of production 10→1
 		- Crusader order (triple manpower)

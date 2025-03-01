@@ -4520,23 +4520,22 @@ on_province_religion_converted = {
 		limit = {
 			owner = { has_government_attribute = converting_religion_gives_money }
 		}
-		owner = {
-			export_to_variable = {
-				which = enforce_poverty_value
-				value = development
-				who = FROM
-			}
-			for_variable_amount = {
-				variable = enforce_poverty_value
-				effect = "
-					add_years_of_income = 0.005
-				"
-			}
-			change_variable = {
-				which = enforce_poverty_value
-				value = 1
-			}
-		}		
+		export_to_variable = {
+			which = enforce_poverty_value
+			value = development
+		}
+		for_variable_amount = {
+			variable = enforce_poverty_value
+			effect = "
+				owner = {
+					add_treasury = 5
+				}
+			"
+		}
+		change_variable = {
+			which = enforce_poverty_value
+			value = 1
+		}	
 	}
 	if = {
 		limit = {

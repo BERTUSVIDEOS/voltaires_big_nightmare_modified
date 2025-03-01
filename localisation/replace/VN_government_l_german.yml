@@ -403,7 +403,7 @@
  mechanic_better_expanded_infrastructure_yes: "Die Infrastruktur einer Provinz auszubauen gewährt §Y10§! Jahre ihres Produktionseinkommens"
  mechanic_new_heirs_give_better_bonuses_yes: "Einen Erben auszuwählen gewährt doppelte Boni"
  opinion_theocracy_noble_bonus: "Gleiche Dynastie wie der Thronfolger"
- mechanic_converting_religion_gives_money_yes: "Provinzen zu konvertieren gewährt §Y0.005§! jährliches Einkommen pro Provinzentwicklung"
+ mechanic_converting_religion_gives_money_yes: "Provinzen zu konvertieren gewährt §Y0.005§! Ducats pro Provinzentwicklung"
  mechanic_has_outremer_election_yes: "Hat §YOutremer-Wahlen§!"
  government_events.3.edessa: "Wählt [EDE.GetMdendie] [EDE.Monarch.GetTitle] von [EDE.GetName]."
  government_events.3.edessa.tt: "§Y[EDE.Monarch.GetName] [EDE.Monarch.Dynasty.GetName]§! ([EDE.Monarch.GetAdm]/[EDE.Monarch.GetDip]/[EDE.Monarch.GetMil]) von §M[EDE.GetName]§! wird Herrscher."

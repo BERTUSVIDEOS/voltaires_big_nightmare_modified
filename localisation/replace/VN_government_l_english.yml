@@ -403,7 +403,7 @@
  mechanic_better_expanded_infrastructure_yes: "Expanding Infrastructure of a province grants §Y1§! years of its production income"
  mechanic_new_heirs_give_better_bonuses_yes: "Selecting an Heir grants doubled bonuses"
  opinion_theocracy_noble_bonus: "Same Dynasty as Heir"
- mechanic_converting_religion_gives_money_yes: "Converting provinces grants §Y0.005§! Yearly Income per province development"
+ mechanic_converting_religion_gives_money_yes: "Converting provinces grants §Y5§! Ducats per province development"
  mechanic_has_outremer_election_yes: "Has §YOutremer Elections§!"
  government_events.3.edessa: "Elect the [EDE.Monarch.GetTitle] of [EDE.GetName]."
  government_events.3.edessa.tt: "§Y[EDE.Monarch.GetName] [EDE.Monarch.Dynasty.GetName]§! ([EDE.Monarch.GetAdm]/[EDE.Monarch.GetDip]/[EDE.Monarch.GetMil]) of §M[EDE.GetName]§! becomes ruler."

@@ -1,9 +1,47 @@
-every_province = {
+every_country = {
 	limit = {
-		NOT = { owned_by = ROOT }
-		OR = {
-			region = east_anatolia_region
+		has_reform = lockean_proviso_reform
+	}
+	every_owned_province = {
+		limit = {
+			NOT = { has_province_modifier = hospice_bonus_prod }
+			OR = {
+				has_building = customs_house
+				has_building = arsenal
+			}
+		}
+		add_province_modifier = {
+			name = hospice_bonus_prod
+			duration = -1
 		}
 	}
-	cede_province = ROOT
+}
+every_country = {
+	limit = {
+		has_government_attribute = trade_buildings_boost
+	}
+	every_owned_province = {
+		limit = {
+			NOT = { has_province_modifier = trade_buildings_boost_modifier }
+			has_trade_building_trigger = yes
+		}
+		add_province_modifier = {
+			name = trade_buildings_boost_modifier
+			duration = -1
+		}
+	}
+	}
+every_country = {
+	limit = {
+		NOT = { has_government_attribute = trade_buildings_boost }
+		any_owned_province = {
+			has_province_modifier = trade_buildings_boost_modifier
+		}
+	}
+	every_owned_province = {
+		limit = {
+			has_province_modifier = trade_buildings_boost_modifier
+		}
+		remove_province_modifier = trade_buildings_boost_modifier
+	}
 }

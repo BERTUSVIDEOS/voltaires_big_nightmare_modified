@@ -4,40 +4,29 @@ country_decisions = {
 		major = yes
 		potential = {
 			normal_or_historical_nations = yes
-			was_never_end_game_tag_trigger = yes
+			is_free_or_tributary_trigger = yes	
 			NOT = { has_country_flag = formed_rum_flag }
-			OR = {
-				ai = no
-				is_playing_custom_nation = no
-			}
-			OR = {
-				is_free_or_tributary_trigger = yes
-				ai = no
-			}
+			NOT = { is_formable_tier = { tier = 3 } }
+			NOT = { is_formable_tier = { tier = 4 } }
 			NOT = { exists = RUM }
-			NOT = { tag = SJK }
-			NOT = { tag = PRU }
-			NOT = { tag = ENG }
-			is_emperor_of_china = no
+			NOT = { tag = TUR }
 			primary_culture = turkish
-			is_colonial_nation = no
-			OR = {
-				is_former_colonial_nation = no
-				AND = {
-					is_former_colonial_nation = yes
-					ai = no
-				}
-			}
 		}
 		provinces_to_highlight = {
 			OR = {
-				province_id = 1052		# Iznik
 				province_id = 6790		# Konya
-				province_id = 6740		# Ankara
-				province_id = 6822		# Sivas
-				province_id = 6290		# Erzurum
-				province_id = 6779		# Kayseri
-				province_id = 4179		# Eskeshehir
+				AND = {
+					region = east_anatolia_region
+					ROOT = {
+						NOT = {
+							num_of_owned_provinces_with = {
+								is_core = ROOT
+								region = east_anatolia_region
+								value = 98		#	 98/164 far anatolia region (60% since big region)
+							}
+						}
+					}
+				}
 			}
 			OR = {
 				NOT = { owned_by = ROOT }
@@ -51,17 +40,17 @@ country_decisions = {
 			religion_group = muslim
 			NOT = { exists = RUM }
 			NOT = { exists = TUR }
-			owns_core_province = 1052		# Iznik
 			owns_core_province = 6790		# Konya
-			owns_core_province = 6740		# Ankara
-			owns_core_province = 6822		# Sivas
-			owns_core_province = 6290		# Erzurum
-			owns_core_province = 6779		# Kayseri
-			owns_core_province = 4179		# Eskeshehir
+			num_of_owned_provinces_with = {
+				is_core = ROOT
+				region = east_anatolia_region
+				value = 98		#	 98/164 far anatolia region (60% since big region)
+			}
 		}
 		effect = {
 			change_tag = RUM
 			on_change_tag_effect = yes
+			set_formable_tier = { tier = 3 }
 			hidden_effect = { restore_country_name = yes }
 			RUM = {
 				if = {
@@ -79,9 +68,9 @@ country_decisions = {
 			remove_non_electors_emperors_from_empire_effect = yes
 			if = {
 				limit = {
-					NOT = { government_rank = 5 }
+					NOT = { government_rank = 4 }
 				}
-				set_government_rank = 5
+				set_government_rank = 4
 			}
 			anatolia_superregion = {
 				limit = {

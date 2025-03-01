@@ -45,12 +45,34 @@ TO DO
 	- gold/silver mines on farmlands dev cost malus 
 	
 - 2025-new
+	- vassalizing an independent city removes its bonus 
 	- fixed french compte mission
+	- fixed rum formable & ideas 
+	- Expanded slaves family rights 
+		- colonist 0→1
+	- bank loan
+		- build time 2%→1%
 	- reform
+		- ghazi warriors
+			- cav CA 0→10%
 		- impose monastic poverty
 			- years of income per dev converted 0.1→0.005 (WTF)
 		- Aquisition of ghranges 
 			- expand infrastructure years of production 10→1
+		- Crusader order (triple manpower)
+			- governing capacity modifier 0→-50%
+	- Religion
+		- hussite
+			- taborite aspect
+				- years of manpower 1→0.5
+			- regular defenestration
+				- rebel progress -30→-20
+			- adamite
+				- gov progress 25→15
+			- clerical poverty
+				- advisor lvl 3→1 
+			- sola scriptura
+				- mil power 50(100)→25(50)
 
 
 - 2025-02-22

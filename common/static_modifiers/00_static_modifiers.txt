@@ -745,7 +745,7 @@ cancelled_loan = {
 
 bank_loan = {	#bertus mod
 	build_cost = 0.02
-	build_time = 0.02
+	build_time = 0.01
 	great_project_upgrade_cost = 0.02
 	great_project_upgrade_cost = 0.02
 	center_of_trade_upgrade_cost = 0.02

@@ -9,15 +9,12 @@ clerical_poverty_aspect = {
 		hidden_effect = { 
 			define_advisor = {
 				type = theologian
-				skill = 3
+				skill = 1
 				cost_multiplier = 0.50
 				culture = ROOT
 				religion = ROOT
 			}
-			add_estate_loyalty = {
-				estate = estate_church
-				loyalty = 10
-			}
+			add_estate_loyalty = { estate = estate_church loyalty = 10 }
 		}
 	}
 }
@@ -32,10 +29,7 @@ punishment_of_sins_aspect = {
 	effect = {	#bertus mod
 		hidden_effect = { 
 			add_splendor = 50
-			add_estate_loyalty = {
-				estate = estate_burghers
-				loyalty = 10
-			}
+			add_estate_loyalty = { estate = estate_burghers loyalty = 10 }
 		}
 	}
 }
@@ -84,10 +78,10 @@ sola_scriptura_aspect = {
 		hidden_effect = { 
 			if = {
 				limit = { is_at_war = yes }
-				add_mil_power = 100
+				add_mil_power = 50
 			}
 			else = {
-				add_mil_power = 50
+				add_mil_power = 25
 			}
 		}
 	}
@@ -96,12 +90,12 @@ sola_scriptura_aspect = {
 adamite_services_aspect = {
 	cost = 100
 	modifier = {
-		culture_conversion_cost = -0.2
-		culture_conversion_time = -0.2	#0→-0.20
+		culture_conversion_cost = -0.20
+		culture_conversion_time = -0.20		#0→-0.20
 	}
 	effect = {	#bertus mod
 		hidden_effect = { 
-			change_government_reform_progress = 25
+			change_government_reform_progress = 15
 		}
 	}
 }
@@ -135,7 +129,7 @@ regular_defenestrations_aspect = {
 	effect = {	#bertus mod
 		hidden_effect = { 
 			add_rebel_progress = {
-				value = -30
+				value = -20
 			}
 		}
 	}
@@ -149,11 +143,8 @@ taborite_resurgence_aspect = {
 	}
 	effect = {	#bertus mod
 		hidden_effect = { 
-			add_yearly_manpower = 1.0
-			add_estate_loyalty = {
-				estate = estate_nobles
-				loyalty = 10
-			}
+			add_yearly_manpower = 0.5
+			add_estate_loyalty = { estate = estate_nobles loyalty = 10 }
 		}
 	}
 }
@@ -167,10 +158,7 @@ freedom_to_preach_aspect = {
 	effect = {	#bertus mod
 		hidden_effect = { 
 			add_stability_or_adm_power_per_stab = { amount = 1 }
-			add_estate_loyalty = {
-				estate = estate_jews
-				loyalty = 10
-			}
+			add_estate_loyalty = { estate = estate_jews loyalty = 10 }
 		}
 	}
 }

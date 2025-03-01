@@ -144,6 +144,7 @@ crusading_kingdom_reform = {
 		army_tradition_from_battle = 0.25
 		discipline = 0.025
 		extra_manpower_at_religious_war = yes	#bertus mod
+		governing_capacity_modifier = -0.50 	#0→-0.50
 	}
 	monastic = yes
 	custom_attributes = {

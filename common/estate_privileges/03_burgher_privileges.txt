@@ -1950,6 +1950,7 @@ estate_burghers_mountain_expansion = {
 			has_idea = oasis_of_peace_and_prosperity
 			has_idea = ARS_idea_4
 			has_idea = GRE_idea_1
+			has_idea = rum_sultan_al_muazzam 	#rum
 			has_idea = alhambra 
 			has_idea = savoyard_flexibility
 			443 = {

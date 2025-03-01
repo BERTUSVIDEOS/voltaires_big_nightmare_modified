@@ -2983,6 +2983,7 @@ ghazi_reform = {	#bertus mod
 	}
 	modifiers = {
 		manpower_recovery_speed = 0.10	#0→0.10
+		cavalry_power = 0.10 	#0→0.10
 		loot_amount = 0.50
 		available_province_loot = 0.50
 	}

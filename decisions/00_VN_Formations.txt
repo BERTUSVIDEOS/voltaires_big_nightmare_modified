@@ -26,7 +26,7 @@ country_decisions = {
 									region = croatia_region
 									region = serbia_region
 								}
-								value = 96		#	 96/192 south germany region
+								value = 96		#	 96/192 serbia & croatia 50% since big "region"
 							}
 						}
 					}
@@ -47,7 +47,7 @@ country_decisions = {
 					region = croatia_region
 					region = serbia_region
 				}
-				value = 96		#	 96/192 south germany region
+				value = 96		#	 96/192 serbia & croatia 50% since big "region"
 			}
 		}
 		effect = {

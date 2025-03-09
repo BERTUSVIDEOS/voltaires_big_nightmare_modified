@@ -1,12 +1,6 @@
 TO DO
-	- nerf PAL ideas
 	- Estate privilege Noble Levies
 		- manpower/tax 11/22/33 land share +-22/44/66%→22/33/44%
-	- Moravian ideas
-		- trade goods 10%→7.5%
-		- build cost -15%→-7.5% 
-		- production efficiency 10%→7.5%
-		- ICA 20%→10%
 	- trade nodes 
 		- dorylaion
 			- flow into antioch
@@ -37,14 +31,56 @@ TO DO
 	- Palatinate tier 2 but starts as tier 1, through missions gets to tier 2
 	- Venice formable 
 	- buf aragon ideas
+	- nerf PAL ideas
 	- import anbennar mil reforms rework
 	- Nerf north germany ideas 
 	- Nerf south germany
 	- add central germany formable
 	- buf two sicily ideas
 	- gold/silver mines on farmlands dev cost malus 
+	- nerf dev cost overall
 	
 - 2025-new
+	- fort cost per lvl & garrison 0.25→0.20
+	- over governing capacity 
+		- development cost modifier 0→0.50
+	- Rank 1
+		- gov cap -66%
+		- dev cost on own culture -20%
+		- own culture adv cost -20%
+		- fort maintenance -50%
+		- vassal FL/naval FL/manpower/sailors -100%
+		- vassal income -50%
+	- Rank 2
+		- gov cap -33%
+		- dev cost on own culture -10%
+		- own culture adv cost -10%
+		- fort maintenance -25%
+		- vassal FL/naval FL/manpower/sailors -50%
+		- vassal income -25%
+	- rank 3 
+		- gov cap 300→200
+	- rank 4
+		- gov cap 200→100
+	- tweaked some provinces trade goods
+	- tweaked somefarming trade goods local modifier
+	- Now can steal from subjects
+	- Great Development Cost nerf
+		- being in a state -10%→0
+		- tropical/arctic/desert
+			- dev cost +5%/+5%/+10%→0 
+			- dev cost modifier 0→+10%
+		- Removed or reduced most religious dev cost
+		-  holand polders great project dev cost→dev cost modifier
+		- trade building boost -10%→0
+		- parliament issue -10%→-5%
+		- hre reforms
+		- lumber trade bonus -5%→0
+		- other 
+	- Growth of capial mission conditions reworked
+	- Tweaked janissaries privileges
+
+- 2025-03-01
 	- vassalizing an independent city removes its bonus 
 	- fixed french compte mission
 	- fixed rum formable & ideas 

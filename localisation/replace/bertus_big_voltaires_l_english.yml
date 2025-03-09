@@ -1,5 +1,5 @@
 ﻿l_english:
- mechanic_extra_dev_cost_on_hospices_yes: "Every owned province with an §YApothecary§! or a §YHospice§! gains the following bonus:\n  · Local Development Cost: §G-5.0%§!\n  · Local Trade Goods Size: §G+10.0%§!"
+ mechanic_extra_dev_cost_on_hospices_yes: "Every owned province with an §YApothecary§! or a §YHospice§! gains the following bonus:\n  · Local unrest: §G-2.0§!\n  · Local Trade Goods Size: §G+10.0%§!"
  hospice_bonus_prod:0 "Proviso Hospices"
  RHI:0 "Rhineland"
  RHI_ADJ:0 "Rhenish"
@@ -144,7 +144,7 @@
  ab_saxon_legitimacy:0 "Emerging State"
  development_average_20_tt:0 "Average development in States §Y20§!"
  trade_buildings_boost_modifier:0 "Money Cycle"
- mechanic_trade_buildings_boost_yes:0 "§OMoney Cycle§! - Trade Buildings give:\n  · Local Trade value modifier: §G+10%§!\n  · Local Development cost: §G-5%§!"
+ mechanic_trade_buildings_boost_yes:0 "§OMoney Cycle§! - Trade Buildings give:\n  · Local Trade value modifier: §G+10%§!\n  · Local Local Trade Power: §G+2.00§!"
  mechanic_trade_buildings_boost:0 "§OMoney Cycle§!"
  mechanic_tax_deving_bonus_yes:0 "§OTax Duty§! - Deving §YTax§! extra §YBase Tax§! chance: §G50%§!"
  mechanic_tax_deving_bonus:0 "§OTax Duty§!"

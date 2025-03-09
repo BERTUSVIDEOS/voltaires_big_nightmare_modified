@@ -20,6 +20,7 @@ capital = 2033
 	add_ruler_personality = cruel_personality
 }
 1444.11.12 = {	#bertus mod
+	government_rank = 2
 	monarch = {
 		name = "Gisulfo III"
 		dynasty = "Landulfing"

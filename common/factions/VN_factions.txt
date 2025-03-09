@@ -123,7 +123,7 @@ pap_orsini = {
 	modifier = {
 		inflation_reduction = 0.20
 		global_tax_modifier = 0.20
-		development_cost = -0.10
+		build_cost = -0.10
 	}
 }
 

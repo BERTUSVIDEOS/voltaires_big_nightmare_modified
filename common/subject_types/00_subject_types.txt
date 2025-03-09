@@ -167,6 +167,12 @@ default = {
 	modifier_subject = { # Otherwise, this only adds modifiers, and doesn't remove previously added.
 		modifier = subject_nation
 	}
+	modifier_overlord = {
+		modifier = monarchie6_idea_subject_bonus
+		trigger = {
+			overlord = { has_idea = monarchie6 }
+		}
+	}
 	modifier_overlord = clear
 
 	overlord_opinion_modifier = null # If not "null" it will look for a modifier with that name in 00_opinion_modifiers.txt and other files in that directory.
@@ -309,6 +315,18 @@ march = {
 				has_government_attribute = same_religion_subject_bonus
 				religion = PREV
 			}
+		}
+	}
+	modifier_overlord = {	#bertus mod
+		modifier = monarchie6_idea_subject_bonus
+		trigger = {
+			overlord = { has_idea = monarchie6 }
+		}
+	}
+	modifier_overlord = {	#bertus mod
+		modifier = monarchie6_idea_march_bonus
+		trigger = {
+			overlord = { has_idea = monarchie6 }
 		}
 	}
 }
@@ -516,6 +534,12 @@ personal_union = {
 		}
 		modifier = pu_subject_bonus
 	}
+	modifier_overlord = {	#bertus mod
+		modifier = monarchie6_idea_march_bonus
+		trigger = {
+			overlord = { has_idea = monarchie6 }
+		}
+	}
 
 	overlord_opinion_modifier = in_union
 	subject_opinion_modifier = in_union
@@ -638,6 +662,12 @@ colony = {
 		modifier = gbr_colonial_investment
 		trigger = {
 			overlord = { has_country_modifier = gbr_new_world_dominance }
+		}
+	}
+	modifier_overlord = {	#bertus mod
+		modifier = monarchie6_idea_tributary_bonus
+		trigger = {
+			FROM = { has_idea = monarchie6 }
 		}
 	}
 
@@ -867,6 +897,12 @@ tributary_state = {
 			ROOT = {
 				NOT = { mil_tech = FROM }
 			}
+		}
+	}
+	modifier_overlord = {	#bertus mod
+		modifier = monarchie6_idea_tributary_bonus
+		trigger = {
+			overlord = { has_idea = monarchie6 }
 		}
 	}
 }

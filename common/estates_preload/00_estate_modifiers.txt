@@ -610,6 +610,55 @@ estate_special = {
 			always = yes
 		}
 	}
+	modifier_definition = {
+		#type = privileges
+		key = development_chance
+		trigger = {
+			always = yes
+		}
+	}
+	modifier_definition = {
+		#type = privileges
+		key = own_race_development_chance
+		trigger = {
+			always = yes
+		}
+	}
+	modifier_definition = {
+		#type = privileges
+		key = base_tax_development_chance
+		trigger = {
+			always = yes
+		}
+	}
+	modifier_definition = {
+		#type = privileges
+		key = base_production_development_chance
+		trigger = {
+			always = yes
+		}
+	}
+	modifier_definition = {
+		#type = privileges
+		key = base_manpower_development_chance
+		trigger = {
+			always = yes
+		}
+	}
+	modifier_definition = {
+		#type = privileges
+		key = military_reform_power_gain_modifier
+		trigger = {
+			always = yes
+		}
+	}
+	modifier_definition = {
+		#type = privileges
+		key = monthly_manpower
+		trigger = {
+			always = yes
+		}
+	}
 }
 
 #VN

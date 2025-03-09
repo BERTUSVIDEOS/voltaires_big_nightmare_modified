@@ -22,9 +22,6 @@ theocracy_mechanic = {
 		holy_orders_loyalty_modifier = 0.05	#0.10→0.05
 		holy_orders_influence_modifier = 0.05	#0→0.05
 	}
-	government_abilities = {
-		military_reforms_mechanic
-	}
 }
 
 #Leadership
@@ -794,7 +791,7 @@ papacy_reform = {
 	heir = no
 	allow_convert = no
 	lock_level_when_selected = yes
-	fixed_rank = 5
+	fixed_rank = 4
 
 	factions = {
 		pap_orsini
@@ -1397,8 +1394,8 @@ combat_heresy_reform = {
 expel_heathens_reform = {
 	icon = "landscape"
 	allow_normal_conversion = yes
-	modifiers = {
-		development_cost = -0.05
+	modifiers = { 	#bertus mod
+		culture_conversion_time = -0.15
 		culture_conversion_cost = -0.15
 	}
 	#custom_attributes = {
@@ -1988,8 +1985,8 @@ state_of_theologians_reform = {
 divinity_through_craftsmanship_reform = {
 	icon = "peasant_republic"
 	allow_normal_conversion = yes
-	modifiers = {
-		development_cost_modifier = -0.05	#-0.025→-0.05
+	modifiers = { 	#bertus mod
+		global_trade_goods_size = 0.20
 		global_trade_goods_size_modifier = 0.1
 	}
 	ai = {

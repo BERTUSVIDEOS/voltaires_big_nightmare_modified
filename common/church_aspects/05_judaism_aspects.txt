@@ -240,9 +240,10 @@ judaism_diplomatic_rabbi_aspect = {	#DIP aspect
 			}
 		}
 	}
-	modifier = {
+	modifier = { 	#bertus mod
 		#improve_relation_modifier = 0.2
-		development_cost = -0.1
+		build_cost = -0.10
+		build_time = -0.10
 	}
 	monarch_power = dip
 	ai_will_do = {

@@ -1,7 +1,7 @@
 capital = "Mulsanne"
 culture = angevin_culture
 religion = catholic
-trade_goods = gold
+trade_goods = wine
 base_tax = 1
 base_production = 1
 base_manpower = 1

@@ -900,9 +900,9 @@ christian = {
 		allowed_center_conversion = {
 			catholic
 		}
-		country = {
-			development_cost = -0.1
+		country = { 	#bertus mod
 			technology_cost = -0.05
+			idea_cost = -0.05
 		}
 		
 		country_as_secondary = {
@@ -1481,8 +1481,7 @@ christian = {
 				ai_will_do = { factor = 1 }
 			}
 
-			icon_pancreator = {
-				development_cost = -0.10
+			icon_pancreator = { 	#bertus mod
 				build_cost = -0.10
 				build_time = -0.10
 				
@@ -1535,8 +1534,8 @@ christian = {
 		misguided_heretic = yes
 
 		orthodox_icons = {
-			icon_aniconism_michael = {
-				development_cost = -0.1 
+			icon_aniconism_michael = { 	#bertus mod
+				development_cost = -0.05
 				production_efficiency = 0.1
 
 				allow = { religion = iconoclast }
@@ -2143,7 +2142,8 @@ muslim = {
 
 			picture = "GFX_icon_muslim_school_maliki"
 
-			development_cost = -0.1
+			build_cost = -0.10
+			build_time = -0.10
 		}
 		shafii_school = {
 			potential_invite_scholar = {
@@ -3307,10 +3307,10 @@ muslim = {
 					drill_decay_modifier = -0.25
 				}
 				teachings = {
-					eternally_living_guru = {
+					eternally_living_guru = { 	#bertus mod
 						type = ADM
 						cost = 50
-						development_cost = -0.1
+						build_cost = -0.1
 					}
 					divine_justice = {
 						type = DIP

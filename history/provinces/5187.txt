@@ -1,7 +1,7 @@
 capital = "Blaundos" 
 culture = phrygian
 religion = orthodox
-trade_goods = gold
+trade_goods = tin
 base_tax = 1
 base_production = 1
 base_manpower = 1

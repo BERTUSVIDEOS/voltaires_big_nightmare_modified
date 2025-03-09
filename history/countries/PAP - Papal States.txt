@@ -625,6 +625,7 @@ change_estate_land_share = {
 	}
 }
 1444.11.12 = {	#bertus mod
+	government_rank = 2
 	set_capital = 1818
 	monarch = {
 		name = "Nicolaus V"

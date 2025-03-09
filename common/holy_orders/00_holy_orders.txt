@@ -83,7 +83,7 @@ carmelites = {
 franciscan_order = {
     icon = GFX_holy_order_franciscans
     trigger = {
-        OR ={
+        OR = {
             FROM = { holy_order = franciscan_order }
             has_country_flag = enable_holy_orders_flag 
         }

@@ -1,7 +1,7 @@
 capital = "Rieti" 
 culture = umbrian
 religion = catholic 
-trade_goods = barley
+trade_goods = tin
 base_tax = 2
 base_production = 2
 base_manpower = 2

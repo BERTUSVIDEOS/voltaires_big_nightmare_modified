@@ -1,7 +1,7 @@
 capital = "Straban"
 culture = connachta
 religion = catholic
-trade_goods = gold
+trade_goods = fur
 base_tax = 6
 base_production = 10
 base_manpower = 6

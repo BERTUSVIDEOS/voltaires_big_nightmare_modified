@@ -1,7 +1,7 @@
 capital = "Praha" 
 culture = czech
 religion = catholic
-trade_goods = iron
+trade_goods = glass
 base_tax = 7
 base_production = 7
 base_manpower = 5

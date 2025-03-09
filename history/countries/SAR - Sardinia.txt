@@ -23,6 +23,7 @@ capital = 530
 1417.10.18 = { religion = catholic }
 1444.11.12 = {	#bertus mod
 	set_capital = 651 #cagliari
+	government_rank = 2
 	monarch = {
 		name = "Josep I"
 		dynasty = "el Sardino"

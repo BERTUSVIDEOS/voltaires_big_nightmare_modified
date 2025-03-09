@@ -1,7 +1,7 @@
 capital = "Nicastro" 
 culture = griko
 religion = orthodox
-trade_goods = wine
+trade_goods = naval_supplies
 base_tax = 2
 base_production = 1
 base_manpower = 1

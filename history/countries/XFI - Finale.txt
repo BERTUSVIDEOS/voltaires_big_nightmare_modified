@@ -114,6 +114,9 @@ capital = 2608
     mil = 2
   }
 }
+1444.11.12 = {	#bertus mod
+	government_rank = 1
+}
 1452.1.1 = {
   heir = {
     name = "Galeotto"

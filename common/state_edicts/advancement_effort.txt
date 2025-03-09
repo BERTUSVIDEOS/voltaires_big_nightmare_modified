@@ -1,6 +1,6 @@
 edict_advancement_effort = {
 	potential = {
-		always = yes		#we support "potential" if modders want to have lots and just show some.
+		NOT = {has_idea = entwicklung5 }
 	}
 	
 	allow = {
@@ -13,8 +13,7 @@ edict_advancement_effort = {
 	}
 
 	modifier = {
-		#local_institution_spread = 0.33	#0.33→0
-		institution_growth = 10	#0→10
+		institution_growth = 10
 	}
 	
 
@@ -22,27 +21,32 @@ edict_advancement_effort = {
 	
 	
 	ai_will_do = {
-		# has to be around at least 10 to be picked (depends on maintainance cost and general economy)
 		factor = 10
-		modifier = {
-			factor = 0
-			all_province_in_state = {
-				NOT = { current_institution_growth = 0.5 }
-			}
+	}
+}
+edict_improved_advancement_effort = {
+	potential = {
+		has_idea = entwicklung5
+	}
+	
+	allow = {
+	}
+	
+	notify_trigger = {
+		FROM = {
+			current_institution = 100
 		}
-		modifier = {
-			factor = 5
-			any_province_in_state = {
-				is_capital = yes
-			}
-		}
-		modifier = {
-			factor = 3
-			all_province_in_state = {
-				AND = {
-					current_institution_growth = 0.5
-				}
-			}
-		}
+	}
+
+	modifier = {
+		institution_growth = 15
+	}
+	
+
+	color = { 50 173 192 }
+	
+	
+	ai_will_do = {
+		factor = 10
 	}
 }

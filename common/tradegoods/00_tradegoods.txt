@@ -28,7 +28,7 @@ pepper = {
 rice = { #bertus mod
 	color = { 0.9 0.9 0.6 }
 	modifier = { manpower_recovery_speed = 0.1 }
-	province = { local_manpower = 1.0 }	#bertus mod
+	province = { local_manpower = 0.50 }	#bertus mod
 	chance = {
 		factor = 5
 		modifier = {
@@ -54,7 +54,7 @@ rice = { #bertus mod
 barley = { 
 	color = { 0.76 0.72 0.27 }
 	modifier = { infantry_cost = -0.1 }
-	province = { local_regiment_cost = -0.1 }
+	province = { land_forcelimit = 0.5 }
 	chance = {
 		factor = 35
 		modifier = {
@@ -161,8 +161,8 @@ marble = {
 
 olive = { 
 	color = { 0.4 0.7 0.0 }
-	modifier = { global_missionary_strength = 0.01 }
-	province = { ship_recruit_speed = -0.1 }
+	modifier = { manpower_recovery_speed = 0.10 }
+	province = { local_development_cost = -0.1 }
 	chance = {
 		factor = 20
 		modifier = {
@@ -331,7 +331,7 @@ oil = {
 vegetables = {
 	color = { 0.56 0.99 0.53 }
 	modifier = { mercenary_manpower = 0.1 }
-	province = { local_hostile_movement_speed = -0.15 }
+	province = { local_manpower = 0.50 }
 	chance = {
 		factor = 20
 		modifier = {
@@ -712,7 +712,7 @@ mercury = {
 minerals = { 
 	color = { 0.99 0.9 0.02 }
 	modifier = { backrow_artillery_damage = 0.2 }
-	province = { local_manpower_modifier = 0.1 }
+	province = { local_production_efficiency = 0.1 }
 	chance = {
 		factor = 5
 		modifier = {
@@ -848,7 +848,7 @@ grain = {
 wine = { 
 	color = { 0.36 0.13 0.28 }
 	modifier = { stability_cost_modifier = -0.1 }
-	province = { local_years_of_nationalism = -5 }
+	province = { local_manpower_modifier = 0.25 }
 	chance = {
 		factor = 5
 		modifier = {
@@ -917,7 +917,7 @@ cloth = {
 fish = { 
 	color = { 0.55 0.82 0.97 }
 	modifier = { global_sailors_modifier = 0.25 }
-	province = { local_sailors_modifier = 0.25 }
+	province = { local_sailors = 250 }
 	chance = {
 		factor = 20
 		modifier = {
@@ -1275,7 +1275,7 @@ cotton = { 	#bertus mod
 sugar = {	#bertus mod
 	color = { 0.74 0.95 0.68 }
 	modifier = { development_cost = -0.05 }
-	province = { local_manpower_modifier = 0.1 }
+	province = { trade_value_modifier = 0.1 }
 	chance = {
 		factor = 15
 		modifier = {
@@ -1387,9 +1387,9 @@ dyes = {
 	}
 }
 
-lumber = { 
+lumber = {  	#bertus mod
 	color = { 0.4 0.2 0.0 }
-	modifier = { development_cost = -0.05 }
+	modifier = { build_cost = -0.05 }
 	province = { local_build_cost = -0.2 }
 	chance = {
 		factor = 25

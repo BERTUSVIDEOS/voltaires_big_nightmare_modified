@@ -186,6 +186,9 @@ capital = 2602
 		mil = 4
 	}
 }
+1444.11.12 = {	#bertus mod
+	government_rank = 1
+}
 1445.4.1 = {
 	monarch = {
 		name = "Niccolò"

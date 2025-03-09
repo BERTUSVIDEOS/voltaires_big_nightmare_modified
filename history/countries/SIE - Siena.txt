@@ -65,6 +65,9 @@ add_army_professionalism = 0.05
 		regent = yes
 	}
 }
+1444.11.12 = {	#bertus mod
+	government_rank = 2
+}
 1487.7.22 = {
 	monarch = {
 		name = "Pandolfo"

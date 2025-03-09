@@ -1,7 +1,7 @@
 capital = "Ourique"
 culture = andalucian
 religion = sunni
-trade_goods = tin
+trade_goods = wine
 base_tax = 1
 base_production = 1
 base_manpower = 2

@@ -2142,8 +2142,33 @@ town_hall = {
 			value = 2
 		}
 		remove_province_modifier = fra_improved_court_houses_modifier 
+		if = {
+			limit = {owner = {has_idea = flottenbasis1}}
+			add_province_modifier = {
+				name = flottenbasis1_dock_bonus_1
+				duration = -1
+				hidden = yes
+			}
+		}
+		if = {
+			limit = {owner = {has_idea = flottenbasis4}}
+			add_province_modifier = {
+				name = flottenbasis4_dock_bonus_1
+				duration = -1
+				hidden = yes
+			}
+		}
 	}
-	on_obsolete = {
+
+	on_destroyed = {
+		if = {
+			limit = {has_province_modifier = flottenbasis1_dock_bonus_1}
+			remove_province_modifier = flottenbasis1_dock_bonus_1
+		}
+		if = {
+			limit = {has_province_modifier = flottenbasis4_dock_bonus_1}
+			remove_province_modifier = flottenbasis4_dock_bonus_1
+		}
 	}
 
 	ai_will_do = {
@@ -2171,33 +2196,6 @@ town_hall = {
 		modifier = {
 			factor = 0.5
 			FROM = { is_in_deficit = yes }
-		}
-		modifier = {
-			factor = 1.25
-			development = 10
-		}
-		modifier = {
-			factor = 1.25
-			development = 20
-		}
-		modifier = {
-			factor = 1.25
-			development = 30
-		}
-		modifier = {
-			factor = 0.5
-			FROM = { NOT = { treasury = 300 } }
-		}
-		modifier = {
-			factor = 1.25
-			FROM = { treasury = 400 }
-		}
-		#Provinces in the Capital Area don't need a courthouse
-		modifier = {
-			factor = 0
-			area_for_scope_province = {
-				is_capital_of = FROM
-			}
 		}
 	}
 }
@@ -2235,9 +2233,35 @@ drydock = {
 			value = 2
 			upgrade_value = 1
 		}
+		if = {
+			limit = {owner = {has_idea = flottenbasis1}}
+			remove_province_modifier = flottenbasis1_dock_bonus_1
+			add_province_modifier = {
+				name = flottenbasis1_dock_bonus_2
+				duration = -1
+				hidden = yes
+			}
+		}
+		if = {
+			limit = {owner = {has_idea = flottenbasis4}}
+			remove_province_modifier = flottenbasis4_dock_bonus_1
+			add_province_modifier = {
+				name = flottenbasis4_dock_bonus_2
+				duration = -1
+				hidden = yes
+			}
+		}
 	}
-	
+
 	on_destroyed = {
+		if = {
+			limit = {has_province_modifier = flottenbasis1_dock_bonus_2}
+			remove_province_modifier = flottenbasis1_dock_bonus_2
+		}
+		if = {
+			limit = {has_province_modifier = flottenbasis4_dock_bonus_2}
+			remove_province_modifier = flottenbasis4_dock_bonus_2
+		}
 		if = {
 			limit = {
 				FROM = {

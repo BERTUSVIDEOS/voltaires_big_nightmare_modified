@@ -120,8 +120,8 @@ estate_eunuchs_delegate_provincial_administration_privilege = {
 		holy_orders_influence_modifier = -0.05
 	}
 	
-	modifier_by_land_ownership = {
-		development_cost = -0.15
+	modifier_by_land_ownership = { 	#bertus mod
+		development_cost = -0.05
 		yearly_corruption = 0.33
 	}
 	

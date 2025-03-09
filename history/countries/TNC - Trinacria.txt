@@ -248,6 +248,7 @@ capital = 2703
 1429.7.26 = { religion = catholic }
 
 1444.11.12 = {	#bertus mod
+	government_rank = 2
 	set_capital = 555
 	religion = sunni
 	monarch = {

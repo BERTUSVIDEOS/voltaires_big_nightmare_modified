@@ -1,7 +1,7 @@
 capital = "Qastanyah"
 culture = andalucian
 religion = sunni
-trade_goods = silver
+trade_goods = grain
 base_tax = 1
 base_production = 1
 base_manpower = 1

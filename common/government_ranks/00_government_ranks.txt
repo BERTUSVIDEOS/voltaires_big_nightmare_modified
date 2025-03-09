@@ -1,16 +1,35 @@
-2 = {
-	governing_capacity = 100
+1 = {	#bertus mod
+	governing_capacity_modifier = -0.66
+	development_cost_in_primary_culture = -0.20
+	same_culture_advisor_cost = -0.15
+	fort_maintenance_modifier = -0.50
+	vassal_manpower_bonus = -1.0
+	vassal_naval_forcelimit_bonus = -1.0
+	vassal_sailors_bonus = -1.0
+	vassal_forcelimit_bonus = -1.0
+	vassal_income = -0.50
 }
 
-3 = {
+2 = {	#bertus mod
+	governing_capacity_modifier = -0.33
+	development_cost_in_primary_culture = -0.10
+	same_culture_advisor_cost = -0.10
+	fort_maintenance_modifier = -0.25
+	vassal_manpower_bonus = -0.50
+	vassal_naval_forcelimit_bonus = -0.50
+	vassal_sailors_bonus = -0.50
+	vassal_forcelimit_bonus = -0.50
+	vassal_income = -0.25
+}
+
+3 = {	#bertus mod
 	diplomats = 1
-	governing_capacity = 200
 }
 
-4 = {
+4 = {	#bertus mod
 	diplomats = 1
 	free_leader_pool = 1
-	governing_capacity = 300
+	governing_capacity = 200
 }
 
 5 = {

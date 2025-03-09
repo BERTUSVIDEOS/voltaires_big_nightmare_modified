@@ -243,6 +243,7 @@ capital = 564 # Napoli
 	}
 }
 1444.11.12 = {	#bertus mod
+	government_rank = 2
 	monarch = {
 		name = "René II"
 		dynasty = "d'Anjou"

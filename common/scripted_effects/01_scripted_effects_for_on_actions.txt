@@ -176,6 +176,12 @@ initialize_schools_effect = { #Used in on_startup on_action
 
 on_new_monarch_effect = {
 	if = {
+		limit = { has_idea = monarchie1 }
+		change_adm = 1
+		change_dip = 1
+		add_legitimacy = 20
+	}
+	if = {
 		limit = {
 			has_consort_regency = no
 			any_owned_province = {
@@ -1869,104 +1875,62 @@ on_battle_won_unit_effect = {
 			}
 		}
 	}
-	if = {	#bertus mod Military Reform
+	if = {	#bertus mod - Military Reform
 		limit = {
-			enemy_unit = { unit_owner = { OR = {ai = no overlord = { ai = no } } } }
-			unit_owner = {
-				is_at_war = yes
-				ai = no
-				has_government_mechanic = military_reforms_mechanic
+			FROM = {
+				if = {
+					limit = { has_global_flag = mp_lobby_flag }
+					OR = { ai = no overlord = { ai = no }  }
+				}
+			}
+			ai = no
+			is_at_war = yes
+			any_country = { 
+				ROOT = {
+					NOT = { is_renting_condottieri_to = PREV }
+				}
 			}
 		}
-		unit_owner = {
-			set_variable = {
-				which = military_reform_unit_kill_losses
-				value = 0
+		set_variable = { which = military_reform_unit_kill_losses value = 0 }
+		change_variable = { which = military_reform_unit_kill_losses which = land_units_lost }
+		set_variable = { which = land_forcelimit_unit_kill_losses value = 0 }
+		export_to_variable = { which = land_forcelimit_unit_kill_losses value = trigger_value:land_forcelimit }
+		set_variable = { which = army_size_unit_kill_losses value = 0 }
+		export_to_variable = { which = army_size_unit_kill_losses value = trigger_value:army_size }
+		divide_variable = { which = military_reform_unit_kill_losses value = 1000 }
+		divide_variable = { which = military_reform_unit_kill_losses which = land_forcelimit_unit_kill_losses }
+		multiply_variable = { which = military_reform_unit_kill_losses which = army_size_unit_kill_losses }
+		set_variable = { which = military_reform_power_gain_modifier_var value = 0 }
+		export_to_variable = { which = military_reform_power_gain_modifier_var value = modifier:military_reform_power_gain_modifier }
+		change_variable = { which = military_reform_power_gain_modifier_var value = 1 }
+		multiply_variable = { which = military_reform_unit_kill_losses which = military_reform_power_gain_modifier_var }
+		if = {
+			limit = {
+				OR = {
+					is_in_war = { attacker_leader = ROOT }
+					is_in_war = { defender_leader = ROOT }
+				}
+				NOT = {
+					any_country = {
+						NOT = { tag = ROOT }
+						ai = no
+						OR = {
+							is_in_war = { attacker_leader = ROOT attackers = THIS }
+							is_in_war = { defender_leader = ROOT defenders = THIS }
+						}
+					}
+				}
 			}
-			change_variable = {
-				which = military_reform_unit_kill_losses
-				which = land_units_lost
-			}
-			set_variable = {
-				which = land_forcelimit_unit_kill_losses
-				value = 0
-			}
-			export_to_variable = {
-				which = land_forcelimit_unit_kill_losses
-				value = trigger_value:land_forcelimit
-			}
-			set_variable = {
-				which = army_size_unit_kill_losses
-				value = 0
-			}
-			export_to_variable = {
-				which = army_size_unit_kill_losses
-				value = trigger_value:army_size
-			}
-			divide_variable = {
-				which = military_reform_unit_kill_losses
-				value = 1000
-			}
-			divide_variable = {
-				which = military_reform_unit_kill_losses
-				which = land_forcelimit_unit_kill_losses
-			}
-			multiply_variable = {
-				which = military_reform_unit_kill_losses
-				which = army_size_unit_kill_losses
-			}
-			divide_variable = {
-				which = military_reform_unit_kill_losses
-				which = land_forcelimit_unit_kill_losses
-			}
+			multiply_variable = { which = military_reform_unit_kill_losses value = 2 }
+		}
+		while = {
+			limit = { check_variable = { which = military_reform_unit_kill_losses value = 0.1 } }
+			change_variable = { which = military_reform_unit_kill_losses value = -0.1 }
+			change_variable = { which = military_reform_progress_var value = 0.1 }
 			if = {
-				limit = {
-					OR = {
-						is_in_war = {
-							attacker_leader = ROOT
-						}
-						is_in_war = {
-							defender_leader = ROOT
-						}
-					}
-					NOT = {
-						any_country = {
-							NOT = { tag = ROOT }
-							ai = no
-							OR = {
-								is_in_war = {
-									attacker_leader = ROOT
-									attackers = THIS
-								}
-								is_in_war = {
-									defender_leader = ROOT
-									defenders = THIS
-								}
-							}
-						}
-					}
-				}
-				multiply_variable = {
-					which = military_reform_unit_kill_losses
-					value = 2
-				}
-			}
-			while = {
-				limit = {
-					check_variable = {
-						which = military_reform_unit_kill_losses
-						value = 0.1
-					}
-				}
-				change_variable = {
-					which = military_reform_unit_kill_losses
-					value = -0.1
-				}
-				add_government_power = { 
-					mechanic_type = military_reforms_mechanic 
-					power_type = military_reform_power
-					value = 0.1
-				}
+				limit = { check_variable = { which = military_reform_progress_var value = 100 } }
+				change_variable = { which = military_reforms_tokens_var value = 1 }
+				change_variable = { which = military_reform_progress_var value = -100 }
 			}
 		}
 	}
@@ -2050,72 +2014,78 @@ on_battle_lost_unit_effect = {
 			}
 		}
 	}
-	if = {	#bertus mod Military Reform
+	if = {	#bertus mod - Military Reform
 		limit = {
-			enemy_unit = { unit_owner = { OR = {ai = no overlord = { ai = no } } } }
-			unit_owner = {
-				is_at_war = yes
-				ai = no
-				has_government_mechanic = military_reforms_mechanic
+			FROM = {
+				if = {
+					limit = { has_global_flag = mp_lobby_flag }
+					OR = { ai = no overlord = { ai = no }  }
+				}
+			}
+			ai = no
+			is_at_war = yes
+			any_country = { 
+				ROOT = {
+					NOT = { is_renting_condottieri_to = PREV }
+				}
 			}
 		}
-		unit_owner = {
-			set_variable = {
-				which = military_reform_unit_kill_losses
-				value = 0
-			}
-			change_variable = {
-				which = military_reform_unit_kill_losses
-				which = land_units_lost
-			}
-			set_variable = {
-				which = land_forcelimit_unit_kill_losses
-				value = 0
-			}
-			export_to_variable = {
-				which = land_forcelimit_unit_kill_losses
-				value = trigger_value:land_forcelimit
-			}
-			set_variable = {
-				which = army_size_unit_kill_losses
-				value = 0
-			}
-			export_to_variable = {
-				which = army_size_unit_kill_losses
-				value = trigger_value:army_size
-			}
-			divide_variable = {
-				which = military_reform_unit_kill_losses
-				value = 1000
-			}
-			divide_variable = {
-				which = military_reform_unit_kill_losses
-				which = land_forcelimit_unit_kill_losses
-			}
-			multiply_variable = {
-				which = military_reform_unit_kill_losses
-				which = army_size_unit_kill_losses
-			}
-			divide_variable = {
-				which = military_reform_unit_kill_losses
-				which = land_forcelimit_unit_kill_losses
-			}
-			while = {
-				limit = {
-					check_variable = {
-						which = military_reform_unit_kill_losses
-						value = 0.1
+		set_variable = { which = military_reform_unit_kill_losses value = 0 }
+		change_variable = { which = military_reform_unit_kill_losses which = land_units_lost }
+		set_variable = { which = land_forcelimit_unit_kill_losses value = 0 }
+		export_to_variable = { which = land_forcelimit_unit_kill_losses value = trigger_value:land_forcelimit }
+		set_variable = { which = army_size_unit_kill_losses value = 0 }
+		export_to_variable = { which = army_size_unit_kill_losses value = trigger_value:army_size }
+		divide_variable = { which = military_reform_unit_kill_losses value = 1000 }
+		divide_variable = { which = military_reform_unit_kill_losses which = land_forcelimit_unit_kill_losses }
+		multiply_variable = { which = military_reform_unit_kill_losses which = army_size_unit_kill_losses }
+		set_variable = { which = military_reform_power_gain_modifier_var value = 0 }
+		export_to_variable = { which = military_reform_power_gain_modifier_var value = modifier:military_reform_power_gain_modifier }
+		change_variable = { which = military_reform_power_gain_modifier_var value = 1 }
+		multiply_variable = { which = military_reform_unit_kill_losses which = military_reform_power_gain_modifier_var }
+		#set_variable = { which = military_reform_players_invested value = 0 }
+		#if = {
+		#	limit = { is_in_war = { attackers = THIS } }
+		#	every_country = {
+		#		limit = { is_in_war = { attackers = THIS } ai = no }
+		#		ROOT = { change_variable = { which = military_reform_players_invested value = 1 } }
+		#	}
+		#}
+		#if = {
+		#	limit = { is_in_war = { defenders = THIS } }
+		#	every_country = {
+		#		limit = { is_in_war = { defenders = THIS } ai = no }
+		#		ROOT = { change_variable = { which = military_reform_players_invested value = 1 } }
+		#	}
+		#}
+		#divide_variable = { which = military_reform_unit_kill_losses which = military_reform_players_invested }
+		if = {
+			limit = {
+				OR = {
+					is_in_war = { attacker_leader = ROOT }
+					is_in_war = { defender_leader = ROOT }
+				}
+				NOT = {
+					any_country = {
+						NOT = { tag = ROOT }
+						ai = no
+						OR = {
+							is_in_war = { attacker_leader = ROOT attackers = THIS }
+							is_in_war = { defender_leader = ROOT defenders = THIS }
+						}
 					}
 				}
-				change_variable = {
-					which = military_reform_unit_kill_losses
-					value = -0.1
-				}
-				add_government_power = { 
-					mechanic_type = military_reforms_mechanic 
-					power_type = military_reform_power
-					value = 0.1
-				}
+			}
+			multiply_variable = { which = military_reform_unit_kill_losses value = 2 }
+		}
+		while = {
+			limit = { check_variable = { which = military_reform_unit_kill_losses value = 0.1 } }
+			change_variable = { which = military_reform_unit_kill_losses value = -0.1 }
+			change_variable = { which = military_reform_progress_var value = 0.1 }
+			if = {
+				limit = { check_variable = { which = military_reform_progress_var value = 100 } }
+				change_variable = { which = military_reforms_tokens_var value = 1 }
+				change_variable = { which = military_reform_progress_var value = -100 }
 			}
 		}
 	}
@@ -2138,40 +2108,43 @@ on_battle_won_country_effect = {
 			ROOT = { has_government_attribute = manpower_from_defeating_armies }
 		}
 		ROOT = {
-			multiply_variable = {
-				which = land_units_killed_var
-				value = 0.1
-			}
+			multiply_variable = { which = land_units_killed_var value = 0.1 }
 			while = {
 				limit = {
-					check_variable = {
-						which = land_units_killed_var
-						value = 1000
-					}
+					check_variable = { which = land_units_killed_var value = 1000 }
 				}
-				subtract_variable = {
-					which = land_units_killed_var
-					value = 1000
-				}
+				subtract_variable = { which = land_units_killed_var value = 1000 }
 				add_manpower = 1
 			}
-			multiply_variable = {
-				which = land_units_killed_var
-				value = 1000
-			}
+			multiply_variable = { which = land_units_killed_var value = 1000 }
 			while = {
 				limit = {
-					check_variable = {
-						which = land_units_killed_var
-						value = 1000
-					}
+					check_variable = { which = land_units_killed_var value = 1000 }
 				}
-				subtract_variable = {
-					which = land_units_killed_var
-					value = 1000
-				}
+				subtract_variable = { which = land_units_killed_var value = 1000 }
 				add_manpower = 0.001
 			}
+		}
+	}
+	if = {	#bertus mod - war production
+		limit = {
+			has_idea = kriegsproduktion3
+			FROM = {
+				if = {
+					limit = { has_global_flag = mp_lobby_flag }
+					OR = { ai = no overlord = { ai = no }  }
+				}
+			}
+			ai = no
+			is_at_war = yes
+		}
+		set_variable = { which = war_production_unit_kill_losses value = 0 }
+		change_variable = { which = war_production_unit_kill_losses which = land_units_lost }
+		divide_variable = { which = war_production_unit_kill_losses value = 1000 }
+		while = {
+			limit = { check_variable = { which = war_production_unit_kill_losses value = 1 } }
+			change_variable = { which = war_production_unit_kill_losses value = -1 }
+			add_treasury = 1
 		}
 	}
 }
@@ -3344,6 +3317,24 @@ on_alliance_broken_effect = {
 }
 
 on_adm_development_effect = {
+	if = {
+		limit = { owner = { has_government_attribute = boost_30_dev_provinces } }
+		if = {
+			limit = {
+				development = 30
+				NOT = { has_province_modifier = centralized_provinces_modifier }
+			}
+			add_province_modifier = { name = centralized_provinces_modifier duration = -1 }
+		}
+	}
+	if = {	#bertus mod
+		limit = {has_province_modifier = centralized_province owner = {has_idea = zentra4}}
+		random = { chance = 33 add_base_tax = 1 }
+	}
+	if = {	#bertus mod
+		limit = {has_province_modifier = zentra_dev owner = {has_idea = entwicklung3}}
+		random = { chance = 20 add_base_tax = 1 }
+	}
 	if = {	#bertus mod
 		limit = {owner = {has_idea = lot_european_empire} has_owner_accepted_culture = yes }
 		random = {
@@ -3391,6 +3382,17 @@ on_adm_development_effect = {
 		}
 		random = { 
 			chance = 20 
+			add_base_tax = 1
+		}
+	}
+	if = {	#bertus mod
+		limit = {
+			owner = { 
+				has_government_attribute = tax_deving_bonus
+			}
+		}
+		random = { 
+			chance = 50 
 			add_base_tax = 1
 		}
 	}
@@ -3492,6 +3494,50 @@ on_adm_development_effect = {
 	#}
 }
 on_dip_development_effect = {
+	if = {
+		limit = { owner = { has_government_attribute = boost_30_dev_provinces } }
+		if = {
+			limit = {
+				development = 30
+				NOT = { has_province_modifier = centralized_provinces_modifier }
+			}
+			add_province_modifier = { name = centralized_provinces_modifier duration = -1 }
+		}
+	}
+	if = {	#bertus mod
+		limit = { owner = { has_idea = kriegsproduktion1 } has_building = weapons }
+		random = { chance = 20 add_base_production = 1 }
+	}
+	if = {	#bertus mod
+		limit = { owner = { has_idea = kriegsproduktion2 } has_building = farm_estate }
+		random = { chance = 20 add_base_production = 1 }
+	}
+	if = {	#bertus mod
+		limit = {has_province_modifier = zentra_dev owner = {has_idea = entwicklung2}}
+		random = { chance = 20 add_base_production = 1 }
+	}
+	if = {	#bertus mod
+		limit = {has_province_modifier = centralized_province owner = {has_idea = zentra2}}
+		random = { chance = 33 add_base_production = 1 }
+	}
+	if = {	#bertus mod
+		limit = {
+			has_province_modifier = zentra_dev
+			province_has_center_of_trade_of_level = 3
+			owner = {has_idea = entwicklung4}
+		}
+		random = { chance = 20 owner = { add_mercantilism = 1} }
+	}
+	if = {	#bertus mod
+		limit = {has_province_modifier = zentra_dev owner = {has_idea = entwicklung7} OR = {trade_goods = gold trade_goods = silver}}
+		#set_province_flag = get_entwicklung7_gold
+		random = {
+			chance = 20
+			set_province_flag = get_gold_cash_from_dev_ideas_flag
+			owner = { add_years_of_owned_provinces_production_income = { years = 5 trigger = { has_province_flag = get_gold_cash_from_dev_ideas_flag } } }
+			clr_province_flag = get_gold_cash_from_dev_ideas_flag
+		}
+	}
 	if = {	#bertus mod
 		limit = {owner = {has_idea = lot_european_empire} has_owner_accepted_culture = yes }
 		random = {
@@ -3587,6 +3633,28 @@ on_dip_development_effect = {
 	#}
 }
 on_mil_development_effect = {
+	if = {
+		limit = { owner = { has_government_attribute = boost_30_dev_provinces } }
+		if = {
+			limit = {
+				development = 30
+				NOT = { has_province_modifier = centralized_provinces_modifier }
+			}
+			add_province_modifier = { name = centralized_provinces_modifier duration = -1 }
+		}
+	}
+	if = {	#bertus mod
+		limit = {has_province_modifier = centralized_province owner = {has_idea = zentra7}}
+		random = { chance = 33 add_base_manpower = 1 }
+	}
+	if = {	#bertus mod
+		limit = {has_province_modifier = zentra_dev owner = {has_idea = zentra5}}
+		random = { chance = 20 add_base_manpower = 1 }
+	}
+	if = {	#bertus mod
+		limit = {has_province_modifier = zentra_dev owner = {has_idea = zentra5}}
+		random = { chance = 20 add_base_manpower = 1 }
+	}
 	if = {	#bertus mod
 		limit = {owner = {has_idea = lot_european_empire} has_owner_accepted_culture = yes }
 		random = {
@@ -3700,6 +3768,36 @@ on_development_effect = {
 		change_variable = {
 			which = num_of_times_developed
 			value = 1
+		}
+	}
+	if = {
+		limit = {
+			development = 25
+		}
+		if = {
+			limit = {
+				owner = {has_idea = entwicklung1}
+				NOT = { has_province_modifier = zentra_dev }
+			}
+			add_province_modifier = {name = zentra_dev duration = -1}
+		}
+		if = {
+			limit = { development = 30 }
+			if = {
+				limit = {
+					owner = {has_government_attribute = boost_30_dev_provinces}
+					NOT = {has_province_modifier = centralized_provinces_modifier}
+				}
+				add_province_modifier = {name = centralized_provinces_modifier duration = -1}
+			}
+			if = {
+				limit = {
+					owner = {has_idea = zentra3}
+					development = 40
+					NOT = { has_province_modifier = centralized_province }
+				}
+				add_province_modifier = {name = centralized_province duration = -1}
+			}
 		}
 	}
 	

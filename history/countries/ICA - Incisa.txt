@@ -107,6 +107,9 @@ capital = 649
            mil = 3
       }
 }
+1444.11.12 = {	#bertus mod
+	government_rank = 1
+}
 1450.1.1 = {
 	heir = {
 		name = "Oddone"

@@ -365,18 +365,55 @@ vn_expansion_missions = {
 	expand_country_mission = {
 		icon = mission_conquer_50_development
 		required_missions = { }
-		trigger = { grown_by_development = 25 }
+		trigger = {
+			if = {
+				limit = { government_rank = 5 }
+				capital_scope = {
+					development = 40
+					num_of_buildings_in_province = 8
+					area_for_scope_province = {
+						development = 100
+					}
+				}
+			}
+			else_if = {
+				limit = { government_rank = 4 }
+				capital_scope = {
+					development = 30
+					num_of_buildings_in_province = 6
+					area_for_scope_province = {
+						development = 100
+					}
+				}
+			}
+			else_if = {
+				limit = { government_rank = 3 }
+				capital_scope = {
+					development = 20
+					num_of_buildings_in_province = 4
+				}
+			}
+			else_if = {
+				limit = { government_rank = 2 }
+				capital_scope = {
+					num_of_buildings_in_province = 4
+				}
+			}
+			else_if = {
+				limit = { government_rank = 1 }
+				capital_scope = {
+					num_of_buildings_in_province = 2
+				}
+			}
+		}
 		position = 1
 		effect = {
-			add_adm_power = 25
-			add_dip_power = 25
-			add_mil_power = 25
 			capital_scope = {
 				area = {
 					limit = { owned_by = ROOT }
 					add_province_modifier = {
 						name = "growth_of_capital"
-						duration = 9125 
+						duration = 3650		#9125→3650 
 					}
 				}
 			}

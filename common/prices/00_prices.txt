@@ -48,15 +48,15 @@ pigs = { base_price = 2.0 } #2.5→2.0
 horses = { base_price = 2.0 } #2.5→2.0
 olive = { base_price = 2.0 } #2.5→2.0
 iron = { base_price = 2.0 }
-livestock = { base_price = 1.5 } #2.0→1.5
 fur = { base_price = 2 }
-fish = { base_price = 1.5 } #2.0→1.5
 wine = { base_price = 2 }
 cloth = { base_price = 2 }
 wool = { base_price = 2 }
+lumber = { base_price = 2 }
+livestock = { base_price = 1.5 } #2.0→1.5
+fish = { base_price = 1.5 } #2.0→1.5
 vegetables = { base_price = 1.5 } #2.0→1.5
 rye = { base_price = 1.5 } #2.0→1.5
-lumber = { base_price = 2 }
 barley = { base_price = 1.5 } #2.0→1.5
 grain = { base_price = 1.5 } #2.0→1.5
 rice = { base_price = 1.5 } #2.5→1.5

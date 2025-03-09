@@ -1,7 +1,7 @@
 capital = "Sardeis"
 culture = greek
 religion = orthodox
-trade_goods = gold
+trade_goods = cotton
 base_tax = 1
 base_production = 2
 base_manpower = 1

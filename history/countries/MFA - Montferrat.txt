@@ -287,6 +287,9 @@ add_army_professionalism = 0.05
 		mil = 3
 	}
 }
+1444.11.12 = {	#bertus mod
+	government_rank = 2
+}
 1445.3.12 = {
 	monarch = {
 		name = "Giovanni IV"

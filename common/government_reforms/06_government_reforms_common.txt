@@ -4091,8 +4091,9 @@ lockean_proviso_reform = {	#bertus mod
 			}
 		}
 	}
-	modifiers = {
-		development_cost_modifier = -0.05
+	modifiers = { 	#bertus mod
+		build_cost = -0.10
+		build_time = -0.10
 	}
 	effect = {
 		hidden_effect = {

@@ -122,7 +122,6 @@ port = {	#bertus mod
 
 in_state = {
 	local_institution_spread = 0.10
-	local_development_cost = -0.1
 }
 
 in_capital_state = {
@@ -151,33 +150,33 @@ coastal_sea = {
 	#local_naval_engagement_modifier = -0.20	#Remove so is more noob friendly, no need to calculate diferent combat with for different sea tile
 }
 
-tropical = {
+tropical = { 	#bertus mod
 	local_colonial_growth = -10
 	supply_limit_modifier = -0.3
 	local_hostile_attrition = 2
 
-	local_development_cost = 0.05
+	local_development_cost_modifier = 0.10
 
 	picture = "climate_tropical"
 }
 
-arctic = {
+arctic = { 	#bertus mod
 	local_colonial_growth = -10
 	supply_limit_modifier = -0.4
 	local_hostile_attrition = 1
 
 	allowed_num_of_buildings = -1
-	local_development_cost = 0.5
+	local_development_cost_modifier = 0.10
 
 	picture = "climate_arctic"
 }
 
-arid = {
+arid = { 	#bertus mod
 	local_colonial_growth = -10
 	supply_limit_modifier = -0.2
 	local_hostile_attrition = 1
 
-	local_development_cost = 0.1
+	local_development_cost_modifier = 0.10
 
 	picture = "climate_arid"
 }
@@ -481,16 +480,18 @@ devastation = {
 	trade_goods_size_modifier = -2
 	supply_limit_modifier = -0.5
 	local_institution_spread = -2.0
-	local_development_cost = 0.2
+	local_development_cost = 0.20
 	local_manpower_modifier = -2.0
 	local_sailors_modifier = -2.0
 	local_hostile_movement_speed = -0.25
 	local_friendly_movement_speed = -0.25
 }
 
-prosperity = {
-	local_development_cost = -0.1
-	trade_goods_size_modifier = 0.25
+prosperity = { 	#bertus mod
+	local_production_efficiency = 0.10
+	local_tax_modifier = 0.10
+	local_manpower_modifier = 0.10
+	local_unrest = -1
 	local_autonomy = -0.05
 }
 
@@ -643,11 +644,12 @@ base_values = {
 	has_mamluks = yes
 	allowed_mamluks_fraction = 0.20
 	sunk_ship_morale_hit_recieved = -0.50	#0→-0.50
-	can_not_build_colonies = yes 	#bertus mod
+	military_reform_power_gain_modifier = 1.0				#bertus mod
 }
 
 # AI 'cheats' that compensate for flaws in its long-term decision making, removing these may severely cripple the AI
 ai_nation = {
+	can_not_build_colonies = yes 	#bertus mod
 	diplomats = 1 							# ai has to reserve a diplomat for short term action so it gets an extra to put it on equal footing with player
 	free_leader_pool = 1					# ai needs to have enough pool for 1 general & 1 admiral
 	sailors_recovery_speed = 0.25
@@ -1906,9 +1908,9 @@ native_policy_hostile = {
 # Harmony
 ########################################
 
-high_harmony = {
+high_harmony = { 	#bertus mod
 	tolerance_own = 3
-	development_cost = -0.1
+	build_cost = -0.10
 	meritocracy = 1
 	legitimacy = 0.5
 	devotion = 1
@@ -1918,7 +1920,7 @@ high_harmony = {
 
 low_harmony = {
 	yearly_corruption = 1
-	stability_cost_modifier = 0.2
+	stability_cost_modifier = 0.20
 	legitimacy = -1
 	devotion = -2
 	meritocracy = -2
@@ -2051,12 +2053,11 @@ new_order_regiment_mobilized_modifier = {
 	infantry_power = 0.15
 }
 
-inward_focus_modifier = {
+inward_focus_modifier = { 	#bertus mod
 	core_creation = 0.33
 	province_warscore_cost = 1
 	stability_cost_to_declare_war = 1
 	ae_impact = 0.33
-	development_cost_modifier = -0.05
 	defensiveness = 0.15
 	fort_maintenance_modifier = -0.2
 	build_cost = -0.05
@@ -2064,7 +2065,7 @@ inward_focus_modifier = {
 	all_estate_loyalty_equilibrium = 0.05
 }
 
-outward_focus_modifier = {
+outward_focus_modifier = { 	#bertus mod
 	ae_impact = 0.15
 	land_forcelimit_modifier = -0.1
 	trade_efficiency = 0.1
@@ -2080,7 +2081,6 @@ outward_focus_modifier = {
 }
 
 expansion_focus_modifier = {
-	development_cost_modifier = 0.1
 	all_estate_loyalty_equilibrium = -0.1
 	global_unrest = 2
 	diplomatic_reputation = -1
@@ -2110,12 +2110,13 @@ hanbali_scholar_modifier = {
 	ae_impact = -0.1
 }
 
-maliki_scholar_modifier = {
+maliki_scholar_modifier = { 	#bertus mod
 	religion_sub_modifier = yes # Will make icon placed next to religion modifier
 	religion = yes
 	is_scholar_modifier = yes # Tells the AI and will only show the alert if country has none
 	expire_message_type = "RELIGIOUS_SCHOLAR_EXPIRY"
-	development_cost = -0.1
+	build_cost = -0.10
+	build_time = -0.10
 }
 
 shafii_scholar_modifier = {
@@ -2402,6 +2403,7 @@ over_governing_capacity_modifier = {
 	state_maintenance_modifier = 1.0
 	stability_cost_modifier = 1.0
 	advisor_cost = 1.0
+	development_cost_modifier = 0.50
 	administrative_efficiency = -0.5
 	monthly_militarized_society = -1.0
 	monthly_prussian_militarized_society_1 = -1
@@ -2573,6 +2575,7 @@ negative_imperial_authority_member = {
 
 slackening_modifier = {
     yearly_army_professionalism = -0.05
+	monthly_manpower = 1.0
     #manpower_recovery_speed = 2	#2→0
 }
 

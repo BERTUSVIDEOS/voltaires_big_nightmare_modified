@@ -109,7 +109,7 @@
  army_sappers_desc:0 "Back in the good old days siege works were dug by locals impressed into service, these people were not always keen to do this work. By making digging such trenches the job of the army we get better trenches, quicker.\nSiege Barraging changes Siege Status by: §G+2.0§!"
  oasis_of_peace_and_prosperity_desc:0 "Even as the most gruesome of wars rages, there's usually little call to bring Switzerland in: after all, both sides need their Swiss mercenaries, and neither wants to be cut off. Perhaps if peace is prosperity, we should focus more on peace.\nEnable the [Root.GetBurghersName] privilege '§YMountain Expansion§!'."
  black_gold_desc:0 "Silesia is rich in natural resources, particularly coal. By constructing mines we can increase our income greatly.\nExtra Base Production chance on Coal: §G50.0%§!"
- SLACK_TEXT:1 "§YSlacken Recruiting Standards§! cost $DROP|R$ Army Professionalism and give:\nMonthly Manpower: §G+100%§!"
+ SLACK_TEXT:1 "§YSlacken Recruiting Standards§! cost $DROP|R$ Army Professionalism and give:"
  CANT_SLACKEN_TOO_LOW:0 "We have too low Army Professionalism to slacken recruiting standards. We need at least $NEED|Y$ Army Professionalism first. It would give:\nMonthly Manpower: §G+100%§!\nYearly Army Professionalism: §R-5.0%§!"
  platoon_fire_desc:0 "Standard volley fire involved each rank delivering its volley in one go, with the goal of maximizing the firepower. The Dutch developed a different system of firing by platoon, the goal being that one part of the regiment will always be firing at the enemy. This prevented the enemy from recovering from the volleys.\nInfantry Fire: §G+20.0%§!" 
  estate_jews_contribution_demand:0 "[Root.GetJewsName] Contribution Act"

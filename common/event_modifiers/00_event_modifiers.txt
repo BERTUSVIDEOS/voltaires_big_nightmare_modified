@@ -2750,8 +2750,8 @@ bad_free_trade_merchants = {
 	global_own_trade_power = -0.33
 }
 
-public_works_of_cairo = {
-	local_development_cost = -0.1
+public_works_of_cairo = { 	#bertus mod
+	local_development_cost_modifier = -0.1
 }
 
 mam_large_festitives = {
@@ -3718,8 +3718,8 @@ hol_tulip_crisis = {
 	global_trade_goods_size_modifier= -0.25
 }
 
-holland_polders = {
-	local_development_cost = -0.25
+holland_polders = { 	#bertus mod
+	local_development_cost_modifier = -0.10
 }
 
 #Ayutthaya
@@ -13518,9 +13518,9 @@ military_reassignment_act_modifier = {
 	heavy_ship_power = -0.15
 	fire_damage = 0.1
 }
-acts_of_development_modifier = {
+acts_of_development_modifier = {  	#bertus mod
 	diplomatic_annexation_cost = 0.15
-	development_cost = -0.1
+	development_cost = -0.05
 }
 global_empire_act_modifier = {
 	global_colonial_growth = -20
@@ -13534,9 +13534,9 @@ diplomatic_act_modifier = {
 	diplomatic_reputation = 2
 	global_manpower_modifier = -0.2
 }
-internal_focus_act_modifier = {
+internal_focus_act_modifier = { 	#bertus mod
 	core_creation = 0.2
-	development_cost = -0.1
+	development_cost = -0.05
 }
 
 colonial_venture_act_modifier = {

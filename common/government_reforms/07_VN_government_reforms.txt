@@ -953,9 +953,9 @@ askeri_officials_reform = {	#bertus mod
 	trigger = {
 		has_reform = ottoman_government
 	}
-	modifiers = {
+	modifiers = { 	#bertus mod
 		tur_pacifists_influence = 0.1
-		development_cost = -0.10
+		development_cost = -0.05
 	}
 }
 

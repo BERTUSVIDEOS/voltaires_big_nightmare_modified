@@ -1,7 +1,7 @@
 capital = "Freiburg im Breisgau" 
 culture = boden_alemannic
 religion = catholic
-trade_goods = silver
+trade_goods = lumber
 base_tax = 4
 base_production = 4
 base_manpower = 2

@@ -79,6 +79,9 @@ add_army_professionalism = 0.05
 		regent = yes
 	}
 }
+1444.11.12 = {	#bertus mod
+	government_rank = 1
+}
 1814.4.11 = {
 	government = monarchy
 	add_government_reform = feudalism_reform

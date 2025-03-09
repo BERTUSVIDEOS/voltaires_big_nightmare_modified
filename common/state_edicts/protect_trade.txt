@@ -1,6 +1,6 @@
 edict_protect_trade = {
 	potential = {
-		NOT = { has_country_flag = fra_improve_trade_power_state_edict_flag } 
+		NOT = {has_idea = entwicklung5 }
 	}
 	
 	allow = {
@@ -9,7 +9,7 @@ edict_protect_trade = {
 	
 	modifier = {
 		province_trade_power_modifier = 0.50
-		province_trade_power_value = 2	#0→2
+		province_trade_power_value = 2
 	}
 	
 	color = {  113 11 43 }
@@ -35,5 +35,26 @@ edict_protect_trade = {
 				province_trade_power = 25
 			}
 		}
+	}
+}
+edict_improved_protect_trade = {
+	potential = {
+		has_idea = entwicklung5
+	}
+	
+	allow = {
+		always = yes
+	}
+	
+	modifier = {
+		province_trade_power_modifier = 0.75
+		province_trade_power_value = 3
+	}
+	
+	color = {  113 11 43 }
+	
+	
+	ai_will_do = {
+		factor = 0
 	}
 }

@@ -9,8 +9,7 @@ expand_bureaucracy_decree = {
 	}
 	trigger = {
 	}
-	modifier = {
-		development_cost = -0.1
+	modifier = { 	#bertus mod
 		core_creation = -0.1
 	}
 	effect = {}

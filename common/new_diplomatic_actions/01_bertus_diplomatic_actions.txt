@@ -14,15 +14,46 @@ investigate_country_action = {
 	is_allowed = {
 		custom_trigger_tooltip = {
 			tooltip = need_40_spy_network_tt
-			has_spy_network_in = {who = FROM value = 40}
+			if = {
+				limit = {
+					is_subject_other_than_tributary_trigger = yes
+				}
+				FROM = {
+					overlord = {
+						ROOT = {
+							has_spy_network_in = {who = PREV value = 40}
+						}
+					}
+				}
+			}
+			else = {
+				has_spy_network_in = {who = FROM value = 40}
+			}
 		}
 	}
 
 	on_accept = {
 		ROOT = {
-			add_spy_network_in = {
-				who = FROM
-				value = -40
+			if = {
+				limit = {
+					is_subject_other_than_tributary_trigger = yes
+				}
+				FROM = {
+					overlord = {
+						ROOT = {
+							add_spy_network_in = {
+								who = FROM
+								value = -40
+							}
+						}
+					}
+				}
+			}
+			else = {
+				add_spy_network_in = {
+					who = FROM
+					value = -40
+				}
 			}
 		}
 		FROM = {
@@ -46,16 +77,47 @@ spy_steal_treasury_action = {
 	is_allowed = {
 		custom_trigger_tooltip = {
 			tooltip = need_75_spy_network_tt
-			has_spy_network_in = {who = FROM value = 75}
+			if = {
+				limit = {
+					is_subject_other_than_tributary_trigger = yes
+				}
+				FROM = {
+					overlord = {
+						ROOT = {
+							has_spy_network_in = {who = PREV value = 75}
+						}
+					}
+				}
+			}
+			else = {
+				has_spy_network_in = {who = FROM value = 75}
+			}
 		}
 	}
 
     on_accept = {
 		ROOT = {
 			get_treasury_fraction = { fraction = 0.10 }
-			add_spy_network_in = {
-				who = FROM
-				value = -75
+			if = {
+				limit = {
+					is_subject_other_than_tributary_trigger = yes
+				}
+				FROM = {
+					overlord = {
+						ROOT = {
+							add_spy_network_in = {
+								who = FROM
+								value = -75
+							}
+						}
+					}
+				}
+			}
+			else = {
+				add_spy_network_in = {
+					who = FROM
+					value = -75
+				}
 			}
 		}
 		FROM = {country_event = {id = bertus_events.0003}}

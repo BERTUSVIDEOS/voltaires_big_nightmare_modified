@@ -228,6 +228,9 @@ set_estate_privilege = estate_church_papal_emissary
 		mil = 5
 	}
 }
+1444.11.12 = {	#bertus mod
+	government_rank = 1
+}
 1472.1.17 = {
 	heir =  {
 		name = "Guidobaldo"

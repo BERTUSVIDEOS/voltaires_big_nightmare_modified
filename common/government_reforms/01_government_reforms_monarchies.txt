@@ -13,9 +13,6 @@ monarchy_mechanic = {
 		nobles_loyalty_modifier = 0.05	#0→0.05
 		nobles_influence_modifier = 0.05
 	}
-	government_abilities = {
-		military_reforms_mechanic
-	}
 }
 
 #Feudalism vs Autocracy:

@@ -100,12 +100,11 @@ adamite_services_aspect = {
 	}
 }
 
-pacifism_aspect = {
+pacifism_aspect = { 	#bertus mod
 	cost = 100
 	modifier = {
-		#improve_relation_modifier = 0.3	#0.3→0
-		stability_cost_to_declare_war = 2	#1→2
-		development_cost = -0.15	#0→-0.15
+		stability_cost_to_declare_war = 2
+		development_cost = -0.05
 	}
 	effect = {	#bertus mod
 		hidden_effect = { 

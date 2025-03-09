@@ -307,16 +307,23 @@ spriteTypes = {
 	}
 	
 	spriteType = {
+		name = "GFX_idea_formation0"
+		texturefile = "gfx//interface//ideas//idea_formation.tga"
+		noOfFrames = 1
+
+		effectFile = "gfx/FX/buttonstate_linear.lua"
+	}
+	spriteType = {
 		name = "GFX_idea_reformiert0"
-		texturefile = "gfx//interface//ideas//idea_reformiert.tga"
+		texturefile = "gfx//interface//ideas//idea_reformiert.dds"
 		noOfFrames = 1
 		
 		effectFile = "gfx/FX/buttonstate_linear.lua"
 	}
 	
 	spriteType = {
-		name = "GFX_idea_mercenary0"
-		texturefile = "gfx//interface//ideas//idea_soldnerheer.tga"
+		name = "GFX_soldnerheer0"
+		texturefile = "gfx//interface//ideas//idea_soldnerheer.dds"
 		noOfFrames = 1
 		
 		effectFile = "gfx/FX/buttonstate_linear.lua"
@@ -493,6 +500,21 @@ spriteTypes = {
 		texturefile = "gfx//interface//ideas//idea_logistics.tga"
 		noOfFrames = 1
 		
+		effectFile = "gfx/FX/buttonstate_linear.lua"
+	}
+	spriteType = {
+        name = "GFX_idea_staatsverwaltung0"
+        texturefile = "gfx//interface//ideas//idea_state_affairs_idea_groups_expanded.dds"
+        noOfFrames = 1
+
+        effectFile = "gfx/FX/buttonstate_linear.lua"
+        legacy_lazy_load = no
+    }
+	spriteType = {
+		name = "GFX_idea_dynasty0"
+		texturefile = "gfx//interface//ideas//idea_dynasty.dds"
+		noOfFrames = 1
+
 		effectFile = "gfx/FX/buttonstate_linear.lua"
 	}
 	spriteType = {

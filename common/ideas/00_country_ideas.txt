@@ -1102,7 +1102,8 @@ FRA_ideas_2 = {	#bertus mod
 		tolerance_of_heathens_capacity = 5
 	}
 	jourdan_law = {
-		#manpower from slacken +100%
+		monthly_manpower_modifier = 0.33 	#bertus mod
+		monthly_sailors_modifier = 0.33 	#bertus mod
 		global_manpower_modifier = 0.50
 		global_sailors_modifier = 0.50
 	}
@@ -2266,8 +2267,8 @@ BUR_Ideas = {
 
 GEN_Ideas = {
 	start = {
-		interest = -0.5
-		infantry_power = 0.10 	#0→0.10
+		interest = -0.33		#-0.5→-0.33
+		infantry_power = 0.075 	#0→0.075
 	}
 	
 	bonus = {
@@ -2284,8 +2285,8 @@ GEN_Ideas = {
 		justify_trade_conflict_cost = -0.10
 	}
 	lessons_of_chiogga = {
-		naval_morale = 0.10	#0.20→0.10
-		land_morale = 0.10 	#0→0.10
+		naval_morale = 0.075	#0.20→0.075
+		land_morale = 0.075 	#0→0.075
 	}	
 	genoese_trade = {
 		global_foreign_trade_power = 0.10
@@ -2293,7 +2294,7 @@ GEN_Ideas = {
 		#global_sailors_modifier = 0.20 	#0.20→0
 	}
 	the_genoese_arsenal = {
-		galley_cost = -0.33
+		galley_cost = -0.20
 		galley_number_of_cannons_modifier = 0.20 	#0→0.20
 	}
 	overhauled_bureaucracy = {
@@ -2532,9 +2533,52 @@ NAP_ideas = {
 	}
 }
 
+ARA_nerfed_ideas = {	#bertus mod
+	start = {
+		num_accepted_cultures = 1
+		defensiveness = 0.20
+	}
+	
+	bonus = {
+		discipline = 0.05
+	}
+	
+	trigger = {
+		tag = ARA
+		has_country_flag = nerfed_ideas_flag
+	}
+	free = yes
+	
+	nerfed_mercenary_princes = {
+		merc_maintenance_modifier = -0.10
+	}
+	nerfed_consolidation_of_the_estates = {
+		stability_cost_modifier = -0.10
+		all_estate_loyalty_equilibrium = 0.10
+	}
+	nerfed_chartered_merchant_companies = {
+		global_trade_power = 0.20
+		trade_efficiency = 0.10
+	}
+	nerfed_ara_reformed_admin = {
+		global_autonomy = -0.05
+	}
+	cat_miquelets = {
+       mercenary_manpower = 0.20
+	   mercenary_cost = -0.10
+    }
+	nerfed_protection_of_coastlines = {
+		naval_forcelimit_modifier = 0.10
+		global_sailors_modifier = 0.25
+	}
+	nerfed_protection_of_the_little_folk = {
+		land_morale = 0.10
+	}
+}
+
 ARA_ideas = {	#bertus mod
 	start = {
-		trade_efficiency = 0.1
+		trade_efficiency = 0.20
 		discipline = 0.05
 	}
 	
@@ -2544,19 +2588,25 @@ ARA_ideas = {	#bertus mod
 	
 	trigger = {
 		tag = ARA
+		NOT = {
+			has_country_flag = nerfed_ideas_flag
+		}
 	}
 	free = yes
 	
 	mercenary_princes = {
 		merc_maintenance_modifier = -0.15
+		mercenary_manpower = 0.50
 	}
 	protection_of_coastlines = {
-		naval_forcelimit_modifier = 0.10
-		global_sailors_modifier = 0.25
+		naval_forcelimit_modifier = 0.30
+		allowed_marine_fraction = 0.25
+		own_coast_naval_combat_bonus = 1
 	}
 	ara_mediterranean_trade = {
-		global_ship_trade_power = 0.20
-		light_ship_cost = -0.20
+		global_ship_trade_power = 0.30
+		light_ship_cost = -0.30
+		ship_durability = 0.20
 	}
 	consolidation_of_the_estates = {
 		stability_cost_modifier = -0.10
@@ -2564,12 +2614,18 @@ ARA_ideas = {	#bertus mod
 	}
 	chartered_merchant_companies = {
 		global_trade_power = 0.20
+		trade_company_investment_cost = -0.20
+		center_of_trade_upgrade_cost = -0.20
 	}
 	ara_reformed_admin = {
 		global_autonomy = -0.05
+		can_chain_claim = yes 
+		monthly_reform_progress = 0.20 
 	}
 	protection_of_the_little_folk = {
-		land_morale = 0.10
+		land_morale = 0.15
+		recover_army_morale_speed = 0.05
+		defensiveness = 0.30
 	}
 }
 
@@ -3205,7 +3261,6 @@ QNG_ideas = {
 	}
 }
 
-
 PAL_ideas = {	#bertus mod
 	trigger = {
 		tag = PAL
@@ -3217,36 +3272,35 @@ PAL_ideas = {	#bertus mod
 		centralize_state_cost = -0.20	#0→-0.20
 	}
 	heidelberg_university = {
-        #advisors give 20% bonus per level
 		same_culture_advisor_cost = -0.10
 	}
 	center_of_reformation_in_southern_germany = {
 		spy_action_cost_modifier = -0.20
-		spy_offence = 0.20
+		spy_offence = 0.10
 	}
 	bibliotheca_palatina = {
-		idea_cost = -0.075
-		technology_cost = -0.075
+		idea_cost = -0.05
+		technology_cost = -0.05
 	}
 	heidelberg_catechism = {
 		#extra base tax 33%
-		tolerance_own = 3
+		tolerance_own = 1
 	}
 	hortus_palatinus = {
 		prestige_decay = -0.01
-		global_tax_modifier = 0.20	#0→0.20
+		global_tax_modifier = 0.20
 	}
 	mannheim_school_of_orchestra = {
-		monthly_splendor = 5
+		monthly_splendor = 3
 		culture_conversion_cost = -0.20
-		monthly_reform_progress = 0.20	#0→0.20
+		monthly_reform_progress = 0.20
 	}
 	imperial_vicar_and_archsteward = {
 		morale_damage = 0.15
 		drill_gain_modifier = 0.50
 	}
 	bonus = {
-		land_morale = 0.15	#0→0.15
+		land_morale = 0.15
 	}
 }
 
@@ -4034,7 +4088,10 @@ ASS_ideas = {
 TUS_ideas = {
 	start = {
 		papal_influence = 2
-		development_cost = -0.1
+		monthly_fervor_increase = 1	#0.25→1
+		church_power_modifier = 0.25	#0.1→0.25
+		monthly_piety_accelerator = 0.002	#0→0.002
+		development_cost = -0.10
 	}
 	
 	bonus = {
@@ -4058,8 +4115,10 @@ TUS_ideas = {
 	tuscan_banking = {
 		interest = -0.5
 	}
-	tuscan_arts = {
-		prestige = 1
+	overhauled_bureaucracy = {
+		#centralization give 1 dev
+		centralize_state_cost = -0.20 	#0→-0.20
+		#global_tax_modifier = 0.1 	#0.10→0
 	}
 	porto_franco = {
 		trade_efficiency = 0.15
@@ -16000,7 +16059,7 @@ ADU_ideas = {	#bertus mod
 	}
 
 	bonus = {
-		global_trade_goods_size_modifier = 0.10
+		global_trade_goods_size_modifier = 0.20
 	}
     
 	trigger = {
@@ -16022,20 +16081,20 @@ ADU_ideas = {	#bertus mod
 		dhimmi_influence_modifier = 0.10
     }
 	adu_legacy_of_ibn_arabi = {
-		idea_cost = -0.1
+		idea_cost = -0.10
 		monthly_piety_accelerator =  0.002
 	}
 	adu_jund_settlements = {
-		global_manpower_modifier = 0.15
-		manpower_recovery_speed = 0.15
+		global_manpower_modifier = 0.20
+		manpower_recovery_speed = 0.20
 	}
 	adu_expeditionary_sentiment = {
-		culture_conversion_cost = -0.10
-		development_cost_in_primary_culture = -0.15
+		culture_conversion_cost = -0.20
+		development_cost_in_primary_culture = -0.20
 	}
 	adu_al_awasim = {
-		defensiveness = 0.15
-		garrison_size = 0.15
+		defensiveness = 0.20
+		garrison_size = 0.20
 		rival_border_fort_maintenance = -0.25
 	}
 }

@@ -38,6 +38,11 @@ SGC = {
 	always = no
 }
 
+# CGC
+CGC = {
+	always = no
+}
+
 # Holy Roman Empire
 HLR = {
 	always = no

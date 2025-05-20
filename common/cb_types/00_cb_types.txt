@@ -479,14 +479,13 @@ cb_triggered_independence_war = {
 cb_nationalist = {
 
 	prerequisites_self = {
-		dip_tech = 60
+		dip_tech = 23
 		is_free_or_tributary_trigger = yes
 		is_revolutionary = no
 	}
 
 	prerequisites = {
 		culture_group_claim = FROM
-
 	}
 
 	war_goal = take_province_nationalist
@@ -498,7 +497,7 @@ cb_imperial = {
 
 	prerequisites_self = {
 		OR = {
-			dip_tech = 60
+			dip_tech = 23
 			invasion_nation = yes
 		}
 		is_free_or_tributary_trigger = yes

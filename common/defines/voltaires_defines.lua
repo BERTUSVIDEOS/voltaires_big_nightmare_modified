@@ -16,7 +16,6 @@ NDefines.NDiplomacy.WARNING_YEARS = 10
 NDefines.NDiplomacy.FABRICATE_CLAIM_COST = 16
 NDefines.NDiplomacy.SPY_NETWORK_DISTANCE_EFFECT = 0.50              --0.10→0.50
 NDefines.NDiplomacy.AE_HRE_INTERNAL = 0.25
-NDefines.NDiplomacy.PEACE_COST_DEMAND_PROVINCE = 1.0                --0.8→1.0
 NDefines.NDiplomacy.GREAT_PROJECT_WARSCORE_COST_MODIFIER = 0.1	    --0.33→-0.10    -- How much each great project multiplies a war score cost by (so 1 GP adds 33% 2 add 66% etc)
 NDefines.NDiplomacy.PO_DEMAND_PROVINCES_AE = 0.40                   --0.6→0.40
 NDefines.NDiplomacy.PO_BECOME_VASSAL_AE = 0.30                      --0.4→0.30
@@ -34,11 +33,10 @@ NDefines.NDiplomacy.CELESTIAL_EMPIRE_MANDATE_PER_HUNDRED_DEVASTATION = -10.0
 NDefines.NDiplomacy.CELESTIAL_EMPIRE_MANDATE_PER_HUNDRED_TRIBUTARY_DEV = 1.0
 NDefines.NDiplomacy.MONTHS_BEFORE_TOTAL_OCCUPATION = 12	                        --60→12
 NDefines.NDiplomacy.CRUSADE_TIMEOUT_YEARS = 10 		            --30→10			-- Crusade timeout (years)
-NDefines.NDiplomacy.PEACE_COST_CHANGE_HRE_RELIGION = 50     --100→50
+NDefines.NDiplomacy.PEACE_COST_CHANGE_HRE_RELIGION = 25         --100→25
 
 --dev half reduction	NDefines.NDiplomacy.VASSALIZE_BASE_DEVELOPMENT_CAP = 200                        --100→200
 --dev half reduction	NDefines.NDiplomacy.MARCH_BASE_DEVELOPMENT_CAP = 400                            --200→500
-NDefines.NDiplomacy.PO_DEMAND_PROVINCES_AE = 0.4                                --0.6→0.4
 --dev half reduction	NDefines.NDiplomacy.PO_RETURN_CORES_AE = 0.2                                    --0.4→0.2
 --dev half reduction	NDefines.NDiplomacy.PO_FORM_PU_AE = 0.10                                        --0.2→0.1
 --dev half reduction	NDefines.NDiplomacy.PO_CONCEDE_COLONIAL_AE = 0.1                                --0.2→0.1
@@ -76,12 +74,12 @@ NDefines.NMilitary.COAST_RAID_RANGE = 3 --6→3
 NDefines.NMilitary.MIN_MONTHLY_MANPOWER = 0.05
 NDefines.NMilitary.SUPPLYLIMIT_BASE_MULTIPLIER = 3.0
 NDefines.NMilitary.BATTLE_DAILY_MORALE_DAMAGE = 0       --0.01→0	-- Deployed troops take this fraction of their maximum morale as damage
-NDefines.NMilitary.BASE_MP_TO_MANPOWER = 0.20		-- 250→200 men per manpower
+NDefines.NMilitary.BASE_MP_TO_MANPOWER = 0.20		    -- 250→200 men per manpower
 NDefines.NMilitary.BATTLE_DAILY_MORALE_DAMAGE = 0       --0.01→0	-- Deployed troops take this fraction of their maximum morale as damage
 NDefines.NMilitary.NAVAL_SUPPLY_RANGE = 300             --150→300 						-- Supply range for ships.
 
-NDefines.NGovernment.GOVERNMENT_REFORM_COST_CENTRALIZE_STATE = 20.0	--50→20
-NDefines.NGovernment.CENTRALIZE_STATE_ADM_COST = 100	--50→100
+NDefines.NGovernment.GOVERNMENT_REFORM_COST_CENTRALIZE_STATE = 20.0	                --50→20
+NDefines.NGovernment.CENTRALIZE_STATE_ADM_COST = 100	                            --50→100
 
 --dev half reduction	NDefines.NCountry.CORRUPTION_COST = 0.025                                      --0.05→0.025
 --dev half reduction	NDefines.NCountry.PS_MAKE_PROVINCE_CORE = 5                                    --10→5
@@ -217,7 +215,7 @@ NDefines.NReligion.MIN_CARDINALS = 14
 NDefines.NReligion.MAX_CARDINALS = 98
 NDefines.NReligion.MAX_CARDINALS_PER_COUNTRY = 10
 NDefines.NReligion.PICK_GOLDEN_BULL_COST = 4000
-MINIMUM_DEVELOPMENT_ALLOWED = 10.0
+NDefines.NReligion.MINIMUM_DEVELOPMENT_ALLOWED = 10.0
 
 NDefines.NNationDesigner.POINTS_AVAILABLE = 500
 NDefines.NNationDesigner.MEMBER_OF_HRE_COST = 5

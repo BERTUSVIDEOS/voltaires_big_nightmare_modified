@@ -3441,14 +3441,13 @@ NAM_ideas = {
     }
 }
 
-NGC_ideas = {
+NGC_ideas = {   #bertus mod
     start = {
-        #diplomatic_upkeep = 1  #1→0
-        build_cost = -0.10  #0→-0.10
+        build_cost = -0.10
         development_cost = -0.10
     }
     bonus = {
-        infantry_power = 0.20   #0→0.20
+        infantry_power = 0.20
     }
 
     trigger = {
@@ -3457,30 +3456,27 @@ NGC_ideas = {
     free = yes
     NGC_idea_1 = {
         discipline = 0.05
-		drill_decay_modifier = -0.25	#0→-0.25
+		drill_decay_modifier = -0.25
     }
     NGC_idea_2 = {
-       # global_tax_modifier = 0.1  #0.1→0
         state_maintenance_modifier = -0.15
-        governing_cost = -0.15  #0→-0.15
+        governing_cost = -0.15
     }
     NGC_idea_3 = {
-        land_morale = 0.20  #0.10→0.20
+        land_morale = 0.20
     }
     NGC_idea_4 = {
-        #trade_steering = 0.2   #0.2→0
-        trade_efficiency = 0.20     #0→0.20
+        trade_efficiency = 0.15
     }
     NGC_idea_5 = {
         naval_forcelimit_modifier = 0.25
-        merchants = 2   #0→2
+        merchants = 2
     }
     NGC_idea_6 = {
-        global_trade_goods_size_modifier = 0.20 #0.10→0.20
+        global_trade_goods_size_modifier = 0.15
     }
     NGC_idea_7 = {
-        #unjustified_demands = -0.25    #-0.25→0
-        advisor_cost = -0.15    #0→-0.15
+        mil_advisor_cost = -0.20
     }
 }
 
@@ -4434,14 +4430,13 @@ SAY_ideas = {
     }
 }
 
-SGC_ideas = {
+SGC_ideas = {   #bertus mod
     start = {
-        #diplomatic_reputation = 1  #1→1
-        land_forcelimit_modifier = 0.33 #0→0.33
-        tolerance_own = 3   #2→3
+        land_forcelimit_modifier = 0.33
+        tolerance_own = 3
     }
     bonus = {
-        governing_capacity_modifier = 0.20  #0.10→0.20
+        governing_capacity_modifier = 0.20
     }
 
     trigger = {
@@ -4450,32 +4445,76 @@ SGC_ideas = {
     free = yes
     SGC_idea_1 = {
         discipline = 0.05
-        global_regiment_cost = -0.10    #0→-0.10
+        global_regiment_cost = -0.10
     }
     SGC_idea_2 = {
-        interest = -0.5
-        inflation_reduction = 0.20  #0.05→0.20
+        interest = -0.50
+        inflation_reduction = 0.20
     }
     SGC_idea_3 = {
-        stability_cost_modifier = -0.1
-        military_reform_power_gain_modifier = 0.25  #0→0.25
+        stability_cost_modifier = -0.10
+        military_reform_power_gain_modifier = 0.25
     }
     SGC_idea_4 = {
-        global_tax_modifier = 0.20  #0.10→0.20
-        production_efficiency = 0.20    #0→0.20
+        global_tax_modifier = 0.20
+        production_efficiency = 0.20
     }
     SGC_idea_5 = {
-        global_manpower_modifier = 0.33 #0→0.33
-        manpower_recovery_speed = 0.33  #0.15→0.33
+        global_manpower_modifier = 0.25
+        manpower_recovery_speed = 0.25
     }
     SGC_idea_6 = {
-        prestige = 1.0  #0→1.0
+        prestige = 1.0
         legitimacy = 1
         republican_tradition = 0.3
     }
     SGC_idea_7 = {
         #advisors give 20% bonus per level
-        advisor_cost = -0.10    #-0.10→-0.10
+        advisor_cost = -0.10
+    }
+}
+
+CGC_ideas = {   #bertus mod
+    start = {
+        regiment_manpower_usage = -0.20
+        land_attrition = -0.20
+    }
+    bonus = {
+        governing_capacity = 250
+    }
+
+    trigger = {
+        tag = SGC
+    }
+    free = yes
+    CGC_idea_1 = {
+        discipline = 0.05
+        morale_damage = 0.20
+    }
+    CGC_idea_2 = {
+        #woods development privilege
+        global_allowed_num_of_buildings = 1
+    }
+    CGC_idea_3 = {
+        shock_damage = 0.20
+        leader_land_shock = 2
+        max_general_shock = 2
+    }
+    CGC_idea_4 = {
+        technology_cost = -0.15
+        yearly_innovativeness = 1
+    }
+    CGC_idea_5 = {
+        global_trade_power = 0.20
+        caravan_power = 0.50
+    }
+    CGC_idea_6 = {
+        siege_ability = 0.20
+        assaulassault_fort_ability = 0.25
+    }
+    CGC_idea_7 = {
+        monthly_splendor = 10
+        monthly_reform_progress = 0.50
     }
 }
 
@@ -5742,12 +5781,12 @@ RHI_ideas = {
 		missionaries = 1
 	}
     RHI_idea_3 = {
-        church_loyalty_modifier = 0.1   #0→0.10
-        tolerance_own = 4   #0→4
+        church_loyalty_modifier = 0.10   #0→0.10
+        tolerance_own = 2   #0→2
     }
     RHI_idea_4 = {
         #ADM advisors with owner religion per skill lvl global tax 5%
-        global_tax_modifier = 0.20  #0→0.20
+        global_tax_modifier = 0.10  #0→0.10
     }
     RHI_idea_5 = {
 		global_manpower_modifier = 0.15

@@ -11,6 +11,32 @@ custom_button = {
 			clr_country_flag = PA_has_army_doctrine_window_enabled_flag
 		}
 	}
+	tooltip = "Army Doctrines"
+}
+
+custom_button = {
+	name = army_doctrines_investment_button
+    potential = { has_country_flag = PA_has_army_doctrine_window_enabled_flag }
+  	trigger = { army_tradition = 10 }
+  	effect = {
+		add_army_tradition = -10
+		custom_tooltip = army_doctrines_investment_button_tt
+		hidden_effect = {
+			export_to_variable = { which = military_reform_power_gain_modifier_var value = modifier:military_reform_power_gain_modifier }
+			export_to_variable = { which = temp value = modifier:military_reform_power_gain_modifier }
+			while = {
+				limit = { check_variable = { which = temp value = 0.01 } }
+				change_variable = { which = temp value = -0.01 }
+				change_variable = { which = military_reform_progress_var value = 0.1 }
+				if = {
+					limit = { check_variable = { which = military_reform_progress_var value = 100 } }
+					change_variable = { which = military_reforms_tokens_var value = 1 }
+					change_variable = { which = military_reform_progress_var value = -100 }
+				}
+			}
+		}
+	}
+	tooltip = "Invest in Army Doctrines"
 }
 
 custom_window = {
@@ -39,15 +65,15 @@ custom_button = {
 	trigger = {
 		check_variable = { which = military_reforms_tokens_var value = 1 }
 		if = {
-			limit = { has_country_modifier = military_investment_morale_10_modifier }
+			limit = { has_country_modifier = military_investment_mages_5_modifier }
 			custom_trigger_tooltip = {
 				tooltip = "Maxed Out"
-				NOT = { has_country_modifier = military_investment_morale_10_modifier }
+				NOT = { has_country_modifier = military_investment_mages_5_modifier }
 			}
 		}
 	}
   	effect = { 
-		increase_military_investment = { type = morale }
+		increase_military_investment = { type = mages }
 	}
 }
 
@@ -58,15 +84,15 @@ custom_button = {
   	trigger = {
 		check_variable = { which = military_reforms_tokens_var value = 1 }
 		if = {
-			limit = { has_country_modifier = military_investment_discipline_10_modifier }
+			limit = { has_country_modifier = military_investment_artificer_5_modifier }
 			custom_trigger_tooltip = {
 				tooltip = "Maxed Out"
-				NOT = { has_country_modifier = military_investment_discipline_10_modifier }
+				NOT = { has_country_modifier = military_investment_artificer_5_modifier }
 			}
 		}
 	}
   	effect = { 
-		increase_military_investment = { type = discipline }
+		increase_military_investment = { type = artificer }
 	}
 }
 
@@ -77,15 +103,15 @@ custom_button = {
 	trigger = {
 		check_variable = { which = military_reforms_tokens_var value = 1 }
 		if = {
-			limit = { has_country_modifier = military_investment_dmg_reduction_10_modifier }
+			limit = { has_country_modifier = military_investment_adventurer_5_modifier }
 			custom_trigger_tooltip = {
 				tooltip = "Maxed Out"
-				NOT = { has_country_modifier = military_investment_dmg_reduction_10_modifier }
+				NOT = { has_country_modifier = military_investment_adventurer_5_modifier }
 			}
 		}
 	}
   	effect = { 
-		increase_military_investment = { type = dmg_reduction }
+		increase_military_investment = { type = adventurer }
 	}
 }
 
@@ -96,10 +122,10 @@ custom_button = {
 	trigger = {
 		check_variable = { which = military_reforms_tokens_var value = 1 }
 		if = {
-			limit = { has_country_modifier = military_investment_national_elite_10_modifier }
+			limit = { has_country_modifier = military_investment_national_elite_5_modifier }
 			custom_trigger_tooltip = {
 				tooltip = "Maxed Out"
-				NOT = { has_country_modifier = military_investment_national_elite_10_modifier }
+				NOT = { has_country_modifier = military_investment_national_elite_5_modifier }
 			}
 		}
 	}
@@ -115,10 +141,10 @@ custom_button = {
 	trigger = {
 		check_variable = { which = military_reforms_tokens_var value = 1 }
 		if = {
-			limit = { has_country_modifier = military_investment_marine_10_modifier }
+			limit = { has_country_modifier = military_investment_marine_5_modifier }
 			custom_trigger_tooltip = {
 				tooltip = "Maxed Out"
-				NOT = { has_country_modifier = military_investment_marine_10_modifier }
+				NOT = { has_country_modifier = military_investment_marine_5_modifier }
 			}
 		}
 	}
@@ -132,58 +158,33 @@ custom_icon = {
 	tooltip = PA_drilled_army_level_tooltip
 	potential = { }
 	frame = {
-		number = 11
-		trigger = { has_country_modifier = military_investment_morale_10_modifier }
-	}
-	frame = {
-		number = 10
-		trigger = { has_country_modifier = military_investment_morale_9_modifier }
-	}
-	frame = {
-		number = 9
-		trigger = { has_country_modifier = military_investment_morale_8_modifier }
-	}
-	frame = {
-		number = 8
-		trigger = { has_country_modifier = military_investment_morale_7_modifier }
-	}
-	frame = {
-		number = 7
-		trigger = { has_country_modifier = military_investment_morale_6_modifier }
-	}
-	frame = {
 		number = 6
-		trigger = { has_country_modifier = military_investment_morale_5_modifier }
+		trigger = { has_country_modifier = military_investment_mages_5_modifier }
 	}
 	frame = {
 		number = 5
-		trigger = { has_country_modifier = military_investment_morale_4_modifier }
+		trigger = { has_country_modifier = military_investment_mages_4_modifier }
 	}
 	frame = {
 		number = 4
-		trigger = { has_country_modifier = military_investment_morale_3_modifier }
+		trigger = { has_country_modifier = military_investment_mages_3_modifier }
 	}
 	frame = {
 		number = 3
-		trigger = { has_country_modifier = military_investment_morale_2_modifier }
+		trigger = { has_country_modifier = military_investment_mages_2_modifier }
 	}
 	frame = {
 		number = 2
-		trigger = { has_country_modifier = military_investment_morale_1_modifier }
+		trigger = { has_country_modifier = military_investment_mages_1_modifier }
 	}
 	frame = {
 		number = 1
 		trigger = {
-			NOT = { has_country_modifier = military_investment_morale_1_modifier }
-			NOT = { has_country_modifier = military_investment_morale_2_modifier }
-			NOT = { has_country_modifier = military_investment_morale_3_modifier }
-			NOT = { has_country_modifier = military_investment_morale_4_modifier }
-			NOT = { has_country_modifier = military_investment_morale_5_modifier }
-			NOT = { has_country_modifier = military_investment_morale_6_modifier }
-			NOT = { has_country_modifier = military_investment_morale_7_modifier }
-			NOT = { has_country_modifier = military_investment_morale_8_modifier }
-			NOT = { has_country_modifier = military_investment_morale_9_modifier }
-			NOT = { has_country_modifier = military_investment_morale_10_modifier }
+			NOT = { has_country_modifier = military_investment_mages_1_modifier }
+			NOT = { has_country_modifier = military_investment_mages_2_modifier }
+			NOT = { has_country_modifier = military_investment_mages_3_modifier }
+			NOT = { has_country_modifier = military_investment_mages_4_modifier }
+			NOT = { has_country_modifier = military_investment_mages_5_modifier }
 		}
 	}
 }
@@ -193,58 +194,33 @@ custom_icon = {
 	tooltip = PA_mass_army_level_tooltip
 	potential = { }
 	frame = {
-		number = 11
-		trigger = { has_country_modifier = military_investment_discipline_10_modifier }
-	}
-	frame = {
-		number = 10
-		trigger = { has_country_modifier = military_investment_discipline_9_modifier }
-	}
-	frame = {
-		number = 9
-		trigger = { has_country_modifier = military_investment_discipline_8_modifier }
-	}
-	frame = {
-		number = 8
-		trigger = { has_country_modifier = military_investment_discipline_7_modifier }
-	}
-	frame = {
-		number = 7
-		trigger = { has_country_modifier = military_investment_discipline_6_modifier }
-	}
-	frame = {
 		number = 6
-		trigger = { has_country_modifier = military_investment_discipline_5_modifier }
+		trigger = { has_country_modifier = military_investment_artificer_5_modifier }
 	}
 	frame = {
 		number = 5
-		trigger = { has_country_modifier = military_investment_discipline_4_modifier }
+		trigger = { has_country_modifier = military_investment_artificer_4_modifier }
 	}
 	frame = {
 		number = 4
-		trigger = { has_country_modifier = military_investment_discipline_3_modifier }
+		trigger = { has_country_modifier = military_investment_artificer_3_modifier }
 	}
 	frame = {
 		number = 3
-		trigger = { has_country_modifier = military_investment_discipline_2_modifier }
+		trigger = { has_country_modifier = military_investment_artificer_2_modifier }
 	}
 	frame = {
 		number = 2
-		trigger = { has_country_modifier = military_investment_discipline_1_modifier }
+		trigger = { has_country_modifier = military_investment_artificer_1_modifier }
 	}
 	frame = {
 		number = 1
 		trigger = {
-			NOT = { has_country_modifier = military_investment_discipline_1_modifier }
-			NOT = { has_country_modifier = military_investment_discipline_2_modifier }
-			NOT = { has_country_modifier = military_investment_discipline_3_modifier }
-			NOT = { has_country_modifier = military_investment_discipline_4_modifier }
-			NOT = { has_country_modifier = military_investment_discipline_5_modifier }
-			NOT = { has_country_modifier = military_investment_discipline_6_modifier }
-			NOT = { has_country_modifier = military_investment_discipline_7_modifier }
-			NOT = { has_country_modifier = military_investment_discipline_8_modifier }
-			NOT = { has_country_modifier = military_investment_discipline_9_modifier }
-			NOT = { has_country_modifier = military_investment_discipline_10_modifier }
+			NOT = { has_country_modifier = military_investment_artificer_1_modifier }
+			NOT = { has_country_modifier = military_investment_artificer_2_modifier }
+			NOT = { has_country_modifier = military_investment_artificer_3_modifier }
+			NOT = { has_country_modifier = military_investment_artificer_4_modifier }
+			NOT = { has_country_modifier = military_investment_artificer_5_modifier }
 		}
 	}
 }
@@ -254,58 +230,33 @@ custom_icon = {
 	tooltip = PA_mercenary_army_level_tooltip
 	potential = { }
 	frame = {
-		number = 11
-		trigger = { has_country_modifier = military_investment_dmg_reduction_10_modifier }
-	}
-	frame = {
-		number = 10
-		trigger = { has_country_modifier = military_investment_dmg_reduction_9_modifier }
-	}
-	frame = {
-		number = 9
-		trigger = { has_country_modifier = military_investment_dmg_reduction_8_modifier }
-	}
-	frame = {
-		number = 8
-		trigger = { has_country_modifier = military_investment_dmg_reduction_7_modifier }
-	}
-	frame = {
-		number = 7
-		trigger = { has_country_modifier = military_investment_dmg_reduction_6_modifier }
-	}
-	frame = {
 		number = 6
-		trigger = { has_country_modifier = military_investment_dmg_reduction_5_modifier }
+		trigger = { has_country_modifier = military_investment_adventurer_5_modifier }
 	}
 	frame = {
 		number = 5
-		trigger = { has_country_modifier = military_investment_dmg_reduction_4_modifier }
+		trigger = { has_country_modifier = military_investment_adventurer_4_modifier }
 	}
 	frame = {
 		number = 4
-		trigger = { has_country_modifier = military_investment_dmg_reduction_3_modifier }
+		trigger = { has_country_modifier = military_investment_adventurer_3_modifier }
 	}
 	frame = {
 		number = 3
-		trigger = { has_country_modifier = military_investment_dmg_reduction_2_modifier }
+		trigger = { has_country_modifier = military_investment_adventurer_2_modifier }
 	}
 	frame = {
 		number = 2
-		trigger = { has_country_modifier = military_investment_dmg_reduction_1_modifier }
+		trigger = { has_country_modifier = military_investment_adventurer_1_modifier }
 	}
 	frame = {
 		number = 1
 		trigger = {
-			NOT = { has_country_modifier = military_investment_dmg_reduction_1_modifier }
-			NOT = { has_country_modifier = military_investment_dmg_reduction_2_modifier }
-			NOT = { has_country_modifier = military_investment_dmg_reduction_3_modifier }
-			NOT = { has_country_modifier = military_investment_dmg_reduction_4_modifier }
-			NOT = { has_country_modifier = military_investment_dmg_reduction_5_modifier }
-			NOT = { has_country_modifier = military_investment_dmg_reduction_6_modifier }
-			NOT = { has_country_modifier = military_investment_dmg_reduction_7_modifier }
-			NOT = { has_country_modifier = military_investment_dmg_reduction_8_modifier }
-			NOT = { has_country_modifier = military_investment_dmg_reduction_9_modifier }
-			NOT = { has_country_modifier = military_investment_dmg_reduction_10_modifier }
+			NOT = { has_country_modifier = military_investment_adventurer_1_modifier }
+			NOT = { has_country_modifier = military_investment_adventurer_2_modifier }
+			NOT = { has_country_modifier = military_investment_adventurer_3_modifier }
+			NOT = { has_country_modifier = military_investment_adventurer_4_modifier }
+			NOT = { has_country_modifier = military_investment_adventurer_5_modifier }
 		}
 	}
 }
@@ -314,26 +265,6 @@ custom_icon = {
 	name = PA_army_doctrine_generals_level
 	tooltip = PA_generals_level_tooltip
 	potential = { }
-	frame = {
-		number = 11
-		trigger = { has_country_modifier = military_investment_national_elite_10_modifier }
-	}
-	frame = {
-		number = 10
-		trigger = { has_country_modifier = military_investment_national_elite_9_modifier }
-	}
-	frame = {
-		number = 9
-		trigger = { has_country_modifier = military_investment_national_elite_8_modifier }
-	}
-	frame = {
-		number = 8
-		trigger = { has_country_modifier = military_investment_national_elite_7_modifier }
-	}
-	frame = {
-		number = 7
-		trigger = { has_country_modifier = military_investment_national_elite_6_modifier }
-	}
 	frame = {
 		number = 6
 		trigger = { has_country_modifier = military_investment_national_elite_5_modifier }
@@ -362,11 +293,6 @@ custom_icon = {
 			NOT = { has_country_modifier = military_investment_national_elite_3_modifier }
 			NOT = { has_country_modifier = military_investment_national_elite_4_modifier }
 			NOT = { has_country_modifier = military_investment_national_elite_5_modifier }
-			NOT = { has_country_modifier = military_investment_national_elite_6_modifier }
-			NOT = { has_country_modifier = military_investment_national_elite_7_modifier }
-			NOT = { has_country_modifier = military_investment_national_elite_8_modifier }
-			NOT = { has_country_modifier = military_investment_national_elite_9_modifier }
-			NOT = { has_country_modifier = military_investment_national_elite_10_modifier }
 		}
 	}
 }
@@ -375,26 +301,6 @@ custom_icon = {
 	name = PA_army_doctrine_defensive_level
 	tooltip = PA_defensive_level_tooltip
 	potential = { }
-	frame = {
-		number = 11
-		trigger = { has_country_modifier = military_investment_marine_10_modifier }
-	}
-	frame = {
-		number = 10
-		trigger = { has_country_modifier = military_investment_marine_9_modifier }
-	}
-	frame = {
-		number = 9
-		trigger = { has_country_modifier = military_investment_marine_8_modifier }
-	}
-	frame = {
-		number = 8
-		trigger = { has_country_modifier = military_investment_marine_7_modifier }
-	}
-	frame = {
-		number = 7
-		trigger = { has_country_modifier = military_investment_marine_6_modifier }
-	}
 	frame = {
 		number = 6
 		trigger = { has_country_modifier = military_investment_marine_5_modifier }
@@ -423,11 +329,6 @@ custom_icon = {
 			NOT = { has_country_modifier = military_investment_marine_3_modifier }
 			NOT = { has_country_modifier = military_investment_marine_4_modifier }
 			NOT = { has_country_modifier = military_investment_marine_5_modifier }
-			NOT = { has_country_modifier = military_investment_marine_6_modifier }
-			NOT = { has_country_modifier = military_investment_marine_7_modifier }
-			NOT = { has_country_modifier = military_investment_marine_8_modifier }
-			NOT = { has_country_modifier = military_investment_marine_9_modifier }
-			NOT = { has_country_modifier = military_investment_marine_10_modifier }
 		}
 	}
 }
@@ -451,10 +352,6 @@ custom_button = {
 		}
 	}
 }
-custom_icon = {
-	name = PA_square_highlight_discipline
-	potential = { has_country_modifier = PA_temporary_discipline_boost_modifier }
-}
 
 custom_button = {
 	name = PA_temporary_boost_fort_defense_button
@@ -475,11 +372,6 @@ custom_button = {
 		}
 	}
 }
-custom_icon = {
-	name = PA_square_highlight_defense
-	potential = { has_country_modifier = PA_temporary_fort_defense_boost_modifier }
-}
-
 
 custom_button = {
 	name = PA_temporary_boost_manpower_button
@@ -501,11 +393,6 @@ custom_button = {
 		custom_tooltip = PA_temporary_manpower_recovery_boost_tt
 	}
 }
-custom_icon = {
-	name = PA_square_highlight_manpower
-	potential = { has_country_modifier = PA_temporary_manpower_recovery_boost_modifier }
-}
-
 
 custom_button = {
 	name = PA_temporary_boost_morale_button
@@ -526,10 +413,6 @@ custom_button = {
 		}
 	}
 }
-custom_icon = {
-	name = PA_square_highlight_morale
-	potential = { has_country_modifier = PA_temporary_morale_boost_modifier }
-}
 
 custom_button = {
 	name = PA_temporary_boost_generals_button
@@ -549,10 +432,6 @@ custom_button = {
 			duration = 1825
 		}
 	}
-}
-custom_icon = {
-	name = PA_square_highlight_generals
-	potential = { has_country_modifier = PA_temporary_generals_boost_modifier }
 }
 
 # custom_button = {

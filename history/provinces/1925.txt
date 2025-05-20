@@ -25,9 +25,9 @@ center_of_trade = 1
 	capital = "Bremerlehe"
 }
 1444.11.12 = {	#BERTUS MOD
-	base_tax = 10
-	base_production = 10
-	base_manpower = 10
+	set_base_tax = 10
+	set_base_production = 10
+	set_base_manpower = 10
 	fort_15th = yes
 	ramparts = yes
 	post_office = yes

@@ -68,11 +68,7 @@ age_of_discovery = {
 			}
 		}
 	}		
-	
-
-	
-	
-	
+		
 	abilities = {
 		ab_allow_feudal_de_jure_law = {
 			modifier = {
@@ -91,14 +87,25 @@ age_of_discovery = {
 			modifier = {
 				ae_impact = -0.20	#-0.10→-0.20
 			}
+			effect = {
+				if = {
+					limit = {
+						capital_scope = { superregion = iberia_superregion }
+						religion_group = muslim
+					}
+					add_country_modifier = {
+						name = ab_justified_wars_modifier
+						duration = -1
+						desc = until_end_of_age_of_discovery_desc
+					}
+				}
+			}
 			ai_will_do = {
 				factor = 10
-			}			
+			}
 		}
-		
 
-		ab_transfer_vassal_wargoal = 
-		{
+		ab_transfer_vassal_wargoal = {
 			modifier = {
 				can_transfer_vassal_wargoal = yes
 				can_chain_claim = yes
@@ -114,9 +121,8 @@ age_of_discovery = {
 			}
 			ai_will_do = {
 				factor = 10
-			}	
+			}
 		}
-		
 
 		ab_cavalry_armies = {
 			modifier = {
@@ -159,6 +165,7 @@ age_of_discovery = {
 				factor = 100
 			}
 		}
+
 		ab_brandenburg_efficiency = { 	#bertus mod
 			allow = {
 				culture_group = germanic
@@ -170,8 +177,8 @@ age_of_discovery = {
 				factor = 100
 			}
 		}
+
 		ab_burgundy_reduced_lib_desire = { 	#bertus mod
-		
 			allow = {
 				culture_group = french
 			}
@@ -182,8 +189,8 @@ age_of_discovery = {
 				factor = 100
 			}
 		}
-		ab_venice_ship_trade = { 	#bertus mod
 		
+		ab_venice_ship_trade = { 	#bertus mod
 			allow = {
 				num_of_merchants = 3
 			}

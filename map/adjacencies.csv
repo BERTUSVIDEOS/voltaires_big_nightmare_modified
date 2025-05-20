@@ -325,7 +325,7 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;Comment
 2092;2231;sea;;-1;-1;-1;-1;land
 2058;1939;sea;;-1;-1;-1;-1;land
 532;2211;sea;;-1;-1;-1;-1;land
-1090;327;sea;1671;-1;-1;-1;-1;land
+1090;327;sea;;-1;-1;-1;-1;land
 1846;635;sea;;-1;-1;-1;-1;land
 1846;98;sea;;-1;-1;-1;-1;land
 317;98;sea;;-1;-1;-1;-1;land

@@ -553,6 +553,7 @@ was_never_end_game_tag_trigger = {	#Country Scope
 				NOT = { was_tag = MGF }
 				NOT = { was_tag = SGC }
 				NOT = { was_tag = NGC }
+				NOT = { was_tag = CGC }
 				NOT = { was_tag = EAH }
 				NOT = { was_tag = ASY }
 				NOT = { was_tag = BUL }
@@ -587,6 +588,7 @@ was_never_end_game_tag_trigger = {	#Country Scope
 				#mod
 				NOT = { tag = MGF }
 				NOT = { tag = SGC }
+				NOT = { tag = CGC }
 				NOT = { tag = NGC }
 				NOT = { tag = EAH }
 				NOT = { tag = ASY }

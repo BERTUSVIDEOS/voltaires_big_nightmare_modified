@@ -1788,6 +1788,7 @@ estate_burghers_forest_expansion = {
 		OR = {
 			has_unlocked_estate_privilege = { estate_privilege = estate_burghers_forest_expansion }
 			has_idea = RHI_idea_1
+			has_idea = CGC_idea_2
 			has_idea = sca_unified_scandinavian
 		}
 	}

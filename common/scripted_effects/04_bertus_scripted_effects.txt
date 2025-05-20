@@ -1,5 +1,113 @@
 
 
+get_monthly_military_reform = {
+	if = {
+		limit = {
+			has_global_modifier_value = { which = monthly_military_reform_power_gain value = 0.01 }
+		}
+		export_to_variable = { which = monthly_military_reform_power_gain_var value = modifier:monthly_military_reform_power_gain }
+		export_to_variable = { which = monthly_military_reform_multiplier_var value = modifier:military_reform_power_gain_modifier }
+		multiply_variable = { which = monthly_military_reform_power_gain_var which = monthly_military_reform_multiplier_var }
+		change_variable = { which = military_reform_progress_var which = monthly_military_reform_power_gain_var }
+		if = {
+			limit = { check_variable = { which = military_reform_progress_var value = 100 } }
+			change_variable = { which = military_reforms_tokens_var value = 1 }
+			change_variable = { which = military_reform_progress_var value = -100 }
+		}
+	}
+}
+get_monthly_manpower = {
+	if = {
+		limit = {
+			NOT = { manpower_percentage = 1.0 }
+			has_global_modifier_value = { which = monthly_manpower_modifier value = 0.01 }
+		}
+
+		set_variable = { which = temp value = 0 }
+		export_to_variable = { which = temp value = modifier:manpower_recovery_speed }
+		change_variable = { which = temp value = 1 }											# (1+x)
+
+		set_variable = { which = manpower_recovery_var value = 0 }
+		change_variable = { which = manpower_recovery_var which = temp }						#save for later
+
+		export_to_variable = { which = max_manpower value = trigger_value:max_manpower }
+		multiply_variable = { which = temp which = max_manpower }
+		divide_variable = { which = temp value = 24 }
+		
+		set_variable = { which = monthly_manpower_gain value = 0 }
+		change_variable = { which = monthly_manpower_gain which = temp }						#save for later
+
+		export_to_variable = { which = monthly_manpower_modifier_var value = modifier:monthly_manpower_modifier }
+		multiply_variable = { which = temp which = monthly_manpower_modifier_var }
+
+		set_variable = { which = monthly_manpower_gain_after_modifiers value = 0 }
+		change_variable = { which = monthly_manpower_gain_after_modifiers which = temp }		#save for later
+		multiply_variable = { which = monthly_manpower_gain_after_modifiers value = 0.1 }		#save for later
+
+		while = {
+			limit = { check_variable = { which = temp value = 0 } }
+			change_variable = { which = temp value = -1 }
+			add_manpower = 0.1
+		}
+	}
+}
+get_monthly_sailors = {
+	if = {
+		limit = {
+			NOT = { sailors_percentage = 1.0 }
+		}
+		if = {
+			limit = {
+				has_global_modifier_value = { which = monthly_sailors_modifier value = 0.01 }
+			}
+
+			set_variable = { which = temp value = 0 }
+			export_to_variable = { which = temp value = modifier:sailors_recovery_speed }
+			change_variable = { which = temp value = 1 }											# (1+x)
+
+			set_variable = { which = sailors_recovery_var value = 0 }
+			change_variable = { which = sailors_recovery_var which = temp }						#save for later
+
+			export_to_variable = { which = max_sailors_var value = trigger_value:max_sailors }
+			multiply_variable = { which = temp which = max_sailors_var }
+			divide_variable = { which = temp value = 24 }
+			
+			set_variable = { which = monthly_sailors_gain value = 0 }
+			change_variable = { which = monthly_sailors_gain which = temp }						#save for later
+
+			export_to_variable = { which = monthly_sailors_modifier_var value = modifier:monthly_sailors_modifier }
+			multiply_variable = { which = temp which = monthly_sailors_modifier_var }
+
+			set_variable = { which = monthly_sailors_gain_after_modifiers value = 0 }
+			change_variable = { which = monthly_sailors_gain_after_modifiers which = temp }		#save for later
+			multiply_variable = { which = monthly_sailors_gain_after_modifiers value = 0.1 }		#save for later
+
+			while = {
+				limit = { check_variable = { which = temp value = 0 } }
+				change_variable = { which = temp value = -1 }
+				add_sailors = 100
+			}
+		}
+		if = {
+			limit = { has_government_attribute = manpower_to_sailors_fraction }
+	
+			set_variable = { which = temp value = 0 }
+			change_variable = { which = temp which = monthly_manpower_gain }
+			change_variable = { which = monthly_manpower_modifier_var value = 1 }					# (1+x)
+			multiply_variable = { which = temp which = monthly_manpower_modifier_var }
+			change_variable = { which = monthly_manpower_modifier_var value = -1 }					#back to base
+			multiply_variable = { which = temp value = 0.20 }
+			set_variable = { which = monthly_sailors_gain_after_modifiers value = 0 }
+			change_variable = { which = monthly_sailors_gain_after_modifiers which = temp }		#save for later
+			multiply_variable = { which = monthly_sailors_gain_after_modifiers value = 0.1 }		#save for later
+			while = {
+				limit = { check_variable = { which = temp value = 0 } }
+				change_variable = { which = temp value = -1 }
+				add_sailors = 100
+			}
+		}
+	}
+}
 on_development_reduction_modifiers_effect = {
 	if = {
 		limit = {NOT = {development = 30} has_province_modifier = centralized_provinces_modifier}
@@ -58,6 +166,7 @@ increase_military_investment = {
 	change_variable = { which = military_reforms_tokens_var value = -1 }
 }
 set_formable_tier = {
+	custom_tooltip = tier_$tier$_formable_tt
 	set_country_flag = tier_$tier$_formable_flag
 }
 transfer_manpower_fraction = {
@@ -326,7 +435,6 @@ on_action_culture_promotion_effect = {
 			OR = {
 				culture_group = celtic
 				culture_group = basquegroup
-				culture_group = vlach
 				culture_group = south_slavic
 				culture_group = albanian_group
 				culture_group = baltic
@@ -367,6 +475,7 @@ on_action_culture_promotion_effect = {
 			OR = {
 				culture_group = west_slavic
 				culture_group = magyar
+				culture_group = vlach
 			}
 		}
 		add_country_modifier = {name = hussars_basic_modifier duration = -1 }

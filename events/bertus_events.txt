@@ -1,5 +1,52 @@
 namespace = bertus_events
 
+province_event = {   #flatland gold
+    id = bertus_events.0003
+    title = bertus_events.1.title
+    desc = bertus_events.1.desc
+    picture = MERCHANTS_TALKING_eventPicture
+
+    hidden = yes
+    
+    trigger = {
+        OR = {
+            AND = {
+                NOT = { has_province_modifier = flatland_gold }
+                OR = {
+                    trade_goods = silver
+                    trade_goods = gold
+                }
+                OR = {
+                    has_terrain = farmlands
+                    has_terrain = grasslands
+                    has_terrain = drylands
+                }
+            }
+            AND = {
+                has_province_modifier = flatland_gold
+                NOT = {
+                    trade_goods = silver
+                    trade_goods = gold
+                }
+            }
+        }
+    }
+
+    option = {
+        name = bertus_events.1.a
+        trigger = {
+            NOT = { has_province_modifier = flatland_gold }
+        }
+        add_province_modifier = { name = flatland_gold duration = -1 }
+    }
+    option = {
+        name = bertus_events.1.b
+        trigger = {
+            has_province_modifier = flatland_gold
+        }
+        remove_province_modifier = flatland_gold
+    }
+}
 province_event = {   #add 1 RANDOM dev
     id = bertus_events.0004
     title = bertus_events.1.title

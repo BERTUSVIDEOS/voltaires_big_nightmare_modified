@@ -1,6 +1,12 @@
 spriteTypes = {
 
 	spriteType = {
+		name = "GFX_court_view_select_advisor_bg_huge"
+		texturefile = "gfx//interface//court_view_select_advisor_bg_huge.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
+	spriteType = {
 		name = "GFX_icon_splendor_button"
 		texturefile = "gfx/interface/ages/icon_splendor_button.dds"
 	}

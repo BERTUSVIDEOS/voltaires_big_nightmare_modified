@@ -24,6 +24,17 @@ center_of_trade = 1
 	controller = UTR
 	add_core = UTR
 	remove_core = HOL
+	set_base_tax = 7
+	set_base_production = 7
+	set_base_manpower = 7
+	fort_15th = yes
+	ramparts = yes
+	trade_depot = yes
+	add_center_of_trade_level = 2
+	add_province_modifier = {
+		name = strong_city
+		duration = -1
+	}
 }
 1549.11.4 = { 
 	owner = NED 

@@ -23,7 +23,7 @@ country_decisions = {
 		}
 		provinces_to_highlight = {
 			OR = {
-				province_id = 2739 # dublin
+				province_id = 2737 # dublin
 				AND = {
 					region = ireland_region
 					ROOT = {
@@ -46,7 +46,7 @@ country_decisions = {
 			adm_tech = 10
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
-			2739 = { owned_by = ROOT is_state = yes }	# dublin
+			2737 = { owned_by = ROOT is_state = yes }	# dublin
 			num_of_owned_provinces_with = {
 				is_core = ROOT
 				region = ireland_region

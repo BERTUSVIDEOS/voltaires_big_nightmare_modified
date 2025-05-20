@@ -627,7 +627,7 @@ vn_pal_missions_slot_4_a = {
             add_innovativeness_big_effect = yes
             add_country_modifier = {
                 name = "pal_universitat_heidelberg_mission"
-                duration = 9125
+                duration = -1
             }
         }
 	}

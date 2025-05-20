@@ -713,6 +713,10 @@ vn_adu_missions_slot_2 = {
 			}
         }
         effect = {
+            add_country_modifier = {
+                name = vn_adu_conquer_galicia_modifier
+                duration = -1
+            }
             add_prestige_or_monarch_power = { amount = 10 } 
 			galicia_area = {
                 add_local_autonomy = -10
@@ -1283,6 +1287,10 @@ vn_adu_missions_slot_3 = {
             }
         }
         effect = {
+            add_country_modifier = {
+                name = vn_adu_conquer_castile_modifier
+                duration = -1
+            }
 			madrid_area = {
                 add_local_autonomy = -10
                 add_nationalism = -5
@@ -1323,6 +1331,10 @@ vn_adu_missions_slot_3 = {
             }
         }
         effect = {
+            add_country_modifier = {
+                name = vn_adu_unite_iberia_modifier
+                duration = -1
+            }
             add_stability_or_adm_power = yes
             tangiers_area = {
 				limit = {
@@ -2026,6 +2038,10 @@ vn_adu_missions_slot_4 = {
             }
         }
         effect = {
+            add_country_modifier = {
+                name = vn_adu_conquer_catalonia_modifier
+                duration = -1
+            }
             aragon_region = {
                 add_local_autonomy = -10
                 add_nationalism = -5

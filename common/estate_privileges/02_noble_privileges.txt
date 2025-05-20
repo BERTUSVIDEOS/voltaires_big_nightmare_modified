@@ -247,8 +247,8 @@ estate_nobles_levies = {
 			estate_territory = { estate = estate_nobles territory = 33 } 
 		}
 		modifier = {
-			global_tax_modifier = -0.66
-			global_manpower_modifier = 0.66
+			global_tax_modifier = -0.44
+			global_manpower_modifier = 0.44
 			max_absolutism = -20
 		}
 	}
@@ -258,8 +258,8 @@ estate_nobles_levies = {
 			NOT = { estate_territory = { estate = estate_nobles territory = 33 } }
 		}
 		modifier = {
-			global_tax_modifier = -0.44
-			global_manpower_modifier = 0.44
+			global_tax_modifier = -0.33
+			global_manpower_modifier = 0.33
 			max_absolutism = -10
 		}
 	}

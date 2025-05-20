@@ -19,6 +19,9 @@ add_core = HOL
 	culture = dutch
 	hre = yes
 }
+1444.11.12 = {	#BERTUS MOD
+	change_tribal_land = ---
+}
 1549.11.4 = { 
 	owner = NED 
 	controller = NED 

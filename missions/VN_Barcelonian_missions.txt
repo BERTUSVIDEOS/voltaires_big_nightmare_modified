@@ -1,6 +1,95 @@
 #Barcelona Missions
 #By Isildur
 
+vn_avl_missions_slot_1_a = {
+    slot = 8
+    generic = no
+    ai = yes
+    potential = {
+		OR = {
+            tag = AVL
+            tag = MJO
+        }
+		NOT = { map_setup = map_setup_random }
+	}
+    has_country_shield = yes
+	vn_avl_crown_of_aragon = {
+		icon = hispanic_monarchy
+		position = 1
+		required_missions = { }
+		provinces_to_highlight = {
+			OR = {
+				region = aragon_region
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			aragon_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+            change_tag = ARA
+			on_change_tag_effect = yes
+			clr_country_flag = nerfed_ideas_flag
+			swap_swap_non_generic_missions = yes
+			set_formable_tier = { tier = 3 }
+			if = {
+				limit = { NOT = { government_rank = 4 } }
+				set_government_rank = 4
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			country_event = { id = ideagroups.1 } #Swap Ideas
+			add_legitimacy = 20
+			madrid_area = {
+				limit = {
+                    NOT = { is_core = ROOT }
+					NOT = { is_claim = ROOT }
+                }
+                add_claim = ROOT
+			}
+			soria_area = {
+				limit = {
+                    NOT = { is_core = ROOT }
+					NOT = { is_claim = ROOT }
+                }
+                add_claim = ROOT
+			}
+			segovia_area = {
+				limit = {
+                    NOT = { is_core = ROOT }
+					NOT = { is_claim = ROOT }
+                }
+                add_claim = ROOT
+			}
+			leon_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			salamanca_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			palencia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+    }
+}
 vn_brc_missions_slot_1_a = {
     slot = 6
     generic = no
@@ -466,6 +555,85 @@ vn_brc_missions_slot_3_a = {
                 duration = 9125
             }
         }
+    }
+	vn_cat_crown_of_aragon = {
+		icon = hispanic_monarchy
+		position = 6
+		required_missions = {
+			vn_brc_incorporate_valencia
+			vn_brc_mediterranean_commerce
+		}
+		provinces_to_highlight = {
+			OR = {
+				region = aragon_region
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			aragon_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+            change_tag = ARA
+			on_change_tag_effect = yes
+			clr_country_flag = nerfed_ideas_flag
+			swap_swap_non_generic_missions = yes
+			set_formable_tier = { tier = 3 }
+			if = {
+				limit = { NOT = { government_rank = 4 } }
+				set_government_rank = 4
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			country_event = { id = ideagroups.1 } #Swap Ideas
+			add_legitimacy = 20
+			madrid_area = {
+				limit = {
+                    NOT = { is_core = ROOT }
+					NOT = { is_claim = ROOT }
+                }
+                add_claim = ROOT
+			}
+			soria_area = {
+				limit = {
+                    NOT = { is_core = ROOT }
+					NOT = { is_claim = ROOT }
+                }
+                add_claim = ROOT
+			}
+			segovia_area = {
+				limit = {
+                    NOT = { is_core = ROOT }
+					NOT = { is_claim = ROOT }
+                }
+                add_claim = ROOT
+			}
+			leon_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			salamanca_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			palencia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
     }
 }
 

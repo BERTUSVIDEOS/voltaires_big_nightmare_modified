@@ -2188,8 +2188,8 @@ pal_heidelberger_schloss_mission = {
     local_defensiveness = 0.2
     garrison_growth = 0.1
 }
-pal_universitat_heidelberg_mission = {
-	build_cost = -0.1
+pal_universitat_heidelberg_mission = { 	#bertus mod
+	technology_cost = -0.05
 	idea_cost = -0.05
 }
 pal_unite_wittelsbachs_mission = {

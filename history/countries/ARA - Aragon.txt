@@ -592,6 +592,7 @@ add_army_professionalism = 0.05
 	}
 }
 1444.11.12 = {	#bertus mod
+	set_country_flag = nerfed_ideas_flag
 	monarch = {
 		name = "Alfons VI"
 		dynasty = "d'Aragon"

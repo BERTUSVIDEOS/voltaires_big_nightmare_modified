@@ -2108,6 +2108,7 @@ prussian_monarchy_base = {
 					tag = GER
 					tag = NGC
 					tag = SGC
+					tag = CGC
 				}
 				NOT = { map_setup = map_setup_random }
 				OR = {

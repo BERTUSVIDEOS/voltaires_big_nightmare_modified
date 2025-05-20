@@ -2156,38 +2156,11 @@ on_siberian_pulse = {
 on_monthly_pulse = {
 	if = {	#bertus mod
 		limit = {
-			has_country_modifier = slackening_modifier
+			OR = { ai = no overlord = { ai = no }  }
 		}
-		add_yearly_manpower = 0.0833
-		if = {
-			limit = {
-				OR = {
-					has_idea = jourdan_law
-				}
-			}
-			add_yearly_manpower = 0.0833
-			add_yearly_sailors = 0.0833
-		}
-		if = {
-			limit = {
-				OR = {
-					has_government_attribute = sailors_from_slacken
-				}
-			}
-			add_yearly_sailors = 0.0833
-		}
-		if = {
-			limit = {
-				has_country_modifier = boosted_country_manpower_3
-			}
-			add_yearly_sailors = 0.0833
-		}
-		else_if = {
-			limit = {
-				has_country_modifier = boosted_country_manpower_2
-			}
-			add_yearly_sailors = 0.04166
-		}
+		get_monthly_military_reform = yes
+		get_monthly_manpower = yes
+		get_monthly_sailors = yes
 	}
 }
 on_yearly_pulse = {
@@ -5955,25 +5928,12 @@ on_expanded_infrastructure_removed = {
 #ROOT = province that was centralized in
 on_centralized_state = {
 	if = {
-		limit = { owner = { has_idea = zentra6 } }
-		area = { limit = {owned_by = ROOT has_province_modifier = centralized_province } add_1_dev_to_provinces = yes }
-	}
-	if = {	#bertus mod
-		limit = {
-			owner = { has_idea = RHI_idea_6 }
-		}
-		area = {
-			limit = { owned_by = ROOT }
-			add_base_manpower = 1
-		}
-	}
-	if = {
 		limit = {
 			owner = { has_government_attribute = centralize_state_no_reform_cost }
 		}
 		owner = {
-			add_adm_power = 50
-			change_government_reform_progress = 50
+			add_adm_power = 100
+			change_government_reform_progress = 20
 		}
 	}
 	else_if = {
@@ -5981,8 +5941,8 @@ on_centralized_state = {
 			owner = { has_government_attribute = centralize_state_half_refund }
 		}
 		owner = {
-			add_adm_power = 25
-			change_government_reform_progress = 25
+			add_adm_power = 50
+			change_government_reform_progress = 10
 		}
 	}
 	if = {
@@ -6006,6 +5966,19 @@ on_centralized_state = {
 		area = {
 			limit = { owned_by = ROOT }
 			province_event = { id = bertus_events.0004 }  #add 1 RANDOM dev
+		}
+	}
+	if = {
+		limit = { owner = { has_idea = zentra6 } }
+		area = { limit = {owned_by = ROOT has_province_modifier = centralized_province } province_event = { id = bertus_events.0004 } }  #add 1 RANDOM dev
+	}
+	if = {	#bertus mod
+		limit = {
+			owner = { has_idea = RHI_idea_6 }
+		}
+		area = {
+			limit = { owned_by = ROOT }
+			add_base_manpower = 1
 		}
 	}
 	if = {	#bertus mod
@@ -6190,9 +6163,20 @@ on_slacken_start = {
 		name = slackening_modifier
 		duration = -1
 	}
+	if = {
+		limit = {
+			has_government_attribute = sailors_from_slacken
+		}
+		add_country_modifier = {
+			name = slackening_sailors_modifier
+			duration = -1
+			hidden = yes
+		}
+	}
 }
 on_slacken_stop = {
 	remove_country_modifier = slackening_modifier
+	remove_country_modifier = slackening_sailors_modifier
 }
 
 on_colony_finished = { #ROOT - Province
@@ -6325,6 +6309,30 @@ on_war_ended = { #ROOT - Winer FROM - Loser
 
 on_alliance_broken = { #ROOT - Original alliance creator, FROM - Alliance accepter
 	on_alliance_broken_effect = yes
+	if = { 	#bertus mod
+		limit = {
+			FROM = { ai = NO }
+			ai = NO
+		}
+		remove_country_modifier = ally_less_than_5_years_ago_modifier
+		add_country_modifier = { 
+			name = ally_less_than_5_years_ago_modifier
+			duration = 1825
+		}
+	}
+	FROM = { 	#bertus mod
+		if = {
+			limit = {
+				ROOT = { ai = NO }
+				ai = NO
+			}
+			remove_country_modifier = ally_less_than_5_years_ago_modifier
+			add_country_modifier = { 
+				name = ally_less_than_5_years_ago_modifier
+				duration = 1825
+			}
+		}
+	}
 	if = {
 		limit = { has_country_modifier = grain_trade_imports_modifier }
 		remove_country_modifier = grain_trade_imports_modifier

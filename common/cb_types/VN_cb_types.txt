@@ -69,6 +69,50 @@ cb_irish_unification = {
 	war_goal = superiority_irish_unification
 }
 
+# Unification of Italy
+cb_italy_unification = {
+	valid_for_subject = no
+
+	prerequisites = {
+		culture_group = latin
+		capital_scope = { superregion = italy_superregion }
+		FROM = {
+			NOT = { is_subject_of = ROOT }
+			any_owned_province = { superregion = italy_superregion }
+			OR = {
+				AND = {
+					capital_scope = { NOT = { superregion = italy_superregion } }
+					NOT = { current_age = age_of_discovery }
+				}
+				AND = {
+					capital_scope = { superregion = italy_superregion }
+					NOT = { current_age = age_of_discovery }
+					NOT = { current_age = age_of_reformation }
+				}
+			}
+		}
+		is_neighbor_of = FROM
+	}
+
+	war_goal = superiority_irish_unification
+}
+
+# Unification of France
+cb_france_unification = {
+	valid_for_subject = no
+
+	prerequisites = {
+		culture_group = french
+		capital_scope = { superregion = france_superregion }
+		FROM = {
+			NOT = { is_subject_of = ROOT }
+			any_owned_province = { superregion = france_superregion }
+		}
+		is_neighbor_of = FROM
+	}
+
+	war_goal = superiority_france_unification
+}
 #Restore paria
 cb_restore_paria = {
 	valid_for_subject = no

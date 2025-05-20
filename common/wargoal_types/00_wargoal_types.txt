@@ -647,24 +647,35 @@ take_border = {
 
 		allowed_provinces = {
 			is_capital = no
-			any_neighbor_province = {
-				owned_by = ROOT
+			OR = {
+				is_core = ROOT
+				any_neighbor_province = {
+					owned_by = ROOT
+				}
 			}
 		}
 
 		peace_options = {
 			po_demand_provinces
-			po_concede_defeat
 		}
 	}
 	
 	defender = {
-		badboy_factor = 1
+		badboy_factor = 0.75
 		prestige_factor = 1
-		peace_cost_factor = 1
+		peace_cost_factor = 0.75
 
 		peace_options = {
 			po_demand_provinces
+		}
+		allowed_provinces = {
+			is_capital = no
+			OR = {
+				is_core = ROOT
+				any_neighbor_province = {
+					owned_by = ROOT
+				}
+			}
 		}
 	}
 
@@ -809,9 +820,9 @@ take_claim = {
 	type = take_province
 	
 	attacker = {
-		badboy_factor = 1.0
+		badboy_factor = 0.90
 		prestige_factor = 1
-		peace_cost_factor = 1.0	
+		peace_cost_factor = 0.90
 		allowed_provinces = {
 			OR = {
 				is_claim = ROOT
@@ -825,9 +836,9 @@ take_claim = {
 	}
 	
 	defender = {
-		badboy_factor = 1.0
+		badboy_factor = 0.90
 		prestige_factor = 1
-		peace_cost_factor = 1.0	
+		peace_cost_factor = 0.90
 		allowed_provinces = {
 			OR = {
 				is_claim = FROM
@@ -846,9 +857,9 @@ take_province_nationalist = {
 	type = take_province
 	
 	attacker = {
-		badboy_factor = 0.5
-		prestige_factor = 1.5
-		peace_cost_factor = 0.5
+		badboy_factor = 0.5			
+		prestige_factor = 1.0 		#1.5→1.0
+		peace_cost_factor = 0.5		
 		
 		allowed_provinces = {
 			culture_group = ROOT
@@ -864,7 +875,7 @@ take_province_nationalist = {
 	
 	defender = {
 		badboy_factor = 0.5
-		prestige_factor = 1.5
+		prestige_factor = 1.0 		#1.5→1.0
 		peace_cost_factor = 0.5
 		
 		allowed_provinces = {
@@ -886,10 +897,9 @@ take_capital_imperial = {
 	type = take_capital
 	
 	attacker = {
-		badboy_factor = 0.75
+		badboy_factor = 0.66	#0.75→0.66
 		prestige_factor = 1
-		peace_cost_factor = 0.75	
-		
+		peace_cost_factor = 0.66	#0.75→0.66
 		
 		allowed_provinces = {
 			always = yes
@@ -904,9 +914,9 @@ take_capital_imperial = {
 	}
 	
 	defender = {
-		badboy_factor = 0.75
+		badboy_factor = 0.66	#0.75→0.66
 		prestige_factor = 1
-		peace_cost_factor = 0.75	
+		peace_cost_factor = 0.66	#0.75→0.66	
 		
 		
 		allowed_provinces = {
@@ -2258,8 +2268,8 @@ superiority_religious_league = {
 	
 	attacker = {
 		badboy_factor = 0.5
-		prestige_factor = 1.5
-		peace_cost_factor = 1.5		#0.5→1.5
+		prestige_factor = 2.0		#1.5→2.0
+		peace_cost_factor = 2.0		#0.5→2.0
 	
 		peace_options = {
 			po_become_vassal
@@ -2277,8 +2287,8 @@ superiority_religious_league = {
 	
 	defender = {
 		badboy_factor = 0.5
-		prestige_factor = 1.5
-		peace_cost_factor = 1.5		#0.5→1.5		
+		prestige_factor = 2.0		#1.5→2.0
+		peace_cost_factor = 2.0		#0.5→2.0
 	
 		peace_options = {
 			po_become_vassal

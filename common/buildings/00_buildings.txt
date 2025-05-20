@@ -2507,6 +2507,7 @@ manufactory = {
 	time = 60
 	modifier = {
 		trade_goods_size = 1.0
+		local_warscore_cost_modifier = -0.10
 	}
 }
 
@@ -2905,6 +2906,7 @@ furnace = {
 
 	modifier = {
 		global_trade_goods_size_modifier = 0.05 #National Bonus
+		local_warscore_cost_modifier = -0.10
 	}
 	onmap = yes
 	show_separate = yes # Means as a manufactory it will be shown according to the old way
@@ -2944,6 +2946,7 @@ ramparts = {
 		local_garrison_size = 0.20
 		fort_level = 2
 		allowed_num_of_buildings = 1
+		local_warscore_cost_modifier = -0.10
 	}
 	onmap = no
 	show_separate = yes # Means as a manufactory it will be shown according to the old way
@@ -3023,6 +3026,7 @@ soldier_households = {
 	}
 	modifier = {
 		local_manpower = 0.75
+		local_warscore_cost_modifier = -0.10
 	}
 	bonus_modifier = {
 		local_manpower = 0.75
@@ -3107,6 +3111,7 @@ impressment_offices = {	#bertus mod
 		amount_of_voc_indiamen = 1
 		amount_of_galleon = 0.5
 		amount_of_man_of_war = 0.5
+		local_warscore_cost_modifier = -0.10
 	}
 
 	bonus_modifier = {
@@ -3192,6 +3197,7 @@ state_house = {
 	modifier = {
 		governing_capacity = 10
 		allowed_num_of_buildings = 1
+		local_warscore_cost_modifier = -0.10
 	}
 	bonus_modifier = {
 		governing_capacity = 10

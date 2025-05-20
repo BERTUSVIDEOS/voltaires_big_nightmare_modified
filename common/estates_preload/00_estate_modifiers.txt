@@ -646,6 +646,13 @@ estate_special = {
 		}
 	}
 	modifier_definition = {
+		type = privileges
+		key = monthly_military_reform_power_gain
+		trigger = {
+			always = yes
+		}
+	}
+	modifier_definition = {
 		#type = privileges
 		key = military_reform_power_gain_modifier
 		trigger = {
@@ -655,6 +662,20 @@ estate_special = {
 	modifier_definition = {
 		#type = privileges
 		key = monthly_manpower
+		trigger = {
+			always = yes
+		}
+	}
+	modifier_definition = {
+		#type = privileges
+		key = monthly_manpower_modifier
+		trigger = {
+			always = yes
+		}
+	}
+	modifier_definition = {
+		#type = privileges
+		key = monthly_sailors_modifier
 		trigger = {
 			always = yes
 		}

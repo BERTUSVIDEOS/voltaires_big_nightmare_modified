@@ -337,8 +337,7 @@ PA_temporary_manpower_recovery_boost_modifier = {
 	land_attrition = -0.20
 	movement_speed = 0.20
 	enable_forced_march = yes
-	monthly_manpower = 0.50
-	#monthly manpower 50%
+	monthly_manpower_modifier = 0.50	#monthly manpower 50%
 }
 
 PA_temporary_morale_boost_modifier = {

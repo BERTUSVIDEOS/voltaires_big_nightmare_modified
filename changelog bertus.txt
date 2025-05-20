@@ -1,16 +1,6 @@
 TO DO
-	- Estate privilege Noble Levies
-		- manpower/tax 11/22/33 land share +-22/44/66%→22/33/44%
-	- trade nodes 
-		- dorylaion
-			- flow into antioch
-		- ankara 
-			- flow into trebizond 
-		- sicily/corsega/sardinia islands trade node?
-	- nerf capital growth mission
 	- nerf starting country ideas to tier 1 (savoy, provence, milan, etc)
 	- byzantium tier 4 but starts as tier 1, through missions gets to tier 4
-	- Aragon tier 3 but starts as tier 1, through missions gets to tier 3
 	- Portugal tier 3 but starts as tier 1, through missions gets to tier 3 (also gets rid of the small region issue on fomration)
 	- Pope tier 3 but starts as tier 1, through missions gets to tier 3
 	- Savoy tier 2 but starts as tier 1, through missions gets to tier 2
@@ -30,20 +20,105 @@ TO DO
 	- Norway tier 2 but starts as tier 1, through missions gets to tier 2
 	- Palatinate tier 2 but starts as tier 1, through missions gets to tier 2
 	- Venice formable 
-	- buf aragon ideas
-	- nerf PAL ideas
-	- import anbennar mil reforms rework
-	- Nerf north germany ideas 
-	- Nerf south germany
-	- add central germany formable
-	- buf two sicily ideas
-	- gold/silver mines on farmlands dev cost malus 
-	- nerf dev cost overall
 	
 - 2025-new
-	- fort cost per lvl & garrison 0.25→0.20
-	- over governing capacity 
-		- development cost modifier 0→0.50
+- 2025-05-20
+	- Added Minor & independent power trigger modifiers
+	- CB
+		- conquest
+			- claim AE|WS cost 100%→90%
+		- Border war
+			- core provinces added to allowed provinces 
+			- defender can allowed provinces same as attacker 
+		- imperialism
+			- trech 60→23
+			- claim AE|WS cost 75%→66%
+		- nationalism
+			- trech 60→23
+			- prestige 1.5→1.0
+		- Religious league
+			- WS cost 150%→200% (adjusted hre religion change to be 50%)
+			- prestige 150%→200%
+		- Added Italy unification CB
+			- claim AE|WS cost 50%
+			- all italy superregion provinces 
+			- need lating culture group and capital on italy
+			- Against neighboring non italian countries since renaissance
+			- Against neighboring italian countries since absolutism
+		- Added France unification CB
+			- claim AE|WS cost 75%
+			- all france superregion provinces 
+			- need french culture group and capital on france 
+			- Against neighboring country
+	- reworked military reform system
+		- loses no longer give army reform 
+		- army tradition yearly army reform 0→1
+		- can invest 10 AT to get 10% army reform
+	- Countries
+		- Aragon
+			- start with tier 1 ideas
+			- get tier 3 ideas through missions
+			- light ship cost -20%→-30%
+			- ship trade power 10%→30%
+			- naval FL 20%→30%
+			- trade efficiency 10%→20%
+			- trade copmany investment|CoT upgrade cost 0→-20%
+			- land morale 10%→15%
+			- recovery morale speed 0→5% 
+			- mercenary manpower 0→50%
+			- can chainclaim →yes
+			- monthly reofrm progress 0→0.20 
+			- ship durability 0→20% 
+			- own coast combat dice bonus 0→1 
+			- defensiveness 0→30% 
+		- rhineland
+			- tax 20%→10%
+			- tolerance own 4→2 
+		- Palatinate
+			- spy offence 20%→10% 
+			- idea|tech cost -7.5%→-5%
+			- tolerance own 3→1 
+			- advisor bonus per skill lvl 20%→0 
+			- monthly splendor 5→3 
+			- added 1 permanent mission modifier 
+		- add middle germany formable
+		- Norddeutscher bund
+			- trade efficiency|trade goods 20%→15%
+			- advisor cost -15%→0
+			- mil advisor cost 0→-20%
+		- Süddeutscher Bund
+			- max manpower|manpower recovery 33%→25%
+		- Andalusia can get to tier 4 through missions 
+			- culture conversion cost -10%→-20%
+			- own culture dev cost -15%→-20%
+			- trade goods modifier 10%→20%
+			- max manpower 15%→20%
+			- manpower recovery 15%→20%
+			- defensiveness|garrison 15%→20% 
+		- Genoa
+			- interests -0.5→-0.33
+			- land/naval morale 10%→7.5%
+			- ICA 10%→7.5% 
+			- galley cost -33%→-20% 
+		- Tuscany
+			- prestige 1→0
+			- centralize state cost 0→-20%
+			- centralize gives 1 random dev
+			- religious buf if not catholic  
+		- twe sicilies ideas 
+			- land morale 10%→15%
+			- sailor recovery speed 0→20%
+			- allowed marine fraction 0→20%
+			- naval leader shock|fire|manuever 0→1
+	- trade nodes 
+		- dorylaion
+			- flow into antioch
+		- ankara 
+			- flow into trebizond 
+		- Added Italian Islands Trade node
+			- Corsica, Sardinia, Sicily Islands 
+			- get from Tunis, Naples, candia
+			- foes to valencia, genua, florence 
 	- Rank 1
 		- gov cap -66%
 		- dev cost on own culture -20%
@@ -62,8 +137,16 @@ TO DO
 		- gov cap 300→200
 	- rank 4
 		- gov cap 200→100
+	- Estate privilege Noble Levies
+		- manpower/tax 11/22/33 land share +-22/44/66%→22/33/44%
+	- fort cost per lvl & garrison 0.25→0.20
+	- over governing capacity 
+		- development cost modifier 0→0.50
 	- tweaked some provinces trade goods
-	- tweaked somefarming trade goods local modifier
+	- tweaked some farming trade goods local modifier
+	- gold/silver mines on farmlands|grasslands|drylands
+		- local dev cost 0→+20%
+		- logal trade goods 0→-20%
 	- Now can steal from subjects
 	- Great Development Cost nerf
 		- being in a state -10%→0
@@ -78,6 +161,7 @@ TO DO
 		- lumber trade bonus -5%→0
 		- other 
 	- Growth of capial mission conditions reworked
+		- local dev cost -30%→-20%
 	- Tweaked janissaries privileges
 
 - 2025-03-01

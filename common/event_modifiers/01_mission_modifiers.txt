@@ -6,17 +6,17 @@
 #Generic Military Mission Rewards:
 
 thriving_arms_industry = {
-	land_morale = 0.10	#0.05→0.1
-	land_maintenance_modifier = -0.10	#-0.05→-0.10
+	land_morale = 0.10							#0.05→0.1
+	land_maintenance_modifier = -0.10			#-0.05→-0.10
 }
 
 growth_of_capital = {
-	local_development_cost = -0.3	#-0.1→-0.3
-	local_development_cost_modifier = -0.05	#-0→-0.05
-	local_build_cost = -0.2	#-0.1→-0.2
-	local_great_project_upgrade_cost = -0.2	#0→-0.2
-	allowed_num_of_buildings = 1	#0→1
-	allowed_num_of_manufactories = 1	#0→1
+	local_development_cost = -0.20				#-0.1→-0.2
+	local_development_cost_modifier = -0.05		#-0→-0.05
+	local_build_cost = -0.20					#-0.1→-0.20
+	local_great_project_upgrade_cost = -0.20	#0→-0.2
+	allowed_num_of_buildings = 1				#0→1
+	allowed_num_of_manufactories = 1			#0→1
 }
 
 expansionist_country = {
@@ -5900,28 +5900,33 @@ gosti_guests = {
 	development_cost = -0.05
 }
 
-itm_italian_renaissance_modifier = {
-	prestige = 1
-	prestige_decay = -0.02
+itm_italian_renaissance_modifier = { 	#bertus mod
+	advisor_cost = -0.10
+	development_cost = -0.10
 }
 
-itm_labor_surplus = {
-	global_tax_modifier = 0.1
-	global_manpower_modifier = 0.1
+itm_labor_surplus = { 	#bertus mod
+	global_trade_goods_size_modifier = 0.10
+	development_cost_in_primary_culture = -0.10
 }
 
-itm_influential_government = {
+itm_influential_government = { 	#bertus mod
 	improve_relation_modifier = 0.25
-	diplomatic_upkeep = 1
+	reform_progress_growth = 0.25
+	advisor_cost = -0.10 
 }
 
-itm_italian_powerhouse = {
+itm_italian_powerhouse = { 	#bertus mod
 	ae_impact = -0.15
-	diplomatic_reputation = 1
+	province_warscore_cost = -0.10
 }
 
-itm_merchant_princes_prosper = {
-	burghers_loyalty_modifier = 0.1
+itm_merchant_princes_prosper = { 	#bertus mod
+	all_estate_loyalty_equilibrium = 0.10
+	prestige = 0.50
+	legitimacy = 1.0
+	republican_tradition = 0.20
+	devotion = 0.50
 }
 
 itm_loyalists_control_the_church = {

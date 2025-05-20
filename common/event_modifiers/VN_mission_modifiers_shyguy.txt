@@ -3290,6 +3290,7 @@ adu_centralize_andalusia_mission = {
 }
 adu_construct_mosques_mission = {
 	build_time = -0.15
+	build_cost = -0.15 	#0→-0.15
 	prestige_decay = -0.01
 }
 adu_fortfy_the_pyrenees_mission = {

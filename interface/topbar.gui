@@ -24,6 +24,13 @@ guiTypes = {
 			alwaystransparent = yes
 		}
 
+		iconType = {
+			name = "free_military_reform_alert"
+			spriteType = "GFX_alerticon_military_reform2"
+			position = { x = 600 y = 79 }
+			Orientation = "UPPER_LEFT"
+			scripted = yes
+		}
 
 		iconType =
 		{

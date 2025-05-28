@@ -18,176 +18,7 @@ estate_cossacks_land_rights = {
 		trigger = { has_government_mechanic = russian_modernization_mechanic }
 		modifier = { monthly_russian_modernization = -0.01 }
 	}
-	ai_will_do = {
-		factor = 5
-		modifier = {
-			factor = 1.4
-			num_of_territories = 5
-		}
-		modifier = {
-			factor = 1.5
-			num_of_territories = 10
-		}
-		modifier = {
-			factor = 1.5
-			num_of_territories = 15
-		}
-		modifier = {
-			factor = 0
-			OR = {
-				NOT = { crown_land_share = 25 }
-				estate_influence = {
-					estate = estate_cossacks
-					influence = 75
-				}
-			}
-			NOT = { has_estate_privilege = estate_cossacks_land_rights }
-		}
-		modifier = {
-			factor = 3
-			OR = {
-				AND = {
-					governing_capacity_percentage = 0.9
-					NOT = { has_estate_privilege = estate_cossacks_land_rights }
-				}
-				#The trigger below should make sure that the AI actually keeps this privilege when enacting it early game
-				AND = {
-					governing_capacity_percentage = 0.6
-					has_estate_privilege = estate_cossacks_land_rights
-				}
-			}
-		}
-		modifier = {
-			factor = 0
-			NOT = { governing_capacity_percentage = 0.5 }
-		}
-		modifier = {
-			factor = 0.8
-			OR = {
-				NOT = { crown_land_share = 40 }
-				AND = {
-					is_absolutism_active = yes
-					NOT = { crown_land_share = 60 }
-				}
-			}
-			NOT = { has_estate_privilege = estate_cossacks_land_rights }
-		}
-		modifier = {
-			factor = 0.8
-			OR = {
-				NOT = { crown_land_share = 30 }
-				AND = {
-					is_absolutism_active = yes
-					NOT = { crown_land_share = 50 }
-				}
-			}
-			NOT = { has_estate_privilege = estate_cossacks_land_rights }
-		}
-		modifier = {
-			factor = 0.8
-			is_absolutism_active = yes
-		}
-		modifier = {
-			factor = 2
-			governing_capacity_percentage = 0.9
-		}
-		modifier = {
-			factor = 3
-			governing_capacity_percentage = 1
-		}
-		modifier = {
-			factor = 10
-			governing_capacity_percentage = 1.2
-		}
-		modifier = {
-			factor = 8
-			NOT = { adm_tech = 12 }
-			governing_capacity_percentage = 0.8
-		}
-		modifier = {
-			factor = 5
-			NOT = { adm_tech = 12 }
-			NOT = { government_rank = 1 }
-			governing_capacity_percentage = 0.65
-		}
-		#Tag specific convincement - after tech 17 (+250 governing capacity) it should not play a role anymore
-		modifier = {
-			factor = 1.25
-			tag = MOS
-			NOT = { adm_tech = 52 }
-		}
-		modifier = {
-			factor = 1.25
-			tag = RUS
-			NOT = { adm_tech = 52 }
-		}
-		modifier = {
-			factor = 1.25
-			tag = TUR
-			NOT = { adm_tech = 52 }
-		}
-		modifier = {
-			factor = 1.25
-			tag = BYZ
-			NOT = { adm_tech = 52 }
-		}
-		modifier = {
-			factor = 1.25
-			tag = FRA
-			NOT = { adm_tech = 52 }
-		}
-		modifier = {
-			factor = 1.25
-			tag = SPA
-			NOT = { adm_tech = 52 }
-		}
-		modifier = {
-			factor = 1.25
-			tag = PLC
-			NOT = { adm_tech = 52 }
-		}
-		#Has already a similar privilege active
-		modifier = {
-			factor = 0.75
-			has_estate_privilege = estate_brahmins_land_rights
-		}
-		modifier = {
-			factor = 0.75
-			has_estate_privilege = estate_nobles_land_rights
-		}
-		modifier = {
-			factor = 0.75
-			has_estate_privilege = estate_church_land_rights
-		}
-		modifier = {
-			factor = 0.75
-			has_estate_privilege = estate_maratha_land_rights
-		}
-		modifier = {
-			factor = 0.75
-			has_estate_privilege = estate_burghers_land_rights
-		}
-		modifier = {
-			factor = 0.75
-			has_estate_privilege = estate_vaisyas_land_rights
-		}
-		modifier = {
-			factor = 0.75
-			has_estate_privilege = estate_nomadic_tribes_land_rights
-		}
-		modifier = {
-			factor = 0.75
-			has_estate_privilege = estate_dhimmi_land_rights
-		}
-		modifier = {
-			factor = 0.75
-			has_estate_privilege = estate_jains_land_rights
-		}
-		modifier = {
-			factor = 0.75
-			has_estate_privilege = estate_rajput_land_rights
-		}
-	}
+	ai_will_do = { factor = 0 }
 }
 
 estate_cossacks_exploration_expedition = {
@@ -276,31 +107,7 @@ estate_cossacks_exploration_expedition = {
 		trigger = { has_government_mechanic = russian_modernization_mechanic }
 		modifier = { monthly_russian_modernization = -0.01 }
 	}
-	ai_will_do = {
-		factor = 1
-		modifier = {
-			factor = 10
-			OR = {
-				tag = MOS
-				tag = RUS
-			}
-		}
-		modifier = {
-			factor = 0
-			OR = {
-				NOT = { crown_land_share = 25 }
-				estate_influence = {
-					estate = estate_cossacks
-					influence = 75
-				}
-			}
-			NOT = { has_estate_privilege = estate_cossacks_exploration_expedition }
-		}
-		modifier = {
-			factor = 0
-			is_absolutism_active = yes
-		}
-	}
+	ai_will_do = { factor = 0 }
 }
 
 estate_cossacks_cossack_self_governance = {
@@ -317,13 +124,7 @@ estate_cossacks_cossack_self_governance = {
 		trigger = { has_government_mechanic = russian_modernization_mechanic }
 		modifier = { monthly_russian_modernization = -0.01 }
 	}
-	ai_will_do = {
-		factor = 10
-		modifier = {
-			factor = 0
-			is_absolutism_active = yes
-		}
-	}
+	ai_will_do = { factor = 0 }
 }
 
 estate_cossacks_establish_the_cossack_regiments = {
@@ -351,29 +152,10 @@ estate_cossacks_establish_the_cossack_regiments = {
 		trigger = { has_government_mechanic = russian_modernization_mechanic }
 		modifier = { monthly_russian_modernization = -0.01 }
 	}
-	ai_will_do = {
-		factor = 1
-		modifier = {
-			factor = 10
-			any_owned_province = {
-				has_terrain = steppe
-			}
-		}
-		modifier = {
-			factor = 0
-			OR = {
-				NOT = { crown_land_share = 25 }
-				estate_influence = {
-					estate = estate_cossacks
-					influence = 75
-				}
-			}
-			NOT = { has_estate_privilege = estate_cossacks_establish_the_cossack_regiments }
-		}
-	}
 	additional_description = {
 		cossacks_regiment
 	}
+	ai_will_do = { factor = 0 }
 }
 
 estate_cossacks_expand_the_cossack_regiments = {
@@ -439,27 +221,7 @@ estate_cossacks_expand_the_cossack_regiments = {
 		trigger = { has_government_mechanic = russian_modernization_mechanic }
 		modifier = { monthly_russian_modernization = -0.01 }
 	}
-	ai_will_do = {
-		factor = 1
-		modifier = {
-			factor = 10
-			any_owned_province = {
-				has_terrain = steppe
-			}
-			is_absolutism_active = no
-		}
-		modifier = {
-			factor = 0
-			OR = {
-				NOT = { crown_land_share = 25 }
-				estate_influence = {
-					estate = estate_cossacks
-					influence = 75
-				}
-			}
-			NOT = { has_estate_privilege = estate_cossacks_establish_the_cossack_regiments }
-		}
-	}
+	ai_will_do = { factor = 0 }
 }
 
 estate_cossacks_recruit_cossack_generals = {
@@ -477,13 +239,7 @@ estate_cossacks_recruit_cossack_generals = {
 		trigger = { has_government_mechanic = russian_modernization_mechanic }
 		modifier = { monthly_russian_modernization = -0.01 }
 	}
-	ai_will_do = {
-		factor = 10
-		modifier = {
-			factor = 0
-			is_absolutism_active = yes
-		}
-	}
+	ai_will_do = { factor = 0 }
 }
 
 #DLC Privileges
@@ -549,9 +305,7 @@ estate_cossacks_prime_herding_rights = {
 		trigger = { has_government_mechanic = russian_modernization_mechanic }
 		modifier = { monthly_russian_modernization = -0.01 }
 	}
-	ai_will_do = {
-		factor = 0
-	}
+	ai_will_do = { factor = 0 }
 }
 
 #Domination generic Estate Privileges
@@ -607,9 +361,7 @@ estate_cossacks_freedom_of_the_steppes = {
 		trigger = { has_government_mechanic = russian_modernization_mechanic }
 		modifier = { monthly_russian_modernization = -0.01 }
 	}
-	ai_will_do = {
-		factor = 0
-	}
+	ai_will_do = { factor = 0 }
 }
 estate_cossacks_grant_military_leadership = {
 	icon = privilege_army_tradition
@@ -641,9 +393,7 @@ estate_cossacks_grant_military_leadership = {
 		trigger = { has_government_mechanic = russian_modernization_mechanic }
 		modifier = { monthly_russian_modernization = -0.01 }
 	}
-	ai_will_do = {
-		factor = 0
-	}
+	ai_will_do = { factor = 0 }
 }
 estate_cossacks_exempt_from_bureaucracy = {
 	icon = privilege_empty_throne
@@ -675,9 +425,7 @@ estate_cossacks_exempt_from_bureaucracy = {
 		trigger = { has_government_mechanic = russian_modernization_mechanic }
 		modifier = { monthly_russian_modernization = -0.02 }
 	}
-	ai_will_do = {
-		factor = 0
-	}
+	ai_will_do = { factor = 0 }
 }
 estate_cossacks_military_service = {
 	icon = privilege_military
@@ -709,9 +457,7 @@ estate_cossacks_military_service = {
 		trigger = { has_government_mechanic = russian_modernization_mechanic }
 		modifier = { monthly_russian_modernization = -0.01 }
 	}
-	ai_will_do = {
-		factor = 0
-	}
+	ai_will_do = { factor = 0 }
 }
 estate_cossacks_expand_cossacks_raiders = {
 	icon = privilege_loot
@@ -754,7 +500,5 @@ estate_cossacks_expand_cossacks_raiders = {
 		trigger = { has_government_mechanic = russian_modernization_mechanic }
 		modifier = { monthly_russian_modernization = -0.01 }
 	}
-	ai_will_do = {
-		factor = 0
-	}
+	ai_will_do = { factor = 0 }
 }

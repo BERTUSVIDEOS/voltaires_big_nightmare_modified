@@ -541,56 +541,40 @@ vn_hab_missions_slot_2 = {
             }
 		}
 		effect = {
-            if = {
+            ingolstadt_area = {
                 limit = {
-                    exists = BAV
-                    valid_for_personal_unions_trigger = yes
-                    BAV = {
-                        valid_for_personal_unions_trigger = yes
-                    }
+                    NOT = { is_core = ROOT }
+                    NOT = { is_permanent_claim = ROOT }
                 }
-                add_casus_belli = {
-                    type = cb_fabricated_claims
-                    months = 300
-                    target = BAV
-                }
+                add_permanent_claim = ROOT
             }
-            else = {
-                ingolstadt_area = {
-                    limit = {
-                        NOT = { is_core = ROOT }
-                        NOT = { is_permanent_claim = ROOT }
-                    }
-                    add_permanent_claim = ROOT
+            innkreis_area = {
+                limit = {
+                    NOT = { is_core = ROOT }
+                    NOT = { is_permanent_claim = ROOT }
                 }
-                innkreis_area = {
-                    limit = {
-                        NOT = { is_core = ROOT }
-                        NOT = { is_permanent_claim = ROOT }
-                    }
-                    add_permanent_claim = ROOT
+                add_permanent_claim = ROOT
+            }
+            munich_area = {
+                limit = {
+                    NOT = { is_core = ROOT }
+                    NOT = { is_permanent_claim = ROOT }
                 }
-                munich_area = {
-                    limit = {
-                        NOT = { is_core = ROOT }
-                        NOT = { is_permanent_claim = ROOT }
-                    }
-                    add_permanent_claim = ROOT
+                add_permanent_claim = ROOT
+            }
+            straubing_area = {
+                limit = {
+                    NOT = { is_core = ROOT }
+                    NOT = { is_permanent_claim = ROOT }
                 }
-                straubing_area = {
-                    limit = {
-                        NOT = { is_core = ROOT }
-                        NOT = { is_permanent_claim = ROOT }
-                    }
-                    add_permanent_claim = ROOT
+                add_permanent_claim = ROOT
+            }
+            landshut_area = {
+                limit = {
+                    NOT = { is_core = ROOT }
+                    NOT = { is_permanent_claim = ROOT }
                 }
-                landshut_area = {
-                    limit = {
-                        NOT = { is_core = ROOT }
-                        NOT = { is_permanent_claim = ROOT }
-                    }
-                    add_permanent_claim = ROOT
-                }
+                add_permanent_claim = ROOT
             }
 		}
     }
@@ -658,154 +642,138 @@ vn_hab_missions_slot_2 = {
 			}
 		}
         effect = {
-            if = {
+            nagyatad_area = {
                 limit = {
-                    exists = HUN
-                    valid_for_personal_unions_trigger = yes
-                    HUN = {
-                        valid_for_personal_unions_trigger = yes
-                    }
+                    NOT = { is_core = ROOT }
+                    NOT = { is_permanent_claim = ROOT }
                 }
-                add_casus_belli = {
-                    type = cb_fabricated_claims
-                    months = 300
-                    target = HUN
-                }
+                add_permanent_claim = ROOT
             }
-            else = {
-                nagyatad_area = {
-                    limit = {
-                        NOT = { is_core = ROOT }
-                        NOT = { is_permanent_claim = ROOT }
-                    }
-                    add_permanent_claim = ROOT
+            sopron_area = {
+                limit = {
+                    NOT = { is_core = ROOT }
+                    NOT = { is_permanent_claim = ROOT }
                 }
-                sopron_area = {
-                    limit = {
-                        NOT = { is_core = ROOT }
-                        NOT = { is_permanent_claim = ROOT }
-                    }
-                    add_permanent_claim = ROOT
+                add_permanent_claim = ROOT
+            }
+            veszprem_area = {
+                limit = {
+                    NOT = { is_core = ROOT }
+                    NOT = { is_permanent_claim = ROOT }
                 }
-                veszprem_area = {
-                    limit = {
-                        NOT = { is_core = ROOT }
-                        NOT = { is_permanent_claim = ROOT }
-                    }
-                    add_permanent_claim = ROOT
+                add_permanent_claim = ROOT
+            }
+            fejer_area = {
+                limit = {
+                    NOT = { is_core = ROOT }
+                    NOT = { is_permanent_claim = ROOT }
                 }
-                fejer_area = {
-                    limit = {
-                        NOT = { is_core = ROOT }
-                        NOT = { is_permanent_claim = ROOT }
-                    }
-                    add_permanent_claim = ROOT
+                add_permanent_claim = ROOT
+            }
+            bihar_area = {
+                limit = {
+                    NOT = { is_core = ROOT }
+                    NOT = { is_permanent_claim = ROOT }
                 }
-                bihar_area = {
-                    limit = {
-                        NOT = { is_core = ROOT }
-                        NOT = { is_permanent_claim = ROOT }
-                    }
-                    add_permanent_claim = ROOT
+                add_permanent_claim = ROOT
+            }
+            bekes_area = {
+                limit = {
+                    NOT = { is_core = ROOT }
+                    NOT = { is_permanent_claim = ROOT }
                 }
-                bekes_area = {
-                    limit = {
-                        NOT = { is_core = ROOT }
-                        NOT = { is_permanent_claim = ROOT }
-                    }
-                    add_permanent_claim = ROOT
+                add_permanent_claim = ROOT
+            }
+            torontal_area = {
+                limit = {
+                    NOT = { is_core = ROOT }
+                    NOT = { is_permanent_claim = ROOT }
                 }
-                torontal_area = {
-                    limit = {
-                        NOT = { is_core = ROOT }
-                        NOT = { is_permanent_claim = ROOT }
-                    }
-                    add_permanent_claim = ROOT
+                add_permanent_claim = ROOT
+            }
+            szabolcs_area = {
+                limit = {
+                    NOT = { is_core = ROOT }
+                    NOT = { is_permanent_claim = ROOT }
                 }
-                szabolcs_area = {
-                    limit = {
-                        NOT = { is_core = ROOT }
-                        NOT = { is_permanent_claim = ROOT }
-                    }
-                    add_permanent_claim = ROOT
+                add_permanent_claim = ROOT
+            }
+            szatmar_area = {
+                limit = {
+                    NOT = { is_core = ROOT }
+                    NOT = { is_permanent_claim = ROOT }
                 }
-                szatmar_area = {
-                    limit = {
-                        NOT = { is_core = ROOT }
-                        NOT = { is_permanent_claim = ROOT }
-                    }
-                    add_permanent_claim = ROOT
+                add_permanent_claim = ROOT
+            }
+            orsova_area = {
+                limit = {
+                    NOT = { is_core = ROOT }
+                    NOT = { is_permanent_claim = ROOT }
                 }
-                orsova_area = {
-                    limit = {
-                        NOT = { is_core = ROOT }
-                        NOT = { is_permanent_claim = ROOT }
-                    }
-                    add_permanent_claim = ROOT
+                add_permanent_claim = ROOT
+            }
+            nyitra_area = {
+                limit = {
+                    NOT = { is_core = ROOT }
+                    NOT = { is_permanent_claim = ROOT }
                 }
-                nyitra_area = {
-                    limit = {
-                        NOT = { is_core = ROOT }
-                        NOT = { is_permanent_claim = ROOT }
-                    }
-                    add_permanent_claim = ROOT
+                add_permanent_claim = ROOT
+            }
+            trencsin_area = {
+                limit = {
+                    NOT = { is_core = ROOT }
+                    NOT = { is_permanent_claim = ROOT }
                 }
-                trencsin_area = {
-                    limit = {
-                        NOT = { is_core = ROOT }
-                        NOT = { is_permanent_claim = ROOT }
-                    }
-                    add_permanent_claim = ROOT
+                add_permanent_claim = ROOT
+            }
+            hont_area = {
+                limit = {
+                    NOT = { is_core = ROOT }
+                    NOT = { is_permanent_claim = ROOT }
                 }
-                hont_area = {
-                    limit = {
-                        NOT = { is_core = ROOT }
-                        NOT = { is_permanent_claim = ROOT }
-                    }
-                    add_permanent_claim = ROOT
+                add_permanent_claim = ROOT
+            }
+            abauj_area = {
+                limit = {
+                    NOT = { is_core = ROOT }
+                    NOT = { is_permanent_claim = ROOT }
                 }
-                abauj_area = {
-                    limit = {
-                        NOT = { is_core = ROOT }
-                        NOT = { is_permanent_claim = ROOT }
-                    }
-                    add_permanent_claim = ROOT
+                add_permanent_claim = ROOT
+            }
+            zemplen_area = {
+                limit = {
+                    NOT = { is_core = ROOT }
+                    NOT = { is_permanent_claim = ROOT }
                 }
-                zemplen_area = {
-                    limit = {
-                        NOT = { is_core = ROOT }
-                        NOT = { is_permanent_claim = ROOT }
-                    }
-                    add_permanent_claim = ROOT
+                add_permanent_claim = ROOT
+            }
+            pest_area = {
+                limit = {
+                    NOT = { is_core = ROOT }
+                    NOT = { is_permanent_claim = ROOT }
                 }
-                pest_area = {
-                    limit = {
-                        NOT = { is_core = ROOT }
-                        NOT = { is_permanent_claim = ROOT }
-                    }
-                    add_permanent_claim = ROOT
+                add_permanent_claim = ROOT
+            }
+            kiskun_area = {
+                limit = {
+                    NOT = { is_core = ROOT }
+                    NOT = { is_permanent_claim = ROOT }
                 }
-                kiskun_area = {
-                    limit = {
-                        NOT = { is_core = ROOT }
-                        NOT = { is_permanent_claim = ROOT }
-                    }
-                    add_permanent_claim = ROOT
+                add_permanent_claim = ROOT
+            }
+            bacs_area = {
+                limit = {
+                    NOT = { is_core = ROOT }
+                    NOT = { is_permanent_claim = ROOT }
                 }
-                bacs_area = {
-                    limit = {
-                        NOT = { is_core = ROOT }
-                        NOT = { is_permanent_claim = ROOT }
-                    }
-                    add_permanent_claim = ROOT
+                add_permanent_claim = ROOT
+            }
+            heves_area = {
+                limit = {
+                    NOT = { is_core = ROOT }
+                    NOT = { is_permanent_claim = ROOT }
                 }
-                heves_area = {
-                    limit = {
-                        NOT = { is_core = ROOT }
-                        NOT = { is_permanent_claim = ROOT }
-                    }
-                    add_permanent_claim = ROOT
-                }
+                add_permanent_claim = ROOT
             }
         }
     }
@@ -1330,49 +1298,33 @@ vn_hab_missions_slot_3 = {
 		}
 		effect = {
             add_prestige_or_monarch_power = { amount = 15 } 
-			if = {
+            burgundy_area = {
                 limit = {
-                    exists = BUR
-                    valid_for_personal_unions_trigger = yes
-                    BUR = {
-                        valid_for_personal_unions_trigger = yes
-                    }
+                    NOT = { is_core = ROOT }
+                    NOT = { is_permanent_claim = ROOT }
                 }
-                add_casus_belli = {
-                    type = cb_fabricated_claims
-                    months = 300
-                    target = BUR
-                }
+                add_permanent_claim = ROOT
             }
-            else = {
-                burgundy_area = {
-                    limit = {
-                        NOT = { is_core = ROOT }
-                        NOT = { is_permanent_claim = ROOT }
-                    }
-                    add_permanent_claim = ROOT
+            charolais_area = {
+                limit = {
+                    NOT = { is_core = ROOT }
+                    NOT = { is_permanent_claim = ROOT }
                 }
-                charolais_area = {
-                    limit = {
-                        NOT = { is_core = ROOT }
-                        NOT = { is_permanent_claim = ROOT }
-                    }
-                    add_permanent_claim = ROOT
+                add_permanent_claim = ROOT
+            }
+            dole_area = {
+                limit = {
+                    NOT = { is_core = ROOT }
+                    NOT = { is_permanent_claim = ROOT }
                 }
-                dole_area = {
-                    limit = {
-                        NOT = { is_core = ROOT }
-                        NOT = { is_permanent_claim = ROOT }
-                    }
-                    add_permanent_claim = ROOT
+                add_permanent_claim = ROOT
+            }
+            besancon_area = {
+                limit = {
+                    NOT = { is_core = ROOT }
+                    NOT = { is_permanent_claim = ROOT }
                 }
-                besancon_area = {
-                    limit = {
-                        NOT = { is_core = ROOT }
-                        NOT = { is_permanent_claim = ROOT }
-                    }
-                    add_permanent_claim = ROOT
-                }
+                add_permanent_claim = ROOT
             }
 		}
     }
@@ -2210,112 +2162,96 @@ vn_hab_missions_slot_4 = {
 		}
         effect = {
             country_event = { id = vn_missions.37 }
-            if = {
+            salento_area = {
                 limit = {
-                    exists = NAP
-                    valid_for_personal_unions_trigger = yes
-                    NAP = {
-                        valid_for_personal_unions_trigger = yes
-                    }
+                    NOT = { is_core = ROOT }
+                    NOT = { is_permanent_claim = ROOT }
                 }
-                add_casus_belli = {
-                    type = cb_fabricated_claims
-                    months = 300
-                    target = NAP
-                }
+                add_permanent_claim = ROOT
             }
-            else = {
-                salento_area = {
-                    limit = {
-                        NOT = { is_core = ROOT }
-                        NOT = { is_permanent_claim = ROOT }
-                    }
-                    add_permanent_claim = ROOT
+            north_salento_area = {
+                limit = {
+                    NOT = { is_core = ROOT }
+                    NOT = { is_permanent_claim = ROOT }
                 }
-                north_salento_area = {
-                    limit = {
-                        NOT = { is_core = ROOT }
-                        NOT = { is_permanent_claim = ROOT }
-                    }
-                    add_permanent_claim = ROOT
+                add_permanent_claim = ROOT
+            }
+            foggia_area = {
+                limit = {
+                    NOT = { is_core = ROOT }
+                    NOT = { is_permanent_claim = ROOT }
                 }
-                foggia_area = {
-                    limit = {
-                        NOT = { is_core = ROOT }
-                        NOT = { is_permanent_claim = ROOT }
-                    }
-                    add_permanent_claim = ROOT
+                add_permanent_claim = ROOT
+            }
+            calabria_area = {
+                limit = {
+                    NOT = { is_core = ROOT }
+                    NOT = { is_permanent_claim = ROOT }
                 }
-                calabria_area = {
-                    limit = {
-                        NOT = { is_core = ROOT }
-                        NOT = { is_permanent_claim = ROOT }
-                    }
-                    add_permanent_claim = ROOT
+                add_permanent_claim = ROOT
+            }
+            cosenza_area = {
+                limit = {
+                    NOT = { is_core = ROOT }
+                    NOT = { is_permanent_claim = ROOT }
                 }
-                cosenza_area = {
-                    limit = {
-                        NOT = { is_core = ROOT }
-                        NOT = { is_permanent_claim = ROOT }
-                    }
-                    add_permanent_claim = ROOT
+                add_permanent_claim = ROOT
+            }
+            basilicata_area = {
+                limit = {
+                    NOT = { is_core = ROOT }
+                    NOT = { is_permanent_claim = ROOT }
                 }
-                basilicata_area = {
-                    limit = {
-                        NOT = { is_core = ROOT }
-                        NOT = { is_permanent_claim = ROOT }
-                    }
-                    add_permanent_claim = ROOT
+                add_permanent_claim = ROOT
+            }
+            ariano_area = {
+                limit = {
+                    NOT = { is_core = ROOT }
+                    NOT = { is_permanent_claim = ROOT }
                 }
-                ariano_area = {
-                    limit = {
-                        NOT = { is_core = ROOT }
-                        NOT = { is_permanent_claim = ROOT }
-                    }
-                    add_permanent_claim = ROOT
+                add_permanent_claim = ROOT
+            }
+            abruzzo_area = {
+                limit = {
+                    NOT = { is_core = ROOT }
+                    NOT = { is_permanent_claim = ROOT }
                 }
-                abruzzo_area = {
-                    limit = {
-                        NOT = { is_core = ROOT }
-                        NOT = { is_permanent_claim = ROOT }
-                    }
-                    add_permanent_claim = ROOT
+                add_permanent_claim = ROOT
+            }
+            molise_area = {
+                limit = {
+                    NOT = { is_core = ROOT }
+                    NOT = { is_permanent_claim = ROOT }
                 }
-                molise_area = {
-                    limit = {
-                        NOT = { is_core = ROOT }
-                        NOT = { is_permanent_claim = ROOT }
-                    }
-                    add_permanent_claim = ROOT
+                add_permanent_claim = ROOT
+            }
+            salerno_area = {
+                limit = {
+                    NOT = { is_core = ROOT }
+                    NOT = { is_permanent_claim = ROOT }
                 }
-                salerno_area = {
-                    limit = {
-                        NOT = { is_core = ROOT }
-                        NOT = { is_permanent_claim = ROOT }
-                    }
-                    add_permanent_claim = ROOT
+                add_permanent_claim = ROOT
+            }
+            naples_area = {
+                limit = {
+                    NOT = { is_core = ROOT }
+                    NOT = { is_permanent_claim = ROOT }
                 }
-                naples_area = {
-                    limit = {
-                        NOT = { is_core = ROOT }
-                        NOT = { is_permanent_claim = ROOT }
-                    }
-                    add_permanent_claim = ROOT
+                add_permanent_claim = ROOT
+            }
+            capua_area = {
+                limit = {
+                    NOT = { is_core = ROOT }
+                    NOT = { is_permanent_claim = ROOT }
                 }
-                capua_area = {
-                    limit = {
-                        NOT = { is_core = ROOT }
-                        NOT = { is_permanent_claim = ROOT }
-                    }
-                    add_permanent_claim = ROOT
+                add_permanent_claim = ROOT
+            }
+            sirente_velino_area = {
+                limit = {
+                    NOT = { is_core = ROOT }
+                    NOT = { is_permanent_claim = ROOT }
                 }
-                sirente_velino_area = {
-                    limit = {
-                        NOT = { is_core = ROOT }
-                        NOT = { is_permanent_claim = ROOT }
-                    }
-                    add_permanent_claim = ROOT
-                }
+                add_permanent_claim = ROOT
             }
         }
     }
@@ -2483,28 +2419,12 @@ vn_hab_missions_slot_5 = {
             }
 		}
         effect = {
-            if = {
+            bohemia_region = {
                 limit = {
-                    exists = BOH
-                    valid_for_personal_unions_trigger = yes
-                    BOH = {
-                        valid_for_personal_unions_trigger = yes
-                    }
+                    NOT = { is_core = ROOT }
+                    NOT = { is_permanent_claim = ROOT }
                 }
-                add_casus_belli = {
-                    type = cb_fabricated_claims
-                    months = 300
-                    target = BOH
-                }
-            }
-            else = {
-                bohemia_region = {
-                    limit = {
-                        NOT = { is_core = ROOT }
-                        NOT = { is_permanent_claim = ROOT }
-                    }
-                    add_permanent_claim = ROOT
-                }
+                add_permanent_claim = ROOT
             }
             add_imperial_influence = 10
             custom_tooltip = vn_hab_establish_reichstag.tt
@@ -2650,49 +2570,33 @@ vn_hab_missions_slot_5 = {
             }
         }
         effect = {
-            if = {
+            radom_area = {
                 limit = {
-                    exists = POL
-                    valid_for_personal_unions_trigger = yes
-                    POL = {
-                        valid_for_personal_unions_trigger = yes
-                    }
+                    NOT = { is_core = ROOT }
+                    NOT = { is_permanent_claim = ROOT }
                 }
-                add_casus_belli = {
-                    type = cb_fabricated_claims
-                    months = 300
-                    target = POL
-                }
+                add_permanent_claim = ROOT
             }
-            else = {
-                radom_area = {
-                    limit = {
-                        NOT = { is_core = ROOT }
-                        NOT = { is_permanent_claim = ROOT }
-                    }
-                    add_permanent_claim = ROOT
+            lublin_area = {
+                limit = {
+                    NOT = { is_core = ROOT }
+                    NOT = { is_permanent_claim = ROOT }
                 }
-                lublin_area = {
-                    limit = {
-                        NOT = { is_core = ROOT }
-                        NOT = { is_permanent_claim = ROOT }
-                    }
-                    add_permanent_claim = ROOT
+                add_permanent_claim = ROOT
+            }
+            warsaw_area = {
+                limit = {
+                    NOT = { is_core = ROOT }
+                    NOT = { is_permanent_claim = ROOT }
                 }
-                warsaw_area = {
-                    limit = {
-                        NOT = { is_core = ROOT }
-                        NOT = { is_permanent_claim = ROOT }
-                    }
-                    add_permanent_claim = ROOT
+                add_permanent_claim = ROOT
+            }
+            nur_area = {
+                limit = {
+                    NOT = { is_core = ROOT }
+                    NOT = { is_permanent_claim = ROOT }
                 }
-                nur_area = {
-                    limit = {
-                        NOT = { is_core = ROOT }
-                        NOT = { is_permanent_claim = ROOT }
-                    }
-                    add_permanent_claim = ROOT
-                }
+                add_permanent_claim = ROOT
             }
         }
     }

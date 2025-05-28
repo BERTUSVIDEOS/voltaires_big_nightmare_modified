@@ -5796,23 +5796,28 @@ estate_action_PROMOTE_MARATHA_NOBILITY_MARATHA = {
 		}
 	}
 }
-estate_action_RECRUIT_MINISTER_MARATHA = {
+estate_action_RECRUIT_GENERAL_HOLY_ORDERS = {
+	create_general_scaling_with_tradition_and_pips = {
+		add_shock = 1
+	}
+	add_estate_influence_modifier = {
+		estate = estate_holy_orders
+		desc = RECRUIT_GENERAL_HOLY_ORDERS
+		influence = 10
+		duration = 5475
+	}
+	add_estate_loyalty = {
+		estate = estate_holy_orders
+		loyalty = -15
+	}
 	if = {
 		limit = {
-			has_reform = permanent_marathas_council_reform
+			has_estate = estate_nobles
 		}
-		custom_tooltip = maratha_general.tooltip
-		hidden_effect = {
-			create_general = {
-				tradition = 40
-				add_shock = 1
-				culture = ROOT
-			}
+		add_estate_loyalty = {
+			estate = estate_nobles
+			loyalty = -10
 		}
-	}
-	generate_estate_advisor = {
-		estate = estate_maratha
-		type = commandant
 	}
 }
 estate_action_RECRUIT_MARATHI_TROOPS_MARATHA = {
@@ -6593,6 +6598,16 @@ estate_action_RECRUIT_MINISTER_HOLY_ORDERS = {
 		estate = estate_holy_orders
 		type = commandant
 	}
+	add_estate_loyalty = {
+		estate = estate_holy_orders
+		loyalty = -10
+	}
+	add_estate_influence_modifier = {
+		estate = estate_holy_orders
+		desc = RECRUIT_MINISTER_HOLY_ORDERS
+		influence = 10
+		duration = 5475
+	}
 }
 estate_action_RAISE_COSSACK_HOST_HOLY_ORDERS = {
 	custom_tooltip = RAISE_COSSACK_HOST_HOLY_ORDERS_effect_tt
@@ -6659,16 +6674,6 @@ estate_action_RAISE_COSSACK_HOST_HOLY_ORDERS = {
 		duration = 1825
 	}
 }
-estate_action_RECRUIT_MINISTER_HOLY_ORDERS = {
-	generate_estate_advisor = {
-		estate = estate_holy_orders
-		type = army_reformer
-	}
-	add_estate_loyalty = {
-		estate = estate_holy_orders
-		loyalty = -10
-	}
-}
 estate_action_HEIR_KNIGHT_HOLY_ORDERS = {
 	add_heir_claim = -10
 	change_heir_mil = 1
@@ -6701,15 +6706,6 @@ estate_action_PROMOTE_KNIGHTLY_NOBILITY_HOLY_ORDERS = {
 	}
 	auto_complete_estate_agenda = {
 		estate = estate_holy_orders
-	}
-	if = {
-		limit = {
-			has_estate = estate_nobles
-		}
-		add_estate_loyalty = {
-			estate = estate_nobles
-			loyalty = -15
-		}
 	}
 }
 

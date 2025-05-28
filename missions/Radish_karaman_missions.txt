@@ -1,0 +1,394 @@
+vn_kar_missions_slot_1_a = {
+	
+	slot = 6
+	generic = no
+	ai = yes
+	potential = {
+		tag = KAR
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	vn_kar_improve_our_capital = {
+		
+		position = 1
+		icon = per_the_city_of_daman
+		required_missions = {	}
+		
+		trigger = { 
+			6783 = {
+				development = 15
+				num_of_buildings_in_province = 5
+				num_of_times_expanded_infrastructure = 1
+			}
+		}
+		
+		effect = {
+			isauria_area = { 
+				add_prosperity = 100
+			}
+			add_adm_power = 100
+		}
+	}
+}
+
+vn_kar_missions_slot_2_a = {
+	
+	slot = 7
+	generic = no
+	ai = yes
+	potential = {
+		tag = KAR
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	vn_kar_secure_strong_leadership = {
+		
+		position = 3
+		icon = mission_fiqh_laws
+		
+		required_missions = {	}
+		
+		trigger = {
+			ruler_total_stats = {
+				amount = 9
+			}
+			employed_advisor = {
+				category = ADM
+				skill = 1
+			}
+			employed_advisor = {
+				category = DIP
+				skill = 1
+			}
+			employed_advisor = {
+				category = MIL
+				skill = 1
+			}
+		}
+		
+		effect = {
+			change_government_reform_progress = 50
+			add_legitimacy = 50
+			add_power_projection = { 
+				type = mission_rewards_power_projection
+				amount = 50
+			}
+		}
+	}
+}
+
+vn_kar_missions_slot_3_a = {
+
+	slot = 8
+	generic = no
+	ai = yes
+	potential = {
+		tag = KAR
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	vn_kar_rally_the_fanatics = {
+		
+		position = 1
+		icon = mam_baghdad
+		required_missions = {	}
+		
+		trigger = {
+			stability = 1
+			OR = {
+				army_size = 20
+				army_size_percentage = 1
+			}
+		}
+		
+		effect = {
+			anemorion_area = {
+				limit = {
+							NOT = { is_core = ROOT }
+							NOT = { is_permanent_claim = ROOT }
+						}
+				add_permanent_claim = ROOT
+			}
+			seleukeia_area = {
+				limit = {
+							NOT = { is_core = ROOT }
+							NOT = { is_permanent_claim = ROOT }
+						}
+				add_permanent_claim = ROOT
+			}
+			lykandos_area = {
+				limit = {
+							NOT = { is_core = ROOT }
+							NOT = { is_permanent_claim = ROOT }
+						}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	vn_kar_unite_the_south = {
+		
+		position = 2
+		icon = per_reform_our_defenses
+		
+		required_missions = {
+			vn_kar_rally_the_fanatics
+		}
+		
+		trigger = {
+			owns_all_provinces = {
+					area = anemorion_area		
+			}
+			owns_all_provinces = {
+					area = seleukeia_area		
+			}
+			owns_all_provinces = {
+					area = lykandos_area		
+			}
+		}
+		
+		effect = {
+			anemorion_area = {
+				limit = { owned_by = ROOT }
+				add_local_autonomy = -10
+			}
+			seleukeia_area = {
+				limit = { owned_by = ROOT }
+				add_local_autonomy = -10 = -10
+			}
+			lykandos_area = {
+				limit = { owned_by = ROOT }
+				add_local_autonomy = -10
+			}
+			tarsos_area = {
+				limit = {
+							NOT = { is_core = ROOT }
+							NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			teluch_area = {
+				limit = {
+							NOT = { is_core = ROOT }
+							NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			antitaurus_area = {
+				limit = {
+							NOT = { is_core = ROOT }
+							NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			6251 = {
+				limit = {
+							NOT = { is_core = ROOT }
+							NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			6246 = {
+				limit = {
+							NOT = { is_core = ROOT }
+							NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			6245 = {
+				limit = {
+							NOT = { is_core = ROOT }
+							NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			
+		}
+	}
+	
+	vn_kar_pacify_the_beyliks = {
+		
+		position = 3
+		icon = per_butcher_black_sheep
+		
+		required_missions = {
+			vn_kar_unite_the_south
+		}
+		
+		trigger = {
+			NOT = {	exists = ANY }
+			NOT = {	exists = RAM }
+			NOT = {	exists = DUL }
+		}
+		effect = {
+			add_stability = 1
+			add_mil_power = 100
+		}
+	}
+	
+	vn_kar_prepare_for_the_ottoman_invasion = {
+		
+		position = 4
+		icon = mission_janissary_soldier
+		
+		required_missions = {
+			vn_kar_pacify_the_beyliks
+			vn_kar_secure_strong_leadership
+		}
+		
+		trigger = {
+			army_size = 60
+			manpower_percentage = 0.9
+			mil_tech = 6
+		}
+		
+		effect = {
+			east_anatolia_region = {
+				limit = {
+							NOT = { is_core = ROOT }
+							NOT = { is_permanent_claim = ROOT }
+						}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	vn_kar_end_of_the_ottomans = {
+	
+		position = 5
+		icon = geo_break_the_crescent_2
+		
+		required_missions = {
+			vn_kar_prepare_for_the_ottoman_invasion
+		}
+		
+		trigger = {
+			war_score_against = {
+				who = TUR
+				value = 75
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = vn_kar_zelaous_frenzy
+				duration = 3650
+			}
+		}
+	}
+
+}
+
+vn_kar_missions_slot_4_a = {
+	
+	slot = 9
+	generic = no
+	ai = yes
+	potential = {
+		tag = KAR
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+		
+		vn_kar_choose_a_religious_path = {
+		position = 1
+		icon = mission_islamic_golden_age
+		required_missions = { }
+		
+		trigger = {
+			OR = {
+				piety = 0.5
+				NOT = { piety = -0.5 }
+			}
+		}
+		effect = {
+			complex_dynamic_effect = {
+				first_custom_tooltip = KAR_LEGAL
+				first_limit = "
+					ROOT = {
+						piety = 0.5
+					}
+				"
+				first_effect = "
+					add_country_modifier = {
+						name = kar_legal_nation
+						duration = 7300
+					}
+				"
+				second_custom_tooltip = KAR_MYSTIC
+				second_limit = "
+					ROOT = {
+						NOT = { piety = -0.5 }
+					}
+				"
+				second_effect = "
+					add_country_modifier = {
+						name = kar_mystic_nation
+						duration = 7300
+					}
+				"
+			}
+		}
+	}
+}
+
+vn_kar_missions_slot_5_a = {
+	
+	slot = 10
+	generic = no
+	ai = yes
+	potential = {
+		tag = KAR
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	vn_kar_kick_out_the_crusaders = {
+		
+		position = 2
+		icon = mission_teutonic_knights
+		required_missions = {	}
+		
+		trigger = {
+			owns = 3083
+		}
+		
+		effect = {
+			add_casus_belli = {
+				target = CYP
+				type = cb_vassalize_mission
+				months = 120
+			}
+		}
+	}
+	
+	vn_kar_subjugate_cyprus = {
+		
+		position = 3
+		icon = mission_invade_island
+		required_missions = {
+			vn_kar_kick_out_the_crusaders
+		}
+		
+		trigger = {
+			owns_all_provinces = {
+				area = cyprus_area
+			}
+		}
+		
+		effect = {
+			add_dip_power = 100
+			6260 = {
+				add_unit_construction = {
+						type = galley
+						amount = 10
+						speed = 0.1
+						cost = 0
+				}
+			}
+		}
+	}
+}

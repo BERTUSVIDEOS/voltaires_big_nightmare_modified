@@ -1,0 +1,101 @@
+nrm_development_of_mulsanne_gold_mine = {
+	trade_goods_size = 0.5
+}
+
+nrm_bureau_of_land_management = {
+	development_cost = -0.1
+	global_monthly_devastation = -0.1
+	global_prosperity_growth = 0.1
+}
+
+nrm_paris_military_academy = {
+	infantry_power = 0.10
+	army_tradition = 0.5
+}
+
+vn_byz_theme_system = {
+	global_manpower_modifier = 0.35
+}
+
+vn_byz_ignis_graecus = {
+	galley_power = 0.25
+}
+
+vn_byz_ignis_graecus_perfected = {
+	artillery_power = 0.15
+}
+
+kar_legal_nation = {
+	global_tax_modifier = 0.1
+	global_manpower_modifier = 0.1
+	technology_cost = -0.05
+}
+
+kar_mystic_nation = {
+	global_missionary_strength = 0.015
+	land_morale = 0.05
+	idea_cost = -0.05
+}
+
+vn_kar_zelaous_frenzy = {
+	province_warscore_cost = -0.1
+	core_creation = -0.2
+}
+
+vn_cnd_war_for_anatolia = {
+	province_warscore_cost = -0.2
+	shock_damage_received = -0.15
+}
+
+vn_cnd_prosperity = {
+	centralize_state_cost = -0.25
+	development_cost = -0.1
+}
+
+vn_cnd_victory_over_christianity = {
+	global_heathen_missionary_strength = 0.05
+	fire_damage = 0.10
+	global_manpower_modifier = 0.1
+}
+
+vn_wal_defender_of_the_cross = {
+	land_morale = 0.10
+	yearly_patriarch_authority = 0.01
+}
+
+vn_wal_no_slot_szekely_szaszok = {
+	num_accepted_cultures = 2
+}
+
+vn_wal_ethnic_workforce = {
+	local_development_cost = -0.25
+	local_manpower_modifier = 0.25
+	local_production_efficiency = 0.25
+}
+
+vn_wal_greater_romania_modifier = {
+	global_manpower_modifier = 0.10
+	shock_damage = 0.05
+	fire_damage = 0.05
+}
+
+vn_nrm_defense_of_normandy = {
+	defensiveness = 0.33
+	fort_maintenance_modifier = -0.33
+}
+
+vn_nrm_consolidating_the_north = {
+	global_autonomy = -0.05
+	global_prosperity_growth = 0.1
+	production_efficiency = 0.1
+}
+
+vn_nrm_cooperative_estates = {
+	yearly_army_professionalism = 0.01
+	trade_efficiency = 0.1
+	papal_influence = 1
+}
+
+vn_nrm_population_growth = {
+	manpower_recovery_speed = 0.10
+}

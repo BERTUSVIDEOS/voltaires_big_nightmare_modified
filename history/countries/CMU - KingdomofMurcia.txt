@@ -6,6 +6,8 @@ religion = catholic
 technology_group = western
 capital = 267	# Murcia
 
-1444.11.12 = {
+1444.11.12 = {	#bertus mod
 	religion = sunni
+	government = republic
+	add_government_reform = merchants_reform
 }

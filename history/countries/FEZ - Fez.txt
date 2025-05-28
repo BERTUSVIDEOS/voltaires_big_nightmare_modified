@@ -104,6 +104,7 @@ religious_school = ibadi_school
 1269.9.8 = { capital = 4656 }
 
 1444.11.12 = {	#bertus mod
+	set_government_rank = 2
 	monarch = {
 		name = "Ya‘qûb II"
 		dynasty = "Banû Marîn"

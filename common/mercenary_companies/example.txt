@@ -3,8 +3,8 @@
 #
 
 merc__local_free_company = {
-    regiments_per_development = 0.0125
-    cavalry_weight = 0.1
+    regiments_per_development = 0.10
+    cavalry_weight = 0
     artillery_weight = 0.1
     cavalry_cap = 2
     cost_modifier = 0.75
@@ -16,8 +16,8 @@ merc__local_free_company = {
 }
 
 merc__local_small_company = {
-    regiments_per_development = 0.035
-    cavalry_weight = 0.1
+    regiments_per_development = 0.10
+    cavalry_weight = 0
     artillery_weight = 0.1
     cavalry_cap = 2
     trigger = {
@@ -33,8 +33,8 @@ merc__local_small_company = {
 }
 
 merc__local_free_city_company = {
-    regiments_per_development = 0.05
-    cavalry_weight = 0.1
+    regiments_per_development = 0.10
+    cavalry_weight = 0
     artillery_weight = 0.1
     cavalry_cap = 2
     trigger = {
@@ -53,8 +53,8 @@ merc__local_free_city_company = {
 }
 
 merc__local_grand_company = {
-    regiments_per_development = 0.025
-    cavalry_weight = 0.1
+    regiments_per_development = 1.0
+    cavalry_weight = 0
     artillery_weight = 0.1
     cavalry_cap = 2
     cost_modifier = 0.75
@@ -66,8 +66,8 @@ merc__local_grand_company = {
 }
 
 merc__local_independent_army = {
-    regiments_per_development = 0.0375
-    cavalry_weight = 0.1
+    regiments_per_development = 1.0
+    cavalry_weight = 0
     artillery_weight = 0.1
     cavalry_cap = 2
     cost_modifier = 0.75
@@ -79,8 +79,8 @@ merc__local_independent_army = {
 }
 
 merc_local_all_female_company = {
-	regiments_per_development = 0.0125
-	cavalry_weight = 0.1
+	regiments_per_development = 0.50
+	cavalry_weight = 0
     artillery_weight = 0.1
     cavalry_cap = 2
 	trigger = {
@@ -94,8 +94,8 @@ merc_local_all_female_company = {
 }
 
 twenty_good_men = {
-    regiments_per_development = 0.005
-    cavalry_weight = 0.2
+    regiments_per_development = 0.50
+    cavalry_weight = 0
 	artillery_weight = 0.1
     cavalry_cap = 4
 	cost_modifier = 1.5

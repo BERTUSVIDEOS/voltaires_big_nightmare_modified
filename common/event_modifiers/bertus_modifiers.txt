@@ -1,5 +1,110 @@
 
 
+humanist_bonus = {
+	land_morale = 0.05
+}
+experienced_diplomats_consort_modifier_adm_6 = {
+	country_admin_power = 3
+}
+experienced_diplomats_consort_modifier_adm_4 = {
+	country_admin_power = 2
+}
+experienced_diplomats_consort_modifier_adm_2 = {
+	country_admin_power = 1
+}
+experienced_diplomats_consort_modifier_dip_6 = {
+	country_diplomatic_power = 3
+}
+experienced_diplomats_consort_modifier_dip_4 = {
+	country_diplomatic_power = 2
+}
+experienced_diplomats_consort_modifier_dip_2 = {
+	country_diplomatic_power = 1
+}
+experienced_diplomats_consort_modifier_mil_6 = {
+	country_military_power = 3
+}
+experienced_diplomats_consort_modifier_mil_4 = {
+	country_military_power = 2
+}
+experienced_diplomats_consort_modifier_mil_2 = {
+	country_military_power = 1
+}
+dynastic_bonus_1 = {
+	country_diplomatic_power = 1
+}
+dynastic_bonus_2 = {
+	country_diplomatic_power = 2
+}
+dynastic_bonus_3 = {
+	country_diplomatic_power = 3
+}
+dynastic_bonus_4 = {
+	country_diplomatic_power = 4
+}
+dynastic_bonus_5 = {
+	country_diplomatic_power = 5
+}
+dynastic_bonus_6 = {
+	country_diplomatic_power = 6
+}
+fire_policy_tech_1 = {
+    infantry_fire = 0.015
+}
+fire_policy_tech_6 = {
+    infantry_fire = 0.035
+}
+fire_policy_tech_8 = {
+    infantry_fire = 0.06
+}
+fire_policy_tech_14 = {
+    infantry_fire = 0.09
+}
+fire_policy_tech_20 = {
+    infantry_fire = 0.14
+}
+fire_policy_tech_27 = {
+    infantry_fire = 0.19
+}
+fire_policy_tech_31 = {
+    infantry_fire = 0.29
+}
+shock_policy_tech_2 = {
+    infantry_shock = 0.03
+}
+shock_policy_tech_5 = {
+    infantry_shock = 0.045
+}
+shock_policy_tech_6 = {
+    infantry_shock = 0.075
+}
+shock_policy_tech_11 = {
+    infantry_shock = 0.095
+}
+shock_policy_tech_21 = {
+    infantry_shock = 0.145
+}
+shock_policy_tech_28 = {
+    infantry_shock = 0.195
+}
+shock_cav_policy_tech_1 = {
+    cavalry_shock = 0.0375
+}
+shock_cav_policy_tech_2 = {
+    cavalry_shock = 0.075
+}
+shock_cav_policy_tech_6 = {
+    cavalry_shock = 0.1125	
+}
+shock_cav_policy_tech_10 = {
+    cavalry_shock = 0.15
+}
+shock_cav_policy_tech_14 = {
+    cavalry_shock = 0.1875
+}
+shock_cav_policy_tech_18 = {
+    cavalry_shock = 0.225
+}
 ab_justified_wars_modifier = {
 	warscore_cost_vs_other_religion = -0.10
 }
@@ -165,6 +270,12 @@ gallowglasses_basic_modifier = {
 	is_mamluks_modifier = yes
 	picture = "infantry_shock"
 }
+carolean_basic_modifier = {
+	cavalry_power = -1.0
+	regiment_manpower_usage = -0.30
+	is_mamluks_modifier = yes
+	picture = "has_carolean"
+}
 condottieri_basic_modifier = {
 	cavalry_power = -1.0
 	discipline = 0.05
@@ -176,12 +287,6 @@ jaegerkorps_basic_modifier = {
 	infantry_power = 0.15
 	is_mamluks_modifier = yes
 	picture = "morale_damage"
-}
-carolean_basic_modifier = {
-	cavalry_power = -1.0
-	regiment_manpower_usage = -0.30
-	is_mamluks_modifier = yes
-	picture = "has_carolean"
 }
 hussars_basic_modifier = {
 	infantry_power = -1.0

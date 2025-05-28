@@ -2460,118 +2460,76 @@ vn_sic_missions_slot_5 = {
 		}
 		effect = {
 			add_dip_power = 50
-			if = {
-				limit = {
-					exists = SWA
-					valid_for_personal_unions_trigger = yes
-					SWA = { valid_for_personal_unions_trigger = yes }
-				}
-				add_casus_belli = {
-					target = SWA
-					type = cb_fabricated_claims
-					months = 300
-				}				
-			}
-			else = {
-                rammgau_area = {
-					limit = {
-						NOT = { is_core = ROOT }
-						NOT = { is_permanent_claim = ROOT }
-					}
-					add_permanent_claim = ROOT
-				}
-                argengau_area = {
-					limit = {
-						NOT = { is_core = ROOT }
-						NOT = { is_permanent_claim = ROOT }
-					}
-					add_permanent_claim = ROOT
-				}
-                hegau_area = {
-					limit = {
-						NOT = { is_core = ROOT }
-						NOT = { is_permanent_claim = ROOT }
-					}
-					add_permanent_claim = ROOT
-				}
-                burgau_area = {
-					limit = {
-						NOT = { is_core = ROOT }
-						NOT = { is_permanent_claim = ROOT }
-					}
-					add_permanent_claim = ROOT
-				}
-                augsburg_area = {
-					limit = {
-						NOT = { is_core = ROOT }
-						NOT = { is_permanent_claim = ROOT }
-					}
-					add_permanent_claim = ROOT
-				}
-			}
-			if = {
-				limit = {
-					exists = MEI
-					NOT = { started_in = 1180.1.1 }
-					valid_for_personal_unions_trigger = yes
-					MEI = { valid_for_personal_unions_trigger = yes }
-				}
-				add_casus_belli = {
-					target = MEI
-					type = cb_fabricated_claims
-					months = 300
-				}				
-			}
-			else_if = {
-				limit = {
-					exists = SAX
-					started_in = 1180.1.1
-					valid_for_personal_unions_trigger = yes
-					SAX = { valid_for_personal_unions_trigger = yes }
-				}
-				add_casus_belli = {
-					target = SAX
-					type = cb_fabricated_claims
-					months = 300
-				}				
-			}
-			else = {
-                merseburg_area = {
-                    limit = {
-                        NOT = { is_core = ROOT }
-                        NOT = { is_permanent_claim = ROOT }
-                    }
-                    add_permanent_claim = ROOT
+            rammgau_area = {
+                limit = {
+                    NOT = { is_core = ROOT }
+                    NOT = { is_permanent_claim = ROOT }
                 }
-                anhalt_area = {
-                    limit = {
-                        NOT = { is_core = ROOT }
-                        NOT = { is_permanent_claim = ROOT }
-                    }
-                    add_permanent_claim = ROOT
+                add_permanent_claim = ROOT
+            }
+            argengau_area = {
+                limit = {
+                    NOT = { is_core = ROOT }
+                    NOT = { is_permanent_claim = ROOT }
                 }
-                west_anhalt_area = {
-                    limit = {
-                        NOT = { is_core = ROOT }
-                        NOT = { is_permanent_claim = ROOT }
-                    }
-                    add_permanent_claim = ROOT
+                add_permanent_claim = ROOT
+            }
+            hegau_area = {
+                limit = {
+                    NOT = { is_core = ROOT }
+                    NOT = { is_permanent_claim = ROOT }
                 }
-                meissen_area = {
-                    limit = {
-                        NOT = { is_core = ROOT }
-                        NOT = { is_permanent_claim = ROOT }
-                    }
-                    add_permanent_claim = ROOT
+                add_permanent_claim = ROOT
+            }
+            burgau_area = {
+                limit = {
+                    NOT = { is_core = ROOT }
+                    NOT = { is_permanent_claim = ROOT }
                 }
-                osterland_area = {
-                    limit = {
-                        NOT = { is_core = ROOT }
-                        NOT = { is_permanent_claim = ROOT }
-                    }
-                    add_permanent_claim = ROOT
+                add_permanent_claim = ROOT
+            }
+            augsburg_area = {
+                limit = {
+                    NOT = { is_core = ROOT }
+                    NOT = { is_permanent_claim = ROOT }
                 }
-			}
+                add_permanent_claim = ROOT
+            }
+            merseburg_area = {
+                limit = {
+                    NOT = { is_core = ROOT }
+                    NOT = { is_permanent_claim = ROOT }
+                }
+                add_permanent_claim = ROOT
+            }
+            anhalt_area = {
+                limit = {
+                    NOT = { is_core = ROOT }
+                    NOT = { is_permanent_claim = ROOT }
+                }
+                add_permanent_claim = ROOT
+            }
+            west_anhalt_area = {
+                limit = {
+                    NOT = { is_core = ROOT }
+                    NOT = { is_permanent_claim = ROOT }
+                }
+                add_permanent_claim = ROOT
+            }
+            meissen_area = {
+                limit = {
+                    NOT = { is_core = ROOT }
+                    NOT = { is_permanent_claim = ROOT }
+                }
+                add_permanent_claim = ROOT
+            }
+            osterland_area = {
+                limit = {
+                    NOT = { is_core = ROOT }
+                    NOT = { is_permanent_claim = ROOT }
+                }
+                add_permanent_claim = ROOT
+            }
         }
     }
     vn_sic_our_ancestral_domain = {

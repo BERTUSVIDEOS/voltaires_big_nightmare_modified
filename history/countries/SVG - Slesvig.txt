@@ -7,6 +7,7 @@ primary_culture = jutlandic
 capital = 2384
 
 1444.11.12 = {	#bertus mod
+	set_government_rank = 2
 	monarch = {
 		name = "Henrik II"
 		dynasty = "Astridsunr"

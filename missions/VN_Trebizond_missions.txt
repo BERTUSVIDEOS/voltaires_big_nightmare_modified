@@ -808,16 +808,6 @@ vn_tre_missions_slot_4 = {
             }
         }
         effect = {
-            if = {
-                limit = {
-                    GEO = { valid_for_personal_unions_trigger = yes }
-                }
-                add_casus_belli = {
-                    type = cb_fabricated_claims
-                    target = GEO
-                    months = 300
-                }
-            }
             georgia_region = {
                 limit = {
                     NOT = { is_core = ROOT }

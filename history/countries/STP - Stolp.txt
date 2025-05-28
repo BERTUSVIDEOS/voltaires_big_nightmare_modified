@@ -143,6 +143,7 @@ capital = 2199
 }
 1444.11.12 = {	#bertus mod
 	set_capital = 2492
+	set_government_rank = 2
 	monarch = {
 		name = "Boguslaw IX"
 		dynasty = "Gryf"

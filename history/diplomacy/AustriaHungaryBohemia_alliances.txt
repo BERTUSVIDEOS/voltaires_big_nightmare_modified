@@ -9,12 +9,12 @@ union = {	#bertus mod
 	first = BOH
 	second = SIL
 	start_date = 1437.12.9
-	end_date = 1444.11.12
+	end_date = 1444.11.30
 }
 union = {	#bertus mod
 	first = BOH
 	second = SIL
-	start_date = 1444.11.14
+	start_date = 1444.12.3
 	end_date = 1453.10.28
 }
 union = {
@@ -41,7 +41,7 @@ union = {	#bertus mod
 union = {	#bertus mod
 	first = BOH
 	second = MRV
-	start_date = 1444.11.14
+	start_date = 1444.12.3
 	end_date = 1453.10.28
 }
 union = {

@@ -253,6 +253,7 @@ fixed_capital = 2511
 	add_ruler_personality = scholar_personality
 }
 1444.11.12 = {	#bertus mod
+	set_government_rank = 2
 	monarch = {
 		name = "Jakob II"
 		dynasty = "von Sirk"

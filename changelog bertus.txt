@@ -1,6 +1,5 @@
 TO DO
 	- nerf starting country ideas to tier 1 (savoy, provence, milan, etc)
-	- byzantium tier 4 but starts as tier 1, through missions gets to tier 4
 	- Portugal tier 3 but starts as tier 1, through missions gets to tier 3 (also gets rid of the small region issue on fomration)
 	- Pope tier 3 but starts as tier 1, through missions gets to tier 3
 	- Savoy tier 2 but starts as tier 1, through missions gets to tier 2
@@ -19,9 +18,132 @@ TO DO
 	- Sweeden tier 2 but starts as tier 1, through missions gets to tier 2
 	- Norway tier 2 but starts as tier 1, through missions gets to tier 2
 	- Palatinate tier 2 but starts as tier 1, through missions gets to tier 2
-	- Venice formable 
+	- Strassburg tier 2 but starts as tier 1, through missions gets to tier 2
+	- nerf alsatian ideas development
+	- Venice formable
+	- set morea, serbia, wallachia, slavonia, bosnia, croatia, crete, cyprus
+	- balkanize hungary
+	- balkanize poland 
+	- balkanize ottomans
+	- set livonia region
+	- set karaman, ramazan, dulkadir, candar, trebizond, aq qoyunlu
+	- balcanize mamluks
+	- holy order military service autoremove tooltip
+	- nerf normandy claim france missions
 	
 - 2025-new
+	- tweaked normandy missions 
+	- mercenaries
+		- minimum size 4→10
+		- maximum size 60→40 
+	- papal swiss guard
+		- size 4→40
+		- discipline 2.5%→5% 
+		- home schwyz→vatican
+	- Fervor
+		- at 100% trade goods size 0.20→0
+		- at 100% development cost 0→-5%
+		- Stability active 
+			- dev cost -5%→0
+			- trade goods size 0→0.20
+	- Major AI can no longer threaten war or enforce peace to players 
+	- Denmark start with Askanier dynasty
+	- Palatinate starts without legendary conqueror
+	- tweaked peasant incident 
+	- Assimilation
+		- culture conversion cost|time -10%→-20%
+		- prestige per development on culture converting 0→0.25%
+		- adm policy 
+			- native asismilation 100%→0
+			- dev cost on own culture 0-5%
+	- Religious
+		- culture conversion cost -25%→-10%
+		- monarch power per development converted 2→1
+		- same rleigion advisor cost 0→-5% 
+	- development ideas
+		- metropolis planning dev requirement 25→20
+	- celntralization ideas
+		- big cities dev requirement 40→30 
+	- Revoked after cooldown set on all privileges that have it 
+	- holy orders privileges
+		- UI fixed
+		- Expand the holy order regiments (cossaks)
+			- no longer has cooldown
+			- no logner give cossack units (just unlocks them)
+		- Recruit Holy Order Leaders
+			- New
+			- Requires Expand the holy order regiments privilege
+			- spawns cossacks
+			- leader shock +1
+	- ai defensiveness 0→-50% (except player subjects)
+	- berber ideas 
+		- core cost 50%→0
+		- tolerance own 0→1
+	- styria double ideas fixed
+	- bufed anjou ideas (they suck, like dinosf)
+	- switzerland formation tweaked
+	- Canton reform
+		- now requires to be swiss culture
+		- no longer blocked
+		- disallows other base reforms
+		- merchants 0→1
+		- merchants trade power 0→10
+		- trade steering 0→50%
+		- boost income form trade →yes
+		- trade range 0→100%
+		- diplo slots 2→0
+	- United canton reforms
+		- added cantonr eform modifiers
+		- allow mercenary to drill
+		- no longer mercenary cost no professionalism (already dont cost)
+	- growth of capital mission now is permanent, fixed conditions
+	- Defensive Army Doctrine
+		- Shock/fire reduction per level -3%→-2%
+		- fixed disicpline military reform scaling 2/3/3/4/5/6/7/8/9→1/2/3/4/5/6/7/8/9
+	- expansion ideas 
+		- colonists 1→3
+
+- 2025-05-24
+	- some reforms removed being locked
+	- set most starting slots to gov rank 2
+	- fixed noble levies not geting land share on set
+	- added finish missions
+	- tweaked iberian repopulate mission
+	- catalonia
+		- "fixed" parias mission
+	- Ifriqiya
+		- raid range 0→1
+		- available loot 0→50%
+		- infantry CA 0→10%
+		- galley hull size 0→20%
+		- institution spread 10%→0
+		- leader cost 0→-20%
+		- land|naval leader fire 0→1
+		- land|naval leader max fire 0→1
+	- War production 
+		- ducats per unit killed or lost on battle won 0.001→0.0005
+	- colonial empire ideas removed
+
+- 2025-05-23
+	- fixed ideas
+	- removed most PU CB from missions
+	- fixed fire|shock group ideas policies
+	- tweaked liberum veto decision
+	- Countries start
+		- Byzantium
+			- Crownland starts at 30%
+			- Tweaked theodosian walls monument
+			- tweaked missions 
+			- starts as tier 1 and gets to tier 4 through missions
+		- Sevilla
+			- monarchy → republic
+			- ruler stats 5|5|5→4|4|4
+		- Strassburg
+			- theocracy → republic
+			- ruler stats 5|5|5→4|4|4
+		- Munster
+			- republic → theocracy 
+
 - 2025-05-20
 	- Added Minor & independent power trigger modifiers
 	- CB

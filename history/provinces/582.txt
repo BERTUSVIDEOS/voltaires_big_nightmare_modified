@@ -50,6 +50,9 @@ is_city = yes
 	controller = BYZ
 	remove_core = TUR
 }
+1444.11.12 = {	#BERTUS MOD
+	fort_15th = yes
+}
 1453.2.1 = {
 	owner = TUR
 	controller = TUR

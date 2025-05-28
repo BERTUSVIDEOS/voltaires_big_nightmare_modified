@@ -90,6 +90,8 @@ capital = 2324
 #resigns 1372.9.18
 1444.11.12 = {	#bertus mod
 	set_capital = 2324 #bordeu
+	set_government_rank = 2
+	add_government_reform = feudalism_reform
 	every_owned_province = {
 		add_local_autonomy = 10
 	}

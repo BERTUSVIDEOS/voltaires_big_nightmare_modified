@@ -181,18 +181,19 @@ religious_ideas = {
 		yearly_absolutism = 0.5
 	}
 
-	supremacy_schools = {
+	missionary_schools = {
 		same_culture_advisor_cost = -0.05
 		advisor_pool = 1
 	}
-	supremacy_duty = {
+	church_attendance_duty = {
 		missionaries = 1
 		global_missionary_strength = 0.03
 	}
-	total_supremacy = {
+	divine_supremacy = {
 		stability_cost_modifier = -0.10
+		same_religion_advisor_cost = -0.05
 	}
-	supremacy_devoutness = {
+	devoutness = {
 		tolerance_own = 2
 		papal_influence = 2
 		devotion = 0.5
@@ -204,14 +205,14 @@ religious_ideas = {
 		yearly_authority = 0.15
 		yearly_patriarch_authority = 0.005
 	}
-	supremacy_tradition = {
+	religious_tradition = {
 		prestige = 0.25
 		prestige_per_development_from_conversion = 0.2
 	}
-	supremacy_inquisition = {
-		culture_conversion_cost = -0.25
+	inquisition = {
+		culture_conversion_cost = -0.10
 	}
-	supremacy_deus_vult = {
+	deus_vult = {
 		cb_on_religious_enemies = yes
 	}
 
@@ -284,7 +285,7 @@ entwicklung0 = {
 		effect = {
 			hidden_effect = {
 				every_owned_province = {
-					limit = { development = 25 }
+					limit = { development = 20 }
 					add_province_modifier = {name = zentra_dev duration = -1}
 				}
 			}
@@ -347,6 +348,79 @@ entwicklung0 = {
 }
 
 ########################################################
+####### Dezentralismus Ideen / Decentralism Ideas
+########################################################
+
+
+dezentra0 = {
+	category = ADM
+
+	trigger = {
+		government_rank = 2
+		NOT = {
+			has_idea_group = zentra0
+		}
+	}
+	bonus = {
+		development_cost = -0.05
+	}
+	staatsverwaltung5 = {
+		merchants = 1
+	}
+	dezentra3 = {
+		center_of_trade_upgrade_cost = -0.20
+		reduced_trade_penalty_on_non_main_tradenode = 0.33
+	}
+	dezentra1 = {
+		build_cost = -0.05
+	}
+	dezentra4 = {
+		global_institution_spread = 0.25
+	}
+	dezentra5 = {
+		governing_capacity = 50
+	}
+	dezentra6 = {
+		global_manpower_modifier = 0.10
+		global_sailors_modifier = 0.10
+	}
+	dezentra7 = {
+		global_trade_goods_size = 0.20
+	}
+
+	ai_will_do = {
+		factor = 10
+		modifier = {
+			factor = 10
+			personality = ai_capitalist
+		}
+		modifier = {
+			factor = 2.0
+			has_idea_group = administrative_ideas
+		}
+		modifier = {
+			factor = 2
+			government_rank = 3  # Empire
+		}
+
+		modifier = {
+			factor = 2
+			government_rank = 2  # Kingdom
+		}
+
+		modifier = {
+			factor = 3
+			government = monarchy
+		}
+
+		modifier = {
+			factor = 2
+			government = republic
+		}
+	}
+}
+
+########################################################
 ####### Zentralismus Ideen / Centralism Ideas
 ########################################################
 
@@ -369,7 +443,7 @@ zentra0 = {
 		effect = {
 			hidden_effect = {
 				every_owned_province = {
-					limit = { development = 40 }
+					limit = { development = 30 }
 					add_province_modifier = {name = centralized_province duration = -1}
 				}
 			}
@@ -406,79 +480,6 @@ zentra0 = {
 	}
 	bonus = {
 		garrison_size = 0.20
-	}
-
-	ai_will_do = {
-		factor = 10
-		modifier = {
-			factor = 10
-			personality = ai_capitalist
-		}
-		modifier = {
-			factor = 2.0
-			has_idea_group = administrative_ideas
-		}
-		modifier = {
-			factor = 2
-			government_rank = 3  # Empire
-		}
-
-		modifier = {
-			factor = 2
-			government_rank = 2  # Kingdom
-		}
-
-		modifier = {
-			factor = 3
-			government = monarchy
-		}
-
-		modifier = {
-			factor = 2
-			government = republic
-		}
-	}
-}
-
-########################################################
-####### Dezentralismus Ideen / Decentralism Ideas
-########################################################
-
-
-dezentra0 = {
-	category = ADM
-
-	trigger = {
-		government_rank = 2
-		NOT = {
-			has_idea_group = zentra0
-		}
-	}
-	bonus = {
-		development_cost = -0.05
-	}
-	staatsverwaltung5 = {
-		merchants = 1
-	}
-	dezentra3 = {
-		center_of_trade_upgrade_cost = -0.20
-		reduced_trade_penalty_on_non_main_tradenode = 0.33
-	}
-	dezentra1 = {
-		build_cost = -0.05
-	}
-	dezentra4 = {
-		global_institution_spread = 0.25
-	}
-	dezentra5 = {
-		governing_capacity = 50
-	}
-	dezentra6 = {
-		global_manpower_modifier = 0.05
-		global_sailors_modifier = 0.05
-	}
-	dezentra7 = {
-		global_trade_goods_size = 0.20
 	}
 
 	ai_will_do = {
@@ -638,7 +639,7 @@ expansion_ideas = {
 		merchants = 1
 	}
 	additional_colonists = {
-		colonists = 3	#1→3
+		colonists = 3
 	}
 	expan2 = {
 		cb_on_overseas = yes
@@ -1382,14 +1383,6 @@ maritime_ideas = {
 		factor = 10
 		modifier = {
 			factor = 0
-			is_tribal = yes
-		}
-		modifier = {
-			factor = 0
-			primitives = yes
-		}
-		modifier = {
-			factor = 0
 			NOT = { num_of_ports = 1 }
 		}
 		modifier = {
@@ -1517,14 +1510,6 @@ flottenbasis0 = {
 		modifier = {
 			factor = 10
 			num_of_colonists = 1
-		}
-		modifier = {
-			factor = 0
-			government_rank = 3  # Empire
-		}
-		modifier = {
-			factor = 0.5
-			government_rank = 2  # Kingdom
 		}
 	}
 }
@@ -1749,7 +1734,7 @@ kolonialimperium0 = {
 	category = DIP
 	
 	trigger = {
-		is_colonial_nation = no
+		always = no
 	}
 	bonus = {
 		range = 0.2
@@ -1873,14 +1858,13 @@ assimilation0 = {
 	}
 	assimilation1 = {
 		#prestige per development on culture conversion 0.25
-		culture_conversion_cost = -0.10
+		culture_conversion_cost = -0.20
 	}
 	assimilation7 = {
 		army_tradition_from_battle = 0.25
 	}
 	assimilation3 = {
-		#base manpower after culture conversion +2
-		culture_conversion_time = -0.10	#0→-0.10
+		culture_conversion_time = -0.20	#0→-0.20
 	}
 	assimilation4 = {
 		years_of_nationalism = -5
@@ -2443,7 +2427,7 @@ kriegsproduktion0 = {
 		cavalry_cost = -0.10
 	}
 	kriegsproduktion3 = {
-		#ducats per unit lost on battle won 0.001
+		#ducats per unit lost|killed on battle won 0.001
 		interest = -0.25	#-1→-0.25
 	}
 	kriegsproduktion4 = {
@@ -2502,8 +2486,8 @@ shock0 = {
 		shock_damage = 0.075
 	}
 	shock6 = {
-		cavalry_shock = 0.020
-		cav_to_inf_ratio = 0.1
+		cavalry_shock = 0.20
+		cav_to_inf_ratio = 0.10
 	}
 	shock7 = {
 		leader_land_shock = 1

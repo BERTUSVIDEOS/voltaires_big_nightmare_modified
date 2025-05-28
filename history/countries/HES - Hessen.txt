@@ -208,6 +208,7 @@ capital = 2541	# Marburg
 	}
 }
 1444.11.12 = {	#bertus mod
+	set_government_rank = 2
 	monarch = {
 		name = "Ludwig I"
 		dynasty = "von Hessen"

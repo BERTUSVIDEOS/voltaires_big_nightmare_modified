@@ -251,6 +251,7 @@ capital = 2501	# Cleves
 }
 1444.11.12 = {	#bertus mod
 	set_capital = 2378
+	set_government_rank = 2
 	monarch = {
 		name = "Johann I"
 		dynasty = "von der Mark"

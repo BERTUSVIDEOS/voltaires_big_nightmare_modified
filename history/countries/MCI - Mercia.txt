@@ -41,6 +41,7 @@ capital = 2258
 	primary_culture = english
 }
 1444.11.12 = {	#bertus mod
+	set_government_rank = 2
 	monarch = {
 		name = "Eadwine"
 		dynasty = "Ælfwining"

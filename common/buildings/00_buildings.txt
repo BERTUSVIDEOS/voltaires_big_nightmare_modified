@@ -402,6 +402,15 @@ monument = {
 		}
 		if = {
 			limit = {
+				FROM = { has_country_flag = pap_sistine_chapel_mission_flag }
+			}
+			add_province_modifier = {
+				name = pap_sistine_chapel_mission
+				duration = -1
+			}
+		}
+		if = {
+			limit = {
 				FROM = { has_government_attribute = temples_modifier }
 				owned_by = FROM
 			}
@@ -432,6 +441,7 @@ monument = {
 				}
 			}
 		}
+		remove_province_modifier = pap_sistine_chapel_mission
 		remove_province_modifier = gov_expanded_temple_rights_mod
 	}
 
@@ -643,6 +653,15 @@ temple = {
 		}
 		if = {
 			limit = {
+				FROM = { has_country_flag = pap_sistine_chapel_mission_flag }
+			}
+			add_province_modifier = {
+				name = pap_sistine_chapel_mission
+				duration = -1
+			}
+		}
+		if = {
+			limit = {
 				FROM = { has_government_attribute = temples_modifier }
 				owned_by = FROM 
 			}
@@ -708,6 +727,7 @@ temple = {
 				}
 			}
 		}
+		remove_province_modifier = pap_sistine_chapel_mission
 		remove_province_modifier = gov_expanded_temple_rights_mod
 		if = {
 			limit = {
@@ -1497,6 +1517,15 @@ cathedral = {
 		}
 		if = {
 			limit = {
+				FROM = { has_country_flag = pap_sistine_chapel_mission_flag }
+			}
+			add_province_modifier = {
+				name = pap_sistine_chapel_mission
+				duration = -1
+			}
+		}
+		if = {
+			limit = {
 				FROM = { has_government_attribute = temples_modifier }
 				owned_by = FROM
 			}
@@ -1562,6 +1591,7 @@ cathedral = {
 				}
 			}
 		}
+		remove_province_modifier = pap_sistine_chapel_mission
 		remove_province_modifier = gov_expanded_temple_rights_mod
 		if = {
 			limit = {

@@ -77,6 +77,8 @@ NDefines.NMilitary.BATTLE_DAILY_MORALE_DAMAGE = 0       --0.01→0	-- Deployed t
 NDefines.NMilitary.BASE_MP_TO_MANPOWER = 0.20		    -- 250→200 men per manpower
 NDefines.NMilitary.BATTLE_DAILY_MORALE_DAMAGE = 0       --0.01→0	-- Deployed troops take this fraction of their maximum morale as damage
 NDefines.NMilitary.NAVAL_SUPPLY_RANGE = 300             --150→300 						-- Supply range for ships.
+NDefines.NMilitary.MERCENARY_COMPANY_MIN_REGIMENTS = 10     --4→10			-- Minimum regiments
+NDefines.NMilitary.MERCENARY_COMPANY_MAX_REGIMENTS = 40		--60→40     	-- Maximum regiments
 
 NDefines.NGovernment.GOVERNMENT_REFORM_COST_CENTRALIZE_STATE = 20.0	                --50→20
 NDefines.NGovernment.CENTRALIZE_STATE_ADM_COST = 100	                            --50→100

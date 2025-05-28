@@ -58,7 +58,7 @@ guarantee = { 	#BERTUS MOD
 	first = TLC
 	second = ALG
 	start_date = 1424.1.1
-	end_date = 1444.11.12
+	end_date = 1444.11.30
 }
 
 #Autonomous region

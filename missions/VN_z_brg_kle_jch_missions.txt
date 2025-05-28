@@ -1126,7 +1126,7 @@ vn_brg_kle_jch_missions_slot_5 = {
                     GEL = { valid_for_personal_unions_trigger = yes }
                 }
                 add_casus_belli = {
-                    type = cb_fabricated_claims
+                    type = cb_imperial
                     target = GEL
                     months = 300
                 }

@@ -6,7 +6,7 @@
 ####################
 VN_BYZ_missions_slot_1_a = {
 	slot = 6
-	generic = no
+	generic = yes
 	ai = yes
 	
 	potential = {
@@ -148,7 +148,7 @@ VN_BYZ_missions_slot_1_a = {
 
 VN_BYZ_missions_slot_2_a = {
 	slot = 7
-	generic = no
+	generic = yes
 	ai = yes
 	
 	potential = {
@@ -275,7 +275,7 @@ VN_BYZ_missions_slot_2_a = {
 
 VN_BYZ_missions_slot_3_a = {
 	slot = 8
-	generic = no
+	generic = yes
 	ai = yes
 	
 	potential = {
@@ -310,8 +310,11 @@ VN_BYZ_missions_slot_3_a = {
 			NOT = { has_building = textile }
 		}
 		trigger = {
-			num_of_owned_provinces_with = {
-				value = 10
+			trade_goods_produced_amount = {
+				trade_goods = silk
+				amount = 15
+			}
+			any_owned_province = {
 				trade_goods = silk
 				has_building = textile
 			}
@@ -468,7 +471,7 @@ VN_BYZ_missions_slot_3_a = {
 
 VN_BYZ_missions_slot_4_a = {
 	slot = 9
-	generic = no
+	generic = yes
 	ai = yes
 	
 	potential = {
@@ -538,7 +541,7 @@ VN_BYZ_missions_slot_4_a = {
 			add_mil_power = 100
 			add_country_modifier = {
 				name = byz_constantins_walls_mission
-				duration = 9125
+				duration = -1 	#9125 → -1
 			}
 		}
 	}
@@ -592,7 +595,7 @@ VN_BYZ_missions_slot_4_a = {
 
 VN_BYZ_missions_slot_5_a = {
 	slot = 10
-	generic = no
+	generic = yes
 	ai = yes
 	
 	potential = {
@@ -788,7 +791,7 @@ VN_BYZ_missions_slot_5_a = {
 			hidden_effect = {
 				every_owned_province = {
 					limit = { has_port = yes has_fort_trigger = yes }
-					add_province_modifier = {
+					add_permanent_province_modifier = {
 						name = byz_fortify_coasts_mission
 						duration = -1
 					}
@@ -833,7 +836,7 @@ VN_BYZ_missions_slot_5_a = {
 
 VN_BYZ_missions_slot_1_b = {
 	slot = 6
-	generic = no
+	generic = yes
 	ai = yes
 	
 	potential = {
@@ -849,8 +852,13 @@ VN_BYZ_missions_slot_1_b = {
 		required_missions = { }
 		trigger = {
 			owns_core_province = 2233
-			num_of_allies = 5
-			is_at_war = yes
+			OR = {
+				AND = {
+					num_of_allies = 5
+					is_at_war = yes
+				}
+				war_with = TUR
+			}
 		}
 		effect = {
 			raise_war_taxes = yes
@@ -904,7 +912,7 @@ VN_BYZ_missions_slot_1_b = {
 #######################
 VN_BYZ_missions_slot_1_c = {
 	slot = 6
-	generic = no
+	generic = yes
 	ai = yes
 	
 	potential = {
@@ -913,205 +921,52 @@ VN_BYZ_missions_slot_1_c = {
 	}
 	has_country_shield = yes
 	
-	vn_byz_conquer_serbia = {
+	vn_byz_rise_of_the_phoenix = { 	#into tier 3
 		position = 8
-		icon = mission_protect_albania
+		icon = mission_pf_cross
 		required_missions = { vn_byz_battle_of_manzikert }
-		provinces_to_highlight = {
-			OR = {
-				region = serbia_region
-				area = kosovo_area
-				area = arbanon_area
-				area = durres_area
-			}
-			NOT = { country_or_non_sovereign_subject_holds = ROOT }
-		}
-		trigger = {
-			serbia_region = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			kosovo_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			arbanon_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			durres_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
+		trigger = {	#bertus mod
+			num_of_cities = 150
 		}
 		effect = {
-            dalmatia_area = {
-                limit = {
-                    NOT = { is_core = ROOT }
-                    NOT = { is_permanent_claim = ROOT }
-                    is_city = yes
-                }
-                add_permanent_claim = ROOT
-            }
-            split_area = {
-                limit = {
-                    NOT = { is_core = ROOT }
-                    NOT = { is_permanent_claim = ROOT }
-                    is_city = yes
-                }
-                add_permanent_claim = ROOT
-            }
-            ragusa_area = {
-                limit = {
-                    NOT = { is_core = ROOT }
-                    NOT = { is_permanent_claim = ROOT }
-                    is_city = yes
-                }
-                add_permanent_claim = ROOT
-            }
-            senj_area = {
-                limit = {
-                    NOT = { is_core = ROOT }
-                    NOT = { is_permanent_claim = ROOT }
-                    is_city = yes
-                }
-                add_permanent_claim = ROOT
-            }
-            donji_area = {
-                limit = {
-                    NOT = { is_core = ROOT }
-                    NOT = { is_permanent_claim = ROOT }
-                }
-                add_permanent_claim = ROOT
-            }
-            hum_area = {
-                limit = {
-                    NOT = { is_core = ROOT }
-                    NOT = { is_permanent_claim = ROOT }
-                }
-                add_permanent_claim = ROOT
-            }
-            kupres_area = {
-                limit = {
-                    NOT = { is_core = ROOT }
-                    NOT = { is_permanent_claim = ROOT }
-                }
-                add_permanent_claim = ROOT
-            }
-            bobovac_area = {
-                limit = {
-                    NOT = { is_core = ROOT }
-                    NOT = { is_permanent_claim = ROOT }
-                }
-                add_permanent_claim = ROOT
-            }
-            doboj_area = {
-                limit = {
-                    NOT = { is_core = ROOT }
-                    NOT = { is_permanent_claim = ROOT }
-                }
-                add_permanent_claim = ROOT
-            }
-			rashka_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
+			custom_tooltip = byz_rise_of_the_phoenix_mission_tt 	#bertus mod
+			add_country_modifier = {
+				name = byz_rise_of_the_phoenix_mission
+				duration = -1
 			}
-			zeta_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			zagreb_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
+			set_formable_tier = { tier = 3 }
+			country_event = { id = ideagroups.1 } #Swap Ideas
 		}
 	}
-	vn_byz_conquer_bosnia = {
-		icon = mission_soldiers_in_line
-		required_missions = { vn_byz_conquer_serbia }
-		provinces_to_highlight = {
-            OR = {
-                area = dalmatia_area
-                area = split_area
-                area = ragusa_area
-                area = senj_area
-                area = donji_area
-                area = hum_area
-                area = kupres_area
-                area = bobovac_area
-                area = doboj_area
-				area = rashka_area
-				area = zeta_area
-				area = zagreb_area
-			}
-			NOT = { country_or_non_sovereign_subject_holds = ROOT }
-		}
+	vn_byz_restore_roman_empire = { 	#into tier 4
+		icon = a_roman_empire 
+		required_missions = { vn_byz_rise_of_the_phoenix }
 		trigger = {
-            dalmatia_area = {
-                type = all
-                country_or_non_sovereign_subject_holds = ROOT
-            }
-            split_area = {
-                type = all
-                country_or_non_sovereign_subject_holds = ROOT
-            }
-            ragusa_area = {
-                type = all
-                country_or_non_sovereign_subject_holds = ROOT
-            }
-            senj_area = {
-                type = all
-                country_or_non_sovereign_subject_holds = ROOT
-            }
-            donji_area = {
-                type = all
-                country_or_non_sovereign_subject_holds = ROOT
-            }
-            hum_area = {
-                type = all
-                country_or_non_sovereign_subject_holds = ROOT
-            }
-            kupres_area = {
-                type = all
-                country_or_non_sovereign_subject_holds = ROOT
-            }
-            bobovac_area = {
-                type = all
-                country_or_non_sovereign_subject_holds = ROOT
-            }
-            doboj_area = {
-                type = all
-                country_or_non_sovereign_subject_holds = ROOT
-            }
-			rashka_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			zeta_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			zagreb_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+			tag = ROM
+			num_of_cities = 300
+            NOT = { great_power_rank = 2 }
+			NOT = {
+				any_country = {
+					army_size = ROOT
+				}
 			}
 		}
 		effect = {
-			add_mil_power = 50
-			add_prestige_or_monarch_power = { amount = 10 } 
+			add_prestige_or_monarch_power = { amount = 25 } 
+			add_legitimacy = 25
+			add_adm_power = 250
+			add_dip_power = 250
+			add_mil_power = 250
+			add_country_modifier = {
+				name = byz_restore_roman_empire_mission
+				duration = -1
+			}
+			set_formable_tier = { tier = 4 }
+			country_event = { id = ideagroups.1 } #Swap Ideas
 		}
 	}
 	vn_byz_conquer_valencia = {
-		position = 11
+		position = 12
 		icon = mission_coromandel_expansion
 		required_missions = { vn_byz_conquer_sardinia }
 		provinces_to_highlight = {
@@ -1170,7 +1025,7 @@ VN_BYZ_missions_slot_1_c = {
 		}
 	}
 	vn_byz_conquer_andalusia = {
-		position = 12
+		position = 13
 		icon = hispaniae
 		required_missions = { vn_byz_conquer_valencia }
 		provinces_to_highlight = {
@@ -1316,7 +1171,7 @@ VN_BYZ_missions_slot_1_c = {
 		}
 	}
 	vn_byz_conquer_cyrenaica = {
-		position = 16
+		position = 17
 		icon = mission_pf_soldier
 		required_missions = { vn_byz_conquer_egypt }
 		provinces_to_highlight = {
@@ -1628,7 +1483,7 @@ VN_BYZ_missions_slot_1_c = {
 
 VN_BYZ_missions_slot_2_c = {
 	slot = 7
-	generic = no
+	generic = yes
 	ai = yes
 	
 	potential = {
@@ -1637,8 +1492,205 @@ VN_BYZ_missions_slot_2_c = {
 	}
 	has_country_shield = yes
 
+	vn_byz_conquer_serbia = {
+		position = 8
+		icon = mission_protect_albania
+		required_missions = { vn_byz_battle_of_manzikert }
+		provinces_to_highlight = {
+			OR = {
+				region = serbia_region
+				area = kosovo_area
+				area = arbanon_area
+				area = durres_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			serbia_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			kosovo_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			arbanon_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			durres_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+            dalmatia_area = {
+                limit = {
+                    NOT = { is_core = ROOT }
+                    NOT = { is_permanent_claim = ROOT }
+                    is_city = yes
+                }
+                add_permanent_claim = ROOT
+            }
+            split_area = {
+                limit = {
+                    NOT = { is_core = ROOT }
+                    NOT = { is_permanent_claim = ROOT }
+                    is_city = yes
+                }
+                add_permanent_claim = ROOT
+            }
+            ragusa_area = {
+                limit = {
+                    NOT = { is_core = ROOT }
+                    NOT = { is_permanent_claim = ROOT }
+                    is_city = yes
+                }
+                add_permanent_claim = ROOT
+            }
+            senj_area = {
+                limit = {
+                    NOT = { is_core = ROOT }
+                    NOT = { is_permanent_claim = ROOT }
+                    is_city = yes
+                }
+                add_permanent_claim = ROOT
+            }
+            donji_area = {
+                limit = {
+                    NOT = { is_core = ROOT }
+                    NOT = { is_permanent_claim = ROOT }
+                }
+                add_permanent_claim = ROOT
+            }
+            hum_area = {
+                limit = {
+                    NOT = { is_core = ROOT }
+                    NOT = { is_permanent_claim = ROOT }
+                }
+                add_permanent_claim = ROOT
+            }
+            kupres_area = {
+                limit = {
+                    NOT = { is_core = ROOT }
+                    NOT = { is_permanent_claim = ROOT }
+                }
+                add_permanent_claim = ROOT
+            }
+            bobovac_area = {
+                limit = {
+                    NOT = { is_core = ROOT }
+                    NOT = { is_permanent_claim = ROOT }
+                }
+                add_permanent_claim = ROOT
+            }
+            doboj_area = {
+                limit = {
+                    NOT = { is_core = ROOT }
+                    NOT = { is_permanent_claim = ROOT }
+                }
+                add_permanent_claim = ROOT
+            }
+			rashka_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			zeta_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			zagreb_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	vn_byz_conquer_bosnia = {
+		icon = mission_soldiers_in_line
+		required_missions = { vn_byz_conquer_serbia }
+		provinces_to_highlight = {
+            OR = {
+                area = dalmatia_area
+                area = split_area
+                area = ragusa_area
+                area = senj_area
+                area = donji_area
+                area = hum_area
+                area = kupres_area
+                area = bobovac_area
+                area = doboj_area
+				area = rashka_area
+				area = zeta_area
+				area = zagreb_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+            dalmatia_area = {
+                type = all
+                country_or_non_sovereign_subject_holds = ROOT
+            }
+            split_area = {
+                type = all
+                country_or_non_sovereign_subject_holds = ROOT
+            }
+            ragusa_area = {
+                type = all
+                country_or_non_sovereign_subject_holds = ROOT
+            }
+            senj_area = {
+                type = all
+                country_or_non_sovereign_subject_holds = ROOT
+            }
+            donji_area = {
+                type = all
+                country_or_non_sovereign_subject_holds = ROOT
+            }
+            hum_area = {
+                type = all
+                country_or_non_sovereign_subject_holds = ROOT
+            }
+            kupres_area = {
+                type = all
+                country_or_non_sovereign_subject_holds = ROOT
+            }
+            bobovac_area = {
+                type = all
+                country_or_non_sovereign_subject_holds = ROOT
+            }
+            doboj_area = {
+                type = all
+                country_or_non_sovereign_subject_holds = ROOT
+            }
+			rashka_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			zeta_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			zagreb_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_mil_power = 50
+			add_prestige_or_monarch_power = { amount = 10 } 
+		}
+	}
 	vn_byz_conquer_sicily = {
-		position = 9
+		position = 10
 		icon = mission_retake_ceuta
 		required_missions = { vn_byz_conquer_apulia }
 		provinces_to_highlight = {
@@ -1782,7 +1834,7 @@ VN_BYZ_missions_slot_2_c = {
 		}
 	}
 	vn_byz_conquer_tuscany = {
-		position = 12
+		position = 13
 		icon = mission_build_up_to_force_limit
 		required_missions = { vn_byz_conquer_rome }
 		provinces_to_highlight = {
@@ -2058,7 +2110,7 @@ VN_BYZ_missions_slot_2_c = {
 		}
 	}
 	vn_byz_conquer_cyprus = {
-		position = 14
+		position = 15
 		icon = mission_invade_island
 		required_missions = { vn_byz_conquer_antiochia }
 		provinces_to_highlight = {
@@ -2160,7 +2212,7 @@ VN_BYZ_missions_slot_2_c = {
 		}
 	}
 	vn_byz_conquer_middle_egypt = {
-		position = 15
+		position = 16
 		icon = mission_conquer_alexandria
 		required_missions = { vn_byz_conquer_egypt vn_byz_conquer_syria }
 		provinces_to_highlight = {
@@ -2193,7 +2245,7 @@ VN_BYZ_missions_slot_2_c = {
 
 VN_BYZ_missions_slot_3_b = {
 	slot = 8
-	generic = no
+	generic = yes
 	ai = yes
 	
 	potential = {
@@ -2216,7 +2268,8 @@ VN_BYZ_missions_slot_3_b = {
 				}
 			}
 			has_any_disaster = no
-			army_size_percentage = 0.75
+			army_size_percentage = 1.0
+			land_forcelimit = 50
 			NOT = { num_of_mercenaries = 1 }
 			NOT = { num_of_loans = 1 }
 			is_in_deficit = no
@@ -2303,10 +2356,12 @@ VN_BYZ_missions_slot_3_b = {
 				name = byz_battle_of_manzikert_mission
 				duration = 9125
 			}
+			set_formable_tier = { tier = 2 }
+			country_event = { id = ideagroups.1 } #Swap Ideas
 		}
 	}
 	vn_byz_conquer_apulia = {
-		position = 8
+		position = 9
 		icon = mission_zanzibari_trade
 		required_missions = { vn_byz_battle_of_manzikert }
 		provinces_to_highlight = {
@@ -2404,7 +2459,7 @@ VN_BYZ_missions_slot_3_b = {
 		}
 	}
 	vn_byz_conquer_naples = {
-		position = 9
+		position = 10
 		icon = mission_seize_north_sea_trade
 		required_missions = { vn_byz_conquer_apulia }
 		provinces_to_highlight = {
@@ -2462,7 +2517,7 @@ VN_BYZ_missions_slot_3_b = {
 		}
 	}
 	vn_byz_conquer_rome = {
-		position = 11
+		position = 12
 		icon = mission_pf_cross
 		required_missions = { vn_byz_conquer_naples }
 		provinces_to_highlight = {
@@ -2589,7 +2644,7 @@ VN_BYZ_missions_slot_3_b = {
 		}
 	}
 	vn_byz_conquer_romagna = {
-		position = 12
+		position = 13
 		icon = mission_pf_cross
 		required_missions = { vn_byz_conquer_rome }
 		provinces_to_highlight = {
@@ -2634,7 +2689,7 @@ VN_BYZ_missions_slot_3_b = {
 		}
 	}
 	vn_byz_conquer_antiochia = {
-		position = 13
+		position = 14
 		icon = mission_pf_soldier
 		required_missions = { vn_byz_conquer_cilicia }
 		provinces_to_highlight = {
@@ -2676,7 +2731,7 @@ VN_BYZ_missions_slot_3_b = {
 		}
 	}
 	vn_byz_conquer_syria = {
-		position = 15
+		position = 16
 		icon = mission_pf_soldier
 		required_missions = { vn_byz_conquer_antiochia vn_byz_conquer_edessa }
 		provinces_to_highlight = {
@@ -2700,7 +2755,7 @@ VN_BYZ_missions_slot_3_b = {
 		}
 	}
 	vn_byz_conquer_lebanon = {
-		position = 16
+		position = 17
 		icon = mission_pf_soldier
 		required_missions = { vn_byz_conquer_syria }
 		provinces_to_highlight = {
@@ -2724,7 +2779,7 @@ VN_BYZ_missions_slot_3_b = {
 		}
 	}
 	vn_byz_conquer_judaea = {
-		position = 17
+		position = 18
 		icon = mission_pf_cross
 		required_missions = { vn_byz_conquer_lebanon }
 		provinces_to_highlight = {
@@ -2759,7 +2814,7 @@ VN_BYZ_missions_slot_3_b = {
 
 VN_BYZ_missions_slot_4_b = {
 	slot = 9
-	generic = no
+	generic = yes
 	ai = yes
 	
 	potential = {
@@ -2894,7 +2949,7 @@ VN_BYZ_missions_slot_4_b = {
 		}
 	}
 	vn_byz_conquer_caria = {
-		position = 10
+		position = 11
 		icon = mission_fortify_rajputana
 		required_missions = { vn_byz_conquer_bithynia }
 		provinces_to_highlight = {
@@ -2935,7 +2990,7 @@ VN_BYZ_missions_slot_4_b = {
 			}
 		}
 		effect = {
-			kibyrraioton_region = {
+			anemorion_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }
@@ -3015,19 +3070,19 @@ VN_BYZ_missions_slot_4_b = {
 		}
 	}
 	vn_byz_conquer_cilicia = {
-		position = 12
+		position = 13
 		icon = mission_coromandel_expansion
 		required_missions = { vn_byz_conquer_caria }
 		provinces_to_highlight = {
 			OR = {
-				region = kibyrraioton_region
+				area = anemorion_area
 				area = seleukeia_area
 				area = tarsos_area
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
-			kibyrraioton_region = {
+			anemorion_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -3141,7 +3196,7 @@ VN_BYZ_missions_slot_4_b = {
 		}
 	}
 	vn_byz_conquer_arabia = {
-		position = 18
+		position = 19
 		icon = mission_traverse_the_sahara
 		required_missions = { vn_byz_conquer_judaea }
 		provinces_to_highlight = {
@@ -3169,7 +3224,7 @@ VN_BYZ_missions_slot_4_b = {
 
 VN_BYZ_missions_slot_5 = {
 	slot = 10
-	generic = no
+	generic = yes
 	ai = yes
 	
 	potential = {
@@ -3178,42 +3233,8 @@ VN_BYZ_missions_slot_5 = {
 	}
 	has_country_shield = yes
 	
-	vn_byz_rise_of_the_phoenix = {
-		position = 7
-		icon = mission_pf_cross
-		required_missions = { }
-		trigger = {
-			num_of_cities = 750
-			grown_by_development = 250
-		}
-		effect = {
-			custom_tooltip = byz_rise_of_the_phoenix_mission_tt 	#bertus mod
-			add_country_modifier = {
-				name = byz_rise_of_the_phoenix_mission
-				duration = -1
-			}
-		}
-	}
-	vn_byz_restore_roman_empire = {
-		icon = a_roman_empire
-		required_missions = { vn_byz_rise_of_the_phoenix }
-		trigger = {
-			tag = ROM
-			num_of_cities = 3000
-		}
-		effect = {
-			add_prestige_or_monarch_power = { amount = 25 } 
-			add_legitimacy = 25
-			add_adm_power = 250
-			add_dip_power = 250
-			add_mil_power = 250
-			add_country_modifier = {
-				name = byz_restore_roman_empire_mission
-				duration = -1
-			}
-		}
-	}
 	vn_byz_conquer_trebizond = {
+		position = 9
 		icon = mission_conquer_malwa_mer
 		required_missions = { vn_byz_conquer_bithynia }
 		provinces_to_highlight = {
@@ -3435,6 +3456,8 @@ VN_BYZ_missions_slot_5 = {
 					duration = -1
 				}
 			}
+			set_country_flag = byzantium_frontier_flag
+			set_estate_privilege = estate_nobles_frontier_resettlement
 		}
 	}
 }

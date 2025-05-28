@@ -225,133 +225,103 @@ vn_sax_missions_slot_1 = {
 			}
 		}
 		effect = {
-			if = {
+			lublin_area = {
 				limit = {
-					exists = PLC
-					valid_for_personal_unions_trigger = yes
-					PLC = {
-						valid_for_personal_unions_trigger = yes
-					}
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
 				}
-				add_casus_belli = {
-					type = cb_fabricated_claims
-					months = 300
-					target = PLC
-				}
+				add_permanent_claim = ROOT
 			}
-			else_if = {
+			sandomierz_area = {
 				limit = {
-					exists = POL
-					valid_for_personal_unions_trigger = yes
-					POL = {
-						valid_for_personal_unions_trigger = yes
-					}
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
 				}
-				add_casus_belli = {
-					type = cb_fabricated_claims
-					months = 300
-					target = POL
-				}
+				add_permanent_claim = ROOT
 			}
-			else = {
-                lublin_area = {
-                    limit = {
-                        NOT = { is_core = ROOT }
-                        NOT = { is_permanent_claim = ROOT }
-                    }
-                    add_permanent_claim = ROOT
-                }
-                sandomierz_area = {
-                    limit = {
-                        NOT = { is_core = ROOT }
-                        NOT = { is_permanent_claim = ROOT }
-                    }
-                    add_permanent_claim = ROOT
-                }
-                radom_area = {
-                    limit = {
-                        NOT = { is_core = ROOT }
-                        NOT = { is_permanent_claim = ROOT }
-                    }
-                    add_permanent_claim = ROOT
-                }
-                krakow_area = {
-                    limit = {
-                        NOT = { is_core = ROOT }
-                        NOT = { is_permanent_claim = ROOT }
-                    }
-                    add_permanent_claim = ROOT
-                }
-                sacz_area = {
-                    limit = {
-                        NOT = { is_core = ROOT }
-                        NOT = { is_permanent_claim = ROOT }
-                    }
-                    add_permanent_claim = ROOT
-                }
-                posen_area = {
-                    limit = {
-                        NOT = { is_core = ROOT }
-                        NOT = { is_permanent_claim = ROOT }
-                    }
-                    add_permanent_claim = ROOT
-                }
-                czarnkow_area = {
-                    limit = {
-                        NOT = { is_core = ROOT }
-                        NOT = { is_permanent_claim = ROOT }
-                    }
-                    add_permanent_claim = ROOT
-                }
-                gniezno_area = {
-                    limit = {
-                        NOT = { is_core = ROOT }
-                        NOT = { is_permanent_claim = ROOT }
-                    }
-                    add_permanent_claim = ROOT
-                }
-                sieradz_area = {
-                    limit = {
-                        NOT = { is_core = ROOT }
-                        NOT = { is_permanent_claim = ROOT }
-                    }
-                    add_permanent_claim = ROOT
-                }
-                leczyca_area = {
-                    limit = {
-                        NOT = { is_core = ROOT }
-                        NOT = { is_permanent_claim = ROOT }
-                    }
-                    add_permanent_claim = ROOT
-                }
-				warsaw_area = {
-					limit = {
-						NOT = { is_core = ROOT }
-						NOT = { is_permanent_claim = ROOT }
-					}
-					add_permanent_claim = ROOT
+			radom_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
 				}
-				dobrzyn_area = {
-					limit = {
-						NOT = { is_core = ROOT }
-						NOT = { is_permanent_claim = ROOT }
-					}
-					add_permanent_claim = ROOT
+				add_permanent_claim = ROOT
+			}
+			krakow_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
 				}
-				wizna_area = {
-					limit = {
-						NOT = { is_core = ROOT }
-						NOT = { is_permanent_claim = ROOT }
-					}
-					add_permanent_claim = ROOT
+				add_permanent_claim = ROOT
+			}
+			sacz_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
 				}
-				nur_area = {
-					limit = {
-						NOT = { is_core = ROOT }
-						NOT = { is_permanent_claim = ROOT }
-					}
-					add_permanent_claim = ROOT
+				add_permanent_claim = ROOT
+			}
+			posen_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
 				}
+				add_permanent_claim = ROOT
+			}
+			czarnkow_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			gniezno_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			sieradz_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			leczyca_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			warsaw_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			dobrzyn_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			wizna_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			nur_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
 			}
 		}
 	}

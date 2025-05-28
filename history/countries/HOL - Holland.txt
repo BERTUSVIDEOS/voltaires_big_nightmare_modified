@@ -510,6 +510,7 @@ capital = 328	# Amsterdam
 1444.11.12 = {	#bertus mod
 	government = republic
 	add_government_reform = oligarchy_reform
+	set_government_rank = 2
 	monarch = {
 		name = "Jakobe"
 		birth_date = 1404.1.13

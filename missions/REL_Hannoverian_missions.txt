@@ -496,294 +496,96 @@ vn_hannoverian_group_2 = {
 				name = han_herrenhausen_gardens_mod
 				duration = 9125
 			}
-			if = {
+			wessex_area = {
 				limit = {
-					valid_for_personal_unions_trigger = yes
-					exists = GBR
-					GBR = {
-						valid_for_personal_unions_trigger = yes
-					}
+					NOT = { is_permanent_claim = root }
+					NOT = { is_core = root }
 				}
-				if = {
-					limit = {
-						mission_completed = han_rule_the_waves
-						GBR = {
-							OR = {
-								religion = root
-								AND = {
-									religion = anglican
-									ROOT = { religion = protestant }
-								}
-							}
-						}
-					}
-					add_casus_belli = {
-						type = cb_fabricated_claims
-						months = 300
-						target = GBR
-					}
-				}
-				else = {
-					custom_tooltip = han_herrenhausen_pu_gbr_effect_tooltip
-					if = {
-						limit = {
-							GBR = { religion = anglican }
-						}
-						custom_tooltip = han_herrenhausen_pu_gbr_anglican_effect_tooltip
-					}
-				}
+				add_permanent_claim = root
 			}
-			else_if = {
+			devon_area = {
 				limit = {
-					valid_for_personal_unions_trigger = yes
-					exists = ENG
-					ENG = {
-						valid_for_personal_unions_trigger = yes
-					}
+					NOT = { is_permanent_claim = root }
+					NOT = { is_core = root }
 				}
-				if = {
-					limit = {
-						mission_completed = han_rule_the_waves
-						ENG = {
-							OR = {
-								religion = root
-								AND = {
-									religion = anglican
-									ROOT = { religion = protestant }
-								}
-							}
-						}
-					}
-					add_casus_belli = {
-						type = cb_fabricated_claims
-						months = 300
-						target = ENG
-					}
-				}
-				else = {
-					custom_tooltip = han_herrenhausen_pu_eng_effect_tooltip
-					if = {
-						limit = {
-							ENG = { religion = anglican }
-						}
-						custom_tooltip = han_herrenhausen_pu_eng_anglican_effect_tooltip
-					}
-				}
+				add_permanent_claim = root
 			}
-			else_if = {
+			somerset_area = {
 				limit = {
-					valid_for_personal_unions_trigger = yes
-					exists = ASE
-					ASE = {
-						valid_for_personal_unions_trigger = yes
-					}
+					NOT = { is_permanent_claim = root }
+					NOT = { is_core = root }
 				}
-				if = {
-					limit = {
-						mission_completed = han_rule_the_waves
-						ASE = {
-							OR = {
-								religion = root
-								AND = {
-									religion = anglican
-									ROOT = { religion = protestant }
-								}
-							}
-						}
-					}
-					add_casus_belli = {
-						type = cb_fabricated_claims
-						months = 300
-						target = ASE
-					}
-				}
-				else = {
-					custom_tooltip = han_herrenhausen_pu_ase_effect_tooltip
-					if = {
-						limit = {
-							ASE = { religion = anglican }
-						}
-						custom_tooltip = han_herrenhausen_pu_ase_anglican_effect_tooltip
-					}
-				}
+				add_permanent_claim = root
 			}
-			if = {
+			norwich_area = {
 				limit = {
-					OR = {
-						valid_for_personal_unions_trigger = no
-						AND = {
-							OR = {
-								NOT = { exists = GBR }
-								GBR = {
-									OR = {
-										valid_for_personal_unions_trigger = no
-										AND = {
-											NOT = { religion = root }
-											NOT = {
-												AND = {
-													religion = anglican
-													ROOT = { religion = protestant }
-												}
-											}
-										}
-									}
-								}
-							}
-							OR = {
-								NOT = { exists = ENG }
-								ENG = {
-									OR = {
-										valid_for_personal_unions_trigger = no
-										AND = {
-											NOT = { religion = root }
-											NOT = {
-												AND = {
-													religion = anglican
-													ROOT = { religion = protestant }
-												}
-											}
-										}
-									}
-								}
-							}
-							OR = {
-								NOT = { exists = ASE }
-								ASE = {
-									OR = {
-										valid_for_personal_unions_trigger = no
-										AND = {
-											NOT = { religion = root }
-											NOT = {
-												AND = {
-													religion = anglican
-													ROOT = { religion = protestant }
-												}
-											}
-										}
-									}
-								}
-							}
-						}
-					}
+					NOT = { is_permanent_claim = root }
+					NOT = { is_core = root }
 				}
-				if = {
-					limit = {
-						mission_completed = han_rule_the_waves
-					}
-					wessex_area = {
-						limit = {
-							NOT = { is_permanent_claim = root }
-							NOT = { is_core = root }
-						}
-						add_permanent_claim = root
-					}
-					devon_area = {
-						limit = {
-							NOT = { is_permanent_claim = root }
-							NOT = { is_core = root }
-						}
-						add_permanent_claim = root
-					}
-					somerset_area = {
-						limit = {
-							NOT = { is_permanent_claim = root }
-							NOT = { is_core = root }
-						}
-						add_permanent_claim = root
-					}
-					norwich_area = {
-						limit = {
-							NOT = { is_permanent_claim = root }
-							NOT = { is_core = root }
-						}
-						add_permanent_claim = root
-					}
-					middlesex_area = {
-						limit = {
-							NOT = { is_permanent_claim = root }
-							NOT = { is_core = root }
-						}
-						add_permanent_claim = root
-					}
-					sussex_area = {
-						limit = {
-							NOT = { is_permanent_claim = root }
-							NOT = { is_core = root }
-						}
-						add_permanent_claim = root
-					}
-					west_midlands_area = {
-						limit = {
-							NOT = { is_permanent_claim = root }
-							NOT = { is_core = root }
-						}
-						add_permanent_claim = root
-					}
-					cheshire_area = {
-						limit = {
-							NOT = { is_permanent_claim = root }
-							NOT = { is_core = root }
-						}
-						add_permanent_claim = root
-					}
-					lincoln_area = {
-						limit = {
-							NOT = { is_permanent_claim = root }
-							NOT = { is_core = root }
-						}
-						add_permanent_claim = root
-					}
-					east_riding_area = {
-						limit = {
-							NOT = { is_permanent_claim = root }
-							NOT = { is_core = root }
-						}
-						add_permanent_claim = root
-					}
-					west_riding_area = {
-						limit = {
-							NOT = { is_permanent_claim = root }
-							NOT = { is_core = root }
-						}
-						add_permanent_claim = root
-					}
-					cumberland_area = {
-						limit = {
-							NOT = { is_permanent_claim = root }
-							NOT = { is_core = root }
-						}
-						add_permanent_claim = root
-					}
-					northumberland_area = {
-						limit = {
-							NOT = { is_permanent_claim = root }
-							NOT = { is_core = root }
-						}
-						add_permanent_claim = root
-					}
+				add_permanent_claim = root
+			}
+			middlesex_area = {
+				limit = {
+					NOT = { is_permanent_claim = root }
+					NOT = { is_core = root }
 				}
-				else_if = {
-					limit = {
-						OR = {
-							valid_for_personal_unions_trigger = no
-							AND = {
-								OR = {
-									NOT = { exists = GBR }
-									GBR = { valid_for_personal_unions_trigger = no }
-								}
-								OR = {
-									NOT = { exists = ENG }
-									ENG = { valid_for_personal_unions_trigger = no }
-								}
-								OR = {
-									NOT = { exists = ASE }
-									ASE = { valid_for_personal_unions_trigger = no }
-								}
-							}
-						}
-					}
-					custom_tooltip = han_herrenhausen_claims_eng_effect_tooltip
+				add_permanent_claim = root
+			}
+			sussex_area = {
+				limit = {
+					NOT = { is_permanent_claim = root }
+					NOT = { is_core = root }
 				}
+				add_permanent_claim = root
+			}
+			west_midlands_area = {
+				limit = {
+					NOT = { is_permanent_claim = root }
+					NOT = { is_core = root }
+				}
+				add_permanent_claim = root
+			}
+			cheshire_area = {
+				limit = {
+					NOT = { is_permanent_claim = root }
+					NOT = { is_core = root }
+				}
+				add_permanent_claim = root
+			}
+			lincoln_area = {
+				limit = {
+					NOT = { is_permanent_claim = root }
+					NOT = { is_core = root }
+				}
+				add_permanent_claim = root
+			}
+			east_riding_area = {
+				limit = {
+					NOT = { is_permanent_claim = root }
+					NOT = { is_core = root }
+				}
+				add_permanent_claim = root
+			}
+			west_riding_area = {
+				limit = {
+					NOT = { is_permanent_claim = root }
+					NOT = { is_core = root }
+				}
+				add_permanent_claim = root
+			}
+			cumberland_area = {
+				limit = {
+					NOT = { is_permanent_claim = root }
+					NOT = { is_core = root }
+				}
+				add_permanent_claim = root
+			}
+			northumberland_area = {
+				limit = {
+					NOT = { is_permanent_claim = root }
+					NOT = { is_core = root }
+				}
+				add_permanent_claim = root
 			}
 		}
 	}
@@ -902,294 +704,96 @@ vn_hannoverian_group_4 = {
 					key = han_naval_dominance_trade_mod
 				}
 			}
-			if = {
+			wessex_area = {
 				limit = {
-					valid_for_personal_unions_trigger = yes
-					exists = GBR
-					GBR = {
-						valid_for_personal_unions_trigger = yes
-					}
+					NOT = { is_permanent_claim = root }
+					NOT = { is_core = root }
 				}
-				if = {
-					limit = {
-						mission_completed = han_herrenhausen_gardens_mission
-						GBR = {
-							OR = {
-								religion = root
-								AND = {
-									religion = anglican
-									ROOT = { religion = protestant }
-								}
-							}
-						}
-					}
-					add_casus_belli = {
-						type = cb_fabricated_claims
-						months = 300
-						target = GBR
-					}
-				}
-				else = {
-					custom_tooltip = han_rule_the_waves_pu_gbr_effect_tooltip
-					if = {
-						limit = {
-							GBR = { religion = anglican }
-						}
-						custom_tooltip = han_rule_the_waves_pu_gbr_anglican_effect_tooltip
-					}
-				}
+				add_permanent_claim = root
 			}
-			else_if = {
+			devon_area = {
 				limit = {
-					valid_for_personal_unions_trigger = yes
-					exists = ENG
-					ENG = {
-						valid_for_personal_unions_trigger = yes
-					}
+					NOT = { is_permanent_claim = root }
+					NOT = { is_core = root }
 				}
-				if = {
-					limit = {
-						mission_completed = han_herrenhausen_gardens_mission
-						ENG = {
-							OR = {
-								religion = root
-								AND = {
-									religion = anglican
-									ROOT = { religion = protestant }
-								}
-							}
-						}
-					}
-					add_casus_belli = {
-						type = cb_fabricated_claims
-						months = 300
-						target = ENG
-					}
-				}
-				else = {
-					custom_tooltip = han_rule_the_waves_pu_eng_effect_tooltip
-					if = {
-						limit = {
-							ENG = { religion = anglican }
-						}
-						custom_tooltip = han_rule_the_waves_pu_eng_anglican_effect_tooltip
-					}
-				}
+				add_permanent_claim = root
 			}
-			else_if = {
+			somerset_area = {
 				limit = {
-					valid_for_personal_unions_trigger = yes
-					exists = ASE
-					ASE = {
-						valid_for_personal_unions_trigger = yes
-					}
+					NOT = { is_permanent_claim = root }
+					NOT = { is_core = root }
 				}
-				if = {
-					limit = {
-						mission_completed = han_herrenhausen_gardens_mission
-						ASE = {
-							OR = {
-								religion = root
-								AND = {
-									religion = anglican
-									ROOT = { religion = protestant }
-								}
-							}
-						}
-					}
-					add_casus_belli = {
-						type = cb_fabricated_claims
-						months = 300
-						target = ASE
-					}
-				}
-				else = {
-					custom_tooltip = han_rule_the_waves_pu_ase_effect_tooltip
-					if = {
-						limit = {
-							ASE = { religion = anglican }
-						}
-						custom_tooltip = han_rule_the_waves_pu_ase_anglican_effect_tooltip
-					}
-				}
+				add_permanent_claim = root
 			}
-			if = {
+			norwich_area = {
 				limit = {
-					OR = {
-						valid_for_personal_unions_trigger = no
-						AND = {
-							OR = {
-								NOT = { exists = GBR }
-								GBR = {
-									OR = {
-										valid_for_personal_unions_trigger = no
-										AND = {
-											NOT = { religion = root }
-											NOT = {
-												AND = {
-													religion = anglican
-													ROOT = { religion = protestant }
-												}
-											}
-										}
-									}
-								}
-							}
-							OR = {
-								NOT = { exists = ENG }
-								ENG = {
-									OR = {
-										valid_for_personal_unions_trigger = no
-										AND = {
-											NOT = { religion = root }
-											NOT = {
-												AND = {
-													religion = anglican
-													ROOT = { religion = protestant }
-												}
-											}
-										}
-									}
-								}
-							}
-							OR = {
-								NOT = { exists = ASE }
-								ASE = {
-									OR = {
-										valid_for_personal_unions_trigger = no
-										AND = {
-											NOT = { religion = root }
-											NOT = {
-												AND = {
-													religion = anglican
-													ROOT = { religion = protestant }
-												}
-											}
-										}
-									}
-								}
-							}
-						}
-					}
+					NOT = { is_permanent_claim = root }
+					NOT = { is_core = root }
 				}
-				if = {
-					limit = {
-						mission_completed = han_herrenhausen_gardens_mission
-					}
-					wessex_area = {
-						limit = {
-							NOT = { is_permanent_claim = root }
-							NOT = { is_core = root }
-						}
-						add_permanent_claim = root
-					}
-					devon_area = {
-						limit = {
-							NOT = { is_permanent_claim = root }
-							NOT = { is_core = root }
-						}
-						add_permanent_claim = root
-					}
-					somerset_area = {
-						limit = {
-							NOT = { is_permanent_claim = root }
-							NOT = { is_core = root }
-						}
-						add_permanent_claim = root
-					}
-					norwich_area = {
-						limit = {
-							NOT = { is_permanent_claim = root }
-							NOT = { is_core = root }
-						}
-						add_permanent_claim = root
-					}
-					middlesex_area = {
-						limit = {
-							NOT = { is_permanent_claim = root }
-							NOT = { is_core = root }
-						}
-						add_permanent_claim = root
-					}
-					sussex_area = {
-						limit = {
-							NOT = { is_permanent_claim = root }
-							NOT = { is_core = root }
-						}
-						add_permanent_claim = root
-					}
-					west_midlands_area = {
-						limit = {
-							NOT = { is_permanent_claim = root }
-							NOT = { is_core = root }
-						}
-						add_permanent_claim = root
-					}
-					cheshire_area = {
-						limit = {
-							NOT = { is_permanent_claim = root }
-							NOT = { is_core = root }
-						}
-						add_permanent_claim = root
-					}
-					lincoln_area = {
-						limit = {
-							NOT = { is_permanent_claim = root }
-							NOT = { is_core = root }
-						}
-						add_permanent_claim = root
-					}
-					east_riding_area = {
-						limit = {
-							NOT = { is_permanent_claim = root }
-							NOT = { is_core = root }
-						}
-						add_permanent_claim = root
-					}
-					west_riding_area = {
-						limit = {
-							NOT = { is_permanent_claim = root }
-							NOT = { is_core = root }
-						}
-						add_permanent_claim = root
-					}
-					cumberland_area = {
-						limit = {
-							NOT = { is_permanent_claim = root }
-							NOT = { is_core = root }
-						}
-						add_permanent_claim = root
-					}
-					northumberland_area = {
-						limit = {
-							NOT = { is_permanent_claim = root }
-							NOT = { is_core = root }
-						}
-						add_permanent_claim = root
-					}
+				add_permanent_claim = root
+			}
+			middlesex_area = {
+				limit = {
+					NOT = { is_permanent_claim = root }
+					NOT = { is_core = root }
 				}
-				else_if = {
-					limit = {
-						OR = {
-							valid_for_personal_unions_trigger = no
-							AND = {
-								OR = {
-									NOT = { exists = GBR }
-									GBR = { valid_for_personal_unions_trigger = no }
-								}
-								OR = {
-									NOT = { exists = ENG }
-									ENG = { valid_for_personal_unions_trigger = no }
-								}
-								OR = {
-									NOT = { exists = ASE }
-									ASE = { valid_for_personal_unions_trigger = no }
-								}
-							}
-						}
-					}
-					custom_tooltip = han_rule_the_waves_claims_eng_effect_tooltip
+				add_permanent_claim = root
+			}
+			sussex_area = {
+				limit = {
+					NOT = { is_permanent_claim = root }
+					NOT = { is_core = root }
 				}
+				add_permanent_claim = root
+			}
+			west_midlands_area = {
+				limit = {
+					NOT = { is_permanent_claim = root }
+					NOT = { is_core = root }
+				}
+				add_permanent_claim = root
+			}
+			cheshire_area = {
+				limit = {
+					NOT = { is_permanent_claim = root }
+					NOT = { is_core = root }
+				}
+				add_permanent_claim = root
+			}
+			lincoln_area = {
+				limit = {
+					NOT = { is_permanent_claim = root }
+					NOT = { is_core = root }
+				}
+				add_permanent_claim = root
+			}
+			east_riding_area = {
+				limit = {
+					NOT = { is_permanent_claim = root }
+					NOT = { is_core = root }
+				}
+				add_permanent_claim = root
+			}
+			west_riding_area = {
+				limit = {
+					NOT = { is_permanent_claim = root }
+					NOT = { is_core = root }
+				}
+				add_permanent_claim = root
+			}
+			cumberland_area = {
+				limit = {
+					NOT = { is_permanent_claim = root }
+					NOT = { is_core = root }
+				}
+				add_permanent_claim = root
+			}
+			northumberland_area = {
+				limit = {
+					NOT = { is_permanent_claim = root }
+					NOT = { is_core = root }
+				}
+				add_permanent_claim = root
 			}
 		}
 	}

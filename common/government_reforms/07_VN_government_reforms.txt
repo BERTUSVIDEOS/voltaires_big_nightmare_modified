@@ -11,7 +11,7 @@ germanic_monarchy = {
 			}
 		}
 	}
-	lock_level_when_selected = yes
+	#lock_level_when_selected = yes
 	valid_for_nation_designer = yes
 	nation_designer_cost = 10
 	nation_designer_trigger = {
@@ -55,10 +55,6 @@ germanic_monarchy = {
 			has_tributaries = yes
 		}
 	}
-
-	custom_attributes = {
-		locked_government_type = yes
-	}
 }
 
 eastern_monarchy = {
@@ -68,7 +64,7 @@ eastern_monarchy = {
 	potential = {
 		have_had_reform = eastern_monarchy
 	}
-	lock_level_when_selected = yes
+	#lock_level_when_selected = yes
 	valid_for_nation_designer = yes
 	allow_force_tributary = no
 	start_territory_to_estates = 0.5
@@ -147,8 +143,8 @@ andalusian_slave_state = {
 
 banate_reform = {	
 	icon = "nobleman"	
-	allow_normal_conversion = no	
-	lock_level_when_selected = yes	
+	#allow_normal_conversion = no	
+	#lock_level_when_selected = yes	
 	potential = {	
 		OR = {	
 			is_subject = yes	
@@ -166,16 +162,16 @@ banate_reform = {
 	}	
 	duration = 4	
 	custom_attributes = {	
-		locked_government_type = yes	
+		#locked_government_type = yes	
 		enables_plutocratic_idea_group = no	
 		enables_aristocratic_idea_group = yes	
 	}	
 }
 
 feudal_governorship = {
-	lock_level_when_selected = yes
+	#lock_level_when_selected = yes
 	icon = "feudal_theocracy"
-	allow_normal_conversion = no
+	#allow_normal_conversion = no
 	potential = {
 		religion_group = muslim
 		has_reform = feudal_governorship
@@ -193,7 +189,7 @@ feudal_governorship = {
 
 	duration = 6
 	custom_attributes = {
-		locked_government_type = yes
+		#locked_government_type = yes
 	}
 
 	conditional = {
@@ -204,40 +200,66 @@ feudal_governorship = {
 	}
 }
 
-canton_government = {	
+canton_government = {	 	#bertus mod
 	icon = "united_cantons_reform"	
-	allow_normal_conversion = no	
+	#allow_normal_conversion = no	
 	allow_convert = no	
-	lock_level_when_selected = yes	
-	valid_for_nation_designer = yes	
-	potential = {	
-		has_reform = canton_government	
+	#lock_level_when_selected = yes	
+	valid_for_nation_designer = yes
+	potential = {
+		primary_culture = swiss
 	}	
 	nation_designer_trigger = {	
 		capital_scope = { superregion = switzerland_superregion }	
 	}
 	modifiers = {
 		governing_capacity = -100	
-		diplomatic_reputation = 2	
-		diplomatic_upkeep = 2	
+		diplomatic_reputation = 2
 		max_absolutism = 10	
-	}	
+		trade_range = 1.0
+		placed_merchant_power = 10
+		merchants = 1
+		trade_steering = 0.50
+	}
+	boost_income = yes
+	duration = 4
 	custom_attributes = {	
 		enables_plutocratic_idea_group = yes	
 		enables_aristocratic_idea_group = no	
-	}	
-	conditional = {	
-		allow = { has_dlc = "Mare Nostrum" }	
-		can_form_trade_league = yes	
-	}	
-	duration = 4	
+	}
+	conditional = {
+		allow = {
+			has_dlc = "Res Publica"
+			NOT = { has_dlc = "Mare Nostrum" }
+		}
+		can_use_trade_post = yes
+	}
+	conditional = {
+		allow = {
+			has_dlc = "Mare Nostrum"
+			NOT = { has_dlc = "Res Publica" }
+		}
+		trade_city_reform = trading_city
+	}
+	conditional = {
+		allow = {
+			has_dlc = "Res Publica"
+			has_dlc = "Mare Nostrum"
+		}
+		can_use_trade_post = yes
+		can_form_trade_league = yes
+		trade_city_reform = trading_city
+	}
+	ai = {
+		factor = 1000
+	}
 }
 
 italian_monarchy = {	
 	icon = "italian_flag"	
-	allow_normal_conversion = no	
+	#allow_normal_conversion = no	
 	allow_convert = no	
-	lock_level_when_selected = yes	
+	#lock_level_when_selected = yes	
 	potential = {	
 		OR = {	
 			culture_group = latin	
@@ -265,7 +287,7 @@ italian_monarchy = {
 		}	
 	}	
 	custom_attributes = {	
-		locked_government_type = yes
+		#locked_government_type = yes
 		enables_plutocratic_idea_group = yes	
 		enables_aristocratic_idea_group = no	
 	}
@@ -544,8 +566,8 @@ freegraviate_reform = {
 }
 
 seljuk_federation_reform = {
-	lock_level_when_selected = yes
-	allow_normal_conversion = yes
+	#lock_level_when_selected = yes
+	#allow_normal_conversion = yes
 	icon = "ottoman_government"
 	potential = {
 		religion_group = muslim
@@ -586,7 +608,7 @@ seljuk_federation_reform = {
 	}
 
 	custom_attributes = {
-		locked_government_type = yes
+		#locked_government_type = yes
 	}
 
 	conditional = {

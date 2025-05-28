@@ -8,13 +8,16 @@ capital = 1867	# Sevilla
 
 
 1444.11.12 = {	#bertus mod
+	set_government_rank = 2
 	monarch = {
 		name = "Flamen I"
 		dynasty = "de Siesta"
 		culture = andalucian
 		birth_date = 1414.1.13
-		adm = 5
-		dip = 5
-		mil = 5
+		adm = 4
+		dip = 4
+		mil = 4
 	}
+	government = republic
+	add_government_reform = merchants_reform
 }

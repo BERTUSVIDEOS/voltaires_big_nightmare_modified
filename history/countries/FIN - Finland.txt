@@ -122,7 +122,8 @@ capital = 3252
 	}
 }
 1323.8.12 = { government_rank = 5 }
-1444.11.12 = {
+1444.11.12 = { 	#bertus mod
+	set_government_rank = 2
 	monarch = {
 		name = "Ingebjorg"
 		dynasty = "Sverreætta"

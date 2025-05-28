@@ -31,6 +31,7 @@ oligarchy_reform = {
 	valid_for_nation_designer = yes
 	nation_designer_cost = 0
 	potential = {
+		NOT = { primary_culture = swiss }
 		NOT = { primary_culture = tuscan }
 		NOT = { has_reform = crown_colony_government }
 		NOT = { has_reform = private_enterprise_colony_government }
@@ -268,10 +269,6 @@ prussian_republic_reform = {
 merchants_reform = {
 	icon = "politician"
 	allow_normal_conversion = yes
-	modifiers = {
-		max_absolutism = -10
-		merchants = 1
-	}
 	valid_for_nation_designer = yes
 	nation_designer_cost = 40
 	legacy_equivalent = merchant_republic
@@ -282,6 +279,7 @@ merchants_reform = {
 				NOT = { map_setup = map_setup_random }
 			}
 		}
+		NOT = { primary_culture = swiss }
 		NOT = { has_reform = crown_colony_government }
 		NOT = { has_reform = private_enterprise_colony_government }
 		NOT = { has_reform = self_governing_colony_government }
@@ -291,6 +289,10 @@ merchants_reform = {
 			has_reform = merchants_reform
 			crown_stronger_than_estate = { estate = all }
 		}
+	}
+	modifiers = {
+		max_absolutism = -10
+		merchants = 1
 	}
 	boost_income = yes
 	duration = 4
@@ -506,6 +508,7 @@ noble_elite_reform = {
 	valid_for_nation_designer = yes
 	nation_designer_cost = 0
 	potential = {
+		NOT = { primary_culture = swiss }
 		NOT = { has_reform = crown_colony_government }
 		NOT = { has_reform = private_enterprise_colony_government }
 		NOT = { has_reform = self_governing_colony_government }
@@ -1539,6 +1542,7 @@ civic_republicanism_government = {
 	allow_normal_conversion = no
 	potential = {
 		has_dlc = "Domination"
+		NOT = { primary_culture = swiss }
 		NOT = { has_reform = crown_colony_government }
 		NOT = { has_reform = private_enterprise_colony_government }
 		NOT = { has_reform = self_governing_colony_government }

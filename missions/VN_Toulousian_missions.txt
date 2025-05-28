@@ -1034,50 +1034,34 @@ vn_tou_missions_slot_4 = {
 		effect = {
 			add_prestige_or_monarch_power = { amount = 5 } 
 			add_dip_power = 50
-			if = {
-                limit = {
-                    exists = PRO
-                    valid_for_personal_unions_trigger = yes
-                    PRO = {
-                        valid_for_personal_unions_trigger = yes
-                    }
-                }
-                add_casus_belli = {
-                    type = cb_fabricated_claims
-                    months = 300
-                    target = PRO
-                }
-            }
-            else = {
-				arles_area = {
-					limit = {
-						NOT = { is_core = ROOT }
-						NOT = { is_permanent_claim = ROOT }
-					}
-					add_permanent_claim = ROOT
+			arles_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
 				}
-				forcalquier_area = {
-					limit = {
-						NOT = { is_core = ROOT }
-						NOT = { is_permanent_claim = ROOT }
-					}
-					add_permanent_claim = ROOT
+				add_permanent_claim = ROOT
+			}
+			forcalquier_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
 				}
-				venessin_area = {
-					limit = {
-						NOT = { is_core = ROOT }
-						NOT = { is_permanent_claim = ROOT }
-					}
-					add_permanent_claim = ROOT
+				add_permanent_claim = ROOT
+			}
+			venessin_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
 				}
-				nice_area = {
-					limit = {
-						NOT = { is_core = ROOT }
-						NOT = { is_permanent_claim = ROOT }
-					}
-					add_permanent_claim = ROOT
+				add_permanent_claim = ROOT
+			}
+			nice_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
 				}
-            }
+				add_permanent_claim = ROOT
+			}
 			521 = {
 				if = {
 					limit = {

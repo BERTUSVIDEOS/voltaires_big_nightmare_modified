@@ -308,7 +308,8 @@ fixed_capital = 1951
 	add_ruler_personality = greedy_personality
 	add_ruler_personality = obsessive_perfectionist_personality
 }
-1444.11.12 = {
+1444.11.12 = { 	#bertus mod
+	set_government_rank = 2
 	monarch = {
 		name = "Dietrich III"
 		dynasty = "von Mörs"

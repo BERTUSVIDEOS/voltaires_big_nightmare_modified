@@ -211,6 +211,8 @@ fixed_capital = 2423
 #done 1271.8.21
 1444.11.12 = {	#bertus mod
 	set_capital = 2894 #narbona
+	add_government_reform = feudalism_reform
+	set_government_rank = 2
 	monarch = {
 		name = "Jeanne II"
 		dynasty = "Raimonding"

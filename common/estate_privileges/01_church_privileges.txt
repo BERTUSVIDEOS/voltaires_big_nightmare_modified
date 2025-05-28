@@ -5,139 +5,16 @@ estate_church_land_rights = {
 	
 	loyalty = 0.05
 	influence = 0.05
-	can_select = {
-	}
-	on_granted = {
-	}
+	can_select = { }
+	on_granted = { }
 	modifier_by_land_ownership = {
 		
 	}
-	penalties = {
-	}
+	penalties = { }
 	benefits = {
 		governing_capacity = 100
 	}
-	ai_will_do = {
-		factor = 5
-		modifier = {
-			factor = 1.4
-			num_of_territories = 5
-		}
-		modifier = {
-			factor = 1.5
-			num_of_territories = 10
-		}
-		modifier = {
-			factor = 1.5
-			num_of_territories = 15
-		}
-		modifier = {
-			factor = 0
-			OR = {
-				NOT = { crown_land_share = 25 }
-				estate_influence = {
-					estate = estate_church
-					influence = 75
-				}
-			}
-			NOT = { has_estate_privilege = estate_church_land_rights }
-		}
-		modifier = {
-			factor = 0
-			NOT = { governing_capacity_percentage = 0.5 }
-		}
-		modifier = {
-			factor = 3
-			OR = {
-				AND = {
-					governing_capacity_percentage = 0.9
-					NOT = { has_estate_privilege = estate_church_land_rights }
-				}
-				#The trigger below should make sure that the AI actually keeps this privilege when enacting it early game
-				AND = {
-					governing_capacity_percentage = 0.6
-					has_estate_privilege = estate_church_land_rights
-				}
-			}
-		}
-		modifier = {
-			factor = 0.8
-			OR = {
-				NOT = { crown_land_share = 40 }
-				AND = {
-					is_absolutism_active = yes
-					NOT = { crown_land_share = 60 }
-				}
-			}
-			NOT = { has_estate_privilege = estate_church_land_rights }
-		}
-		modifier = {
-			factor = 0.8
-			OR = {
-				NOT = { crown_land_share = 30 }
-				AND = {
-					is_absolutism_active = yes
-					NOT = { crown_land_share = 50 }
-				}
-			}
-			NOT = { has_estate_privilege = estate_church_land_rights }
-		}
-		modifier = {
-			factor = 0.8
-			is_absolutism_active = yes
-		}
-		modifier = {
-			factor = 2
-			governing_capacity_percentage = 0.9
-		}
-		modifier = {
-			factor = 3
-			governing_capacity_percentage = 1
-		}
-		modifier = {
-			factor = 10
-			governing_capacity_percentage = 1.2
-		}
-		modifier = {
-			factor = 8
-			NOT = { adm_tech = 12 }
-			governing_capacity_percentage = 0.8
-		}
-		modifier = {
-			factor = 5
-			NOT = { adm_tech = 12 }
-			NOT = { government_rank = 1 }
-			governing_capacity_percentage = 0.65
-		}
-		#Tag specific convincement
-		modifier = {
-			factor = 1.25
-			tag = FRA
-			NOT = { adm_tech = 17 }
-		}
-		modifier = {
-			factor = 1.25
-			tag = SPA
-			NOT = { adm_tech = 17 }
-		}
-		#Has already a similar privilege active
-		modifier = {
-			factor = 0.75
-			has_estate_privilege = estate_nobles_land_rights
-		}
-		modifier = {
-			factor = 0.75
-			has_estate_privilege = estate_burghers_land_rights
-		}
-		modifier = {
-			factor = 0.75
-			has_estate_privilege = estate_holy_orders_land_rights
-		}
-		modifier = {
-			factor = 0.75
-			has_estate_privilege = estate_jews_land_rights
-		}
-	}
+	ai_will_do = { factor = 0 }
 }
 
 estate_church_religious_state = {
@@ -146,18 +23,19 @@ estate_church_religious_state = {
 	max_absolutism = 0	#-5→0
 	
 	loyalty = -0.05
-	can_select = {
-	}
-	on_granted = {
-	}
-	penalties = {
-	}
+	can_select = { }
+	on_granted = { }
+	penalties = { }
 	benefits = {
 		country_admin_power = 1
 	}
 	influence_scaled_conditional_modifier = {	#Modifier that are applied if the specified conditions are true. At 100% Influence you gain 100% of the modifier.
 		trigger = {
-			has_idea = RHI_idea_2 
+			OR = {
+				has_idea = RHI_idea_2 
+				has_idea = tier_3_ecumenical_patriarch 
+				has_idea = tier_4_ecumenical_patriarch 
+			}
 			estate_loyalty = {
 				estate = estate_church
 				loyalty = 60
@@ -167,39 +45,7 @@ estate_church_religious_state = {
 			country_admin_power = 3
 		}
 	}
-	ai_will_do = {
-		factor = 100
-		modifier = {
-			factor = 0
-			OR = {
-				NOT = { crown_land_share = 30 }
-				estate_influence = {
-					estate = estate_church
-					influence = 95
-				}
-			}
-			NOT = { has_estate_privilege = estate_church_religious_state }
-		}
-		modifier = {
-			factor = 0.8
-			OR = {
-				NOT = { crown_land_share = 35 }
-				AND = {
-					is_absolutism_active = yes
-					NOT = { crown_land_share = 55 }
-				}
-			}
-			NOT = { has_estate_privilege = estate_church_religious_state }
-		}
-		modifier = {
-			factor = 0.8
-			is_absolutism_active = yes
-		}
-		modifier = {
-			factor = 1.25
-			NOT = { adm = 2 }
-		}
-	}
+	ai_will_do = { factor = 0 }
 }
 
 estate_church_independent_inquisition = {
@@ -214,13 +60,7 @@ estate_church_independent_inquisition = {
 	benefits = {
 		adm_advisor_cost = -0.10	#-0.15→-0.10
 	}
-	ai_will_do = {
-		factor = 9
-		modifier = {
-			factor = 0.5
-			is_absolutism_active = yes
-		}
-	}
+	ai_will_do = { factor = 0 }
 }
 
 estate_church_papal_emissary = {
@@ -246,31 +86,7 @@ estate_church_papal_emissary = {
 	benefits = {
 		papal_influence = 1
 	}
-	ai_will_do = {
-		factor = 10
-		modifier = {
-			factor = 0
-			is_part_of_hre = yes
-			is_emperor = no
-		}
-		modifier = {
-			factor = 0
-			tag = SWE
-		}
-		modifier = {
-			factor = 0
-			is_absolutism_active = yes
-		}
-		modifier = {
-			factor = 0.75
-			NOT = {
-				reverse_has_opinion = {
-					who = PAP
-					value = 50
-				}
-			}
-		}
-	}
+	ai_will_do = { factor = 0 }
 }
 
 estate_church_clerical_ministers = {
@@ -372,27 +188,9 @@ estate_church_clerical_ministers = {
 			technology_cost = -0.05
 		}
 	}
-	penalties = {
-	}
-	benefits = {
-	}
-	ai_will_do = {
-		factor = 10
-		modifier = {
-			factor = 0.5
-			is_absolutism_active = yes
-		}
-		modifier = {
-			factor = 0.5
-			OR = {
-				religion = protestant
-				religion = anabaptist
-				religion = hussite
-			}
-			religion = protestant
-			num_of_aspects = 3
-		}
-	}
+	penalties = { }
+	benefits = { }
+	ai_will_do = { factor = 0 }
 }
 
 estate_church_clerical_oversight = {
@@ -412,17 +210,9 @@ estate_church_clerical_oversight = {
 			max_absolutism = 10
 		}
 	}
-	penalties = {
-	}
-	benefits = {
-	}
-	ai_will_do = {
-		factor = 10
-		modifier = {
-			factor = 0
-			is_absolutism_active = yes
-		}
-	}
+	penalties = { }
+	benefits = { }
+	ai_will_do = { factor = 0 }
 }
 
 estate_church_enforced_one_faith = {
@@ -453,17 +243,13 @@ estate_church_enforced_one_faith = {
 			estate_action = RECRUIT_INQUISITOR_CHURCH
 		}
 	}
-	on_revoked = {
-	}
-	on_invalid = {
-	}
+	on_revoked = { }
+	on_invalid = { }
 	on_cooldown_expires = {
 		remove_estate_privilege = estate_church_enforced_one_faith
 	}
 	cooldown_years = 15
-	ai_will_do = {
-		factor = 0
-	}
+	ai_will_do = { factor = 0 }
 }
 
 estate_church_administrative_privileges = {
@@ -475,8 +261,7 @@ estate_church_administrative_privileges = {
 	influence = 0.1
 	is_valid = {
 	}
-	can_select = {
-	}
+	can_select = { }
 	can_revoke = {
 	}
 	on_granted = {
@@ -519,8 +304,7 @@ estate_church_administrative_privileges = {
 			max_absolutism = -5
 		}
 	}
-	penalties = {
-	}
+	penalties = { }
 	benefits = {
 		war_exhaustion = -0.02
 	}
@@ -528,9 +312,7 @@ estate_church_administrative_privileges = {
 		exempt_from_seize_land
 	}
 	cooldown_years = 25
-	ai_will_do = {
-		factor = 0
-	}
+	ai_will_do = { factor = 0 }
 }
 
 #DLC Privileges
@@ -622,10 +404,8 @@ estate_church_monopoly_of_wool = {
 			remove_province_modifier = estate_church_monopoly_of_wool_mod
 		}
 	}
-	penalties = {
-	}
-	benefits = {
-	}
+	penalties = { }
+	benefits = { }
 	cooldown_years = 10
 	conditional_modifier = {
 		trigger = {
@@ -639,9 +419,7 @@ estate_church_monopoly_of_wool = {
 	on_cooldown_expires = {
 		country_event = { id = monopoly_privileges.9 }
 	}
-	ai_will_do = {
-		factor = 0
-	}
+	ai_will_do = { factor = 0 }
 }
 
 estate_church_monopoly_of_wine = {
@@ -748,10 +526,8 @@ estate_church_monopoly_of_wine = {
 			remove_province_modifier = estate_church_monopoly_of_wine_mod
 		}
 	}
-	penalties = {
-	}
-	benefits = {
-	}
+	penalties = { }
+	benefits = { }
 	cooldown_years = 10
 	conditional_modifier = {
 		trigger = {
@@ -765,9 +541,7 @@ estate_church_monopoly_of_wine = {
 	on_cooldown_expires = {
 		country_event = { id = monopoly_privileges.10 }
 	}
-	ai_will_do = {
-		factor = 0
-	}
+	ai_will_do = { factor = 0 }
 }
 
 estate_church_for_the_faith = {
@@ -877,11 +651,8 @@ estate_church_for_the_faith = {
 			max_absolutism = 5
 		}
 	}
-	penalties = {
-	}
-	ai_will_do = {
-		factor = 0
-	}
+	penalties = { }
+	ai_will_do = { factor = 0 }
 }
 
 estate_church_statutory_rights = {
@@ -901,11 +672,8 @@ estate_church_statutory_rights = {
 	penalties = {
 		min_autonomy = 25
 	}
-	benefits = {
-	}
-	ai_will_do = {
-		factor = 0
-	}
+	benefits = { }
+	ai_will_do = { factor = 0 }
 	cooldown_years = 20
 }
 
@@ -924,13 +692,9 @@ estate_church_influence_temples = {
 	on_granted = {
 		custom_tooltip = estate_church_influence_temples_tt
 	}
-	penalties = {
-	}
-	benefits = {
-	}
-	ai_will_do = {
-		factor = 10
-	}
+	penalties = { }
+	benefits = { }
+	ai_will_do = { factor = 0 }
 }
 
 estate_church_religious_diplomats = {
@@ -941,8 +705,7 @@ estate_church_religious_diplomats = {
 	loyalty = 0
 	is_valid = {
 	}
-	can_select = {
-	}
+	can_select = { }
 	on_granted = {
 		#add_increase_same_religion_opinion = yes
 	}
@@ -952,8 +715,7 @@ estate_church_religious_diplomats = {
 	on_invalid = {
 		#remove_increase_same_religion_opinion = yes
 	}
-	penalties = {
-	}
+	penalties = { }
 	benefits = {
 		diplomatic_reputation = 3	#1→3
 		relation_with_same_religion = 25	#10→25
@@ -969,9 +731,7 @@ estate_church_religious_diplomats = {
 			church_influence_modifier = -0.15
 		}
 	}
-	ai_will_do = {
-		factor = 0	#The privilege is a little bit too niche to be really usable for the AI
-	}
+	ai_will_do = { factor = 0 }
 }
 
 estate_church_one_faith_one_culture = {
@@ -983,8 +743,7 @@ estate_church_one_faith_one_culture = {
 	land_share = 5
 	is_valid = {
 	}
-	can_select = {
-	}
+	can_select = { }
 	on_granted = {
 		custom_tooltip = estate_church_one_faith_one_culture_gta
 		custom_tooltip = estate_church_one_faith_one_culture_gtb
@@ -1076,27 +835,7 @@ estate_church_one_faith_one_culture = {
 		}
 	}
 	cooldown_years = 15
-	ai_will_do = {
-		factor = 10
-		modifier = {
-			factor = 0
-			NOT = { dominant_religion = ROOT }
-		}
-		modifier = {
-			factor = 0
-			NOT = { dominant_culture = ROOT }
-		}
-		modifier = {
-			factor = 100
-			NOT = { average_autonomy = 15 }
-			dominant_religion = ROOT
-			dominant_culture = ROOT
-		}
-		modifier = {
-			factor = 0.1
-			is_absolutism_active = yes
-		}
-	}
+	ai_will_do = { factor = 0 }
 }
 
 ###APOSTOLIC PRIVILEGES###
@@ -1112,8 +851,7 @@ estate_church_scholar_connections = {
 		religion_group = muslim
 		has_dlc = "Cradle of Civilization"
 	}
-	can_select = {
-	}
+	can_select = { }
 	on_granted = {
 		disable_scholar_cost = yes
 	}
@@ -1123,17 +861,9 @@ estate_church_scholar_connections = {
 	on_invalid = {
 		enable_scholar_cost = yes
 	}
-	penalties = {
-	}
-	benefits = {
-	}
-	ai_will_do = {
-		factor = 15
-		modifier = {
-			factor = 0
-			is_absolutism_active = yes
-		}
-	}
+	penalties = { }
+	benefits = { }
+	ai_will_do = { factor = 0 }
 }
 
 #Privilege to remove the diplo requirement for one school
@@ -1147,8 +877,7 @@ estate_church_integrated_school = {
 		religion_group = muslim
 		has_dlc = "Cradle of Civilization"
 	}
-	can_select = {
-	}
+	can_select = { }
 	on_granted = {
 		enable_baseline_invite_scholar = yes
 	}
@@ -1158,17 +887,9 @@ estate_church_integrated_school = {
 	on_invalid = {
 		disable_baseline_invite_scholar = yes
 	}
-	penalties = {
-	}
-	benefits = {
-	}
-	ai_will_do = {
-		factor = 15
-		modifier = {
-			factor = 0
-			is_absolutism_active = yes
-		}
-	}
+	penalties = { }
+	benefits = { }
+	ai_will_do = { factor = 0 }
 }
 
 #Domination generic Estate Privileges
@@ -1221,9 +942,7 @@ estate_church_development_of_temples = {
 	mechanics = {
 		no_estate_crownland_loss_from_developing
 	}
-	ai_will_do = {
-		factor = 0
-	}
+	ai_will_do = { factor = 0 }
 }
 estate_church_expand_the_theology = {
 	icon = privilege_missionary
@@ -1240,17 +959,13 @@ estate_church_expand_the_theology = {
 			estate_action = RECRUIT_MINISTER_CHURCH
 		}
 	}
-	on_revoked = {
-	}
-	on_invalid = {
-	}
+	on_revoked = { }
+	on_invalid = { }
 	on_cooldown_expires = {
 		remove_estate_privilege = estate_church_expand_the_theology
 	}
 	cooldown_years = 15
-	ai_will_do = {
-		factor = 0
-	}
+	ai_will_do = { factor = 0 }
 }
 estate_church_clerical_education = {
 	icon = privilege_technology
@@ -1314,31 +1029,7 @@ estate_church_clerical_education = {
 			max_absolutism = -10
 		}
 	}
-	ai_will_do = {
-		factor = 5
-		modifier = {
-			factor = 0
-			NOT = {
-				estate_loyalty = {
-					estate = estate_church
-					loyalty = 30
-				}
-			}
-		}
-		modifier = {
-			factor = 0
-			NOT = {
-				estate_influence = {
-					estate = estate_church
-					influence = 50
-				}
-			}
-		}
-		modifier = {
-			factor = 0.5
-			is_absolutism_active = yes
-		}
-	}
+	ai_will_do = { factor = 0 }
 }
 estate_church_religious_delegation = {
 	icon = privilege_tolerance_own
@@ -1355,21 +1046,13 @@ estate_church_religious_delegation = {
 			estate_action = RELIGIOUS_DELEGATION_CHURCH
 		}
 	}
-	on_revoked = {
-	}
-	on_invalid = {
-	}
+	on_revoked = { }
+	on_invalid = { }
 	on_cooldown_expires = {
 		remove_estate_privilege = estate_church_religious_delegation
 	}
 	cooldown_years = 15
-	ai_will_do = {
-		factor = 10
-		modifier = {
-			factor = 0.1
-			is_absolutism_active = yes
-		}
-	}
+	ai_will_do = { factor = 0 }
 }
 estate_church_institutionalized_clergy = {
 	icon = privilege_government
@@ -1386,21 +1069,13 @@ estate_church_institutionalized_clergy = {
 			estate_action = SEEK_SUPPORT_OF_CLERGY_CHURCH
 		}
 	}
-	on_revoked = {
-	}
-	on_invalid = {
-	}
+	on_revoked = { }
+	on_invalid = { }
 	on_cooldown_expires = {
 		remove_estate_privilege = estate_church_institutionalized_clergy
 	}
 	cooldown_years = 15
-	ai_will_do = {
-		factor = 1
-		modifier = {
-			factor = 0.1
-			is_absolutism_active = yes
-		}
-	}
+	ai_will_do = { factor = 0 }
 }
 estate_church_donation_right = {
 	icon = privilege_make_generous_donation
@@ -1432,7 +1107,13 @@ estate_church_donation_right = {
 			estate_action = MAKE_GENEROUS_DONATION_CHURCH
 		}
 		if = {	#bertus mod
-			limit = { has_idea = RHI_idea_2 }
+			limit = {
+				OR = {
+					has_idea = RHI_idea_2 
+					has_idea = tier_3_ecumenical_patriarch 
+					has_idea = tier_4_ecumenical_patriarch 
+				}
+			}
 			custom_tooltip = RHI_idea_2_tt
 		}
 	}
@@ -1446,23 +1127,22 @@ estate_church_donation_right = {
 			estate_privilege = estate_church_donation_right
 		}
 		if = {	#bertus mod
-			limit = { has_idea = RHI_idea_2 }
+			limit = {
+				OR = {
+					has_idea = RHI_idea_2 
+					has_idea = tier_3_ecumenical_patriarch 
+					has_idea = tier_4_ecumenical_patriarch 
+				}
+			}
 			custom_tooltip = RHI_idea_2_tt
 		}
 	}
-	on_granted = {
-	}
+	on_granted = { }
 	on_cooldown_expires = {
 		remove_estate_privilege = estate_church_donation_right
 	}
 	cooldown_years = 15
-	ai_will_do = {
-		factor = 10
-		modifier = {
-			factor = 0.1
-			is_absolutism_active = yes
-		}
-	}
+	ai_will_do = { factor = 0 }
 }
 
 #MOD
@@ -1491,7 +1171,77 @@ estate_church_priory = {
 	benefits = {
 		female_advisor_chance = 1
 	}
-	ai_will_do = {
-		factor = 0
+	ai_will_do = { factor = 0 }
+}
+
+estate_church_lao_animism = {
+	icon = privilege_tolerance_heathen
+	loyalty = -0.05
+	influence = 0.6
+	can_select = {
+		primary_culture = lao
+		religion_group = eastern
 	}
+	is_valid = {
+		OR = {
+			has_estate_privilege = estate_church_lao_animism
+			AND = {
+				religion_group = eastern
+				primary_culture = lao
+			}
+		}
+	}
+	on_granted = {
+		custom_tooltip = estate_church_lao_animism_effect_tooltip
+	}
+	on_granted_province = {
+		if = {
+			limit = {
+				religion = animism
+			}
+			add_province_modifier = {
+				name = estate_church_lao_animism_mod
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				has_province_modifier = estate_church_lao_animism_mod
+			}
+			remove_province_modifier = estate_church_lao_animism_mod
+		}
+	}
+	on_revoked = {
+		custom_tooltip = estate_church_lao_animism_revoke_effect_tooltip
+	}
+	on_revoked_province = {
+		if = {
+			limit = {
+				has_province_modifier = estate_church_lao_animism_mod
+			}
+			remove_province_modifier = estate_church_lao_animism_mod
+		}
+	}
+	on_invalid = {
+		custom_tooltip = estate_church_lao_animism_revoke_effect_tooltip
+	}
+	on_invalid_province = {
+		if = {
+			limit = {
+				has_province_modifier = estate_church_lao_animism_mod
+			}
+			remove_province_modifier = estate_church_lao_animism_mod
+		}
+	}
+	penalties = {
+		tolerance_own = -2
+	}
+	benefits = {
+		tolerance_heathen = 5
+	}
+	conditional_modifier = {
+		trigger = { has_government_mechanic = russian_modernization_mechanic }
+		modifier = { monthly_russian_modernization = -0.03 }
+	}
+	ai_will_do = { factor = 0 }
 }

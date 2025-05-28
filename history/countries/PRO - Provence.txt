@@ -311,6 +311,7 @@ capital = 991 #Aix Lmao
 }
 1444.11.12 = {	#bertus mod
 	set_capital = 2671
+	set_government_rank = 2
 	monarch = {
 		name = "Rene II"
 		dynasty = "d'Anjou"

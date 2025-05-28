@@ -178,6 +178,7 @@ add_army_professionalism = 0.1
 	}
 }
 1444.11.12 = {	#bertus mod
+	set_government_rank = 2
 	set_capital = 844 #Leon
 	monarch = {
 		name = "Dandolo I"

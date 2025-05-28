@@ -5,18 +5,13 @@ estate_holy_orders_land_rights = {
 	
 	loyalty = 0.05
 	influence = 0.05
-	can_select = {
-	}
-	on_granted = {
-	}
-	penalties = {
-	}
+	can_select = { }
+	on_granted = { }
+	penalties = { }
 	benefits = {
 		governing_capacity = 100
 	}
-	ai_will_do = {
-		factor = 5
-	}
+	ai_will_do = { factor = 0 }
 }
 
 estate_holy_orders_heir_knight = {
@@ -31,21 +26,18 @@ estate_holy_orders_heir_knight = {
 		NOT = { mil = 6 }
 	}
 	on_granted = {
+		custom_tooltip = "Revoked After Cooldown"
 		add_devotion = -10
 		hidden_effect = { set_ruler_flag = heir_became_knight_flag }
 		change_mil = 1
 	}
-	penalties = {
-	}
-	benefits = {
-	}
+	penalties = { }
+	benefits = { }
 	cooldown_years = 5
 	on_cooldown_expires = {
 		remove_estate_privilege = estate_holy_orders_heir_knight
 	}
-	ai_will_do = {
-		factor = 10
-	}
+	ai_will_do = { factor = 0 }
 }
 
 estate_holy_orders_enable = {
@@ -62,19 +54,15 @@ estate_holy_orders_enable = {
 		custom_tooltip = ENABLE_HOLY_ORDERS_TOOLTIP
 		set_country_flag = enable_holy_orders_flag 
 	}
-	penalties = {
-	}
-	benefits = {
-	}
+	penalties = { }
+	benefits = { }
 	on_invalid = {
 		clr_country_flag = enable_holy_orders_flag 
 	}
 	on_revoked = {
 		clr_country_flag = enable_holy_orders_flag 
 	}
-	ai_will_do = {
-		factor = 10
-	}
+	ai_will_do = { factor = 0 }
 }
 
 estate_holy_orders_monopoly_of_beer = {
@@ -149,17 +137,13 @@ estate_holy_orders_monopoly_of_beer = {
 			}
 		}
 	}
-	penalties = {
-	}
-	benefits = {
-	}
+	penalties = { }
+	benefits = { }
 	cooldown_years = 10
 	on_cooldown_expires = {
 		country_event = { id = monopoly_privileges.12 }
 	}
-	ai_will_do = {
-		factor = 0
-	}
+	ai_will_do = { factor = 0 }
 }
 
 estate_holy_orders_banking_rights = {
@@ -174,9 +158,7 @@ estate_holy_orders_banking_rights = {
 	benefits = {
 		inflation_action_cost = -0.25
 	}
-	ai_will_do = {
-		factor = 10
-	}
+	ai_will_do = { factor = 0 }
 }
 
 estate_holy_orders_monopoly_on_banking = {
@@ -188,30 +170,27 @@ estate_holy_orders_monopoly_on_banking = {
 		government = theocracy
 	}
 	can_select = {
-		NOT = { dip = 6 }
+		NOT = { dip = 6 } 
 	}
 	on_granted = {
+		custom_tooltip = "Revoked After Cooldown"
 		add_devotion = -10
 		hidden_effect = { set_ruler_flag = heir_became_economist_flag }
 		change_dip = 1
-	}
-	ai_will_do = {
-		factor = 10
 	}
 	on_cooldown_expires = {
 		remove_estate_privilege = estate_holy_orders_monopoly_on_banking
 	}
 	cooldown_years = 5
+	ai_will_do = { factor = 0 }
 }
 
 estate_holy_orders_court_representation = {
 	icon = privilege_order_court
 	loyalty = 0.1
 	influence = 0.1
-	penalties = {
-	}
-	benefits = {
-	}
+	penalties = { }
+	benefits = { }
 	influence_scaled_conditional_modifier = {
 		trigger = { always = yes }
 		modifier = {
@@ -225,9 +204,7 @@ estate_holy_orders_court_representation = {
 			same_religion_advisor_cost = -0.10
 		}
 	}
-	ai_will_do = {
-		factor = 5
-	}
+	ai_will_do = { factor = 0 }
 }
 
 estate_holy_orders_expulsion = {
@@ -253,13 +230,9 @@ estate_holy_orders_expulsion = {
 		custom_tooltip = estate_holy_orders_expulsion_effect_tooltip
 		hidden_effect = { set_country_flag = expelled_holy_orders }
 	}
-	penalties = {
-	}
-	benefits = {
-	}
-	ai_will_do = {
-		factor = 0
-	}
+	penalties = { }
+	benefits = { }
+	ai_will_do = { factor = 0 }
 }
 estate_holy_orders_military_ministerium = {
 	icon = privilege_army_professionalism
@@ -270,24 +243,20 @@ estate_holy_orders_military_ministerium = {
 	is_valid = {
 		has_dlc = "Domination"
 	}
-	can_select = {
-	}
+	can_select = { }
 	on_granted = {
+		custom_tooltip = "Revoked After Cooldown"
 		estate_action = {
-			estate_action = RECRUIT_MINISTER_HOLY_ORDERS
+			estate_action = estate_action_RECRUIT_MINISTER_HOLY_ORDERS
 		}
 	}
-	on_revoked = {
-	}
-	on_invalid = {
-	}
+	on_revoked = { }
+	on_invalid = { }
 	on_cooldown_expires = {
 		remove_estate_privilege = estate_holy_orders_military_ministerium
 	}
 	cooldown_years = 15
-	ai_will_do = {
-		factor = 0
-	}
+	ai_will_do = { factor = 0 }
 }
 estate_holy_orders_expand_the_cossack_regiments = {
 	icon = privilege_conscript_cossack_elite
@@ -297,45 +266,45 @@ estate_holy_orders_expand_the_cossack_regiments = {
 	influence = 0.05
 	is_valid = {
 	}
-	can_select = {
-	}
-	on_granted = {
-		estate_action = {
-			estate_action = RAISE_COSSACK_HOST_HOLY_ORDERS
-		}
-	}
-	on_revoked = {
-	}
-	on_invalid = {
-	}
-	on_cooldown_expires = {
-		remove_estate_privilege = estate_holy_orders_expand_the_cossack_regiments
-	}
-	cooldown_years = 15
-	penalties = {
-	}
-	benefits = {
-	}
+	can_select = { }
+	on_granted = { }
+	on_revoked = { }
+	on_invalid = { }
+	on_cooldown_expires = { }
+	penalties = { }
+	benefits = { }
 	mechanics = {
 		enables_cossack_regiments
 	}
-	ai_will_do = {
-		factor = 1
-	}
+	ai_will_do = { factor = 0 }
 }
 
 estate_holy_orders_recruit_cossack_generals = {
 	icon = privilege_conscript_cossack_elite
 	max_absolutism = 0	#-5→0
 	
-	influence = 0.1
-	penalties = {
+	influence = 0.10
+
+	is_valid = {
 	}
+	can_select = {
+		has_estate_privilege = estate_holy_orders_expand_the_cossack_regiments
+	}
+	on_granted = {
+		custom_tooltip = "Revoked After Cooldown"
+		estate_action = {
+			estate_action = RAISE_COSSACK_HOST_HOLY_ORDERS
+		}
+	}
+	penalties = { }
 	benefits = {
-		army_tradition = 0.5
 		leader_land_shock = 1
 	}
-	ai_will_do = {
-		factor = 10
+	on_revoked = { }
+	on_invalid = { }
+	on_cooldown_expires = {
+		remove_estate_privilege = estate_holy_orders_recruit_cossack_generals
 	}
+	cooldown_years = 15
+	ai_will_do = { factor = 0 }
 }

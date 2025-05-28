@@ -851,50 +851,34 @@ vn_bav_missions_slot_3 = {
         }
         effect = {
             add_legitimacy = 10
-            if = {
-				limit = {
-                    valid_for_personal_unions_trigger = yes
-					exists = HAB
-					HAB = {
-						valid_for_personal_unions_trigger = yes
-					}
-				}
-				add_casus_belli = {
-					type = cb_fabricated_claims
-					months = 300
-					target = HAB
-				}
-			}
-			else = {
-				austria_region = {
-					limit = {
-						NOT = { is_core = ROOT }
-						NOT = { is_permanent_claim = ROOT }
-					}
-					add_permanent_claim = ROOT
+            austria_region = {
+                limit = {
+                    NOT = { is_core = ROOT }
+                    NOT = { is_permanent_claim = ROOT }
                 }
-                styria_area = {
-					limit = {
-						NOT = { is_core = ROOT }
-						NOT = { is_permanent_claim = ROOT }
-					}
-					add_permanent_claim = ROOT
+                add_permanent_claim = ROOT
+            }
+            styria_area = {
+                limit = {
+                    NOT = { is_core = ROOT }
+                    NOT = { is_permanent_claim = ROOT }
                 }
-                carinthia_area = {
-					limit = {
-						NOT = { is_core = ROOT }
-						NOT = { is_permanent_claim = ROOT }
-					}
-					add_permanent_claim = ROOT
+                add_permanent_claim = ROOT
+            }
+            carinthia_area = {
+                limit = {
+                    NOT = { is_core = ROOT }
+                    NOT = { is_permanent_claim = ROOT }
                 }
-                murmark_area = {
-					limit = {
-						NOT = { is_core = ROOT }
-						NOT = { is_permanent_claim = ROOT }
-					}
-					add_permanent_claim = ROOT
-				}
-			}
+                add_permanent_claim = ROOT
+            }
+            murmark_area = {
+                limit = {
+                    NOT = { is_core = ROOT }
+                    NOT = { is_permanent_claim = ROOT }
+                }
+                add_permanent_claim = ROOT
+            }
         }
     }
     vn_bav_conquer_austria = {
@@ -1108,29 +1092,13 @@ vn_bav_missions_slot_4 = {
             }
         }
         effect = {
-            if = {
-				limit = {
-                    valid_for_personal_unions_trigger = yes
-					exists = PAL
-					PAL = {
-						valid_for_personal_unions_trigger = yes
-					}
-				}
-				add_casus_belli = {
-					type = cb_fabricated_claims
-					months = 300
-					target = PAL
-				}
-			}
-			else = {
-				pfalzeast_area = {
-					limit = {
-						NOT = { is_core = ROOT }
-						NOT = { is_permanent_claim = ROOT }
-					}
-					add_permanent_claim = ROOT
-				}
-			}
+            pfalzeast_area = {
+                limit = {
+                    NOT = { is_core = ROOT }
+                    NOT = { is_permanent_claim = ROOT }
+                }
+                add_permanent_claim = ROOT
+            }
         }
     }
     vn_bav_conquer_palatinate = {
@@ -1148,28 +1116,12 @@ vn_bav_missions_slot_4 = {
             }
         }
         effect = {
-            if = {
-				limit = {
-                    valid_for_personal_unions_trigger = yes
-                    exists = HAI
-					HAI = {
-						valid_for_personal_unions_trigger = yes
-					}
-				}
-				add_casus_belli = {
-					type = cb_fabricated_claims
-					months = 300
-					target = HAI
-				}
-			}
-			else = {
-				hainaut_area = {
-					limit = {
-						NOT = { is_core = ROOT }
-						NOT = { is_permanent_claim = ROOT }
-					}
-					add_permanent_claim = ROOT
-				}
+            hainaut_area = {
+                limit = {
+                    NOT = { is_core = ROOT }
+                    NOT = { is_permanent_claim = ROOT }
+                }
+                add_permanent_claim = ROOT
             }
             add_country_modifier = {
                 name = bav_conquer_palatinate_mission

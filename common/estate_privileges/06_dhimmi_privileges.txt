@@ -22,176 +22,7 @@ estate_dhimmi_land_rights = {
 	#	trigger = { has_government_mechanic = ottoman_decadence_mechanic }
 	#	modifier = { monthly_ottoman_decadence = 0.02 }
 	#}
-	ai_will_do = {
-		factor = 5
-		modifier = {
-			factor = 1.4
-			num_of_territories = 5
-		}
-		modifier = {
-			factor = 1.5
-			num_of_territories = 10
-		}
-		modifier = {
-			factor = 1.5
-			num_of_territories = 15
-		}
-		modifier = {
-			factor = 0
-			OR = {
-				NOT = { crown_land_share = 25 }
-				estate_influence = {
-					estate = estate_dhimmi
-					influence = 75
-				}
-			}
-			NOT = { has_estate_privilege = estate_dhimmi_land_rights }
-		}
-		modifier = {
-			factor = 3
-			OR = {
-				AND = {
-					governing_capacity_percentage = 0.9
-					NOT = { has_estate_privilege = estate_dhimmi_land_rights }
-				}
-				#The trigger below should make sure that the AI actually keeps this privilege when enacting it early game
-				AND = {
-					governing_capacity_percentage = 0.6
-					has_estate_privilege = estate_dhimmi_land_rights
-				}
-			}
-		}
-		modifier = {
-			factor = 0
-			NOT = { governing_capacity_percentage = 0.5 }
-		}
-		modifier = {
-			factor = 0.8
-			OR = {
-				NOT = { crown_land_share = 40 }
-				AND = {
-					is_absolutism_active = yes
-					NOT = { crown_land_share = 60 }
-				}
-			}
-			NOT = { has_estate_privilege = estate_dhimmi_land_rights }
-		}
-		modifier = {
-			factor = 0.8
-			OR = {
-				NOT = { crown_land_share = 30 }
-				AND = {
-					is_absolutism_active = yes
-					NOT = { crown_land_share = 50 }
-				}
-			}
-			NOT = { has_estate_privilege = estate_dhimmi_land_rights }
-		}
-		modifier = {
-			factor = 0.8
-			is_absolutism_active = yes
-		}
-		modifier = {
-			factor = 2
-			governing_capacity_percentage = 0.9
-		}
-		modifier = {
-			factor = 3
-			governing_capacity_percentage = 1
-		}
-		modifier = {
-			factor = 10
-			governing_capacity_percentage = 1.2
-		}
-		modifier = {
-			factor = 8
-			NOT = { adm_tech = 12 }
-			governing_capacity_percentage = 0.8
-		}
-		modifier = {
-			factor = 5
-			NOT = { adm_tech = 12 }
-			NOT = { government_rank = 1 }
-			governing_capacity_percentage = 0.65
-		}
-		#Tag specific convincement - after tech 17 (+250 governing capacity) it should not play a role anymore
-		modifier = {
-			factor = 1.25
-			tag = MOS
-			NOT = { adm_tech = 52 }
-		}
-		modifier = {
-			factor = 1.25
-			tag = RUS
-			NOT = { adm_tech = 52 }
-		}
-		modifier = {
-			factor = 1.25
-			tag = TUR
-			NOT = { adm_tech = 52 }
-		}
-		modifier = {
-			factor = 1.25
-			tag = BYZ
-			NOT = { adm_tech = 52 }
-		}
-		modifier = {
-			factor = 1.25
-			tag = FRA
-			NOT = { adm_tech = 52 }
-		}
-		modifier = {
-			factor = 1.25
-			tag = SPA
-			NOT = { adm_tech = 52 }
-		}
-		modifier = {
-			factor = 1.25
-			tag = PLC
-			NOT = { adm_tech = 52 }
-		}
-		#Has already a similar privilege active
-		modifier = {
-			factor = 0.75
-			has_estate_privilege = estate_brahmins_land_rights
-		}
-		modifier = {
-			factor = 0.75
-			has_estate_privilege = estate_nobles_land_rights
-		}
-		modifier = {
-			factor = 0.75
-			has_estate_privilege = estate_church_land_rights
-		}
-		modifier = {
-			factor = 0.75
-			has_estate_privilege = estate_maratha_land_rights
-		}
-		modifier = {
-			factor = 0.75
-			has_estate_privilege = estate_burghers_land_rights
-		}
-		modifier = {
-			factor = 0.75
-			has_estate_privilege = estate_vaisyas_land_rights
-		}
-		modifier = {
-			factor = 0.75
-			has_estate_privilege = estate_cossacks_land_rights
-		}
-		modifier = {
-			factor = 0.75
-			has_estate_privilege = estate_nomadic_tribes_land_rights
-		}
-		modifier = {
-			factor = 0.75
-			has_estate_privilege = estate_jains_land_rights
-		}
-		modifier = {
-			factor = 0.75
-			has_estate_privilege = estate_rajput_land_rights
-		}
-	}
+	ai_will_do = { factor = 0 }
 }
 
 estate_dhimmi_lighter_dhimmi_taxes = {
@@ -258,9 +89,7 @@ estate_dhimmi_lighter_dhimmi_taxes = {
 	#	trigger = { has_government_mechanic = ottoman_decadence_mechanic }
 	#	modifier = { monthly_ottoman_decadence = 0.02 }
 	#}
-	ai_will_do = {
-		factor = 0
-	}
+	ai_will_do = { factor = 0 }
 }
 
 estate_dhimmi_dhimmi_nobles = {
@@ -284,9 +113,7 @@ estate_dhimmi_dhimmi_nobles = {
 	#	trigger = { has_government_mechanic = ottoman_decadence_mechanic }
 	#	modifier = { monthly_ottoman_decadence = 0.02 }
 	#}
-	ai_will_do = {
-		factor = 0
-	}
+	ai_will_do = { factor = 0 }
 }
 
 estate_dhimmi_manpower = {
@@ -358,9 +185,7 @@ estate_dhimmi_manpower = {
 	}
 	benefits = {
 	}
-	ai_will_do = {
-		factor = 0
-	}
+	ai_will_do = { factor = 0 }
 }
 
 estate_dhimmi_tolerance = {
@@ -392,28 +217,7 @@ estate_dhimmi_tolerance = {
 	#	trigger = { has_government_mechanic = ottoman_decadence_mechanic }
 	#	modifier = { monthly_ottoman_decadence = 0.02 }
 	#}
-	ai_will_do = {
-		factor = 1
-		modifier = {
-			factor = 10
-			num_of_owned_provinces_with = {
-				NOT = { religion_group = root }
-				is_state_core = root
-				value = 15
-			}
-		}
-		modifier = {
-			factor = 0.5
-			estate_influence = {
-				estate = estate_church
-				influence = 75
-			}
-		}
-		modifier = {
-			factor = 0.8
-			is_absolutism_active = yes
-		}
-	}
+	ai_will_do = { factor = 0 }
 }
 
 estate_dhimmi_guaranteed_autonomy = {
@@ -498,25 +302,7 @@ estate_dhimmi_guaranteed_autonomy = {
 	#	trigger = { has_government_mechanic = ottoman_decadence_mechanic }
 	#	modifier = { monthly_ottoman_decadence = 0.02 }
 	#}
-	ai_will_do = {
-		factor = 1000
-		modifier = {
-			factor = 0
-			NOT = {
-				any_owned_province = {
-					NOT = { religion_group = ROOT }
-				}
-			}
-		}
-		modifier = {
-			factor = 0
-			is_subject = yes
-			overlord = {
-				religion = ROOT
-				has_idea_group = religious_ideas
-			}
-		}
-	}
+	ai_will_do = { factor = 0 }
 }
 
 estate_dhimmi_administrative_privileges = {
@@ -555,9 +341,7 @@ estate_dhimmi_administrative_privileges = {
 	#	modifier = { monthly_ottoman_decadence = 0.02 }
 	#}
 	cooldown_years = 25
-	ai_will_do = {
-		factor = 0
-	}
+	ai_will_do = { factor = 0 }
 }
 
 #Mission tree rewards
@@ -696,9 +480,7 @@ estate_dhimmi_grant_liberties = {
 	#	trigger = { has_government_mechanic = ottoman_decadence_mechanic }
 	#	modifier = { monthly_ottoman_decadence = 0.02 }
 	#}
-	ai_will_do = {
-		factor = 1
-	}
+	ai_will_do = { factor = 0 }
 }
 
 estate_dhimmi_millet_system = {
@@ -766,21 +548,7 @@ estate_dhimmi_millet_system = {
 			religious_unity = 0.33
 		}
 	}
-	ai_will_do = {
-		factor = 10
-		modifier = {
-			factor = 0.5
-			is_absolutism_active = yes
-		}
-		modifier = {
-			factor = 1.25
-			NOT = { mil = 2 }
-		}
-		modifier = {
-			factor = 0.8
-			mil = 5
-		}
-	}
+	ai_will_do = { factor = 0 }
 }
 
 #Domination generic Estate Privileges
@@ -841,9 +609,7 @@ estate_dhimmi_development_of_communities = {
 	mechanics = {
 		no_estate_crownland_loss_from_developing
 	}
-	ai_will_do = {
-		factor = 0
-	}
+	ai_will_do = { factor = 0 }
 }
 estate_dhimmi_grant_trading_privileges = {
 	icon = privilege_monopoly
@@ -881,9 +647,7 @@ estate_dhimmi_grant_trading_privileges = {
 	#	trigger = { has_government_mechanic = ottoman_decadence_mechanic }
 	#	modifier = { monthly_ottoman_decadence = 0.02 }
 	#}
-	ai_will_do = {
-		factor = 0
-	}
+	ai_will_do = { factor = 0 }
 }
 estate_dhimmi_dhimmi_education = {
 	icon = privilege_technology
@@ -963,9 +727,7 @@ estate_dhimmi_dhimmi_education = {
 	#	trigger = { has_government_mechanic = ottoman_decadence_mechanic }
 	#	modifier = { monthly_ottoman_decadence = 0.02 }
 	#}
-	ai_will_do = {
-		factor = 0
-	}
+	ai_will_do = { factor = 0 }
 }
 estate_dhimmi_promote_dhimmi_nobility = {
 	icon = privilege_empty_throne
@@ -1002,9 +764,7 @@ estate_dhimmi_promote_dhimmi_nobility = {
 	#	trigger = { has_government_mechanic = ottoman_decadence_mechanic }
 	#	modifier = { monthly_ottoman_decadence = 0.02 }
 	#}
-	ai_will_do = {
-		factor = 0
-	}
+	ai_will_do = { factor = 0 }
 }
 #estate_dhimmi_military_service = {
 #	icon = privilege_military
@@ -1079,9 +839,7 @@ estate_dhimmi_protected_communities = {
 	#	trigger = { has_government_mechanic = ottoman_decadence_mechanic }
 	#	modifier = { monthly_ottoman_decadence = 0.02 }
 	#}
-	ai_will_do = {
-		factor = 0
-	}
+	ai_will_do = { factor = 0 }
 }
 estate_dhimmi_contribution_demand = {
 	icon = privilege_ducats
@@ -1113,7 +871,5 @@ estate_dhimmi_contribution_demand = {
 	#	trigger = { has_government_mechanic = ottoman_decadence_mechanic }
 	#	modifier = { monthly_ottoman_decadence = 0.02 }
 	#}
-	ai_will_do = {
-		factor = 0
-	}
+	ai_will_do = { factor = 0 }
 }

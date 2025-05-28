@@ -3,7 +3,7 @@
 
 every_province = {
 	limit = {
-		region = central_germany_region
+		region = aragon_region
 	}
 	cede_province = ROOT
 }

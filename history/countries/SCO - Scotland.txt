@@ -250,6 +250,7 @@ capital = 1777
 }
 1444.11.11 = { capital = 2621 }
 1444.11.12 = {	#bertus mod
+	set_government_rank = 2
 	monarch = {
 		name = "James II"
 		dynasty = Stuart

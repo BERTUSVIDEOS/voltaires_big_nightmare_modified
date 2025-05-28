@@ -28,7 +28,8 @@ capital = 1208	# Toledo
 }
 #done 1114.4.1
 1114.4.1 = { government_rank = 5 }
-1444.11.12 = {
+1444.11.12 = { 	#bertus mod
+	set_government_rank = 2
 	monarch = {
 		name = "Toni I"
 		dynasty = "de Sal"

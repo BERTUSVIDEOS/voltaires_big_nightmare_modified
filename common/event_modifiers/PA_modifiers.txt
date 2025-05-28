@@ -60,52 +60,52 @@ military_investment_artificer_3_modifier = {
 	discipline = 0.03
 }
 military_investment_artificer_2_modifier = {
-	discipline = 0.03
+	discipline = 0.02
 }
 military_investment_artificer_1_modifier = {
-	discipline = 0.02
+	discipline = 0.01
 }
 
 ### adventurer doctrine ###
 military_investment_adventurer_10_modifier = {
-	shock_damage_received = -0.30
-	fire_damage_received = -0.30
+	shock_damage_received = -0.20
+	fire_damage_received = -0.20
 }
 military_investment_adventurer_9_modifier = {
-	shock_damage_received = -0.27
-	fire_damage_received = -0.27
-}
-military_investment_adventurer_8_modifier = {
-	shock_damage_received = -0.24
-	fire_damage_received = -0.24
-}
-military_investment_adventurer_7_modifier = {
-	shock_damage_received = -0.21
-	fire_damage_received = -0.21
-}
-military_investment_adventurer_6_modifier = {
 	shock_damage_received = -0.18
 	fire_damage_received = -0.18
 }
-military_investment_adventurer_5_modifier = {
-	shock_damage_received = -0.15
-	fire_damage_received = -0.15
+military_investment_adventurer_8_modifier = {
+	shock_damage_received = -0.16
+	fire_damage_received = -0.16
 }
-military_investment_adventurer_4_modifier = {
+military_investment_adventurer_7_modifier = {
+	shock_damage_received = -0.14
+	fire_damage_received = -0.14
+}
+military_investment_adventurer_6_modifier = {
 	shock_damage_received = -0.12
 	fire_damage_received = -0.12
 }
-military_investment_adventurer_3_modifier = {
-	shock_damage_received = -0.09
-	fire_damage_received = -0.09
+military_investment_adventurer_5_modifier = {
+	shock_damage_received = -0.10
+	fire_damage_received = -0.10
 }
-military_investment_adventurer_2_modifier = {
+military_investment_adventurer_4_modifier = {
+	shock_damage_received = -0.08
+	fire_damage_received = -0.08
+}
+military_investment_adventurer_3_modifier = {
 	shock_damage_received = -0.06
 	fire_damage_received = -0.06
 }
+military_investment_adventurer_2_modifier = {
+	shock_damage_received = -0.04
+	fire_damage_received = -0.04
+}
 military_investment_adventurer_1_modifier = {
-	shock_damage_received = -0.030
-	fire_damage_received = -0.030
+	shock_damage_received = -0.02
+	fire_damage_received = -0.02
 }
 
 ### national doctrine ###

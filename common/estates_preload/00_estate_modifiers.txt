@@ -733,5 +733,47 @@ estate_holy_orders = {
 			has_estate = estate_holy_orders
 		}
 	}
+	modifier_definition = {
+		#type = privileges
+		key = infantry_fire_modifier
+		trigger = {
+			always = yes
+		}
+	}
+	modifier_definition = {
+		#type = privileges
+		key = infantry_shock_modifier
+		trigger = {
+			always = yes
+		}
+	}
+	modifier_definition = {
+		#type = privileges
+		key = cavalry_fire_modifier
+		trigger = {
+			always = yes
+		}
+	}
+	modifier_definition = {
+		#type = privileges
+		key = cavalry_shock_modifier
+		trigger = {
+			always = yes
+		}
+	}
+	modifier_definition = {
+		#type = privileges
+		key = artillery_fire_modifier
+		trigger = {
+			always = yes
+		}
+	}
+	modifier_definition = {
+		#type = privileges
+		key = artillery_shock_modifier
+		trigger = {
+			always = yes
+		}
+	}
 
 }

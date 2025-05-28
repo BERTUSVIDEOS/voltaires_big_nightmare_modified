@@ -1075,44 +1075,27 @@ vn_aqt_missions_slot_4 = {
 			}
         }
         effect = {
-			if = {
-				limit = {
-					valid_for_personal_unions_trigger = yes
-					2268 = { owner = { valid_for_personal_unions_trigger = yes } }		
-				}
-				2268 = { #Owner of London
-					owner = {
-						reverse_add_casus_belli = {
-							target = ROOT
-							type = cb_fabricated_claims
-							months = 240
-						}
-					}
-				}
-			}
-			else = {
-                norwich_area = {
-                    limit = {
-                        NOT = { is_core = ROOT }
-                        NOT = { is_permanent_claim = ROOT }
-                    }
-                    add_permanent_claim = ROOT
+            norwich_area = {
+                limit = {
+                    NOT = { is_core = ROOT }
+                    NOT = { is_permanent_claim = ROOT }
                 }
-                middlesex_area = {
-                    limit = {
-                        NOT = { is_core = ROOT }
-                        NOT = { is_permanent_claim = ROOT }
-                    }
-                    add_permanent_claim = ROOT
+                add_permanent_claim = ROOT
+            }
+            middlesex_area = {
+                limit = {
+                    NOT = { is_core = ROOT }
+                    NOT = { is_permanent_claim = ROOT }
                 }
-                sussex_area = {
-                    limit = {
-                        NOT = { is_core = ROOT }
-                        NOT = { is_permanent_claim = ROOT }
-                    }
-                    add_permanent_claim = ROOT
+                add_permanent_claim = ROOT
+            }
+            sussex_area = {
+                limit = {
+                    NOT = { is_core = ROOT }
+                    NOT = { is_permanent_claim = ROOT }
                 }
-			}            
+                add_permanent_claim = ROOT
+            }    
         }
     }
     vn_aqt_angevin_empire = {

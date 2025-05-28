@@ -179,6 +179,7 @@ capital = 2627 # Lüneburg
 	add_heir_personality = craven_personality
 }
 1444.11.12 = {	#bertus mod
+	set_government_rank = 2
 	monarch = {
 		name = "Otto I"
 		dynasty = "von Welf"

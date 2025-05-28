@@ -173,6 +173,12 @@ default = {
 			overlord = { has_idea = monarchie6 }
 		}
 	}
+	modifier_subject = {
+		modifier = subject_of_player_subject_bonus
+		trigger = {
+			overlord = { ai = no }
+		}
+	}
 	modifier_overlord = clear
 
 	overlord_opinion_modifier = null # If not "null" it will look for a modifier with that name in 00_opinion_modifiers.txt and other files in that directory.

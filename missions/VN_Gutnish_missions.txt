@@ -291,33 +291,23 @@ vn_got_monarchy_slot_2 = {
 				name = got_war_against_the_danes
 				duration = 9125
 			}
-			if = {
-				limit = { valid_for_personal_unions_trigger = yes DAN = { valid_for_personal_unions_trigger = yes } }
-				add_casus_belli = {
-					type = cb_fabricated_claims
-					target = DAN
-					months = 240
+			jutland_region = {
+				limit = {
+					NOT = { is_core = ROOT }
 				}
+				add_core = ROOT
 			}
-			else = {
-				jutland_region = {
-					limit = {
-						NOT = { is_core = ROOT }
-					}
-					add_core = ROOT
+			ronneby_area = {
+				limit = {
+					NOT = { is_core = ROOT }
 				}
-				ronneby_area = {
-					limit = {
-						NOT = { is_core = ROOT }
-					}
-					add_core = ROOT
+				add_core = ROOT
+			}
+			lund_area = {
+				limit = {
+					NOT = { is_core = ROOT }
 				}
-				lund_area = {
-					limit = {
-						NOT = { is_core = ROOT }
-					}
-					add_core = ROOT
-				}
+				add_core = ROOT
 			}
 			set_country_flag = got_no_longer_eligible_to_switch_mission_tree
 		}

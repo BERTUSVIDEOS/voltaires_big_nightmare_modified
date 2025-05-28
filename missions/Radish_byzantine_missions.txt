@@ -1,0 +1,1072 @@
+vn_byz_missions_slot_1_a = {
+	
+	slot = 6
+	generic = no
+	ai = yes
+	potential = {
+		tag = BYZ
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	vn_byz_organize_the_legions = {
+		
+		position = 21
+		icon = mission_pf_soldier
+		required_missions = { }
+		
+		trigger = {
+			OR = {
+				army_size = 20
+				army_size_percentage = 1
+			}
+		}
+		
+		effect = {
+			2682 = {
+				add_permanent_claim = ROOT
+			}
+			716 = {
+				add_permanent_claim = ROOT
+			}
+			2190 = {
+				add_permanent_claim = ROOT
+			}
+			add_manpower = 5
+			define_general = {
+				name = "Cimon"
+				shock = 3
+				fire = 3
+				manuever = 5
+				siege = 1
+			}
+			define_advisor = {
+				type = army_organiser
+				name = "Constantine"
+				cost_multiplier = 0.5
+				skill = 3
+			}
+		}
+	}
+	
+	vn_byz_reinforce_the_theodosian_walls = {
+		
+		position = 23
+		icon = byz_reinforce_constantinople
+		required_missions = {
+			vn_byz_a_broken_shell
+		}
+		trigger = {
+			any_owned_province = {
+				development = 10
+				trade_goods = marble
+			}
+			estate_loyalty = {
+				estate = estate_nobles
+				loyalty = 60
+			}
+			2233 = {
+				OR = {
+					has_building = fort_14th
+					has_building = fort_15th
+					has_building = fort_16th
+					has_building = fort_17th
+					has_building = fort_18th
+				}
+				OR = {
+					has_building = barracks
+					has_building = training_fields
+				}
+			}
+				
+		}
+		
+		effect = {
+			2233 = {
+				if = {
+					limit = { has_building = barracks }
+					remove_building = barracks
+					add_building = training_fields
+				}
+				add_building = ramparts
+			}
+		}
+	}
+	
+	vn_byz_ignis_graecus = {
+		
+		position = 26
+		icon = byz_greek_fire
+		
+		required_missions = {	}
+		
+		trigger = {
+			innovativeness = 25
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = vn_byz_ignis_graecus
+				duration = -1
+			}
+		}
+	}
+	
+	vn_byz_perfecting_the_greek_fire = {
+		
+		position = 27
+		icon = mission_asian_cannon
+		
+		required_missions = {
+			vn_byz_ignis_graecus
+		}
+		
+		trigger = {
+			innovativeness = 100
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = vn_byz_ignis_graecus_perfected
+				duration = -1
+			}
+		}
+	}
+	
+	vn_byz_byzantine_sea = {
+		
+		position = 28
+		icon = mission_invade_island
+		
+		required_missions = { }
+		
+		trigger = {
+			num_of_owned_provinces_with = {
+				value = 20
+				OR = {
+					area = chios_area
+					area = euboia_area
+					area = cyclades_area
+					area = crete_area
+				}
+			}
+		}
+		
+		effect = {
+			add_dip_power = 100
+			add_navy_tradition = 25
+			2233 = {
+				add_unit_construction = {
+					type = galley
+					amount = 20
+					speed = 0.1
+					cost = 0
+				}
+			}
+		}
+	}
+}
+
+vn_byzantium_missions_slot_2_a = {
+	
+	slot = 7
+	generic = no
+	ai = yes
+	potential = {
+		tag = BYZ
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	vn_byz_assemble_a_strong_court = {
+		
+		position = 21
+		icon = mission_the_sudebnik
+		
+		required_missions = {	}
+		
+		trigger = {
+			stability = 1
+			employed_advisor = {
+				category = ADM
+				skill = 1
+			}
+			employed_advisor = {
+				category = DIP
+				skill = 1
+			}
+			employed_advisor = {
+				category = MIL
+				skill = 1
+			}
+		}
+		
+		effect = {
+			add_adm_power = 50
+			add_dip_power = 50
+			add_mil_power = 50
+			change_government_reform_progress = 50
+			change_estate_land_share = {
+				estate = all
+				share = -5
+			}
+		}
+	}
+	
+	vn_byz_rechristen_the_hagia_sophia = {
+		position = 23
+		icon = mission_hagia_sophia 
+		required_missions = {
+			vn_byz_a_broken_shell
+		}
+		
+		trigger = {
+			estate_loyalty = {
+					estate = estate_church
+					loyalty = 60
+			}
+			patriarch_authority = 0.5
+			
+		}
+		
+		effect = {
+			add_great_project_tier = {
+				type = hagia_sophia
+				tier = 1
+			}
+		}
+	}
+	
+	vn_byz_reclaim_thessaloniki = {
+		
+		position = 27
+		icon = adriatic_access
+		required_missions = {
+			vn_byz_reclaim_thrace
+		}
+		
+		trigger = {
+			owns_all_provinces = {
+					area = serres_area		
+			}
+			owns_all_provinces = {
+					area = kastoria_area		
+			}
+			owns_all_provinces = {
+					area = chalkidiki_area		
+			}
+		}
+		
+		effect = {
+			2190 = {
+				center_of_trade = 1
+			}
+			add_great_project_tier = {
+				type = mount_athos
+				tier = 1
+			}
+			5929 = {
+				limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+				add_permanent_claim = ROOT
+			}
+			2150 = {
+				limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+				add_permanent_claim = ROOT
+			}
+			624 = {
+				limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	vn_byz_take_control_of_southern_greece = {
+		
+		position = 29
+		icon = mission_parthenon
+		required_missions = {
+			vn_byz_reclaim_thessaloniki
+			vn_byz_byzantine_sea
+		}
+		
+		trigger = {
+			owns_all_provinces = {
+					area = epirus_area
+			}
+			owns_all_provinces = {
+					area = aetolia_area		
+			}
+			owns_all_provinces = {
+					area = athens_area		
+			}
+			owns_all_provinces = {
+					area = thessalia_area		
+			}
+		}
+		
+		effect = {
+			add_great_project_tier = {
+				type = parthenon
+				tier = 1
+			}
+		}
+	}
+
+}
+
+vn_byzantium_missions_slot_3_a = {
+	
+	slot = 8
+	generic = no
+	ai = yes
+	potential = {
+		tag = BYZ
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	vn_byz_control_our_trade = {
+		position = 21
+		icon = mission_african_gold
+		required_missions = { }
+		
+		trigger = {
+			2233 = { NOT = { has_province_modifier = BYZ_galata } }
+		}
+		effect = {
+			define_advisor = { 
+				name = "Antonios Dukas"
+				type = master_of_mint
+				cost_multiplier = 0.5
+				skill = 3 
+			}
+			define_advisor = { 
+				name = "Antonios I Dukas"
+				type = trader
+				cost_multiplier = 0.5
+				skill = 3 
+			}
+			add_estate_loyalty = {
+				estate = estate_burghers
+				loyalty = 20
+			}
+		}
+	}
+	
+	vn_byz_a_broken_shell = {
+		position = 22
+		icon = byz_city_of_worlds_desire
+		required_missions = {
+			vn_byz_control_our_trade
+		}
+		trigger = {
+			2233 = {
+				num_of_buildings_in_province = 5
+				num_of_times_expanded_infrastructure = 2
+			}
+		}
+		
+		effect = {
+			add_ruler_personality = great_engineer_personality
+		}
+	}
+	
+	vn_byz_upgrade_the_byzantine_arsenal = {
+		
+		position = 23
+		icon = mission_guns_of_urban
+		required_missions = {
+			vn_byz_a_broken_shell
+		}
+		
+		trigger = {
+			trade_goods_produced_amount = {
+				trade_goods = munitions
+				amount = 3
+			}
+			estate_loyalty = {
+					estate = estate_holy_orders
+					loyalty = 60
+			}
+			2233 = {
+				OR = {
+					has_building = regimental_camp
+					has_building = conscription_center
+				}
+			}
+		}
+		
+		effect = {
+			2233 = {
+				if = {
+					limit = { has_building = regimental_camp }
+					remove_building = regimental_camp
+					add_building = conscription_center
+				}
+				add_building = soldier_households
+				add_building = armory
+			}
+		}
+	}
+	
+	vn_byz_city_of_worlds_desire = {
+		
+		position = 24
+		icon = mission_constantinople
+		required_missions = {
+			vn_byz_reinforce_the_theodosian_walls
+			vn_byz_rechristen_the_hagia_sophia
+			vn_byz_upgrade_the_byzantine_arsenal
+			vn_byz_renovate_the_jewish_quarter
+			vn_byz_modernize_the_weaving_industry
+		}
+		
+		trigger = {
+		
+		}
+		
+		effect = {
+			2233 = {
+				add_center_of_trade_level = 1
+				add_base_tax = 1
+				add_base_production = 2
+				add_base_manpower = 4
+			}
+		}
+	}
+	
+	vn_byz_reclaim_thrace = {
+	
+		position = 26
+		icon = mission_unite_home_region
+		required_missions = { }
+		
+		trigger = {
+			owns_all_provinces = {
+					area = thrace_area		
+			}
+			owns_all_provinces = {
+				area = sozopol_area
+			}
+			num_of_owned_provinces_with = {
+				value = 9
+				area = hellespont_area
+			}
+			owns_all_provinces = {
+				area = traianople_area
+			}
+		}
+		
+		effect = {
+			add_dip_power = 50
+			5356 = {
+				limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+				add_permanent_claim = ROOT
+			}
+			5318 = {
+				limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+				add_permanent_claim = ROOT
+			}
+			5577 = {
+				limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+				add_permanent_claim = ROOT
+			}
+			zagore_area = {
+				limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+				add_permanent_claim = ROOT
+			}
+			plovdiv_area = {
+				limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+				add_permanent_claim = ROOT
+			}
+			prilep_area = {
+				limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+				add_permanent_claim = ROOT
+			}
+			skopia_area = {
+				limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+				add_permanent_claim = ROOT
+			}
+			sophia_area = {
+				limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+				add_permanent_claim = ROOT
+			}
+			silistra_area = {
+				limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+				add_permanent_claim = ROOT
+			}
+			kran_area = {
+				limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+				add_permanent_claim = ROOT
+			}
+			vidin_area = {
+				limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+				add_permanent_claim = ROOT
+			}
+			tarnovo_area = {
+				limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+				add_permanent_claim = ROOT
+			}
+			dobruja_area = {
+				limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	vn_byz_conquer_bulgaria = {
+		
+		position = 28
+		icon = despot_stefans_legacy
+		required_missions = {
+			vn_byz_reclaim_thrace
+		}
+		
+		trigger = {
+			num_of_owned_provinces_with = {
+				value = 45
+				OR = {
+					area = zagore_area
+					area = plovdiv_area
+					area = prilep_area
+					area = skopia_area
+					area = sophia_area
+					area = silistra_area
+					area = kran_area
+					area = vidin_area
+					area = tarnovo_area
+					area = dobruja_area
+				}
+			}
+		}
+		
+		effect = {
+			hidden_effect = {
+				add_country_modifier = {
+					name = BYZ_no_slot_bulgarian
+					duration = -1
+				}
+			}
+			add_accepted_culture = bulgarian
+			custom_tooltip = BYZ_bulgarian_no_slot_taken
+		}
+	}
+	
+	vn_byz_reestablish_the_theme_system = {
+		
+		position = 210
+		icon = mission_pf_map_table
+		required_missions = {
+			vn_byz_take_control_of_southern_greece
+			vn_byz_conquer_bulgaria
+			vn_byz_convert_anatolia
+		}
+		
+		trigger = {
+			
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = vn_byz_theme_system
+				duration = -1
+			}
+			west_anatolia_region = {
+				limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+				add_permanent_claim = ROOT
+			}
+			east_anatolia_region = {
+				limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+				add_permanent_claim = ROOT
+			}
+			bulgaria_region = {
+				limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+				add_permanent_claim = ROOT
+			}
+			hellas_region = {
+				limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+}
+
+vn_byz_missions_slot_4_a = {
+	
+	slot = 9
+	generic = no
+	ai = yes
+	potential = {
+		tag = BYZ
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	vn_byz_renovate_the_jewish_quarter = {
+		position = 23
+		icon = mission_pol_embellish_gdansk
+		required_missions = {
+			vn_byz_a_broken_shell
+		}
+		
+		trigger = {
+			num_of_estate_privileges = {
+				estate = estate_jews
+				value = 2
+			}
+			estate_loyalty = {
+					estate = estate_jews
+					loyalty = 60
+			}
+		
+
+		}
+		
+		effect = {
+			2233 = {
+				add_building = post_office
+				add_building = harbour 
+			}
+				
+
+		}
+	}
+	
+	vn_byz_assassinate_the_sultan = {
+		
+		position = 26
+		icon = mission_the_great_conqueror
+		required_missions = {	}
+		
+		trigger = {
+			has_spy_network_in = {
+				who = TUR
+				value = 50
+			}
+			spymaster = 1
+		}
+		
+		effect = {
+			TUR = {
+				country_event = { 
+					id = radish.1
+				}
+			}
+		}
+	}
+	
+	vn_byz_control_the_west_coast = {
+		
+		position = 28
+		icon = capture_adriatic_ports
+		required_missions = {
+			vn_byz_control_the_bosphorus
+		}
+		
+		trigger = {
+			owns_all_provinces = {
+					area = ionia_area		
+			}
+			owns_all_provinces = {
+					area = doris_area		
+			}
+		}
+		
+		effect = {
+			add_mil_power = 300
+			19 = {
+				change_culture = greek
+				change_religion = orthodox
+			}
+			352 = {
+				change_culture = greek
+				change_religion = orthodox
+			}
+			594 = {
+				change_culture = greek
+				change_religion = orthodox
+			}
+			355 = {
+				change_culture = greek
+				change_religion = orthodox
+			}
+			2472 = {
+				change_culture = greek
+				change_religion = orthodox
+			}
+			2944 = {
+				change_culture = greek
+				change_religion = orthodox
+			}
+			2453 = {
+				change_culture = greek
+				change_religion = orthodox
+			}
+			5387 = {
+				change_culture = greek
+				change_religion = orthodox
+			}
+			
+		}
+	}
+	
+	vn_byz_convert_anatolia = {
+		
+		position = 29
+		icon = mission_pf_cross
+		required_missions = {
+			vn_byz_control_the_west_coast
+		}
+		
+		trigger = {
+			all_owned_province = { 
+				OR = {
+					area = ionia_area
+					area = doris_area
+					area = optimaton_area
+					area = nikaia_area
+					area = mysia_area
+					area = troas_area
+				}
+				religion = orthodox
+			}
+		}
+		
+		effect = {
+			add_patriarch_authority = 0.3
+			change_government_reform_progress = 100
+		}
+	}
+}
+
+vn_byz_missions_slot_5_a = {
+	
+	slot = 10
+	generic = no
+	ai = yes
+	potential = {
+		tag = BYZ
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	vn_byz_rebuild_the_byzantine_fleet = {
+		position = 21
+		icon = mam_highway_empire
+		required_missions = {}
+		
+		trigger = {
+			num_of_galley = 20
+		}
+		
+		effect = {
+			add_navy_tradition = 25
+			add_ruler_personality = navigator_personality
+			define_admiral = {
+				shock = 2
+				fire = 2
+				manuever = 4
+				siege = 1
+			}
+			1088 = { add_permanent_claim = ROOT }
+			2788 = { add_permanent_claim = ROOT }
+		}
+	}
+	
+	vn_byz_modernize_the_weaving_industry = {
+	
+		position = 23
+		icon = dominant_economy
+		required_missions = { 
+			vn_byz_a_broken_shell
+		}
+		
+		trigger = {
+			estate_loyalty = {
+					estate = estate_burghers
+					loyalty = 60
+			}
+			2233 = {
+				OR = {
+					has_building = artisan
+					has_building = workshop
+					has_building = counting_house
+				}
+			}
+		}
+		
+		effect = {
+			2233 = {
+				if = {
+					limit = { has_building = artisan }
+					remove_building = artisan
+					add_building = counting_house
+				}
+				if = {
+					limit = { has_building = workshop }
+					remove_building = workshop
+					add_building = counting_house
+				}
+				add_building = textile
+			}
+		}
+		
+	}
+	
+	vn_byz_cross_into_anatolia = {
+	
+		position = 26
+		icon = anatolian_frontier 
+		required_missions = { }
+		
+		trigger = {
+			any_owned_province = {
+				region = west_anatolia_region
+			}
+		}
+		
+		effect = {
+			add_mil_power = 50
+			optimaton_area = {
+				limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+				add_permanent_claim = ROOT
+			}
+			nikaia_area = {
+				limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+				add_permanent_claim = ROOT
+			}
+			mysia_area = {
+				limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+				add_permanent_claim = ROOT
+			}
+			troas_area = {
+				limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+
+	vn_byz_control_the_bosphorus = {
+		
+		position = 27
+		icon = mission_the_bospborus
+		required_missions = {
+			vn_byz_cross_into_anatolia
+		}
+		
+		trigger = {
+			owns_all_provinces = {
+					area = optimaton_area		
+			}
+			owns_all_provinces = {
+					area = nikaia_area		
+			}
+			owns_all_provinces = {
+					area = mysia_area		
+			}
+			num_of_owned_provinces_with = {
+				value = 7
+				area = troas_area
+			}
+		}
+		
+		effect = {
+			3384 = {
+				change_culture = greek
+				change_religion = orthodox
+			}
+			1052 = {
+				change_culture = greek
+				change_religion = orthodox
+			}
+			1051 = {
+				change_culture = greek
+				change_religion = orthodox
+			}
+			1049 = {
+				change_culture = greek
+				change_religion = orthodox
+			}
+			2182 = {
+				change_culture = greek
+				change_religion = orthodox
+			}
+			bithynia_area = {
+				limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+				add_permanent_claim = ROOT
+			}
+			kastamone_area = {
+				limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+				add_permanent_claim = ROOT
+			}
+			sinope_area = {
+				limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+				add_permanent_claim = ROOT
+			}
+			polemonion_area = {
+				limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+				add_permanent_claim = ROOT
+			}
+			trebizond_area = {
+				limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+				add_permanent_claim = ROOT
+			}
+			ionia_area = {
+				limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+				add_permanent_claim = ROOT
+			}
+			doris_area = {
+				limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+				add_permanent_claim = ROOT
+			}
+			
+		}
+	}
+	
+	vn_byz_monopolize_the_black_sea_trade = {
+		
+		position = 28
+		icon = mission_control_the_black_sea
+		required_missions = { 
+			vn_byz_control_the_bosphorus
+		}
+		
+		trigger = {
+			4181 = {
+				has_most_province_trade_power = ROOT
+			}
+		}
+		effect = {
+			add_years_of_income = 1
+		}
+	}
+	
+	vn_byz_establish_a_trading_post = {
+		
+		position = 29
+		icon = develop_provence
+		required_missions = {
+			vn_byz_monopolize_the_black_sea_trade
+		}
+		
+		trigger = {
+			trader = 1
+		}
+		
+		effect = {
+			3084 = {
+				create_colony = 1000
+			}
+			3089 = {
+				create_colony = 1000
+			}
+			3090 = {
+				create_colony = 1000
+			}
+			3085 = {
+				create_colony = 1000
+			}
+			3086 = {
+				create_colony = 1000
+			}
+			3087 = {
+				create_colony = 1000
+			}
+		}
+	}
+	
+}

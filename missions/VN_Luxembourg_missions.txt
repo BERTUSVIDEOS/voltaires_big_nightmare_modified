@@ -374,30 +374,13 @@ vn_lux_missions_slot_3 = {
         }
         effect = {
             add_dip_power = 50
-			if = {
-				limit = {
-					valid_for_personal_unions_trigger = yes
-					781 = { owner = { valid_for_personal_unions_trigger = yes } }		
-				}
-				781 = { #Owner of Prague
-					owner = {
-						reverse_add_casus_belli = {
-							target = ROOT
-							type = cb_fabricated_claims
-							months = 240
-						}
-					}
-				}
-			}
-			else = {
-				bohemia_region = {
-					limit = {
-						NOT = { is_core = ROOT }
-						NOT = { is_permanent_claim = ROOT }
-					}
-					add_permanent_claim = ROOT
-				}
-			}
+            bohemia_region = {
+                limit = {
+                    NOT = { is_core = ROOT }
+                    NOT = { is_permanent_claim = ROOT }
+                }
+                add_permanent_claim = ROOT
+            }
             add_country_modifier = {
                 name = lux_dynastic_success_mission
                 duration = 9125
@@ -478,51 +461,34 @@ vn_lux_missions_slot_3 = {
             }
         }
         effect = {
-			if = {
-				limit = {
-					valid_for_personal_unions_trigger = yes
-					2652 = { owner = { valid_for_personal_unions_trigger = yes } }		
-				}
-				2652 = { #Owner of Berlin
-					owner = {
-						reverse_add_casus_belli = {
-							target = ROOT
-							type = cb_fabricated_claims
-							months = 240
-						}
-					}
-				}
-			}
-			else = {
-                berlin_area = {
-                    limit = {
-                        NOT = { is_core = ROOT }
-                        NOT = { is_permanent_claim = ROOT }
-                    }
-                    add_permanent_claim = ROOT
+            berlin_area = {
+                limit = {
+                    NOT = { is_core = ROOT }
+                    NOT = { is_permanent_claim = ROOT }
                 }
-                ruppin_area = {
-                    limit = {
-                        NOT = { is_core = ROOT }
-                        NOT = { is_permanent_claim = ROOT }
-                    }
-                    add_permanent_claim = ROOT
+                add_permanent_claim = ROOT
+            }
+            ruppin_area = {
+                limit = {
+                    NOT = { is_core = ROOT }
+                    NOT = { is_permanent_claim = ROOT }
                 }
-                potsdam_area = {
-                    limit = {
-                        NOT = { is_core = ROOT }
-                        NOT = { is_permanent_claim = ROOT }
-                    }
-                    add_permanent_claim = ROOT
+                add_permanent_claim = ROOT
+            }
+            potsdam_area = {
+                limit = {
+                    NOT = { is_core = ROOT }
+                    NOT = { is_permanent_claim = ROOT }
                 }
-                south_berlin_area = {
-                    limit = {
-                        NOT = { is_core = ROOT }
-                        NOT = { is_permanent_claim = ROOT }
-                    }
-                    add_permanent_claim = ROOT
+                add_permanent_claim = ROOT
+            }
+            south_berlin_area = {
+                limit = {
+                    NOT = { is_core = ROOT }
+                    NOT = { is_permanent_claim = ROOT }
                 }
-			}
+                add_permanent_claim = ROOT
+            }
         }
     }
     vn_lux_elector_of_brandenburg = {
@@ -683,51 +649,34 @@ vn_lux_missions_slot_4 = {
             }
         }
         effect = {
-			if = {
-				limit = {
-					valid_for_personal_unions_trigger = yes
-					444 = { owner = { valid_for_personal_unions_trigger = yes } }		
-				}
-				444 = { #Owner of Pest
-					owner = {
-						reverse_add_casus_belli = {
-							target = ROOT
-							type = cb_fabricated_claims
-							months = 240
-						}
-					}
-				}
-			}
-			else = {
-                pest_area = {
-                    limit = {
-                        NOT = { is_core = ROOT }
-                        NOT = { is_permanent_claim = ROOT }
-                    }
-                    add_permanent_claim = ROOT
+            pest_area = {
+                limit = {
+                    NOT = { is_core = ROOT }
+                    NOT = { is_permanent_claim = ROOT }
                 }
-                kiskun_area = {
-                    limit = {
-                        NOT = { is_core = ROOT }
-                        NOT = { is_permanent_claim = ROOT }
-                    }
-                    add_permanent_claim = ROOT
+                add_permanent_claim = ROOT
+            }
+            kiskun_area = {
+                limit = {
+                    NOT = { is_core = ROOT }
+                    NOT = { is_permanent_claim = ROOT }
                 }
-                bacs_area = {
-                    limit = {
-                        NOT = { is_core = ROOT }
-                        NOT = { is_permanent_claim = ROOT }
-                    }
-                    add_permanent_claim = ROOT
+                add_permanent_claim = ROOT
+            }
+            bacs_area = {
+                limit = {
+                    NOT = { is_core = ROOT }
+                    NOT = { is_permanent_claim = ROOT }
                 }
-                heves_area = {
-                    limit = {
-                        NOT = { is_core = ROOT }
-                        NOT = { is_permanent_claim = ROOT }
-                    }
-                    add_permanent_claim = ROOT
+                add_permanent_claim = ROOT
+            }
+            heves_area = {
+                limit = {
+                    NOT = { is_core = ROOT }
+                    NOT = { is_permanent_claim = ROOT }
                 }
-			}
+                add_permanent_claim = ROOT
+            }
             silesia_region = {
                 limit = {
                     NOT = { is_core = ROOT }

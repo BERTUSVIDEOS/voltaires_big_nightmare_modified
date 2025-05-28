@@ -957,6 +957,33 @@ change_estate_land_share = {
 		mil = 2
 	}
 }
+
+1444.11.12 = {	#bertus mod
+	heir = {
+		name = "Konstantinos"
+		monarch_name = "Konstantinos XI"
+		dynasty = "Palaiologos"
+		birth_date = 1414.1.13
+		death_date = 1453.5.29
+		religion = orthodox
+		claim = 60
+		adm = 4
+		dip = 4
+		mil = 4
+	}
+	change_estate_land_share = {
+		estate = estate_nobles
+		share = -20
+	}
+	change_estate_land_share = {
+		estate = estate_burghers
+		share = -5
+	}
+	change_estate_land_share = {
+		estate = estate_holy_orders
+		share = -5
+	}
+}
 1448.10.31 = {
 	monarch = {
 		name = "Konstantinos XI"

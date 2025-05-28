@@ -1125,45 +1125,29 @@ vn_die_missions_slot_4 = {
             }
 		}
 		effect = {
-            if = {
+            carinthia_area = {
                 limit = {
-                    exists = CTH
-                    valid_for_personal_unions_trigger = yes
-                    CTH = {
-                        valid_for_personal_unions_trigger = yes
-                    }
+                    NOT = { owned_by = ROOT }
+                    NOT = { is_permanent_claim = ROOT }
                 }
-                add_casus_belli = {
-                    type = cb_fabricated_claims
-                    months = 300
-                    target = CTH
-                }
+                add_permanent_claim = ROOT
             }
-            else = {
-                carinthia_area = {
+            2071 = {
+                if = {
                     limit = {
-                        NOT = { owned_by = ROOT }
+                        NOT = { is_core = ROOT }
                         NOT = { is_permanent_claim = ROOT }
                     }
                     add_permanent_claim = ROOT
                 }
-                2071 = {
-                    if = {
-                        limit = {
-                            NOT = { is_core = ROOT }
-                            NOT = { is_permanent_claim = ROOT }
-                        }
-                        add_permanent_claim = ROOT
+            }
+            4230 = {
+                if = {
+                    limit = {
+                        NOT = { is_core = ROOT }
+                        NOT = { is_permanent_claim = ROOT }
                     }
-                }
-                4230 = {
-                    if = {
-                        limit = {
-                            NOT = { is_core = ROOT }
-                            NOT = { is_permanent_claim = ROOT }
-                        }
-                        add_permanent_claim = ROOT
-                    }
+                    add_permanent_claim = ROOT
                 }
             }
             add_country_modifier = {
@@ -1198,77 +1182,61 @@ vn_die_missions_slot_4 = {
             }
 		}
 		effect = {
-            if = {
+            arezzo_area = {
                 limit = {
-                    exists = TUS
-                    valid_for_personal_unions_trigger = yes
-                    TUS = {
-                        valid_for_personal_unions_trigger = yes
-                    }
+                    NOT = { is_core = ROOT }
+                    NOT = { is_permanent_claim = ROOT }
                 }
-                add_casus_belli = {
-                    type = cb_fabricated_claims
-                    months = 300
-                    target = TUS
-                }
+                add_permanent_claim = ROOT
             }
-            else = {
-                arezzo_area = {
-                    limit = {
-                        NOT = { is_core = ROOT }
-                        NOT = { is_permanent_claim = ROOT }
-                    }
-                    add_permanent_claim = ROOT
+            florence_area = {
+                limit = {
+                    NOT = { is_core = ROOT }
+                    NOT = { is_permanent_claim = ROOT }
                 }
-                florence_area = {
-                    limit = {
-                        NOT = { is_core = ROOT }
-                        NOT = { is_permanent_claim = ROOT }
-                    }
-                    add_permanent_claim = ROOT
+                add_permanent_claim = ROOT
+            }
+            piombino_area = {
+                limit = {
+                    NOT = { is_core = ROOT }
+                    NOT = { is_permanent_claim = ROOT }
                 }
-                piombino_area = {
-                    limit = {
-                        NOT = { is_core = ROOT }
-                        NOT = { is_permanent_claim = ROOT }
-                    }
-                    add_permanent_claim = ROOT
+                add_permanent_claim = ROOT
+            }
+            siena_area = {
+                limit = {
+                    NOT = { is_core = ROOT }
+                    NOT = { is_permanent_claim = ROOT }
                 }
-                siena_area = {
-                    limit = {
-                        NOT = { is_core = ROOT }
-                        NOT = { is_permanent_claim = ROOT }
-                    }
-                    add_permanent_claim = ROOT
+                add_permanent_claim = ROOT
+            }
+            scansano_area = {
+                limit = {
+                    NOT = { is_core = ROOT }
+                    NOT = { is_permanent_claim = ROOT }
                 }
-                scansano_area = {
-                    limit = {
-                        NOT = { is_core = ROOT }
-                        NOT = { is_permanent_claim = ROOT }
-                    }
-                    add_permanent_claim = ROOT
+                add_permanent_claim = ROOT
+            }
+            pisa_area = {
+                limit = {
+                    NOT = { is_core = ROOT }
+                    NOT = { is_permanent_claim = ROOT }
                 }
-                pisa_area = {
-                    limit = {
-                        NOT = { is_core = ROOT }
-                        NOT = { is_permanent_claim = ROOT }
-                    }
-                    add_permanent_claim = ROOT
+                add_permanent_claim = ROOT
+            }
+            lucca_area = {
+                limit = {
+                    NOT = { is_core = ROOT }
+                    NOT = { is_permanent_claim = ROOT }
                 }
-                lucca_area = {
-                    limit = {
-                        NOT = { is_core = ROOT }
-                        NOT = { is_permanent_claim = ROOT }
-                    }
-                    add_permanent_claim = ROOT
+                add_permanent_claim = ROOT
+            }
+            speza_area = {
+                limit = {
+                    NOT = { is_core = ROOT }
+                    NOT = { is_permanent_claim = ROOT }
                 }
-                speza_area = {
-                    limit = {
-                        NOT = { is_core = ROOT }
-                        NOT = { is_permanent_claim = ROOT }
-                    }
-                    add_permanent_claim = ROOT
-                }
+                add_permanent_claim = ROOT
             }
             add_country_modifier = {
                 name = die_conquer_carinthia_mission

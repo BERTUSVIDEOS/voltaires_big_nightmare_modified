@@ -372,7 +372,8 @@ vn_expansion_missions = {
 					development = 40
 					num_of_buildings_in_province = 8
 					area_for_scope_province = {
-						development = 100
+						type = all
+						development = 20
 					}
 				}
 			}
@@ -382,38 +383,53 @@ vn_expansion_missions = {
 					development = 30
 					num_of_buildings_in_province = 6
 					area_for_scope_province = {
-						development = 100
+						type = all
+						development = 20
 					}
 				}
 			}
 			else_if = {
 				limit = { government_rank = 3 }
 				capital_scope = {
-					development = 20
+					development = 30
 					num_of_buildings_in_province = 4
 				}
 			}
 			else_if = {
 				limit = { government_rank = 2 }
 				capital_scope = {
+					development = 20
 					num_of_buildings_in_province = 4
 				}
 			}
 			else_if = {
 				limit = { government_rank = 1 }
 				capital_scope = {
+					development = 15
 					num_of_buildings_in_province = 2
 				}
 			}
 		}
 		position = 1
 		effect = {
-			capital_scope = {
-				area = {
-					limit = { owned_by = ROOT }
-					add_province_modifier = {
-						name = "growth_of_capital"
-						duration = 3650		#9125→3650 
+			tooltip = {
+				capital_scope = {
+					area = {
+						add_province_modifier = {
+							name = "growth_of_capital"
+							duration = -1
+						}
+					}
+				}
+			}
+			hidden_effect = {
+				capital_scope = {
+					area = {
+						limit = { owned_by = ROOT }
+						add_province_modifier = {
+							name = "growth_of_capital"
+							duration = -1
+						}
 					}
 				}
 			}

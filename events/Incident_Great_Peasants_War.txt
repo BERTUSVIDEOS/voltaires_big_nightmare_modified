@@ -100,16 +100,6 @@ country_event = {
 	
 	option = { # Crush the peasants
 		name = great_peasant_war.3.a
-		trigger = { # cannot crush highly successful peasants
-			1 = {
-				NOT = {
-					check_variable = {
-						which = GPW_counting_variable
-						value = 15
-					}
-				}
-			}
-		}
 		clr_global_flag = great_peasants_war_flag
 		set_global_flag = condemned_peasant_republics # used in CB
 		custom_tooltip = gpw_cb_tt # see cb_change_government_great_peasants_war in 00_cb_types

@@ -242,6 +242,8 @@ fixed_capital = 1289
 }
 #1389 various PUs
 1444.11.12 = {	#bertus mod
+	set_government_rank = 2
+	add_government_reform = feudalism_reform
 	every_owned_province = {
 		add_local_autonomy = -10
 	}

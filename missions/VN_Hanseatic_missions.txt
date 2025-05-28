@@ -531,17 +531,17 @@ vn_hsa_missions_2 = {
 		required_missions = { hsa_restore_visby }
 		position = 3 
 		provinces_to_highlight = {
-			province_id = 2789
+			province_id = 402
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
-			2789 = { country_or_non_sovereign_subject_holds = ROOT }
+			402 = { country_or_non_sovereign_subject_holds = ROOT }
 			OR = {
 				faction_influence = {
 					faction = mr_traders
 					influence = 75
 				}
-				2789 = { development = 25 }
+				402 = { development = 25 }
 			}
 		}
 		effect = {

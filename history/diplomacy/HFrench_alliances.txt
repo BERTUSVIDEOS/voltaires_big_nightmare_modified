@@ -374,7 +374,7 @@ union = {
 union = { 	#BERTUS MOD
 	first = PRO
 	second = BAR
-	start_date = 1444.11.14
+	start_date = 1444.12.3
 	end_date = 1480.7.10
 }
 

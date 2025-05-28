@@ -301,6 +301,7 @@ fixed_capital = 762
 	add_ruler_personality = silver_tongue_personality
 }
 1444.11.12 = {	#bertus mod
+	set_government_rank = 2
 	monarch = {
 		name = "Adolf III"
 		dynasty = "von Isenburg"

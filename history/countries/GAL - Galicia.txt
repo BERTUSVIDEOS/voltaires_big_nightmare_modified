@@ -195,6 +195,7 @@ add_army_professionalism = 0.1
 1369.4.23 = { government_rank = 5 }
 1444.11.12 = {	#bertus mod
 	set_capital = 4328 #santiago
+	set_government_rank = 2
 	monarch = {
 		name = "Emilio I"
 		dynasty = "de Santiago"

@@ -138,7 +138,7 @@ nrm_invade_anjou_mission = {
 	local_unrest = -1
 }
 nrm_norman_architecture_mission = {
-	build_cost = -0.25
+	build_cost = -0.10 	#-0.25→-0.10 
 	church_loyalty_modifier = 0.05
 }
 nrm_subjugate_england_mission = {

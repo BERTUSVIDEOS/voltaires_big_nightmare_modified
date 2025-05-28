@@ -2555,7 +2555,7 @@ guiTypes = {
 		windowType = {
 			name = "state_window"
 			backGround=""
-			position = { x = 0 y = -76 }
+			position = { x = 0 y = -80 }
 			size = { x=475 y=480 }
 			dontRender = ""
 			horizontalBorder= ""
@@ -2823,8 +2823,8 @@ guiTypes = {
 			smoothListboxType = {
 				name = "stateviews_listbox"
 				backGround = ""
-				position = { x = 12 y = 443 }
-				size = { x = 458 y = 212 }
+				position = { x = 12 y = 436 }
+				size = { x = 458 y = 245 }
 				Orientation = "UPPER_LEFT"
 				horizontal = 0
 				scrollbartype = "standardlistbox_slider"

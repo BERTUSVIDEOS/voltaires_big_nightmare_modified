@@ -1411,180 +1411,111 @@ vn_ath_missions_slot_4 = {
             }
         }
         effect = {
-            if = {
+            barcelona_area = {
                 limit = {
-                    exists = BRC
-                    marriage_with = BRC
-					valid_for_personal_unions_trigger = yes
-					BRC = { valid_for_personal_unions_trigger = yes }
+                    NOT = { is_core = ROOT }
+                    NOT = { is_permanent_claim = ROOT }
                 }
-                add_casus_belli = {
-                    target = BRC
-                    type = cb_fabricated_claims
-                    months = 300
-                }			
+                add_permanent_claim = ROOT
             }
-            else_if = {
+            tarragona_area = {
                 limit = {
-                    exists = CAT
-                    marriage_with = CAT
+                    NOT = { is_core = ROOT }
+                    NOT = { is_permanent_claim = ROOT }
                 }
-                add_casus_belli = {
-                    target = CAT
-                    type = cb_fabricated_claims
-                    months = 300
-                }				
+                add_permanent_claim = ROOT
             }
-            else = {
-                barcelona_area = {
-                    limit = {
-                        NOT = { is_core = ROOT }
-                        NOT = { is_permanent_claim = ROOT }
-                    }
-                    add_permanent_claim = ROOT
-                }
-                tarragona_area = {
-                    limit = {
-                        NOT = { is_core = ROOT }
-                        NOT = { is_permanent_claim = ROOT }
-                    }
-                    add_permanent_claim = ROOT
-                }
-                lerida_area = {
-                    limit = {
-                        NOT = { is_core = ROOT }
-                        NOT = { is_permanent_claim = ROOT }
-                    }
-                    add_permanent_claim = ROOT
-                }
-            } 
-            if = {
+            lerida_area = {
                 limit = {
-                    exists = LAN
-                    marriage_with = LAN
-					valid_for_personal_unions_trigger = yes
-					LAN = { valid_for_personal_unions_trigger = yes }
+                    NOT = { is_core = ROOT }
+                    NOT = { is_permanent_claim = ROOT }
                 }
-                add_casus_belli = {
-                    target = LAN
-                    type = cb_fabricated_claims
-                    months = 300
-                }				
+                add_permanent_claim = ROOT
             }
-            else_if = {
+            arezzo_area = {
                 limit = {
-                    exists = TUS
-                    marriage_with = TUS
-					valid_for_personal_unions_trigger = yes
-					TUS = { valid_for_personal_unions_trigger = yes }
+                    NOT = { is_core = ROOT }
+                    NOT = { is_permanent_claim = ROOT }
                 }
-                add_casus_belli = {
-                    target = TUS
-                    type = cb_fabricated_claims
-                    months = 300
-                }				
+                add_permanent_claim = ROOT
             }
-            else = {
-                arezzo_area = {
-                    limit = {
-                        NOT = { is_core = ROOT }
-                        NOT = { is_permanent_claim = ROOT }
-                    }
-                    add_permanent_claim = ROOT
-                }
-                florence_area = {
-                    limit = {
-                        NOT = { is_core = ROOT }
-                        NOT = { is_permanent_claim = ROOT }
-                    }
-                    add_permanent_claim = ROOT
-                }
-                piombino_area = {
-                    limit = {
-                        NOT = { is_core = ROOT }
-                        NOT = { is_permanent_claim = ROOT }
-                    }
-                    add_permanent_claim = ROOT
-                }
-                siena_area = {
-                    limit = {
-                        NOT = { is_core = ROOT }
-                        NOT = { is_permanent_claim = ROOT }
-                    }
-                    add_permanent_claim = ROOT
-                }
-                scansano_area = {
-                    limit = {
-                        NOT = { is_core = ROOT }
-                        NOT = { is_permanent_claim = ROOT }
-                    }
-                    add_permanent_claim = ROOT
-                }
-                pisa_area = {
-                    limit = {
-                        NOT = { is_core = ROOT }
-                        NOT = { is_permanent_claim = ROOT }
-                    }
-                    add_permanent_claim = ROOT
-                }
-                lucca_area = {
-                    limit = {
-                        NOT = { is_core = ROOT }
-                        NOT = { is_permanent_claim = ROOT }
-                    }
-                    add_permanent_claim = ROOT
-                }
-                speza_area = {
-                    limit = {
-                        NOT = { is_core = ROOT }
-                        NOT = { is_permanent_claim = ROOT }
-                    }
-                    add_permanent_claim = ROOT
-                }
-            }
-            if = {
+            florence_area = {
                 limit = {
-                    exists = BUR
-                    marriage_with = BUR
-					valid_for_personal_unions_trigger = yes
-					BUR = { valid_for_personal_unions_trigger = yes }
+                    NOT = { is_core = ROOT }
+                    NOT = { is_permanent_claim = ROOT }
                 }
-                add_casus_belli = {
-                    target = BUR
-                    type = cb_fabricated_claims
-                    months = 300
-                }				
+                add_permanent_claim = ROOT
             }
-            else = {
-                burgundy_area = {
-                    limit = {
-                        NOT = { is_core = ROOT }
-                        NOT = { is_permanent_claim = ROOT }
-                    }
-                    add_permanent_claim = ROOT
+            piombino_area = {
+                limit = {
+                    NOT = { is_core = ROOT }
+                    NOT = { is_permanent_claim = ROOT }
                 }
-                charolais_area = {
-                    limit = {
-                        NOT = { is_core = ROOT }
-                        NOT = { is_permanent_claim = ROOT }
-                    }
-                    add_permanent_claim = ROOT
+                add_permanent_claim = ROOT
+            }
+            siena_area = {
+                limit = {
+                    NOT = { is_core = ROOT }
+                    NOT = { is_permanent_claim = ROOT }
                 }
-                dole_area = {
-                    limit = {
-                        NOT = { is_core = ROOT }
-                        NOT = { is_permanent_claim = ROOT }
-                    }
-                    add_permanent_claim = ROOT
+                add_permanent_claim = ROOT
+            }
+            scansano_area = {
+                limit = {
+                    NOT = { is_core = ROOT }
+                    NOT = { is_permanent_claim = ROOT }
                 }
-                besancon_area = {
-                    limit = {
-                        NOT = { is_core = ROOT }
-                        NOT = { is_permanent_claim = ROOT }
-                    }
-                    add_permanent_claim = ROOT
+                add_permanent_claim = ROOT
+            }
+            pisa_area = {
+                limit = {
+                    NOT = { is_core = ROOT }
+                    NOT = { is_permanent_claim = ROOT }
                 }
-            }           
+                add_permanent_claim = ROOT
+            }
+            lucca_area = {
+                limit = {
+                    NOT = { is_core = ROOT }
+                    NOT = { is_permanent_claim = ROOT }
+                }
+                add_permanent_claim = ROOT
+            }
+            speza_area = {
+                limit = {
+                    NOT = { is_core = ROOT }
+                    NOT = { is_permanent_claim = ROOT }
+                }
+                add_permanent_claim = ROOT
+            }
+            burgundy_area = {
+                limit = {
+                    NOT = { is_core = ROOT }
+                    NOT = { is_permanent_claim = ROOT }
+                }
+                add_permanent_claim = ROOT
+            }
+            charolais_area = {
+                limit = {
+                    NOT = { is_core = ROOT }
+                    NOT = { is_permanent_claim = ROOT }
+                }
+                add_permanent_claim = ROOT
+            }
+            dole_area = {
+                limit = {
+                    NOT = { is_core = ROOT }
+                    NOT = { is_permanent_claim = ROOT }
+                }
+                add_permanent_claim = ROOT
+            }
+            besancon_area = {
+                limit = {
+                    NOT = { is_core = ROOT }
+                    NOT = { is_permanent_claim = ROOT }
+                }
+                add_permanent_claim = ROOT
+            }
         }
     }
 }

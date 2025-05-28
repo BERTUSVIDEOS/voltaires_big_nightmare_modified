@@ -337,7 +337,7 @@ country_decisions = {
 			on_change_tag_effect = yes
 			hidden_effect = { restore_country_name = yes }
 			set_formable_tier = { tier = 2 }
-			swap_non_generic_missions = yes
+			#swap_non_generic_missions = yes 	#no missions
 			if = {
 				limit = {
 					NOT = { government = monarchy }
@@ -388,6 +388,7 @@ country_decisions = {
 			NOT = { is_formable_tier = { tier = 4 } }
 			capital_scope = { superregion = italy_superregion }
 			NOT = { exists = XKK }
+			NOT = { tag = PAP }
 			OR = {
 				culture_group = latin
 				primary_culture = langobardic
@@ -511,6 +512,7 @@ country_decisions = {
 				NOT = { exists = SIC }
 				tag = APL
 			}
+			NOT = { tag = PAP }
 			NOT = { tag = LBV }
 			capital_scope = { region = south_italy_region }
 			OR = {
@@ -1825,6 +1827,7 @@ country_decisions = {
 			NOT = { is_formable_tier = { tier = 4 } }
 			primary_culture = sardinian
 			NOT = { exists = SAR }
+			NOT = { tag = PAP }
 		}
 		provinces_to_highlight = {
 			OR = {
@@ -3504,6 +3507,7 @@ country_decisions = {
 			NOT = { is_formable_tier = { tier = 4 } }
 			NOT = { has_country_flag = formed_latin_empire }
 			NOT = { exists = LAE }
+			NOT = { tag = PAP }
 			OR = {
 				religion = catholic
 				religion = catholique

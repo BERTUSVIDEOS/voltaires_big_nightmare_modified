@@ -144,7 +144,7 @@ guarantee = {	#BERTUS MOD
 guarantee = {	#BERTUS MOD
 	first = FRA
 	second = SCO
-	start_date = 1444.11.14
+	start_date = 1444.12.3
 	end_date = 1560.1.1
 }
 

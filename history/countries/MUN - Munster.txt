@@ -264,10 +264,10 @@ fixed_capital = 2973
 	add_ruler_personality = bold_fighter_personality
 }
 1444.11.12 = {	#bertus mod
-	government = republic
-	add_government_reform = oligarchy_reform
+	set_government_rank = 2
 	monarch = {
-		name = "Bekajo"
+		name = "Heinrich II"
+		dynasty = "von Mörs"
 		birth_date = 1414.1.13
 		adm = 4
 		dip = 4

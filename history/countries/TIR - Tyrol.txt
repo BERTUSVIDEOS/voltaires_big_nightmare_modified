@@ -279,6 +279,7 @@ historical_friend = STY
 	}
 }
 1444.11.12 = {	#bertus mod
+	set_government_rank = 2
 	monarch = {
 		name = "Sigismund I"
 		dynasty = "von Habsburg"

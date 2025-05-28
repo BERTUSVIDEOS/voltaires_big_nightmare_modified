@@ -94,3 +94,7 @@ historical_rival = BJA
 	}
 }
 #1150 to MOR
+1444.11.12 = {	#bertus mod
+	government = republic
+	add_government_reform = merchants_reform
+}

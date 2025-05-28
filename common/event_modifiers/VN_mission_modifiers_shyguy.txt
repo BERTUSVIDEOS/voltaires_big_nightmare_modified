@@ -557,11 +557,12 @@ byz_conquer_antiochia_mission = {
 	missionary_maintenance_cost = -0.25
 }
 byz_western_ally_mission = {
-	technology_cost = -0.05
+	technology_cost = -0.10 	#-0.05→-0.10
 	diplomatic_upkeep = 1
 }
 byz_rise_of_the_phoenix_mission = {
 	administrative_efficiency = 0.05	#0.10→0.05
+	governing_capacity = 250 	#0→250
 }
 byz_court_eunuchs_mission = {
 	advisor_cost = -0.1
@@ -610,13 +611,15 @@ byz_restore_the_pentarchy_mission = {
 	global_missionary_strength = 0.02
 	tolerance_own = 1
 }
-byz_defend_constantinople_mission = {
+byz_defend_constantinople_mission = { 	#bertus mod
+	land_forcelimit = 10
 	local_defensiveness = 0.1
-	local_manpower_modifier = 0.1
+	local_manpower = 10
 	regiment_recruit_speed = -0.1
+	diplomatic_upkeep = 3
 }
 byz_restore_roman_empire_mission = {
-	governing_capacity = 250
+	governing_capacity = 500 	#250→500
 }
 byz_mare_nostrum_mission = {
 	trade_efficiency = 0.1
@@ -2874,9 +2877,10 @@ pap_european_christianization_mission = {
 	prestige_per_development_from_conversion = 0.3
 	missionaries = 1
 }
-pap_apostolic_authority_mission = {
-	diplomatic_upkeep = 1
-	max_absolutism = 5
+pap_apostolic_authority_mission = {	#bertus mod
+	max_absolutism_effect = 0.10
+	max_absolutism = 20
+	global_tax_modifier = 0.20
 }
 pap_catholic_italy_mission = {
 	global_manpower_modifier = 0.1
@@ -2894,9 +2898,9 @@ pap_fight_for_the_pontificate_mission = {
 	years_of_nationalism = -5
 }
 pap_sistine_chapel_mission = {
-	local_monthly_devastation = -0.05
 	local_unrest = -2
-	local_tax_modifier = 0.15
+	local_tax_modifier = 0.25
+	local_manpower_modifier = 0.25
 }
 pap_conquer_constantinople_mission = {
 	papal_influence = 1

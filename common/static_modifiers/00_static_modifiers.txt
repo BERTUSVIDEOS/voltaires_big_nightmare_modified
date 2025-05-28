@@ -656,6 +656,7 @@ ai_nation = {
 	diplomatic_upkeep = -1 	#0→-1
 	global_monthly_devastation = -0.10 	#0→-0.10
 	diplomatic_upkeep = -1 	#0→-1
+	defensiveness = -0.50 	#0→-0.50
 }
 
 war_taxes = {
@@ -1076,11 +1077,11 @@ papal_influence = {
 church_power = {}
 
 fervor = {	#bertus mod
-	build_cost = -0.001
-	global_trade_goods_size = 0.002	#0→0.002
-	#stability_cost_modifier = -0.001	#-0.001→0
-	#years_of_nationalism = -0.05	#-0.05→0
-	#improve_relation_modifier = 0.001	#-0.001
+	build_cost = -0.001						#10% at 100%
+	development_cost = -0.0005				#5% at 100%
+	#stability_cost_modifier = -0.001		#-0.001→0
+	#years_of_nationalism = -0.05			#-0.05→0
+	#improve_relation_modifier = 0.001		#-0.001
 }
 
 # Multiplied by the amount of Karma
@@ -1641,7 +1642,9 @@ vassal_subject = {
 	war_exhaustion = -0.05 	#0→-0.05
 	land_forcelimit = 1
 }
-
+subject_of_player_subject_bonus = { 	#bertus mod fix ai defensiveness malus
+	defensiveness = 0.50 
+}
 daimyo_subject = {
 }
 

@@ -1,0 +1,556 @@
+vn_cnd_missions_slot_1_a = {
+
+	slot = 6
+	generic = no
+	ai = yes
+	potential = {
+		tag = CND
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	vn_cnd_compact_realm = {
+		
+		position = 1
+		icon = arb_riyadh
+		
+		required_missions = {	}
+		
+		trigger = {
+			num_of_owned_provinces_with = {
+				value = 7
+				development = 11
+				num_of_buildings_in_province = 3
+			}
+		}
+		
+		effect = {
+			
+			add_ruler_personality = great_engineer_personality
+		}
+	}
+	
+	vn_cnd_expand_the_sinopi_mining_operations = {
+		
+		position = 2
+		icon = mission_iron_and_copper
+		
+		required_missions = {
+			vn_cnd_compact_realm
+		}
+		
+		trigger = {
+			6705 = {
+				development = 20
+				num_of_times_expanded_infrastructure = 2
+			}
+		}
+		
+		effect = {
+			6705 = {
+				change_trade_goods = gold
+			}
+		}
+	}
+}
+
+vn_cnd_missions_slot_2_a = {
+
+	slot = 7
+	generic = no
+	ai = yes
+	potential = {
+		tag = CND
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	vn_cnd_fortify_our_frontiers = {
+		
+		position = 2
+		icon = per_reform_our_defenses
+		
+		required_missions = {
+			vn_cnd_compact_realm
+		}
+		
+		trigger = {
+			num_of_owned_provinces_with = {
+				value = 5
+				fort_level = 2
+			}
+		}
+		
+		effect = {
+			
+			every_owned_province = {
+                limit = {
+                    has_fort_trigger = yes
+                }
+                add_base_manpower = 2
+            }
+			
+			define_general = {
+				shock = 6
+				fire = 3
+				manuever = 3
+				siege = 3
+			}
+		}
+	}
+	
+	vn_cnd_the_road_to_constantinople = {
+		
+		position = 5
+		icon = anatolian_frontier
+		
+		required_missions = {
+			vn_cnd_annihilate_the_ottomans
+		}
+		
+		trigger = {
+			owns_all_provinces = {
+					area = optimaton_area		
+			}
+		}
+		
+		effect = {
+			thrace_area = {
+				limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+				add_permanent_claim = ROOT
+			}
+			3384 = {
+					add_unit_construction = {
+								type = artillery
+								amount = 10
+								speed = 0.1
+								cost = 0
+					}
+				}
+			3385 = {
+				add_unit_construction = {
+							type = galley
+							amount = 1
+							speed = 0.1
+							cost = 0
+				}
+			}
+			3382 = {
+				add_unit_construction = {
+							type = galley
+							amount = 1
+							speed = 0.1
+							cost = 0
+				}
+			}
+			1060 = {
+				add_unit_construction = {
+							type = galley
+							amount = 1
+							speed = 0.1
+							cost = 0
+				}
+			}
+			6343 = {
+				add_unit_construction = {
+							type = galley
+							amount = 1
+							speed = 0.1
+							cost = 0
+				}
+			}
+			3383 = {
+				add_unit_construction = {
+							type = galley
+							amount = 1
+							speed = 0.1
+							cost = 0
+				}
+			}
+			3378 = {
+				add_unit_construction = {
+							type = galley
+							amount = 1
+							speed = 0.1
+							cost = 0
+				}
+			}
+			5294 = {
+				add_unit_construction = {
+							type = galley
+							amount = 1
+							speed = 0.1
+							cost = 0
+				}
+			}
+		}
+	}
+	
+	vn_cnd_city_of_worlds_desire = {
+		
+		position = 6
+		icon = mission_hagia_sophia
+		
+		required_missions = {
+			vn_cnd_the_road_to_constantinople
+		}
+		
+		trigger = {
+			owns = 2233
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = vn_cnd_victory_over_christianity
+				duration = -1
+			}
+		}
+	}
+}
+
+vn_cnd_missions_slot_3_a = {
+
+	slot = 8
+	generic = no
+	ai = yes
+	potential = {
+		tag = CND
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	vn_cnd_assemble_an_army = {
+		
+		position = 1
+		icon = mission_janissaries
+		
+		required_missions = {	}
+		
+		trigger = {
+			OR = {
+				army_size = 20
+				army_size_percentage = 1
+			}
+			num_of_generals = 1
+		}
+		
+		effect = {
+		
+		3388 = {
+			add_core = CND
+		}
+		6708 = {
+			add_core = CND
+		}
+		
+		}
+	}
+	
+	vn_cnd_consolidate_the_beylik = {
+		
+		position = 2
+		icon = mission_unite_home_region
+		
+		required_missions = {
+			vn_cnd_assemble_an_army
+		}
+		
+		trigger = {
+			owns = 3388
+			owns = 6708
+		}
+		
+		effect = {
+			change_adm = 1
+			change_dip = 1
+			change_mil = 1
+		}
+	}
+	
+	vn_cnd_prepare_for_ottoman_conquest = {
+		
+		position = 3
+		icon = mission_unify_anatolia
+		
+		required_missions = {
+			vn_cnd_consolidate_the_beylik
+		}
+		
+		trigger = {
+			army_size = 40
+			manpower_percentage = 0.9
+			mil_tech = 6
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = vn_cnd_war_for_anatolia
+				duration = 7300
+			}
+			bithynia_area = {
+				limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+				add_permanent_claim = ROOT
+			}
+			sinope_area = {
+				limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+				add_permanent_claim = ROOT
+			}
+				polemonion_area = {
+				limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+				add_permanent_claim = ROOT
+			}
+			armeniakon_area = {
+				limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+				add_permanent_claim = ROOT
+			}
+			ankrya_area = {
+				limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+				add_permanent_claim = ROOT
+			}
+			galatia_area = {
+				limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	vn_cnd_annihilate_the_ottomans = {
+		
+		position = 4
+		icon = geo_break_the_crescent
+		
+		required_missions = {
+			vn_cnd_prepare_for_ottoman_conquest
+		}
+		
+		trigger = {
+			has_won_war_against = {
+				who = TUR
+				max_years_since = 300
+			}
+		}
+		effect = {
+			every_owned_province = {
+				limit = {
+					NOT = { is_core = CND }
+				}
+				add_core = CND
+			}
+		}
+	}
+}
+
+vn_cnd_missions_slot_4_a = {
+
+	slot = 9
+	generic = no
+	ai = yes
+	potential = {
+		tag = CND
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	vn_cnd_choose_a_religious_path = {
+		position = 1
+		icon = mission_islamic_golden_age
+		required_missions = { }
+		
+		trigger = {
+			OR = {
+				piety = 0.5
+				NOT = { piety = -0.5 }
+			}
+		}
+		effect = {
+			complex_dynamic_effect = {
+				first_custom_tooltip = KAR_LEGAL
+				first_limit = "
+					ROOT = {
+						piety = 0.5
+					}
+				"
+				first_effect = "
+					add_country_modifier = {
+						name = kar_legal_nation
+						duration = 7300
+					}
+				"
+				second_custom_tooltip = KAR_MYSTIC
+				second_limit = "
+					ROOT = {
+						NOT = { piety = -0.5 }
+					}
+				"
+				second_effect = "
+					add_country_modifier = {
+						name = kar_mystic_nation
+						duration = 7300
+					}
+				"
+			}
+		}
+	}
+	
+	vn_cnd_consolidate_eastern_anatolia = {
+		
+		position = 5
+		icon = mission_non-western_soldiers
+		
+		required_missions = {
+			vn_cnd_neutralize_the_aq_qoyunlu
+			vn_cnd_annihilate_the_ottomans
+		}
+		
+		trigger = {
+			NOT = { average_autonomy = 5 }
+			num_of_owned_provinces_with = {
+				value = 70
+				region = east_anatolia_region
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = vn_cnd_prosperity
+				duration = -1
+			}
+		}
+	}
+}
+
+vn_cnd_missions_slot_5_a = {
+
+	slot = 10
+	generic = no
+	ai = yes
+	potential = {
+		tag = CND
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	vn_cnd_prepare_an_invasion_fleet = {
+	
+		position = 2
+		icon = mission_galleys_in_port
+		
+		required_missions = {
+			
+		}
+		
+		trigger = {
+			navy_size = TRE
+		}
+		
+		effect = {
+			add_navy_tradition = 10
+			set_naval_doctrine = ottoman_great_navy
+			
+			add_casus_belli = {
+				target = TRE
+				type = cb_vassalize_mission
+				months = 120
+			}
+		}
+	}
+	
+	vn_cnd_subjugate_trebizond = {
+		
+		position = 3
+		icon = mission_konkani_pirates
+		
+		required_missions = {
+			vn_cnd_prepare_an_invasion_fleet
+		}
+		
+		trigger = {
+			OR = {
+				TRE = {
+					is_subject_of = CND
+				}
+				NOT = { exists = TRE }
+			}
+		}
+		
+		effect = {
+			add_army_tradition = 10
+			add_casus_belli = {
+				target = AKK
+				type = cb_vassalize_mission
+				months = 120
+			}
+		}
+	}
+	
+	vn_cnd_neutralize_the_aq_qoyunlu = {
+		
+		position = 4
+		icon = per_butcher_black_sheep
+		
+		required_missions = {
+			vn_cnd_subjugate_trebizond
+		}
+		
+		trigger = {
+			OR = {
+				AKK = {
+					is_subject_of = CND
+				}
+				NOT = { exists = AKK}
+			}
+		}
+		
+		effect = {
+			chammanene_area = {
+					limit = {
+								NOT = { is_core = ROOT }
+								NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT
+			}
+			komana_area = {
+				limit = {
+							NOT = { is_core = ROOT }
+							NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			koloneia_area = {
+					limit = {
+								NOT = { is_core = ROOT }
+								NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+			antitaurus_area = {
+				limit = {
+							NOT = { is_core = ROOT }
+							NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+}

@@ -482,7 +482,9 @@ capital = 6038
 
 }
 1436.1.1 = { leader = { name = "Amund Bolt" 			type = general fire = 1 shock = 2 manuever = 2 siege = 0 death_date = 1440.1.1 } }
-1444.11.12 = {
+1444.11.12 = { 	#bertus mod
+	add_government_reform = feudalism_reform
+	set_government_rank = 2
 	monarch = {
 		name = "Olav V"
 		dynasty = "af Bjälbo"

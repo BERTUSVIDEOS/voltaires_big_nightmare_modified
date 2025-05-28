@@ -1,6 +1,14 @@
 spriteTypes = {
 
 	spriteType = {
+		name = "GFX_alerticon_military_reform2"
+		texturefile = "gfx/interface/alerticon_military_reform2.dds"
+	}
+	spriteType = {
+		name = "GFX_alerticon_military_reform"
+		texturefile = "gfx/interface/alerticon_military_reform.dds"
+	}
+	spriteType = {
 		name = "GFX_court_view_select_advisor_bg_huge"
 		texturefile = "gfx//interface//court_view_select_advisor_bg_huge.dds"
 		loadType = "INGAME"

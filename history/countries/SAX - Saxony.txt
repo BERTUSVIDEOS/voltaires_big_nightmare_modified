@@ -431,6 +431,7 @@ capital = 629
 	}
 }
 1444.11.12 = {	#bertus mod
+	set_government_rank = 2
 	monarch = {
 		name = "Friedrich II"
 		dynasty = "von Wettin"

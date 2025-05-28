@@ -141,6 +141,7 @@ religious_school = maliki_school
 }
 #1371 to TUN reunified
 1444.11.12 = {	#bertus mod
+	set_government_rank = 2
 	monarch = {
 		name = "Ahmad III"
 		dynasty = "Banû Hafs"

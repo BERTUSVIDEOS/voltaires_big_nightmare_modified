@@ -221,7 +221,7 @@ union = {
 union = {	#bertus mod
 	first = SAV
 	second = NIC
-	start_date = 1444.11.14
+	start_date = 1444.12.3
 	end_date = 1720.1.1
 }
 union = {
@@ -325,7 +325,7 @@ vassal = {
 vassal = {	#bertus mod
 	first = SAV
 	second = PTR
-	start_date = 1444.11.14
+	start_date = 1444.12.3
 	end_date = 1474.10.21
 }
 

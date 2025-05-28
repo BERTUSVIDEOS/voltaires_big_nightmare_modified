@@ -29,6 +29,9 @@ discovered_by = north_american
 	add_core = BYZ
 	remove_core = TNS
 }
+1444.11.12 = {	#BERTUS MOD
+	fort_15th = yes
+}
 1453.5.29 = {
 	owner = VEN
 	controller = VEN

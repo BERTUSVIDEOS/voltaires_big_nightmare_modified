@@ -406,6 +406,22 @@ enforce_peace = {
 		tooltip = CANNOT_AGAINST_GM
 		potential = {
 			start_date = 1444.11.13
+			OR = {
+				tag = TUR
+				tag = HUN
+				tag = BOH
+				tag = POL
+				tag = MAM
+			}
+		}
+		allow = {
+			ai = no
+		}
+	}
+	condition = {	#bertus mod
+		tooltip = CANNOT_AGAINST_GM
+		potential = {
+			start_date = 1444.11.13
 		}
 		allow = {
 			FROM = {
@@ -870,6 +886,22 @@ guaranteeaction = {
 }
 threaten_war = {
 	
+	condition = {	#bertus mod
+		tooltip = CANNOT_AGAINST_GM
+		potential = {
+			start_date = 1444.11.13
+			OR = {
+				tag = TUR
+				tag = HUN
+				tag = BOH
+				tag = POL
+				tag = MAM
+			}
+		}
+		allow = {
+			ai = no
+		}
+	}
 	condition = {	#bertus mod
 		tooltip = CANNOT_AGAINST_GM
 		potential = {

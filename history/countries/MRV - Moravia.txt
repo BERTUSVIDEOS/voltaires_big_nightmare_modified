@@ -180,6 +180,7 @@ capital = 2911
 
 1444.11.12 = {	#bertus mod
 	set_capital = 822
+	set_government_rank = 2
 	monarch = {
 		name = "Otakar II"
 		dynasty = "Premyslovci"

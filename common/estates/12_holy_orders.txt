@@ -290,8 +290,11 @@ estate_holy_orders = {
 		estate_holy_orders_development_of_hospitals
 		estate_holy_orders_grant_military_leadership
 		estate_holy_orders_heir_knight
+		estate_holy_orders_monopoly_on_banking
 		estate_holy_orders_noble_promotion
+		estate_holy_orders_military_ministerium
 		estate_holy_orders_military_service
+		estate_holy_orders_recruit_cossack_generals
 		#taken from vanilla
 		estate_nobles_cawa_peace_keepers
 		estate_nobles_cawa_offensive_fighters

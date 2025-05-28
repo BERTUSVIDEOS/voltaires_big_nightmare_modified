@@ -309,6 +309,7 @@ fixed_capital = 2523
 	clear_scripted_personalities = yes
 }
 1444.11.12 = {	#bertus mod
+	set_government_rank = 2
 	monarch = {
 		name = "Gottfried III"
 		dynasty = "von Limpurg"

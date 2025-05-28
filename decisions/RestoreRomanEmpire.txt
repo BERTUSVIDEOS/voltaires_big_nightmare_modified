@@ -17,6 +17,7 @@ country_decisions = {
 				is_free_or_tributary_trigger = yes
 				ai = no
 			}
+			NOT = { tag = PAP }
 			NOT = { exists = ROM }
 			OR = {
 				religion_group = christian

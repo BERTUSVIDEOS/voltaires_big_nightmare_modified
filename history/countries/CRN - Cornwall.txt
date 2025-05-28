@@ -61,6 +61,7 @@ capital = 2141	# Exeter
 }
 1444.11.12 = {	#BERTUS MOD
 	set_capital = 2499
+	set_government_rank = 2
 	monarch = {
 		name = "Beatrice"
 		dynasty = "van Valkeberg"

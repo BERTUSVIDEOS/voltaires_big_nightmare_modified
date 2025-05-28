@@ -7,6 +7,7 @@ technology_group = western
 capital = 1955	# Barcelona
 
 1444.11.12 = {	#bertus mod
+	set_government_rank = 2
 	monarch = {
 		name = "Ramon Berenguer I"
 		dynasty = "de la Peseta"

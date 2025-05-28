@@ -183,6 +183,7 @@ change_estate_land_share = {
 	}
 }
 1444.11.12 = {	#bertus mod
+	set_government_rank = 2
 	monarch = {
 		name = "Ahmad II"
 		dynasty = "Banû Zayyân"

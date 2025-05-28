@@ -131,6 +131,7 @@ fixed_capital = 4826
 }
 1444.11.12 = {	 #bertus mod
 	set_capital = 4854
+	set_government_rank = 2
 	monarch = {
 		name = "Franz II"
 		dynasty = "Kuhschmalz"

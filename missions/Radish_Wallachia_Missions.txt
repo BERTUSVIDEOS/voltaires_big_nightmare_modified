@@ -1,0 +1,513 @@
+vn_wal_missions_slot_1_a = {
+	
+	slot = 6
+	generic = no
+	ai = yes
+	potential = {
+		tag = WAL
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	vn_wal_impale_the_sultan = {
+		
+		position = 1
+		icon = mission_impaled_soldies
+		
+		required_missions = {	}
+		
+		trigger = {
+			TUR = {
+				capital_scope = {
+					controller = {	
+						OR = {
+							TAG = WAL
+							TAG = RMN
+						}
+					}
+				}
+			}
+		}
+		
+		effect = {
+			TUR = {
+				country_event = { 
+					id = radish.4
+				}
+			}
+		}
+	}
+}
+
+vn_wal_missions_slot_2_a = {
+	
+	slot = 7
+	generic = no
+	ai = yes
+	potential = {
+		tag = WAL
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	vn_wal_protect_our_bethren = {
+		
+		position = 2
+		icon = mission_noble_council
+		
+		required_missions = {
+			vn_wal_standing_army
+		}
+		
+		trigger = {
+			owns = 577
+		}
+		
+		effect = {
+			haromszek_area = {
+				limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+				add_permanent_claim = ROOT
+			}
+			hunyad_area = {
+				limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+				add_permanent_claim = ROOT
+			}
+			kukullo_area = {
+				limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	vn_wal_transylvanian_incursion = {
+		
+		position = 3
+		icon = mission_build_up_to_force_limit
+		
+		required_missions = {
+			vn_wal_protect_our_bethren
+		}
+		
+		trigger = {
+			num_of_owned_provinces_with = {
+				value = 15
+				OR = {
+					area = haromszek_area
+					area = hunyad_area
+					area = kukullo_area
+				}
+			}
+		}
+		
+		effect = {
+			transylvania_region = {
+				limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+				add_permanent_claim = ROOT
+			}
+			add_adm_power = 100
+			add_prestige = 25
+		}
+	}
+	
+	vn_wal_conquest_of_transylvania = {
+		
+		position = 4
+		icon = mission_eastern_european_city
+		
+		required_missions = {
+			vn_wal_transylvanian_incursion
+		}
+		
+		trigger = {	
+			owns_all_provinces = {
+				area = haromszek_area	
+			}
+			owns_all_provinces = {
+				area = hunyad_area
+			}
+			owns_all_provinces = {
+				area = kukullo_area
+			}
+			owns_all_provinces = {
+				area = torda_area
+			}
+		}
+		
+		effect = {
+			hidden_effect = {
+				add_country_modifier = {
+					name = vn_wal_no_slot_szekely_szaszok
+					duration = -1
+				}
+				add_accepted_culture = csango
+				add_accepted_culture = szaszok
+			}
+			custom_tooltip = WAL_szekely_szaszok_no_slot_taken
+		}
+	}
+
+}
+
+vn_wal_missions_slot_3_a = {
+	
+	slot = 8
+	generic = no
+	ai = yes
+	potential = {
+		tag = WAL
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	vn_wal_standing_army = {
+		
+		position = 1
+		icon = mam_refine_the_furusiyya
+		
+		required_missions = {	}
+		
+		trigger = {
+			stability = 1
+			OR = {
+				army_size = 25
+				army_size_percentage = 1
+			}
+		}
+		
+		effect = {
+			add_army_tradition = 10
+			define_general = {
+				name = "Vlad"
+				shock = 2
+				fire = 2
+				manuever = 4
+				siege = 0
+			}
+			
+			tarnovo_area = {
+				limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+				add_permanent_claim = ROOT
+			}
+			add_core = 577
+		}
+	}
+	
+	vn_wal_greater_romania = {
+	
+		position = 5
+		icon = mission_control_moldavia
+		
+		required_missions = {
+			vn_wal_opress_bulgarian_minorities
+			vn_wal_conquest_of_transylvania
+		}
+		
+		trigger = {
+			tag = RMN
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = "vn_wal_greater_romania_modifier"
+				duration = -1
+			}
+		}
+	}
+}
+
+vn_wal_missions_slot_4_a = {
+	
+	slot = 9
+	generic = no
+	ai = yes
+	potential = {
+		tag = WAL
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	vn_wal_snatch_lovech = {
+		
+		position = 2
+		icon = mission_conquer_50_development
+		
+		required_missions = {	vn_wal_standing_army	}
+		
+		trigger = {
+			owns = 5388
+			owns = 615
+			owns = 1046
+			owns = 610
+			owns = 5573
+		}
+		
+		effect = {
+			vidin_area = {
+				limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+				add_permanent_claim = ROOT
+			}
+			tarnovo_area = {
+				limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+				add_permanent_claim = ROOT
+			}
+			dobruja_area = {
+				limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+				add_permanent_claim = ROOT
+			}
+			silistra_area = {
+				limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	vn_wal_expand_into_bulgaria = {
+		
+		position = 3
+		icon = fight_bosnian_heresies
+		
+		required_missions = {
+			vn_wal_snatch_lovech
+		}
+		
+		trigger = {
+			owns_all_provinces = {
+				area = vidin_area	
+			}
+			owns_all_provinces = {
+				area = tarnovo_area	
+			}
+			owns_all_provinces = {
+				area = silistra_area	
+			}
+			owns_all_provinces = {
+				area = dobruja_area	
+			}
+		}
+		
+		effect = {
+			sophia_area = {
+				limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+				add_permanent_claim = ROOT
+			}
+			kran_area = {
+				limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+				add_permanent_claim = ROOT
+			}
+			zagore_area = {
+				limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+				add_permanent_claim = ROOT
+			}
+			plovdiv_area = {
+				limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	vn_wal_opress_bulgarian_minorities = {
+		
+		position = 4
+		icon = mission_have_two_subjects
+		
+		required_missions = {
+			vn_wal_expand_into_bulgaria
+		}
+		
+		trigger = {
+			num_of_owned_provinces_with = {
+				value = 40
+				culture_group = vlach
+				OR = {
+					area = zagore_area
+					area = plovdiv_area
+					area = prilep_area
+					area = skopia_area
+					area = sophia_area
+					area = silistra_area
+					area = kran_area
+					area = vidin_area
+					area = tarnovo_area
+					area = dobruja_area
+				}
+			}
+		}
+		
+		effect = {
+			silistra_area = {
+				limit = {
+						owned_by = ROOT
+						culture = wallachian
+					}
+				add_province_modifier = {
+					name = vn_wal_ethnic_workforce
+					duration = 9125
+				}
+			}
+			zagore_area = {
+				limit = {
+						owned_by = ROOT
+						culture = wallachian
+					}
+				add_province_modifier = {
+					name = vn_wal_ethnic_workforce
+					duration = 9125
+				}
+			}
+			plovdiv_area = {
+				limit = {
+						owned_by = ROOT
+						culture = wallachian
+					}
+				add_province_modifier = {
+					name = vn_wal_ethnic_workforce
+					duration = 9125
+				}
+			}
+			sophia_area = {
+				limit = {
+						owned_by = ROOT
+						culture = wallachian
+					}
+				add_province_modifier = {
+					name = vn_wal_ethnic_workforce
+					duration = 9125
+				}
+			}
+			asilistra_area = {
+				limit = {
+						owned_by = ROOT
+						culture = wallachian
+					}
+				add_province_modifier = {
+					name = vn_wal_ethnic_workforce
+					duration = 9125
+				}
+			}
+			kran_area = {
+				limit = {
+						owned_by = ROOT
+						culture = wallachian
+					}
+				add_province_modifier = {
+					name = vn_wal_ethnic_workforce
+					duration = 9125
+				}
+			}
+			vidin_area = {
+				limit = {
+						owned_by = ROOT
+						culture = wallachian
+					}
+				add_province_modifier = {
+					name = vn_wal_ethnic_workforce
+					duration = 9125
+				}
+			}
+			tarnovo_area = {
+				limit = {
+						owned_by = ROOT
+						culture = wallachian
+					}
+				add_province_modifier = {
+					name = vn_wal_ethnic_workforce
+					duration = 9125
+				}
+			}
+			dobruja_area = {
+				limit = {
+						owned_by = ROOT
+						culture = wallachian
+					}
+				add_province_modifier = {
+					name = vn_wal_ethnic_workforce
+					duration = 9125
+				}
+			}
+
+		}
+	}
+}
+
+vn_wal_missions_slot_5_a = {
+	
+	slot = 10
+	generic = no
+	ai = yes
+	potential = {
+		tag = WAL
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	vn_wal_defender_of_the_cross = {
+		
+		position = 1
+		icon = mission_pf_cross
+		
+		required_missions = {	}
+		
+		trigger = {
+			calc_true_if = {
+                amount = 2
+                all_ally = {
+                    capital_scope = {
+                        superregion = balkans_superregion
+                    }
+                    has_opinion = {
+                        who = ROOT
+                        value = 150
+                    }
+					religion = protestant
+                }
+                desc = vn_wal_defender_of_the_cross.tt
+            }
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = vn_wal_defender_of_the_cross
+				duration = 9125
+			}
+		}
+	}
+}

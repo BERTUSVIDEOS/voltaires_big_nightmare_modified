@@ -7,12 +7,9 @@ estate_jews_land_rights = {
 	can_select = {
 		NOT = {has_estate_privilege = estate_burghers_promote_burgher_bookkeeping }
 	}
-	on_granted = {
-	}
-	penalties = {
-	}
-	benefits = {
-	}
+	on_granted = { }
+	penalties = { }
+	benefits = { }
 	loyalty_scaled_conditional_modifier = {
 		trigger = { always = yes }
 		modifier = {
@@ -36,127 +33,7 @@ estate_jews_land_rights = {
 			estate_privilege = estate_burghers_promote_burgher_bookkeeping
 		}
 	}
-	ai_will_do = {
-		factor = 5
-		modifier = {
-			factor = 1.4
-			num_of_territories = 5
-		}
-		modifier = {
-			factor = 1.5
-			num_of_territories = 10
-		}
-		modifier = {
-			factor = 1.5
-			num_of_territories = 15
-		}
-		modifier = {
-			factor = 0
-			OR = {
-				NOT = { crown_land_share = 25 }
-				estate_influence = {
-					estate = estate_jews
-					influence = 75
-				}
-			}
-			NOT = { has_estate_privilege = estate_jews_land_rights }
-		}
-		modifier = {
-			factor = 3
-			OR = {
-				AND = {
-					governing_capacity_percentage = 0.9
-					NOT = { has_estate_privilege = estate_jews_land_rights }
-				}
-				#The trigger below should make sure that the AI actually keeps this privilege when enacting it early game
-				AND = {
-					governing_capacity_percentage = 0.6
-					has_estate_privilege = estate_jews_land_rights
-				}
-			}
-		}
-		modifier = {
-			factor = 0
-			NOT = { governing_capacity_percentage = 0.5 }
-		}
-		modifier = {
-			factor = 0.8
-			OR = {
-				NOT = { crown_land_share = 40 }
-				AND = {
-					is_absolutism_active = yes
-					NOT = { crown_land_share = 60 }
-				}
-			}
-			NOT = { has_estate_privilege = estate_jews_land_rights }
-		}
-		modifier = {
-			factor = 0.8
-			OR = {
-				NOT = { crown_land_share = 30 }
-				AND = {
-					is_absolutism_active = yes
-					NOT = { crown_land_share = 50 }
-				}
-			}
-			NOT = { has_estate_privilege = estate_jews_land_rights }
-		}
-		modifier = {
-			factor = 0.8
-			is_absolutism_active = yes
-		}
-		modifier = {
-			factor = 2
-			governing_capacity_percentage = 0.9
-		}
-		modifier = {
-			factor = 3
-			governing_capacity_percentage = 1
-		}
-		modifier = {
-			factor = 10
-			governing_capacity_percentage = 1.2
-		}
-		modifier = {
-			factor = 8
-			NOT = { adm_tech = 12 }
-			governing_capacity_percentage = 0.8
-		}
-		modifier = {
-			factor = 5
-			NOT = { adm_tech = 12 }
-			NOT = { government_rank = 1 }
-			governing_capacity_percentage = 0.65
-		}
-		#Tag specific convincement
-		modifier = {
-			factor = 1.25
-			tag = FRA
-			NOT = { adm_tech = 17 }
-		}
-		modifier = {
-			factor = 1.25
-			tag = SPA
-			NOT = { adm_tech = 17 }
-		}
-		#Has already a similar privilege active
-		modifier = {
-			factor = 0.75
-			has_estate_privilege = estate_burghers_land_rights
-		}
-		modifier = {
-			factor = 0.75
-			has_estate_privilege = estate_church_land_rights
-		}
-		modifier = {
-			factor = 0.75
-			has_estate_privilege = estate_nobles_land_rights
-		}
-		modifier = {
-			factor = 0.75
-			has_estate_privilege = estate_holy_orders_land_rights
-		}
-	}
+	ai_will_do = { factor = 0 }
 }
 
 estate_jews_indebted_to_jews = {
@@ -213,12 +90,9 @@ estate_jews_indebted_to_jews = {
 	penalties = {
 		tolerance_own = -2
 	}
-	benefits = {
-	}
+	benefits = { }
 	cooldown_years = 10
-	ai_will_do = {
-		factor = 0
-	}
+	ai_will_do = { factor = 0 }
 }
 
 estate_jews_lighter_jewish_taxes = {
@@ -273,13 +147,9 @@ estate_jews_lighter_jewish_taxes = {
 			remove_province_modifier = estate_dhimmi_lighter_dhimmi_taxes_privilege_mod
 		}
 	}
-	penalties = {
-	}
-	benefits = {
-	}
-	ai_will_do = {
-		factor = 0
-	}
+	penalties = { }
+	benefits = { }
+	ai_will_do = { factor = 0 }
 }
 
 estate_jews_jewish_nobles = {
@@ -300,17 +170,13 @@ estate_jews_jewish_nobles = {
 	benefits = {
 		free_leader_pool = 1
 	}
-	on_revoked = {
-	}
-	on_invalid = {
-	}
+	on_revoked = { }
+	on_invalid = { }
 	on_cooldown_expires = {
 		remove_estate_privilege = estate_jews_jewish_nobles
 	}
 	cooldown_years = 20
-	ai_will_do = {
-		factor = 0
-	}
+	ai_will_do = { factor = 0 }
 }
 
 estate_jews_manpower = {
@@ -325,8 +191,7 @@ estate_jews_manpower = {
 			NOT = { religion_group = root }
 		}
 	}
-	can_select = {
-	}
+	can_select = { }
 	on_granted = {
 		custom_tooltip = estate_jews_manpower_effect_tooltip
 	}
@@ -369,13 +234,9 @@ estate_jews_manpower = {
 			remove_province_modifier = estate_dhimmi_manpower_mod
 		}
 	}
-	penalties = {
-	}
-	benefits = {
-	}
-	ai_will_do = {
-		factor = 0
-	}
+	penalties = { }
+	benefits = { }
+	ai_will_do = { factor = 0 }
 }
 
 estate_jews_tolerance = {
@@ -398,28 +259,7 @@ estate_jews_tolerance = {
 	benefits = {
 		tolerance_heathen = 2
 	}
-	ai_will_do = {
-		factor = 1
-		modifier = {
-			factor = 10
-			num_of_owned_provinces_with = {
-				NOT = { religion_group = root }
-				is_state_core = root
-				value = 15
-			}
-		}
-		modifier = {
-			factor = 0.5
-			estate_influence = {
-				estate = estate_church
-				influence = 75
-			}
-		}
-		modifier = {
-			factor = 0.8
-			is_absolutism_active = yes
-		}
-	}
+	ai_will_do = { factor = 0 }
 }
 
 estate_jews_contribution_demand = {
@@ -439,17 +279,13 @@ estate_jews_contribution_demand = {
 			estate_action = DEMAND_CONTRIBUTION_JEWS
 		}
 	}
-	on_revoked = {
-	}
-	on_invalid = {
-	}
+	on_revoked = { }
+	on_invalid = { }
 	on_cooldown_expires = {
 		remove_estate_privilege = estate_jews_contribution_demand
 	}
 	cooldown_years = 15
-	ai_will_do = {
-		factor = 0
-	}
+	ai_will_do = { factor = 0 }
 }
 estate_jews_grant_trading_privileges = {
 	icon = privilege_monopoly
@@ -460,8 +296,7 @@ estate_jews_grant_trading_privileges = {
 	is_valid = {
 		has_dlc = "Domination"
 	}
-	can_select = {
-	}
+	can_select = { }
 	on_granted = {
 		estate_action = {
 			estate_action = RECRUIT_MINISTER_JEWS
@@ -474,17 +309,13 @@ estate_jews_grant_trading_privileges = {
 	benefits = {
 		diplomats = 1
 	}
-	on_revoked = {
-	}
-	on_invalid = {
-	}
+	on_revoked = { }
+	on_invalid = { }
 	on_cooldown_expires = {
 		remove_estate_privilege = estate_jews_grant_trading_privileges
 	}
 	cooldown_years = 20
-	ai_will_do = {
-		factor = 0
-	}
+	ai_will_do = { factor = 0 }
 }
 estate_jews_guaranteed_autonomy = {
 	icon = privilege_grant_autonomy
@@ -548,29 +379,9 @@ estate_jews_guaranteed_autonomy = {
 			remove_province_modifier = estate_dhimmi_guaranteed_autonomy_mod
 		}
 	}
-	penalties = {
-	}
-	benefits = {
-	}
-	ai_will_do = {
-		factor = 1000
-		modifier = {
-			factor = 0
-			NOT = {
-				any_owned_province = {
-					NOT = { religion_group = ROOT }
-				}
-			}
-		}
-		modifier = {
-			factor = 0
-			is_subject = yes
-			overlord = {
-				religion = ROOT
-				has_idea_group = religious_ideas
-			}
-		}
-	}
+	penalties = { }
+	benefits = { }
+	ai_will_do = { factor = 0 }
 }
 
 estate_jews_grant_liberties = {
@@ -593,17 +404,13 @@ estate_jews_grant_liberties = {
 	benefits = {
 		advisor_pool = 1
 	}
-	on_revoked = {
-	}
-	on_invalid = {
-	}
+	on_revoked = { }
+	on_invalid = { }
 	on_cooldown_expires = {
 		remove_estate_privilege = estate_jews_grant_liberties
 	}
 	cooldown_years = 20
-	ai_will_do = {
-		factor = 1
-	}
+	ai_will_do = { factor = 0 }
 }
 
 estate_jews_expulsion = {
@@ -649,21 +456,7 @@ estate_jews_expulsion = {
 			set_country_flag = expelled_jews 
 		}
 	}
-	penalties = {
-	}
-	benefits = {
-	}
-	ai_will_do = {
-		factor = 1
-		modifier = {
-			factor = 0
-			NOT = {
-				ruler_has_personality = zealot_personality
-				OR = {
-					is_bankrupt = yes
-					has_spawned_rebels = jewish_rebels
-				}
-			}
-		}
-	}
+	penalties = { }
+	benefits = { }
+	ai_will_do = { factor = 0 }
 }

@@ -80,6 +80,8 @@ capital = 918
 	}
 }
 1444.11.12 = {	#bertus mod
+	set_government_rank = 2
+	add_government_reform = feudalism_reform
 	monarch = {
 		name = "Robert III"
 		dynasty = "Capet"

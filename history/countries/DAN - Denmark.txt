@@ -556,10 +556,12 @@ change_estate_land_share = {
 	set_ruler_flag = has_proclaimed_archking_title
 }
 1443.1.1 = { capital = 411 }
-1439.9.24 = {
+1444.11.12 = { 	#bertus mod
+	add_government_reform = feudalism_reform
+	set_government_rank = 2
 	monarch = {
 		name = "Christopher III"
-		dynasty = "von Wittelsbach"
+		dynasty = "Askanier"
 		culture = danish
 		birth_date = 1404.1.1
 		adm = 3

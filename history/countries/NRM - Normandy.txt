@@ -96,6 +96,8 @@ historical_rival = ASE
 #1106 to ENG
 1444.11.12 = {	#bertus mod
 	set_capital = 1172 #rouen
+	set_government_rank = 2
+	add_government_reform = feudalism_reform
 	monarch = {
 		name = "Robert II"
 		dynasty = "Rolloning"

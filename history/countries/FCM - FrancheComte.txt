@@ -272,6 +272,8 @@ capital = 2582	# Dole
 1378.9.20 = { religion = catholique }
 1403.5.28 = { religion = catholic }
 1444.11.12 = {	#bertus mod
+	add_government_reform = feudalism_reform
+	set_government_rank = 2
 	every_owned_province = {
 		add_local_autonomy = -10
 	}

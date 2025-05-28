@@ -11,118 +11,6 @@ vn_nrm_missions_slot_1_a = {
 	}
 	has_country_shield = yes
     
-	vn_nrm_naval_ventures = {
-		position = 1
-		icon = imperial_navy
-		required_missions = { }
-		trigger = {
-			naval_forcelimit = 15
-			num_of_heavy_ship = 3
-			num_of_light_ship = 3
-		}
-		effect = {
-			add_navy_tradition = 15
-			add_country_modifier = {
-				name = "nrm_naval_ventures_mission"
-				duration = 9125
-			}
-		}
-		ai_weight = {
-			factor = 250
-		}
-    }
-	vn_nrm_support_normans_in_italy = {
-		position = 4
-		icon = mission_seize_the_isles
-		required_missions = { vn_nrm_naval_ventures }
-		trigger = {
-			custom_trigger_tooltip = {
-				tooltip = vn_nrm_support_normans_in_italy.tt
-				any_known_country = {
-					capital_scope = { region = south_italy_region }
-					has_opinion = {
-						who = ROOT
-						value = 125
-					}
-					ruler_culture = normand
-				}
-			}
-		}
-		effect = {
-			add_country_modifier = {
-				name = "nrm_support_normans_in_italy_mission"
-				duration = 9125
-			}
-		}
-		ai_weight = {
-			factor = 250
-		}
-	}
-	vn_nrm_byzantine_bargains = {
-		position = 5
-		icon = mission_pf_soldier
-		required_missions = { vn_nrm_support_normans_in_italy }
-		provinces_to_highlight = {
-			if = {
-				limit = { BYZ = { exists = yes } }
-				is_capital_of = BYZ
-			}
-			else = {
-				owner = {
-					NOT = { tag = ROOT }
-					primary_culture = greek
-				}
-				is_capital = yes
-			}
-		}
-		trigger = {
-			if = {
-				limit = { exists = BYZ }
-				BYZ = {
-					NOT = { war_with = ROOT }
-					has_opinion = {
-						who = ROOT
-						value = 100
-					}
-					treasury = 250
-					ai = yes
-				}
-			}
-			else = {
-				any_known_country = {
-					NOT = { tag = ROOT }
-					primary_culture = greek
-					has_opinion = {
-						who = ROOT
-						value = 100
-					}
-					treasury = 250
-					ai = yes
-				}
-			}
-			manpower = 15
-		}
-		effect = {
-			country_event = {
-				id = vn_missions.54
-			}
-		}
-		ai_weight = {
-			factor = 250
-		}
-	}
-}
-
-vn_nrm_missions_slot_2_a = {
-	slot = 7
-	generic = no
-	ai = yes
-	potential = {
-		tag = NRM
-		NOT = { map_setup = map_setup_random }
-	}
-    has_country_shield = yes
-    
 	vn_nrm_english_succession = {
 		position = 1
 		icon = mission_monarch_in_throne_room
@@ -148,6 +36,7 @@ vn_nrm_missions_slot_2_a = {
 			factor = 500
 		}
     }
+	
 	vn_nrm_alea_iacta_est = {
 		position = 3
 		icon = mission_invade_england
@@ -208,6 +97,7 @@ vn_nrm_missions_slot_2_a = {
 			factor = 500
 		}
 	}
+	
 	vn_nrm_subjugate_england = {
         icon = mission_rb_invade_england
         position = 4
@@ -296,6 +186,24 @@ vn_nrm_missions_slot_2_a = {
 			factor = 500
 		}
 	}
+	
+	
+}
+
+vn_nrm_missions_slot_2_a = {
+	slot = 7
+	generic = no
+	ai = yes
+	potential = {
+		tag = NRM
+		NOT = { map_setup = map_setup_random }
+	}
+    has_country_shield = yes
+    
+	
+	
+	
+	
 }
 
 vn_nrm_missions_slot_2_b = {
@@ -308,142 +216,26 @@ vn_nrm_missions_slot_2_b = {
 	}
 	has_country_shield = yes
 
-	vn_nrm_support_crusaders = {
-		position = 5
-		icon = mission_crusade
-		required_missions = { vn_nrm_support_normans_in_italy }
-		trigger = {
-			OR = {
-				is_in_war = {
-					casus_belli = cb_crusade   #BERTUS MOD
-				}
-				is_in_war = {
-					casus_belli = cb_grand_crusade
-				}
-			}
-		}
-		effect = {
-			add_prestige_or_monarch_power = { amount = 10 } 
-            add_country_modifier = {
-				name = "fra_sanction_crusades_mission"
-				duration = 1825
-			}
-		}
-	}
-	vn_nrm_rule_a_crusader_state = {
-		position = 6
-		icon = jerusalem
-		required_missions = { vn_nrm_support_crusaders }
-		provinces_to_highlight = {
-			OR = {
-				region = palestine_region
-				region = outremer_region
-			}
-			NOT = { country_or_non_sovereign_subject_holds = ROOT }
-		}
-		trigger = {
-			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-				value = 5
-				OR = {
-					region = palestine_region
-					region = outremer_region
-				}
-			}
-		}
-		effect = {
-			add_country_modifier = {
-				name = "nrm_rule_a_crusader_state_mission"
-				duration = 9125
-			}
-		}
-	}
-}
-
-vn_nrm_missions_slot_3_a = {
-	slot = 8
-	generic = no
-	ai = yes
-	potential = {
-		tag = NRM
-		NOT = { map_setup = map_setup_random }
-	}
-	has_country_shield = yes
-    
-	vn_nrm_claim_maine = {
+	vn_nrm_claim_maine = { 	#bertus mod
 		icon = develop_the_po_valley
 		required_missions = { vn_nrm_consolidate_duchy }
 		position = 2
 		provinces_to_highlight = {
-			OR = {
-				area = alencon_area
-				province_id = 4087
-				province_id = 1290
-				province_id = 2177
-				province_id = 2913
-				province_id = 1191
-			}
-			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
-			alencon_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			4087 = { country_or_non_sovereign_subject_holds = ROOT }
-			1290 = { country_or_non_sovereign_subject_holds = ROOT }
-			2177 = { country_or_non_sovereign_subject_holds = ROOT }
-			2913 = { country_or_non_sovereign_subject_holds = ROOT }
-			1191 = { country_or_non_sovereign_subject_holds = ROOT }
+			prestige = 50
 		}
 		effect = {
+			maine_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
 			add_country_modifier = {
 				name = "nrm_claim_maine_mission"
 				duration = 9125
-			}
-			2163 = {
-				if = {
-					limit = {
-						NOT = { is_core = ROOT }
-						NOT = { is_permanent_claim = ROOT }
-					}
-					add_permanent_claim = ROOT
-				}
-			}
-			1289 = {
-				if = {
-					limit = {
-						NOT = { is_core = ROOT }
-						NOT = { is_permanent_claim = ROOT }
-					}
-					add_permanent_claim = ROOT
-				}
-			}
-			2059 = {
-				if = {
-					limit = {
-						NOT = { is_core = ROOT }
-						NOT = { is_permanent_claim = ROOT }
-					}
-					add_permanent_claim = ROOT
-				}
-			}
-			4496 = {
-				if = {
-					limit = {
-						NOT = { is_core = ROOT }
-						NOT = { is_permanent_claim = ROOT }
-					}
-					add_permanent_claim = ROOT
-				}
-			}
-			4098 = {
-				if = {
-					limit = {
-						NOT = { is_core = ROOT }
-						NOT = { is_permanent_claim = ROOT }
-					}
-					add_permanent_claim = ROOT
-				}
 			}
 		}
     }
@@ -451,52 +243,28 @@ vn_nrm_missions_slot_3_a = {
 		icon = mission_wine_monopolies
 		required_missions = { vn_nrm_claim_maine }
 		provinces_to_highlight = {
-			OR = {
-				province_id = 2163
-				province_id = 1289
-				province_id = 2059
-				province_id = 4496
-				province_id = 4098
-			}
+			area = maine_area
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
-			2163 = { country_or_non_sovereign_subject_holds = ROOT }
-			1289 = { country_or_non_sovereign_subject_holds = ROOT }
-			2059 = { country_or_non_sovereign_subject_holds = ROOT }
-			4496 = { country_or_non_sovereign_subject_holds = ROOT }
-			4098 = { country_or_non_sovereign_subject_holds = ROOT }
+			maine_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
 		}
 		effect = {
-			2163 = {
+			maine_area = {
 				add_province_modifier = {
 					name = "nrm_invade_anjou_mission"
 					duration = 9125
 				}
 			}
-			1289 = {
-				add_province_modifier = {
-					name = "nrm_invade_anjou_mission"
-					duration = 9125
+			tours_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
 				}
-			}
-			2059 = {
-				add_province_modifier = {
-					name = "nrm_invade_anjou_mission"
-					duration = 9125
-				}
-			}
-			4496 = {
-				add_province_modifier = {
-					name = "nrm_invade_anjou_mission"
-					duration = 9125
-				}
-			}
-			4098 = {
-				add_province_modifier = {
-					name = "nrm_invade_anjou_mission"
-					duration = 9125
-				}
+				add_permanent_claim = ROOT
 			}
 		}
 	}
@@ -509,7 +277,7 @@ vn_nrm_missions_slot_3_a = {
 			maine_area = {
 				is_prosperous = yes
 			}
-			maine_area = {
+			tours_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -517,10 +285,14 @@ vn_nrm_missions_slot_3_a = {
 		
 		effect = {
 			2913 = {
+				change_trade_goods = gold
 				center_of_trade = 2
 				add_province_modifier = {
 					name = "nrm_development_of_mulsanne_gold_mine"
 					duration = -1
+				}
+				hidden_effect = {
+					add_province_modifier = { name = flatland_gold duration = -1 }
 				}
 			}
 		}
@@ -625,24 +397,24 @@ vn_nrm_missions_slot_3_a = {
 			}
 		}
 	}
-}
-
-vn_nrm_missions_slot_3_b = {
-	slot = 8
-	generic = no
-	ai = yes
-	potential = {
-		tag = NRM
-		always = no 	#bertus mod  todo
-		NOT = { map_setup = map_setup_random }
-	}
-	has_country_shield = yes
-
 	
+	vn_nrm_delegation_to_the_pope = {
+		position = 9
+		icon = mission_hands_praying
+		required_missions = { vn_nrm_appease_the_estates }
+		
+		trigger = {
+			
+		}
+		
+		effect = {
+			
+		}
+	}
 }
 
-vn_nrm_missions_slot_4_a = {
-	slot = 9
+vn_nrm_missions_slot_3_a = {
+	slot = 8
 	generic = no
 	ai = yes
 	potential = {
@@ -729,51 +501,6 @@ vn_nrm_missions_slot_4_a = {
 				}
 				add_permanent_claim = ROOT
 			}
-			4087 = {
-				if = {
-					limit = {
-						NOT = { is_core = ROOT }
-						NOT = { is_permanent_claim = ROOT }
-					}
-					add_permanent_claim = ROOT
-				}
-			}
-			1290 = {
-				if = {
-					limit = {
-						NOT = { is_core = ROOT }
-						NOT = { is_permanent_claim = ROOT }
-					}
-					add_permanent_claim = ROOT
-				}
-			}
-			2177 = {
-				if = {
-					limit = {
-						NOT = { is_core = ROOT }
-						NOT = { is_permanent_claim = ROOT }
-					}
-					add_permanent_claim = ROOT
-				}
-			}
-			2913 = {
-				if = {
-					limit = {
-						NOT = { is_core = ROOT }
-						NOT = { is_permanent_claim = ROOT }
-					}
-					add_permanent_claim = ROOT
-				}
-			}
-			1191 = {
-				if = {
-					limit = {
-						NOT = { is_core = ROOT }
-						NOT = { is_permanent_claim = ROOT }
-					}
-					add_permanent_claim = ROOT
-				}
-			}
 		}
 		ai_weight = {
 			factor = 500
@@ -797,8 +524,15 @@ vn_nrm_missions_slot_4_a = {
 		}
 		effect = {
 			add_country_modifier = {
-				name = "nrm_safeguard_borders_mission"
+				name = "vn_nrm_defense_of_normandy"
 				duration = 9125
+			}
+			picardy_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
 			}
 			paris_area = {
 				limit = {
@@ -807,62 +541,12 @@ vn_nrm_missions_slot_4_a = {
 				}
 				add_permanent_claim = ROOT
 			}
-			raozhon_area = {
+			orleans_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }
 				}
 				add_permanent_claim = ROOT
-			}
-			nantes_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			finistere_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			4060 = {
-				if = {
-					limit = {
-						NOT = { is_core = ROOT }
-						NOT = { is_permanent_claim = ROOT }
-					}
-					add_permanent_claim = ROOT
-				}
-			}
-			811 = {
-				if = {
-					limit = {
-						NOT = { is_core = ROOT }
-						NOT = { is_permanent_claim = ROOT }
-					}
-					add_permanent_claim = ROOT
-				}
-			}
-			1099 = {
-				if = {
-					limit = {
-						NOT = { is_core = ROOT }
-						NOT = { is_permanent_claim = ROOT }
-					}
-					add_permanent_claim = ROOT
-				}
-			}
-			1097 = {
-				if = {
-					limit = {
-						NOT = { is_core = ROOT }
-						NOT = { is_permanent_claim = ROOT }
-					}
-					add_permanent_claim = ROOT
-				}
 			}
 		}
     }
@@ -910,36 +594,70 @@ vn_nrm_missions_slot_4_a = {
 		trigger = {
 				owns_core_province = 4049
 				4049 = {
-					development = 25
+					development = 15
+					fort_level = 2
 				}
 			}
 		effect = {
 			4049 = {
 				add_building = ramparts
 			}
-			orleans_area = {
-				limit = {
-						NOT = { is_core = ROOT }
-						NOT = { is_permanent_claim = ROOT }
-					}
-				add_permanent_claim = ROOT
+			add_army_professionalism = 0.025
+			add_army_tradition = 10
+		}
+	}
+	
+	vn_nrm_appease_the_estates = {
+		position = 8
+		icon = mission_high_income
+		required_missions = { }
+		
+		trigger = {
+			num_of_estate_agendas_completed = {
+				estate = estate_nobles
+				value = 1
+			}
+			num_of_estate_agendas_completed = {
+				estate = estate_burghers
+				value = 1
+			}
+			num_of_estate_agendas_completed = {
+				estate = estate_church
+				value = 1
+			}
+			estate_loyalty = {
+				estate = estate_nobles
+				loyalty = 60
+			}
+			estate_loyalty = {
+				estate = estate_burghers
+				loyalty = 60
+			}
+			estate_loyalty = {
+				estate = estate_church
+				loyalty = 60
+			}
+		}
+		
+		effect = {
+			add_stability = 2
+			
+			add_country_modifier = {
+				name = "vn_nrm_cooperative_estates"
+				duration = 9125
 			}
 		}
 	}
 	
-	vn_nrm_paris_military_academy = {
-		position = 6
+		vn_nrm_paris_military_academy = {
+		position = 9
 		icon = Compulsory_Education
-		required_missions = {
-			vn_nrm_establish_a_frontier
-		}
+		required_missions = { vn_nrm_appease_the_estates }
 		trigger = {
 			army_tradition = 50
 			army_professionalism = 0.2
-			mil_power = 200
 		}
 		effect = {
-			add_mil_power = -200
 			add_country_modifier = {
 				name = "nrm_paris_military_academy"
 				duration = -1
@@ -948,32 +666,70 @@ vn_nrm_missions_slot_4_a = {
 	}
 	
 	vn_nrm_hegemonic_ambitions = {
-		position = 7
+		position = 10
 		icon = king_of_france
-		required_missions = {
-			vn_nrm_paris_military_academy
-			vn_nrm_establish_the_bureau_of_land_management
+		required_missions = { 
 		}
-		trigger = {
-			
-		}
-		effect = {
-			french_superregion = {
-				if = {
-					limit = {
-						NOT = { is_core = ROOT }
-						NOT = { is_permanent_claim = ROOT }
-					}
-					add_permanent_claim = ROOT
+		provinces_to_highlight = {
+			owner = {
+				capital_scope = { superregion = french_superregion }
+				OR = {
+					prestige = ROOT
+					total_development = ROOT
 				}
 			}
 		}
+		trigger = {
+			stability = 3
+			legitimacy = 100
+			NOT = { exists = FRA }
+			all_country = {
+				OR = {
+					NOT = { capital_scope = { superregion = french_superregion } }
+					AND = {
+						capital_scope = { superregion = french_superregion }
+						NOT = { prestige = ROOT } 
+						NOT = { total_development = ROOT } 
+					}
+				}
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					ruler_has_personality = conqueror_personality
+				}
+				remove_ruler_personality = conqueror_personality
+				add_ruler_personality = legendary_conqueror_personality
+			}
+			else = {
+				add_ruler_personality = conqueror_personality
+			}
+			change_ruler_stat = { type = adm amount = 1 }
+			change_ruler_stat = { type = dip amount = 1 }
+			change_ruler_stat = { type = mil amount = 1 }
+		}
 	}
-
+    
+	
 }
 
-vn_nrm_missions_slot_5_a = {
-	slot = 10
+vn_nrm_missions_slot_3_b = {
+	slot = 8
+	generic = no
+	ai = yes
+	potential = {
+		tag = NRM
+		always = no
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	
+}
+
+vn_nrm_missions_slot_4_a = {
+	slot = 9
 	generic = no
 	ai = yes
 	potential = {
@@ -982,7 +738,7 @@ vn_nrm_missions_slot_5_a = {
 	}
 	has_country_shield = yes
 	
-	vn_nrm_norman_architecture = {
+		vn_nrm_norman_architecture = {
 		position = 2
 		icon = mission_portico
 		required_missions = { vn_nrm_consolidate_duchy }
@@ -1001,19 +757,8 @@ vn_nrm_missions_slot_5_a = {
 			}
 		}
 	}
-}
-
-vn_nrm_missions_slot_5_b = {
-	slot = 10
-	generic = no
-	ai = yes
-	potential = {
-		tag = NRM
-		NOT = { map_setup = map_setup_random }
-	}
-	has_country_shield = yes
-
-	vn_nrm_crown_seat_of_paris = {
+	
+		vn_nrm_crown_seat_of_paris = {
 		position = 4
 		icon = fra_crown_seat_capital
 		required_missions = { vn_nrm_safeguard_borders }
@@ -1022,39 +767,25 @@ vn_nrm_missions_slot_5_b = {
 			NOT = { is_state = yes }
 		}
 		trigger = {
-			is_at_war = no
+			owns = 548
 			548 = {
-				is_state_core = NRM
+				is_state = yes
 			}
 		}
 		effect = {
+			hidden_effect = {
+				add_core = 548
+			}
 			set_capital = 548
-			add_power_projection = {
-				type = mission_rewards_power_projection
-				amount = 10
-			}
+			add_manpower = 2.5
 			add_prestige = 10
-			add_yearly_manpower = 1
-			
-			picardy_area = {
+			add_splendor = 200
+	
+			valois_area = {
 				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			artois_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			vermandois_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
 				add_permanent_claim = ROOT
 			}
 			nemours_area = {
@@ -1067,30 +798,48 @@ vn_nrm_missions_slot_5_b = {
 			
 		}
 	}
-
-	vn_nrm_claim_amiens = {
-		
+	
+	vn_nrm_kings_of_france = {
 		position = 5
-		icon = mission_unite_home_region
+		icon = mission_empire
 		required_missions = { vn_nrm_crown_seat_of_paris }
-		provinces_to_highlight = {
-			area = picardy_area
-		}
 		
 		trigger = {
-			picardy_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
+			owns = 548
+			owns = 4020
 		}
+		
 		effect = {
-			add_adm_power = 100
-			2927 = {
-				add_building = workshop
-				add_building = temple
-				add_building = road_network
+			add_ruler_personality = iron_crowned_personality
+			add_legitimacy = 25
+			every_country = {
+				limit = {
+					capital_scope = {
+						superregion = french_superregion
+					}
+					NOT = {	tag = NRM	}
+					
+				}
+				country_event = {
+				id = radish.3
+				days = 10
+				}
 			}
-			valois_area = {
+			troyes_area = {
+				limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+				add_permanent_claim = ROOT
+			}
+			barrois_area = {
+				limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+				add_permanent_claim = ROOT
+			}
+			rethel_area = {
 				limit = {
 						NOT = { is_core = ROOT }
 						NOT = { is_permanent_claim = ROOT }
@@ -1102,11 +851,10 @@ vn_nrm_missions_slot_5_b = {
 	
 	vn_nrm_establish_the_bureau_of_land_management = {
 	
-		position = 6
+		position = 9
 		icon = claim_the_borderlands
-		required_missions = { vn_nrm_claim_amiens }
+		required_missions = { vn_nrm_appease_the_estates }
 		trigger = {
-			adm_power = 100
 			num_of_owned_provinces_with = {
 				value = 35
 				has_terrain = farmlands
@@ -1115,14 +863,136 @@ vn_nrm_missions_slot_5_b = {
 		}
 		
 		effect = {
-			add_adm_power = -100
 			add_country_modifier = {
 				name = "nrm_bureau_of_land_management"
 				duration = -1
 			} 
 		}
-		
-		
+	}
+
+}
+
+vn_nrm_missions_slot_5_a = {
+	slot = 10
+	generic = no
+	ai = yes
+	potential = {
+		tag = NRM
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
 	
+		vn_nrm_claim_amiens = {
+		
+		position = 4
+		icon = mission_unite_home_region
+		required_missions = { vn_nrm_safeguard_borders }
+		provinces_to_highlight = {
+			area = picardy_area
+		}
+		
+		trigger = {
+			picardy_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			2927 = {
+				add_building = workshop
+				add_building = temple
+				add_building = road_network
+			}
+			
+			artois_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			reims_area = {
+				limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	vn_nrm_the_duchy_of_artois = {
+		
+		position = 5
+		icon = king_of_france
+		required_missions = { vn_nrm_claim_amiens }
+		
+		trigger = {
+			artois_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			vermandois_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = "vn_nrm_consolidating_the_north"
+				duration = 9125
+			}
+			
+			flanders_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			hainaut_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			custom_tooltip = vn_nrm_claims_on_wallonians.tt
+			hidden_effect = {
+				antwerp_area = {
+					if = {
+						limit = {
+							culture = wallonian
+						}
+						add_permanent_claim = ROOT
+					}
+				}
+				liege_area = {
+					if = {
+						limit = {
+							culture = wallonian
+						}
+						add_permanent_claim = ROOT
+					}
+				}
+				luxemburg_area = {
+					if = {
+						limit = {
+							culture = wallonian
+						}
+						add_permanent_claim = ROOT
+					}
+				}
+				chiny_area = {
+					if = {
+						limit = {
+							culture = wallonian
+						}
+						add_permanent_claim = ROOT
+					}
+				}
+			}
+		}
 	}
 }

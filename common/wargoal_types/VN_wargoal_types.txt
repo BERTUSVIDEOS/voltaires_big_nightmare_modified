@@ -416,3 +416,29 @@ take_capital_conquest_of_england = {
 	
 	war_name = UNION_WAR_NAME
 }
+dynastie = {
+	type = take_capital
+	
+	attacker = {
+		badboy_factor = 0.5
+		prestige_factor = 2
+		peace_cost_factor = 1.4
+	
+		peace_options = {
+			po_form_personal_union
+		}	
+	}
+	
+	defender = {
+		badboy_factor = 0.5
+		prestige_factor = 2
+		peace_cost_factor = 1
+
+		
+		peace_options = {
+			po_form_personal_union
+		}
+	}
+		
+	war_name = DYNASTIE_WAR_NAME
+}

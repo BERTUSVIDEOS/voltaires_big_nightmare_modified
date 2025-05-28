@@ -779,20 +779,15 @@ RUS_ideas = {
 }
 
 SPA_ideas = {
-	start = {
-		land_morale = 0.15
-		fire_damage = 0.30	#0→0.30
-	}
-	
-	bonus = {
-		discipline = 0.05
-	}
-	
 	trigger = {
 		tag = SPA
 	}
 	free = yes		#will be added at load.
 
+	start = {
+		land_morale = 0.15
+		fire_damage = 0.30	#0→0.30
+	}
 	devout_catholisism = {
 		papal_influence = 2
 		church_power_modifier = 0.25
@@ -829,7 +824,9 @@ SPA_ideas = {
 		loyalty_change_on_revoked = 0.10 	#0.05→0.10
 		all_estate_possible_privileges = 1 	#0→1
 	}
-	
+	bonus = {
+		discipline = 0.05
+	}
 }
 
 CAS_ideas = {
@@ -2097,13 +2094,7 @@ HAB_ideas = {
 	}
 	
 	trigger = {
-		OR = {
-			tag = HAB
-			AND = {
-				tag = STY
-				dynasty = "von Habsburg"
-			}
-		}
+		tag = HAB
 	}
 	free = yes		#will be added at load.
 
@@ -2795,23 +2786,21 @@ MLO_ideas = {
 }
 
 
-BYZ_ideas = {
-	start = {
-		advisor_cost = -0.10
-		tolerance_own = 3
-	}
-	
-	bonus = {
-		prestige = 1
-	}
-	
+BYZ_ideas = { 	 	#bertus mod		#tier 1
 	trigger = {
 		tag = BYZ
+		NOT = { has_country_flag = tier_2_formable_flag }
+		NOT = { has_country_flag = tier_3_formable_flag }
+		NOT = { has_country_flag = tier_4_formable_flag }
 	}
 	free = yes
-	
+
+	start = {
+		same_culture_advisor_cost = -0.075
+		tolerance_own = 1.5
+	}
 	regulations_for_mercenaries = {
-		merc_maintenance_modifier = -0.15
+		merc_maintenance_modifier = -0.10
 	}
 	repopulation_of_countryside = {
 		global_trade_goods_size_modifier = 0.05
@@ -2821,16 +2810,184 @@ BYZ_ideas = {
 		global_tax_modifier = 0.10
 	}
 	byz_admin_power = {
-		stability_cost_modifier = -0.1
+		core_creation = -0.10
 	}
 	merchant_class = {
-		global_trade_power = 0.1
+		global_own_trade_power = 0.10
 	}
 	new_imperial_army = {
-		discipline = 0.05
+		infantry_power = 0.10
 	}
 	ecumenical_patriarch = {
 		global_missionary_strength = 0.03
+	}
+	bonus = {
+		prestige = 1
+	}
+}
+
+BYZ_2_ideas = { 	 	#bertus mod		#tier 2
+	trigger = {
+		tag = BYZ
+		NOT = { has_country_flag = tier_3_formable_flag }
+		NOT = { has_country_flag = tier_4_formable_flag }
+	}
+	free = yes
+
+	start = {
+		same_culture_advisor_cost = -0.15
+		tolerance_own = 3
+	}
+	tier_2_regulations_for_mercenaries = {
+		merc_maintenance_modifier = -0.20
+	}
+	tier_2_repopulation_of_countryside = {
+		global_trade_goods_size_modifier = 0.10
+		global_manpower_modifier = 0.20
+	}
+	tier_2_byz_state_admin_reform = {
+		global_tax_modifier = 0.20
+	}
+	tier_2_byz_admin_power = {
+		core_creation = -0.20
+	}
+	tier_2_merchant_class = {
+		global_own_trade_power = 0.20
+	}
+	tier_2_new_imperial_army = {
+		infantry_power = 0.20
+	}
+	tier_2_ecumenical_patriarch = {
+		global_missionary_strength = 0.03
+		prestige_per_development_from_conversion = 0.20
+	}
+	bonus = {
+		prestige = 2
+	}
+}
+
+BYZ_3_ideas = { 	 	#bertus mod		#tier 3
+	trigger = {
+		tag = BYZ
+		NOT = { has_country_flag = tier_4_formable_flag }
+	}
+	free = yes
+
+	start = {
+		advisor_cost = -0.15
+		discipline = 0.05
+	}
+	tier_3_regulations_for_mercenaries = {
+		merc_maintenance_modifier = -0.20
+		mercenary_manpower = 0.50
+	}
+	tier_3_repopulation_of_countryside = {
+		global_trade_goods_size_modifier = 0.10
+		global_manpower_modifier = 0.30
+		development_cost = -0.10
+	}
+	tier_3_byz_state_admin_reform = {
+		global_tax_modifier = 0.20
+		governing_cost = -0.10
+	}
+	tier_3_byz_admin_power = {
+		core_creation = -0.20
+		administrative_efficiency = 0.05
+	}
+	tier_3_merchant_class = {
+		global_own_trade_power = 0.20
+		trade_efficiency = 0.10
+		global_ship_cost = -0.1
+	}
+	tier_3_new_imperial_army = {
+		infantry_power = 0.20
+        shock_damage = 0.20
+		drill_decay_modifier = -0.20
+	}
+	tier_3_ecumenical_patriarch = {
+        #Religious State privilege gives up to +3 Administrative Power on 100% loyalty
+        #Right of Donations give +2 Administrative Power per converted development
+		prestige_per_development_from_conversion = 0.20
+		global_missionary_strength = 0.03
+		tolerance_own = 5
+	}
+	bonus = {
+		number_of_cannons_modifier = 0.10
+	}
+}
+
+BYZ_4_ideas = { 	 	#bertus mod		#tier 4
+	trigger = {
+		tag = BYZ
+		has_country_flag = tier_4_formable_flag
+	}
+	free = yes
+
+	start = {
+		advisor_cost = -0.20
+		discipline = 0.10
+	}
+	tier_4_regulations_for_mercenaries = {
+		shock_damage_received = -0.15
+		fire_damage_received = -0.15
+		morale_damage_received = -0.15
+		drill_gain_modifier = 1.0
+	}
+	tier_4_repopulation_of_countryside = {
+		global_trade_goods_size_modifier = 0.20
+		global_manpower_modifier = 0.40
+		development_cost = -0.20
+	}
+	tier_4_byz_state_admin_reform = {
+		global_tax_modifier = 0.20
+		governing_cost = -0.10
+		monthly_reform_progress_modifier = 0.20
+	}
+	tier_4_byz_admin_power = {
+		core_creation = -0.20
+		administrative_efficiency = 0.10
+	}
+	tier_4_merchant_class = {
+		global_own_trade_power = 0.20
+		trade_efficiency = 0.20
+		global_ship_cost = -0.20
+	}
+	tier_4_new_imperial_army = {
+		infantry_power = 0.20
+        shock_damage = 0.20
+		drill_decay_modifier = -0.20
+        #infantry shock 30%
+		effect = {
+			hidden_effect = {
+                if = {limit = {mil_tech = 28 } add_country_modifier = {name = rhenish_victrix_country_ideas_tech_28 duration = -1 hidden = yes}}
+                else_if = {limit = {mil_tech = 21 } add_country_modifier = {name = rhenish_victrix_country_ideas_tech_21 duration = -1 hidden = yes}}
+                else_if = {limit = {mil_tech = 11 } add_country_modifier = {name = rhenish_victrix_country_ideas_tech_11 duration = -1 hidden = yes}}
+                else_if = {limit = {mil_tech = 6 } add_country_modifier = {name = rhenish_victrix_country_ideas_tech_6 duration = -1 hidden = yes}}
+                else_if = {limit = {mil_tech = 5 } add_country_modifier = {name = rhenish_victrix_country_ideas_tech_5 duration = -1 hidden = yes}}
+                else_if = {limit = {mil_tech = 2 } add_country_modifier = {name = rhenish_victrix_country_ideas_tech_5 duration = -1 hidden = yes}}
+                else_if = {limit = {mil_tech = 1 } add_country_modifier = {name = rhenish_victrix_country_ideas_tech_1 duration = -1 hidden = yes}}
+			}
+		}
+		removed_effect = {
+            remove_country_modifier = rhenish_victrix_country_ideas_tech_1
+            remove_country_modifier = rhenish_victrix_country_ideas_tech_2
+            remove_country_modifier = rhenish_victrix_country_ideas_tech_5
+            remove_country_modifier = rhenish_victrix_country_ideas_tech_6
+            remove_country_modifier = rhenish_victrix_country_ideas_tech_11
+            remove_country_modifier = rhenish_victrix_country_ideas_tech_21
+            remove_country_modifier = rhenish_victrix_country_ideas_tech_28
+		}
+	}
+	tier_4_ecumenical_patriarch = {
+        #Religious State privilege gives up to +3 Administrative Power on 100% loyalty
+        #Right of Donations give +2 Administrative Power per converted development
+		global_missionary_strength = 0.03
+		prestige_per_development_from_conversion = 0.20
+		tolerance_own = 5
+		yearly_patriarch_authority = 0.01
+	}
+	bonus = {
+		number_of_cannons_modifier = 0.20
 	}
 }
 
@@ -4177,21 +4334,16 @@ USA_ideas = {
 
 
 SWI_ideas = {
-	start = {
-		merc_maintenance_modifier = -0.15
-		infantry_power = 0.1
-	}
-	
-	bonus = {
-		#discipline = 0.05	#0.05→0
-		land_morale = 0.10 	#0→0.10
-	}
 	
 	trigger = {
 		tag = SWI
 	}
 	free = yes  #will be triggered at load
-	
+
+	start = {
+		merc_maintenance_modifier = -0.15
+		infantry_power = 0.10
+	}
 	swiss_mercenaries = {
 		mercenary_discipline = 0.10	#0.05→0.10
 		mercenary_manpower = 0.5
@@ -4203,14 +4355,14 @@ SWI_ideas = {
 		stability_cost_modifier = -0.1
 	}
 	alpine_defensiveness = {
-		fort_maintenance_modifier = -0.2
+		fort_maintenance_modifier = -0.20
 		defensiveness = 0.25
 		global_defender_dice_roll_bonus = 2 	#0→2
 	}
 	oasis_of_peace_and_prosperity = {
 		#burhger mountain development privilege
 		#development_cost = -0.1	#-0.1→0
-		development_cost_modifier = -0.1	#0→-0.10
+		development_cost_modifier = -0.10	#0→-0.10
 	}
 	haven_for_refugees = {
 		prestige = 1
@@ -4218,6 +4370,10 @@ SWI_ideas = {
 	clockwork = {
 		production_efficiency = 0.1
 		global_trade_goods_size_modifier = 0.10 	#0→0.10
+	}
+	bonus = {
+		#discipline = 0.05	#0.05→0
+		land_morale = 0.10 	#0→0.10
 	}
 }
 

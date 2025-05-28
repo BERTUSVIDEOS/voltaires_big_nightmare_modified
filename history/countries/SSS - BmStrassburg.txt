@@ -286,13 +286,16 @@ fixed_capital = 1959
 	}
 }
 1444.11.12 = {	#bertus mod
+	government = republic
+	add_government_reform = oligarchy_reform
+	set_government_rank = 2
 	monarch = {
 		name = "Ruprecht II"
 		dynasty = "von Wittelsbach"
 		birth_date = 1414.1.13
-		adm = 5
-		dip = 5
-		mil = 5
+		adm = 4
+		dip = 4
+		mil = 4
 	}
 	clear_scripted_personalities = yes
 	add_ruler_personality = conqueror_personality

@@ -667,7 +667,7 @@ cultural_understanding = {
 		}
 	}
 	
-	native_assimilation = 1.0
+	development_cost_in_primary_culture = -0.05
 
 	ai_will_do = {
 		factor = 0.6
@@ -1127,23 +1127,13 @@ steppe_supplies_policy = {
 	monarch_power = ADM
 
 	potential = {
-		OR = {
-			has_idea_group = shock0
-			has_idea_group = shock0_centaur
-			has_idea_group = shock0_ogre
-		}
+		has_idea_group = shock0
 	}
 	
 	allow = {
+		full_idea_group = shock0
 		OR = {
 			full_idea_group = shock0
-			full_idea_group = shock0_centaur
-			full_idea_group = shock0_ogre
-		}
-		OR = {
-			full_idea_group = shock0
-			full_idea_group = shock0_centaur
-			full_idea_group = shock0_ogre
 			full_idea_group = diplomatic_ideas
 		}
 	}
@@ -1163,20 +1153,13 @@ otto_per_mille = {
 	monarch_power = ADM
 
 	potential = {
-		OR = {
-			full_idea_group = fire0
-			full_idea_group = fire0_centaur
-		}
+		full_idea_group = fire0
 	}
 	
 	allow = {
+		full_idea_group = fire0
 		OR = {
 			full_idea_group = fire0
-			full_idea_group = fire0_centaur
-		}
-		OR = {
-			full_idea_group = fire0
-			full_idea_group = fire0_centaur
 			full_idea_group = diplomatic_ideas
 		}
 	}

@@ -5,136 +5,13 @@ estate_burghers_land_rights = {
 	
 	loyalty = 0.05
 	influence = 0.05
-	can_select = {
-	}
-	on_granted = {
-	}
-	penalties = {
-	}
+	can_select = { }
+	on_granted = { }
+	penalties = { }
 	benefits = {
 		governing_capacity = 100
 	}
-	ai_will_do = {
-		factor = 5
-		modifier = {
-			factor = 1.4
-			num_of_territories = 5
-		}
-		modifier = {
-			factor = 1.5
-			num_of_territories = 10
-		}
-		modifier = {
-			factor = 1.5
-			num_of_territories = 15
-		}
-		modifier = {
-			factor = 0
-			OR = {
-				NOT = { crown_land_share = 25 }
-				estate_influence = {
-					estate = estate_burghers
-					influence = 75
-				}
-			}
-			NOT = { has_estate_privilege = estate_burghers_land_rights }
-		}
-		modifier = {
-			factor = 3
-			OR = {
-				AND = {
-					governing_capacity_percentage = 0.9
-					NOT = { has_estate_privilege = estate_burghers_land_rights }
-				}
-				#The trigger below should make sure that the AI actually keeps this privilege when enacting it early game
-				AND = {
-					governing_capacity_percentage = 0.6
-					has_estate_privilege = estate_burghers_land_rights
-				}
-			}
-		}
-		modifier = {
-			factor = 0
-			NOT = { governing_capacity_percentage = 0.5 }
-		}
-		modifier = {
-			factor = 0.8
-			OR = {
-				NOT = { crown_land_share = 40 }
-				AND = {
-					is_absolutism_active = yes
-					NOT = { crown_land_share = 60 }
-				}
-			}
-			NOT = { has_estate_privilege = estate_burghers_land_rights }
-		}
-		modifier = {
-			factor = 0.8
-			OR = {
-				NOT = { crown_land_share = 30 }
-				AND = {
-					is_absolutism_active = yes
-					NOT = { crown_land_share = 50 }
-				}
-			}
-			NOT = { has_estate_privilege = estate_burghers_land_rights }
-		}
-		modifier = {
-			factor = 0.8
-			is_absolutism_active = yes
-		}
-		modifier = {
-			factor = 2
-			governing_capacity_percentage = 0.9
-		}
-		modifier = {
-			factor = 3
-			governing_capacity_percentage = 1
-		}
-		modifier = {
-			factor = 10
-			governing_capacity_percentage = 1.2
-		}
-		modifier = {
-			factor = 8
-			NOT = { adm_tech = 12 }
-			governing_capacity_percentage = 0.8
-		}
-		modifier = {
-			factor = 5
-			NOT = { adm_tech = 12 }
-			NOT = { government_rank = 1 }
-			governing_capacity_percentage = 0.65
-		}
-		#Tag specific convincement
-		modifier = {
-			factor = 1.25
-			tag = FRA
-			NOT = { adm_tech = 17 }
-		}
-		modifier = {
-			factor = 1.25
-			tag = SPA
-			NOT = { adm_tech = 17 }
-		}
-		#Has already a similar privilege active
-		modifier = {
-			factor = 0.75
-			has_estate_privilege = estate_nobles_land_rights
-		}
-		modifier = {
-			factor = 0.75
-			has_estate_privilege = estate_church_land_rights
-		}
-		modifier = {
-			factor = 0.75
-			has_estate_privilege = estate_holy_orders_land_rights
-		}
-		modifier = {
-			factor = 0.75
-			has_estate_privilege = estate_jews_land_rights
-		}
-	}
+	ai_will_do = { factor = 0 }
 }
 
 estate_burghers_enforced_interfaith_dialogue = {
@@ -166,9 +43,7 @@ estate_burghers_enforced_interfaith_dialogue = {
 			max_absolutism = 5
 		}
 	}
-	ai_will_do = {
-		factor = 0
-	}
+	ai_will_do = { factor = 0 }
 }
 
 estate_burghers_land_of_commerce = {
@@ -177,48 +52,13 @@ estate_burghers_land_of_commerce = {
 	max_absolutism = 0	#-5→0
 	
 	loyalty = -0.05
-	can_select = {
-	}
-	on_granted = {
-	}
-	penalties = {
-	}
+	can_select = { }
+	on_granted = { }
+	penalties = { }
 	benefits = {
 		country_diplomatic_power = 1
 	}
-	ai_will_do = {
-		factor = 100
-		modifier = {
-			factor = 0
-			OR = {
-				NOT = { crown_land_share = 30 }
-				estate_influence = {
-					estate = estate_burghers
-					influence = 95
-				}
-			}
-			NOT = { has_estate_privilege = estate_burghers_land_of_commerce }
-		}
-		modifier = {
-			factor = 0.8
-			OR = {
-				NOT = { crown_land_share = 35 }
-				AND = {
-					is_absolutism_active = yes
-					NOT = { crown_land_share = 55 }
-				}
-			}
-			NOT = { has_estate_privilege = estate_burghers_land_of_commerce }
-		}
-		modifier = {
-			factor = 0.8
-			is_absolutism_active = yes
-		}
-		modifier = {
-			factor = 1.25
-			NOT = { dip = 2 }
-		}
-	}
+	ai_will_do = { factor = 0 }
 }
 
 estate_burghers_admirals = {
@@ -232,15 +72,12 @@ estate_burghers_admirals = {
 	on_granted = {
 		add_navy_tradition = -15
 	}
-	penalties = {
-	}
+	penalties = { }
 	benefits = {
 		admiral_cost = -0.25
 		navy_tradition_decay = -0.005
 	}
-	ai_will_do = {
-		factor = 0
-	}
+	ai_will_do = { factor = 0 }
 }
 
 estate_burghers_commercial_board_of_advice = {
@@ -255,13 +92,7 @@ estate_burghers_commercial_board_of_advice = {
 	benefits = {
 		dip_advisor_cost = -0.10	#-0.15→-0.10
 	}
-	ai_will_do = {
-		factor = 9
-		modifier = {
-			factor = 0.5
-			is_absolutism_active = yes
-		}
-	}
+	ai_will_do = { factor = 0 }
 }
 
 estate_burghers_indebted_to_burghers = {
@@ -310,8 +141,7 @@ estate_burghers_indebted_to_burghers = {
 	penalties = {
 		trade_efficiency = -0.05
 	}
-	benefits = {
-	}
+	benefits = { }
 	can_select = {
 		if = {
 			limit = {
@@ -324,9 +154,7 @@ estate_burghers_indebted_to_burghers = {
 		has_estate_loan = no
 	}
 	cooldown_years = 10
-	ai_will_do = {
-		factor = 0
-	}
+	ai_will_do = { factor = 0 }
 }
 
 estate_burghers_free_enterprise = {
@@ -335,17 +163,9 @@ estate_burghers_free_enterprise = {
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 2 } }
 	loyalty = 0.1
 	influence = 0.1
-	penalties = {
-	}
-	benefits = {
-	}
-	ai_will_do = {
-		factor = 10
-		modifier = {
-			factor = 0
-			is_absolutism_active = yes
-		}
-	}
+	penalties = { }
+	benefits = { }
+	ai_will_do = { factor = 0 }
 }
 
 estate_burghers_patronage_of_the_arts = {
@@ -382,9 +202,7 @@ estate_burghers_patronage_of_the_arts = {
 			add_prestige = 30
 		}
 	}
-	ai_will_do = {
-		factor = 0
-	}
+	ai_will_do = { factor = 0 }
 }
 
 estate_burghers_land_trade_rights = {
@@ -396,8 +214,7 @@ estate_burghers_land_trade_rights = {
 	influence = 0.1
 	is_valid = {
 	}
-	can_select = {
-	}
+	can_select = { }
 	can_revoke = {
 	}
 	on_granted = {
@@ -437,8 +254,7 @@ estate_burghers_land_trade_rights = {
 			max_absolutism = -5
 		}
 	}
-	penalties = {
-	}
+	penalties = { }
 	benefits = {
 		trade_range_modifier = 0.1
 	}
@@ -454,9 +270,7 @@ estate_burghers_land_trade_rights = {
 	#	trigger = { has_government_mechanic = ottoman_decadence_mechanic }
 	#	modifier = { monthly_ottoman_decadence = 0.02 }
 	#}
-	ai_will_do = {
-		factor = 0
-	}
+	ai_will_do = { factor = 0 }
 }
 
 #DLC Privileges
@@ -569,10 +383,8 @@ estate_burghers_monopoly_of_textiles = {
 			remove_province_modifier = estate_burghers_monopoly_of_textiles_mod
 		}
 	}
-	penalties = {
-	}
-	benefits = {
-	}
+	penalties = { }
+	benefits = { }
 	cooldown_years = 10
 	conditional_modifier = {
 		trigger = {
@@ -586,9 +398,7 @@ estate_burghers_monopoly_of_textiles = {
 	on_cooldown_expires = {
 		country_event = { id = monopoly_privileges.1 }
 	}
-	ai_will_do = { #having the AI use these could lead to an unstoppable downwards spiral if it can't work out how to get rid of them
-		factor = 0
-	}
+	ai_will_do = { factor = 0 }
 }
 
 estate_burghers_monopoly_of_dyes = {
@@ -679,10 +489,8 @@ estate_burghers_monopoly_of_dyes = {
 			remove_province_modifier = estate_burghers_monopoly_of_dyes_mod
 		}
 	}
-	penalties = {
-	}
-	benefits = {
-	}
+	penalties = { }
+	benefits = { }
 
 	cooldown_years = 10
 	conditional_modifier = {
@@ -697,9 +505,7 @@ estate_burghers_monopoly_of_dyes = {
 	on_cooldown_expires = {
 		country_event = { id = monopoly_privileges.2 }
 	}
-	ai_will_do = {
-		factor = 0
-	}
+	ai_will_do = { factor = 0 }
 }
 
 estate_burghers_monopoly_of_glass = {
@@ -790,10 +596,8 @@ estate_burghers_monopoly_of_glass = {
 			remove_province_modifier = estate_burghers_monopoly_of_glass_mod
 		}
 	}
-	penalties = {
-	}
-	benefits = {
-	}
+	penalties = { }
+	benefits = { }
 
 	cooldown_years = 10
 	conditional_modifier = {
@@ -808,9 +612,7 @@ estate_burghers_monopoly_of_glass = {
 	on_cooldown_expires = {
 		country_event = { id = monopoly_privileges.3 }
 	}
-	ai_will_do = {
-		factor = 0
-	}
+	ai_will_do = { factor = 0 }
 }
 
 estate_burghers_monopoly_of_paper = {
@@ -901,10 +703,8 @@ estate_burghers_monopoly_of_paper = {
 			remove_province_modifier = estate_burghers_monopoly_of_paper_mod
 		}
 	}
-	penalties = {
-	}
-	benefits = {
-	}
+	penalties = { }
+	benefits = { }
 
 	cooldown_years = 10
 	conditional_modifier = {
@@ -919,9 +719,7 @@ estate_burghers_monopoly_of_paper = {
 	on_cooldown_expires = {
 		country_event = { id = monopoly_privileges.4 }
 	}
-	ai_will_do = {
-		factor = 0
-	}
+	ai_will_do = { factor = 0 }
 }
 
 
@@ -983,12 +781,9 @@ estate_burghers_the_great_privilege = {
 			remove_province_modifier = estate_burghers_the_great_privilege_mod
 		}
 	}
-	penalties = {
-	}
+	penalties = { }
 	cooldown_years = 20
-	ai_will_do = {
-		factor = 0
-	}
+	ai_will_do = { factor = 0 }
 }
 
 estate_burghers_exclusive_trade_rights = {
@@ -1044,14 +839,10 @@ estate_burghers_exclusive_trade_rights = {
 			remove_province_modifier = estate_burghers_exclusive_trade_rights_mod
 		}
 	}
-	penalties = {
-	}
-	benefits = {
-	}
+	penalties = { }
+	benefits = { }
 	cooldown_years = 10
-	ai_will_do = {
-		factor = 0
-	}
+	ai_will_do = { factor = 0 }
 }
 
 estate_burghers_control_over_monetary_policy = {
@@ -1080,20 +871,7 @@ estate_burghers_control_over_monetary_policy = {
 			burghers_influence_modifier = 0.025 
 		}
 	}
-	ai_will_do = {
-		factor = 1
-		modifier = {
-			factor = 10
-			OR = {
-				inflation = 15
-				num_of_loans = 15
-			}
-		}
-		modifier = {
-			factor = 0
-			is_absolutism_active = yes
-		}
-	}
+	ai_will_do = { factor = 0 }
 }
 
 estate_burghers_private_trade_fleets = {
@@ -1107,24 +885,12 @@ estate_burghers_private_trade_fleets = {
 		num_of_ports = 1
 		navy_size = 1
 	}
-	penalties = {
-	}
+	penalties = { }
 	benefits = {
 		light_ship_cost = -0.2
 		global_ship_trade_power = 0.1
 	}
-	ai_will_do = {
-		factor = 1
-		modifier = {
-			factor = 10
-			num_of_light_ship = 15
-			trade_income_percentage = 0.35
-		}
-		modifier = {
-			factor = 0
-			is_absolutism_active = yes
-		}
-	}
+	ai_will_do = { factor = 0 }
 }
 
 estate_burghers_prussian_confederation = {
@@ -1151,22 +917,8 @@ estate_burghers_prussian_confederation = {
 	penalties = {
 		min_autonomy = 35
 	}
-	benefits = {
-	}
-	ai_will_do = {
-		factor = 7.5
-		modifier = {
-			factor = 1.5
-			NOT = { num_of_cities = 25 }
-			crown_land_share = 50
-			NOT = {
-				estate_influence = {
-					estate = estate_burghers
-					influence = 70
-				}
-			}
-		}
-	}
+	benefits = { }
+	ai_will_do = { factor = 0 }
 }
 
 estate_burghers_statutory_rights = {
@@ -1186,11 +938,8 @@ estate_burghers_statutory_rights = {
 	penalties = {
 		min_autonomy = 25
 	}
-	benefits = {
-	}
-	ai_will_do = {
-		factor = 0
-	}
+	benefits = { }
+	ai_will_do = { factor = 0 }
 	cooldown_years = 20
 }
 
@@ -1237,24 +986,9 @@ estate_burghers_coastline_rights = {
 			}
 		}
 	}
-	penalties = {
-	}
-	benefits = {
-	}
-	ai_will_do = {
-		factor = 100
-		modifier = {
-			factor = 2
-			num_of_owned_provinces_with = {
-				has_terrain = coastline
-				value = 8
-			}
-		}
-		modifier = {
-			factor = 0
-			is_absolutism_active = yes
-		}
-	}
+	penalties = { }
+	benefits = { }
+	ai_will_do = { factor = 0 }
 }
 #Mission tree rewards
 estate_burghers_hydraulic_rights = {
@@ -1336,29 +1070,9 @@ estate_burghers_hydraulic_rights = {
 			}
 		}
 	}
-	penalties = {
-	}
-	benefits = {
-	}
-	ai_will_do = {
-		factor = 100
-		modifier = {
-			factor = 2
-			num_of_owned_provinces_with = {
-				OR = {
-					has_terrain = desert
-					has_terrain = coastal_desert
-					has_terrain = steppe
-					has_terrain = savannah
-				}
-				value = 8
-			}
-		}
-		modifier = {
-			factor = 0
-			is_absolutism_active = yes
-		}
-	}
+	penalties = { }
+	benefits = { }
+	ai_will_do = { factor = 0 }
 }
 
 #Domination generic Estate Privileges
@@ -1413,9 +1127,7 @@ estate_burghers_development_of_cities = {
 	mechanics = {
 		no_estate_crownland_loss_from_developing
 	}
-	ai_will_do = {
-		factor = 0
-	}
+	ai_will_do = { factor = 0 }
 }
 estate_burghers_control_over_the_coinage = {	#bertus mod
 	icon = privilege_gold_mint
@@ -1426,25 +1138,20 @@ estate_burghers_control_over_the_coinage = {	#bertus mod
 	is_valid = {
 		has_dlc = "Domination"
 	}
-	can_select = {
-	}
+	can_select = { }
 	on_granted = {
 		custom_tooltip = "Revoked After Cooldown"
 		estate_action = {
 			estate_action = RECRUIT_MINISTER_BURGHERS
 		}
 	}
-	on_revoked = {
-	}
-	on_invalid = {
-	}
+	on_revoked = { }
+	on_invalid = { }
 	on_cooldown_expires = {
 		remove_estate_privilege = estate_burghers_control_over_the_coinage
 	}
 	cooldown_years = 15
-	ai_will_do = {
-		factor = 0
-	}
+	ai_will_do = { factor = 0 }
 }
 estate_burghers_economical_boost = {
 	icon = privilege_monopoly
@@ -1510,9 +1217,7 @@ estate_burghers_economical_boost = {
 			max_absolutism = -10
 		}
 	}
-	ai_will_do = {
-		factor = 0
-	}
+	ai_will_do = { factor = 0 }
 }
 estate_burghers_expanded_monopoly_rights = {
 	icon = privilege_empty_throne
@@ -1529,23 +1234,15 @@ estate_burghers_expanded_monopoly_rights = {
 			estate_action = GRANT_MONOPOLY_CHARTER_BURGHERS
 		}
 	}
-	on_invalid = {
-	}
-	on_revoked = {
-	}
+	on_invalid = { }
+	on_revoked = { }
 	mechanics = {
 	}
 	on_cooldown_expires = {
 		remove_estate_privilege = estate_burghers_expanded_monopoly_rights
 	}
 	cooldown_years = 15
-	ai_will_do = {
-		factor = 10
-		modifier = {
-			factor = 0.1
-			is_absolutism_active = yes
-		}
-	}
+	ai_will_do = { factor = 0 }
 }
 estate_burghers_force_impressment = {
 	icon = privilege_heavy_ship
@@ -1569,17 +1266,13 @@ estate_burghers_force_impressment = {
 			estate_action = COMISSION_MERCHANT_SHIPS_FOR_WAR_BURGHERS
 		}
 	}
-	on_revoked = {
-	}
-	on_invalid = {
-	}
+	on_revoked = { }
+	on_invalid = { }
 	on_cooldown_expires = {
 		remove_estate_privilege = estate_burghers_force_impressment
 	}
 	cooldown_years = 15
-	ai_will_do = {
-		factor = 0
-	}
+	ai_will_do = { factor = 0 }
 }
 estate_burghers_naval_school_right = {
 	icon = privilege_navy_tradition
@@ -1603,17 +1296,13 @@ estate_burghers_naval_school_right = {
 			estate_action = GRANT_ADMIRALSHIP_BURGHERS
 		}
 	}
-	on_revoked = {
-	}
-	on_invalid = {
-	}
+	on_revoked = { }
+	on_invalid = { }
 	on_cooldown_expires = {
 		remove_estate_privilege = estate_burghers_naval_school_right
 	}
 	cooldown_years = 15
-	ai_will_do = {
-		factor = 0
-	}
+	ai_will_do = { factor = 0 }
 }
 estate_burghers_financial_demand = {
 	icon = privilege_ducats
@@ -1624,8 +1313,7 @@ estate_burghers_financial_demand = {
 	is_valid = {
 		has_dlc = "Domination"
 	}
-	benefits = {
-	}
+	benefits = { }
 	
 	on_granted = {
 		custom_tooltip = "Revoked After Cooldown"
@@ -1633,17 +1321,13 @@ estate_burghers_financial_demand = {
 			estate_action = ASK_FOR_CONTRIBUTION_BURGHERS
 		}
 	}
-	on_revoked = {
-	}
-	on_invalid = {
-	}
+	on_revoked = { }
+	on_invalid = { }
 	on_cooldown_expires = {
 		remove_estate_privilege = estate_burghers_financial_demand
 	}
 	cooldown_years = 15
-	ai_will_do = {
-		factor = 0
-	}
+	ai_will_do = { factor = 0 }
 }
 estate_burghers_promote_burgher_bookkeeping = {
 	icon = privilege_investigate_corruption
@@ -1680,9 +1364,7 @@ estate_burghers_promote_burgher_bookkeeping = {
 			estate_privilege = estate_burghers_promote_burgher_bookkeeping
 		}
 	}
-	ai_will_do = {
-		factor = 10
-	}
+	ai_will_do = { factor = 0 }
 }
 
 #MOD
@@ -1698,8 +1380,7 @@ estate_burghers_dutch_water_lines = {
 			superregion = lowlands_superregion
 		}
 	}
-	can_select = {
-	}
+	can_select = { }
 	on_granted = {
 		custom_tooltip = estate_burghers_dutch_water_lines_effect_tooltip
 	}
@@ -1737,46 +1418,12 @@ estate_burghers_dutch_water_lines = {
 			remove_province_modifier = estate_burghers_dutch_water_lines_mod
 		}
 	}
-	penalties = {
-	}
+	penalties = { }
 	cooldown_years = 5
 	on_cooldown_expires = {
 		country_event = { id = mod_triggered_events.64 }
 	}
-	ai_will_do = {
-		factor = 1
-		modifier = {
-			factor = 0
-			OR = {
-				NOT = { crown_land_share = 25 }
-				estate_influence = {
-					estate = estate_burghers
-					influence = 75
-				}
-			}
-			NOT = { has_estate_privilege = estate_burghers_dutch_water_lines }
-		}
-		modifier = {
-			factor = 0
-			NOT = { years_of_income = 1 }
-		}
-		modifier = {
-			factor = 0
-			is_at_war = no
-		}
-		modifier = {
-			factor = 0
-			is_in_deficit = yes
-		}
-		modifier = {
-			factor = 0
-			is_bankrupt = yes
-		}
-		modifier = {
-			factor = 0
-			is_absolutism_active = yes
-		}
-	}
+	ai_will_do = { factor = 0 }
 }
 estate_burghers_forest_expansion = {
 	icon = privilege_dev_cost_forest
@@ -1838,27 +1485,9 @@ estate_burghers_forest_expansion = {
 			}
 		}
 	}
-	penalties = {
-	}
-	benefits = {
-	}
-	ai_will_do = {
-		factor = 100
-		modifier = {
-			factor = 2
-			num_of_owned_provinces_with = {
-				OR = {
-					has_terrain = woods
-					has_terrain = forest
-				}
-				value = 8
-			}
-		}
-		modifier = {
-			factor = 0
-			is_absolutism_active = yes
-		}
-	}
+	penalties = { }
+	benefits = { }
+	ai_will_do = { factor = 0 }
 }
 estate_burghers_marsh_expansion = {
 	icon = privilege_dev_cost_forest
@@ -1918,26 +1547,9 @@ estate_burghers_marsh_expansion = {
 			}
 		}
 	}
-	penalties = {
-	}
-	benefits = {
-	}
-	ai_will_do = {
-		factor = 100
-		modifier = {
-			factor = 2
-			num_of_owned_provinces_with = {
-				OR = {
-					has_terrain = marsh
-				}
-				value = 8
-			}
-		}
-		modifier = {
-			factor = 0
-			is_absolutism_active = yes
-		}
-	}
+	penalties = { }
+	benefits = { }
+	ai_will_do = { factor = 0 }
 }
 estate_burghers_mountain_expansion = {
 	icon = privilege_dev_cost_mountain
@@ -2021,28 +1633,9 @@ estate_burghers_mountain_expansion = {
 			}
 		}
 	}
-	penalties = {
-	}
-	benefits = {
-	}
-	ai_will_do = {
-		factor = 100
-		modifier = {
-			factor = 2
-			num_of_owned_provinces_with = {
-				OR = {
-					has_terrain = mountain
-					has_terrain = highlands
-					has_terrain = hills
-				}
-				value = 8
-			}
-		}
-		modifier = {
-			factor = 0
-			is_absolutism_active = yes
-		}
-	}
+	penalties = { }
+	benefits = { }
+	ai_will_do = { factor = 0 }
 }
 
 estate_burghers_control_over_the_mint = {
@@ -2055,8 +1648,7 @@ estate_burghers_control_over_the_mint = {
 		has_unlocked_estate_privilege = { estate_privilege = estate_burghers_control_over_the_mint }
 		gold = 1
 	}
-	can_select = {
-	}
+	can_select = { }
 	on_granted = {
 		custom_tooltip = estate_burghers_control_over_the_mint_gt
 	}
@@ -2099,37 +1691,10 @@ estate_burghers_control_over_the_mint = {
 			remove_province_modifier = estate_burghers_control_over_gold_mine
 		}
 	}
-	penalties = {
-	}
+	penalties = { }
 	benefits = {
 		monthly_gold_inflation_modifier = -0.75
 		gold_depletion_chance_modifier = -0.75
 	}
-	ai_will_do = {
-		factor = 10
-		modifier = {
-			factor = 0
-			NOT = { gold_income_percentage = 0.2 }
-		}
-		modifier = {
-			factor = 4
-			gold_income_percentage = 0.4
-		}
-		modifier = {
-			factor = 4
-			gold_income_percentage = 0.6
-		}
-		modifier = {
-			factor = 4
-			gold_income_percentage = 0.8
-		}
-		modifier = {
-			factor = 1000
-			gold_income_percentage = 1
-		}
-		modifier = {
-			factor = 0.5
-			is_absolutism_active = yes
-		}
-	}
+	ai_will_do = { factor = 0 }
 }

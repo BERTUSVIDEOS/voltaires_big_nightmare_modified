@@ -1694,38 +1694,13 @@ vn_altsax_missions_slot_5 = {
 				amount = 10
 			}
 			custom_tooltip = zim_amongst_the_great_powers_tt
- 			if = {
- 				limit = {
- 					exists = APL
- 					valid_for_personal_unions_trigger = yes
- 					APL = { valid_for_personal_unions_trigger = yes }
- 				}
- 				add_casus_belli = {
- 					target = APL
- 					type = cb_fabricated_claims
- 					months = 300
- 				}			
- 			}
- 			else_if = {
- 				limit = {
- 					NOT = { exists = APL }
- 					exists = SIC
- 				}
- 				add_casus_belli = {
- 					target = SIC
- 					type = cb_fabricated_claims
- 					months = 300
- 				}				
- 			}
- 			else = {
- 				sicilia_region = {
- 					limit = {
- 						NOT = { is_core = ROOT }
- 						NOT = { is_permanent_claim = ROOT }
- 					}
- 					add_permanent_claim = ROOT
- 				}
- 			} 			
+            sicilia_region = {
+                limit = {
+                    NOT = { is_core = ROOT }
+                    NOT = { is_permanent_claim = ROOT }
+                }
+                add_permanent_claim = ROOT
+            }
 			add_country_modifier = {
                 name = sax_revenge_the_staufers_mission
                 duration = 9125

@@ -16,7 +16,7 @@
  monopoly_privileges.9.d.brahmins: "The monopoly on clothing we granted to the [Root.GetBrahminsName] has expired, meaning that we are now able to reclaim the income from wool and leather production. However, the [Root.GetBrahminsName] are keen to keep their privileges and are offering to pay us a lump sum in return for the monopoly being guaranteed for a further 10 years."
  monopoly_privileges.9.b.tooltip: "We will be able to revoke the §YMonopoly on Clothing§! estate privilege."
 #Nobles Estate
- estate_nobles_frontier_resettlement: "Iberian Frontier Colonists"
+ estate_nobles_frontier_resettlement: "Noble Frontier Colonists"
  estate_nobles_frontier_resettlement_desc: "During constant wars between Christians and Muslims in Iberia, a large swath of land effectively became a depopulated no man's land. Spearheaded by the efforts of nobles to claim more land for themselves, however, we can reestablish a presence on the Frontier."
  estate_nobles_georgian_strong_duchies: "Georgian Strong Duchies"
  estate_nobles_georgian_strong_duchies_desc: "Georgia is a decentralized nation in which local dukes and counts have considerable independence from the [Root.Monarch.GetTitle]. This system has its benefits but makes maintaining the primacy of royal power a significant challenge."
@@ -211,7 +211,7 @@
  estate_holy_orders_heir_knight: "Grant Heir Knightly Position"
  estate_holy_orders_heir_knight_desc: "Granting our heir a prominent position within a $ESTATE_NAME$ is a win-win situation, as he gains prestige and training while the Order gains more connection to the royal apparatus. It may be nepotism, but the $ESTATE_NAME$ are more than willing to have him."
  estate_holy_orders_heir_knight.tt: "Our Heir has not yet become a Knight."
- estate_holy_orders_noble_promotion: "$ESTATE_NAME$ Noble Promotion"
+ estate_holy_orders_noble_promotion: "$ESTATE_NAME$ Promotion"
  estate_holy_orders_noble_promotion_desc: "$ESTATE_NAME$ have members of noble blood themselves. However, in direct competition with the normal [Root.GetNobilityOrFallbackName] the $ESTATE_NAME$ have the disadvantage. Promoting their position will secure the loyalty of the $ESTATE_NAME$."
  enable_estate_action_CONTRIBUTE_WARRIORS_HOLY_ORDERS_tt: "[Root.EnableEstateDecisionText] §Y[Root.GetHoly OrdersName]: Contribute Warriors§!"
  disable_estate_action_CONTRIBUTE_WARRIORS_HOLY_ORDERS_tt: "[Root.DisableEstateDecisionText] §Y[Root.GetHoly OrdersName]: Contribute Warriors§!"

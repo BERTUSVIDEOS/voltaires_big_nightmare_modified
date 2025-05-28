@@ -221,6 +221,7 @@ capital = 2151
 	add_ruler_personality = careful_personality
 }
 1444.11.12 = {	#bertus mod
+	set_government_rank = 2
 	monarch = {
 		name = "Friedrich III"
 		dynasty = "von Habsburg"

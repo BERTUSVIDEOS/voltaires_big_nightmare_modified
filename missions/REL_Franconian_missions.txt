@@ -566,28 +566,12 @@ vn_franconia_conquest_group_2 = {
 				name = fkn_kingdom_of_the_franks_mod
 				duration = -1
 			}
-			if = {
+			french_superregion = {
 				limit = {
-					valid_for_personal_unions_trigger = yes
-					exists = FRA
-					FRA = {
-						valid_for_personal_unions_trigger = yes
-					}
+					NOT = { owned_by = root }
+					NOT = { is_permanent_claim = root }
 				}
-				add_casus_belli = {
-					type = cb_fabricated_claims
-					months = 300
-					target = FRA
-				}
-			}
-			else = {
-				french_superregion = {
-					limit = {
-						NOT = { owned_by = root }
-						NOT = { is_permanent_claim = root }
-					}
-					add_permanent_claim = root
-				}
+				add_permanent_claim = root
 			}
 		}
 	}

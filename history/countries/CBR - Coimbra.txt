@@ -28,6 +28,7 @@ capital = 2243
 #1096.1.1 done
 1444.11.12 = {	#bertus mod
 	set_capital = 1234 #porto
+	set_government_rank = 2
 	monarch = {
 		name = "Christiano I"
 		dynasty = "da Toalla"

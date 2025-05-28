@@ -84,7 +84,9 @@ capital = 6070
 	}
 }
 1317.12.10 = { government_rank = 5 }
-1444.11.12 = {
+1444.11.12 = { 	#bertus mod
+	add_government_reform = feudalism_reform
+	set_government_rank = 2
 	monarch = {
 		name = "Erik II"
 		dynasty = "af Bjälbo"

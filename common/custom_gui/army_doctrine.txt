@@ -48,6 +48,12 @@ custom_icon = {
 	name = PA_army_professionalism_window_bg
 	potential = { }
 }
+custom_icon = {
+	name = free_military_reform_alert
+	potential = { 
+		check_variable = { which = military_reforms_tokens_var value = 1 }
+	}
+}
 
 custom_text_box = {
 	name = PA_army_reform_availabe_text

@@ -1,0 +1,213 @@
+
+namespace = radish
+
+country_event = {
+	id = radish.1
+	title = radish.1.t
+	desc = radish.1.d
+	picture = muslimgfx_BAD_WITH_MONARCH_eventPicture
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	major = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	trigger = {
+	
+	}
+	
+	option = {
+		name = radish.1.a
+		ai_chance = {
+			factor = 100
+		}
+		if = {
+			limit = { has_heir = yes }
+			kill_heir = { allow_new_heir = no }
+		}
+		kill_ruler = yes
+		define_ruler = {
+			name = "Orhan"
+			dynasty = "Osmanoglu"
+			adm = 1
+			dip = 1
+			mil = 1
+			age = 15
+			claim = 50
+		}
+		add_stability = -2
+	}
+}
+
+country_event = {
+	id = radish.2
+	title = radish.2.t
+	desc = radish.2.d
+	picture = muslimgfx_CONQUEST_eventPicture
+	
+	is_triggered_only = no
+	
+	fire_only_once = yes
+	
+	major = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	trigger = {
+		owns = 2233
+		NOT = {	is_or_was_tag = { tag = BYZ } }
+	}
+	
+	option = {
+		name = radish.2.a
+		ai_chance = {
+			factor = 100
+		}
+		add_prestige = 200
+		add_legitimacy = 20
+	}
+}
+
+country_event = {
+	id = radish.3
+	title = radish.3.t
+	desc = radish.3.d
+	
+	picture = NOBLE_ESTATE_DEMANDS_eventPicture
+	
+	is_triggered_only = yes
+	
+	fire_only_once = no
+	
+	major = no
+	
+	trigger = {
+		
+	}
+	
+	option = {
+		name = radish.3.a
+		ai_chance = {
+			factor = 100
+		}
+		add_legitimacy = -25
+		log = "radish.3 event triggered for [This.GetName]"
+	}
+}
+
+country_event = {
+	id = radish.4
+	title = radish.4.t
+	desc = radish.4.d
+	
+	picture = IMPALED_SOLDIERS_eventPicture
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	major = yes
+	
+	trigger = {
+	
+	}
+	
+	option = {
+		name = radish.4.a
+		ai_chance = {
+			factor = 100
+		}
+		add_stability = -2
+		if = {
+			limit = { has_heir = yes }
+			kill_heir = { allow_new_heir = no }
+		}
+		kill_ruler = yes
+		define_ruler = {
+			name = "Guzman"
+			dynasty = "Osmanoglu"
+			adm = 0
+			dip = 0
+			mil = 0
+			age = 15
+			claim = 50
+		}
+	}
+}
+
+country_event = {
+	id = radish.5
+	title = radish.5.t
+	desc = radish.5.d
+	
+	picture = wihgfx_FEMALE_GENERAL_eventPicture
+	
+	is_triggered_only = no
+	
+	fire_only_once = no
+	
+	trigger = {
+		ai = no
+		NOT = { has_country_flag = war_of_shattered_kingdom_flag }
+		capital_scope = { superregion = french_superregion }
+		is_part_of_hre = yes
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option  = {
+		name = radish.5.a
+		ai_chance = {
+			factor = 100
+		}
+		add_army_tradition = 10
+		hidden_effect = {
+			set_country_flag = war_of_shattered_kingdom_flag
+		}
+	}
+}
+
+country_event = {
+	id = radish.6
+	title = radish.6.t
+	desc = radish.6.d
+	
+	picture = wihgfx_FEMALE_GENERAL_eventPicture
+	
+	is_triggered_only = no
+	
+	fire_only_once = no
+	
+	trigger = {
+		ai = no
+		NOT = { has_country_flag = hre_war_flag }
+		is_part_of_hre = yes
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option  = {
+		name = radish.6.a
+		ai_chance = {
+			factor = 100
+		}
+		add_country_modifier = { 
+			name = vn_nrm_population_growth
+			duration = 3650
+		}
+		hidden_effect = {
+			set_country_flag = hre_war_flag
+		}
+	}
+}

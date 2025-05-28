@@ -131,7 +131,7 @@ VN_iberian_conquest_missions = {
 		position = 9
 		icon = mission_large_army
 		required_missions = {}
-		completed_by = 1444.11.11
+		completed_by = 1444.12.2 	#bertus mod
 		trigger = {
 			num_of_cities = 25
 			army_size_percentage = 1
@@ -220,172 +220,41 @@ VN_repopulate_frontiers_mission = {
 		icon = mission_colonial
         required_missions = { }
 		position = 12
-		completed_by = 1085.1.1
+		completed_by = 1445.1.1
 		provinces_to_highlight = {
 			OR = {
 				area = salamanca_area
 				area = segovia_area
-				province_id = 4371
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 			is_colony = no
 		}
         trigger = {
-			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-				value = 5
-				OR = {
-					area = salamanca_area
-					area = segovia_area
-					province_id = 4371
-				}
-				is_colony = no
+			salamanca_area = {
+				type = all
+				development = 10
+			}
+			segovia_area = {
+				type = all
+				development = 10
 			}
 			is_subject = no
-			custom_trigger_tooltip = {
-				tooltip = vn_repopulate_frontiers.tt
-				NOT = { has_global_flag = iberian_frontier_repopulated }
-			}
         }
         effect = {
 			hidden_effect = { set_global_flag = iberian_frontier_repopulated }
-			2718 = {
-				if = {
-					limit = { is_city = no }
-					add_base_tax = 1
-					add_base_production = 1
-					add_base_manpower = 1
-				}
-            }
-            2719 = {
-				if = {
-					limit = { is_city = no }
-					add_base_tax = 1
-					add_base_production = 1
-					add_base_manpower = 1
-				}
-            }
-            2739 = {
-				if = {
-					limit = { is_city = no }
-					add_base_tax = 1
-					add_base_production = 1
-					add_base_manpower = 1
-				}
-			}
 			salamanca_area = {
-				limit = { is_city = no }
-				if = {
-					limit = {
-						LON = { 
-							is_subject_of = ROOT
-							any_owned_province = {
-								area = salamanca_area
-							}
-						}
-					}
-					cede_province = LON
-					add_core = LON
-				}
-				else = {
-					cede_province = ROOT
-					add_core = ROOT
-				}
-			}
-			salamanca_area = {
-				limit = {
-					OR = {
-						base_tax = 0
-						base_production = 0
-						base_manpower = 0
-					}
-				}
-				add_base_tax = 1
-				add_base_production = 1
-				add_base_manpower = 1
-			}
-			segovia_area = {
-				limit = { is_city = no }
-				if = {
-					limit = {
-						CAS = { 
-							is_subject_of = ROOT 
-							any_owned_province = {
-								area = segovia_area
-							}
-						}
-					}
-					cede_province = CAS
-					add_core = CAS
-				}
-				else = {
-					cede_province = ROOT
-					add_core = ROOT
-				}
-			}
-			4371 = {
-				if = {
-					limit = { is_city = no }
-					if = {
-						limit = {
-							CAS = { 
-								is_subject_of = ROOT 
-								any_owned_province = {
-									area = segovia_area
-								}
-							}
-						}
-						cede_province = CAS
-						add_core = CAS
-					}
-					else = {
-						cede_province = ROOT
-						add_core = ROOT
-					}
-				}
-				if = {
-					limit = {
-						OR = {
-							base_tax = 0
-							base_production = 0
-							base_manpower = 0
-						}
-					}
-					add_base_tax = 1
-					add_base_production = 1
-					add_base_manpower = 1
-				}
-			}
-			segovia_area = {
-				limit = {
-					OR = {
-						base_tax = 0
-						base_production = 0
-						base_manpower = 0
-					}
-				}
-				add_base_tax = 1
-				add_base_production = 1
-				add_base_manpower = 1
-			}
-            salamanca_area = {
-                limit = { country_or_non_sovereign_subject_holds = ROOT }
-                add_province_modifier = {
-                    name = "cas_repopulate_frontiers_mission"
-                    duration = 7300
-                }
-            }
-            segovia_area = {
-                limit = { country_or_non_sovereign_subject_holds = ROOT }
+				province_event = {    id = bertus_events.0004 }
                 add_province_modifier = {
                     name = "cas_repopulate_frontiers_mission"
                     duration = 7300
                 }
 			}
-			4371 = {
-				add_province_modifier = {
-					name = "cas_repopulate_frontiers_mission"
+			segovia_area = {
+				province_event = {    id = bertus_events.0004 }
+                add_province_modifier = {
+                    name = "cas_repopulate_frontiers_mission"
                     duration = 7300
-				}
+                }
 			}
         }
     }

@@ -8,6 +8,7 @@ capital = 2448	# Gwynedd
 
 1444.11.12 = {	#bertus mod
 	set_capital = 1067 #morgannwg
+	set_government_rank = 2
 	monarch = {
 		name = "Trahaearn"
 		dynasty = "Glyndwr"

@@ -4863,6 +4863,9 @@ create_leader_scaling_with_tradition = {
 		}
 		create_$leader$ = {
 			tradition = 100
+			[[shock]
+				add_shock = $add_shock$
+			]
 		}
 	}
 	else_if = {
@@ -4871,6 +4874,9 @@ create_leader_scaling_with_tradition = {
 		}
 		create_$leader$ = {
 			tradition = 90
+			[[shock]
+				add_shock = $add_shock$
+			]
 		}
 	}
 	else_if = {
@@ -4879,6 +4885,9 @@ create_leader_scaling_with_tradition = {
 		}
 		create_$leader$ = {
 			tradition = 80
+			[[shock]
+				add_shock = $add_shock$
+			]
 		}
 	}
 	else_if = {
@@ -4887,6 +4896,9 @@ create_leader_scaling_with_tradition = {
 		}
 		create_$leader$ = {
 			tradition = 70
+			[[shock]
+				add_shock = $add_shock$
+			]
 		}
 	}
 	else_if = {
@@ -4895,6 +4907,9 @@ create_leader_scaling_with_tradition = {
 		}
 		create_$leader$ = {
 			tradition = 60
+			[[shock]
+				add_shock = $add_shock$
+			]
 		}
 	}
 	else_if = {
@@ -4903,16 +4918,106 @@ create_leader_scaling_with_tradition = {
 		}
 		create_$leader$ = {
 			tradition = 50
+			[[shock]
+				add_shock = $add_shock$
+			]
 		}
 	}
 	else = {
 		create_$leader$ = {
 			tradition = 40
+			[[shock]
+				add_shock = $add_shock$
+			]
 		}
 	}
 	custom_tooltip = create_leader_scaling_with_tradition_tt
 }
 
+create_general_scaling_with_tradition_and_pips = {
+	if = {
+		limit = {
+			army_tradition = 80
+		}
+		create_general_with_pips = {
+			tradition = 100
+			[[add_fire] add_fire = $add_fire$ ]
+			[[add_shock] add_shock = $add_shock$ ]
+			[[add_manuever] add_manuever = $add_manuever$ ]
+			[[add_siege] add_siege = $add_siege$ ]
+		}
+	}
+	else_if = {
+		limit = {
+			army_tradition = 70
+		}
+		create_general_with_pips = {
+			tradition = 90
+			[[add_fire] add_fire = $add_fire$ ]
+			[[add_shock] add_shock = $add_shock$ ]
+			[[add_manuever] add_manuever = $add_manuever$ ]
+			[[add_siege] add_siege = $add_siege$ ]
+		}
+	}
+	else_if = {
+		limit = {
+			army_tradition = 60
+		}
+		create_general_with_pips = {
+			tradition = 80
+			[[add_fire] add_fire = $add_fire$ ]
+			[[add_shock] add_shock = $add_shock$ ]
+			[[add_manuever] add_manuever = $add_manuever$ ]
+			[[add_siege] add_siege = $add_siege$ ]
+		}
+	}
+	else_if = {
+		limit = {
+			army_tradition = 50
+		}
+		create_general_with_pips = {
+			tradition = 70
+			[[add_fire] add_fire = $add_fire$ ]
+			[[add_shock] add_shock = $add_shock$ ]
+			[[add_manuever] add_manuever = $add_manuever$ ]
+			[[add_siege] add_siege = $add_siege$ ]
+		}
+	}
+	else_if = {
+		limit = {
+			army_tradition = 40
+		}
+		create_general_with_pips = {
+			tradition = 60
+			[[add_fire] add_fire = $add_fire$ ]
+			[[add_shock] add_shock = $add_shock$ ]
+			[[add_manuever] add_manuever = $add_manuever$ ]
+			[[add_siege] add_siege = $add_siege$ ]
+		}
+	}
+	else_if = {
+		limit = {
+			army_tradition = 30
+		}
+		create_general_with_pips = {
+			tradition = 50
+			[[add_fire] add_fire = $add_fire$ ]
+			[[add_shock] add_shock = $add_shock$ ]
+			[[add_manuever] add_manuever = $add_manuever$ ]
+			[[add_siege] add_siege = $add_siege$ ]
+		}
+	}
+	else = {
+		create_general_with_pips = {
+			tradition = 40
+			[[add_fire] add_fire = $add_fire$ ]
+			[[add_shock] add_shock = $add_shock$ ]
+			[[add_manuever] add_manuever = $add_manuever$ ]
+			[[add_siege] add_siege = $add_siege$ ]
+		}
+	}
+	custom_tooltip = create_leader_scaling_with_tradition_tt
+}
 #type = heavy_ship/light_ship/galley/transport
 add_ship_construction_scaled_to_ports = {	
 	random_owned_province = {

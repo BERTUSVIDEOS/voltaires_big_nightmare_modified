@@ -34,6 +34,7 @@ fixed_capital = 2281
 	add_government_reform = canton_government
 }
 1444.11.12 = {	#bertus mod
+	set_government_rank = 2
 	monarch = {
 		name = "Heinrich"
 		birth_date = 1414.1.13

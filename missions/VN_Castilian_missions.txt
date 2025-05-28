@@ -3,17 +3,21 @@
 
 vn_cas_missions_slot_1_a = {
     slot = 6
-    generic = no
+    generic = yes
     ai = yes
     potential = {
         OR = {
             tag = CAS
             tag = LON
+            tag = CTL
+            tag = CCR
             AND = {
                 tag = SPA
                 OR = {
                     was_tag = CAS
                     was_tag = LON
+                    was_tag = CTL
+                    was_tag = CCR
                 }
             }
         }
@@ -130,17 +134,21 @@ vn_cas_missions_slot_1_a = {
 
 vn_cas_missions_slot_1_b = {
     slot = 6
-    generic = no
+    generic = yes
     ai = yes
     potential = {
         OR = {
             tag = CAS
             tag = LON
+            tag = CTL
+            tag = CCR
             AND = {
                 tag = SPA
                 OR = {
                     was_tag = CAS
                     was_tag = LON
+                    was_tag = CTL
+                    was_tag = CCR
                 }
             }
         }
@@ -534,17 +542,21 @@ vn_cas_missions_slot_1_b = {
 
 vn_cas_missions_slot_2_a = {
     slot = 7
-    generic = no
+    generic = yes
     ai = yes
     potential = {
         OR = {
             tag = CAS
             tag = LON
+            tag = CTL
+            tag = CCR
             AND = {
                 tag = SPA
                 OR = {
                     was_tag = CAS
                     was_tag = LON
+                    was_tag = CTL
+                    was_tag = CCR
                 }
             }
         }
@@ -662,17 +674,21 @@ vn_cas_missions_slot_2_a = {
 
 vn_cas_missions_slot_2_b = {
     slot = 7
-    generic = no
+    generic = yes
     ai = yes
     potential = {
         OR = {
             tag = CAS
             tag = LON
+            tag = CTL
+            tag = CCR
             AND = {
                 tag = SPA
                 OR = {
                     was_tag = CAS
                     was_tag = LON
+                    was_tag = CTL
+                    was_tag = CCR
                 }
             }
         }
@@ -845,17 +861,21 @@ vn_cas_missions_slot_2_b = {
 
 vn_cas_missions_slot_2_c = {
     slot = 7
-    generic = no
+    generic = yes
     ai = yes
     potential = {
         OR = {
             tag = CAS
             tag = LON
+            tag = CTL
+            tag = CCR
             AND = {
                 tag = SPA
                 OR = {
                     was_tag = CAS
                     was_tag = LON
+                    was_tag = CTL
+                    was_tag = CCR
                 }
             }
         }
@@ -895,17 +915,21 @@ vn_cas_missions_slot_2_c = {
 
 vn_cas_missions_slot_2_d = {
     slot = 7
-    generic = no
+    generic = yes
     ai = yes
     potential = {
         OR = {
             tag = CAS
             tag = LON
+            tag = CTL
+            tag = CCR
             AND = {
                 tag = SPA
                 OR = {
                     was_tag = CAS
                     was_tag = LON
+                    was_tag = CTL
+                    was_tag = CCR
                 }
             }
         }
@@ -1053,17 +1077,21 @@ vn_cas_missions_slot_2_d = {
 
 vn_cas_missions_slot_3_a = {
     slot = 8
-    generic = no
+    generic = yes
     ai = yes
     potential = {
         OR = {
             tag = CAS
             tag = LON
+            tag = CTL
+            tag = CCR
             AND = {
                 tag = SPA
                 OR = {
                     was_tag = CAS
                     was_tag = LON
+                    was_tag = CTL
+                    was_tag = CCR
                 }
             }
         }
@@ -1137,17 +1165,21 @@ vn_cas_missions_slot_3_a = {
 
 vn_cas_missions_slot_3_b = {
     slot = 8
-    generic = no
+    generic = yes
     ai = yes
     potential = {
         OR = {
             tag = CAS
             tag = LON
+            tag = CTL
+            tag = CCR
             AND = {
                 tag = SPA
                 OR = {
                     was_tag = CAS
                     was_tag = LON
+                    was_tag = CTL
+                    was_tag = CCR
                 }
             }
         }
@@ -1605,17 +1637,21 @@ vn_cas_missions_slot_3_b = {
 
 vn_cas_missions_slot_4_a = {
     slot = 9
-    generic = no
+    generic = yes
     ai = yes
     potential = {
         OR = {
             tag = CAS
             tag = LON
+            tag = CTL
+            tag = CCR
             AND = {
                 tag = SPA
                 OR = {
                     was_tag = CAS
                     was_tag = LON
+                    was_tag = CTL
+                    was_tag = CCR
                 }
             }
         }
@@ -1710,17 +1746,21 @@ vn_cas_missions_slot_4_a = {
 
 vn_cas_missions_slot_4_b = {
     slot = 9
-    generic = no
+    generic = yes
     ai = yes
     potential = {
         OR = {
             tag = CAS
             tag = LON
+            tag = CTL
+            tag = CCR
             AND = {
                 tag = SPA
                 OR = {
                     was_tag = CAS
                     was_tag = LON
+                    was_tag = CTL
+                    was_tag = CCR
                 }
             }
         }
@@ -1807,17 +1847,21 @@ vn_cas_missions_slot_4_b = {
 
 vn_cas_missions_slot_4_c = {
     slot = 9
-    generic = no
+    generic = yes
     ai = yes
     potential = {
         OR = {
             tag = CAS
             tag = LON
+            tag = CTL
+            tag = CCR
             AND = {
                 tag = SPA
                 OR = {
                     was_tag = CAS
                     was_tag = LON
+                    was_tag = CTL
+                    was_tag = CCR
                 }
             }
         }
@@ -1914,17 +1958,21 @@ vn_cas_missions_slot_4_c = {
 
 vn_cas_missions_slot_4_d = {
     slot = 9
-    generic = no
+    generic = yes
     ai = yes
     potential = {
         OR = {
             tag = CAS
             tag = LON
+            tag = CTL
+            tag = CCR
             AND = {
                 tag = SPA
                 OR = {
                     was_tag = CAS
                     was_tag = LON
+                    was_tag = CTL
+                    was_tag = CCR
                 }
             }
         }
@@ -1959,17 +2007,21 @@ vn_cas_missions_slot_4_d = {
 
 vn_cas_missions_slot_5_a = {
     slot = 10
-    generic = no
+    generic = yes
     ai = yes
     potential = {
         OR = {
             tag = CAS
             tag = LON
+            tag = CTL
+            tag = CCR
             AND = {
                 tag = SPA
                 OR = {
                     was_tag = CAS
                     was_tag = LON
+                    was_tag = CTL
+                    was_tag = CCR
                 }
             }
         }
@@ -2142,17 +2194,21 @@ vn_cas_missions_slot_5_a = {
 
 vn_cas_missions_slot_5_b = {
     slot = 10
-    generic = no
+    generic = yes
     ai = yes
     potential = {
         OR = {
             tag = CAS
             tag = LON
+            tag = CTL
+            tag = CCR
             AND = {
                 tag = SPA
                 OR = {
                     was_tag = CAS
                     was_tag = LON
+                    was_tag = CTL
+                    was_tag = CCR
                 }
             }
         }

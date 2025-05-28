@@ -1128,23 +1128,13 @@ canoe_expertise_policy = {
 	monarch_power = DIP
 
 	potential = {
-		OR = {
-			has_idea_group = shock0
-			has_idea_group = shock0_centaur
-			has_idea_group = shock0_ogre
-		}
+		has_idea_group = shock0
 	}
 	
 	allow = {
+		full_idea_group = shock0
 		OR = {
 			full_idea_group = shock0
-			full_idea_group = shock0_centaur
-			full_idea_group = shock0_ogre
-		}
-		OR = {
-			full_idea_group = shock0
-			full_idea_group = shock0_centaur
-			full_idea_group = shock0_ogre
 			full_idea_group = diplomatic_ideas
 		}
 	}
@@ -1176,32 +1166,6 @@ protected_shipping_lanes = {
 	}
 
 	global_naval_engagement_modifier = 0.1
-
-	ai_will_do = {
-		factor = 1.0
-		modifier = {
-			factor = 1.5
-			is_at_war = yes
-		}
-	}
-}
-
-protected_shipping_lanes_2 = { 
-	monarch_power = DIP
-
-	potential = {
-		has_idea_group = fire0_centaur
-	}
-	
-	allow = {
-		full_idea_group = fire0_centaur
-		OR = {
-			full_idea_group = fire0_centaur
-			full_idea_group = diplomatic_ideas
-		}
-	}
-
-	available_province_loot = 0.50
 
 	ai_will_do = {
 		factor = 1.0

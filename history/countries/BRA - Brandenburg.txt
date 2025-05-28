@@ -369,6 +369,7 @@ change_estate_land_share = {
 	set_country_flag = albrecht_achilles_flag
 }
 1444.11.12 = {	#bertus mod
+	set_government_rank = 2
 	monarch = {
 		name = "Friedrich II"
 		dynasty = "von Hohenzollern"

@@ -43,6 +43,7 @@ capital = 815
 1201.12.8 = { add_accepted_culture = saxon }
 
 1444.11.12 = {	#bertus mod
+	set_government_rank = 2
 	monarch = {
 		name = "Konrad II"
 		dynasty = "Piast"

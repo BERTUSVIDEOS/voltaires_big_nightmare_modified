@@ -3,13 +3,19 @@ country_decisions = {
 	liberum_veto = {
 		potential = {
 			NOT = { has_country_flag = librium_veto }
-			NOT = { colony = 1 }
 			religion_group = christian
 			technology_group = eastern
 			government = monarchy
 		}
 		allow = {
-			aristocracy_ideas = 1
+			estate_loyalty = {
+				estate = estate_nobles 
+				loyalty = 80
+			}
+			estate_influence = {
+				estate = estate_nobles
+				influence = 80
+			}
 			is_at_war = yes
 			war_exhaustion = 8
 			num_of_cities = 10

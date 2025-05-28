@@ -328,46 +328,27 @@ vn_apl_missions_slot_2 = {
 		}
 		effect = {
 			country_event = { id = vn_missions.3 }
-			if = {
-                limit = {
-                    exists = NRM
-                    is_subject = no
-                    government = monarchy
-                    religion_group = christian
-                    NRM = {
-                        is_free_or_tributary_trigger = yes
-                        government = monarchy
-                    }
-                }
-                add_casus_belli = {
-                    type = cb_fabricated_claims
-                    months = 300
-                    target = NRM
-                }
-            }
-            else = {
-				normandy_area = {
-					limit = {
-						NOT = { is_core = ROOT }
-						NOT = { is_permanent_claim = ROOT }
-					}
-					add_permanent_claim = ROOT
+			normandy_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
 				}
-				caux_area = {
-					limit = {
-						NOT = { is_core = ROOT }
-						NOT = { is_permanent_claim = ROOT }
-					}
-					add_permanent_claim = ROOT
+				add_permanent_claim = ROOT
+			}
+			caux_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
 				}
-				alencon_area = {
-					limit = {
-						NOT = { is_core = ROOT }
-						NOT = { is_permanent_claim = ROOT }
-					}
-					add_permanent_claim = ROOT
+				add_permanent_claim = ROOT
+			}
+			alencon_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
 				}
-            }
+				add_permanent_claim = ROOT
+			}
 		}
 	}
 	vn_apl_conquer_normandy = {

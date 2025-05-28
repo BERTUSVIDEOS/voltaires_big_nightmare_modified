@@ -433,6 +433,7 @@ capital = 2160	# Pamplona
 	set_ruler_flag = joan_trastamara_flag
 }
 1444.11.12 = {	#bertus mod
+	set_government_rank = 2
 	monarch = {
 		name = "Amandar I"
 		dynasty = "Cortatroncos"

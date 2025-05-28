@@ -24,6 +24,7 @@ vn_avl_missions_slot_1_a = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+            NOT = { exists = ARA }
 			aragon_region = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -33,7 +34,7 @@ vn_avl_missions_slot_1_a = {
             change_tag = ARA
 			on_change_tag_effect = yes
 			clr_country_flag = nerfed_ideas_flag
-			swap_swap_non_generic_missions = yes
+			swap_non_generic_missions = yes
 			set_formable_tier = { tier = 3 }
 			if = {
 				limit = { NOT = { government_rank = 4 } }
@@ -167,11 +168,14 @@ vn_brc_missions_slot_2_a = {
         required_missions = { }
         icon = mission_african_gold
         trigger = {
-            custom_trigger_tooltip = {
-                tooltip = vn_brc_extract_parias.tt
-                OR = {
-                    has_country_flag = paria_war_attacker
-                    has_country_flag = received_paria
+            OR = {
+				num_of_war_reparations = 2
+                custom_trigger_tooltip = {
+                    tooltip = vn_brc_extract_parias.tt
+                    OR = {
+                        has_country_flag = paria_war_attacker
+                        has_country_flag = received_paria
+                    }
                 }
             }
         }
@@ -301,17 +305,45 @@ vn_brc_missions_slot_2_b = {
             vn_brc_incorporate_valencia
         }
         icon = mission_dominate_genoa
+        provinces_to_highlight = {
+            OR = {
+                AND = {
+                    province_id = 1955
+                    1955 = {
+                        NOT = { is_strongest_trade_power = ROOT }
+                    }
+                }
+                AND = {
+                    province_id = 2041
+                    2041 = {
+                        NOT = { is_strongest_trade_power = ROOT }
+                    }
+                }
+                AND = {
+                    province_id = 1946
+                    1946 = {
+                        NOT = { is_strongest_trade_power = ROOT }
+                    }
+                }
+                AND = {
+                    province_id = 1867
+                    1867 = {
+                        NOT = { is_strongest_trade_power = ROOT }
+                    }
+                }
+            }
+        }
         trigger = {
             1955 = {
                 is_strongest_trade_power = ROOT
 			}
-			1949 = {
-                is_strongest_trade_power = ROOT
-            }
-            2671 = {
+            2041 = {
 				is_strongest_trade_power = ROOT
             }
-            2560 = {
+            1946 = {
+				is_strongest_trade_power = ROOT
+            }
+            1867 = {
 				is_strongest_trade_power = ROOT
             }
         }
@@ -561,7 +593,6 @@ vn_brc_missions_slot_3_a = {
 		position = 6
 		required_missions = {
 			vn_brc_incorporate_valencia
-			vn_brc_mediterranean_commerce
 		}
 		provinces_to_highlight = {
 			OR = {
@@ -570,6 +601,7 @@ vn_brc_missions_slot_3_a = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+            NOT = { exists = ARA }
 			aragon_region = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -579,7 +611,7 @@ vn_brc_missions_slot_3_a = {
             change_tag = ARA
 			on_change_tag_effect = yes
 			clr_country_flag = nerfed_ideas_flag
-			swap_swap_non_generic_missions = yes
+			swap_non_generic_missions = yes
 			set_formable_tier = { tier = 3 }
 			if = {
 				limit = { NOT = { government_rank = 4 } }

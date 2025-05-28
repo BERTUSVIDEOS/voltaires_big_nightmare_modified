@@ -635,6 +635,8 @@ national_focus = ADM
 	set_country_flag = hab_ladislaus_postumus_heir
 }
 1444.11.12 = {	#bertus mod
+	add_government_reform = feudalism_reform
+	set_government_rank = 2
 	monarch = {
 		name = "Ladislaus Postumus"
 		dynasty = "von Habsburg"

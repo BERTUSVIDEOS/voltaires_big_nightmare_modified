@@ -1,17 +1,14 @@
 edict_promote_military_recruitment = {	#bertus mod
 	potential = {
 		NOT = {has_idea = entwicklung5 }
-		has_government_attribute = unlock_special_state_edicts
-		current_age = age_of_absolutism
 	}
 	
 	allow = {
-		has_government_attribute = unlock_special_state_edicts
-		current_age = age_of_absolutism
+		always = yes
 	}
 	
 	modifier = {
-		local_manpower_modifier = 0.33	#0.25→0.33
+		local_manpower_modifier = 0.25
 	}
 	
 	color = {  188 90 27  }
@@ -38,14 +35,11 @@ edict_promote_military_recruitment = {	#bertus mod
 }
 edict_improved_promote_military_recruitment = {	#bertus mod
 	potential = {
-		has_government_attribute = unlock_special_state_edicts
-		current_age = age_of_absolutism
 		has_idea = entwicklung5
 	}
 
 	allow = {
-		has_government_attribute = unlock_special_state_edicts
-		current_age = age_of_absolutism
+		always = yes
 	}
 
 	modifier = {

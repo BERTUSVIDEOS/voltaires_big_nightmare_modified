@@ -26,7 +26,6 @@ discovered_by = north_american
 	owner = FRA
 	controller = FRA
 	add_core = FRA
-	remove_core = ANJ
 }
 1120.1.1 = {
 	owner = NEM

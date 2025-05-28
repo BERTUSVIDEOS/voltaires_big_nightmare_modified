@@ -340,6 +340,7 @@ capital = 90	# Ghent - dont know why Pdox uses Antwerp
 	}
 	government = republic
 	add_government_reform = oligarchy_reform
+	set_government_rank = 2
 	monarch = {
 		name = "Jokeba"
 		birth_date = 1404.1.13

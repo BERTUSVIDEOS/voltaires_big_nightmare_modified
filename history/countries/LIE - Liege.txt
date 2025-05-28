@@ -334,6 +334,7 @@ fixed_capital = 2514
 	}
 }
 1444.11.12 = {	#bertus mod
+	set_government_rank = 2
 	every_owned_province = {
 		add_local_autonomy = -10
 	}

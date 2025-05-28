@@ -224,6 +224,7 @@ country_decisions = {
 			NOT = { is_formable_tier = { tier = 4 } }
 			NOT = { exists = FKE }
 			religion_group = christian
+			NOT = { tag = PAP }
 			capital_scope = {
 				OR = {
 					superregion = french_superregion

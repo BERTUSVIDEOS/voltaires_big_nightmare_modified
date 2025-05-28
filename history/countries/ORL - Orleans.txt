@@ -53,6 +53,8 @@ fixed_capital = 2818
 	}
 }
 1444.11.12 = {	#bertus mod
+	set_government_rank = 2
+	add_government_reform = feudalism_reform
 	set_capital = 2818 #orleans
 	every_owned_province = {
 		add_local_autonomy = -10

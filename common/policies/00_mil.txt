@@ -1120,23 +1120,13 @@ wielders_of_the_flaming_sword_bertus_policy = {
 	monarch_power = MIL
 
 	potential = {
-		OR = {
-			has_idea_group = shock0
-			has_idea_group = shock0_centaur
-			has_idea_group = shock0_ogre
-		}
+		has_idea_group = shock0
 	}
 	
 	allow = {
+		full_idea_group = shock0
 		OR = {
 			full_idea_group = shock0
-			full_idea_group = shock0_centaur
-			full_idea_group = shock0_ogre
-		}
-		OR = {
-			full_idea_group = shock0
-			full_idea_group = shock0_centaur
-			full_idea_group = shock0_ogre
 			full_idea_group = diplomatic_ideas
 		}
 	}
@@ -1150,12 +1140,6 @@ wielders_of_the_flaming_sword_bertus_policy = {
 		remove_country_modifier = shock_policy_tech_11
 		remove_country_modifier = shock_policy_tech_21
 		remove_country_modifier = shock_policy_tech_28
-		remove_country_modifier = shock_inf_ogre_policy_tech_2
-		remove_country_modifier = shock_inf_ogre_policy_tech_5
-		remove_country_modifier = shock_inf_ogre_policy_tech_6
-		remove_country_modifier = shock_inf_ogre_policy_tech_11
-		remove_country_modifier = shock_inf_ogre_policy_tech_21
-		remove_country_modifier = shock_inf_ogre_policy_tech_28
 		remove_country_modifier = shock_cav_policy_tech_1
 		remove_country_modifier = shock_cav_policy_tech_2
 		remove_country_modifier = shock_cav_policy_tech_6
@@ -1166,25 +1150,12 @@ wielders_of_the_flaming_sword_bertus_policy = {
 		remove_country_modifier = shock_cav_policy_tech_26
 		remove_country_modifier = shock_cav_policy_tech_30
 		remove_country_modifier = shock_cav_policy_tech_32
-		if = {
-			limit = {
-				has_country_modifier = ogre_military
-			}
-			if = {limit = {mil_tech = 28} add_country_modifier = {name = shock_inf_ogre_policy_tech_28 duration = -1 hidden = yes}}
-			else_if = {limit = {mil_tech = 21}	add_country_modifier = {name = shock_inf_ogre_policy_tech_21 duration = -1 hidden = yes}}
-			else_if = {limit = {mil_tech = 11} add_country_modifier = {name = shock_inf_ogre_policy_tech_11 duration = -1 hidden = yes}}
-			else_if = {limit = {mil_tech = 6} add_country_modifier = {name = shock_inf_ogre_policy_tech_6 duration = -1 hidden = yes}}
-			else_if = {limit = {mil_tech = 5} add_country_modifier = {name = shock_inf_ogre_policy_tech_5 duration = -1 hidden = yes}}
-			else_if = {limit = {mil_tech = 2} add_country_modifier = {name = shock_inf_ogre_policy_tech_2 duration = -1 hidden = yes}}
-		}
-		else = {
-			if = {limit = {mil_tech = 28} add_country_modifier = {name = shock_policy_tech_28 duration = -1 hidden = yes}}
-			else_if = {limit = {mil_tech = 21}	add_country_modifier = {name = shock_policy_tech_21 duration = -1 hidden = yes}}
-			else_if = {limit = {mil_tech = 11} add_country_modifier = {name = shock_policy_tech_11 duration = -1 hidden = yes}}
-			else_if = {limit = {mil_tech = 6} add_country_modifier = {name = shock_policy_tech_6 duration = -1 hidden = yes}}
-			else_if = {limit = {mil_tech = 5} add_country_modifier = {name = shock_policy_tech_5 duration = -1 hidden = yes}}
-			else_if = {limit = {mil_tech = 2} add_country_modifier = {name = shock_policy_tech_2 duration = -1 hidden = yes}}
-		}
+		if = {limit = {mil_tech = 28} add_country_modifier = {name = shock_policy_tech_28 duration = -1 hidden = yes}}
+		else_if = {limit = {mil_tech = 21}	add_country_modifier = {name = shock_policy_tech_21 duration = -1 hidden = yes}}
+		else_if = {limit = {mil_tech = 11} add_country_modifier = {name = shock_policy_tech_11 duration = -1 hidden = yes}}
+		else_if = {limit = {mil_tech = 6} add_country_modifier = {name = shock_policy_tech_6 duration = -1 hidden = yes}}
+		else_if = {limit = {mil_tech = 5} add_country_modifier = {name = shock_policy_tech_5 duration = -1 hidden = yes}}
+		else_if = {limit = {mil_tech = 2} add_country_modifier = {name = shock_policy_tech_2 duration = -1 hidden = yes}}
 		if = {limit = {mil_tech = 32} add_country_modifier = {name = shock_cav_policy_tech_32 duration = -1 hidden = yes}}
 		else_if = {limit = {mil_tech = 30}	add_country_modifier = {name = shock_cav_policy_tech_30 duration = -1 hidden = yes}}
 		else_if = {limit = {mil_tech = 26} add_country_modifier = {name = shock_cav_policy_tech_26 duration = -1 hidden = yes}}
@@ -1203,12 +1174,6 @@ wielders_of_the_flaming_sword_bertus_policy = {
 		remove_country_modifier = shock_policy_tech_11
 		remove_country_modifier = shock_policy_tech_21
 		remove_country_modifier = shock_policy_tech_28
-		remove_country_modifier = shock_inf_ogre_policy_tech_2
-		remove_country_modifier = shock_inf_ogre_policy_tech_5
-		remove_country_modifier = shock_inf_ogre_policy_tech_6
-		remove_country_modifier = shock_inf_ogre_policy_tech_11
-		remove_country_modifier = shock_inf_ogre_policy_tech_21
-		remove_country_modifier = shock_inf_ogre_policy_tech_28
 		remove_country_modifier = shock_cav_policy_tech_1
 		remove_country_modifier = shock_cav_policy_tech_2
 		remove_country_modifier = shock_cav_policy_tech_6
@@ -1254,34 +1219,13 @@ psychological_warfare_policy = {
 		remove_country_modifier = fire_policy_tech_20
 		remove_country_modifier = fire_policy_tech_27
 		remove_country_modifier = fire_policy_tech_31
-		remove_country_modifier = ogre_fire_policy_tech_1
-		remove_country_modifier = ogre_fire_policy_tech_6
-		remove_country_modifier = ogre_fire_policy_tech_8
-		remove_country_modifier = ogre_fire_policy_tech_14
-		remove_country_modifier = ogre_fire_policy_tech_20
-		remove_country_modifier = ogre_fire_policy_tech_27
-		remove_country_modifier = ogre_fire_policy_tech_31
-		if = {
-			limit = {
-				has_country_modifier = ogre_military
-			}
-			if = {limit = {mil_tech = 31} add_country_modifier = {name = ogre_fire_policy_tech_31 duration = -1 hidden = yes}}
-			else_if = {limit = {mil_tech = 27}	add_country_modifier = {name = ogre_fire_policy_tech_27 duration = -1 hidden = yes}}
-			else_if = {limit = {mil_tech = 20} add_country_modifier = {name = ogre_fire_policy_tech_20 duration = -1 hidden = yes}}
-			else_if = {limit = {mil_tech = 14} add_country_modifier = {name = ogre_fire_policy_tech_14 duration = -1 hidden = yes}}
-			else_if = {limit = {mil_tech = 8} add_country_modifier = {name = ogre_fire_policy_tech_8 duration = -1 hidden = yes}}
-			else_if = {limit = {mil_tech = 6} add_country_modifier = {name = ogre_fire_policy_tech_6 duration = -1 hidden = yes}}
-			else_if = {limit = {mil_tech = 1} add_country_modifier = {name = ogre_fire_policy_tech_1 duration = -1 hidden = yes}}
-		}
-		else = {
-			if = {limit = {mil_tech = 31} add_country_modifier = {name = fire_policy_tech_31 duration = -1 hidden = yes}}
-			else_if = {limit = {mil_tech = 27}	add_country_modifier = {name = fire_policy_tech_27 duration = -1 hidden = yes}}
-			else_if = {limit = {mil_tech = 20} add_country_modifier = {name = fire_policy_tech_20 duration = -1 hidden = yes}}
-			else_if = {limit = {mil_tech = 14} add_country_modifier = {name = fire_policy_tech_14 duration = -1 hidden = yes}}
-			else_if = {limit = {mil_tech = 8} add_country_modifier = {name = fire_policy_tech_8 duration = -1 hidden = yes}}
-			else_if = {limit = {mil_tech = 6} add_country_modifier = {name = fire_policy_tech_6 duration = -1 hidden = yes}}
-			else_if = {limit = {mil_tech = 1} add_country_modifier = {name = fire_policy_tech_1 duration = -1 hidden = yes}}
-		}
+		if = {limit = {mil_tech = 31} add_country_modifier = {name = fire_policy_tech_31 duration = -1 hidden = yes}}
+		else_if = {limit = {mil_tech = 27}	add_country_modifier = {name = fire_policy_tech_27 duration = -1 hidden = yes}}
+		else_if = {limit = {mil_tech = 20} add_country_modifier = {name = fire_policy_tech_20 duration = -1 hidden = yes}}
+		else_if = {limit = {mil_tech = 14} add_country_modifier = {name = fire_policy_tech_14 duration = -1 hidden = yes}}
+		else_if = {limit = {mil_tech = 8} add_country_modifier = {name = fire_policy_tech_8 duration = -1 hidden = yes}}
+		else_if = {limit = {mil_tech = 6} add_country_modifier = {name = fire_policy_tech_6 duration = -1 hidden = yes}}
+		else_if = {limit = {mil_tech = 1} add_country_modifier = {name = fire_policy_tech_1 duration = -1 hidden = yes}}
 	}
 	removed_effect = {
 		remove_country_modifier = fire_policy_tech_1
@@ -1291,70 +1235,6 @@ psychological_warfare_policy = {
 		remove_country_modifier = fire_policy_tech_20
 		remove_country_modifier = fire_policy_tech_27
 		remove_country_modifier = fire_policy_tech_31
-		remove_country_modifier = ogre_fire_policy_tech_1
-		remove_country_modifier = ogre_fire_policy_tech_6
-		remove_country_modifier = ogre_fire_policy_tech_8
-		remove_country_modifier = ogre_fire_policy_tech_14
-		remove_country_modifier = ogre_fire_policy_tech_20
-		remove_country_modifier = ogre_fire_policy_tech_27
-		remove_country_modifier = ogre_fire_policy_tech_31
-	}
-
-	ai_will_do = {
-		factor = 10.0
-		modifier = {
-			factor = 0
-			is_at_war = no
-		}
-	}
-}
-psychological_warfare_policy_2 = {
-	monarch_power = MIL
-
-	potential = {
-		has_idea_group = fire0_centaur
-	}
-	
-	allow = {
-		full_idea_group = fire0_centaur
-		OR = {
-			full_idea_group = fire0_centaur
-			full_idea_group = diplomatic_ideas
-		}
-	}
-
-	cavalry_fire_modifier = 0.20
-	
-	effect = {
-		remove_country_modifier = centaur_fire_policy_tech_2
-		remove_country_modifier = centaur_fire_policy_tech_5
-		remove_country_modifier = centaur_fire_policy_tech_9
-		remove_country_modifier = centaur_fire_policy_tech_13
-		remove_country_modifier = centaur_fire_policy_tech_17
-		remove_country_modifier = centaur_fire_policy_tech_21
-		remove_country_modifier = centaur_fire_policy_tech_25
-		remove_country_modifier = centaur_fire_policy_tech_29
-		remove_country_modifier = centaur_fire_policy_tech_32
-		if = {limit = {mil_tech = 32} add_country_modifier = {name = centaur_fire_policy_tech_32 duration = -1 hidden = yes}}
-		else_if = {limit = {mil_tech = 29}	add_country_modifier = {name = centaur_fire_policy_tech_29 duration = -1 hidden = yes}}
-		else_if = {limit = {mil_tech = 25} add_country_modifier = {name = centaur_fire_policy_tech_25 duration = -1 hidden = yes}}
-		else_if = {limit = {mil_tech = 21}	add_country_modifier = {name = centaur_fire_policy_tech_21 duration = -1 hidden = yes}}
-		else_if = {limit = {mil_tech = 17} add_country_modifier = {name = centaur_fire_policy_tech_17 duration = -1 hidden = yes}}
-		else_if = {limit = {mil_tech = 13} add_country_modifier = {name = centaur_fire_policy_tech_13 duration = -1 hidden = yes}}
-		else_if = {limit = {mil_tech = 9} add_country_modifier = {name = centaur_fire_policy_tech_9 duration = -1 hidden = yes}}
-		else_if = {limit = {mil_tech = 5} add_country_modifier = {name = centaur_fire_policy_tech_5 duration = -1 hidden = yes}}
-		else_if = {limit = {mil_tech = 2} add_country_modifier = {name = centaur_fire_policy_tech_2 duration = -1 hidden = yes}}
-	}
-	removed_effect = {
-		remove_country_modifier = centaur_fire_policy_tech_2
-		remove_country_modifier = centaur_fire_policy_tech_5
-		remove_country_modifier = centaur_fire_policy_tech_9
-		remove_country_modifier = centaur_fire_policy_tech_13
-		remove_country_modifier = centaur_fire_policy_tech_17
-		remove_country_modifier = centaur_fire_policy_tech_21
-		remove_country_modifier = centaur_fire_policy_tech_25
-		remove_country_modifier = centaur_fire_policy_tech_29
-		remove_country_modifier = centaur_fire_policy_tech_32
 	}
 
 	ai_will_do = {

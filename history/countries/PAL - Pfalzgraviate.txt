@@ -301,6 +301,7 @@ elector = yes
 	}
 }
 1444.11.12 = {	#bertus mod
+	set_government_rank = 2
 	monarch = {
 		name = "Ludwig IV"
 		dynasty = "von Wittelsbach"
@@ -310,7 +311,6 @@ elector = yes
 		mil = 6
 	}
 	clear_scripted_personalities = yes
-	add_ruler_personality = legendary_conqueror_personality
 	add_ruler_personality = strict_personality
 }
 1445.10.18 = {

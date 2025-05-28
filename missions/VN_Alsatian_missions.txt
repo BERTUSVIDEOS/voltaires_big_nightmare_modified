@@ -808,39 +808,13 @@ vn_als_missions_slot_5 = {
 				republican_tradition = 5
 			}
 			add_prestige_or_monarch_power = { amount = 10 } 
-			if = {
+			austria_region = {
 				limit = {
-					exists = HAB
-					valid_for_personal_unions_trigger = yes
-					HAB = { valid_for_personal_unions_trigger = yes }	
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
 				}
-				add_casus_belli = {
-					target = HAB
-					type = cb_fabricated_claims
-					months = 300
-				}				
+				add_permanent_claim = ROOT
 			}
-			else_if = {
-				limit = {
-					exists = EAH
-					valid_for_personal_unions_trigger = yes
-					EAH = { valid_for_personal_unions_trigger = yes }	
-				}
-				add_casus_belli = {
-					target = EAH
-					type = cb_fabricated_claims
-					months = 300
-				}			
-			}
-			else = {
-				austria_region = {
-					limit = {
-						NOT = { is_core = ROOT }
-						NOT = { is_permanent_claim = ROOT }
-					}
-					add_permanent_claim = ROOT
-				}
-			}            
         }
     }
     vn_als_free_from_the_empire = {

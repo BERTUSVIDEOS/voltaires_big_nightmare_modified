@@ -50,6 +50,7 @@ capital = 2024	# Valencia
 	}
 }
 1444.11.12 = {	#bertus mod
+	set_government_rank = 2
 	monarch = {
 		name = "Miquel I"
 		dynasty = "del Duro"

@@ -635,11 +635,11 @@ expansion_ideas = {
 		native_uprising_chance = -0.50
 	}
 	faster_colonists = {
-		global_colonial_growth = 5
+		global_colonial_growth = 10
 		merchants = 1
 	}
 	additional_colonists = {
-		colonists = 3
+		colonists = 2
 	}
 	expan2 = {
 		cb_on_overseas = yes

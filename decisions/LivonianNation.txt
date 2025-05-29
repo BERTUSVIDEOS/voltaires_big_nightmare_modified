@@ -40,7 +40,6 @@ country_decisions = {
 			}
 		}
 		allow = {
-			adm_tech = 10
 			is_nomad = no			
 			is_at_war = no
 			OR = {
@@ -157,7 +156,6 @@ country_decisions = {
 			}
 		}
 		allow = {
-			adm_tech = 10
 			is_nomad = no			
 			is_at_war = no
 			OR = {

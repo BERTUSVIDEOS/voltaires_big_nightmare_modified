@@ -26,7 +26,7 @@ country_decisions = {
 					root = {
 						NOT = {
 							development_in_provinces = {
-								value = 500
+								value = 350
 								OR = {
 									area = florence_area
 									area = lucca_area
@@ -42,12 +42,11 @@ country_decisions = {
 			}
 		}
 		allow = {
-			adm_tech = 10
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
 			owns_core_province = 640	# Firenze
 			development_in_provinces = {
-				value = 500
+				value = 350
 				OR = {
 					area = florence_area
 					area = lucca_area

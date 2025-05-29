@@ -40,8 +40,7 @@ country_decisions = {
 				NOT = { is_core = ROOT }
 			}
 		}
-		allow = {
-			adm_tech = 10		
+		allow = {		
 			is_at_war = no
 			is_nomad = no
 			OR = {
@@ -60,7 +59,6 @@ country_decisions = {
 			on_change_tag_effect = yes
 			add_prestige = 10
 			hidden_effect = { restore_country_name = yes }
-			remove_non_electors_emperors_from_empire_effect = yes
 			set_capital = 5790		# Semigallia
 			if = {
 				limit = { has_custom_ideas = no }
@@ -137,7 +135,6 @@ country_decisions = {
 			}
 		}
 		allow = {
-			adm_tech = 10
 			is_nomad = no			
 			is_at_war = no
 			OR = {
@@ -166,7 +163,6 @@ country_decisions = {
 				add_accepted_culture = latvian
 			}
 			restore_country_name_effect = yes
-			remove_non_electors_emperors_from_empire_effect = yes
 			add_prestige = 10	
 			if = {
 				limit = { has_custom_ideas = no }

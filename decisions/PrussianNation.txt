@@ -24,7 +24,7 @@ country_decisions = {
 					root = {
 						NOT = {
 							development_in_provinces = {
-								value = 500
+								value = 550
 								region = ostpreussen_region
 							}
 						}
@@ -34,7 +34,6 @@ country_decisions = {
 		}
 		allow = {
 			NOT = { exists = PRU }
-			adm_tech = 10
 			OR = { 	#bertus mod
 				religion = protestant
 				religion = reformed
@@ -46,7 +45,7 @@ country_decisions = {
 			is_at_war = no
 			owns_core_province = 4854			# Koningsberg
 			development_in_provinces = {
-				value = 500
+				value = 550
 				region = ostpreussen_region
 			}
 		}
@@ -54,7 +53,6 @@ country_decisions = {
 			change_tag = PRU
 			restore_country_name_effect = yes
 			swap_non_generic_missions = yes
-			remove_non_electors_emperors_from_empire_effect = yes
 			set_formable_tier = { tier = 2 }
 			if = {
 				limit = {

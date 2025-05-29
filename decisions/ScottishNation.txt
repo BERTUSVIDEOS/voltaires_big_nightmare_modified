@@ -22,7 +22,7 @@ country_decisions = {
 					root = {
 						NOT = {
 							development_in_provinces = {
-								value = 500
+								value = 450
 								region = scotland_region
 							}
 						}
@@ -31,11 +31,10 @@ country_decisions = {
 			}
 		}
 		allow = {
-			adm_tech = 10
 			is_at_war = no
 			owns_core_province = 2621 # edinburgh
 			development_in_provinces = {
-				value = 500
+				value = 450
 				region = scotland_region
 			}
 		}

@@ -36,21 +36,16 @@ philosopher = {
 	}
 	skill_scaled_modifier = {
 		trigger = {
-			has_owner_religion = yes
-			owner = { 
-				OR = {
-					has_idea = RHI_idea_4
-				}
-			}
-		}
-		modifier = { global_tax_modifier = 0.05 }
-	}
-	skill_scaled_modifier = {
-		trigger = {
-			has_owner_religion = yes
-			owner = { 
-				OR = {
-					has_idea = missionary_schools
+			OR = {
+				has_country_flag = get_tax_from_adm_advisors_flag
+				AND = {
+					has_owner_religion = yes
+					owner = { 
+						OR = {
+							has_idea = RHI_idea_4
+							has_idea = missionary_schools
+						}
+					}
 				}
 			}
 		}
@@ -100,21 +95,16 @@ natural_scientist = {
 	}
 	skill_scaled_modifier = {
 		trigger = {
-			has_owner_religion = yes
-			owner = { 
-				OR = {
-					has_idea = RHI_idea_4
-				}
-			}
-		}
-		modifier = { global_tax_modifier = 0.05 }
-	}
-	skill_scaled_modifier = {
-		trigger = {
-			has_owner_religion = yes
-			owner = { 
-				OR = {
-					has_idea = missionary_schools
+			OR = {
+				has_country_flag = get_tax_from_adm_advisors_flag
+				AND = {
+					has_owner_religion = yes
+					owner = { 
+						OR = {
+							has_idea = RHI_idea_4
+							has_idea = missionary_schools
+						}
+					}
 				}
 			}
 		}
@@ -164,21 +154,16 @@ artist = {
 	}
 	skill_scaled_modifier = {
 		trigger = {
-			has_owner_religion = yes
-			owner = { 
-				OR = {
-					has_idea = RHI_idea_4
-				}
-			}
-		}
-		modifier = { global_tax_modifier = 0.05 }
-	}
-	skill_scaled_modifier = {
-		trigger = {
-			has_owner_religion = yes
-			owner = { 
-				OR = {
-					has_idea = missionary_schools
+			OR = {
+				has_country_flag = get_tax_from_adm_advisors_flag
+				AND = {
+					has_owner_religion = yes
+					owner = { 
+						OR = {
+							has_idea = RHI_idea_4
+							has_idea = missionary_schools
+						}
+					}
 				}
 			}
 		}
@@ -236,21 +221,16 @@ treasurer = {
 	}
 	skill_scaled_modifier = {
 		trigger = {
-			has_owner_religion = yes
-			owner = { 
-				OR = {
-					has_idea = RHI_idea_4
-				}
-			}
-		}
-		modifier = { global_tax_modifier = 0.05 }
-	}
-	skill_scaled_modifier = {
-		trigger = {
-			has_owner_religion = yes
-			owner = { 
-				OR = {
-					has_idea = missionary_schools
+			OR = {
+				has_country_flag = get_tax_from_adm_advisors_flag
+				AND = {
+					has_owner_religion = yes
+					owner = { 
+						OR = {
+							has_idea = RHI_idea_4
+							has_idea = missionary_schools
+						}
+					}
 				}
 			}
 		}
@@ -300,21 +280,16 @@ theologian = {
 	}
 	skill_scaled_modifier = {
 		trigger = {
-			has_owner_religion = yes
-			owner = { 
-				OR = {
-					has_idea = RHI_idea_4
-				}
-			}
-		}
-		modifier = { global_tax_modifier = 0.05 }
-	}
-	skill_scaled_modifier = {
-		trigger = {
-			has_owner_religion = yes
-			owner = { 
-				OR = {
-					has_idea = missionary_schools
+			OR = {
+				has_country_flag = get_tax_from_adm_advisors_flag
+				AND = {
+					has_owner_religion = yes
+					owner = { 
+						OR = {
+							has_idea = RHI_idea_4
+							has_idea = missionary_schools
+						}
+					}
 				}
 			}
 		}
@@ -373,21 +348,16 @@ master_of_mint = {
 	}
 	skill_scaled_modifier = {
 		trigger = {
-			has_owner_religion = yes
-			owner = { 
-				OR = {
-					has_idea = RHI_idea_4
-				}
-			}
-		}
-		modifier = { global_tax_modifier = 0.05 }
-	}
-	skill_scaled_modifier = {
-		trigger = {
-			has_owner_religion = yes
-			owner = { 
-				OR = {
-					has_idea = missionary_schools
+			OR = {
+				has_country_flag = get_tax_from_adm_advisors_flag
+				AND = {
+					has_owner_religion = yes
+					owner = { 
+						OR = {
+							has_idea = RHI_idea_4
+							has_idea = missionary_schools
+						}
+					}
 				}
 			}
 		}
@@ -442,21 +412,16 @@ inquisitor = {
 	}
 	skill_scaled_modifier = {
 		trigger = {
-			has_owner_religion = yes
-			owner = { 
-				OR = {
-					has_idea = RHI_idea_4
-				}
-			}
-		}
-		modifier = { global_tax_modifier = 0.05 }
-	}
-	skill_scaled_modifier = {
-		trigger = {
-			has_owner_religion = yes
-			owner = { 
-				OR = {
-					has_idea = missionary_schools
+			OR = {
+				has_country_flag = get_tax_from_adm_advisors_flag
+				AND = {
+					has_owner_religion = yes
+					owner = { 
+						OR = {
+							has_idea = RHI_idea_4
+							has_idea = missionary_schools
+						}
+					}
 				}
 			}
 		}

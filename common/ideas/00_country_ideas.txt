@@ -4333,7 +4333,7 @@ USA_ideas = {
 }
 
 
-SWI_ideas = {
+SWI_ideas = { 	#bertus mod
 	
 	trigger = {
 		tag = SWI
@@ -4345,35 +4345,36 @@ SWI_ideas = {
 		infantry_power = 0.10
 	}
 	swiss_mercenaries = {
-		mercenary_discipline = 0.10	#0.05→0.10
-		mercenary_manpower = 0.5
+		mercenary_discipline = 0.10
+		mercenary_manpower = 0.50
 	}
 	swiss_tolerance = {
 		tolerance_heretic = 2
+		tolerance_of_heretics_capacity = 2
 	}
 	the_swiss_confederation = {
-		stability_cost_modifier = -0.1
+		stability_cost_modifier = -0.10
+		centralize_state_cost = -0.20
 	}
 	alpine_defensiveness = {
 		fort_maintenance_modifier = -0.20
 		defensiveness = 0.25
-		global_defender_dice_roll_bonus = 2 	#0→2
+		global_defender_dice_roll_bonus = 2
 	}
 	oasis_of_peace_and_prosperity = {
 		#burhger mountain development privilege
-		#development_cost = -0.1	#-0.1→0
-		development_cost_modifier = -0.10	#0→-0.10
+		development_cost_modifier = -0.10
 	}
 	haven_for_refugees = {
 		prestige = 1
+		republican_tradition = 0.20
 	}
 	clockwork = {
-		production_efficiency = 0.1
-		global_trade_goods_size_modifier = 0.10 	#0→0.10
+		production_efficiency = 0.10
+		global_trade_goods_size_modifier = 0.10
 	}
 	bonus = {
-		#discipline = 0.05	#0.05→0
-		land_morale = 0.10 	#0→0.10
+		land_morale = 0.10
 	}
 }
 

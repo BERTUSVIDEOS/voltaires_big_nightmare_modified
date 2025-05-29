@@ -69,7 +69,7 @@ fin_missions_1 = {
 		}
 	}
 	
-	fin_independence = {
+	fin_independence = { 	#bertus mod
 		icon = mission_conquer_finland
 		required_missions = { fin_forcelimit }
 		position = 2
@@ -77,78 +77,77 @@ fin_missions_1 = {
 		trigger = { 
 			if = {
 				limit = { NOT = { has_country_flag = rus_can_complete_missions_as_subject } }
-				is_subject = no 
-				stability = 2 
+				stability = 1
+				num_of_allies = 1
+				grown_by_development = 25
 				NOT = { num_of_loans = 1 }
-				num_of_allies = 1 
+				is_subject = no 
 			}
 			else = {
-				stability = 2 
+				stability = 1
 				NOT = { num_of_loans = 1 }
 			}
 		}
 		effect = { 
 			custom_tooltip = fin_ruler_celebrated_as_independence_tt
-			hidden_effect = {
-				if = { 
-					limit = { grown_by_development = 50 }
-					change_ruler_stat = {
-						type = mil
-						amount = 3
-					}
+			if = { 
+				limit = { grown_by_development = 100 }
+				change_ruler_stat = {
+					type = mil
+					amount = 3
 				}
-				else_if = {
-					limit = { grown_by_development = 25 } 
-					change_ruler_stat = {
-						type = mil
-						amount = 2
-					}
+			}
+			else_if = {
+				limit = { grown_by_development = 50 } 
+				change_ruler_stat = {
+					type = mil
+					amount = 2
 				}
-				else = {
-					change_ruler_stat = {
-						type = mil
-						amount = 1
-					}
+			}
+			else = {
+				change_ruler_stat = {
+					type = mil
+					amount = 1
 				}
-				if = { 
-					limit = { stability = 3 } 
-					change_ruler_stat = {
-						type = adm
-						amount = 3
-					}
+			}
+			if = { 
+				limit = { stability = 3 } 
+				change_ruler_stat = {
+					type = adm
+					amount = 3
 				}
-				else_if = {
-					limit = { stability = 2 } 
-					change_ruler_stat = {
-						type = adm
-						amount = 2
-					}
+			}
+			else_if = {
+				limit = { stability = 2 } 
+				change_ruler_stat = {
+					type = adm
+					amount = 2
 				}
-				else = {
-					change_ruler_stat = {
-						type = adm
-						amount = 1
-					}
-				} 
-				if = {
-					limit = { num_of_allies = 3 } 
-					change_ruler_stat = {
-						type = dip
-						amount = 3
-					}
+			}
+			else = {
+				change_ruler_stat = {
+					type = adm
+					amount = 1
 				}
-				else_if = {
-					limit = { num_of_allies = 2 } 
-					change_ruler_stat = {
-						type = dip
-						amount = 2
-					}
+			} 
+			if = {
+				limit = { num_of_allies = 3 } 
+				change_ruler_stat = {
+					type = dip
+					amount = 3
 				}
-				else = {
-					change_ruler_stat = {
-						type = dip
-						amount = 1
-					}
+			}
+			else_if = {
+				limit = { num_of_allies = 2 } 
+				change_ruler_stat = {
+					type = dip
+					amount = 2
+				}
+			}
+			else = {
+				change_ruler_stat = {
+					type = dip
+					amount = 1
 				}
 			}
 			add_ruler_modifier = {
@@ -162,7 +161,6 @@ fin_missions_1 = {
 						limit = { 
 							NOT = { owned_by = ROOT }
 							NOT = { is_core = ROOT } 
-							NOT = { province_id = 6109 }
 						}
 						add_permanent_claim = ROOT 
 					}
@@ -199,7 +197,8 @@ fin_missions_1 = {
 			}
 			else = { set_government_rank = 2 } 
 			define_advisor = { 
-				type = trader 
+				type = trader
+				skill = 3
 				cost_multiplier = 0.5
 			}
 		}
@@ -269,7 +268,7 @@ fin_missions_2 = {
 		effect = { 
 			add_country_modifier = {
 				name = fin_abundant_food_modifier
-				duration = 5475 
+				duration = 7300 
 			}
 			custom_tooltip = fin_every_province_with_workshop_tt
 			hidden_effect = {
@@ -319,7 +318,7 @@ fin_missions_2 = {
 			tooltip = { 
 				add_country_modifier = { 
 					name = fin_accelerated_assimilation_modifier
-					duration = 9125 
+					duration = -1 
 				}
 			}
 			hidden_effect = {
@@ -333,7 +332,7 @@ fin_missions_2 = {
 				else = {	
 					add_country_modifier = { 
 						name = fin_accelerated_assimilation_modifier
-						duration = 9125 
+						duration = -1
 					}
 				}
 			}
@@ -400,28 +399,33 @@ fin_missions_2 = {
 		}
 	}
 	
-	    fin_baltic_empire = {
+	fin_baltic_empire = { 	#bertus mod
 		icon = mission_baltic_empire
 		required_missions = { fin_stockholm fin_dalaskrogen fin_neva }
-                position = 4
+        position = 4
 		provinces_to_highlight = {
-			any_trade_node_member_province = {
-				province_id = 6144
-			} 
-			is_sea = no 
-			NOT = { country_or_non_sovereign_subject_holds = ROOT }
-		}
-		trigger = {
-			custom_trigger_tooltip = {
-				tooltip = own_all_novgorod_provinces_tt
-				6144 = { 
+			AND = {
+				region = livonia_region
+				root = {
 					NOT = {
-						any_trade_node_member_province = {
-							is_sea = no 
-							NOT = { country_or_non_sovereign_subject_holds = ROOT }
+						num_of_owned_provinces_with = {
+							is_core = ROOT
+							region = livonia_region
+							value = 43		#	 43/172 livonia region
 						}
 					}
 				}
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
+		trigger = {
+			num_of_owned_provinces_with = {
+				is_core = ROOT
+				region = livonia_region
+				value = 43		#	 43/172 livonia region
 			}
 		}
 		effect = { 
@@ -432,12 +436,9 @@ fin_missions_2 = {
 				set_government_rank = 3 
 			}
 			else = { add_prestige = 50 }
-			custom_tooltip = fin_baltic_empire_tt
-			hidden_effect = {
-				add_country_modifier = {
-					name = fin_finnish_swedish_carolean
-					duration = -1
-				}
+			add_country_modifier = {
+				name = fin_finnish_swedish_carolean
+				duration = -1
 			}
 			country_event = {
 				id = flavor_fin.1
@@ -450,7 +451,7 @@ fin_missions_2 = {
 				limit = { in_golden_age = yes } 
 				extend_golden_age = 240 
 			}
-			else = { 
+			else = {
 				add_adm_power = 100 
 				add_dip_power = 100 
 				add_mil_power = 100  
@@ -487,51 +488,23 @@ fin_handle_the_sami = {
 		position = 2
 		required_missions = { fin_grow_farms }
 		provinces_to_highlight = {
-			OR = {
-				area = ladoga_area
-				area = ingria_area
-				area = neva_area
-			}
+			region = south_karelia_region
 			OR = {
 				NOT = { religion = ROOT }
 				NOT = { owned_by = ROOT }
-				has_owner_accepted_culture = no
 			}
 		}
 		trigger = {
 			if = {
 				limit = { NOT = { has_country_flag = rus_can_complete_missions_as_subject } }
-				ladoga_area = { 
+				south_karelia_region = { 
 					owned_by = ROOT
 					religion = ROOT
-					has_owner_accepted_culture = yes
-					type = all
-				}
-				ingria_area = { 
-					owned_by = ROOT
-					religion = ROOT
-					has_owner_accepted_culture = yes
-					type = all
-				}
-				neva_area = { 
-					owned_by = ROOT
-					religion = ROOT
-					has_owner_accepted_culture = yes
 					type = all
 				}
 			}
 			else = {
-				ladoga_area = { 
-					owned_by = ROOT
-					religion = ROOT
-					type = all
-				}
-				ingria_area = { 
-					owned_by = ROOT
-					religion = ROOT
-					type = all
-				}
-				neva_area = { 
+				south_karelia_region = { 
 					owned_by = ROOT
 					religion = ROOT
 					type = all
@@ -542,17 +515,9 @@ fin_handle_the_sami = {
 			unlock_estate_privilege = {
 				estate_privilege = estate_burghers_forest_expansion
 			}
-			ladoga_area = {
+			south_karelia_region = {
 				add_local_autonomy = -100
-				add_base_manpower = 2
-			}
-			ingria_area = {
-				add_local_autonomy = -100
-				add_base_manpower = 2
-			}
-			neva_area = {
-				add_local_autonomy = -100
-				add_base_manpower = 2
+				add_base_manpower = 1
 			}
 		}
 	}
@@ -579,32 +544,15 @@ fin_handle_the_sami = {
 					duration = -1 
 				}
 			}
-			custom_tooltip = fin_finnish_militarization_tt
-			tooltip = { 
-				add_country_modifier = {
-					name = fin_finnish_militarization_modifier
-					duration = 7300
-				}
-			}
-			hidden_effect = {
-				if = { 
-					limit = { 
-						3261 = { 
-							has_fort_building_trigger = yes 
-							country_or_non_sovereign_subject_holds = ROOT 
-						}
-					}
-					add_country_modifier = {
-						name = fin_finnish_militarization_modifier
-						duration = 7300
-					}
-				} 
+			add_country_modifier = {
+				name = fin_finnish_militarization_modifier
+				duration = 7300
 			}
 		}
 	}
 
 
-        fin_tar_trade = {
+    fin_tar_trade = {
 		icon = toulon_dockyards
 		required_missions = { fin_neva }
 		position = 4
@@ -631,7 +579,7 @@ fin_handle_the_sami = {
 				add_manufactory = yes 
 				add_province_modifier = {
 					name = fin_commercial_tar_modifier
-					duration = 9125 
+					duration = -1
 				}
 			}
 		}
@@ -693,7 +641,7 @@ fin_missions_4 = {
 		}
 		effect = { 
 			custom_tooltip = fin_every_adm_advisor_grants_5_tax_per_level
-			set_country_flag = fin_fine_finances_flag
+			set_country_flag = get_tax_from_adm_advisors_flag
 			if = { 
 				limit = { 
 					NOT = { num_of_ruler_traits = { amount = 3 } }
@@ -746,8 +694,8 @@ fin_missions_4 = {
 				change_innovativeness = 2 
 			}
 			else = { add_adm_power = 50 } 
-			if = { 
-				limit = { 
+			if = {
+				limit = {
 					has_dlc = "Rights of Man" 
 					NOT = { num_of_ruler_traits = { amount = 3 } }
 				} 
@@ -759,6 +707,11 @@ fin_missions_4 = {
 					amount = 2
 				}
 			} 
+			create_general = {	#bertus mod
+				tradition = 100
+				add_shock = 1
+				add_fire = 1
+			}
 		}
 	}
 }

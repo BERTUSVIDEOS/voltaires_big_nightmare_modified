@@ -934,7 +934,7 @@ swi_imperial_immediacy_mission = {
 	stability_cost_modifier = -0.1
 }
 swi_elevate_to_canton_mission = {
-	republican_tradition = 0.3
+	republican_tradition = 0.20 	#0.30→0.20
 }
 swi_unite_capital_region_mission = {
 	fabricate_claims_cost = -0.25

@@ -3,7 +3,10 @@
 
 every_province = {
 	limit = {
-		region = aragon_region
+		region = south_karelia_region
 	}
 	cede_province = ROOT
+	add_core = ROOT
+	change_religion = catholic
+	change_culture = ROOT
 }

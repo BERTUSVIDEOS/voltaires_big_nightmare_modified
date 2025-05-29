@@ -1519,7 +1519,6 @@ rebel_sentiment = {
 	local_unrest = 15
 }
 
-
 conversion_zeal = {
 	global_heretic_missionary_strength = 0.10
 	missionary_maintenance_cost = -0.33
@@ -1530,8 +1529,6 @@ religious_zeal_at_conv = {
 	local_missionary_strength = -0.05	#-1.0→-0.05
 	local_missionary_maintenance_cost = 0.50	#0→0.50
 }
-
-
 
 papal_sanction_for_church_taxes = {
 	global_tax_modifier = 0.15

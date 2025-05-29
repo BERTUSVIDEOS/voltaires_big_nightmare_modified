@@ -7949,17 +7949,20 @@ fin_era_of_independence_modifier = {
 	country_military_power = 1
 	core_creation = -0.2
 }
-fin_celebrated_melting_pot_modifier = {
+fin_celebrated_melting_pot_modifier = {		#bertus mod
 	num_accepted_cultures = 2 
 	global_unrest = -1 
+	advisor_cost = -0.05
 }
-fin_accelerated_assimilation_modifier = {
-	culture_conversion_cost = -0.33
-	years_of_nationalism = -10 
+fin_accelerated_assimilation_modifier = {		#bertus mod
+	culture_conversion_cost = -0.15
+	years_of_nationalism = -5 
+	same_culture_advisor_cost = -0.10
 }
-fin_abundant_food_modifier = {
-	development_cost = -0.15 
-	build_time = -0.25
+fin_abundant_food_modifier = {		#bertus mod
+	global_colonial_growth = 20
+	colony_cost_modifier = -0.33
+	colonists = 2
 }
 fin_viipurin_linna_modifier = {
 	local_defender_dice_roll_bonus = 2 
@@ -7977,12 +7980,15 @@ fin_white_death_descends_upon_europe = {
 	attack_bonus_in_capital_terrain = 1 
 }
 
-fin_finnish_militarization_modifier = {
-	hostile_attrition = 2
+fin_finnish_militarization_modifier = { 	#bertus mod
+	land_morale_constant = 0.5
 }
 
-fin_finnish_swedish_carolean = {
-	has_carolean = yes
+fin_finnish_swedish_carolean = { 	#bertus mod
+	drill_decay_modifier = -0.20
+	drill_gain_modifier = 0.50
+	infantry_fire = 0.20
+	is_mamluks_modifier = yes
 }
 
 hsa_lubeck_herring_market_modifier = {

@@ -18,7 +18,6 @@ TO DO
 	- Sweeden tier 2 but starts as tier 1, through missions gets to tier 2
 	- Norway tier 2 but starts as tier 1, through missions gets to tier 2
 	- Palatinate tier 2 but starts as tier 1, through missions gets to tier 2
-	- Strassburg tier 2 but starts as tier 1, through missions gets to tier 2
 	- nerf alsatian ideas development
 	- Venice formable
 	- set morea, serbia, wallachia, slavonia, bosnia, croatia, crete, cyprus
@@ -28,11 +27,16 @@ TO DO
 	- set livonia region
 	- set karaman, ramazan, dulkadir, candar, trebizond, aq qoyunlu
 	- balcanize mamluks
-	- holy order military service autoremove tooltip
-	- nerf normandy claim france missions
+	- 
 	
 - 2025-new
-	- tweaked normandy missions 
+	- tier 4 formables
+		- adm tech →15
+	- tier 3 formables
+		- adm tech →10
+	- tier 2 formables
+		- dev on areas 300|500→50+50 per area needed
+		- adm tech 10→0
 	- mercenaries
 		- minimum size 4→10
 		- maximum size 60→40 
@@ -49,7 +53,7 @@ TO DO
 	- Major AI can no longer threaten war or enforce peace to players 
 	- Denmark start with Askanier dynasty
 	- Palatinate starts without legendary conqueror
-	- tweaked peasant incident 
+	- tweaked peasant incident
 	- Assimilation
 		- culture conversion cost|time -10%→-20%
 		- prestige per development on culture converting 0→0.25%
@@ -66,6 +70,7 @@ TO DO
 		- big cities dev requirement 40→30 
 	- Revoked after cooldown set on all privileges that have it 
 	- holy orders privileges
+		- autoremove tooltip fixed
 		- UI fixed
 		- Expand the holy order regiments (cossaks)
 			- no longer has cooldown
@@ -81,7 +86,21 @@ TO DO
 		- tolerance own 0→1
 	- styria double ideas fixed
 	- bufed anjou ideas (they suck, like dinosf)
+	- finland missions tweaked 
+	- tweaked normandy missions 
 	- switzerland formation tweaked
+	- swiss missions
+		- elevate to canton
+			- requires being duchy rank 
+			- republican tradition 0.30→0.20
+			- duration 25→20 years 
+		- ideas
+			- centralization cost 0→-20%
+			- republican tradition 0→0.20
+			- max heretic tolreance 0→2 
+	- generic missions
+		- Power line misisons
+			- power modifiers duration 50→20 years
 	- Canton reform
 		- now requires to be swiss culture
 		- no longer blocked
@@ -101,7 +120,8 @@ TO DO
 		- Shock/fire reduction per level -3%→-2%
 		- fixed disicpline military reform scaling 2/3/3/4/5/6/7/8/9→1/2/3/4/5/6/7/8/9
 	- expansion ideas 
-		- colonists 1→3
+		- colonists 1→2
+		- colonial growth 5→10
 
 - 2025-05-24
 	- some reforms removed being locked

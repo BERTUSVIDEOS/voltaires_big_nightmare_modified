@@ -404,12 +404,13 @@ vn_swi_missions_slot_3 = {
         required_missions = {  }
         trigger = {
             has_reform = canton_government
+            government_rank = 2     #bertus mod
         }
         effect = {
             add_republican_tradition = 10
 			add_country_modifier = {
 				name = "swi_elevate_to_canton_mission"
-				duration = 9125
+				duration = 7300
 			} 			
         }
     }

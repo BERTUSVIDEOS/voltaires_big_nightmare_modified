@@ -949,7 +949,6 @@ army_tradition = {
 	#allowed_samurai_fraction = 0.1	#0.1→0
 	yearly_army_professionalism = 0.01	#0→0.01
 	monthly_hussite_ecumene = -0.15
-	monthly_military_reform_power = 0.5	#0→0.5
 	monthly_militarized_society = 0.416					#bertus mod
 	monthly_prussian_militarized_society_1 = 0.416		#bertus mod
 	monthly_prussian_militarized_society_2 = 0.416		#bertus mod

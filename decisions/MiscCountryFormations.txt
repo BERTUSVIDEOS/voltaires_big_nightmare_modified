@@ -50,7 +50,6 @@ country_decisions = {
 			change_tag = GRE
 			on_change_tag_effect = yes
 			hidden_effect = { restore_country_name = yes }
-			remove_non_electors_emperors_from_empire_effect = yes
 			set_formable_tier = { tier = 3 }
 			set_capital = 2828
 			if = {
@@ -105,7 +104,7 @@ country_decisions = {
 					root = {
 						NOT = {
 							development_in_provinces = {
-								value = 500
+								value = 300
 								OR = {
 									area = eger_area
 									area = erz_area
@@ -120,11 +119,10 @@ country_decisions = {
 			}
 		}
 		allow = {
-			adm_tech = 10
 			is_at_war = no
 			781 = { owned_by = ROOT is_state = yes }	#Praha
 			development_in_provinces = {
-				value = 500
+				value = 300
 				OR = {
 					area = eger_area
 					area = erz_area
@@ -138,7 +136,6 @@ country_decisions = {
 			change_tag = BOH
 			on_change_tag_effect = yes
 			hidden_effect = { restore_country_name = yes }
-			remove_non_electors_emperors_from_empire_effect = yes
 			set_formable_tier = { tier = 2 }
 			set_capital = 781
 			if = {

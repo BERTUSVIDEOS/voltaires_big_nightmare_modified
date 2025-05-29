@@ -365,6 +365,7 @@ vn_expansion_missions = {
 	expand_country_mission = {
 		icon = mission_conquer_50_development
 		required_missions = { }
+		position = 1
 		trigger = {
 			if = {
 				limit = { government_rank = 5 }
@@ -410,11 +411,10 @@ vn_expansion_missions = {
 				}
 			}
 		}
-		position = 1
 		effect = {
 			tooltip = {
 				capital_scope = {
-					area = {
+					every_province_in_state = {
 						add_province_modifier = {
 							name = "growth_of_capital"
 							duration = -1
@@ -524,7 +524,7 @@ vn_titular_missions = {
 			add_prestige_or_monarch_power = { amount = 5 } 
 			add_country_modifier = {
 				name = "sizeable_state_mission"
-				duration = 18250
+				duration = 7300
 			}
 			add_country_modifier = {
 				name = "sizeable_state_mission2"
@@ -544,7 +544,7 @@ vn_titular_missions = {
 			add_prestige_or_monarch_power = { amount = 15 } 
 			add_country_modifier = {
 				name = "regional_power_mission"
-				duration = 18250
+				duration = 7300
 			}
 			if = {
 				limit = {
@@ -573,7 +573,7 @@ vn_titular_missions = {
 			add_prestige_or_monarch_power = { amount = 25 } 
 			add_country_modifier = {
 				name = "major_power_mission"
-				duration = 18250
+				duration = 7300
 			}
 			if = {
 				limit = {
@@ -602,7 +602,7 @@ vn_titular_missions = {
 			add_prestige_or_monarch_power = { amount = 50 } 
 			add_country_modifier = {
 				name = "hegemon_mission"
-				duration = 18250
+				duration = 7300
 			}
 			if = {
 				limit = {

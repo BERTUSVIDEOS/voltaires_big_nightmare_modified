@@ -22,7 +22,7 @@ country_decisions = {
 					root = {
 						NOT = {
 							development_in_provinces = {
-								value = 500
+								value = 450
 								region = silesia_region
 							}
 						}
@@ -35,7 +35,7 @@ country_decisions = {
 			is_free_or_tributary_trigger = yes
 			owns_core_province = 822 #Wroclaw
 			development_in_provinces = {
-				value = 500
+				value = 450
 				region = silesia_region
 			}
 			NOT = { exists = SIL }

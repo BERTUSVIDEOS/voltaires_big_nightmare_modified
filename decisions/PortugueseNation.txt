@@ -21,7 +21,7 @@ country_decisions = {
 					root = {
 						NOT = {
 							development_in_provinces = {
-								value = 500
+								value = 400
 								region = portugal_region
 							}
 						}
@@ -37,7 +37,7 @@ country_decisions = {
 			is_at_war = no
 			owns_core_province = 1135 	#lisboa
 			development_in_provinces = {
-				value = 500
+				value = 400
 				region = portugal_region
 			}
 		}

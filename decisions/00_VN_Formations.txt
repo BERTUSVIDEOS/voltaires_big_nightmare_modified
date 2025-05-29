@@ -54,7 +54,6 @@ country_decisions = {
 			change_tag = MGF
 			on_change_tag_effect = yes
 			hidden_effect = { restore_country_name = yes }
-			remove_non_electors_emperors_from_empire_effect = yes
 			set_formable_tier = { tier = 3 }
 			add_country_modifier = {
 				name = "centralization_modifier"
@@ -98,10 +97,6 @@ country_decisions = {
 		}
 		ai_will_do = {
 			factor = 1
-			modifier = {
-				factor = 0
-				NOT = { adm_tech = 10 }
-			}
 		}
 		ai_importance = 100
 	}
@@ -136,7 +131,7 @@ country_decisions = {
 					root = {
 						NOT = {
 							development_in_provinces = {
-								value = 500
+								value = 350
 								OR = {
 									area = savoy_area
 									area = forez_area
@@ -156,7 +151,7 @@ country_decisions = {
 			is_at_war = no
 			owns_core_province = 989 #Arles
 			development_in_provinces = {
-				value = 500
+				value = 350
 				OR = {
 					area = savoy_area
 					area = forez_area
@@ -299,7 +294,7 @@ country_decisions = {
 					root = {
 						NOT = {
 							development_in_provinces = {
-								value = 500
+								value = 350
 								OR = {
 									area = nassau_area
 									area = hessesouth_area
@@ -315,13 +310,12 @@ country_decisions = {
 			}
 		}
 		allow = {
-			adm_tech = 10
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
 			is_nomad = no
 			owns_core_province = 2523 #wurzburg
 			development_in_provinces = {
-				value = 500
+				value = 350
 				OR = {
 					area = nassau_area
 					area = hessesouth_area
@@ -409,7 +403,7 @@ country_decisions = {
 					root = {
 						NOT = {
 							development_in_provinces = {
-								value = 500
+								value = 350
 								OR = {
 									area = milan_area
 									area = pavia_area
@@ -425,12 +419,11 @@ country_decisions = {
 			}
 		}
 		allow = {
-			adm_tech = 10
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
 			owns_core_province = 1818 #milano
 			development_in_provinces = {
-				value = 500
+				value = 350
 				OR = {
 					area = milan_area
 					area = pavia_area
@@ -534,7 +527,7 @@ country_decisions = {
 					root = {
 						NOT = {
 							development_in_provinces  = {
-								value = 500
+								value = 300
 								OR = {
 									area = messina_area
 									area = syracuse_area
@@ -549,14 +542,13 @@ country_decisions = {
 			}
 		}
 		allow = {
-			adm_tech = 10
 			is_free_or_tributary_trigger = yes
 			NOT = { exists = SIC }
 			is_at_war = no
 			is_nomad = no
 			owns_core_province = 2041 #palermo
 			development_in_provinces  = {
-				value = 500
+				value = 300
 				OR = {
 					area = messina_area
 					area = syracuse_area
@@ -569,7 +561,6 @@ country_decisions = {
 		effect = {
 			change_tag = SIC
 			on_change_tag_effect = yes
-			remove_non_electors_emperors_from_empire_effect = yes
 			hidden_effect = { restore_country_name = yes }
 			set_formable_tier = { tier = 2 }
 			if = {
@@ -637,7 +628,7 @@ country_decisions = {
 					root = {
 						NOT = {
 							development_in_provinces = {
-								value = 500
+								value = 300
 								OR = {
 									area = ferrara_area
 									area = cesena_area
@@ -655,7 +646,7 @@ country_decisions = {
 			is_at_war = no
 			owns_core_province = 1048 #ravenna
 			development_in_provinces = {
-				value = 500
+				value = 300
 				OR = {
 					area = ferrara_area
 					area = cesena_area
@@ -728,7 +719,7 @@ country_decisions = {
 					root = {
 						NOT = {
 							development_in_provinces = {
-								value = 300
+								value = 200
 								OR = {
 									area = antwerp_area
 									area = liege_area
@@ -741,12 +732,11 @@ country_decisions = {
 			}
 		}
 		allow = {
-			adm_tech = 10
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
 			owns_core_province = 930 #brussels
 			development_in_provinces = {
-				value = 300
+				value = 200
 				OR = {
 					area = antwerp_area
 					area = liege_area
@@ -758,7 +748,6 @@ country_decisions = {
 			change_tag = BGU
 			on_change_tag_effect = yes
 			hidden_effect = { restore_country_name = yes }
-			remove_non_electors_emperors_from_empire_effect = yes
 			set_formable_tier = { tier = 2 }
 			add_country_modifier = {
 				name = "centralization_modifier"
@@ -769,6 +758,7 @@ country_decisions = {
 				limit = { has_custom_ideas = no NOT = { has_idea_group = BGU_ideas }}
 				country_event = { id = ideagroups.1 } #Swap Ideas
 			}
+			country_event = { id = bertus_events.0006 } 	#gov change?
 			if = {
 				limit = {
 					NOT = { government_rank = 3 }
@@ -810,7 +800,7 @@ country_decisions = {
 					root = {
 						NOT = {
 							development_in_provinces = {
-								value = 500
+								value = 300
 								OR = {
 									area = carniola_area
 									area = sannmark_area
@@ -825,11 +815,10 @@ country_decisions = {
 			}
 		}
 		allow = {
-			adm_tech = 10
 			is_at_war = no
 			owns_core_province = 958 #ljubljana
 			development_in_provinces = {
-				value = 500
+				value = 300
 				OR = {
 					area = carniola_area
 					area = sannmark_area
@@ -843,7 +832,6 @@ country_decisions = {
 			change_tag = SLV
 			on_change_tag_effect = yes
 			hidden_effect = { restore_country_name = yes }
-			remove_non_electors_emperors_from_empire_effect = yes
 			set_formable_tier = { tier = 2 }
 			add_country_modifier = {
 				name = "centralization_modifier"
@@ -913,7 +901,6 @@ country_decisions = {
 			change_tag = SGC
 			on_change_tag_effect = yes
 			hidden_effect = { restore_country_name = yes }
-			remove_non_electors_emperors_from_empire_effect = yes
 			set_formable_tier = { tier = 3 }
 			if = {
 				limit = { has_dlc = "Rights of Man" }
@@ -998,7 +985,6 @@ country_decisions = {
 			change_tag = NGC
 			on_change_tag_effect = yes
 			hidden_effect = { restore_country_name = yes }
-			remove_non_electors_emperors_from_empire_effect = yes
 			set_formable_tier = { tier = 3 }
 			if = {
 				limit = { has_dlc = "Rights of Man" }
@@ -1083,7 +1069,6 @@ country_decisions = {
 			change_tag = CGC
 			on_change_tag_effect = yes
 			hidden_effect = { restore_country_name = yes }
-			remove_non_electors_emperors_from_empire_effect = yes
 			set_formable_tier = { tier = 3 }
 			if = {
 				limit = { has_dlc = "Rights of Man" }
@@ -1251,7 +1236,7 @@ country_decisions = {
 					root = {
 						NOT = {
 							development_in_provinces = {
-								value = 500
+								value = 250
 								OR = {
 									area = kiel_area
 									area = holstein_area
@@ -1270,7 +1255,7 @@ country_decisions = {
 			NOT = { exists = SHL }
 			owns_core_province = 1084 #Hamburg
 			development_in_provinces = {
-				value = 500
+				value = 250
 				OR = {
 					area = kiel_area
 					area = holstein_area
@@ -1342,7 +1327,7 @@ country_decisions = {
 					root = {
 						NOT = {
 							development_in_provinces = {
-								value = 500
+								value = 300
 								OR = {
 									area = pfalzwest_area
 									area = pfalzeast_area
@@ -1362,7 +1347,7 @@ country_decisions = {
 			NOT = { exists = PAL }
 			owns_core_province = 2962 #worms
 			development_in_provinces = {
-				value = 500
+				value = 300
 				OR = {
 					area = pfalzwest_area
 					area = pfalzeast_area
@@ -1434,7 +1419,7 @@ country_decisions = {
 					root = {
 						NOT = {
 							development_in_provinces = {
-								value = 300
+								value = 200
 								OR = {
 									area = brunswick_area
 									area = calenberg_area	
@@ -1453,7 +1438,7 @@ country_decisions = {
 			NOT = { exists = BRU }
 			owns_core_province = 2794 #brunswick
 			development_in_provinces = {
-				value = 300
+				value = 200
 				OR = {
 					area = brunswick_area
 					area = calenberg_area	
@@ -1513,7 +1498,7 @@ country_decisions = {
 					root = {
 						NOT = {
 							development_in_provinces = {
-								value = 500
+								value = 450
 								region = silesia_region
 							}
 						}
@@ -1527,7 +1512,7 @@ country_decisions = {
 			NOT = { exists = SIL }
 			owns_core_province = 822 #wroclaw
 			development_in_provinces = {
-				value = 500
+				value = 450
 				region = silesia_region
 			}
 		}
@@ -1590,7 +1575,7 @@ country_decisions = {
 					root = {
 						NOT = {
 							development_in_provinces = {
-								value = 300
+								value = 200
 								OR = {
 									area = hagenau_area
 									area = nordgau_area
@@ -1609,7 +1594,7 @@ country_decisions = {
 			NOT = { exists = ALS }
 			owns_core_province = 1959 #strasbourg
 			development_in_provinces = {
-				value = 300
+				value = 200
 				OR = {
 					area = hagenau_area
 					area = nordgau_area
@@ -1639,6 +1624,7 @@ country_decisions = {
 				country_event = { id = ideagroups.1 } #Swap Ideas
 			}
 			add_prestige = 10
+			country_event = { id = bertus_events.0006 } 	#gov change?
 			if = {
 				limit = {
 					NOT = { government_rank = 3 }
@@ -1690,6 +1676,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			adm_tech = 10
 			is_at_war = no
 			owns_core_province = 2324		# Bordeaux
 			num_of_owned_provinces_with = {
@@ -1703,7 +1690,6 @@ country_decisions = {
 			on_change_tag_effect = yes
 			hidden_effect = { restore_country_name = yes }
 			swap_non_generic_missions = yes
-			remove_non_electors_emperors_from_empire_effect = yes
 			set_formable_tier = { tier = 3 }
 			if = {
 				limit = {
@@ -1764,7 +1750,7 @@ country_decisions = {
 					root = {
 						NOT = {
 							development_in_provinces = {
-								value = 300
+								value = 200
 								OR = {
 									area = walessouth_area
 									area = montgomery_area
@@ -1777,12 +1763,11 @@ country_decisions = {
 			}
 		}
 		allow = {
-			adm_tech = 10
 			is_at_war = no
 			NOT = { exists = WLS }
 			owns_core_province = 1067 #glamorgan
 			development_in_provinces = {
-				value = 300
+				value = 200
 				OR = {
 					area = walessouth_area
 					area = montgomery_area
@@ -1794,7 +1779,6 @@ country_decisions = {
 			change_tag = WLS
 			on_change_tag_effect = yes
 			hidden_effect = { restore_country_name = yes }
-			remove_non_electors_emperors_from_empire_effect = yes
 			set_formable_tier = { tier = 2 }
 			add_country_modifier = {
 				name = "centralization_modifier"
@@ -1849,7 +1833,6 @@ country_decisions = {
 			}
 		}
 		allow = {
-			adm_tech = 10
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
 			is_nomad = no
@@ -1867,7 +1850,6 @@ country_decisions = {
 			on_change_tag_effect = yes
 			hidden_effect = { restore_country_name = yes }
 			swap_non_generic_missions = yes
-			remove_non_electors_emperors_from_empire_effect = yes
 			set_formable_tier = { tier = 2 }
 			add_country_modifier = {
 				name = "centralization_modifier"
@@ -1910,7 +1892,7 @@ country_decisions = {
 					root = {
 						NOT = {
 							development_in_provinces = {
-								value = 500
+								value = 350
 								region = moldavia_region
 							}
 						}
@@ -1919,14 +1901,13 @@ country_decisions = {
 			}
 		}
 		allow = {
-			adm_tech = 10
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
 			is_nomad = no
 			NOT = { exists = MOL }
 			owns_core_province = 5630 #bacau
 			development_in_provinces = {
-				value = 500
+				value = 350
 				region = moldavia_region
 			}
 		}
@@ -1940,7 +1921,6 @@ country_decisions = {
 				change_government = monarchy
 				add_government_reform = feudalism_reform
 			}
-			remove_non_electors_emperors_from_empire_effect = yes
 			add_country_modifier = {
 				name = "centralization_modifier"
 				duration = 7300
@@ -1992,7 +1972,7 @@ country_decisions = {
 					root = {
 						NOT = {
 							development_in_provinces = {
-								value = 500
+								value = 250
 								OR = {
 									area = ilfov_area
 									area = buzau_area
@@ -2006,11 +1986,10 @@ country_decisions = {
 			}
 		}
 		allow = {
-			adm_tech = 10
 			is_at_war = no
 			owns_core_province = 5685 #tirgoviste
 			development_in_provinces = {
-				value = 500
+				value = 250
 				OR = {
 					area = ilfov_area
 					area = buzau_area
@@ -2029,7 +2008,6 @@ country_decisions = {
 				change_government = monarchy
 				add_government_reform = feudalism_reform
 			}
-			remove_non_electors_emperors_from_empire_effect = yes
 			add_country_modifier = {
 				name = "centralization_modifier"
 				duration = 7300
@@ -2076,7 +2054,7 @@ country_decisions = {
 					root = {
 						NOT = {
 							development_in_provinces = {
-								value = 500
+								value = 300
 								OR = {
 									area = branicevo_area
 									area = rashka_area
@@ -2101,7 +2079,7 @@ country_decisions = {
 			NOT = { exists = SER }
 			owns_core_province = 5530 	#smederevo
 			development_in_provinces = {
-				value = 500
+				value = 300
 				OR = {
 					area = branicevo_area
 					area = rashka_area
@@ -2116,7 +2094,6 @@ country_decisions = {
 			on_change_tag_effect = yes
 			hidden_effect = { restore_country_name = yes }
 			swap_non_generic_missions = yes
-			remove_non_electors_emperors_from_empire_effect = yes
 			set_formable_tier = { tier = 2 }
 			add_country_modifier = {
 				name = "centralization_modifier"
@@ -2171,7 +2148,6 @@ country_decisions = {
 			}
 		}
 		allow = {	
-			adm_tech = 10
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
 			is_nomad = no
@@ -2195,7 +2171,6 @@ country_decisions = {
 				change_government = monarchy
 				add_government_reform = feudalism_reform
 			}
-			remove_non_electors_emperors_from_empire_effect = yes
 			add_country_modifier = {
 				name = "centralization_modifier"
 				duration = 7300
@@ -2237,7 +2212,6 @@ country_decisions = {
 			}
 		}
 		allow = {
-			adm_tech = 10
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
 			is_nomad = no
@@ -2250,7 +2224,6 @@ country_decisions = {
 			change_tag = MXD
 			on_change_tag_effect = yes
 			hidden_effect = { restore_country_name = yes }
-			remove_non_electors_emperors_from_empire_effect = yes
 			set_formable_tier = { tier = 2 }
 			add_country_modifier = {
 				name = "centralization_modifier"
@@ -2296,6 +2269,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			adm_tech = 10
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
 			is_nomad = no
@@ -2323,7 +2297,6 @@ country_decisions = {
 			on_change_tag_effect = yes
 			hidden_effect = { restore_country_name = yes }
 			swap_non_generic_missions = yes
-			remove_non_electors_emperors_from_empire_effect = yes
 			set_formable_tier = { tier = 3 }
 			add_country_modifier = {
 				name = "centralization_modifier"
@@ -2371,7 +2344,7 @@ country_decisions = {
 					root = {
 						NOT = {
 							development_in_provinces = {
-								value = 500
+								value = 300
 								OR = {
 									area = dalmatia_area
 									area = split_area
@@ -2386,13 +2359,12 @@ country_decisions = {
 			}
 		}
 		allow = {
-			adm_tech = 10
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
 			NOT = { exists = DLM }
 			owns_core_province = 507 #split
 			development_in_provinces = {
-				value = 500
+				value = 300
 				OR = {
 					area = dalmatia_area
 					area = split_area
@@ -2455,7 +2427,6 @@ country_decisions = {
 			set_formable_tier = { tier = 2 }
 			custom_tooltip = normand_english_tooltip
 			hidden_effect = {
-				remove_non_electors_emperors_from_empire_effect = yes
 				overlord = { free_vassal = NRM }
 				ASE = {
 					every_subject_country = {
@@ -2609,7 +2580,6 @@ country_decisions = {
 			on_change_tag_effect = yes
 			hidden_effect = { restore_country_name = yes }
 			swap_non_generic_missions = yes
-			remove_non_electors_emperors_from_empire_effect = yes
 			set_formable_tier = { tier = 3 }
 			if = {
 				limit = { government = native }
@@ -2667,6 +2637,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			adm_tech = 10
 			is_at_war = no
 			owns_core_province = 586 #Tunis
 			num_of_owned_provinces_with = {
@@ -2680,7 +2651,6 @@ country_decisions = {
 			on_change_tag_effect = yes
 			hidden_effect = { restore_country_name = yes }
 			swap_non_generic_missions = yes
-			remove_non_electors_emperors_from_empire_effect = yes
 			set_formable_tier = { tier = 3 }
 			if = {
 				limit = { government = tribal }
@@ -2754,7 +2724,6 @@ country_decisions = {
 			}
 		}
 		allow = {
-			adm_tech = 10
 			is_free_or_tributary_trigger = yes
 			is_nomad = no
 			is_at_war = no
@@ -2769,7 +2738,6 @@ country_decisions = {
 			on_change_tag_effect = yes
 			hidden_effect = { restore_country_name = yes }
 			set_capital = 6301
-			remove_non_electors_emperors_from_empire_effect = yes
 			set_formable_tier = { tier = 2 }
 			if = {
 				limit = {
@@ -2837,7 +2805,6 @@ country_decisions = {
 			}
 		}
 		allow = {
-			adm_tech = 10
 			is_free_or_tributary_trigger = yes
 			is_nomad = no
 			is_at_war = no
@@ -2852,7 +2819,6 @@ country_decisions = {
 			on_change_tag_effect = yes
 			hidden_effect = { restore_country_name = yes }
 			set_capital = 3065
-			remove_non_electors_emperors_from_empire_effect = yes
 			set_formable_tier = { tier = 2 }
 			if = {
 				limit = {
@@ -2925,6 +2891,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			adm_tech = 15
 			NOT = { exists = ASY }
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
@@ -2947,7 +2914,6 @@ country_decisions = {
 			hidden_effect = { restore_country_name = yes }
 			swap_non_generic_missions = yes
 			set_capital = 6330
-			remove_non_electors_emperors_from_empire_effect = yes
 			set_formable_tier = { tier = 4 }
 			if = {
 				limit = {
@@ -3002,7 +2968,6 @@ country_decisions = {
 			}
 		}
 		allow = {
-			adm_tech = 10
 			is_free_or_tributary_trigger = yes
 			is_nomad = no
 			is_at_war = no
@@ -3015,7 +2980,6 @@ country_decisions = {
 			change_tag = CIR
 			on_change_tag_effect = yes
 			hidden_effect = { restore_country_name = yes }
-			remove_non_electors_emperors_from_empire_effect = yes
 			set_formable_tier = { tier = 2 }
 			if = {
 				limit = {
@@ -3067,7 +3031,6 @@ country_decisions = {
 			}
 		}
 		allow = {
-			adm_tech = 10
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
 			owns_core_province = 3252 #Turku
@@ -3085,7 +3048,6 @@ country_decisions = {
 			change_tag = FIN
 			on_change_tag_effect = yes
 			hidden_effect = { restore_country_name = yes }
-			remove_non_electors_emperors_from_empire_effect = yes
 			set_formable_tier = { tier = 2 }
 			if = {
 				limit = {
@@ -3141,7 +3103,6 @@ country_decisions = {
 			}
 		}
 		allow = {
-			adm_tech = 10
 			is_at_war = no
 			owns_core_province = 5889 #Reval
 			owns_core_province = 5875 #Tartu
@@ -3159,7 +3120,6 @@ country_decisions = {
 			change_tag = EST
 			on_change_tag_effect = yes
 			hidden_effect = { restore_country_name = yes }
-			remove_non_electors_emperors_from_empire_effect = yes
 			set_formable_tier = { tier = 2 }
 			if = {
 				limit = {
@@ -3216,7 +3176,6 @@ country_decisions = {
 			}
 		}
 		allow = {
-			adm_tech = 10
 			is_free_or_tributary_trigger = yes
 			is_nomad = no
 			is_at_war = no
@@ -3237,7 +3196,6 @@ country_decisions = {
 			change_tag = LTG
 			on_change_tag_effect = yes
 			hidden_effect = { restore_country_name = yes }
-			remove_non_electors_emperors_from_empire_effect = yes
 			set_formable_tier = { tier = 2 }
 			if = {
 				limit = {
@@ -3297,7 +3255,6 @@ country_decisions = {
 			}
 		}
 		allow = {
-			adm_tech = 10
 			is_at_war = no
 			NOT = { exists = MAZ }
 			owns_core_province = 1138 #Warsaw
@@ -3315,7 +3272,6 @@ country_decisions = {
 			hidden_effect = { restore_country_name = yes }
 			swap_non_generic_missions = yes
 			set_capital = 1138
-			remove_non_electors_emperors_from_empire_effect = yes
 			set_formable_tier = { tier = 2 }
 			if = {
 				limit = {
@@ -3363,7 +3319,7 @@ country_decisions = {
 					root = {
 						NOT = {
 							development_in_provinces = {
-								value = 500
+								value = 300
 								OR = {
 									area = aosta_area
 									area = poirino_area
@@ -3378,11 +3334,10 @@ country_decisions = {
 			}
 		}
 		allow = {
-			adm_tech = 10
 			is_at_war = no
 			1009 = { owned_by = ROOT is_state = yes }	#Turin
 			development_in_provinces = {
-				value = 500
+				value = 300
 				OR = {
 					area = aosta_area
 					area = poirino_area
@@ -3443,7 +3398,7 @@ country_decisions = {
 					root = {
 						NOT = {
 							development_in_provinces = {
-								value = 300
+								value = 200
 								OR = {
 									area = raozhon_area
 									area = nantes_area
@@ -3461,7 +3416,7 @@ country_decisions = {
 			NOT = { exists = BRI }
 			2173 = { owned_by = ROOT is_state = yes }	#Nantes
 			development_in_provinces = {
-				value = 300
+				value = 200
 				OR = {
 					area = raozhon_area
 					area = nantes_area

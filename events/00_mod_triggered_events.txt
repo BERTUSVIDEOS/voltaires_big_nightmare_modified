@@ -1303,7 +1303,6 @@ country_event = {
 	picture = REFORM_eventPicture
 
 	is_triggered_only = yes
-	mean_time_to_happen = { days = 1 }
 
 	option = {
 		name = "mod_triggered_events.52.a"

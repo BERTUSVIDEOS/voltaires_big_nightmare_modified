@@ -5700,15 +5700,14 @@ FCM_ideas = {
     }
 }
 
-BGU_ideas = {
+BGU_ideas = {   #bertus mod
     start = {
-		innovativeness_gain = 0.50	#0→0.50
-        #monarch_diplomatic_power = 1   #1→0
-        technology_cost = -0.05
+		innovativeness_gain = 0.50
+        technology_cost = -0.075
     }
 
     bonus = {
-        development_cost = -0.1
+        development_cost = -0.10
     }
 
     trigger = {
@@ -5717,29 +5716,32 @@ BGU_ideas = {
     free = yes
 
     BGU_idea_1 = {
-        land_morale = 0.1
+        land_morale = 0.10
+        recover_army_morale_speed = 0.05
     }
     BGU_idea_2 = {
         yearly_absolutism = 0.5
-		republican_tradition = 0.30 	#0→0.30
+		republican_tradition = 0.30
     }
     BGU_idea_3 = {
         governing_capacity_modifier = 0.10
+        advisor_pool = 2
     }
     BGU_idea_4 = {
-        trade_efficiency = 0.1
+        trade_efficiency = 0.10
+        merchants = 1
     }
     BGU_idea_5 = {
-		own_territory_dice_roll_bonus = 1	#0→1
-		own_coast_naval_combat_bonus = 1	#0→1
-        #hostile_attrition = 1  #1→0
+		own_territory_dice_roll_bonus = 1
+		own_coast_naval_combat_bonus = 1
     }
     BGU_idea_6 = {
         manpower_recovery_speed = 0.15
+        infantry_cost = -0.10
     }
     BGU_idea_7 = {
         production_efficiency = 0.10
-		global_trade_goods_size_modifier = 0.1  #0→0.10
+		global_trade_goods_size_modifier = 0.10
     }
 }
 

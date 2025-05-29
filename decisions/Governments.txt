@@ -49,7 +49,7 @@ country_decisions = {
 		potential = {
 			has_reform = leading_clergy_reform
 			is_part_of_hre = yes
-			NOT = { government_rank = 5 }
+			NOT = { government_rank = 3 }
 		}
 		allow = {
 			is_subject = no
@@ -65,7 +65,7 @@ country_decisions = {
 			}
 		}
 		effect = {
-			set_government_rank = 5
+			set_government_rank = 3
 			add_papal_influence = -25
 		}
 		ai_will_do = {

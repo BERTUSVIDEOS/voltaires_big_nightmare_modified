@@ -24,7 +24,7 @@ country_decisions = {
 					root = {
 						NOT = {
 							development_in_provinces = {
-								value = 300
+								value = 200
 								OR = {
 									area = lerida_area
 									area = tarragona_area
@@ -36,12 +36,11 @@ country_decisions = {
 				}
 			}
 		}
-		allow = {
-			adm_tech = 10	
+		allow = {	
 			is_at_war = no
 			owns_core_province = 1955 	#barcelona
 			development_in_provinces = {
-				value = 300
+				value = 200
 				OR = {
 					area = lerida_area
 					area = tarragona_area
@@ -54,7 +53,6 @@ country_decisions = {
 			on_change_tag_effect = yes
 			hidden_effect = { restore_country_name = yes }
 			swap_non_generic_missions = yes
-			remove_non_electors_emperors_from_empire_effect = yes
 			set_formable_tier = { tier = 2 }
 			if = {
 				limit = {

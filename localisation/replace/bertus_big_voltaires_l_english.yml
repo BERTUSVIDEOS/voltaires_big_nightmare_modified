@@ -1,4 +1,12 @@
 ﻿l_english:
+ monthly_military_reform_power_gain:0 "Monthly Military Reform"
+ bertus_events.0007.t:0 "Direction of Our New Country"
+ bertus_events.0007.d:0 "Our newly found country of $COUNTRY$ requires guidance. We must reform our government to ones of the old world if we are to be taken seriously in the political arena - the question is: what model should we seek to strive for?"
+ bertus_events.0007.z:0 "Stay as we are"
+ bertus_events.0007.a:0 "Proclaim $MONARCH$ as our new monarch!"
+ bertus_events.0007.b:0 "Let us create a republic."
+ bertus_events.0007.c:0 "Theocrats formed a large part of our victory, and will form our senior membership."
+ fin_claim_stockholm_trade_node_tt:0 "Get a Permanent Claim on every Stockholm Trade Node province"
  subject_of_player_subject_bonus:0 "Subject of Player"
  RECRUIT_MINISTER_HOLY_ORDERS:0 "Recruited Leader: §Y$VAL$%§!"
  infantry_fire_modifier:0 "Infantry Fire"

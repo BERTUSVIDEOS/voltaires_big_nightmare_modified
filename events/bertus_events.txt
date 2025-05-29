@@ -1,5 +1,99 @@
 namespace = bertus_events
 
+country_event = {	#Show resourcess
+	id = bertus_events.0001
+	title = bertus_events.0001.t
+	desc = bertus_events.0001.desc
+	picture = DIPLOMACY_eventPicture
+			
+	is_triggered_only = yes
+	hidden = yes
+
+	immediate = {
+		set_variable = {which = current_treasury value = 0}
+		export_to_variable = {which = current_treasury value = treasury}
+		set_variable = {which = current_income value = 0}
+		export_to_variable = {which = current_income value = monthly_income}
+		set_variable = {which = current_balance value = 0}
+		export_to_variable = {which = current_balance value = trigger_value:current_income_balance}
+		set_variable = {which = current_loans value = 0}
+		export_to_variable = {which = current_loans value = trigger_value:num_of_loans}
+		set_variable = {which = current_troops value = 0}
+		export_to_variable = {which = current_troops value = army_size}
+		set_variable = {which = current_forcelimit value = 0}
+		export_to_variable = {which = current_forcelimit value = land_forcelimit}
+		set_variable = {which = current_mercs value = 0}
+		export_to_variable = {which = current_mercs value = trigger_value:num_of_mercenaries}
+		set_variable = {which = current_manpower value = 0}
+		set_variable = {which = max_manpower value = 0}
+		export_to_variable = {which = current_manpower value = manpower}
+		export_to_variable = {which = max_manpower value = max_manpower}
+		set_base_morale = yes
+		set_infantry_power = yes
+		set_cavalry_power = yes
+		set_artillery_power = yes
+		set_fire_shock_modifiers = yes		
+		set_variable = {which = current_morale_damage value = 0}
+		export_to_variable = {which = current_morale_damage value = modifier:morale_damage}
+		multiply_variable = {which = current_morale_damage value = 100}
+		set_variable = {which = current_morale_damage_received value = 0}
+		export_to_variable = {which = current_morale_damage_received value = modifier:morale_damage_received}
+		multiply_variable = {which = current_morale_damage_received value = 100}
+		set_variable = {which = current_infantry value = 0}
+		export_to_variable = {which = current_infantry value = trigger_value:num_of_infantry}
+		set_variable = {which = current_cavalry value = 0}
+		export_to_variable = {which = current_cavalry value = trigger_value:num_of_cavalry}
+		set_variable = {which = current_artillery value = 0}
+		export_to_variable = {which = current_artillery value = trigger_value:num_of_artillery}
+		set_base_discipline = yes
+		set_variable = {which = current_professionalism value = 0}
+		export_to_variable = {which = current_professionalism value = trigger_value:army_professionalism}
+		multiply_variable = {which = current_professionalism value = 100}
+		set_variable = {which = current_tech_cost value = 0}
+		export_to_variable = {which = current_tech_cost value = modifier:technology_cost}
+		multiply_variable = {which = current_tech_cost value = 100}
+		set_variable = {which = current_adm_power value = 0}
+		export_to_variable = {which = current_adm_power value = trigger_value:adm_power}
+		set_variable = {which = current_dip_power value = 0}
+		export_to_variable = {which = current_dip_power value = trigger_value:dip_power}
+		set_variable = {which = current_mil_power value = 0}
+		export_to_variable = {which = current_mil_power value = trigger_value:mil_power}
+	}
+	option = {	#
+		name = bertus_events.0001.a
+		FROM = {country_event = {id = bertus_events.0002}}		
+	}
+}
+country_event = {	#Spell Show resourcess
+	id = bertus_events.0002
+	title = bertus_events.0002.t
+	desc = bertus_events.0002.desc
+	picture = DIPLOMACY_eventPicture
+			
+	is_triggered_only = yes
+	
+	immediate = {
+		if = {
+			limit = { has_spy_network_from = { who = FROM value = 1 } }
+			custom_tooltip = "Is spying on us: YES"
+		}
+		else = {custom_tooltip = "Is spying on us: NO"}
+		custom_tooltip = show_enemy_treasury_tt
+		custom_tooltip = show_enemy_current_troops_tt
+		custom_tooltip = show_enemy_current_manpower_tt
+		custom_tooltip = show_enemy_current_damage_tt
+		custom_tooltip = show_enemy_current_damage_reduction_tt
+		custom_tooltip = show_enemy_current_infantry_tt
+		custom_tooltip = show_enemy_current_cavalry_tt
+		custom_tooltip = show_enemy_current_artillery_tt
+		custom_tooltip = show_enemy_current_discipline_tt
+		custom_tooltip = show_enemy_current_professionalism_tt
+		custom_tooltip = show_enemy_general_stats_tt
+	}
+	option = {	#
+		name = bertus_events.0002.a
+	}
+}
 province_event = {   #flatland gold
     id = bertus_events.0003
     title = bertus_events.1.title
@@ -247,114 +341,44 @@ country_event = {
         }
     }
 }
-country_event = {	#Show resourcess
-	id = bertus_events.0001
-	title = bertus_events.0001.t
-	desc = bertus_events.0001.desc
-	picture = DIPLOMACY_eventPicture
-			
-	is_triggered_only = yes
-	hidden = yes
 
-	immediate = {
-		set_variable = {which = current_treasury value = 0}
-		export_to_variable = {which = current_treasury value = treasury}
-		set_variable = {which = current_income value = 0}
-		export_to_variable = {which = current_income value = monthly_income}
-		set_variable = {which = current_balance value = 0}
-		export_to_variable = {which = current_balance value = trigger_value:current_income_balance}
-		set_variable = {which = current_loans value = 0}
-		export_to_variable = {which = current_loans value = trigger_value:num_of_loans}
-		set_variable = {which = current_troops value = 0}
-		export_to_variable = {which = current_troops value = army_size}
-		set_variable = {which = current_forcelimit value = 0}
-		export_to_variable = {which = current_forcelimit value = land_forcelimit}
-		set_variable = {which = current_mercs value = 0}
-		export_to_variable = {which = current_mercs value = trigger_value:num_of_mercenaries}
-		set_variable = {which = current_manpower value = 0}
-		set_variable = {which = max_manpower value = 0}
-		export_to_variable = {which = current_manpower value = manpower}
-		export_to_variable = {which = max_manpower value = max_manpower}
-		set_base_morale = yes
-		set_infantry_power = yes
-		set_cavalry_power = yes
-		set_artillery_power = yes
-		set_fire_shock_modifiers = yes		
-		set_variable = {which = current_morale_damage value = 0}
-		export_to_variable = {which = current_morale_damage value = modifier:morale_damage}
-		multiply_variable = {which = current_morale_damage value = 100}
-		set_variable = {which = current_morale_damage_received value = 0}
-		export_to_variable = {which = current_morale_damage_received value = modifier:morale_damage_received}
-		multiply_variable = {which = current_morale_damage_received value = 100}
-		set_variable = {which = current_infantry value = 0}
-		export_to_variable = {which = current_infantry value = trigger_value:num_of_infantry}
-		set_variable = {which = current_cavalry value = 0}
-		export_to_variable = {which = current_cavalry value = trigger_value:num_of_cavalry}
-		set_variable = {which = current_artillery value = 0}
-		export_to_variable = {which = current_artillery value = trigger_value:num_of_artillery}
-		set_base_discipline = yes
-		set_variable = {which = current_professionalism value = 0}
-		export_to_variable = {which = current_professionalism value = trigger_value:army_professionalism}
-		multiply_variable = {which = current_professionalism value = 100}
-		set_variable = {which = current_tech_cost value = 0}
-		export_to_variable = {which = current_tech_cost value = modifier:technology_cost}
-		multiply_variable = {which = current_tech_cost value = 100}
-		set_variable = {which = current_adm_power value = 0}
-		export_to_variable = {which = current_adm_power value = trigger_value:adm_power}
-		set_variable = {which = current_dip_power value = 0}
-		export_to_variable = {which = current_dip_power value = trigger_value:dip_power}
-		set_variable = {which = current_mil_power value = 0}
-		export_to_variable = {which = current_mil_power value = trigger_value:mil_power}
-	}
-	option = {	#
-		name = bertus_events.0001.a
-		FROM = {country_event = {id = bertus_events.0002}}		
-	}
-}
-country_event = {	#Spell Show resourcess
-	id = bertus_events.0002
-	title = bertus_events.0002.t
-	desc = bertus_events.0002.desc
-	picture = DIPLOMACY_eventPicture
-			
+country_event = {   #New Country Formed - default 
+    id = bertus_events.0007
+	title = bertus_events.0007.t
+	desc = bertus_events.0007.d
+	picture = STREET_SPEECH_eventPicture
+	
 	is_triggered_only = yes
 	
-	immediate = {
-		if = {
-			limit = { has_spy_network_from = { who = FROM value = 1 } }
-			custom_tooltip = "Is spying on us: YES"
-		}
-		else = {custom_tooltip = "Is spying on us: NO"}
-		custom_tooltip = show_enemy_treasury_tt
-		custom_tooltip = show_enemy_current_troops_tt
-		custom_tooltip = show_enemy_current_manpower_tt
-		custom_tooltip = show_enemy_current_damage_tt
-		custom_tooltip = show_enemy_current_damage_reduction_tt
-		custom_tooltip = show_enemy_current_infantry_tt
-		custom_tooltip = show_enemy_current_cavalry_tt
-		custom_tooltip = show_enemy_current_artillery_tt
-		custom_tooltip = show_enemy_current_discipline_tt
-		custom_tooltip = show_enemy_current_professionalism_tt
-		custom_tooltip = show_enemy_general_stats_tt
+	trigger = { }
+	
+	option = {		# nothing
+		name = "bertus_events.0007.z"
+		ai_chance = { factor = 75}
 	}
-	option = {	#
-		name = bertus_events.0002.a
+	option = {		# Monarchy
+		name = "bertus_events.0007.a"
+        trigger = { NOT = { government = monarchy } }
+		ai_chance = { factor = 75}
+
+		change_government = monarchy
+	}
+	option = {		# Republic
+		name = "bertus_events.0007.b"
+        trigger = { NOT = { government = republic } }
+		ai_chance = { factor = 30 }
+
+		change_government = republic
+	}
+	
+	option = {		# theocracy
+		name = "bertus_events.0007.c"
+        trigger = { NOT = { government = theocracy } }
+
+		change_government = theocracy
 	}
 }
-country_event = {
-    id = bertus_events.0003
-    title = bertus_events.0003.title
-    desc = bertus_events.0003.desc
-    picture = DHIMMI_ESTATE_eventPicture
 
-	is_triggered_only = yes
-
-	immediate = {
-	}
-    option = {
-        name = bertus_events.0003.a #
-    }
-}
 country_event = {   #GM menu boolean
     id = bertus_events.1000
     title = bertus_events.1000.title

@@ -1123,52 +1123,6 @@ molducal_ideas = {
     }
 }
 
-SWI_ideas = {
-    start = {
-        merc_maintenance_modifier = -0.15
-        infantry_power = 0.15
-    }
-    
-    bonus = {
-        discipline = 0.05
-    }
-    
-    trigger = {
-        OR = {
-            primary_culture = swiss
-            AND = {
-                primary_culture = arpitan
-                capital_scope = { superregion = switzerland_superregion }
-            }
-        }
-    }
-    free = yes
-    
-    swiss_mercenaries = {
-        mercenary_discipline = 0.05
-        mercenary_manpower = 0.5
-    }
-    swiss_tolerance = {
-        tolerance_heretic = 2
-    }
-    the_swiss_confederation = {
-        stability_cost_modifier = -0.1
-    }
-    alpine_defensiveness = {
-        fort_maintenance_modifier = -0.2
-        defensiveness = 0.25
-    }
-    oasis_of_peace_and_prosperity = {
-        development_cost = -0.1
-    }
-    haven_for_refugees = {
-        prestige = 0.5
-    }
-    clockwork = {
-        production_efficiency = 0.1
-    }
-}
-
 pruthenian_ideas = {
     start = {
         army_tradition = 0.5

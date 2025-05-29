@@ -6763,7 +6763,7 @@ estate_action_PATRONIZE_MAMLUK_FAMILIES_MAMLUKS = {
 	add_estate_influence_modifier = {
 		estate = estate_mamluks
 		desc = EST_VAL_MAMLUKS_RIGHTS
-		influence = 10
+		influence = 15
 		duration = 7300
 	}
 }

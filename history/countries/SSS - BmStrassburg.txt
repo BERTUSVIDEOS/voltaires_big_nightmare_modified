@@ -297,6 +297,7 @@ fixed_capital = 1959
 		dip = 4
 		mil = 4
 	}
+	capital = 1959
 	clear_scripted_personalities = yes
 	add_ruler_personality = conqueror_personality
 }

@@ -16,6 +16,7 @@ vn_geo_missions_slot_1 = {
         position = 2
 	    required_missions = { vn_geo_diminish_princes }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			if = {
 				limit = { has_dlc = "Dharma" }
 				reform_level = 4
@@ -61,6 +62,7 @@ vn_geo_missions_slot_1 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             kari_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -124,6 +126,7 @@ vn_geo_missions_slot_1 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             karin_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -167,6 +170,7 @@ vn_geo_missions_slot_1 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             polemonion_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -202,6 +206,7 @@ vn_geo_missions_slot_1 = {
 			province_id = 2233
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			owns_core_province = 2233
         }
         effect = {
@@ -227,6 +232,7 @@ vn_geo_missions_slot_1 = {
 			}
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             georgia_region = {
 				type = all
 				owned_by = ROOT
@@ -274,6 +280,7 @@ vn_geo_missions_slot_2 = {
         position = 1
         required_missions = {  }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             all_subject_country = {
 				NOT = { liberty_desire = 10 }
 				has_opinion = {
@@ -305,6 +312,7 @@ vn_geo_missions_slot_2 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             samtskhe_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -341,6 +349,7 @@ vn_geo_missions_slot_2 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             van_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -383,6 +392,7 @@ vn_geo_missions_slot_2 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             sasun_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -431,6 +441,7 @@ vn_geo_missions_slot_2 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             mosul_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -459,6 +470,7 @@ vn_geo_missions_slot_2 = {
         position = 7
         required_missions = { vn_geo_hymns_of_repentance }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			if = {
 				limit = { has_dlc = "Mandate of Heaven" }
 				OR = {
@@ -495,6 +507,7 @@ vn_geo_missions_slot_3 = {
 			province_id = 3621
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			3621 = {
 				owned_by = ROOT
 				is_core = ROOT
@@ -531,6 +544,7 @@ vn_geo_missions_slot_3 = {
 			province_id = 3621
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			3621 = {
 				owned_by = ROOT
 				has_trade_building_trigger = yes
@@ -575,6 +589,7 @@ vn_geo_missions_slot_3 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             maku_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -602,6 +617,7 @@ vn_geo_missions_slot_3 = {
         position = 6
         required_missions = {  }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             if = {
 				limit = { has_estate = estate_church }
 				estate_loyalty = {
@@ -636,6 +652,7 @@ vn_geo_missions_slot_3 = {
         position = 7
         required_missions = { vn_geo_hymns_of_repentance }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             university = 5
         }
         effect = {
@@ -667,6 +684,7 @@ vn_geo_missions_slot_4 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             kartli_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -701,6 +719,7 @@ vn_geo_missions_slot_4 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             hereti_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -757,6 +776,7 @@ vn_geo_missions_slot_4 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             ganja_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -809,6 +829,7 @@ vn_geo_missions_slot_4 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             gegham_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -841,6 +862,7 @@ vn_geo_missions_slot_4 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             shapsug_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -882,6 +904,7 @@ vn_geo_missions_slot_5 = {
         position = 1
         required_missions = {  }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             has_3_lv3_advisors_trigger = yes
         }
         effect = {
@@ -897,6 +920,7 @@ vn_geo_missions_slot_5 = {
         position = 2
         required_missions = { vn_geo_establish_the_darbazi }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			total_development = 750
 			monthly_income = 250
         }
@@ -920,6 +944,7 @@ vn_geo_missions_slot_5 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             shaki_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -958,6 +983,7 @@ vn_geo_missions_slot_5 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             lekia_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -978,6 +1004,7 @@ vn_geo_missions_slot_5 = {
         position = 5
         required_missions = {  }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             army_size_percentage = 0.75
 			any_country = {
 				war_with = ROOT
@@ -1025,6 +1052,7 @@ vn_geo_missions_slot_5 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             alania_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -1067,6 +1095,7 @@ vn_geo_missions_slot_5 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			chechnya_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT

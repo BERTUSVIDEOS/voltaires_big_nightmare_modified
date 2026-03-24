@@ -24,6 +24,7 @@ vn_atc_missions_slot_1_a = {
         position = 1
         required_missions = {  }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             if = {
                 limit = { exists = PAP }
                 reverse_has_opinion = {
@@ -60,6 +61,7 @@ vn_atc_missions_slot_1_a = {
             NOT = { religion = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             capital_scope = {
                 development = 12
                 religion = ROOT
@@ -84,6 +86,7 @@ vn_atc_missions_slot_1_a = {
         position = 5
         required_missions = { vn_atc_convert_capital }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             capital_scope = {
                 area_for_scope_province = {
                     type = all
@@ -123,6 +126,7 @@ vn_atc_missions_slot_2_a = {
         position = 2
         required_missions = { vn_atc_european_noble_class }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             navy_size_percentage = 1
             naval_reformer = 2
             navy_tradition = 25
@@ -143,6 +147,7 @@ vn_atc_missions_slot_2_a = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             cyprus_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -178,6 +183,7 @@ vn_atc_missions_slot_3_a = {
         position = 1
         required_missions = { }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             any_known_country = {
                 custom_trigger_tooltip = {
                     tooltip = vn_nav_european_influences.tt
@@ -209,6 +215,7 @@ vn_atc_missions_slot_3_a = {
             vn_atc_develop_holy_sites 
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             OR = {
                 AND = {
                     government = theocracy
@@ -248,6 +255,7 @@ vn_atc_missions_slot_3_a = {
         position = 4
         required_missions = { vn_atc_invite_holy_orders }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             capital_scope = {
                 development = 25
                 NOT = { num_free_building_slots = 1 }
@@ -266,6 +274,7 @@ vn_atc_missions_slot_3_a = {
         position = 5
         required_missions = { vn_atc_encourage_pilgrimages }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             capital_scope = {
                 region_for_scope_province = {
                     type = all
@@ -316,6 +325,7 @@ vn_atc_missions_slot_4_a = {
         position = 1
         required_missions = { }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             if = {
                 limit = { government = monarchy }
                 stability = 1
@@ -343,6 +353,7 @@ vn_atc_missions_slot_4_a = {
         position = 2
         required_missions = { vn_atc_safeguard_succession }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             num_of_owned_provinces_with = {
                 value = 5
                 OR = {
@@ -368,6 +379,7 @@ vn_atc_missions_slot_4_a = {
         position = 3
         required_missions = {  }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             num_of_owned_provinces_with = {
                 value = 6
                 has_fort_trigger = yes
@@ -387,6 +399,7 @@ vn_atc_missions_slot_4_a = {
         position = 4
         required_missions = { vn_atc_crusader_castles }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             cavalry_fraction = 0.25
             prestige = 40
             army_tradition = 40
@@ -439,6 +452,7 @@ vn_atc_missions_slot_5_a = {
             }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             idlib_area = {
                 type = all
                 owner = {
@@ -537,6 +551,7 @@ vn_atc_missions_slot_5_a = {
             }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             celesyria_area = {
                 type = all
                 owner = {
@@ -615,6 +630,7 @@ vn_atc_missions_slot_5_a = {
             }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             custom_trigger_tooltip = {
                 tooltip = vn_atc_reconquer_jerusalem.tt
                 OR = {
@@ -675,6 +691,7 @@ vn_atc_missions_slot_5_a = {
             }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             palestine_region = {
                 type = all
                 owner = {

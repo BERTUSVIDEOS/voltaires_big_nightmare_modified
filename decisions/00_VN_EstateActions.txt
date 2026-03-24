@@ -14,6 +14,7 @@ country_decisions = {
 			has_estate = estate_mamluks
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			has_not_any_estate_disaster_active = yes
 			estate_action_off_cooldown = {
 				estate_action = CONTRIBUTE_WARRIORS_MAMLUKS
@@ -70,6 +71,7 @@ country_decisions = {
 			has_estate = estate_mamluks
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			has_not_any_estate_disaster_active = yes
 			estate_action_off_cooldown = {
 				estate_action = RAISE_HOST_MAMLUKS
@@ -126,6 +128,7 @@ country_decisions = {
 			has_estate = estate_mamluks
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			has_not_any_estate_disaster_active = yes
 			estate_action_off_cooldown = {
 				estate_action = RECRUIT_MINISTER_MAMLUKS
@@ -160,6 +163,7 @@ country_decisions = {
 			has_estate = estate_mamluks
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			has_not_any_estate_disaster_active = yes
 			estate_action_off_cooldown = {
 				estate_action = PATRONIZE_MAMLUK_FAMILIES_MAMLUKS
@@ -224,6 +228,7 @@ country_decisions = {
 			has_estate = estate_holy_orders
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			has_not_any_estate_disaster_active = yes
 			estate_action_off_cooldown = {
 				estate_action = CONTRIBUTE_WARRIORS_HOLY_ORDERS
@@ -276,14 +281,15 @@ country_decisions = {
 		color = { 195 160 20 }
 		potential = {
 			has_enabled_estate_action = {
-				estate_action = RAISE_HOST_HOLY_ORDERS
+				estate_action = RAISE_COSSACK_HOST_HOLY_ORDERS
 			}
 			has_estate = estate_holy_orders
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			has_not_any_estate_disaster_active = yes
 			estate_action_off_cooldown = {
-				estate_action = RAISE_HOST_HOLY_ORDERS
+				estate_action = RAISE_COSSACK_HOST_HOLY_ORDERS
 				days = 3650
 			}
 			capital_scope = {
@@ -300,10 +306,10 @@ country_decisions = {
 		}
 		effect = {
 			set_estate_action_cooldown = {
-				estate_action = RAISE_HOST_HOLY_ORDERS
+				estate_action = RAISE_COSSACK_HOST_HOLY_ORDERS
 			}
 			estate_action = {
-				estate_action = RAISE_HOST_HOLY_ORDERS
+				estate_action = RAISE_COSSACK_HOST_HOLY_ORDERS
 			}
 			increase_estate_action_counter = {
 				estate = estate_holy_orders
@@ -337,6 +343,7 @@ country_decisions = {
 			has_estate = estate_holy_orders
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			has_not_any_estate_disaster_active = yes
 			estate_action_off_cooldown = {
 				estate_action = HEIR_KNIGHT_HOLY_ORDERS
@@ -388,6 +395,7 @@ country_decisions = {
 			has_estate = estate_holy_orders
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			has_not_any_estate_disaster_active = yes
 			estate_action_off_cooldown = {
 				estate_action = PROMOTE_KNIGHTLY_NOBILITY_HOLY_ORDERS

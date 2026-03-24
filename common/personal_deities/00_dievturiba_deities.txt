@@ -4,17 +4,8 @@ dievs = {
 	
 	potential = { religion = dievturiba }
 	sprite = 61	
-	ai_will_do = {
-		factor = 1	
-		modifier = {
-			factor = 2
-			personality = ai_militarist
-		}	
-		modifier = {
-			factor = 0.5
-			personality = ai_diplomat
-		}	
-	}
+	
+	ai_will_do = { factor = 1 }
 }
 
 mara = {
@@ -23,13 +14,8 @@ mara = {
 	
 	potential = { religion = dievturiba }
 	sprite = 62	
-	ai_will_do = {
-		factor = 1		
-		modifier = {
-			factor = 2
-			personality = ai_capitalist
-		}
-	}
+	
+	ai_will_do = { factor = 1 }
 }
 
 karta = {
@@ -38,13 +24,8 @@ karta = {
 	
 	potential = { religion = dievturiba }
 	sprite = 63	
-	ai_will_do = {
-		factor = 1	
-		modifier = {
-			factor = 2
-			personality = ai_diplomat
-		}
-	}
+	
+	ai_will_do = { factor = 1 }
 }
 
 udens = {
@@ -53,13 +34,8 @@ udens = {
 	
 	potential = { religion = dievturiba }
 	sprite = 64	
-	ai_will_do = {
-		factor = 1
-		modifier = {
-			factor = 2
-			personality = ai_capitalist
-		}
-	}
+	
+	ai_will_do = { factor = 1 }
 }
 
 juras = {
@@ -68,17 +44,8 @@ juras = {
 	
 	potential = { religion = dievturiba }
 	sprite = 65	
-	ai_will_do = {
-		factor = 1	
-		modifier = {
-			factor = 2
-			personality = ai_capitalist
-		}
-		modifier = {
-			factor = 0
-			primitives = yes
-		}
-	}
+	
+	ai_will_do = { factor = 1 }
 }
 
 upes = {
@@ -87,11 +54,6 @@ upes = {
 	
 	potential = { religion = dievturiba }
 	sprite = 66
-	ai_will_do = {
-		factor = 1	
-		modifier = {
-			factor = 2
-			personality = ai_colonialist
-		}
-	}
+	
+	ai_will_do = { factor = 1 }
 }

@@ -18,6 +18,7 @@ VN_circassian_missions_1 = {
 		provinces_to_highlight = {
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			army_size_percentage = 1
 			num_of_generals = 1
 		}
@@ -60,6 +61,7 @@ VN_circassian_missions_1 = {
 			culture_group = abkhazian_group
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			tag = CIR
 			NOT = {
 				any_province = {
@@ -135,6 +137,7 @@ VN_circassian_missions_1 = {
 			NOT = { owned_by = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			custom_trigger_tooltip = {
 				tooltip = mal_control_the_niger_river_ct
 				owns_core_province = 3702
@@ -207,6 +210,7 @@ VN_circassian_missions_1 = {
 			NOT = { owned_by = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			GEO = {
 				OR = {
 					exists = no
@@ -253,6 +257,7 @@ VN_circassian_missions_2 = {
 		position = 9
 		provinces_to_highlight = {}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			is_at_war = no
 			stability = 2
 			custom_trigger_tooltip = {
@@ -277,6 +282,7 @@ VN_circassian_missions_2 = {
 		provinces_to_highlight = {
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			OR = {
 				NOT = { has_estate = estate_church }
 				estate_loyalty = {
@@ -438,6 +444,7 @@ VN_circassian_missions_2 = {
 		position = 11
 		provinces_to_highlight = {}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			NOT = { average_home_autonomy = 25 }
 			NOT = { overextension_percentage = 0.01 }
 			custom_trigger_tooltip = {

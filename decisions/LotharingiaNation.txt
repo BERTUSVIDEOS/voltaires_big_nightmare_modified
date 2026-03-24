@@ -28,6 +28,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			adm_tech = 10
 			is_at_war = no
 			num_of_owned_provinces_with = {
@@ -46,12 +47,9 @@ country_decisions = {
 			}
 			change_tag = LOT
 			swap_non_generic_missions = yes
-			set_formable_tier = { tier = 3 }
-			if = {
-				limit = {
-					NOT = { government_rank = 4 }
-				}
-				set_government_rank = 4
+			set_formable_tier = {
+				tier = 3
+				gov_rank = 4
 			}
 			add_country_modifier = {
 				name = "centralization_modifier"

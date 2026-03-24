@@ -11,6 +11,7 @@ vn_buddhism_missions = {
 		icon = mission_buddhist_monk_praying
 		required_missions = { }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			if = {
                 limit = { has_dlc = "Common Sense" }
                 custom_trigger_tooltip = {
@@ -42,6 +43,7 @@ vn_buddhism_missions = {
 		icon = mission_restore_pagodas
 		required_missions = { vn_support_the_schools }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
             if = {
                 limit = { has_dlc = "Common Sense" }
                 custom_trigger_tooltip = {
@@ -66,6 +68,7 @@ vn_buddhism_missions = {
 		icon = mission_chakravarti
         required_missions = { }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
             if = {
                 limit = { has_dlc = "Common Sense" }
                 custom_trigger_tooltip = {

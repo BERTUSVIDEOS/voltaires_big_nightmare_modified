@@ -132,9 +132,7 @@ christian = {
 						duration = 7300
 					}
 				}
-				ai_will_do = {
-					factor = 1
-				}				
+				ai_will_do = { factor = 1 }	
 			}			
 			bless_monarch = {
 				cost = 50
@@ -152,9 +150,7 @@ christian = {
 						duration = 7300
 					}
 				}
-				ai_will_do = {
-					factor = 1
-				}
+				ai_will_do = { factor = 1 }
 			}
 			indulgence_for_sins = {
 				cost = 50
@@ -172,9 +168,7 @@ christian = {
 						duration = 7300
 					}
 				}
-				ai_will_do = {
-					factor = 1
-				}
+				ai_will_do = { factor = 1 }
 			}
 			local_saint = {
 				cost = 100
@@ -188,13 +182,7 @@ christian = {
 				effect = {
 					add_stability = 1
 				}
-				ai_will_do = {
-					factor = 1
-					modifier = {
-						factor = 2
-						NOT = { stability = 0 }
-					}
-				}
+				ai_will_do = { factor = 1 }
 			}
 			forgiveness_for_usury = {
 				cost = 50
@@ -211,13 +199,7 @@ christian = {
 						duration = 7300
 					}
 				}
-				ai_will_do = {
-					factor = 1
-					modifier = {
-						factor = 0
-						NOT = { num_of_loans = 1 }
-					}
-				}
+				ai_will_do = { factor = 1 }
 			}			
 			proclaim_holy_war = {
 				cost = 50
@@ -235,13 +217,7 @@ christian = {
 						duration = 7300
 					}
 				}
-				ai_will_do = {
-					factor = 1
-					modifier = {
-						factor = 0
-						manpower_percentage = 0.5
-					}
-				}
+				ai_will_do = { factor = 1 }
 			}
 			send_papal_legate = {
 				cost = 50
@@ -259,9 +235,7 @@ christian = {
 						duration = 7300
 					}
 				}
-				ai_will_do = {
-					factor = 1
-				}
+				ai_will_do = { factor = 1 }
 			}
 			sanction_commercial_monopoly = {
 				cost = 50
@@ -275,13 +249,7 @@ christian = {
 				effect = {
 					add_mercantilism = 1
 				}
-				ai_will_do = {
-					factor = 1
-					modifier = {
-						factor = 0
-						NOT = { has_idea_group = trade_ideas }
-					}
-				}
+				ai_will_do = { factor = 1 }
 			}
 			investigate_heresy = {
 				curia_treasury_cost = 500
@@ -298,9 +266,7 @@ christian = {
 					add_reform_desire = -0.05
 					add_reform_desire_scale = 0.5
 				}
-				ai_will_do = {
-					factor = 0
-				}
+				ai_will_do = { factor = 1 }
 			}		
 		}
 	}
@@ -360,9 +326,7 @@ christian = {
 						duration = 7300
 					}
 				}
-				ai_will_do = {
-					factor = 1
-				}				
+				ai_will_do = { factor = 1 }		
 			}			
 			bless_monarch = {
 				cost = 50
@@ -380,9 +344,7 @@ christian = {
 						duration = 7300
 					}
 				}
-				ai_will_do = {
-					factor = 1
-				}
+				ai_will_do = { factor = 1 }
 			}
 			indulgence_for_sins = {
 				cost = 50
@@ -402,9 +364,7 @@ christian = {
 						duration = 7300
 					}
 				}
-				ai_will_do = {
-					factor = 1
-				}
+				ai_will_do = { factor = 1 }
 			}
 			local_saint = {
 				cost = 100
@@ -418,13 +378,7 @@ christian = {
 				effect = {
 					add_stability = 1
 				}
-				ai_will_do = {
-					factor = 1
-					modifier = {
-						factor = 2
-						NOT = { stability = 0 }
-					}
-				}
+				ai_will_do = { factor = 1 }
 			}
 			forgiveness_for_usury = {
 				cost = 50
@@ -441,13 +395,7 @@ christian = {
 						duration = 7300
 					}
 				}
-				ai_will_do = {
-					factor = 1
-					modifier = {
-						factor = 0
-						NOT = { num_of_loans = 1 }
-					}
-				}
+				ai_will_do = { factor = 1 }
 			}			
 			proclaim_holy_war = {
 				cost = 50
@@ -465,13 +413,7 @@ christian = {
 						duration = 7300
 					}
 				}
-				ai_will_do = {
-					factor = 1
-					modifier = {
-						factor = 0
-						manpower_percentage = 0.5
-					}
-				}
+				ai_will_do = { factor = 1 }
 			}
 			send_papal_legate = {
 				cost = 50
@@ -489,9 +431,7 @@ christian = {
 						duration = 7300
 					}
 				}
-				ai_will_do = {
-					factor = 1
-				}
+				ai_will_do = { factor = 1 }
 			}	
 			sanction_commercial_monopoly = {
 				cost = 50
@@ -505,13 +445,7 @@ christian = {
 				effect = {
 					add_mercantilism = 1
 				}
-				ai_will_do = {
-					factor = 1
-					modifier = {
-						factor = 0
-						NOT = { has_idea_group = trade_ideas }
-					}
-				}
+				ai_will_do = { factor = 1 }
 			}			
 		}
 		harmonized_modifier = harmonized_christian
@@ -1540,9 +1474,7 @@ christian = {
 
 				allow = { religion = iconoclast }
 				visible = { religion = iconoclast }
-				ai_will_do = {
-					factor = 0.01
-				}
+				ai_will_do = { factor = 1 }
 			}
 
 			icon_aniconism_eleusa = {
@@ -1551,29 +1483,7 @@ christian = {
 				
 				allow = { religion = iconoclast }
 				visible = { religion = iconoclast }
-				ai_will_do = {
-					factor = 0.02
-					modifier = {
-						factor = 0
-						NOT = {
-							calc_true_if = {
-								all_owned_province = {
-									local_autonomy = 10
-								}
-								amount = 2
-							}
-						}
-					}
-					modifier = {
-						factor = 3
-						calc_true_if = {
-							all_owned_province = {
-								local_autonomy = 10
-							}
-							amount = 5
-						}
-					}
-				}
+				ai_will_do = { factor = 1 }
 			}
 
 			icon_aniconism_pancreator = {
@@ -1582,21 +1492,7 @@ christian = {
 				
 				allow = { religion = iconoclast }
 				visible = { religion = iconoclast }
-				ai_will_do = {
-					factor = 0.05
-					modifier = {
-						factor = 0
-						is_at_war = no
-					}
-					modifier = {
-						factor = 0
-						has_reform = eastern_monarchy
-					}
-					modifier = {
-						factor = 3
-						is_in_important_war = yes
-					}
-				}
+				ai_will_do = { factor = 1 }
 			}
 	
 			icon_aniconism_nicholas = {
@@ -1605,9 +1501,7 @@ christian = {
 
 				allow = { religion = iconoclast }
 				visible = { religion = iconoclast }
-				ai_will_do = {
-					factor = 0.02
-				}
+				ai_will_do = { factor = 1 }
 			}
 
 			icon_aniconism_climacus = {
@@ -1616,9 +1510,7 @@ christian = {
 
 				allow = { religion = iconoclast }
 				visible = { religion = iconoclast }
-				ai_will_do = {
-					factor = 0
-				}
+				ai_will_do = { factor = 1 }
 			}
 		}
 	}
@@ -1710,9 +1602,7 @@ christian = {
 				
 				allow = { religion = paulician }
 				visible = { religion = paulician }
-				ai_will_do = {
-					factor = 0
-				}
+				ai_will_do = { factor = 1 }
 			}
 
 			icon_maria = {
@@ -1724,9 +1614,7 @@ christian = {
 				
 				allow = { religion = paulician }
 				visible = { religion = paulician }
-				ai_will_do = {
-					factor = 1
-				}
+				ai_will_do = { factor = 1 }
 			}
 
 			icon_tapeinosis = {
@@ -1735,17 +1623,7 @@ christian = {
 				
 				allow = { religion = paulician }
 				visible = { religion = paulician }
-				ai_will_do = {
-					factor = 1
-					modifier = {
-						factor = 0
-						is_at_war = no
-					}
-					modifier = {
-						factor = 3
-						is_in_important_war = yes
-					}
-				}
+				ai_will_do = { factor = 1 }
 			}
 
 			icon_paul = {
@@ -1754,9 +1632,7 @@ christian = {
 
 				allow = { religion = paulician }
 				visible = { religion = paulician }
-				ai_will_do = {
-					factor = 1
-				}
+				ai_will_do = { factor = 1 }
 			}
 	
 			icon_silvanus = {
@@ -1765,9 +1641,7 @@ christian = {
 				
 				allow = { religion = paulician }
 				visible = { religion = paulician }
-				ai_will_do = {
-					factor = 0.5
-				}
+				ai_will_do = { factor = 1 }
 			}
 		}
 	}
@@ -1800,9 +1674,7 @@ christian = {
 				
 				allow = { religion = monothelite }
 				visible = { religion = monothelite }
-				ai_will_do = {
-					factor = 1
-				}
+				ai_will_do = { factor = 1 }
 			}
 
 			icon_hodegetria = {
@@ -1811,9 +1683,7 @@ christian = {
 				
 				allow = { religion = monothelite }
 				visible = { religion = monothelite }
-				ai_will_do = {
-					factor = 1
-				}
+				ai_will_do = { factor = 1 }
 			}
 
 			icon_deisis = {
@@ -1822,9 +1692,7 @@ christian = {
 				
 				allow = { religion = monothelite }
 				visible = { religion = monothelite }
-				ai_will_do = {
-					factor = 1
-				}
+				ai_will_do = { factor = 1 }
 			}
 	
 			icon_james = {
@@ -1833,9 +1701,7 @@ christian = {
 
 				allow = { religion = monothelite }
 				visible = { religion = monothelite }
-				ai_will_do = {
-					factor = 1
-				}
+				ai_will_do = { factor = 1 }
 			}
 
 			icon_jacob = {
@@ -1844,9 +1710,7 @@ christian = {
 
 				allow = { religion = monothelite }
 				visible = { religion = monothelite }
-				ai_will_do = {
-					factor = 1
-				}
+				ai_will_do = { factor = 1 }
 			}
 		}
 	}
@@ -3937,24 +3801,7 @@ jewish_group = {
 					}
 				}
 			}
-			ai_will_do = {
-				factor = 1
-				modifier = {
-					factor = 0
-					OR = {
-						AND = {
-							NOT = { has_church_aspect = judaism_communities_aspect }
-							NOT = { has_church_aspect = jewish_abrahamic_aspect }
-							NOT = { has_church_aspect = judaism_diplomatic_rabbi_aspect }
-						}
-						AND = {
-							NOT = { has_church_aspect = judaism_yom_kippur_aspect }
-							NOT = { has_church_aspect = judaism_remember_passover_aspect }
-							NOT = { has_church_aspect = judaism_purim_teachings_aspect }
-						}
-					}
-				}
-			}
+			ai_will_do = { factor = 1 }
 		}
 	}
 	

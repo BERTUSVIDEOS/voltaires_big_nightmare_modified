@@ -15,6 +15,7 @@ vn_fetishist_missions_1 = {
 		required_missions = {  } 
 		position = 9
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			stability = 2
 		}
 		effect = {
@@ -33,6 +34,7 @@ vn_fetishist_missions_1 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				religion = ROOT
 				value = 25
@@ -60,6 +62,7 @@ vn_fetishist_missions_1 = {
 		position = 11
 		provinces_to_highlight = {  }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			OR = {
 				has_estate_privilege = estate_church_heir_shrine
 				has_estate_privilege = estate_church_flexible_cults
@@ -92,7 +95,8 @@ vn_fetishist_missions_2 = {
 		icon = mission_kon_conquer_ckw
 		required_missions = {  } 
 		position = 9
-		trigger = { 
+		trigger = {
+			if = { limit = { ai = yes } ai = no } 
 			OR = {
 				army_size_percentage = 1 
 				num_of_mercenaries = 1
@@ -116,6 +120,7 @@ vn_fetishist_missions_2 = {
 			}
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			OR = {
 				custom_trigger_tooltip = {
 					tooltip = obj_humiliate_rival_tooltip
@@ -169,6 +174,7 @@ vn_fetishist_missions_2 = {
 			}
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			weapons = 1 
 			army_tradition = 40
 		}

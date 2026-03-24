@@ -11,6 +11,7 @@ vn_zikri_missions = {
 		icon = mission_deccanis
 		required_missions = { }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			reform_level = 2
 			calc_true_if = {
 				amount = 3
@@ -32,6 +33,7 @@ vn_zikri_missions = {
 		icon = mission_the_battle_for_raichur
 		required_missions = {}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			custom_trigger_tooltip = {
 				tooltip = vn_fight_the_heretics.tt
 				any_country = {
@@ -60,6 +62,7 @@ vn_zikri_missions = {
 		icon = mission_fatimid_caliphate
 		required_missions = { vn_fight_the_heretics }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
             num_of_cities = 100
 		}
 		effect = {

@@ -16,6 +16,7 @@ vn_pru_missions_slot_1_a = {
         position = 2
         required_missions = { vn_pru_king_in_prussia }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             OR = {
 				AND = {
 					is_emperor = yes
@@ -62,6 +63,7 @@ vn_pru_missions_slot_1_b = {
         position = 3
         required_missions = { vn_pru_royal_prussian_army }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             if = {
 				limit = { has_estate = estate_nobles }
 				estate_loyalty = {
@@ -100,6 +102,7 @@ vn_pru_missions_slot_1_b = {
         position = 4
         required_missions = { vn_pru_junker_influence }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			has_global_modifier_value = {
 				which = discipline
 				value = 0.25
@@ -134,6 +137,7 @@ vn_pru_missions_slot_1_c = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				value = 40
 				region = silesia_region
@@ -308,6 +312,7 @@ vn_pru_missions_slot_1_c = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			posen_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -374,6 +379,7 @@ vn_pru_missions_slot_1_c = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             warsaw_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -471,6 +477,7 @@ vn_pru_missions_slot_2_a = {
 			}
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			government_rank = 5
             if = {
                 limit = { has_dlc = "Common Sense" }
@@ -517,6 +524,7 @@ vn_pru_missions_slot_2_a = {
 		position = 2
         required_missions = { vn_pru_king_in_prussia }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			army_size = 80
 			OR = {
 				full_idea_group = quantity_ideas
@@ -546,6 +554,7 @@ vn_pru_missions_slot_2_a = {
         position = 4
         required_missions = { vn_pru_royal_prussian_army }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			army_size = 100
 			num_of_generals = 5
 			NOT = { num_of_mercenaries = 1 }
@@ -588,6 +597,7 @@ vn_pru_missions_slot_2_b = {
         position = 5
         required_missions = {  }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             stolp_area = {
 				type = all
 				owned_by = ROOT
@@ -692,6 +702,7 @@ vn_pru_missions_slot_2_b = {
 			}
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			culture_group = germanic
             num_of_owned_provinces_with = {
 				value = 15
@@ -741,6 +752,7 @@ vn_pru_missions_slot_2_c = {
 			}
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			NOT = {
 				any_known_country = {
 					NOT = { num_of_cities = 5 }
@@ -796,6 +808,7 @@ vn_pru_missions_slot_3_a = {
 			province_id = 2652
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             2652 = {
 				is_capital_of = ROOT
 				has_building = fort_17th
@@ -820,6 +833,7 @@ vn_pru_missions_slot_3_a = {
 			province_id = 2652
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             2652 = {
 				is_capital_of = ROOT
 				has_building = fort_18th
@@ -866,6 +880,7 @@ vn_pru_missions_slot_3_b = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				value = 30
 				OR = {
@@ -932,6 +947,7 @@ vn_pru_missions_slot_3_c = {
         position = 5
         required_missions = { vn_pru_north_german_confederation }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             calc_true_if = {
 				all_ally = {
 					custom_trigger_tooltip = {
@@ -992,6 +1008,7 @@ vn_pru_missions_slot_3_d = {
         position = 7
         required_missions = { vn_pru_influence_south }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				value = 200
 				region = south_germany_region
@@ -1020,6 +1037,7 @@ vn_pru_missions_slot_3_d = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             germany_superregion = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -1060,6 +1078,7 @@ vn_pru_missions_slot_4_a = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				value = 30
 				OR = {
@@ -1123,6 +1142,7 @@ vn_pru_missions_slot_4_a = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				value = 40
 				OR = {
@@ -1171,6 +1191,7 @@ vn_pru_missions_slot_4_a = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				value = 200
 				region = north_germany_region
@@ -1193,6 +1214,7 @@ vn_pru_missions_slot_4_a = {
 			is_capital = yes
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			if = {
 				limit = {
 					calc_true_if = {
@@ -1407,6 +1429,7 @@ vn_pru_missions_slot_4_a = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			nordgau_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -1500,6 +1523,7 @@ vn_pru_missions_slot_4_a = {
         position = 8
         required_missions = { vn_pru_alsace_lorraine }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             OR = {
 				AND = {
 					exists = FRA
@@ -1550,6 +1574,7 @@ vn_pru_missions_slot_5_a = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				value = 30
 				OR = { 
@@ -1589,6 +1614,7 @@ vn_pru_missions_slot_5_a = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				value = 10
 				OR = {
@@ -1642,6 +1668,7 @@ vn_pru_missions_slot_5_a = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			slesvig_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -1687,6 +1714,7 @@ vn_pru_missions_slot_5_b = {
         position = 6
         required_missions = {  }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			has_3_lv3_advisors_trigger = yes
 			is_in_deficit = no
 			NOT = { num_of_loans = 1 }
@@ -1706,6 +1734,7 @@ vn_pru_missions_slot_5_b = {
         position = 7
         required_missions = { vn_pru_generaldirektorium }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			num_of_owned_provinces_with = {
 				value = 20
 				has_education_building_trigger = yes

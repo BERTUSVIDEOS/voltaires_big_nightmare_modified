@@ -5,13 +5,8 @@ vohu_manah = {
 	
 	potential = { religion = zoroastrian }
 	sprite = 103
-	ai_will_do = {
-		factor = 1	
-		modifier = {
-			factor = 2
-			personality = ai_militarist
-		}
-	}
+	
+	ai_will_do = { factor = 1 }
 }
 
 asha_vahishta = {
@@ -21,13 +16,8 @@ asha_vahishta = {
 	
 	potential = { religion = zoroastrian }
 	sprite = 104
-	ai_will_do = {
-		factor = 1	
-		modifier = {
-			factor = 2
-			personality = ai_militarist
-		}
-	}
+	
+	ai_will_do = { factor = 1 }
 }
 
 xshathra_vairya = {
@@ -40,13 +30,8 @@ xshathra_vairya = {
 	
 	potential = { religion = zoroastrian }
 	sprite = 105
-	ai_will_do = {
-		factor = 1		
-		modifier = {
-			factor = 2
-			personality = ai_militarist
-		}
-	}
+	
+	ai_will_do = { factor = 1 }
 }
 
 spenta_armaiti = {
@@ -55,14 +40,9 @@ spenta_armaiti = {
 	monthly_asha_vahishta = 0.5
 	
 	potential = { religion = zoroastrian }
-	sprite = 106	
-	ai_will_do = {
-		factor = 1	
-		modifier = {
-			factor = 2
-			personality = ai_diplomat
-		}
-	}
+	sprite = 106
+	
+	ai_will_do = { factor = 1 }
 }
 
 haurvatat = {
@@ -72,17 +52,8 @@ haurvatat = {
 	
 	potential = { religion = zoroastrian }
 	sprite = 107
-	ai_will_do = {
-		factor = 1
-		modifier = {
-			factor = 2
-			personality = ai_capitalist
-		}
-		modifier = {
-			factor = 0
-			NOT = { num_of_ports = 1 }
-		}	
-	}
+	
+	ai_will_do = { factor = 1 }
 }
 
 ameretat = {
@@ -92,15 +63,6 @@ ameretat = {
 	
 	potential = { religion = zoroastrian }
 	sprite = 108
-	ai_will_do = {
-		factor = 1	
-		modifier = {
-			factor = 2
-			personality = ai_capitalist
-		}	
-		modifier = {
-			factor = 0.5
-			personality = ai_militarist
-		}
-	}
+	
+	ai_will_do = { factor = 1 }
 }

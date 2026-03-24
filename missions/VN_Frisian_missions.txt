@@ -16,6 +16,7 @@ vn_fri_missions_slot_1_a = {
         position = 2
         required_missions = { vn_fri_revalue_lex_frisionum }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             if = {
                 limit = { has_estate = estate_church }
                 estate_loyalty = {
@@ -46,6 +47,7 @@ vn_fri_missions_slot_1_a = {
         position = 3
         required_missions = { vn_fri_church_of_frisians }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             religious_unity = 1
             num_of_owned_provinces_with = {
                 value = 10
@@ -65,6 +67,7 @@ vn_fri_missions_slot_1_a = {
         position = 4
         required_missions = { vn_fri_land_of_monasteries }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             num_of_owned_provinces_with = {
                 value = 10
                 has_building = cathedral
@@ -122,6 +125,7 @@ vn_fri_missions_slot_2_a = {
         position = 1
         required_missions = {  }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             stability = 2
             OR = {
                 ADM = 3
@@ -141,6 +145,7 @@ vn_fri_missions_slot_2_a = {
         position = 2
         required_missions = { vn_fri_revalue_lex_frisionum }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             if = {
                 limit = { has_estate = estate_church }
                 estate_loyalty = {
@@ -192,6 +197,7 @@ vn_fri_missions_slot_2_b = {
         position = 4
         required_missions = { vn_fri_frisian_freedom }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             100 = {
                 owned_by = ROOT
                 is_core = ROOT
@@ -251,6 +257,7 @@ vn_fri_missions_slot_2_c = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             overijssel_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -325,6 +332,7 @@ vn_fri_missions_slot_2_d = {
         position = 7
         required_missions = { vn_fri_reconquer_trecht }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             is_great_power = yes
             OR = {
                 ADM = 5
@@ -372,6 +380,7 @@ vn_fri_missions_slot_3_a = {
         position = 1
         required_missions = {  }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             OR = {
                 is_emperor = yes
                 reverse_has_opinion = {
@@ -462,6 +471,7 @@ vn_fri_missions_slot_3_a = {
 			}
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             westfrisia_area = {
                 type = all
                 owned_by = ROOT
@@ -505,6 +515,7 @@ vn_fri_missions_slot_3_a = {
 			vn_fri_unify_east_frisia 
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             stability = 2
             prestige = 25
             is_subject = no
@@ -559,6 +570,7 @@ vn_fri_missions_slot_3_b = {
 			}
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             owns_core_province = 2383
         }
         effect = {
@@ -608,6 +620,7 @@ vn_fri_missions_slot_3_b = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             holland_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -692,6 +705,7 @@ vn_fri_missions_slot_3_b = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             1846 = { country_or_non_sovereign_subject_holds = ROOT }
             98 = { country_or_non_sovereign_subject_holds = ROOT }
             635 = { country_or_non_sovereign_subject_holds = ROOT }
@@ -744,6 +758,7 @@ vn_fri_missions_slot_4_a = {
 			}
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             eastfrisia_area = {
                 type = all
                 owned_by = ROOT
@@ -806,6 +821,7 @@ vn_fri_missions_slot_4_b = {
             province_id = 1238
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             if = {
                 limit = { has_estate = estate_burghers }
                 estate_loyalty = {
@@ -861,6 +877,7 @@ vn_fri_missions_slot_4_b = {
 			}
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             2746 = {
                 owned_by = ROOT
                 is_core = ROOT
@@ -943,6 +960,7 @@ vn_fri_missions_slot_4_c = {
             }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             owns_core_province = 5273
             owns_core_province = 2382
             owns_core_province = 5231
@@ -991,6 +1009,7 @@ vn_fri_missions_slot_4_c = {
         position = 6
         required_missions = { vn_fri_liberate_north_frisia }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             6038 = {
                 is_strongest_trade_power = ROOT
             }
@@ -1042,6 +1061,7 @@ vn_fri_missions_slot_4_d = {
             province_id = 98
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             master_of_mint = 3
             trader = 3
             328 = {
@@ -1094,6 +1114,7 @@ vn_fri_missions_slot_5_a = {
             province_id = 2750
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             naval_reformer = 2
             2750 = {
                 owned_by = ROOT
@@ -1131,6 +1152,7 @@ vn_fri_missions_slot_5_a = {
             }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             navy_size_percentage = 0.75
             custom_trigger_tooltip = {
                 tooltip = vn_fri_mare_frisicum.tt
@@ -1201,6 +1223,7 @@ vn_fri_missions_slot_5_a = {
             }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             natural_scientist = 2
             462 = {
                 owned_by = ROOT

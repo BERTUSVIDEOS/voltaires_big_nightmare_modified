@@ -8,17 +8,7 @@ l_matthew = {
 	potential = { religion = lollardy }
 	sprite = 43
 	
-	ai_will_do = {
-		factor = 1
-		modifier = {
-			factor = 2
-			personality = ai_balanced
-		}	
-		modifier = {
-			factor = 0.5
-			personality = ai_militarist
-		}		
-	}
+	ai_will_do = { factor = 1 }
 }
 
 l_mark = {
@@ -28,17 +18,7 @@ l_mark = {
 	potential = { religion = lollardy }
 	sprite = 44
 	
-	ai_will_do = {
-		factor = 1
-		modifier = {
-			factor = 3
-			personality = ai_capitalist
-		}
-		modifier = {
-			factor = 0.5
-			personality = ai_militarist
-		}			
-	}	
+	ai_will_do = { factor = 1 }
 }
 
 l_luke = {
@@ -48,13 +28,7 @@ l_luke = {
 	potential = { religion = lollardy }
 	sprite = 45
 	
-	ai_will_do = {
-		factor = 1
-		modifier = {
-			factor = 3
-			personality = ai_militarist
-		}			
-	}	
+	ai_will_do = { factor = 1 }
 }
 
 l_john = {
@@ -64,13 +38,7 @@ l_john = {
 	potential = { religion = lollardy }
 	sprite = 46
 	
-	ai_will_do = {
-		factor = 1
-		modifier = {
-			factor = 3
-			personality = ai_diplomat
-		}		
-	}	
+	ai_will_do = { factor = 1 }
 }
 
 l_acts = { 
@@ -80,17 +48,7 @@ l_acts = {
 	potential = { religion = lollardy }
 	sprite = 47
 	
-	ai_will_do = {
-		factor = 1
-		modifier = {
-			factor = 2
-			personality = ai_militarist
-		}	
-		modifier = {
-			factor = 0.5
-			personality = ai_diplomat
-		}		
-	}	
+	ai_will_do = { factor = 1 }
 }
 
 l_revelations = {
@@ -100,16 +58,6 @@ l_revelations = {
 	potential = { religion = lollardy }
 	sprite = 48
 	
-	ai_will_do = {
-		factor = 1
-		modifier = {
-			factor = 2
-			personality = ai_balanced
-		}	
-		modifier = {
-			factor = 0.5
-			personality = ai_capitalist
-		}		
-	}	
+	ai_will_do = { factor = 1 }
 }
 

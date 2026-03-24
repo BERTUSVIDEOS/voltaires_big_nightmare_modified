@@ -16,6 +16,7 @@ vn_eastchristian_missions = {
 		icon = promote_the_patriarchate
 		required_missions = {}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			if = {
 				limit = { uses_patriarch_authority = yes }
 				capital_scope = { 
@@ -45,6 +46,7 @@ vn_eastchristian_missions = {
 		icon = guardians_of_saint_sava
 		required_missions = { vn_an_own_orthodox_church }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			tolerance_to_this = 6
 		}
 		effect = {
@@ -65,6 +67,7 @@ vn_eastchristian_missions = {
 		icon = protectors_of_christendom
 		required_missions = { }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			cathedral = 10
 			if = {
 				limit = { has_estate = estate_church }

@@ -18,7 +18,6 @@ TO DO
 	- Sweeden tier 2 but starts as tier 1, through missions gets to tier 2
 	- Norway tier 2 but starts as tier 1, through missions gets to tier 2
 	- Palatinate tier 2 but starts as tier 1, through missions gets to tier 2
-	- nerf alsatian ideas development
 	- Venice formable
 	- set morea, serbia, wallachia, slavonia, bosnia, croatia, crete, cyprus
 	- balkanize hungary
@@ -27,48 +26,27 @@ TO DO
 	- set livonia region
 	- set karaman, ramazan, dulkadir, candar, trebizond, aq qoyunlu
 	- balcanize mamluks
-	- 
 	
 - 2025-new
-	- tier 4 formables
-		- adm tech →15
-	- tier 3 formables
-		- adm tech →10
-	- tier 2 formables
-		- dev on areas 300|500→50+50 per area needed
-		- adm tech 10→0
-	- mercenaries
-		- minimum size 4→10
-		- maximum size 60→40 
-	- papal swiss guard
-		- size 4→40
-		- discipline 2.5%→5% 
-		- home schwyz→vatican
+	- Revoked after cooldown set on all privileges that have it 
+	- ai defensiveness 0→-50% (except player subjects)
+	- Major AI can no longer threaten war or enforce peace to players 
+	- tweaked peasant incident
+	- growth of capital mission now is permanent, fixed conditions
+	- infrastructure	
+		- gov cost 15→0
+	- generic missions
+		- Power line misisons
+			- power modifiers duration 50→20 years
+	- Defensive Army Doctrine
+		- Shock/fire reduction per level -3%→-2%
+		- fixed disicpline military reform scaling 2/3/3/4/5/6/7/8/9→1/2/3/4/5/6/7/8/9
 	- Fervor
 		- at 100% trade goods size 0.20→0
 		- at 100% development cost 0→-5%
 		- Stability active 
 			- dev cost -5%→0
 			- trade goods size 0→0.20
-	- Major AI can no longer threaten war or enforce peace to players 
-	- Denmark start with Askanier dynasty
-	- Palatinate starts without legendary conqueror
-	- tweaked peasant incident
-	- Assimilation
-		- culture conversion cost|time -10%→-20%
-		- prestige per development on culture converting 0→0.25%
-		- adm policy 
-			- native asismilation 100%→0
-			- dev cost on own culture 0-5%
-	- Religious
-		- culture conversion cost -25%→-10%
-		- monarch power per development converted 2→1
-		- same rleigion advisor cost 0→-5% 
-	- development ideas
-		- metropolis planning dev requirement 25→20
-	- celntralization ideas
-		- big cities dev requirement 40→30 
-	- Revoked after cooldown set on all privileges that have it 
 	- holy orders privileges
 		- autoremove tooltip fixed
 		- UI fixed
@@ -80,48 +58,76 @@ TO DO
 			- Requires Expand the holy order regiments privilege
 			- spawns cossacks
 			- leader shock +1
-	- ai defensiveness 0→-50% (except player subjects)
-	- berber ideas 
-		- core cost 50%→0
-		- tolerance own 0→1
-	- styria double ideas fixed
-	- bufed anjou ideas (they suck, like dinosf)
-	- finland missions tweaked 
-	- tweaked normandy missions 
-	- switzerland formation tweaked
-	- swiss missions
-		- elevate to canton
-			- requires being duchy rank 
-			- republican tradition 0.30→0.20
-			- duration 25→20 years 
-		- ideas
-			- centralization cost 0→-20%
-			- republican tradition 0→0.20
-			- max heretic tolreance 0→2 
-	- generic missions
-		- Power line misisons
-			- power modifiers duration 50→20 years
-	- Canton reform
-		- now requires to be swiss culture
-		- no longer blocked
-		- disallows other base reforms
-		- merchants 0→1
-		- merchants trade power 0→10
-		- trade steering 0→50%
-		- boost income form trade →yes
-		- trade range 0→100%
-		- diplo slots 2→0
-	- United canton reforms
-		- added cantonr eform modifiers
-		- allow mercenary to drill
-		- no longer mercenary cost no professionalism (already dont cost)
-	- growth of capital mission now is permanent, fixed conditions
-	- Defensive Army Doctrine
-		- Shock/fire reduction per level -3%→-2%
-		- fixed disicpline military reform scaling 2/3/3/4/5/6/7/8/9→1/2/3/4/5/6/7/8/9
-	- expansion ideas 
-		- colonists 1→2
-		- colonial growth 5→10
+	- Government
+		- Canton reform
+			- now requires to be swiss culture
+			- no longer blocked
+			- disallows other base reforms
+			- merchants 0→1
+			- merchants trade power 0→10
+			- trade steering 0→50%
+			- boost income form trade →yes
+			- trade range 0→100%
+			- diplo slots 2→0
+		- United canton reforms
+			- added cantonr eform modifiers
+			- allow mercenary to drill
+			- no longer mercenary cost no professionalism (already dont cost)
+	- tier 4 formables
+		- adm tech →15
+	- tier 3 formables
+		- adm tech →10
+	- tier 2 formables
+		- dev on areas 300|500→50+50 per area needed
+		- adm tech 10→0
+	- mercenaries
+		- minimum size 4→10
+		- maximum size 60→40 
+	- Ideas
+		- Assimilation
+			- culture conversion cost|time -10%→-20%
+			- prestige per development on culture converting 0→0.25%
+			- adm policy 
+				- native asismilation 100%→0
+				- dev cost on own culture 0-5%
+		- Religious
+			- culture conversion cost -25%→-10%
+			- monarch power per development converted 2→1
+			- same rleigion advisor cost 0→-5% 
+		- development 
+			- metropolis planning dev requirement 25→20
+		- celntralization 
+			- big cities dev requirement 40→30 
+		- expansion ideas 
+			- colonists 1→2
+			- colonial growth 5→10
+	- Countries 
+		- All enemy core creation cost from ideas 25%→10% 
+		- Denmark start with Askanier dynasty
+		- styria double ideas fixed
+		- bufed anjou ideas (they suck, like dinosf)
+		- finland missions tweaked 
+		- tweaked normandy missions 
+		- switzerland formation tweaked
+		- Palatinate starts without legendary conqueror
+		- berber ideas 
+			- core cost 50%→0
+			- tolerance own 0→1
+		- Alsatia ideas
+			- dev cost -20%→-15%
+		- papal swiss guard
+			- size 4→40
+			- discipline 2.5%→5% 
+			- home schwyz→vatican
+		- swiss missions
+			- elevate to canton
+				- requires being duchy rank 
+				- republican tradition 0.30→0.20
+				- duration 25→20 years 
+			- ideas
+				- centralization cost 0→-20%
+				- republican tradition 0→0.20
+				- max heretic tolreance 0→2 
 
 - 2025-05-24
 	- some reforms removed being locked

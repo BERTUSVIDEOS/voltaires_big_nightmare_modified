@@ -26,6 +26,7 @@ vn_sav_missions_slot_1 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             torino_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -50,6 +51,7 @@ vn_sav_missions_slot_1 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             nice_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -70,6 +72,7 @@ vn_sav_missions_slot_1 = {
         icon = mission_launch_a_flagship
         required_missions = { vn_sav_conquer_nice }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             naval_forcelimit = 25
             num_of_heavy_ship = 5
             num_of_galley = 5
@@ -115,6 +118,7 @@ vn_sav_missions_slot_1 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             arborea_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -160,6 +164,7 @@ vn_sav_missions_slot_2 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             savoy_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -179,6 +184,7 @@ vn_sav_missions_slot_2 = {
             province_id = 1087
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             1087 = {
                 owned_by = ROOT
                 has_fort_trigger = yes
@@ -197,6 +203,7 @@ vn_sav_missions_slot_2 = {
         icon = knights_of_the_new_world
         required_missions = { vn_sav_fortify_chambery }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			if = {
 				limit = { religion = catholic exists = PAP }
 				OR = {
@@ -268,6 +275,7 @@ vn_sav_missions_slot_3 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             aosta_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -284,6 +292,7 @@ vn_sav_missions_slot_3 = {
         icon = become_king
         required_missions = { vn_sav_conquer_montferrat vn_sav_conquer_aosta vn_sav_conquer_savoy }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             if = {
                 limit = { hre_size = 1 }
                 OR = {
@@ -324,6 +333,7 @@ vn_sav_missions_slot_3 = {
             }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             OR = {
                 FRA = {
                     custom_trigger_tooltip = {
@@ -364,6 +374,7 @@ vn_sav_missions_slot_3 = {
             province_has_current_tech_fort_trigger = no
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             num_of_owned_provinces_with = {
                 value = 5
                 OR = {
@@ -406,6 +417,7 @@ vn_sav_missions_slot_4 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             monferrato_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -423,6 +435,7 @@ vn_sav_missions_slot_4 = {
             province_id = 1009
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             1009 = {
                 owned_by = ROOT
                 development = 20
@@ -478,6 +491,7 @@ vn_sav_missions_slot_5 = {
             }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             366 = {
                 owned_by = ROOT
                 base_production = 12

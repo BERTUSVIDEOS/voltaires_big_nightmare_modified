@@ -14,6 +14,7 @@ country_decisions = {
 		}
 		
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			is_at_war = no
 			owns = 2233
 			is_core = 2233

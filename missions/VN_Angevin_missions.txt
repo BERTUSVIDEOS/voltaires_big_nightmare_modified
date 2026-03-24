@@ -27,6 +27,7 @@ vn_anj_missions_slot_1_a = {
 			}
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             OR = {
                 AND = {
                     owns_core_province = 4492
@@ -96,6 +97,7 @@ vn_anj_missions_slot_1_a = {
 			}
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             2173 = {
                 owned_by = ROOT
                 has_trade_building_trigger = yes
@@ -120,6 +122,7 @@ vn_anj_missions_slot_1_a = {
         icon = mission_rb_grow_the_channel
         required_missions = { vn_anj_loire_river_valley }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             num_of_owned_provinces_with = {
 				value = 6
 				has_trade_building_trigger = yes
@@ -161,6 +164,7 @@ vn_anj_missions_slot_2_a = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             poitou_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -182,6 +186,7 @@ vn_anj_missions_slot_2_a = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             322 = { country_or_non_sovereign_subject_holds = ROOT }
             2003 = { country_or_non_sovereign_subject_holds = ROOT }
             num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
@@ -220,6 +225,7 @@ vn_anj_missions_slot_2_a = {
             vn_anj_occupy_caen
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             is_subject = no
             navy_size = 20
             army_size = 25
@@ -244,7 +250,7 @@ vn_anj_missions_slot_2_a = {
 			}
 			else = { 
 				change_ruler_stat = {
-					stat = mil
+					type = mil
 					amount = 2
 				}
 			}
@@ -382,6 +388,7 @@ vn_anj_missions_slot_2_a = {
 			}
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             is_subject = no
             ASE = {
                 OR = {
@@ -470,6 +477,7 @@ vn_anj_missions_slot_3_a = {
 			}
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			owns_core_province = 2163
 			owns_core_province = 1289
 			owns_core_province = 2059
@@ -527,6 +535,7 @@ vn_anj_missions_slot_3_a = {
 			}
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             maine_area = {
                 type = all
                 owned_by = ROOT
@@ -595,6 +604,7 @@ vn_anj_missions_slot_3_a = {
             }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             maine_area = {
                 type = all
                 owned_by = ROOT
@@ -647,6 +657,7 @@ vn_anj_missions_slot_3_a = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             normandy_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -682,6 +693,7 @@ vn_anj_missions_slot_3_a = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             caux_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -750,6 +762,7 @@ vn_anj_missions_slot_4_a = {
             }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             NOT = { exists = XBL }
             orleans_area = {
                 type = all
@@ -787,6 +800,7 @@ vn_anj_missions_slot_4_a = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				value = 15
 				OR = {
@@ -860,6 +874,7 @@ vn_anj_missions_slot_5_a = {
         required_missions = { }
         position = 1
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			num_of_owned_provinces_with = {
 				value = 5
 				has_fort_trigger = yes
@@ -880,6 +895,7 @@ vn_anj_missions_slot_5_a = {
             province_id = 1289
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             1289 = {
                 owned_by = ROOT
                 development = 20
@@ -903,6 +919,7 @@ vn_anj_missions_slot_5_a = {
         icon = balance_the_estates
         required_missions = { vn_anj_black_city }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             if = {
                 limit = { has_dlc = "Common Sense" }
                 legitimacy_equivalent = 85
@@ -971,6 +988,7 @@ vn_anj_missions_slot_5_a = {
         icon = mission_english_absolutism
         required_missions = { vn_anj_erode_baronial_power }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			OR = {
 				AND = {
 					OR = {
@@ -1054,6 +1072,7 @@ vn_anj_missions_slot_5_b = {
             has_tax_building_trigger = no
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             
             1289 = {
 				owned_by = ROOT
@@ -1102,6 +1121,7 @@ vn_anj_missions_slot_5_b = {
         icon = invest_in_the_provinces
         required_missions = { vn_anj_honor_our_crusaders }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             if = {
                 limit = {
                     OR = {

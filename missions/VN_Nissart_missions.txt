@@ -24,6 +24,7 @@ vn_nic_missions_slot_1 = {
             }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
             is_at_war = no
             if = {
                 limit = { has_dlc = "Common Sense" }
@@ -56,6 +57,7 @@ vn_nic_missions_slot_1 = {
             }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
             is_at_war = no
             adm_tech = 21
             dip_tech = 21
@@ -98,6 +100,7 @@ vn_nic_missions_slot_2 = {
             }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
             land_forcelimit = 10
             army_size_percentage = 0.75
             992 = {
@@ -145,6 +148,7 @@ vn_nic_missions_slot_3 = {
             }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             trade_income_percentage = 0.55
             992 = {
                 owned_by = ROOT
@@ -188,6 +192,7 @@ vn_nic_missions_slot_4 = {
             }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             heavy_ship_fraction = 0.6
             992 = {
                 owned_by = ROOT

@@ -26,6 +26,7 @@ vn_gen_asia_1 = {
 			}
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			trading_bonus = {
 				trade_goods = spices
 				value = yes
@@ -67,6 +68,7 @@ vn_gen_asia_1 = {
 			}
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			production_leader = {
 				trade_goods = silk
 			}
@@ -101,6 +103,7 @@ vn_gen_asia_2 = {
 		required_missions = { }
 		position = 9
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			OR = {
 				production_leader = {
 					trade_goods = coffee
@@ -147,6 +150,7 @@ vn_gen_asia_3 = {
 		icon = mission_mosque
 		required_missions = { }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			is_defender_of_faith = yes
 			religious_unity = 1
 			if = {
@@ -192,6 +196,7 @@ vn_gen_asia_3 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			4974 = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		effect = {
@@ -228,6 +233,7 @@ vn_reform_caucasian_religion = {
 		position = 11
 		required_missions = { }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			OR = {
 				religion = uatsdin
 				religion = khabze

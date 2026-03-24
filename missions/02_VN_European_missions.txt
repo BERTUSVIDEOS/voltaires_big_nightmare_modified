@@ -20,6 +20,7 @@ vn_gen_europe_1 = {
 		required_missions = { }
 		position = 9
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			home_trade_node = {
 				highest_value_trade_node = yes
 				is_strongest_trade_power = ROOT
@@ -67,6 +68,7 @@ vn_hre_missions_1 = {
 			}
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			if = {
 				limit = {
 					hre_size = 1
@@ -121,6 +123,7 @@ gen_europe_hre_relations_1 = {
 			is_capital_of = emperor
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			alliance_with = emperor
 			emperor = {
 				has_opinion = {
@@ -166,6 +169,7 @@ gen_europe_hre_theocracy_1 = {
 			has_tax_building_trigger = no
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			if = {
 				limit = { NOT = { num_of_cities = 10 } }
 				all_owned_province = {
@@ -238,6 +242,7 @@ vn_hre_missions_3 = {
 		icon = mission_hanseatic_city
 		required_missions = { }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			num_of_owned_provinces_with = {
 				value = 3
 				has_province_modifier = hanseatic_city
@@ -296,6 +301,7 @@ vn_franks_missions_1 = {
 		icon = mission_king_of_franks
 		required_missions = { }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			is_emperor_of_china = yes
 		}
 		effect = {
@@ -333,6 +339,7 @@ vn_hre_missions_2 = {
 		required_missions = { }
 		position = 10
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			if = {
 				limit = {
 					hre_size = 1
@@ -363,6 +370,7 @@ vn_hre_missions_2 = {
 			}
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			if = {
 				limit = {
 					hre_size = 1
@@ -434,6 +442,7 @@ gen_europe_hre_relations_2 = {
 			is_capital_of = root
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			capital_scope = {
 				development = 25
 				has_tax_building_trigger = yes
@@ -454,6 +463,7 @@ gen_europe_hre_relations_2 = {
 		required_missions = { gen_hre_financial_centre }
 		position = 11
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			reform_level = 7
 			OR = {
 				crown_land_share = 70
@@ -515,6 +525,7 @@ gen_europe_hre_theocracy_2 = {
 			}
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			OR = {
 				army_size = 30
 				all_neighbor_country = {
@@ -555,6 +566,7 @@ gen_europe_hre_theocracy_2 = {
 			}
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			custom_trigger_tooltip = {
 				tooltip = emp_bav_center_of_counter_reformation_tooltip2
 				had_global_flag = {

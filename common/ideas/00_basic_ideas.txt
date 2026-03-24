@@ -167,9 +167,7 @@ innovativeness_ideas = {
 		free_leader_pool = 1
 	}
 
-	ai_will_do = {
-		factor = 1
-	}
+	ai_will_do = { factor = 1 }
 }
 religious_ideas = {
 	category = ADM
@@ -216,13 +214,7 @@ religious_ideas = {
 		cb_on_religious_enemies = yes
 	}
 
-	ai_will_do = {
-		factor = 0.9
-		modifier = {
-			factor = 0
-			has_idea_group = humanist_ideas
-		}
-	}
+	ai_will_do = { factor = 1 }
 }
 
 economic_ideas = {
@@ -258,9 +250,7 @@ economic_ideas = {
 		production_efficiency = 0.1
  	}
 
-	ai_will_do = {
-		factor = 0.85
-	}
+	ai_will_do = { factor = 1 }
 }
 
 ########################################################
@@ -319,32 +309,7 @@ entwicklung0 = {
 		#20% chance to get mercantilism
 	}
 
-	ai_will_do = {
-		factor = 8
-		modifier = {
-			factor = 4
-				OR = {
-				is_march = yes
-				is_colonial_nation = yes
-			}
-		}
-		modifier = {
-			factor = 1.5
-			government_rank = 0
-		}
-		modifier = {
-			factor = 1.5
-			government_rank = 1
-		}
-		modifier = {
-			factor = 0.5
-			government_rank = 2
-		}
-		modifier = {
-			factor = 0.5
-			government_rank = 3
-		}
-	}
+	ai_will_do = { factor = 1 }
 }
 
 ########################################################
@@ -388,36 +353,7 @@ dezentra0 = {
 		global_trade_goods_size = 0.20
 	}
 
-	ai_will_do = {
-		factor = 10
-		modifier = {
-			factor = 10
-			personality = ai_capitalist
-		}
-		modifier = {
-			factor = 2.0
-			has_idea_group = administrative_ideas
-		}
-		modifier = {
-			factor = 2
-			government_rank = 3  # Empire
-		}
-
-		modifier = {
-			factor = 2
-			government_rank = 2  # Kingdom
-		}
-
-		modifier = {
-			factor = 3
-			government = monarchy
-		}
-
-		modifier = {
-			factor = 2
-			government = republic
-		}
-	}
+	ai_will_do = { factor = 1 }
 }
 
 ########################################################
@@ -457,7 +393,7 @@ zentra0 = {
 		}
 	}
 	entwicklung5 = {
-		#<<WIKI>> improved estate edicts
+		edict_efficiency = 0.25
 		state_maintenance_modifier = -0.25	#-0.5→-0.25
 		expand_infrastructure_cost_modifier = -0.25	#-0.50→-0.25
 	}
@@ -482,36 +418,7 @@ zentra0 = {
 		garrison_size = 0.20
 	}
 
-	ai_will_do = {
-		factor = 10
-		modifier = {
-			factor = 10
-			personality = ai_capitalist
-		}
-		modifier = {
-			factor = 2.0
-			has_idea_group = administrative_ideas
-		}
-		modifier = {
-			factor = 2
-			government_rank = 3  # Empire
-		}
-
-		modifier = {
-			factor = 2
-			government_rank = 2  # Kingdom
-		}
-
-		modifier = {
-			factor = 3
-			government = monarchy
-		}
-
-		modifier = {
-			factor = 2
-			government = republic
-		}
-	}
+	ai_will_do = { factor = 1 }
 }
 
 administrative_ideas = {
@@ -542,17 +449,11 @@ administrative_ideas = {
 		advisor_cost = -0.10
 	}
 	civil_servants = {
-		#reform progress per adm tech taken 25
+		reform_progress_per_adm_tech = 25
 		adm_tech_cost_modifier = -0.10
 	}
 
-	ai_will_do = {
-		factor = 0.96
-		modifier = {
-			factor = 2
-			has_reform = steppe_horde
-		}
-	}
+	ai_will_do = { factor = 1 }
 }
 
 ########################################################
@@ -597,30 +498,7 @@ justiz0 = {
 		tolerance_heretic = 1
 	}
 
-	ai_will_do = {
-		factor = 10
-		modifier = {
-			factor = 2
-			personality = ai_capitalist
-		}
-		modifier = {
-			factor = 2
-			is_elector = yes
-		}
-		modifier = {
-			factor = 4
-			is_emperor = yes
-		}
-		modifier = {
-			factor = 2
-			government_rank = 3  # Empire
-		}
-
-		modifier = {
-			factor = 2
-			government_rank = 2  # Kingdom
-		}
-	}
+	ai_will_do = { factor = 1 }
 }
 
 expansion_ideas = {
@@ -657,9 +535,7 @@ expansion_ideas = {
 		trade_company_investment_cost = -0.2
 	}
 
-	ai_will_do = {
-		factor = 0.48
-	}
+	ai_will_do = { factor = 1 }
 }
 
 ########################################################
@@ -700,36 +576,7 @@ staatsverwaltung0 = {
 		global_allowed_num_of_manufactories = 1
 	}
 
-	ai_will_do = {
-		factor = 10
-		modifier = {
-			factor = 10
-			personality = ai_capitalist
-		}
-		modifier = {
-			factor = 2.0
-			has_idea_group = administrative_ideas
-		}
-		modifier = {
-			factor = 2
-			government_rank = 3  # Empire
-		}
-
-		modifier = {
-			factor = 2
-			government_rank = 2  # Kingdom
-		}
-
-		modifier = {
-			factor = 3
-			government = monarchy
-		}
-
-		modifier = {
-			factor = 2
-			government = republic
-		}
-	}
+	ai_will_do = { factor = 1 }
 }
 
 humanist_ideas = {
@@ -760,7 +607,7 @@ humanist_ideas = {
 		manpower_in_accepted_culture_provinces = 0.10
 	}
 	cultural_ties_2 = {
-		# morale per accepted culture 1%
+		accepted_culture_give_morale = 0.01
 		num_accepted_cultures = 2
 		effect = {
 			trigger_switch = {
@@ -819,13 +666,7 @@ humanist_ideas = {
 		# <<WIKI>> decision = hire_advisor
 	}
 
-	ai_will_do = {
-		factor = 0.9
-		modifier = {
-			factor = 0
-			has_idea_group = religious_ideas
-		}
-	}
+	ai_will_do = { factor = 1 }
 }
 
 ########################################################
@@ -862,27 +703,7 @@ gesundheit0 = {
 		global_unrest = -2
 	}
 
-	ai_will_do = {
-		factor = 10
-		modifier = {
-			factor = 2
-			personality = ai_capitalist
-		}
-		modifier = {
-			factor = 3
-			num_of_colonists = 1
-		}
-
-		modifier = {
-			factor = 2
-			government_rank = 3  # Empire
-		}
-
-		modifier = {
-			factor = 2
-			government_rank = 2  # Kingdom
-		}
-	}
+	ai_will_do = { factor = 1 }
 }
 
 ########################################################
@@ -933,26 +754,7 @@ monarchie0 = {
 		# <<WIKI>> stand_interaktion = Nobil_1
 	}
 
-	ai_will_do = {
-		factor = 10
-		modifier = {
-			factor = 2
-			personality = ai_capitalist
-		}
-		modifier = {
-			factor = 2
-			personality = ai_militarist
-		}
-		modifier = {
-			factor = 2
-			government_rank = 3  # Empire
-		}
-
-		modifier = {
-			factor = 2
-			government_rank = 2  # Kingdom
-		}
-	}
+	ai_will_do = { factor = 1 }
 }
 
 ########################################################
@@ -998,33 +800,7 @@ republik0 = {
 		max_absolutism = 20
 	}
 
-	ai_will_do = {
-		factor = 10
-		modifier = {
-			factor = 1.5
-			any_neighbor_country = {
-				is_rival = ROOT
-			}
-		}
-		modifier = {
-			factor = 50
-			is_colonial_nation = yes
-		}
-		modifier = {
-			factor = 3
-			government = republic
-
-		}
-		modifier = {
-			factor = 2
-			government_rank = 3  # Empire
-		}
-		modifier = {
-			factor = 2
-			government_rank = 2  # Kingdom
-		}
-
-	}
+	ai_will_do = { factor = 1 }
 }
 
 ########################################################
@@ -1068,18 +844,7 @@ aristo0 = {
 		unjustified_demands = -0.25
 	}
 
-	ai_will_do = {
-		factor = 10
-		modifier = {
-			factor = 2
-			government_rank = 3  # Empire
-		}
-
-		modifier = {
-			factor = 2
-			government_rank = 2  # Kingdom
-		}
-	}
+	ai_will_do = { factor = 1 }
 }
 
 ########################################################
@@ -1125,26 +890,7 @@ horde0 = {
 		reduced_liberty_desire = 5
 	}
 
-	ai_will_do = {
-		factor = 10
-		modifier = {
-			factor = 2
-			personality = ai_capitalist
-		}
-		modifier = {
-			factor = 2
-			personality = ai_militarist
-		}
-		modifier = {
-			factor = 2
-			government_rank = 3  # Empire
-		}
-
-		modifier = {
-			factor = 2
-			government_rank = 2  # Kingdom
-		}
-	}
+	ai_will_do = { factor = 1 }
 }
 
 spy_ideas = {
@@ -1177,9 +923,7 @@ spy_ideas = {
 	audit_checks = {
 		yearly_corruption = -0.20
 	}
-	ai_will_do = {
-		factor = 0.75
-	}
+	ai_will_do = { factor = 1 }
 }
 
 influence_ideas = {
@@ -1211,21 +955,7 @@ influence_ideas = {
 		vassal_forcelimit_bonus = 0.5
 	}
 
-	ai_will_do = {
-		factor = 0.5
-		modifier = {
-			factor = 1.5
-			is_emperor = yes
-		}
-		modifier = {
-			factor = 1.7
-			vassal = 1
-		}
-		modifier = {
-			factor = 1.7
-			vassal = 2
-		}
-	}
+	ai_will_do = { factor = 1 }
 }
 
 dynasty0 = {
@@ -1292,9 +1022,7 @@ dynasty0 = {
 			remove_country_modifier = experienced_diplomats_consort_modifier_mil_2
 		}
 	}
-	ai_will_do = {
-		factor = 10
-	}
+	ai_will_do = { factor = 1 }
 }
 
 trade_ideas = {
@@ -1326,18 +1054,7 @@ trade_ideas = {
 		caravan_power = 0.25
 	}
 
-	ai_will_do = {
-		factor = 0.7
-		modifier = {
-			factor = 0
-			NOT = { num_of_cities = 6 }
-			NOT = { has_government_attribute = is_merchant_republic }
-		}
-		modifier = {
-			factor = 3
-			has_government_attribute = is_merchant_republic
-		}
-	}
+	ai_will_do = { factor = 1 }
 }
 
 maritime_ideas = {
@@ -1379,17 +1096,7 @@ maritime_ideas = {
 		blockade_efficiency = 0.50
 	}
 
-	ai_will_do = {
-		factor = 10
-		modifier = {
-			factor = 0
-			NOT = { num_of_ports = 1 }
-		}
-		modifier = {
-			factor = 0.5
-			NOT = { num_of_ports = 10 }
-		}
-	}
+	ai_will_do = { factor = 1 }
 }
 
 ########################################################
@@ -1501,17 +1208,7 @@ flottenbasis0 = {
 		global_ship_cost = -0.1
 	}
 
-	ai_will_do = {
-		factor = 10
-		modifier = {
-			factor = 0
-			NOT = { num_of_ports = 1 }
-		}
-		modifier = {
-			factor = 10
-			num_of_colonists = 1
-		}
-	}
+	ai_will_do = { factor = 1 }
 }
 ########################################################
 ####### Gro�schiff / Heavy Ship Idea
@@ -1557,37 +1254,7 @@ gross0 = {
 		# <<WIKI>> extra_navy tradition_heavy_ships = yes
 	}
 
-	ai_will_do = {
-		factor = 10
-		modifier = {
-			factor = 0
-			NOT = { num_of_ports = 3 }
-		}
-		modifier = {
-			factor = 0
-			NOT = { num_of_ports = 5 }
-			num_of_cities = 5
-		}
-		modifier = {
-			factor = 0
-			NOT = { num_of_ports = 8 }
-			num_of_cities = 10
-		}
-		modifier = {
-			factor = 1.5
-			has_idea_group = maritime_ideas
-		}
-		modifier = {
-			factor = 2
-			OR = {
-				num_of_heavy_ship = 12
-				num_of_light_ship = 18
-				num_of_galley = 28
-			}
-			personality = ai_militarist
-		}
-
-	}
+	ai_will_do = { factor = 1 }
 }
 
 ########################################################
@@ -1638,39 +1305,7 @@ galle0 = {
 		blockade_efficiency = 0.5
 	}
 
-	ai_will_do = {
-		factor = 10
-		modifier = {
-			factor = 0
-			NOT = { num_of_ports = 3 }
-		}
-		modifier = {
-			factor = 0
-			NOT = { num_of_ports = 5 }
-			num_of_cities = 5
-		}
-
-		modifier = {
-			factor = 4
-				num_of_galley = 25
-
-		}
-		modifier = {
-			factor = 10
-			capital_scope = {
-				OR = {
-					region = italy_region
-					region = baltic_region
-					region = balkan_region
-					region = maghreb_region
-					region = anatolia_region
-
-				}
-			}
-			NOT = { technology_group = high_american }
-		}
-
-	}
+	ai_will_do = { factor = 1 }
 }
 
 ########################################################
@@ -1721,9 +1356,7 @@ handel0 = {
 		naval_morale = 0.1	#0.2→0.1
 	}
 
-	ai_will_do = {
-		factor = 10
-	}
+	ai_will_do = { factor = 1 }
 }
 
 ########################################################
@@ -1815,35 +1448,7 @@ kolonialimperium0 = {
 		liberty_desire_from_subject_development = -0.2
 	}
 
-	ai_will_do = {
-		factor = 15
-		modifier = {	#BERTUS MOD
-			factor = 1000
-			OR = {
-				tag = A21
-				tag = A02
-				tag = Z38
-				tag = A09
-				tag = Z08
-				tag = A26
-				tag = A05
-				tag = A19
-				tag = Z22
-			}
-		}
-		modifier = {	#BERTUS MOD
-			factor = 100
-			OR = {
-				capital_scope = { region = lencenor_region }
-				capital_scope = { region = dragon_coast_region }
-				capital_scope = { region = dalr_region }
-				capital_scope = { region = akan_region }
-				capital_scope = { region = businor_region }
-				capital_scope = { region = west_dameshead_region }
-				capital_scope = { region = east_dameshead_region }
-			}
-		}
-	}
+	ai_will_do = { factor = 0 }
 }
 
 ########################################################
@@ -1880,23 +1485,7 @@ assimilation0 = {
 		diplomatic_annexation_cost = -0.10
 	}
 
-	ai_will_do = {
-		factor = 10
-		modifier = {
-			factor = 2
-			personality = ai_diplomat
-		}
-		modifier = {
-			factor = 2
-			government_rank = 3  # Empire
-		}
-
-		modifier = {
-			factor = 2
-			government_rank = 2  # Kingdom
-		}
-
-	}
+	ai_will_do = { factor = 1 }
 }
 
 ########################################################
@@ -1936,9 +1525,7 @@ gesellschaft0 = {
 		morale_damage_received = -0.05	#0→-0.05
 	}
 
-	ai_will_do = {
-		factor = 10
-	}
+	ai_will_do = { factor = 1 }
 }
 
 ########################################################
@@ -1984,32 +1571,7 @@ propaganda0 = {
 		recover_army_morale_speed = 0.05	#0→0.05
 	}
 
-	ai_will_do = {
-		factor = 10
-		modifier = {
-			factor = 2
-			personality = ai_diplomat
-		}
-		modifier = {
-			factor = 3
-			government = monarchy
-		}
-
-		modifier = {
-			factor = 3
-			government = republic
-		}
-		modifier = {
-			factor = 2
-			government_rank = 3  # Empire
-		}
-
-		modifier = {
-			factor = 2
-			government_rank = 2  # Kingdom
-		}
-
-	}
+	ai_will_do = { factor = 1 }
 }
 
 ########################################################
@@ -2047,9 +1609,7 @@ nationalismus0 = {
 		prestige_from_land = 1
 	}
 	
-	ai_will_do = {
-		factor = 10
-	}
+	ai_will_do = { factor = 1 }
 }
 
 ########################################################
@@ -2149,9 +1709,7 @@ konigreich0 = {
 		recover_army_morale_speed = 0.05
 	}
 
-	ai_will_do = {
-		factor = 10
-	}
+	ai_will_do = { factor = 1 }
 }
 
 ########################################################
@@ -2198,9 +1756,7 @@ imperialismus0 = {
 		administrative_efficiency = 0.05
 	}
 
-	ai_will_do = {
-		factor = 10
-	}
+	ai_will_do = { factor = 1 }
 }
 
 offensive_ideas = {	#bertus mod
@@ -2240,9 +1796,7 @@ offensive_ideas = {	#bertus mod
 	napoleonic_warfare = {
 		morale_damage = 0.075	#0.10→0.075
 	}
-	ai_will_do = {
-		factor = 0.94
-	}
+	ai_will_do = { factor = 1 }
 }
 
 
@@ -2281,9 +1835,7 @@ defensive_ideas = {	#bertus mod
 		land_maintenance_modifier = -0.10
 	}
 
-	ai_will_do = {
-		factor = 0.77
-	}
+	ai_will_do = { factor = 1 }
 }
 
 quality_ideas = {
@@ -2318,9 +1870,7 @@ quality_ideas = {
 		artillery_power = 0.05	#0.075→0.05
 	}
 
-	ai_will_do = {
-		factor = 0.49
-	}
+	ai_will_do = { factor = 1 }
 }
 
 quantity_ideas = {
@@ -2357,9 +1907,7 @@ quantity_ideas = {
 		land_attrition = -0.1
 	}
 
-	ai_will_do = {
-		factor = 1.0
-	}
+	ai_will_do = { factor = 1 }
 }
 ########################################################
 ####### Weapons Quality / Waffenqualitat
@@ -2399,9 +1947,7 @@ waffenqualitat0 = {
 		artillery_power = 0.05
 	}
 
-	ai_will_do = {
-		factor = 15
-	}
+	ai_will_do = { factor = 1 }
 }
 
 ########################################################
@@ -2447,9 +1993,7 @@ kriegsproduktion0 = {
 		land_forcelimit_modifier = 0.20
 	}
 
-	ai_will_do = {
-		factor = 15
-	}
+	ai_will_do = { factor = 1 }
 }
 ########################################################
 ####### Shock Fokus Ideen / Shock Focus Ideas
@@ -2493,9 +2037,7 @@ shock0 = {
 		leader_land_shock = 1
 	}
 
-	ai_will_do = {
-		factor = 15
-	}
+	ai_will_do = { factor = 1 }
 }
 
 ########################################################
@@ -2537,9 +2079,7 @@ fire0 = {
 		leader_land_fire = 1
 	}
 
-	ai_will_do = {
-		factor = 15
-	}
+	ai_will_do = { factor = 1 }
 }
 
 
@@ -2588,9 +2128,7 @@ militarismus0 = {	#bertus mod
 		reserves_organisation = 0.20
 	}
 
-	ai_will_do = {
-		factor = 15
-	}
+	ai_will_do = { factor = 1 }
 }
 
 ########################################################
@@ -2671,9 +2209,7 @@ formation0 = {	#bertus mod
 			# no damage done/received for 1 months
 	}
 
-	ai_will_do = {
-		factor = 15
-	}
+	ai_will_do = { factor = 1 }
 }
 
 ########################################################
@@ -2682,6 +2218,9 @@ formation0 = {	#bertus mod
 
 festung0 = {
 	category = MIL
+	trigger = {
+		always = no
+	}
 
 	bonus = {
 		reinforce_speed = 0.20	#0.25→0.2
@@ -2718,47 +2257,7 @@ festung0 = {
 		#Unlock defensive Artillery
 	}
 
-	ai_will_do = {
-		factor = 1
-		modifier = {
-			factor = 5
-				is_march = yes
-
-		}
-		modifier = {
-			factor = 30
-			personality = ai_militarist
-		}
-		modifier = {
-			factor = 2
-			total_development = 200
-		}
-		modifier = {
-			factor = 10
-			total_development = 500
-		}
-		modifier = {
-			factor = 4
-			total_development = 700
-		}
-		modifier = {
-			factor = 5
-			total_development = 800
-		}
-		modifier = {
-			factor = 6
-			total_development = 1000
-		}
-		modifier = {
-			factor = 2
-			government_rank = 3  # Empire
-		}
-
-		modifier = {
-			factor = 2
-			government_rank = 2  # Kingdom
-		}
-	}
+	ai_will_do = { factor = 0 }
 }
 ########################################################
 ####### General Staff / Generalstab
@@ -2807,42 +2306,7 @@ generalstab0 = {
 		yearly_army_professionalism = 0.002	#0.025→0.002
 	}
 
-	ai_will_do = {
-		factor = 15
-		modifier = {
-			factor = 30
-			personality = ai_militarist
-		}
-		modifier = {
-			factor = 2
-			total_development = 200
-		}
-		modifier = {
-			factor = 3
-			total_development = 500
-		}
-		modifier = {
-			factor = 4
-			total_development = 700
-		}
-		modifier = {
-			factor = 5
-			total_development = 800
-		}
-		modifier = {
-			factor = 6
-			total_development = 1000
-		}
-		modifier = {
-			factor = 2
-			government_rank = 3  # Empire
-		}
-
-		modifier = {
-			factor = 2
-			government_rank = 2  # Kingdom
-		}
-	}
+	ai_will_do = { factor = 1 }
 }
 
 ########################################################
@@ -2887,42 +2351,7 @@ stehendesheer0 = {
 		discipline = 0.025	#0.05→0.025
 	}
 
-	ai_will_do = {
-		factor = 30
-		modifier = {
-			factor = 30
-			personality = ai_militarist
-		}
-		modifier = {
-			factor = 2
-			total_development = 200
-		}
-		modifier = {
-			factor = 10
-			total_development = 500
-		}
-		modifier = {
-			factor = 4
-			total_development = 700
-		}
-		modifier = {
-			factor = 5
-			total_development = 800
-		}
-		modifier = {
-			factor = 6
-			total_development = 1000
-		}
-		modifier = {
-			factor = 2
-			government_rank = 3  # Empire
-		}
-
-		modifier = {
-			factor = 2
-			government_rank = 2  # Kingdom
-		}
-	}
+	ai_will_do = { factor = 1 }
 }
 
 ########################################################
@@ -2969,46 +2398,7 @@ soldnerheer0 = {
 		merc_independent_from_trade_range = yes
 	}
 
-	ai_will_do = {
-		factor = 30
-		modifier = {
-			factor = 30
-			personality = ai_militarist
-		}
-		modifier = {
-			factor = 2
-			total_development = 200
-		}
-		modifier = {
-			factor = 3
-			total_development = 500
-		}
-		modifier = {
-			factor = 10
-			total_development = 700
-		}
-		modifier = {
-			factor = 5
-			total_development = 800
-		}
-		modifier = {
-			factor = 6
-			total_development = 1000
-		}
-		modifier = {
-			factor = 5
-			government_rank = 3  # Empire
-		}
-
-		modifier = {
-			factor = 2
-			government_rank = 2  # Kingdom
-		}
-		modifier = {
-			factor = 5
-			government = republic
-		}
-	}
+	ai_will_do = { factor = 1 }
 }
 
 ########################################################
@@ -3072,40 +2462,5 @@ wehrpflicht0 = {
 		recover_army_morale_speed = 0.05	#0→0.05
 	}
 
-	ai_will_do = {
-		factor = 30
-		modifier = {
-			factor = 30
-			personality = ai_militarist
-		}
-		modifier = {
-			factor = 10
-			total_development = 200
-		}
-		modifier = {
-			factor = 3
-			total_development = 500
-		}
-		modifier = {
-			factor = 4
-			total_development = 700
-		}
-		modifier = {
-			factor = 5
-			total_development = 800
-		}
-		modifier = {
-			factor = 6
-			total_development = 1000
-		}
-		modifier = {
-			factor = 5
-			government_rank = 3  # Empire
-		}
-
-		modifier = {
-			factor = 2
-			government_rank = 2  # Kingdom
-		}
-	}
+	ai_will_do = { factor = 1 }
 }

@@ -17,6 +17,7 @@ vn_plc_missions_slot_1 = {
         position = 8
         required_missions = {  }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             any_neighbor_country = {
 				religion_group = muslim
 				primary_culture = turkish
@@ -87,6 +88,7 @@ vn_plc_missions_slot_1 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			num_of_owned_provinces_with = {
 				value = 12
 				OR = {
@@ -129,6 +131,7 @@ vn_plc_missions_slot_1 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			num_of_owned_provinces_with = {
 				value = 24
 				OR = {
@@ -186,6 +189,7 @@ vn_plc_missions_slot_1 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			thrace_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -217,6 +221,7 @@ vn_plc_missions_slot_1 = {
         position = 12
         required_missions = { }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			trading_part = {
 				trade_goods = grain
 				value = 0.35
@@ -239,6 +244,7 @@ vn_plc_missions_slot_1 = {
         position = 13
         required_missions = { vn_plc_export_grain }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             num_of_owned_provinces_with = {
 				value = 10
 				development = 25
@@ -273,6 +279,7 @@ vn_plc_missions_slot_1 = {
 			}
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             5732 = {
 				is_strongest_trade_power = ROOT
 			}
@@ -351,6 +358,7 @@ vn_plc_missions_slot_2 = {
 			NOT = { is_strongest_trade_power = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             2697 = {
 				is_strongest_trade_power = ROOT
 			}
@@ -386,6 +394,7 @@ vn_plc_missions_slot_2 = {
 			has_manpower_building_trigger = no
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             num_of_owned_provinces_with = {
 				value = 15
 				OR = {
@@ -416,6 +425,7 @@ vn_plc_missions_slot_2 = {
         position = 12
         required_missions = { vn_plc_invite_lipka_tatars }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			all_rival_country = {
 				NOT = { army_size = ROOT }
 			}
@@ -435,6 +445,7 @@ vn_plc_missions_slot_2 = {
         position = 14
         required_missions = { vn_plc_develop_the_country_side }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			has_institution = industrialization
 			if = {
 				limit = { has_dlc = "Rule Britannia" }
@@ -474,6 +485,7 @@ vn_plc_missions_slot_3 = {
         position = 9
 		required_missions = {  }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			naval_forcelimit = 1
 			calc_true_if = {
 				amount = 3
@@ -512,6 +524,7 @@ vn_plc_missions_slot_3 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			2697 = { country_or_non_sovereign_subject_holds = ROOT }
 			6130 = { country_or_non_sovereign_subject_holds = ROOT }
 			6131 = { country_or_non_sovereign_subject_holds = ROOT }
@@ -609,6 +622,7 @@ vn_plc_missions_slot_3 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			stockholm_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -642,6 +656,7 @@ vn_plc_missions_slot_3 = {
         position = 14
         required_missions = { vn_plc_develop_the_country_side }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             num_of_owned_provinces_with = {
 				value = 10
 				manufactories = 100
@@ -680,6 +695,7 @@ vn_plc_missions_slot_4 = {
         position = 9
         required_missions = {  }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             if = {
 				limit = { has_estate = estate_cossacks }
 				estate_loyalty = {
@@ -718,6 +734,7 @@ vn_plc_missions_slot_4 = {
 			is_city = yes
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             lower_don_region = {
                 type = all
                 OR = {
@@ -736,6 +753,7 @@ vn_plc_missions_slot_4 = {
         position = 12
         required_missions = {  }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			monthly_adm = 10
 			if = {
 				limit = {
@@ -768,6 +786,7 @@ vn_plc_missions_slot_4 = {
         position = 13
         required_missions = { vn_plc_free_royal_cities_act }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			stability = 2
             if = {
                 limit = { has_dlc = "Common Sense" }
@@ -803,6 +822,7 @@ vn_plc_missions_slot_4 = {
         position = 14
         required_missions = { vn_plc_curtail_the_nobility }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			NOT = { has_reform = elective_monarchy }
 			absolutism = 50
 			NOT = { num_of_rebel_armies = 1 }
@@ -841,6 +861,7 @@ vn_plc_missions_slot_5 = {
 			}
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				value = 5
 				region = wild_fields_region
@@ -889,6 +910,7 @@ vn_plc_missions_slot_5 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             poltava_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -941,6 +963,7 @@ vn_plc_missions_slot_5 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             qale_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -994,6 +1017,7 @@ vn_plc_missions_slot_5 = {
 			is_city = yes
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             taman_area = {
 				type = all
 				OR = {
@@ -1035,6 +1059,7 @@ vn_plc_missions_slot_5 = {
         position = 13
         required_missions = { vn_plc_free_royal_cities_act }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			full_idea_group = humanist_ideas
 			num_of_owned_provinces_with = {
 				value = 3
@@ -1059,6 +1084,7 @@ vn_plc_missions_slot_5 = {
 			NOT = { culture = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             num_of_owned_provinces_with = {
 				value = 100
 				culture = ROOT

@@ -2917,7 +2917,7 @@ country_event = {
 	}
 }
 
-# Our Army's Élan strikes fear into the enemy
+# Our Army's ï¿½lan strikes fear into the enemy
 country_event = {
 	id = ideagroups.707
 	title = "EVTNAME6312"
@@ -3130,7 +3130,7 @@ country_event = {
 # Defensive Ideas
 #######################################
 
-# Aristocrats don’t want to serve
+# Aristocrats donï¿½t want to serve
 country_event = {
 	id = ideagroups.800   
 	title = "EVTNAME833"
@@ -8431,7 +8431,7 @@ country_event = {
 	}
 }
 
-# Täuferreich von Münster / extra event
+# Tï¿½uferreich von Mï¿½nster / extra event
 country_event = {
 	id = ideagroups.1921
 	title = ideagroups.1921.t
@@ -8441,7 +8441,7 @@ country_event = {
 	
 	trigger = {
 		has_idea_group = theocracy_gov_ideas
-		owns = 2973 #Münster
+		owns = 2973 #Mï¿½nster
 		is_year = 1533
 		NOT = { is_year = 1536 }
 		NOT = { has_country_modifier = "le_prophete" }	
@@ -9331,7 +9331,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_idea_group = court_ideas 
+		# has_idea_group = court_ideas 
 	}
 
 	mean_time_to_happen = {
@@ -9359,7 +9359,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_idea_group = court_ideas 
+		# has_idea_group = court_ideas 
 		NOT = { has_ruler_modifier = embarassing_display_modifier }
 	}
 
@@ -9393,7 +9393,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_idea_group = court_ideas 
+		# has_idea_group = court_ideas 
 		has_any_estates = yes
 	}
 
@@ -9420,7 +9420,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_idea_group = court_ideas 
+		# has_idea_group = court_ideas 
 		has_any_estates = yes
 	}
 
@@ -9447,7 +9447,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_idea_group = court_ideas
+		# has_idea_group = court_ideas
 		is_free_or_tributary_trigger = yes
 		NOT = { has_country_flag = noble_man_exiled_dynasty_member }
 		NOT = { has_country_flag = noble_man_exiled_politician }
@@ -10033,7 +10033,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_idea_group = court_ideas 
+		# has_idea_group = court_ideas 
 		OR = {
 			num_of_loans = 5
 			is_bankrupt = yes
@@ -10061,7 +10061,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_idea_group = court_ideas 
+		# has_idea_group = court_ideas 
 	}
 
 	mean_time_to_happen = {
@@ -10086,7 +10086,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_idea_group = court_ideas 
+		# has_idea_group = court_ideas 
 		
 	}
 

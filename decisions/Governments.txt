@@ -8,6 +8,7 @@ country_decisions = {
 			NOT = { has_country_modifier = separation_of_powers }
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			stability = 2
 			advisor = statesman
 			is_at_war = no
@@ -31,6 +32,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			NOT = { stability = -1 }
 		}
 		effect = {
@@ -52,6 +54,7 @@ country_decisions = {
 			NOT = { government_rank = 3 }
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			is_subject = no
 			is_elector = yes
 			OR = {
@@ -79,6 +82,7 @@ country_decisions = {
 			has_government_attribute = can_force_election
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			republican_tradition = 55
 			custom_trigger_tooltip = {
 				tooltip = force_reelection_tt
@@ -121,6 +125,7 @@ country_decisions = {
 			has_parliament = yes
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			has_active_debate = yes
 			custom_trigger_tooltip = {
 				tooltip = decision_once_every_twenty_years
@@ -176,6 +181,7 @@ country_decisions = {
 			NOT = { has_country_modifier = promoting_art }
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			OR = {
 				artist = 1
 				philosopher = 1
@@ -228,6 +234,7 @@ country_decisions = {
 			has_country_modifier = promoting_art
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			always = yes
 		}
 		effect = {
@@ -258,6 +265,7 @@ country_decisions = {
 			has_government_attribute = legacy_of_timur_decision
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			adm_power_cost = 50
 			NOT = { has_country_modifier = legacy_of_timur_modifier }
 		}
@@ -282,6 +290,7 @@ country_decisions = {
 			has_unlocked_decision = { type = grand_vizier_selection }
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			adm_power_cost = 25
 			OR = {
 				has_estate_privilege = estate_church_independent_inquisition

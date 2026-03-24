@@ -24,6 +24,7 @@ vn_bra_missions_slot_1_a = {
 			province_id = 2652
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             2652 = {
 				owned_by = ROOT
 				is_core = ROOT
@@ -48,6 +49,7 @@ vn_bra_missions_slot_1_a = {
         icon = mission_european_castle
         required_missions = { vn_bra_berlin_and_colln }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             num_of_owned_provinces_with = {
 				value = 5
 				OR = {
@@ -102,6 +104,7 @@ vn_bra_missions_slot_1_b = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			50 = { country_or_non_sovereign_subject_holds = ROOT }
 			839 = { country_or_non_sovereign_subject_holds = ROOT }
 			242 = { country_or_non_sovereign_subject_holds = ROOT }
@@ -141,6 +144,7 @@ vn_bra_missions_slot_1_b = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				value = 10
 				OR = {
@@ -177,6 +181,7 @@ vn_bra_missions_slot_1_c = {
         position = 5
         required_missions = { vn_bra_reach_baltic }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             naval_forcelimit = 20
 			calc_true_if = {
 				num_of_heavy_ship = 3
@@ -198,6 +203,7 @@ vn_bra_missions_slot_1_c = {
         icon = mission_pol_embellish_gdansk
         required_missions = { vn_bra_brandenburg_navy }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             2652 = {
 				is_strongest_trade_power = ROOT
 			}
@@ -248,6 +254,7 @@ vn_bra_missions_slot_1_c = {
 			province_id = 13
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             13 = {
 				trade_share = {
 					country = ROOT
@@ -302,6 +309,7 @@ vn_bra_missions_slot_2_a = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			746 = { country_or_non_sovereign_subject_holds = ROOT }
 			3209 = { country_or_non_sovereign_subject_holds = ROOT }
 			233 = { country_or_non_sovereign_subject_holds = ROOT }
@@ -452,6 +460,7 @@ vn_bra_missions_slot_2_b = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			4804 = { country_or_non_sovereign_subject_holds = ROOT }
 			2666 = { country_or_non_sovereign_subject_holds = ROOT }
 			843 = { country_or_non_sovereign_subject_holds = ROOT }
@@ -499,6 +508,7 @@ vn_bra_missions_slot_2_b = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				value = 5
 				OR = {
@@ -540,6 +550,7 @@ vn_bra_missions_slot_2_b = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             stolp_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -573,6 +584,7 @@ vn_bra_missions_slot_2_b = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             westpreussennorth_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -643,6 +655,7 @@ vn_bra_missions_slot_2_b = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			kulmerland_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -704,6 +717,7 @@ vn_bra_missions_slot_3_a = {
         position = 1
         required_missions = {  }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			army_size_percentage = 0.75
 			religion_group = christian
 			primary_culture = central_margravian
@@ -869,6 +883,7 @@ vn_bra_missions_slot_3_b = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
                 value = 6
                 area = neumark_area
@@ -912,6 +927,7 @@ vn_bra_missions_slot_3_b = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			2783 = { country_or_non_sovereign_subject_holds = ROOT }
 			3210 = { country_or_non_sovereign_subject_holds = ROOT }
 			4809 = { country_or_non_sovereign_subject_holds = ROOT }
@@ -948,6 +964,7 @@ vn_bra_missions_slot_3_b = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
                 value = 40
                 region = silesia_region
@@ -986,6 +1003,7 @@ vn_bra_missions_slot_3_b = {
             }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			calc_true_if = {
 				silesia_region = {
 					type = all
@@ -1049,6 +1067,7 @@ vn_bra_missions_slot_3_c = {
             }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			westpreussennorth_area = {
 				type = all
 				owned_by = ROOT
@@ -1181,6 +1200,7 @@ vn_bra_missions_slot_4_a = {
 		position = 1
         required_missions = {  }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			OR = {
 				AND = {
 					is_elector = yes
@@ -1223,6 +1243,7 @@ vn_bra_missions_slot_4_b = {
 		position = 2
         required_missions = { vn_bra_ostsiedlung }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			OR = {
 				any_neighbor_country = {
 					custom_trigger_tooltip = {
@@ -1301,6 +1322,7 @@ vn_bra_missions_slot_4_c = {
             }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             berlin_area = {
 				type = all
 				religion_group = ROOT
@@ -1389,6 +1411,7 @@ vn_bra_missions_slot_4_d = {
             }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             neumark_area = {
 				type = all
 				owned_by = ROOT
@@ -1443,6 +1466,7 @@ vn_bra_missions_slot_4_e = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			2636 = { country_or_non_sovereign_subject_holds = ROOT }
 			2631 = { country_or_non_sovereign_subject_holds = ROOT }
 			589 = { country_or_non_sovereign_subject_holds = ROOT }
@@ -1521,6 +1545,7 @@ vn_bra_missions_slot_4_e = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			2501 = { country_or_non_sovereign_subject_holds = ROOT }
 			162 = { country_or_non_sovereign_subject_holds = ROOT }
 			4110 = { country_or_non_sovereign_subject_holds = ROOT }
@@ -1587,6 +1612,7 @@ vn_bra_missions_slot_5_a = {
         icon = mission_landsknecht_soldier
         required_missions = {  }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			if = {
 				limit = {
 					has_estate = estate_nobles
@@ -1671,6 +1697,7 @@ vn_bra_missions_slot_5_a = {
             }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			reform_level = 3
 			num_of_owned_provinces_with = {
 				value = 10
@@ -1721,6 +1748,7 @@ vn_bra_missions_slot_5_b = {
 		position = 4
         required_missions = { vn_bra_centralize_mark }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			custom_trigger_tooltip = {
 				tooltip = vn_bra_dispositio_achillea.tt
 				has_country_flag = vn_bra_dispositio_achillea_flag
@@ -1756,6 +1784,7 @@ vn_bra_missions_slot_5_c = {
         position = 5
         required_missions = {  }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             OR = {
 				AND = {
 					uses_church_aspects = yes
@@ -1785,6 +1814,7 @@ vn_bra_missions_slot_5_c = {
         required_missions = { vn_bra_catholic_or_protestant }
 		position = 7
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			custom_trigger_tooltip = {
 				tooltip = vn_bra_fate_of_bishoprics.tt
 			}

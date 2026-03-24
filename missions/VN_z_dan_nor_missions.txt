@@ -40,6 +40,7 @@ vn_dan_nor_missions_slot_1_a = {
 			}
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             num_of_owned_provinces_with = {
 				value = 10
 				OR = {
@@ -78,6 +79,7 @@ vn_dan_nor_missions_slot_1_a = {
 			province_id = 1799
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             1799 = {
 				owned_by = ROOT
 				is_core = ROOT
@@ -126,6 +128,7 @@ vn_dan_nor_missions_slot_1_a = {
 			vn_dan_nor_advance_to_wessex 
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             if = {
 				limit = {
 					has_dlc = "Dharma"
@@ -234,6 +237,7 @@ vn_dan_nor_missions_slot_1_b = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             master_of_mint = 3
 			west_midlands_area = {
 				type = all
@@ -314,6 +318,7 @@ vn_dan_nor_missions_slot_2_a = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             westfrisia_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -369,6 +374,7 @@ vn_dan_nor_missions_slot_2_b = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             west_riding_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -449,6 +455,7 @@ vn_dan_nor_missions_slot_2_b = {
 			}
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             num_of_owned_provinces_with = {
 				value = 20
 				OR = {
@@ -548,6 +555,7 @@ vn_dan_nor_missions_slot_2_c = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			east_riding_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -668,6 +676,7 @@ vn_dan_nor_missions_slot_2_d = {
 			}
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			owns_core_province = 2268
 			stability = 1
 			east_riding_area = {
@@ -784,6 +793,7 @@ vn_dan_nor_missions_slot_3_a = {
         position = 7
         required_missions = {  }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			navy_size = 25
 			num_of_admirals = 1
 			navy_tradition = 30
@@ -872,6 +882,7 @@ vn_dan_nor_missions_slot_3_a = {
 			NOT = { controlled_by = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             OR = {
 				east_riding_area = {
 					controlled_by = ROOT
@@ -1035,6 +1046,7 @@ vn_dan_nor_missions_slot_3_a = {
 			province_id = 2268
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             2268 = {
 				NOT = {
 					owned_by = ROOT
@@ -1083,6 +1095,7 @@ vn_dan_nor_missions_slot_3_b = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             cheshire_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -1129,6 +1142,7 @@ vn_dan_nor_missions_slot_3_b = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			wessex_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -1228,6 +1242,7 @@ vn_dan_nor_missions_slot_3_b = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			walesnorth_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -1297,6 +1312,7 @@ vn_dan_nor_missions_slot_3_c = {
 			}
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             ireland_region = {
                 type = all
                 owned_by = ROOT
@@ -1399,6 +1415,7 @@ vn_dan_nor_missions_slot_4_a = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             hebrides_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -1439,6 +1456,7 @@ vn_dan_nor_missions_slot_4_a = {
 			}
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             ireland_region = {
 				owned_by = ROOT
 				has_port = yes
@@ -1464,6 +1482,7 @@ vn_dan_nor_missions_slot_4_a = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             ireland_region = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -1493,6 +1512,7 @@ vn_dan_nor_missions_slot_4_a = {
 			}
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			ireland_region = {
 				type = all
 				owned_by = ROOT
@@ -1530,6 +1550,7 @@ vn_dan_nor_missions_slot_4_a = {
 			}
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			british_isles_superregion = {
 				type = all
 				owned_by = ROOT
@@ -1577,6 +1598,7 @@ vn_dan_nor_missions_slot_5_a = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             caithness_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -1626,6 +1648,7 @@ vn_dan_nor_missions_slot_5_a = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             angus_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -1659,6 +1682,7 @@ vn_dan_nor_missions_slot_5_a = {
 			}
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			scotland_region = {
 				type = all
 				owned_by = ROOT

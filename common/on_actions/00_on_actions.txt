@@ -295,13 +295,6 @@ on_war_won = {
 	}
 	if = {
 		limit = {
-			ROOT = { has_country_flag = med_attacker }
-			FROM = { has_country_flag = med_demander_country }
-		}
-		ROOT = { country_event = { id = incident_mediatization.8 } }
-	}
-	if = {
-		limit = {
 			has_country_flag = can_gain_legendary_pirates_flag
 			NOT = { has_ruler_flag = historical_pirate }
 			has_government_attribute = is_pirate_republic_reform
@@ -473,13 +466,6 @@ on_separate_war_won = {
 on_war_lost = {
 	ROOT = { country_event = { id = flavor_cri.6 } }
 	ROOT = { country_event = { id = tributary_events.32 } }
-	if = {
-		limit = {
-			ROOT = { has_country_flag = med_attacker }
-			FROM = { has_country_flag = med_demander_country }
-		}
-		ROOT = { country_event = { id = incident_mediatization.7 } }
-	}
 	if = {
         limit = {
             government = republic
@@ -1061,7 +1047,6 @@ on_new_monarch = {
 		flavor_hun.17			#Maintaining the Black Army
 		muslim_school_events.20 #No Religious School
 		flavor_fra.9000			# François Villon
-		nrm_invasions.4			#Normans win invasion
 		pap_faction_events.1	#Orsini Colonna Popes
 		flavor_sca.2			# Education Focus of the new Ruler
 		flavor_rus.128			# Peter the Great
@@ -1191,7 +1176,6 @@ on_monarch_death = {
 		flavor_tus.24 # death of the Medici Pope
 		government_events.3	# Election of a new Ruler
 		fbievents.123 # Rota
-		nrm_invasions.2 #Strongbow 
 	}
 	random_events = {
 		1000 = 0
@@ -2312,11 +2296,6 @@ on_bi_yearly_pulse = {
 		150 = institution_events.70
 		150 = institution_events.71
 		150 = institution_events.72
-		#Universities Spread Events:
-		150 = institution_events.741
-		150 = institution_events.742
-		#Popular Theology Spread Events:
-		150 = institution_events.781
 
 		#Personality Events
 		50 = personality_events.10 #Just Dilema

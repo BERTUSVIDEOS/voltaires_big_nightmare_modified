@@ -36,7 +36,8 @@ country_decisions = {
 				}
 			}
 		}
-		allow = {	
+		allow = {
+			if = { limit = { ai = yes } ai = no }	
 			is_at_war = no
 			owns_core_province = 1955 	#barcelona
 			development_in_provinces = {

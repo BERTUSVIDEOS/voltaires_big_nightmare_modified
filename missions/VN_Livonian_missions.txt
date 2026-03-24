@@ -27,6 +27,7 @@ vn_liv_missions_slot_1 = {
             }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			latvian_region = {
 				type = all
 				owner = {
@@ -96,6 +97,7 @@ vn_liv_missions_slot_1 = {
             }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			curonia_area = {
 				type = all
 				owner = {
@@ -191,6 +193,7 @@ vn_liv_missions_slot_1 = {
 			}
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			pskov_area = {
 				type = all
 				owner = {
@@ -236,6 +239,7 @@ vn_liv_missions_slot_2 = {
 		icon = chivalry_is_not_dead
 		required_missions = { }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			land_maintenance = 1
 			army_size_percentage = 0.75
 			religion_group = christian
@@ -333,6 +337,7 @@ vn_liv_missions_slot_2 = {
 			religion_group = pagan
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			religious_unity = 0.95
 			NOT = {
 				any_owned_province = {
@@ -352,6 +357,7 @@ vn_liv_missions_slot_2 = {
 		icon = spread_piety
 		required_missions = { vn_liv_convert_livonia vn_liv_conquer_curonia }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			religion_group = christian
 			OR = {
 				full_idea_group = religious_ideas

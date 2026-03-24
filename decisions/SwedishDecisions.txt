@@ -5,6 +5,7 @@ country_decisions = {
 			has_estate = estate_church
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			is_subject = no
 			is_at_war = no
 			OR = {
@@ -116,6 +117,7 @@ country_decisions = {
 			has_estate = estate_burghers
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			is_subject = no
 			is_at_war = no
 			years_of_income = 1
@@ -232,6 +234,7 @@ country_decisions = {
 			NOT = { province_has_current_tech_fort_trigger = yes }
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			is_subject = no
 			is_at_war = no
 			capital_scope = {
@@ -299,6 +302,7 @@ country_decisions = {
 			hre_size = 1
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			is_year = 1550
 			NOT = { is_year = 1625 }
 			OR = {

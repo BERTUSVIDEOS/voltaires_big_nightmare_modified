@@ -7,30 +7,7 @@ fervor_trade = {
 		trade_efficiency = 0.20	#0.10→0.20
 		global_trade_goods_size_modifier = 0.10	#0.05→0.10
 	}
-	ai_will_do = {
-		factor = 1
-		modifier = {
-			factor = 1.25
-			government = republic
-		}
-		modifier = {
-			factor = 0.5
-			NOT = { trade_income_percentage = 0.1 }
-		}		
-		modifier = {
-			factor = 1.25
-			trade_income_percentage = 0.25
-		}
-		modifier = {
-			factor = 1.25
-			trade_income_percentage = 0.5
-		}			
-		modifier = {
-			factor = 0
-			NOT = { fervor = 50 }
-			has_active_fervor = no
-		}		
-	}
+	ai_will_do = { factor = 1 }
 }
 
 fervor_war = {
@@ -43,17 +20,7 @@ fervor_war = {
 		morale_damage = 0.10	#0.05→0.10
 		regiment_manpower_usage = -0.10 	#0→-0.10
 	}
-	ai_will_do = {
-		factor = 1
-		modifier = {
-			factor = 0
-			is_at_war = no
-		}
-		modifier = {
-			factor = 10
-			is_at_war = yes
-		}		
-	}	
+	ai_will_do = { factor = 1 }
 }
 
 fervor_stability = {
@@ -67,23 +34,7 @@ fervor_stability = {
 		all_estate_loyalty_equilibrium = 0.20	#0.10→0.20
 		advisor_cost = -0.10	#0→-0.10
 	}
-	ai_will_do = {
-		factor = 1
-		modifier = {
-			factor = 1.25
-			always = yes
-		}
-		modifier = {
-			factor = 2
-			num_of_rebel_controlled_provinces = 1
-		}		
-		modifier = {
-			factor = 0
-			NOT = { fervor = 50 }
-			NOT = { num_of_rebel_controlled_provinces = 1 }
-			has_active_fervor = no
-		}
-	}	
+	ai_will_do = { factor = 1 }
 }
 
 fervor_diplomacy = {
@@ -97,16 +48,5 @@ fervor_diplomacy = {
 		spy_offence = 0.30	#0→0.30
 		diplomats = 2	#0→2
 	}
-	ai_will_do = {
-		factor = 1
-		modifier = {
-			factor = 1.25
-			is_at_war = no
-		}
-		modifier = {
-			factor = 0
-			NOT = { fervor = 50 }
-			has_active_fervor = no
-		}	
-	}	
+	ai_will_do = { factor = 1 }
 }

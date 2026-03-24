@@ -56,6 +56,7 @@ vn_taifa_missions_slot_2_b = {
             }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             power_projection = 25
             custom_trigger_tooltip = {
                 tooltip = vn_taifa_humiliate_rivals.tt
@@ -99,6 +100,7 @@ vn_taifa_missions_slot_2_b = {
         icon = mission_zambezi_gold
         required_missions = { vn_taifa_humiliate_rivals }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             treasury = 500
             if = {
                 limit = { has_dlc = "Art of War" }
@@ -145,6 +147,7 @@ vn_taifa_missions_slot_2_b = {
             province_id = 2670
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             2670 = {
                 owned_by = ROOT
                 development = 30
@@ -192,6 +195,7 @@ vn_adu_missions_slot_1 = {
             }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             NOT = {
                 any_subject_country = {
                     any_owned_province = {
@@ -224,6 +228,7 @@ vn_adu_missions_slot_1 = {
         icon = mission_mal_riches_of_trade
         required_missions = { vn_adu_local_governors vn_adu_crush_revolts }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             NOT = { average_autonomy = 75 }
         }
         effect = {
@@ -245,6 +250,7 @@ vn_adu_missions_slot_1 = {
             NOT = { culture = mozarabic }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             num_of_owned_provinces_with = {
                 value = 10
                 superregion = iberia_superregion
@@ -265,6 +271,7 @@ vn_adu_missions_slot_1 = {
         icon = mission_mosque
         required_missions = { vn_adu_convert_mozarabs }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             num_accepted_cultures = 4
             OR = {
                 cathedral = 5
@@ -297,6 +304,7 @@ vn_adu_missions_slot_1 = {
             }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             iberia_superregion = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -338,6 +346,7 @@ vn_adu_missions_slot_1 = {
             }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             4094 = {
                 country_or_non_sovereign_subject_holds = ROOT
                 province_has_current_tech_fort_trigger = yes
@@ -391,6 +400,7 @@ vn_adu_missions_slot_1 = {
         icon = prosperity_for_all
         required_missions = { vn_adu_fortfy_the_pyrenees }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             if = {
                 limit = { has_dlc = "Mandate of Heaven" }
                 custom_trigger_tooltip = {
@@ -421,6 +431,7 @@ vn_adu_missions_slot_1 = {
         icon = mission_conquer_timbuktu
         required_missions = { vn_adu_iberia_prospers }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             if = {
                 limit = { NOT = { culture_group = maghrebi } }
                 calc_true_if = {
@@ -456,6 +467,7 @@ vn_adu_missions_slot_1 = {
         icon = mission_into_persia_1
         required_missions = { vn_adu_integrate_the_maghreb vn_adu_rebuild_tunis }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
                 value = 10
                 culture_group = turko_semitic
@@ -479,6 +491,7 @@ vn_adu_missions_slot_1 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             arabia_region = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -525,6 +538,7 @@ vn_adu_missions_slot_2 = {
             }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             num_of_cities = 125
             custom_trigger_tooltip = {
                 tooltip = vn_adu_eclipse_the_taifas.tt
@@ -577,6 +591,7 @@ vn_adu_missions_slot_2 = {
             }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             is_year = 1150
             custom_trigger_tooltip = {
                 tooltip = vn_adu_drive_out_berbers.tt
@@ -607,6 +622,7 @@ vn_adu_missions_slot_2 = {
         icon = mission_fatimid_caliphate
         required_missions = { vn_adu_taifa_patron }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             custom_trigger_tooltip = {
                 tooltip = own_all_cores_fra_minors
                 NOT = {
@@ -628,6 +644,7 @@ vn_adu_missions_slot_2 = {
         icon = mission_high_income
         required_missions = { vn_adu_crush_revolts vn_adu_restore_the_caliphate }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             num_of_owned_provinces_with = {
                 value = 20
                 NOT = { culture_group = ROOT }
@@ -687,6 +704,7 @@ vn_adu_missions_slot_2 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			galicia_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -752,6 +770,7 @@ vn_adu_missions_slot_2 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             has_institution = new_world_i
             macaronesia_area = {
                 type = all
@@ -782,6 +801,7 @@ vn_adu_missions_slot_2 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             safi_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -875,6 +895,7 @@ vn_adu_missions_slot_2 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             macaronesia_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -929,6 +950,7 @@ vn_adu_missions_slot_2 = {
             }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             4749 = {
                 trade_share = {
                     country = ROOT
@@ -959,6 +981,7 @@ vn_adu_missions_slot_2 = {
             province_id = 586
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             586 = {
                 owned_by = ROOT
                 development = 25
@@ -985,6 +1008,7 @@ vn_adu_missions_slot_2 = {
         icon = mission_conquer_andhra_bah
         required_missions = { vn_adu_rebuild_tunis vn_adu_conquer_libya }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             OR = {
                 grand_shipyard = 10
                 shipyard = 15
@@ -1009,6 +1033,7 @@ vn_adu_missions_slot_2 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             syria_region = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -1056,6 +1081,7 @@ vn_adu_missions_slot_2 = {
             province_id = 3065
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             3065 = {
                 owned_by = ROOT
                 development = 40
@@ -1119,6 +1145,7 @@ vn_adu_missions_slot_3 = {
             }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             custom_trigger_tooltip = {
                 tooltip = vn_adu_rival_the_christians.tt
                 NOT = {
@@ -1147,6 +1174,7 @@ vn_adu_missions_slot_3 = {
         icon = mission_restore_faith_in_the_throne
         required_missions = { vn_adu_agricultural_revolution vn_adu_eclipse_the_taifas vn_adu_rival_the_christians }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             religion_group = muslim
             stability = 2
 			reform_level = 4
@@ -1183,6 +1211,7 @@ vn_adu_missions_slot_3 = {
             }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             OR = {
                 NOT = {
                     any_country = {
@@ -1220,6 +1249,7 @@ vn_adu_missions_slot_3 = {
             }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             if = {
                 limit = {
                     iberia_superregion = {
@@ -1261,6 +1291,7 @@ vn_adu_missions_slot_3 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			madrid_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -1325,6 +1356,7 @@ vn_adu_missions_slot_3 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             iberia_superregion = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -1379,6 +1411,7 @@ vn_adu_missions_slot_3 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             tangiers_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -1477,6 +1510,7 @@ vn_adu_missions_slot_3 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			oran_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -1534,6 +1568,7 @@ vn_adu_missions_slot_3 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			bejaia_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -1619,6 +1654,7 @@ vn_adu_missions_slot_3 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			tunis_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -1684,6 +1720,7 @@ vn_adu_missions_slot_3 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			tripolitania_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -1780,6 +1817,7 @@ vn_adu_missions_slot_3 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             NOT = { exists = FTM }
             al_wahat_area = {
                 type = all
@@ -1836,6 +1874,7 @@ vn_adu_missions_slot_3 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             palestine_region = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -1860,6 +1899,7 @@ vn_adu_missions_slot_3 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             NOT = { exists = BGH }
             6301 = { country_or_non_sovereign_subject_holds = ROOT }
             num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
@@ -1889,6 +1929,7 @@ vn_adu_missions_slot_3 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             NOT = { exists = BYZ }
             2233 = { country_or_non_sovereign_subject_holds = ROOT }
         }
@@ -1931,6 +1972,7 @@ vn_adu_missions_slot_4 = {
             local_autonomy = 30
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             NOT = { average_autonomy = 50 }
             num_of_owned_provinces_with = {
                 value = 10
@@ -1960,6 +2002,7 @@ vn_adu_missions_slot_4 = {
         icon = mission_fatimid_caliphate
         required_missions = { vn_adu_taifa_patron }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             religion_group = muslim
             OR = {
                 is_defender_of_faith = yes
@@ -1988,6 +2031,7 @@ vn_adu_missions_slot_4 = {
         icon = mission_hands_praying
         required_missions = { vn_adu_declare_jihad }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             any_country = {
                 religion_group = christian
                 defensive_war_with = ROOT
@@ -2020,6 +2064,7 @@ vn_adu_missions_slot_4 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             aragon_region = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -2093,6 +2138,7 @@ vn_adu_missions_slot_4 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             narbonne_area = { 
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -2172,6 +2218,7 @@ vn_adu_missions_slot_4 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			bearn_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -2263,6 +2310,7 @@ vn_adu_missions_slot_4 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             aquitaine_region = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -2334,6 +2382,7 @@ vn_adu_missions_slot_4 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             forez_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -2380,6 +2429,7 @@ vn_adu_missions_slot_4 = {
             is_capital = yes
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             OR = {
                 FRA = { exists = no }
                 AND = {
@@ -2412,6 +2462,7 @@ vn_adu_missions_slot_4 = {
             province_id = 548
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             548 = {
                 OR = {
                     owned_by = ROOT
@@ -2441,6 +2492,7 @@ vn_adu_missions_slot_4 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             crete_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -2479,6 +2531,7 @@ vn_adu_missions_slot_4 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             outremer_region = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -2532,6 +2585,7 @@ vn_adu_missions_slot_4 = {
             }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             OR = {
                 accepted_culture = turkish
                 any_subject_country = {
@@ -2610,6 +2664,7 @@ vn_adu_missions_slot_5 = {
             }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             1208 = {
                 trade_share = {
                     country = ROOT
@@ -2643,6 +2698,7 @@ vn_adu_missions_slot_5 = {
         icon = overshadow_venice
         required_missions = { vn_adu_trade_of_iberia }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             navy_tradition = 15
             navy_size_percentage = 0.75
             num_of_owned_provinces_with = {
@@ -2688,6 +2744,7 @@ vn_adu_missions_slot_5 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             sassari_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -2725,6 +2782,7 @@ vn_adu_missions_slot_5 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			arles_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -2758,6 +2816,7 @@ vn_adu_missions_slot_5 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             corsica_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -2781,6 +2840,7 @@ vn_adu_missions_slot_5 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             sicilia_region = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -2815,6 +2875,7 @@ vn_adu_missions_slot_5 = {
             is_capital = yes
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             OR = {
                 AND = {
                     APL = { exists = no }
@@ -2872,6 +2933,7 @@ vn_adu_missions_slot_5 = {
             }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             2235 = {
                 OR = {
                     owned_by = ROOT
@@ -2917,6 +2979,7 @@ vn_adu_missions_slot_5 = {
             }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             OR = {
                 has_won_war_against = {
                     who = PAP

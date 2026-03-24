@@ -19,6 +19,7 @@ vn_arabian_tribal_missions_1 = {
 		provinces_to_highlight = {
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			has_adm_advisor = yes
 			has_dip_advisor = yes
 			has_mil_advisor = yes
@@ -114,6 +115,7 @@ vn_arabian_tribal_missions_1 = {
 			is_city = yes
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			4974 = { country_or_non_sovereign_subject_holds = ROOT }
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				OR = {
@@ -221,6 +223,7 @@ vn_arabian_tribal_missions_1 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			5022 = { country_or_non_sovereign_subject_holds = ROOT }
 			5054 = { country_or_non_sovereign_subject_holds = ROOT }
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
@@ -369,6 +372,7 @@ vn_arabian_tribal_missions_1 = {
 			}
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			OR = {
 				theologian = 1 
 				inquisitor = 1
@@ -413,6 +417,7 @@ vn_arabian_tribal_missions_1 = {
 			}
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			5012 = {
 				owned_by = ROOT 
 				base_tax = 5
@@ -463,6 +468,7 @@ vn_arabian_tribal_missions_1 = {
 			}
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			if = {
 				limit = {
 					has_dlc = "Leviathan"
@@ -565,6 +571,7 @@ vn_arabian_tribal_missions_2 = {
 		provinces_to_highlight = {
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			if = {
 				limit = {
 					uses_piety = yes
@@ -697,6 +704,7 @@ vn_arabian_tribal_missions_2 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			5012 = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -753,6 +761,7 @@ vn_arabian_tribal_missions_2 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				OR = {
 					region = outremer_region
@@ -807,6 +816,7 @@ vn_arabian_tribal_missions_2 = {
 			}
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			4998 = {
 				OR = {
 					has_dock_building_trigger = yes
@@ -866,6 +876,7 @@ vn_arabian_tribal_missions_3 = {
 		provinces_to_highlight = {
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			num_of_generals = 1
 			army_size_percentage = 0.9
 		}
@@ -914,6 +925,7 @@ vn_arabian_tribal_missions_3 = {
 			NOT = { owned_by = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			OR = {
 				grown_by_development = 20
 				grown_by_states = 2
@@ -969,6 +981,7 @@ vn_arabian_tribal_missions_3 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				OR = {
 					superregion = levant_superregion
@@ -1038,6 +1051,7 @@ vn_arabian_tribal_missions_4 = {
 			has_climate = arid
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			custom_trigger_tooltip = {
 				tooltip = ARB_has_developed_arid_provinces
 				check_variable = {
@@ -1068,6 +1082,7 @@ vn_arabian_tribal_missions_4 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				region = arabia_region
 				value = 12
@@ -1109,6 +1124,7 @@ vn_arabian_tribal_missions_4 = {
 		provinces_to_highlight = {
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			stability = 2
 			OR = {
 				any_owned_province = {
@@ -1156,6 +1172,7 @@ vn_arabian_tribal_missions_5 = {
 		provinces_to_highlight = {
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			if = {
 				limit = {
 					has_government_mechanic = tribal_federation_mechanic
@@ -1244,6 +1261,7 @@ vn_arabian_tribal_missions_5 = {
 			}
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			owns = 3435
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				area = bahrain_area
@@ -1328,6 +1346,7 @@ vn_arabian_tribal_missions_5 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				OR = {
 					region = al_jazira_region
@@ -1402,6 +1421,7 @@ vn_arabian_tribal_missions_5 = {
 			}
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			capital_scope = {
 				owned_by = ROOT
 				development = 10
@@ -1435,6 +1455,7 @@ vn_arabian_tribal_missions_5 = {
 			NOT = { has_tax_building_trigger = yes }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			any_owned_province = {
 				has_tax_building_trigger = yes
 				development = 15
@@ -1480,6 +1501,7 @@ vn_arabian_tribal_missions_5 = {
 			}
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			capital_scope = {
 				owned_by = ROOT
 				development = 25

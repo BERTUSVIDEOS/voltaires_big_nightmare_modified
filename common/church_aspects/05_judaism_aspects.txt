@@ -4,18 +4,7 @@ judaism_rosh_hashanah_aspect = {	#ADM aspect
 		global_unrest = -2
 	}
 	monarch_power = adm
-	ai_will_do = {
-		factor = 10
-		modifier = {
-			factor = 2
-			NOT = { religious_unity = 0.8 }
-		}
-		modifier = {
-			factor = 2
-			unrest = 4
-			NOT = { stability = 0 }
-		}
-	}
+	ai_will_do = { factor = 1 }
 }
 
 judaism_simchat_torah_aspect = {	#ADM aspect
@@ -24,9 +13,7 @@ judaism_simchat_torah_aspect = {	#ADM aspect
 		technology_cost = -0.05
 	}
 	monarch_power = adm
-	ai_will_do = {
-		factor = 15
-	}
+	ai_will_do = { factor = 1 }
 }
 
 judaism_sukkot_aspect = {	#ADM aspect
@@ -35,17 +22,7 @@ judaism_sukkot_aspect = {	#ADM aspect
 		interest = -0.5
 	}
 	monarch_power = adm
-	ai_will_do = {
-		factor = 5
-		modifier = {
-			factor = 4
-			num_of_loans = 2
-		}
-		modifier = {
-			factor = 7
-			num_of_loans = 6
-		}
-	}
+	ai_will_do = { factor = 1 }
 }
 
 judaism_communities_aspect = {	#DIP aspect
@@ -53,54 +30,31 @@ judaism_communities_aspect = {	#DIP aspect
 	effect = {
 		hidden_effect = {
 			every_country = {
-				limit = {
-					has_opinion_modifier = {
-						who = ROOT
-						modifier = diplomatic_rabbi_opinion
-					}
-				}
-				remove_opinion = {
-					who = ROOT
-					modifier = diplomatic_rabbi_opinion
-				}
-				reverse_remove_opinion = {
-					who = ROOT
-					modifier = diplomatic_rabbi_opinion_reverse
-				}
+				limit = { has_opinion_modifier = { who = ROOT modifier = diplomatic_rabbi_opinion } }
+				remove_opinion = { who = ROOT modifier = diplomatic_rabbi_opinion }
+				reverse_remove_opinion = { who = ROOT modifier = diplomatic_rabbi_opinion_reverse }
 			}
 			every_owned_province = {
-				limit = {
-					has_province_modifier = judaism_abrahamic_roots
-				}
+				limit = { has_province_modifier = judaism_abrahamic_roots }
 				remove_province_modifier = judaism_abrahamic_roots
 			}
 			every_owned_province = {
-				limit = {
-					religion = jewish
-				}
+				limit = { religion = jewish }
 				if = {
 					limit = {
 						NOT = { culture_group = ROOT }
 						has_owner_accepted_culture = no
 						has_owner_culture = no
 					}
-					add_province_modifier = {
-						name = judaism_community_wrong_culture
-						duration = -1
-					}
+					add_province_modifier = { name = judaism_community_wrong_culture duration = -1 }
 				}
 				else_if = {
 					limit = {
-						owner = {
-							has_cultural_union = no
-						}
+						owner = { has_cultural_union = no }
 						culture_group = ROOT
 						has_owner_accepted_culture = no
 					}
-					add_province_modifier = {
-						name = judaism_community_same_culture_group
-						duration = -1
-					}
+					add_province_modifier = { name = judaism_community_same_culture_group duration = -1 }
 				}
 			}
 		}
@@ -109,17 +63,7 @@ judaism_communities_aspect = {	#DIP aspect
 		tolerance_own = 2
 	}
 	monarch_power = dip
-	ai_will_do = {
-		factor = 15
-		modifier = {
-			factor = 10
-			dominant_religion = jewish
-		}
-		modifier = {
-			factor = 0.01
-			NOT = { dominant_religion = jewish }
-		}
-	}
+	ai_will_do = { factor = 1 }
 }
 
 jewish_abrahamic_aspect = {	#DIP aspect
@@ -127,20 +71,9 @@ jewish_abrahamic_aspect = {	#DIP aspect
 	effect = {
 		hidden_effect = {
 			every_country = {
-				limit = {
-					has_opinion_modifier = {
-						who = ROOT
-						modifier = diplomatic_rabbi_opinion
-					}
-				}
-				remove_opinion = {
-					who = ROOT
-					modifier = diplomatic_rabbi_opinion
-				}
-				reverse_add_opinion = {
-					who = ROOT
-					modifier = diplomatic_rabbi_opinion_reverse
-				}
+				limit = { has_opinion_modifier = { who = ROOT modifier = diplomatic_rabbi_opinion } }
+				remove_opinion = { who = ROOT modifier = diplomatic_rabbi_opinion }
+				reverse_add_opinion = { who = ROOT modifier = diplomatic_rabbi_opinion_reverse }
 			}
 			every_owned_province = {
 				limit = {
@@ -149,10 +82,7 @@ jewish_abrahamic_aspect = {	#DIP aspect
 						religion_group = muslim
 					}
 				}
-				add_province_modifier = {
-					name = judaism_abrahamic_roots
-					duration = -1
-				}
+				add_province_modifier = { name = judaism_abrahamic_roots duration = -1 }
 			}
 			every_owned_province = {
 				limit = {
@@ -176,17 +106,7 @@ jewish_abrahamic_aspect = {	#DIP aspect
 		tolerance_heathen = 2
 	}
 	monarch_power = dip
-	ai_will_do = {
-		factor = 15
-		modifier = {
-			factor = 0
-			dominant_religion = jewish
-		}
-		modifier = {
-			factor = 10
-			NOT = { dominant_religion = jewish }
-		}
-	}
+	ai_will_do = { factor = 1 }
 }
 
 judaism_diplomatic_rabbi_aspect = {	#DIP aspect
@@ -207,19 +127,11 @@ judaism_diplomatic_rabbi_aspect = {	#DIP aspect
 					}
 					NOT = { government = theocracy }
 				}
-				add_opinion = {
-					who = ROOT
-					modifier = diplomatic_rabbi_opinion
-				}
-				reverse_add_opinion = {
-					who = ROOT
-					modifier = diplomatic_rabbi_opinion_reverse
-				}
+				add_opinion = { who = ROOT modifier = diplomatic_rabbi_opinion }
+				reverse_add_opinion = { who = ROOT modifier = diplomatic_rabbi_opinion_reverse }
 			}
 			every_owned_province = {
-				limit = {
-					has_province_modifier = judaism_abrahamic_roots
-				}
+				limit = { has_province_modifier = judaism_abrahamic_roots }
 				remove_province_modifier = judaism_abrahamic_roots
 			}
 			every_owned_province = {
@@ -241,14 +153,11 @@ judaism_diplomatic_rabbi_aspect = {	#DIP aspect
 		}
 	}
 	modifier = { 	#bertus mod
-		#improve_relation_modifier = 0.2
 		build_cost = -0.10
 		build_time = -0.10
 	}
 	monarch_power = dip
-	ai_will_do = {
-		factor = 15
-	}
+	ai_will_do = { factor = 1 }
 }
 
 judaism_yom_kippur_aspect = {	#MIL aspect
@@ -257,18 +166,7 @@ judaism_yom_kippur_aspect = {	#MIL aspect
 		infantry_cost = -0.05
 	}
 	monarch_power = mil
-	ai_will_do = {
-		factor = 10
-		modifier = {
-			factor = 2
-			is_at_war = yes
-			NOT = { manpower_percentage = 0.9 }
-		}
-		modifier = {
-			factor = 2
-			NOT = { manpower_percentage = 0.5 }
-		}
-	}
+	ai_will_do = { factor = 1 }
 }
 
 judaism_remember_passover_aspect = {	#MIL aspect
@@ -277,13 +175,7 @@ judaism_remember_passover_aspect = {	#MIL aspect
 		defensiveness = 0.25
 	}
 	monarch_power = mil
-	ai_will_do = {
-		factor = 12
-		modifier = {
-			factor = 2
-			is_at_war = yes
-		}
-	}
+	ai_will_do = { factor = 1 }
 }
 
 judaism_purim_teachings_aspect = {	#MIL aspect
@@ -293,11 +185,5 @@ judaism_purim_teachings_aspect = {	#MIL aspect
 		naval_morale = 0.05
 	}
 	monarch_power = mil
-	ai_will_do = {
-		factor = 12
-		modifier = {
-			factor = 2
-			is_at_war = yes
-		}
-	}
+	ai_will_do = { factor = 1 }
 }

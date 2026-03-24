@@ -16,6 +16,7 @@ vn_lem_missions_slot_1 = {
         icon = immaculate_government
         required_missions = { }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             if = {
                 limit = { has_estate = estate_church }
                 estate_loyalty = {
@@ -39,6 +40,7 @@ vn_lem_missions_slot_1 = {
         icon = a_center_of_religion
         required_missions = { vn_lem_mollify_clergy }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			religious_unity = 1
         }
         effect = {
@@ -59,6 +61,7 @@ vn_lem_missions_slot_1 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             epirus_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -112,6 +115,7 @@ vn_lem_missions_slot_1 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             prilep_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -161,6 +165,7 @@ vn_lem_missions_slot_1 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             serbia_region = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -189,6 +194,7 @@ vn_lem_missions_slot_1 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             flanders_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -214,6 +220,7 @@ vn_lem_missions_slot_1 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             crete_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -247,6 +254,7 @@ vn_lem_missions_slot_2 = {
         icon = knights_of_the_new_world
         required_missions = { }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             num_of_allies = 5
         }
         effect = {
@@ -290,6 +298,7 @@ vn_lem_missions_slot_2 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             kastoria_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -333,6 +342,7 @@ vn_lem_missions_slot_2 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             thessalia_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -379,6 +389,7 @@ vn_lem_missions_slot_2 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             achaea_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -403,6 +414,7 @@ vn_lem_missions_slot_2 = {
         icon = crusader_fleet
         required_missions = { vn_lem_conquer_peloponnese }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             navy_size = 40
         }
         effect = {
@@ -504,6 +516,7 @@ vn_lem_missions_slot_2 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             chios_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -552,6 +565,7 @@ vn_lem_missions_slot_3 = {
         icon = restore_the_hospitallers
         required_missions = { }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             is_at_war = no
             army_size_percentage = 0.75
             num_of_generals = 2
@@ -569,6 +583,7 @@ vn_lem_missions_slot_3 = {
         icon = mission_marwari_horses
         required_missions = { vn_lem_reinforce_the_army vn_lem_conquer_thrace }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             num_of_generals = 3
             cavalry_fraction = 0.25
             if = {
@@ -591,6 +606,7 @@ vn_lem_missions_slot_3 = {
         icon = mission_crusade
         required_missions = { vn_lem_obligate_crusaders vn_lem_conquer_athens }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             calc_true_if = {
                 amount = 3
                 desc = vn_lem_a_new_crusade.tt
@@ -655,6 +671,7 @@ vn_lem_missions_slot_3 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             teluch_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -701,6 +718,7 @@ vn_lem_missions_slot_3 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             lebanon_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -728,6 +746,7 @@ vn_lem_missions_slot_3 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             palestine_region = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -757,6 +776,7 @@ vn_lem_missions_slot_3 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             transjordan_region = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -787,6 +807,7 @@ vn_lem_missions_slot_3 = {
             }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             is_defender_of_faith = yes
             outremer_region = {
                 type = all
@@ -829,6 +850,7 @@ vn_lem_missions_slot_4 = {
         icon = la_latinocrazia
         required_missions = { }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             stability = 2
             NOT = { average_unrest = 2 }
             if = {
@@ -891,6 +913,7 @@ vn_lem_missions_slot_4 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			thrace_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -941,6 +964,7 @@ vn_lem_missions_slot_4 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             bithynia_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -978,6 +1002,7 @@ vn_lem_missions_slot_4 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             phrygia_region = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -1019,6 +1044,7 @@ vn_lem_missions_slot_4 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             anatolikon_region = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -1058,6 +1084,7 @@ vn_lem_missions_slot_4 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             cappadokia_region = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -1089,6 +1116,7 @@ vn_lem_missions_slot_5 = {
         icon = prosperity_for_all
         required_missions = { }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             prestige = 50
             owns_core_province = 2233
         }
@@ -1108,6 +1136,7 @@ vn_lem_missions_slot_5 = {
             province_id = 2233
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             2233 = {
                 owned_by = ROOT
                 has_building = cathedral
@@ -1139,6 +1168,7 @@ vn_lem_missions_slot_5 = {
             }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             num_of_owned_provinces_with = {
                 value = 3
                 OR = {
@@ -1172,6 +1202,7 @@ vn_lem_missions_slot_5 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             bulgariasouth_region = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -1195,6 +1226,7 @@ vn_lem_missions_slot_5 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             bulgaria_region = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -1224,6 +1256,7 @@ vn_lem_missions_slot_5 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             optimaton_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -1289,6 +1322,7 @@ vn_lem_missions_slot_5 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             chaldia_region = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT

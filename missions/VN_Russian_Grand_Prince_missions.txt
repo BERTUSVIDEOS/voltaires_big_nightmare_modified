@@ -29,7 +29,8 @@ vn_grand_prince_missions_1 = {
 		position = 5
 		provinces_to_highlight = {  } 
 
-		trigger = { 
+		trigger = {
+			if = { limit = { ai = yes } ai = no } 
 			if = {
 				limit = {
 					has_dlc = "Mandate of Heaven"
@@ -72,7 +73,8 @@ vn_grand_prince_missions_1 = {
 		required_missions = { vn_gp_rein_in_kinship } 
 		provinces_to_highlight = {  } 
 
-		trigger = { 
+		trigger = {
+			if = { limit = { ai = yes } ai = no } 
 			if = {
 				limit = {
 					has_dlc = "Mandate of Heaven"
@@ -104,7 +106,8 @@ vn_grand_prince_missions_1 = {
 		required_missions = { vn_gp_russkaya_pravda } 
 		provinces_to_highlight = {  } 
 
-		trigger = { 
+		trigger = {
+			if = { limit = { ai = yes } ai = no } 
 			if = {
 				limit = {
 					has_dlc = "Mandate of Heaven"
@@ -166,7 +169,8 @@ vn_grand_prince_missions_2 = {
 		required_missions = { vn_gp_rein_in_kinship } 
 		provinces_to_highlight = { }
 
-		trigger = { 
+		trigger = {
+			if = { limit = { ai = yes } ai = no } 
 			if = {
 				limit = {
 					has_dlc = "Mandate of Heaven"
@@ -209,7 +213,8 @@ vn_grand_prince_missions_2 = {
 			province_id = 6462
 		}
 
-		trigger = { 
+		trigger = {
+			if = { limit = { ai = yes } ai = no } 
 			OR = { 
 				6462 = { 
 					owner = { 
@@ -247,7 +252,8 @@ vn_grand_prince_missions_2 = {
 		required_missions = { vn_gp_russkaya_pravda } 
 		provinces_to_highlight = {  } 
 
-		trigger = { 
+		trigger = {
+			if = { limit = { ai = yes } ai = no } 
 			OR = {
 				crown_land_share = 65
 				AND = {
@@ -302,15 +308,15 @@ vn_grand_prince_missions_2 = {
 
 		effect = { 
 			change_ruler_stat = {
-				stat = adm
+				type = adm
 				amount = 1
 			}
 			change_ruler_stat = {
-				stat = dip
+				type = dip
 				amount = 1
 			}
 			change_ruler_stat = {
-				stat = mil
+				type = mil
 				amount = 1
 			}
 		} 
@@ -327,6 +333,7 @@ vn_grand_prince_missions_2 = {
 		provinces_to_highlight = { } 
 
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			if = {	
 				limit = { has_dlc = "Mandate of Heaven" }
 				OR = { 
@@ -395,7 +402,8 @@ vn_grand_prince_missions_3 = {
 		position = 5
 		provinces_to_highlight = {  } 
 
-		trigger = { 
+		trigger = {
+			if = { limit = { ai = yes } ai = no } 
 			
 		} 
 
@@ -425,7 +433,8 @@ vn_grand_prince_missions_3 = {
 			}
 		} 
 
-		trigger = { 
+		trigger = {
+			if = { limit = { ai = yes } ai = no } 
 			if = {
 				limit = { 
 					any_country = {
@@ -487,7 +496,8 @@ vn_grand_prince_missions_3 = {
 			has_mills_trade_goods = yes
 		} 
 
-		trigger = { 
+		trigger = {
+			if = { limit = { ai = yes } ai = no } 
 			development_in_provinces = {
 				value = 165
 				has_mills_trade_goods = yes
@@ -539,7 +549,8 @@ vn_grand_prince_missions_3 = {
 			is_capital = yes
 		} 
 
-		trigger = { 
+		trigger = {
+			if = { limit = { ai = yes } ai = no } 
 			if = {
 				limit = {
 					has_dlc = "Rights of Man"
@@ -580,7 +591,7 @@ vn_grand_prince_missions_3 = {
 				num_of_trusted_allies = 3
 			}
 			OR = {
-				full_idea_group = court_ideas
+				# full_idea_group = court_ideas
 				prestige = 100
 			}
 		} 
@@ -655,6 +666,7 @@ vn_grand_prince_missions_4 = {
 		} 
 
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			3836 = {
 				country_or_non_sovereign_subject_holds = ROOT
 				development = 30
@@ -712,6 +724,7 @@ vn_grand_prince_missions_4 = {
 			}
 		} 
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			OR = {
 				2233 = {
 					owner = {
@@ -759,7 +772,8 @@ vn_grand_prince_missions_4 = {
 		}
 		provinces_to_highlight = {  } 
 
-		trigger = { 
+		trigger = {
+			if = { limit = { ai = yes } ai = no } 
 			if = {
 				limit = {
 					OR = {
@@ -819,7 +833,8 @@ vn_grand_prince_missions_5 = {
 		position = 5
 		provinces_to_highlight = {  } 
 
-		trigger = { 
+		trigger = {
+			if = { limit = { ai = yes } ai = no } 
 			religion = orthodox
 			if = {
 				limit = {
@@ -867,7 +882,8 @@ vn_grand_prince_missions_5 = {
 		required_missions = { vn_gp_whitestone_architecture } 
 		provinces_to_highlight = {  } 
 
-		trigger = { 
+		trigger = {
+			if = { limit = { ai = yes } ai = no } 
 			religion = orthodox
 			if = {
 				limit = { has_estate = estate_church }
@@ -919,7 +935,8 @@ vn_grand_prince_missions_5 = {
 		required_missions = { vn_gp_icon_painting } 
 		provinces_to_highlight = {  } 
 
-		trigger = { 
+		trigger = {
+			if = { limit = { ai = yes } ai = no } 
 			religion = orthodox 
 			NOT = { has_estate_privilege = estate_church_lao_animism }
 			religious_unity = 1

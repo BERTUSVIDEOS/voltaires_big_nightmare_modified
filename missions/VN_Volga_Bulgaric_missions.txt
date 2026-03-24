@@ -17,6 +17,7 @@ vn_vgb_missions_slot_1 = {
         position = 1
         required_missions = { }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             num_of_generals = 2
 			army_size_percentage = 0.75
 			land_maintenance = 1
@@ -49,6 +50,7 @@ vn_vgb_missions_slot_1 = {
         position = 2
         required_missions = { vn_vgb_bulgaric_legacy }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             OR = {
 				AND = {
 					war_with = GLH
@@ -86,6 +88,7 @@ vn_vgb_missions_slot_1 = {
 			owned_by = GLH
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			NOT = {
 				any_province = {
 					OR = {
@@ -116,6 +119,7 @@ vn_vgb_missions_slot_1 = {
 			province_id = 6462
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             6462 = {
 				owned_by = ROOT
 				is_core = ROOT
@@ -149,6 +153,7 @@ vn_vgb_missions_slot_1 = {
         position = 5
         required_missions = { vn_vgb_patronize_bolghar }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			prestige = 50
             any_ally = {
 				NOT = { is_neighbor_of = ROOT }
@@ -185,6 +190,7 @@ vn_vgb_missions_slot_2 = {
         position = 4
         required_missions = { vn_vgb_north_volga_trade }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             num_of_owned_provinces_with = {
 				value = 10
 				development = 5
@@ -299,6 +305,7 @@ vn_vgb_missions_slot_2 = {
 			}
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             calc_true_if = {
 				amount = 5
 				all_owned_province = {
@@ -370,6 +377,7 @@ vn_vgb_missions_slot_2 = {
 			}
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             treasury = 1000
 			3785 = {
 				is_strongest_trade_power = ROOT
@@ -449,6 +457,7 @@ vn_vgb_missions_slot_3 = {
 			province_id = 6444
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             6444 = {
 				trade_share = {
 					country = ROOT
@@ -477,6 +486,7 @@ vn_vgb_missions_slot_3 = {
 			province_id = 6462
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             6462 = {
 				owned_by = ROOT
 				is_core = ROOT
@@ -507,6 +517,7 @@ vn_vgb_missions_slot_3 = {
 			}
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             any_ally = {
 				culture_group = east_slavic
 				has_opinion = {
@@ -554,6 +565,7 @@ vn_vgb_missions_slot_3 = {
         position = 6
         required_missions = { vn_vgb_russian_trade_agreements }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			religious_unity = 0.75
 			num_of_owned_provinces_with = {
 				value = 5
@@ -599,6 +611,7 @@ vn_vgb_missions_slot_3 = {
 			}
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			government_rank = 6
 			is_tribal = no
             development_in_provinces = {
@@ -638,6 +651,7 @@ vn_vgb_missions_slot_4 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             mari_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -678,6 +692,7 @@ vn_vgb_missions_slot_4 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             udmurtia_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -719,6 +734,7 @@ vn_vgb_missions_slot_4 = {
 			is_city = yes
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			kama_area = {
 				type = all
 				OR = {
@@ -761,6 +777,7 @@ vn_vgb_missions_slot_4 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             saratov_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -788,6 +805,7 @@ vn_vgb_missions_slot_4 = {
 			area = sarai_area
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             sarai_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -815,6 +833,7 @@ vn_vgb_missions_slot_4 = {
 			area = astrakhan_area
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             astrakhan_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -875,6 +894,7 @@ vn_vgb_missions_slot_5 = {
 			is_city = yes
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			mordovia_region = {
 				type = all
 				OR = {
@@ -896,6 +916,7 @@ vn_vgb_missions_slot_5 = {
 			owner = { culture_group = finno_ugric }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             any_ally = {
 				culture_group = finno_ugric
 			}

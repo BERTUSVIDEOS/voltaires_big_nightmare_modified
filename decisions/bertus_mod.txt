@@ -4,7 +4,8 @@ country_decisions = {
 		potential = {
 			has_parliament = yes
 		}
-		allow = {	
+		allow = {
+			if = { limit = { ai = yes } ai = no }	
 			NOT = {
 				all_owned_province = { has_seat_in_parliament = yes }
 			}

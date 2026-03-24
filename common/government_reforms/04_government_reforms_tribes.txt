@@ -53,10 +53,8 @@ steppe_horde = {
 		enables_horde_idea_group = yes
 		enables_aristocratic_idea_group = no
 	}
-
-	ai = {
-		factor = 1000
-	}
+	
+	ai = { factor = 1.0 }
 }
 
 great_mongol_state_reform = {
@@ -191,9 +189,8 @@ great_mongol_state_reform = {
 		enables_horde_idea_group = yes
 		enables_aristocratic_idea_group = no
 	}
-	ai = {
-		factor = 1000
-	}
+	
+	ai = { factor = 1.0 }
 }
 
 tribal_federation = {
@@ -220,9 +217,8 @@ tribal_federation = {
 			tribal_federation_mechanic
 		}
 	}
-	ai = {
-		factor = 0
-	}
+	
+	ai = { factor = 1.0 }
 }
 
 tribal_despotism = {
@@ -234,9 +230,8 @@ tribal_despotism = {
 		core_creation = -0.1
 	}
 	legacy_equivalent = tribal_despotism_legacy
-	ai = {
-		factor = 1
-	}
+	
+	ai = { factor = 1.0 }
 }
 
 tribal_kingdom = {
@@ -259,9 +254,8 @@ tribal_kingdom = {
 		hostile_attrition = 1
 		diplomatic_upkeep = -1
 	}
-	ai = {
-		factor = 1
-	}
+	
+	ai = { factor = 1.0 }
 }
 
 stateless_society = {
@@ -275,13 +269,8 @@ stateless_society = {
 		defensiveness = 0.75
 		land_morale = 0.15
 	}
-	ai = {
-		factor = 1
-		modifier = {
-			factor = -1
-			num_of_cities = 2
-		}
-	}
+	
+	ai = { factor = 1.0 }
 }
 
 sacred_kingdom = {
@@ -322,6 +311,8 @@ sacred_kingdom = {
 		max_absolutism = 25
 		legitimacy = 0.5
 	}
+	
+	ai = { factor = 1.0 }
 }
 
 matrilineal_system = {
@@ -351,6 +342,8 @@ matrilineal_system = {
 		female_advisor_chance = 0.5
 		legitimacy = 1
 	}
+	
+	ai = { factor = 1.0 }
 }
 
 tribal_confederacy = {
@@ -394,9 +387,8 @@ tribal_confederacy = {
 		}
 	}
 
-	ai = {
-		factor = 0
-	}
+	
+	ai = { factor = 1.0 }
 }
 
 #tribal_cultural_values
@@ -410,15 +402,8 @@ martial_society_reform = {
 	modifiers = {
 		global_manpower_modifier = 0.2
 	}
-	ai = {
-		factor = 1
-		modifier = {
-			factor = 2
-			any_enemy_country = {
-				army_size = root
-			}
-		}
-	}
+	
+	ai = { factor = 1.0 }
 }
 
 civil_society_reform = {
@@ -431,17 +416,8 @@ civil_society_reform = {
 		global_tax_modifier = 0.05
 		yearly_corruption = -0.05
 	}
-	ai = {
-		factor = 1
-		modifier = {
-			factor = 2
-			OR = {
-				is_in_deficit = yes
-				num_of_loans = 5
-				corruption = 5
-			}
-		}
-	}
+	
+	ai = { factor = 1.0 }
 }
 
 #Religion vs Secularization
@@ -453,17 +429,8 @@ religious_societies_reform = {
 		stability_cost_modifier = -0.1
 		religious_unity = 0.15
 	}
-	ai = {
-		factor = 1
-		modifier = {
-			factor = 0.1
-			religious_unity = 1
-		}
-		modifier = {
-			factor = 0.5
-			religious_unity = 0.9
-		}
-	}
+	
+	ai = { factor = 1.0 }
 }
 
 lip_service_reform = {
@@ -483,17 +450,8 @@ retain_tribal_hierarchy_reform = {
 		governing_capacity = 150
 		max_absolutism = 10
 	}
-	ai = {
-		factor = 1
-		modifier = {
-			factor = 0.5
-			NOT = {
-				any_owned_province = {
-					is_territorial_core = root
-				}
-			}
-		}
-	}
+	
+	ai = { factor = 1.0 }
 }
 
 centralize_tribal_power_reform = {
@@ -503,6 +461,8 @@ centralize_tribal_power_reform = {
 		core_creation = -0.05
 		stability_cost_modifier = -0.05
 	}
+	
+	ai = { factor = 1.0 }
 }
 
 #Tribal Reformation
@@ -519,11 +479,9 @@ horde_barbaric_despoilers_reform = {
 	}
 	modifiers = {
 		raze_power_gain = 0.33
-		
 	}
-	ai = {
-		factor = 2
-	}
+	
+	ai = { factor = 1.0 }
 }
 
 horde_tribal_unity_reform = {
@@ -539,9 +497,8 @@ horde_tribal_unity_reform = {
 	modifiers = {
 		horde_unity = 2
 	}
-	ai = {
-		factor = 2
-	}
+	
+	ai = { factor = 1.0 }
 }
 
 tribe_becomes_monarchy_reform = {
@@ -608,9 +565,8 @@ tribe_becomes_monarchy_reform = {
 			}
 		}
 	}
-	ai = {
-		factor = 1
-	}
+	
+	ai = { factor = 1.0 }
 }
 
 tribe_becomes_republic_reform = {
@@ -681,24 +637,8 @@ tribe_becomes_republic_reform = {
 			}
 		}
 	}
-	ai = {
-		factor = 1
-		modifier = {
-			factor = 0
-			OR = {
-				has_reform = steppe_horde
-				has_reform = great_mongol_state_reform
-				NOT = { trade_income_percentage = 0.3 }
-			}
-		}
-		modifier = {
-			factor = 1.5
-			OR = {
-				num_of_centers_of_trade = 5
-				trade_income_percentage = 0.4
-			}
-		}
-	}
+	
+	ai = { factor = 1.0 }
 }
 
 tribe_becomes_theocracy_reform = {
@@ -768,17 +708,8 @@ tribe_becomes_theocracy_reform = {
 			}
 		}
 	}
-	ai = {
-		factor = 1
-		modifier = {
-			factor = 0
-			OR = {
-				has_reform = steppe_horde
-				has_reform = great_mongol_state_reform
-				NOT = { religion_group = muslim }
-			}
-		}
-	}
+	
+	ai = { factor = 1.0 }
 }
 
 tribe_becomes_horde_reform = {
@@ -802,9 +733,8 @@ tribe_becomes_horde_reform = {
 		NOT = { has_reform = great_mongol_state_reform }
 		NOT = { has_government_attribute_short_desc = locked_government_type }
 	}
-	ai = {
-		factor = 0
-	}
+	
+	ai = { factor = 1.0 }
 }
 
 tribe_remain_tribal_reform = {
@@ -839,7 +769,6 @@ tribe_tribal_unity = {
 		dhimmi_loyalty_modifier = 0.05
 		burghers_loyalty_modifier = 0.05
 	}
-	ai = {
-		factor = 2
-	}
+	
+	ai = { factor = 1.0 }
 }

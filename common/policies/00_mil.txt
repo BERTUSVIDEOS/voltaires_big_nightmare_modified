@@ -18,14 +18,8 @@ horde0_mil_policy = {
 	
 	cavalry_power = 0.05
 	shock_damage = 0.05
-
-	ai_will_do = {
-		factor = 1
-		modifier = {
-			factor = 1.5
-			is_at_war = yes
-		}
-	}
+	
+	ai_will_do = { factor = 1 }
 }
 monarchie0_mil_policy = {
 	monarch_power = MIL
@@ -43,14 +37,8 @@ monarchie0_mil_policy = {
 	}
 	
 	shock_damage = 0.10
-
-	ai_will_do = {
-		factor = 1
-		modifier = {
-			factor = 1.5
-			is_at_war = yes
-		}
-	}
+	
+	ai_will_do = { factor = 1 }
 }
 theocracy_mil_policy = {
 	monarch_power = MIL
@@ -69,14 +57,8 @@ theocracy_mil_policy = {
 	
 	shock_damage = 0.05
 	cavalry_power = 0.05
-
-	ai_will_do = {
-		factor = 1
-		modifier = {
-			factor = 1.5
-			is_at_war = yes
-		}
-	}
+	
+	ai_will_do = { factor = 1 }
 }
 republican_mil_policy = {
 	monarch_power = MIL
@@ -95,14 +77,8 @@ republican_mil_policy = {
 	
 	allowed_mamluks_fraction = 0.05
 	max_revolutionary_zeal= 25
-
-	ai_will_do = {
-		factor = 1
-		modifier = {
-			factor = 1.5
-			is_at_war = yes
-		}
-	}
+	
+	ai_will_do = { factor = 1 }
 }
 modern_firearm_techniques = {
 	monarch_power = MIL
@@ -120,14 +96,8 @@ modern_firearm_techniques = {
 	}
 	
 	artillery_power = 0.1
-
-	ai_will_do = {
-		factor = 1
-		modifier = {
-			factor = 1.5
-			is_at_war = yes
-		}
-	}
+	
+	ai_will_do = { factor = 1 }
 }
 military_zeal_act = {
 	monarch_power = MIL
@@ -145,14 +115,8 @@ military_zeal_act = {
 	}
 	
 	manpower_in_true_faith_provinces= 0.30
-
-	ai_will_do = {
-		factor = 1
-		modifier = {
-			factor = 1.5
-			is_at_war = yes
-		}
-	}
+	
+	ai_will_do = { factor = 1 }
 }
 weapon_quality_standards = {
 	monarch_power = MIL
@@ -170,13 +134,7 @@ weapon_quality_standards = {
 	
 	global_regiment_cost = -0.1
 	
-	ai_will_do = {
-		factor = 2
-		modifier = {
-			factor = 1.5
-			is_at_war = yes
-		}
-	}
+	ai_will_do = { factor = 1 }
 }
 the_mining_act = {
 	monarch_power = MIL
@@ -195,13 +153,7 @@ the_mining_act = {
 	land_forcelimit_modifier = 0.10
 	naval_forcelimit_modifier = 0.10
 	
-	ai_will_do = {
-		factor = 1
-		modifier = {
-			factor = 1.5
-			is_at_war = yes
-		}
-	}
+	ai_will_do = { factor = 1 }
 }
 the_provincial_taxation_system = {
 	monarch_power = MIL
@@ -221,13 +173,7 @@ the_provincial_taxation_system = {
 	mercenary_manpower = 0.20	#0.50→0.20
 	mercenary_discipline = 0.025
 	
-	ai_will_do = {
-		factor = 1
-		modifier = {
-			factor = 1.5
-			is_at_war = yes
-		}
-	}
+	ai_will_do = { factor = 1 }
 }
 inspirational_leaders = {
 	monarch_power = MIL
@@ -247,13 +193,7 @@ inspirational_leaders = {
 	land_morale = 0.05
 	reinforce_speed = 0.2
 	
-	ai_will_do = {
-		factor = 1.2
-		modifier = {
-			factor = 1.5
-			is_at_war = yes
-		}
-	}
+	ai_will_do = { factor = 1 }
 }
 the_mercenary_registration_act = {
 	monarch_power = MIL
@@ -272,13 +212,7 @@ the_mercenary_registration_act = {
 
 	province_warscore_cost = -0.1
 	
-	ai_will_do = {
-		factor = 1
-		modifier = {
-			factor = 1.5
-			is_at_war = yes
-		}
-	}
+	ai_will_do = { factor = 1 }
 }
 superior_supply_system = {
 	monarch_power = MIL
@@ -296,14 +230,8 @@ superior_supply_system = {
 	}
 	
 	own_territory_dice_roll_bonus = 1
-
-	ai_will_do = {
-		factor = 1
-		modifier = {
-			factor = 1.5
-			is_at_war = yes
-		}
-	}
+	
+	ai_will_do = { factor = 1 }
 }
 the_garrison_act = {
 	monarch_power = MIL
@@ -322,10 +250,8 @@ the_garrison_act = {
 	
 	garrison_size = 0.33
 	war_exhaustion = -0.05
-
-	ai_will_do = {
-		factor = 1
-	}
+	
+	ai_will_do = { factor = 1 }
 }
 superior_fortification_act = {
 	monarch_power = MIL
@@ -343,10 +269,8 @@ superior_fortification_act = {
 	}
 	
 	defensiveness = 0.2
-
-	ai_will_do = {
-		factor = 1
-	}
+	
+	ai_will_do = { factor = 1 }
 }
 local_army_organisation = {
 	monarch_power = MIL
@@ -364,10 +288,8 @@ local_army_organisation = {
 	}
 	
 	global_manpower_modifier = 0.20
-
-	ai_will_do = {
-		factor = 1.2	
-	}
+	
+	ai_will_do = { factor = 1 }
 }
 autonomous_estates = {
 	monarch_power = MIL
@@ -387,29 +309,7 @@ autonomous_estates = {
 	vassal_forcelimit_bonus = 0.50
 	vassal_manpower_bonus = 0.50
 	
-	ai_will_do = {
-		factor = 1
-		modifier = {
-			factor = 0
-			NOT = { vassal = 1 }
-		}
-		modifier = {
-			factor = 1.5
-			vassal = 2
-		}
-		modifier = {
-			factor = 1.5
-			vassal = 3
-		}			
-		modifier = {
-			factor = 1.5
-			vassal = 4
-		}
-		modifier = {
-			factor = 1.5
-			vassal = 5
-		}	
-	}
+	ai_will_do = { factor = 1 }
 }
 privy_council_establishment_act = {
 	monarch_power = MIL
@@ -430,13 +330,7 @@ privy_council_establishment_act = {
 	siege_ability = 0.10
 	spy_offence = 0.20
 	
-	ai_will_do = {
-		factor = 0.6
-		modifier = {
-			factor = 0.2
-			is_at_war = yes
-		}
-	}
+	ai_will_do = { factor = 1 }
 }
 pen_rely_on_sword_act = {
 	monarch_power = MIL
@@ -455,9 +349,7 @@ pen_rely_on_sword_act = {
 	vassal_forcelimit_bonus = 0.50
 	vassal_manpower_bonus = 0.50
 	
-	ai_will_do = {
-		factor = 1
-	}
+	ai_will_do = { factor = 1 }
 }
 local_militias = {
 	monarch_power = MIL
@@ -477,9 +369,7 @@ local_militias = {
 	vassal_forcelimit_bonus = 0.50
 	vassal_manpower_bonus = 0.50
 	
-	ai_will_do = {
-		factor = 1
-	}
+	ai_will_do = { factor = 1 }
 }
 public_road_act = {
 	monarch_power = MIL
@@ -498,10 +388,8 @@ public_road_act = {
 	
 	mercenary_discipline = 0.025
 	possible_condottieri = 1.0
-
-	ai_will_do = {
-		factor = 1
-	}
+	
+	ai_will_do = { factor = 1 }
 }
 
 nobles_in_navy_act = {
@@ -520,13 +408,7 @@ nobles_in_navy_act = {
 	
 	global_naval_engagement_modifier = 0.1
 	
-	ai_will_do = {
-		factor = 0.6
-		modifier = {
-			factor = 0
-			NOT = { navy_size = 20 }
-		}		
-	}
+	ai_will_do = { factor = 1 }
 }
 the_maritime_intelligencer_unit = {
 	monarch_power = MIL
@@ -546,13 +428,7 @@ the_maritime_intelligencer_unit = {
 	siege_blockade_progress = 1
 	global_naval_engagement_modifier = 0.1
 	
-	ai_will_do = {
-		factor = 1
-		modifier = {
-			factor = 0
-			NOT = { num_of_heavy_ship = 10 }
-		}
-	}
+	ai_will_do = { factor = 1 }
 }
 the_naval_inspection_act = {
 	monarch_power = MIL
@@ -572,13 +448,7 @@ the_naval_inspection_act = {
 	light_ship_power = 0.2
 	global_naval_barrage_cost = -0.50
 	
-	ai_will_do = {
-		factor = 0.8
-		modifier = {
-			factor = 0
-			NOT = { navy_size = 20 }
-		}
-	}
+	ai_will_do = { factor = 1 }
 }
 the_nautic_education_act = {
 	monarch_power = MIL
@@ -602,17 +472,7 @@ the_nautic_education_act = {
 	sunk_ship_morale_hit_recieved = -0.2
 	ship_durability = 0.1
 	
-	ai_will_do = {
-		factor = 1
-		modifier = {
-			factor = 0
-			NOT = { navy_size = 10 }
-		}
-		modifier = {
-			factor = 0.6
-			NOT = { navy_size = 20 }
-		}
-	}
+	ai_will_do = { factor = 1 }
 }
 colonial_garrisons = {
 	monarch_power = MIL
@@ -630,18 +490,8 @@ colonial_garrisons = {
 	}
 
 	global_manpower_modifier = 0.25
-
-	ai_will_do = {
-		factor = 0.8
-		modifier = {
-			factor = 0
-			NOT = { num_of_colonists = 1 }
-		}
-		modifier = {
-			factor = 0.1
-			NOT = { num_of_colonies = 1 }
-		}
-	}
+	
+	ai_will_do = { factor = 1 }
 }
 underhanded_diplomacy_act = {
 	monarch_power = MIL
@@ -659,10 +509,8 @@ underhanded_diplomacy_act = {
 	
 	reinforce_speed = 0.20
 	reinforce_cost_modifier = -0.10
-
-	ai_will_do = {
-		factor = 0.6
-	}
+	
+	ai_will_do = { factor = 1 }
 }
 the_tenures_abolition_act = {
 	monarch_power = MIL
@@ -681,10 +529,8 @@ the_tenures_abolition_act = {
 
 	manpower_recovery_speed = 0.10
 	recover_army_morale_speed = 0.05
-		
-	ai_will_do = {
-		factor = 0.6
-	}	
+	
+	ai_will_do = { factor = 1 }
 }
 modern_siege_weapons = {
 	monarch_power = MIL
@@ -701,10 +547,8 @@ modern_siege_weapons = {
 	}
 
 	siege_ability = 0.1
-
-	ai_will_do = {
-		factor = 1
-	}
+	
+	ai_will_do = { factor = 1 }
 }
 omne_datum_optimum_policy = {
 	monarch_power = MIL
@@ -724,13 +568,7 @@ omne_datum_optimum_policy = {
 	allowed_marine_fraction = 0.10
 	shock_damage_received = -0.05
 	
-	ai_will_do = {
-		factor = 0.8
-		modifier = {
-			factor = 0
-			NOT = { navy_size = 20 }
-		}
-	}
+	ai_will_do = { factor = 1 }
 }
 guerilla_warfare = {
 	monarch_power = MIL
@@ -750,9 +588,7 @@ guerilla_warfare = {
 	hostile_attrition = 1
 	garrison_size = 0.33
 	
-	ai_will_do = {
-		factor = 0.8
-	}
+	ai_will_do = { factor = 1 }
 }
 the_preparation_act = {
 	monarch_power = MIL
@@ -772,13 +608,7 @@ the_preparation_act = {
 	land_forcelimit = 5
 	recover_army_morale_speed = 0.05
 	
-	ai_will_do = {
-		factor = 0.9
-		modifier = {
-			factor = 1.5
-			is_at_war = yes
-		}
-	}
+	ai_will_do = { factor = 1 }
 }
 foreign_conscription_centers = {
 	monarch_power = MIL
@@ -797,29 +627,7 @@ foreign_conscription_centers = {
 	
 	land_forcelimit_modifier = 0.20
 	
-	ai_will_do = {
-		factor = 1
-		modifier = {
-			factor = 0
-			NOT = { vassal = 1 }
-		}
-		modifier = {
-			factor = 1.5
-			vassal = 2
-		}
-		modifier = {
-			factor = 1.5
-			vassal = 3
-		}			
-		modifier = {
-			factor = 1.5
-			vassal = 4
-		}
-		modifier = {
-			factor = 1.5
-			vassal = 5
-		}	
-	}
+	ai_will_do = { factor = 1 }
 }
 horse_artillery = {
 	monarch_power = MIL
@@ -836,10 +644,8 @@ horse_artillery = {
 		}
 	}
 	artillery_levels_available_vs_fort = 1
-
-	ai_will_do = {
-		factor = 1
-	}
+	
+	ai_will_do = { factor = 1 }
 }
 field_priests = {
 	monarch_power = MIL
@@ -859,13 +665,7 @@ field_priests = {
 	shock_damage_received = -0.05
 	fire_damage_received = -0.05
 	
-	ai_will_do = {
-		factor = 1.2
-		modifier = {
-			factor = 1.5
-			is_at_war = yes
-		}
-	}
+	ai_will_do = { factor = 1 }
 }
 the_liquor_act = {
 	monarch_power = MIL
@@ -884,10 +684,8 @@ the_liquor_act = {
 	}
 	
 	discipline = 0.025
-
-	ai_will_do = {
-		factor = 0.6
-	}
+	
+	ai_will_do = { factor = 1 }
 }
 deserteur_act = {
 	monarch_power = MIL
@@ -906,9 +704,7 @@ deserteur_act = {
 
 	manpower_recovery_speed = 0.2
 	
-	ai_will_do = {
-		factor = 0.75
-	}
+	ai_will_do = { factor = 1 }
 }
 zealous_captains = {
 	monarch_power = MIL
@@ -927,9 +723,7 @@ zealous_captains = {
 	
 	yearly_army_professionalism = 0.005
 	
-	ai_will_do = {
-		factor = 1
-	}
+	ai_will_do = { factor = 1 }
 }
 noble_loyalty_act = {
 	monarch_power = MIL
@@ -948,9 +742,7 @@ noble_loyalty_act = {
 
 	drill_gain_modifier = 0.25
 	
-	ai_will_do = {
-		factor = 1
-	}
+	ai_will_do = { factor = 1 }
 }
 trade_kontor_network = {
 	monarch_power = MIL
@@ -968,10 +760,8 @@ trade_kontor_network = {
 	
 	trade_range_modifier = 1.0
 	mercenary_cost = -0.05
-
-	ai_will_do = {
-		factor = 0.6
-	}
+	
+	ai_will_do = { factor = 1 }
 }
 military_allotment_act = {
 	monarch_power = MIL
@@ -989,10 +779,8 @@ military_allotment_act = {
 	}
 
 	reinforce_speed = 0.33
-
-	ai_will_do = {
-		factor = 0.8
-	}
+	
+	ai_will_do = { factor = 1 }
 }
 war_on_our_terms_policy = {
 	monarch_power = MIL
@@ -1011,13 +799,7 @@ war_on_our_terms_policy = {
 
 	discipline = 0.025
 	
-	ai_will_do = {
-		factor = 1.0
-		modifier = {
-			factor = 2.5
-			is_at_war = yes
-		}
-	}
+	ai_will_do = { factor = 1 }
 }
 the_three_sisters_policy = { 
 	monarch_power = MIL
@@ -1036,13 +818,7 @@ the_three_sisters_policy = {
 	
 	global_defender_dice_roll_bonus = 1
 	
-	ai_will_do = {
-		factor = 1.0
-		modifier = {
-			factor = 1.5
-			is_at_war = yes
-		}
-	}
+	ai_will_do = { factor = 1 }
 }
 by_the_people_for_the_people_policy = {
 	monarch_power = MIL
@@ -1061,13 +837,7 @@ by_the_people_for_the_people_policy = {
 
 	land_maintenance_modifier = -0.1
 	
-	ai_will_do = {
-		factor = 1.0
-		modifier = {
-			factor = 1.5
-			is_at_war = yes
-		}
-	}
+	ai_will_do = { factor = 1 }
 }
 fear_tactics_policy = {
 	monarch_power = MIL
@@ -1087,13 +857,7 @@ fear_tactics_policy = {
 	shock_damage = 0.075
 	fire_damage = 0.075
 	
-	ai_will_do = {
-		factor = 1.0
-		modifier = {
-			factor = 1.5
-			is_at_war = yes
-		}
-	}
+	ai_will_do = { factor = 1 }
 }
 unified_army_command = {
 	monarch_power = MIL
@@ -1112,9 +876,7 @@ unified_army_command = {
 	
 	yearly_army_professionalism = 0.005
 	
-	ai_will_do = {
-		factor = 1
-	}
+	ai_will_do = { factor = 1 }
 }
 wielders_of_the_flaming_sword_bertus_policy = {
 	monarch_power = MIL
@@ -1142,30 +904,23 @@ wielders_of_the_flaming_sword_bertus_policy = {
 		remove_country_modifier = shock_policy_tech_28
 		remove_country_modifier = shock_cav_policy_tech_1
 		remove_country_modifier = shock_cav_policy_tech_2
-		remove_country_modifier = shock_cav_policy_tech_6
-		remove_country_modifier = shock_cav_policy_tech_10
-		remove_country_modifier = shock_cav_policy_tech_14
-		remove_country_modifier = shock_cav_policy_tech_18
-		remove_country_modifier = shock_cav_policy_tech_22
-		remove_country_modifier = shock_cav_policy_tech_26
-		remove_country_modifier = shock_cav_policy_tech_30
-		remove_country_modifier = shock_cav_policy_tech_32
+		remove_country_modifier = shock_cav_policy_tech_5
+		remove_country_modifier = shock_cav_policy_tech_8
+		remove_country_modifier = shock_cav_policy_tech_17
+		remove_country_modifier = shock_cav_policy_tech_23
+		remove_country_modifier = shock_cav_policy_tech_31
 		if = {limit = {mil_tech = 28} add_country_modifier = {name = shock_policy_tech_28 duration = -1 hidden = yes}}
 		else_if = {limit = {mil_tech = 21}	add_country_modifier = {name = shock_policy_tech_21 duration = -1 hidden = yes}}
 		else_if = {limit = {mil_tech = 11} add_country_modifier = {name = shock_policy_tech_11 duration = -1 hidden = yes}}
 		else_if = {limit = {mil_tech = 6} add_country_modifier = {name = shock_policy_tech_6 duration = -1 hidden = yes}}
 		else_if = {limit = {mil_tech = 5} add_country_modifier = {name = shock_policy_tech_5 duration = -1 hidden = yes}}
 		else_if = {limit = {mil_tech = 2} add_country_modifier = {name = shock_policy_tech_2 duration = -1 hidden = yes}}
-		if = {limit = {mil_tech = 32} add_country_modifier = {name = shock_cav_policy_tech_32 duration = -1 hidden = yes}}
-		else_if = {limit = {mil_tech = 30}	add_country_modifier = {name = shock_cav_policy_tech_30 duration = -1 hidden = yes}}
-		else_if = {limit = {mil_tech = 26} add_country_modifier = {name = shock_cav_policy_tech_26 duration = -1 hidden = yes}}
-		else_if = {limit = {mil_tech = 22}	add_country_modifier = {name = shock_cav_policy_tech_22 duration = -1 hidden = yes}}
-		else_if = {limit = {mil_tech = 18} add_country_modifier = {name = shock_cav_policy_tech_18 duration = -1 hidden = yes}}
-		else_if = {limit = {mil_tech = 14} add_country_modifier = {name = shock_cav_policy_tech_14 duration = -1 hidden = yes}}
-		else_if = {limit = {mil_tech = 10} add_country_modifier = {name = shock_cav_policy_tech_10 duration = -1 hidden = yes}}
-		else_if = {limit = {mil_tech = 6} add_country_modifier = {name = shock_cav_policy_tech_6 duration = -1 hidden = yes}}
+		if = {limit = {mil_tech = 31} add_country_modifier = {name = shock_cav_policy_tech_31 duration = -1 hidden = yes}}
+		else_if = {limit = {mil_tech = 23}	add_country_modifier = {name = shock_cav_policy_tech_23 duration = -1 hidden = yes}}
+		else_if = {limit = {mil_tech = 17} add_country_modifier = {name = shock_cav_policy_tech_17 duration = -1 hidden = yes}}
+		else_if = {limit = {mil_tech = 8}	add_country_modifier = {name = shock_cav_policy_tech_8 duration = -1 hidden = yes}}
+		else_if = {limit = {mil_tech = 5} add_country_modifier = {name = shock_cav_policy_tech_5 duration = -1 hidden = yes}}
 		else_if = {limit = {mil_tech = 2} add_country_modifier = {name = shock_cav_policy_tech_2 duration = -1 hidden = yes}}
-		else_if = {limit = {mil_tech = 1} add_country_modifier = {name = shock_cav_policy_tech_1 duration = -1 hidden = yes}}
 	}
 	removed_effect = {
 		remove_country_modifier = shock_policy_tech_2
@@ -1176,23 +931,14 @@ wielders_of_the_flaming_sword_bertus_policy = {
 		remove_country_modifier = shock_policy_tech_28
 		remove_country_modifier = shock_cav_policy_tech_1
 		remove_country_modifier = shock_cav_policy_tech_2
-		remove_country_modifier = shock_cav_policy_tech_6
-		remove_country_modifier = shock_cav_policy_tech_10
-		remove_country_modifier = shock_cav_policy_tech_14
-		remove_country_modifier = shock_cav_policy_tech_18
-		remove_country_modifier = shock_cav_policy_tech_22
-		remove_country_modifier = shock_cav_policy_tech_26
-		remove_country_modifier = shock_cav_policy_tech_30
-		remove_country_modifier = shock_cav_policy_tech_32
+		remove_country_modifier = shock_cav_policy_tech_5
+		remove_country_modifier = shock_cav_policy_tech_8
+		remove_country_modifier = shock_cav_policy_tech_17
+		remove_country_modifier = shock_cav_policy_tech_23
+		remove_country_modifier = shock_cav_policy_tech_31
 	}
-
-	ai_will_do = {
-		factor = 10.0
-		modifier = {
-			factor = 0
-			is_at_war = no
-		}
-	}
+	
+	ai_will_do = { factor = 1 }
 }
 psychological_warfare_policy = { 
 	monarch_power = MIL
@@ -1236,12 +982,6 @@ psychological_warfare_policy = {
 		remove_country_modifier = fire_policy_tech_27
 		remove_country_modifier = fire_policy_tech_31
 	}
-
-	ai_will_do = {
-		factor = 10.0
-		modifier = {
-			factor = 0
-			is_at_war = no
-		}
-	}
+	
+	ai_will_do = { factor = 1 }
 }

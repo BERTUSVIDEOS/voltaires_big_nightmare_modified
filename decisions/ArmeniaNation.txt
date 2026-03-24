@@ -54,6 +54,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			NOT = { exists = ARM }
 			is_at_war = no
 			is_free_or_tributary_trigger = yes
@@ -147,6 +148,7 @@ country_decisions = {
 			has_country_flag = arm_capital_tigranakert
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			is_core = 3671
 			owns = 3671
 			NOT = { capital = 3671 }

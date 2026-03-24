@@ -9,6 +9,7 @@ country_decisions = {
 			dip_tech = 38
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			navy_size_percentage = 0.5
 			full_idea_group = maritime_ideas
 			mil = 3
@@ -31,6 +32,7 @@ country_decisions = {
 			NOT = { mil_tech = 54 }
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			mil_tech = 38
 			army_professionalism = 0.20
 		}
@@ -53,6 +55,7 @@ country_decisions = {
 			has_country_modifier = gunpowder_core
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			has_country_modifier = gunpowder_core
 		}
 		effect = {
@@ -73,6 +76,7 @@ country_decisions = {
 			mil_tech = 54
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			army_professionalism = 0.40
 		}
 		effect = {
@@ -93,6 +97,7 @@ country_decisions = {
 			has_country_modifier = standardized_uniforms_modifier
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			has_country_modifier = standardized_uniforms_modifier
 		}
 		effect = {
@@ -109,6 +114,7 @@ country_decisions = {
 			has_government_attribute = has_righteous_army
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			is_at_war = yes
 			OR = {
 				num_of_owned_provinces_with = {
@@ -150,6 +156,7 @@ country_decisions = {
 			has_government_attribute = can_raise_manpower_from_home_region
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			is_at_war = yes
 			custom_trigger_tooltip = {
 				tooltip = decision_once_every_ten_years
@@ -209,6 +216,7 @@ country_decisions = {
 			has_government_attribute = can_rally_volunteers_from_allies
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			is_at_war = yes
 			custom_trigger_tooltip = {
 				tooltip = decision_once_every_ten_years

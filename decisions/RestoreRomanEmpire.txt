@@ -29,6 +29,7 @@ country_decisions = {
 			NOT = { owned_by = ROOT }
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			num_of_owned_provinces_with = {
 				custom_trigger_tooltip = {
 					tooltip = BYZ_highlighted_by_decision

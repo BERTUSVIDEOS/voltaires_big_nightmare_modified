@@ -898,16 +898,8 @@ chivalrous_confederations_reform = {
 		nobles_influence_modifier = -0.1
 		nobles_loyalty_modifier = -0.05
 	}
-	ai = {
-		factor = 3
-		modifier = {
-			factor = 0.1
-			estate_influence = {
-				estate = estate_holy_orders
-				influence = 90
-			}			
-		}
-	}
+	
+	ai = { factor = 1.0 }
 }
 
 mamluk_leadership_reform = {
@@ -923,16 +915,8 @@ mamluk_leadership_reform = {
 		nobles_influence_modifier = -0.1
 		nobles_loyalty_modifier = -0.05
 	}
-	ai = {
-		factor = 3
-		modifier = {
-			factor = 0.1
-			estate_influence = {
-				estate = estate_mamluks
-				influence = 90
-			}			
-		}
-	}
+	
+	ai = { factor = 1.0 }
 }
 
 advising_vizirate_reform = {	#bertus mod

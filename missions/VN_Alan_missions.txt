@@ -16,6 +16,7 @@ vn_aan_missions_slot_1 = {
         position = 1
         required_missions = { }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             if = {
 				limit = {
 					OR = {
@@ -69,6 +70,7 @@ vn_aan_missions_slot_1 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			3757 = { country_or_non_sovereign_subject_holds = ROOT }
 			3753 = { country_or_non_sovereign_subject_holds = ROOT }
         }
@@ -171,6 +173,7 @@ vn_aan_missions_slot_1 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             adygea_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -202,6 +205,7 @@ vn_aan_missions_slot_1 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             shapsug_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -265,6 +269,7 @@ vn_aan_missions_slot_1 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			imereti_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -311,6 +316,7 @@ vn_aan_missions_slot_2 = {
         position = 2
         required_missions = { vn_aan_raiding_hordes }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			treasury = 500
 			share_of_starting_income = 2
         }
@@ -327,6 +333,7 @@ vn_aan_missions_slot_2 = {
         position = 3
         required_missions = { vn_aan_disembowel_our_neighbours }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             OR = {
 				num_of_war_reparations = 5
 				num_of_non_tributary_subjects = 5
@@ -348,6 +355,7 @@ vn_aan_missions_slot_2 = {
 			province_id = 3612
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             3612 = {
 				owned_by = ROOT
 				province_has_current_tech_fort_trigger = yes
@@ -380,6 +388,7 @@ vn_aan_missions_slot_3 = {
         position = 1
         required_missions = {  }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			num_of_generals = 2
 			army_size_percentage = 0.75
             if = {
@@ -480,6 +489,7 @@ vn_aan_missions_slot_3 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             3773 = { country_or_non_sovereign_subject_holds = ROOT }
 			3772 = { country_or_non_sovereign_subject_holds = ROOT }
 			3769 = { country_or_non_sovereign_subject_holds = ROOT }
@@ -543,6 +553,7 @@ vn_aan_missions_slot_3 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             3775 = { country_or_non_sovereign_subject_holds = ROOT }
 			3774 = { country_or_non_sovereign_subject_holds = ROOT }
 			3648 = { country_or_non_sovereign_subject_holds = ROOT }
@@ -590,6 +601,7 @@ vn_aan_missions_slot_3 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             lekia_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -629,6 +641,7 @@ vn_aan_missions_slot_3 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
             shirvan_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -671,6 +684,7 @@ vn_aan_missions_slot_3 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
             ganja_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -721,6 +735,7 @@ vn_aan_missions_slot_4 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			3763 = { country_or_non_sovereign_subject_holds = ROOT }
 			3792 = { country_or_non_sovereign_subject_holds = ROOT }
 			3793 = { country_or_non_sovereign_subject_holds = ROOT }
@@ -792,6 +807,7 @@ vn_aan_missions_slot_4 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             6242 = { country_or_non_sovereign_subject_holds = ROOT }
 			6241 = { country_or_non_sovereign_subject_holds = ROOT }
 			6240 = { country_or_non_sovereign_subject_holds = ROOT }
@@ -813,6 +829,7 @@ vn_aan_missions_slot_4 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             derbent_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -828,6 +845,7 @@ vn_aan_missions_slot_4 = {
         position = 5
         required_missions = {  }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			is_tribal = no
 			has_institution = feudalism
 			reform_level = 3
@@ -867,6 +885,7 @@ vn_aan_missions_slot_5 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             astrakhan_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -893,6 +912,7 @@ vn_aan_missions_slot_5 = {
         position = 3
         required_missions = {  }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			NOT = { average_unrest = 1 }
             num_accepted_cultures = 3
         }
@@ -909,6 +929,7 @@ vn_aan_missions_slot_5 = {
         position = 5
         required_missions = { vn_aan_cultural_advancement }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             if = {
 				limit = {
 					has_dlc = "Conquest of Paradise"
@@ -938,6 +959,7 @@ vn_aan_missions_slot_5 = {
         position = 6
         required_missions = { vn_aan_reform_our_religion vn_aan_modernize_the_state }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			government_rank = 5
 			stability = 2
             if = {

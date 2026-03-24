@@ -49,9 +49,8 @@ oligarchy_reform = {
 		enables_plutocratic_idea_group = yes
 		enables_aristocratic_idea_group = no
 	}
-	ai = {
-		factor = 0.5 #generic
-	}
+	
+	ai = { factor = 1.0 }
 }
 
 signoria_reform = {
@@ -77,9 +76,8 @@ signoria_reform = {
 		enables_aristocratic_idea_group = no
 		enables_nepotism = yes
 	}
-	ai = {
-		factor = 10
-	}
+	
+	ai = { factor = 1.0 }
 }
 
 protectorate_parliament_reform = {
@@ -331,31 +329,8 @@ merchants_reform = {
 		is_merchant_republic = yes
 		elections_increase_factions_influence = yes
 	}
-	ai = {
-		factor = 0.75 #generic
-		
-		modifier = {
-			factor = 0
-			num_of_cities = 21
-		}
-		
-		modifier = {
-			factor = 0
-			capital_scope = { has_port = no }
-		}
-		
-		modifier = {
-			factor = 0
-			NOT = {
-				capital_scope = { province_has_center_of_trade_of_level = 1 }
-			}
-		}
-		
-		modifier = {
-			factor = 0
-			is_subject = yes
-		}
-	}
+	
+	ai = { factor = 1.0 }
 }
 
 venice_merchants_reform = {
@@ -526,9 +501,8 @@ noble_elite_reform = {
 		enables_plutocratic_idea_group = no
 		enables_aristocratic_idea_group = yes
 	}
-	ai = {
-		factor = 0.5 #generic
-	}
+	
+	ai = { factor = 1.0 }
 }
 
 presidential_despot_reform = {
@@ -2285,15 +2259,8 @@ consolidate_power_in_doge_reform = {
 		governing_capacity = 250
 	}
 	has_term_election = no
-	ai = {
-		factor = 10
-		modifier = {
-			factor = 0
-			NOT = {
-				num_of_cities = 25
-			}
-		}
-	}
+	
+	ai = { factor = 1.0 }
 }
 
 consolidate_power_in_cities_reform = {
@@ -2322,13 +2289,8 @@ consolidate_power_in_cities_reform = {
 	has_term_election = yes
 	is_eligible_for_hre_emperor = no
 	duration = 4
-	ai = {
-		factor = 10
-		modifier = {
-			factor = 0
-			num_of_cities = 25
-		}
-	}
+	
+	ai = { factor = 1.0 }
 }
 
 legislative_assembly_reform = {
@@ -2344,9 +2306,8 @@ legislative_assembly_reform = {
 	custom_attributes = {
 		can_force_election = yes
 	}
-	ai = {
-		factor = 10
-	}
+	
+	ai = { factor = 1.0 }
 }
 
 national_constituent_reform = {
@@ -2361,9 +2322,8 @@ national_constituent_reform = {
 		diplomatic_upkeep = 1
 		reelection_cost = -0.15
 	}
-	ai = {
-		factor = 10
-	}
+	
+	ai = { factor = 1.0 }
 }
 
 national_assembly_reform = {
@@ -2514,35 +2474,8 @@ administrative_divisions_reform = {
 	modifiers = {
 		governing_capacity = 250
 	}
-	ai = {
-		factor = 1
-		modifier = {
-			factor = 0
-			has_reform = free_city
-		}
-		modifier = {
-			factor = 0.5
-			NOT = {
-				any_owned_province = {
-					is_territorial_core = root
-				}
-			}
-		}
-		modifier = {
-			factor = 2.5
-			num_of_owned_provinces_with = {
-				value = 10
-				is_territorial_core = root
-			}
-		}
-		modifier = {
-			factor = 0.25
-			OR = {
-				has_reform = merchants_reform
-				has_reform = venice_merchants_reform
-			}
-		}
-	}
+	
+	ai = { factor = 1.0 }
 }
 
 union_of_states_reform = {
@@ -2564,25 +2497,8 @@ union_of_states_reform = {
 		NOT = { has_government_attribute = is_pirate_republic_reform }
 	}
 	boost_income = yes
-	ai = {
-		factor = 1
-		modifier = {
-			factor = 1.5
-			trade_income_percentage = 0.35
-		}
-		modifier = {
-			factor = 2
-			OR = {
-				has_reform = merchants_reform
-				has_reform = venice_merchants_reform
-			}
-		}
-		modifier = {
-			factor = 0
-			NOT = { num_of_cities = 3 }
-			is_part_of_hre = yes
-		}
-	}
+	
+	ai = { factor = 1.0 }
 }
 
 cultural_administration_reform = {
@@ -2592,18 +2508,8 @@ cultural_administration_reform = {
 		num_accepted_cultures = 2
 		promote_culture_cost = -0.5
 	}
-	ai = {
-		factor = 1
-		modifier = {
-			factor = 0.25
-			NOT = {
-				any_owned_province = {
-					has_owner_accepted_culture = no
-					has_owner_culture = no
-				}
-			}
-		}
-	}
+	
+	ai = { factor = 1.0 }
 }
 
 #Parliamentary vs Presidential
@@ -2617,17 +2523,8 @@ presidential_reform = {
 		embracement_cost = -0.1
 		max_absolutism = 10	#5→10
 	}
-	ai = {
-		factor = 1
-		modifier = {
-			factor = 0
-			has_reform = free_city
-		}
-		modifier = {
-			factor = 0.1
-			NOT = { num_of_cities = 2 }
-		}
-	}
+	
+	ai = { factor = 1.0 }
 }
 
 estate_council_reform = {
@@ -2649,17 +2546,8 @@ estate_council_reform = {
 		elections_influence_estates = yes
 		republican_tradition_from_diets = yes
 	}
-	ai = {
-		factor = 1
-		modifier = {
-			factor = 0
-			has_reform = free_city
-		}
-		modifier = {
-			factor = 0.1
-			NOT = { num_of_cities = 2 }
-		}
-	}
+	
+	ai = { factor = 1.0 }
 }
 
 attorney_general_reform = {
@@ -2673,17 +2561,8 @@ attorney_general_reform = {
 		republican_tradition_from_advisors = yes
 		can_not_seize_land = yes
 	}
-	ai = {
-		factor = 1
-		modifier = {
-			factor = 0
-			has_reform = free_city
-		}
-		modifier = {
-			factor = 0.1
-			NOT = { num_of_cities = 2 }
-		}
-	}
+	
+	ai = { factor = 1.0 }
 }
 
 imperial_diplomacy_reform = {
@@ -3822,7 +3701,6 @@ millenarian_theocracy_reform = {
 	custom_attributes = {
 		election_on_death = yes
 	}
-	ai = {
-		factor = 10
-	}
+	
+	ai = { factor = 1.0 }
 }

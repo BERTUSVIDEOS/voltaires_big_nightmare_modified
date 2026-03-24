@@ -11,6 +11,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			adm_power = 100
 			liberty_desire = 25
 		}

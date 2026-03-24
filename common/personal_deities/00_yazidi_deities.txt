@@ -4,17 +4,7 @@ melek_taus = {
 	
 	potential = { religion = yazidi }
 	sprite = 55	
-	ai_will_do = {
-		factor = 1	
-		modifier = {
-			factor = 2
-			personality = ai_capitalist
-		}	
-		modifier = {
-			factor = 0.5
-			personality = ai_militarist
-		}
-	}
+	ai_will_do = { factor = 1 }
 }
 
 ashur = {
@@ -23,13 +13,7 @@ ashur = {
 	
 	potential = { religion = yazidi }
 	sprite = 56	
-	ai_will_do = {
-		factor = 1		
-		modifier = {
-			factor = 2
-			personality = ai_militarist
-		}
-	}
+	ai_will_do = { factor = 1 }
 }
 
 enki = {
@@ -38,17 +22,7 @@ enki = {
 	
 	potential = { religion = yazidi }
 	sprite = 57	
-	ai_will_do = {
-		factor = 1	
-		modifier = {
-			factor = 2
-			personality = ai_capitalist
-		}
-		modifier = {
-			factor = 0
-			NOT = { num_of_ports = 1 }
-		}
-	}
+	ai_will_do = { factor = 1 }
 }
 
 enlil = {
@@ -57,13 +31,7 @@ enlil = {
 	
 	potential = { religion = yazidi }
 	sprite = 58	
-	ai_will_do = {
-		factor = 1
-		modifier = {
-			factor = 2
-			personality = ai_capitalist
-		}	
-	}
+	ai_will_do = { factor = 1 }
 }
 
 ishtar = {
@@ -72,13 +40,7 @@ ishtar = {
 	
 	potential = { religion = yazidi }
 	sprite = 59	
-	ai_will_do = {
-		factor = 1	
-		modifier = {
-			factor = 2
-			personality = ai_diplomat
-		}
-	}
+	ai_will_do = { factor = 1 }
 }
 
 anutu = {
@@ -87,11 +49,5 @@ anutu = {
 	
 	potential = { religion = yazidi }
 	sprite = 60
-	ai_will_do = {
-		factor = 1	
-		modifier = {
-			factor = 2
-			personality = ai_militarist
-		}
-	}
+	ai_will_do = { factor = 1 }
 }

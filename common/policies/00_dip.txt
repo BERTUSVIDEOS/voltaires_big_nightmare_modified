@@ -26,14 +26,8 @@ horde0_dip_policy = {
 	}
 	
 	diplomatic_annexation_cost = -0.1
-
-	ai_will_do = {
-		factor = 1
-		modifier = {
-			factor = 1.5
-			is_at_war = yes
-		}
-	}
+	
+	ai_will_do = { factor = 1 }
 }
 monarchie0_dip_policy = {
 	monarch_power = DIP
@@ -51,14 +45,8 @@ monarchie0_dip_policy = {
 	}
 	
 	global_rebel_suppression_efficiency = 0.10
-
-	ai_will_do = {
-		factor = 1
-		modifier = {
-			factor = 1.5
-			is_at_war = yes
-		}
-	}
+	
+	ai_will_do = { factor = 1 }
 }
 theocracy_dip_policy = {
 	monarch_power = DIP
@@ -76,14 +64,8 @@ theocracy_dip_policy = {
 	}
 	
 	same_culture_advisor_cost = -0.1
-
-	ai_will_do = {
-		factor = 1
-		modifier = {
-			factor = 1.5
-			is_at_war = yes
-		}
-	}
+	
+	ai_will_do = { factor = 1 }
 }
 republican_dip_policy = {
 	monarch_power = DIP
@@ -102,14 +84,8 @@ republican_dip_policy = {
 	
 	election_cycle = 1
 	candidate_random_bonus = 1
-
-	ai_will_do = {
-		factor = 1
-		modifier = {
-			factor = 1.5
-			is_at_war = yes
-		}
-	}
+	
+	ai_will_do = { factor = 1 }
 }
 new_naval_tactis = {
 	monarch_power = DIP
@@ -127,14 +103,8 @@ new_naval_tactis = {
 	}
 	
 	global_naval_engagement_modifier = 0.1
-
-	ai_will_do = {
-		factor = 1
-		modifier = {
-			factor = 1.5
-			is_at_war = yes
-		}
-	}
+	
+	ai_will_do = { factor = 1 }
 }
 terms_of_surrender_statute = {
 	monarch_power = DIP
@@ -152,14 +122,8 @@ terms_of_surrender_statute = {
 	}
 	
 	sunk_ship_morale_hit_recieved = -0.2
-
-	ai_will_do = {
-		factor = 1
-		modifier = {
-			factor = 1.5
-			is_at_war = yes
-		}
-	}
+	
+	ai_will_do = { factor = 1 }
 }
 production_quota_act = {
 	monarch_power = DIP
@@ -177,13 +141,7 @@ production_quota_act = {
 	
 	global_trade_goods_size_modifier = 0.1
 	
-	ai_will_do = {
-		factor = 2
-		modifier = {
-			factor = 1.5
-			is_at_war = yes
-		}
-	}
+	ai_will_do = { factor = 1 }
 }
 colonial_expansions = {
 	monarch_power = DIP
@@ -202,13 +160,7 @@ colonial_expansions = {
 	global_colonial_growth = 10
 	native_assimilation = 0.5
 	
-	ai_will_do = {
-		factor = 1
-		modifier = {
-			factor = 1.5
-			is_at_war = yes
-		}
-	}
+	ai_will_do = { factor = 1 }
 }
 armed_neutrality_act = {
 	monarch_power = DIP
@@ -228,13 +180,7 @@ armed_neutrality_act = {
 	merc_maintenance_modifier = -0.10
 	trade_range_modifier = 0.25
 	
-	ai_will_do = {
-		factor = 1
-		modifier = {
-			factor = 1.5
-			is_at_war = yes
-		}
-	}
+	ai_will_do = { factor = 1 }
 }
 native_assimilation_act = {
 	monarch_power = DIP
@@ -253,13 +199,7 @@ native_assimilation_act = {
 	
 	num_accepted_cultures = 2
 	
-	ai_will_do = {
-		factor = 1.2
-		modifier = {
-			factor = 1.5
-			is_at_war = yes
-		}
-	}
+	ai_will_do = { factor = 1 }
 }
 loyalty_to_the_land_policy = {
 	monarch_power = DIP
@@ -279,13 +219,7 @@ loyalty_to_the_land_policy = {
 	burghers_loyalty_modifier = 0.2
 	mercantilism_cost = -0.2
 	
-	ai_will_do = {
-		factor = 1
-		modifier = {
-			factor = 1.5
-			is_at_war = yes
-		}
-	}
+	ai_will_do = { factor = 1 }
 }
 trade_connection_policy = {
 	monarch_power = DIP
@@ -303,14 +237,8 @@ trade_connection_policy = {
 	}
 	
 	global_prov_trade_power_modifier = 0.5
-
-	ai_will_do = {
-		factor = 1
-		modifier = {
-			factor = 1.5
-			is_at_war = yes
-		}
-	}
+	
+	ai_will_do = { factor = 1 }
 }
 cloth_quality_edict = {
 	monarch_power = DIP
@@ -328,10 +256,8 @@ cloth_quality_edict = {
 	}
 	
 	global_prosperity_growth = 1.0
-
-	ai_will_do = {
-		factor = 1
-	}
+	
+	ai_will_do = { factor = 1 }
 }
 the_integrated_administration_act = {
 	monarch_power = DIP
@@ -350,10 +276,8 @@ the_integrated_administration_act = {
 	
 	embracement_cost = -0.2
 	yearly_corruption = -0.1
-
-	ai_will_do = {
-		factor = 1
-	}
+	
+	ai_will_do = { factor = 1 }
 }
 faith_advisors_policy = {
 	monarch_power = DIP
@@ -371,10 +295,8 @@ faith_advisors_policy = {
 	}
 	
 	dip_advisor_cost = -0.1
-
-	ai_will_do = {
-		factor = 1.2	
-	}
+	
+	ai_will_do = { factor = 1 }
 }
 appeal_to_old_powers_policy = {
 	monarch_power = DIP
@@ -393,29 +315,7 @@ appeal_to_old_powers_policy = {
 	
 	administrative_efficiency = 0.05
 	
-	ai_will_do = {
-		factor = 1
-		modifier = {
-			factor = 0
-			NOT = { vassal = 1 }
-		}
-		modifier = {
-			factor = 1.5
-			vassal = 2
-		}
-		modifier = {
-			factor = 1.5
-			vassal = 3
-		}			
-		modifier = {
-			factor = 1.5
-			vassal = 4
-		}
-		modifier = {
-			factor = 1.5
-			vassal = 5
-		}	
-	}
+	ai_will_do = { factor = 1 }
 }
 the_foreign_aid_act = {
 	monarch_power = DIP
@@ -436,13 +336,7 @@ the_foreign_aid_act = {
 	spy_offence = 0.1
 	rebel_support_efficiency = 1.0
 	
-	ai_will_do = {
-		factor = 0.6
-		modifier = {
-			factor = 0.2
-			is_at_war = yes
-		}
-	}
+	ai_will_do = { factor = 1 }
 }
 multilingual_diplomats = {
 	monarch_power = DIP
@@ -461,9 +355,7 @@ multilingual_diplomats = {
 	improve_relation_modifier = 0.66
 	diplomatic_reputation = 1
 	
-	ai_will_do = {
-		factor = 1
-	}
+	ai_will_do = { factor = 1 }
 }
 professional_diplomatic_corps = {
 	monarch_power = DIP
@@ -482,10 +374,8 @@ professional_diplomatic_corps = {
 	
 	diplomatic_annexation_cost = -0.10
 	diplomatic_upkeep = 1
-	
-	ai_will_do = {
-		factor = 1
-	}
+		
+	ai_will_do = { factor = 1 }
 }
 commercial_embassies = {
 	monarch_power = DIP
@@ -504,10 +394,8 @@ commercial_embassies = {
 	
 	placed_merchant_power = 10
 	mercantilism_cost = -0.2
-
-	ai_will_do = {
-		factor = 1
-	}
+	
+	ai_will_do = { factor = 1 }
 }
 
 mandatory_service = {
@@ -527,13 +415,7 @@ mandatory_service = {
 	privateer_efficiency = 0.15
 	allowed_marine_fraction = 0.1
 	
-	ai_will_do = {
-		factor = 0.6
-		modifier = {
-			factor = 0
-			NOT = { navy_size = 20 }
-		}		
-	}
+	ai_will_do = { factor = 1 }
 }
 naval_infrastructure_act = {
 	monarch_power = DIP
@@ -552,13 +434,7 @@ naval_infrastructure_act = {
 	
 	global_ship_recruit_speed = -0.2
 	
-	ai_will_do = {
-		factor = 1
-		modifier = {
-			factor = 0
-			NOT = { num_of_heavy_ship = 10 }
-		}
-	}
+	ai_will_do = { factor = 1 }
 }
 letters_of_marque = {
 	monarch_power = DIP
@@ -578,13 +454,7 @@ letters_of_marque = {
 	privateer_efficiency = 0.25
 	embargo_efficiency = 0.25
 	
-	ai_will_do = {
-		factor = 0.8
-		modifier = {
-			factor = 0
-			NOT = { navy_size = 20 }
-		}
-	}
+	ai_will_do = { factor = 1 }
 }
 maritime_scribes = {
 	monarch_power = DIP
@@ -608,17 +478,7 @@ maritime_scribes = {
 	global_ship_repair = 0.2
 	sailors_recovery_speed = 0.1
 	
-	ai_will_do = {
-		factor = 1
-		modifier = {
-			factor = 0
-			NOT = { navy_size = 10 }
-		}
-		modifier = {
-			factor = 0.6
-			NOT = { navy_size = 20 }
-		}
-	}
+	ai_will_do = { factor = 1 }
 }
 colonial_companies_act = {
 	monarch_power = DIP
@@ -637,18 +497,8 @@ colonial_companies_act = {
 
 	treasure_fleet_income = 0.2
 	colonist_placement_chance = 0.05
-
-	ai_will_do = {
-		factor = 0.8
-		modifier = {
-			factor = 0
-			NOT = { num_of_colonists = 1 }
-		}
-		modifier = {
-			factor = 0.1
-			NOT = { num_of_colonies = 1 }
-		}
-	}
+	
+	ai_will_do = { factor = 1 }
 }
 cultural_unity = {
 	monarch_power = DIP
@@ -666,10 +516,8 @@ cultural_unity = {
 	
 	diplomatic_annexation_cost = -0.10
 	same_culture_advisor_cost = -0.05
-
-	ai_will_do = {
-		factor = 0.6
-	}
+	
+	ai_will_do = { factor = 1 }
 }
 the_cooperation_act = {
 	monarch_power = DIP
@@ -687,10 +535,8 @@ the_cooperation_act = {
 	}
 
 	global_autonomy = -0.05
-		
-	ai_will_do = {
-		factor = 0.6
-	}	
+	
+	ai_will_do = { factor = 1 }
 }
 diplomatic_defence_act = {
 	monarch_power = DIP
@@ -707,10 +553,8 @@ diplomatic_defence_act = {
 	}
 
 	power_projection_from_insults = 0.5
-
-	ai_will_do = {
-		factor = 1
-	}
+	
+	ai_will_do = { factor = 1 }
 }
 encouragement_of_merchant_navy = {
 	monarch_power = DIP
@@ -730,13 +574,7 @@ encouragement_of_merchant_navy = {
 	light_ship_cost = -0.1
 	global_ship_trade_power = 0.25
 	
-	ai_will_do = {
-		factor = 0.8
-		modifier = {
-			factor = 0
-			NOT = { navy_size = 20 }
-		}
-	}
+	ai_will_do = { factor = 1 }
 }
 hold_the_weather_gauge = {
 	monarch_power = DIP
@@ -755,9 +593,7 @@ hold_the_weather_gauge = {
 	
 	same_culture_advisor_cost = -0.075
 	
-	ai_will_do = {
-		factor = 0.8
-	}
+	ai_will_do = { factor = 1 }
 }
 the_importation_act = {
 	monarch_power = DIP
@@ -776,13 +612,7 @@ the_importation_act = {
 	
 	caravan_power = 0.25
 	
-	ai_will_do = {
-		factor = 0.9
-		modifier = {
-			factor = 1.5
-			is_at_war = yes
-		}
-	}
+	ai_will_do = { factor = 1 }
 }
 passport_to_merchants_policy = {
 	monarch_power = DIP
@@ -802,29 +632,7 @@ passport_to_merchants_policy = {
 	num_accepted_cultures = 1
 	merchants = 1
 	
-	ai_will_do = {
-		factor = 1
-		modifier = {
-			factor = 0
-			NOT = { vassal = 1 }
-		}
-		modifier = {
-			factor = 1.5
-			vassal = 2
-		}
-		modifier = {
-			factor = 1.5
-			vassal = 3
-		}			
-		modifier = {
-			factor = 1.5
-			vassal = 4
-		}
-		modifier = {
-			factor = 1.5
-			vassal = 5
-		}	
-	}
+	ai_will_do = { factor = 1 }
 }
 skilled_cartographers = {
 	monarch_power = DIP
@@ -843,10 +651,8 @@ skilled_cartographers = {
 	
 	global_naval_barrage_cost = -0.2
 	blockade_efficiency = 0.2
-
-	ai_will_do = {
-		factor = 1
-	}
+	
+	ai_will_do = { factor = 1 }
 }
 riverine_navy_policy = {
 	monarch_power = DIP
@@ -866,13 +672,7 @@ riverine_navy_policy = {
 	disengagement_chance = 0.05
 	ship_durability = 0.05
 	
-	ai_will_do = {
-		factor = 1.2
-		modifier = {
-			factor = 1.5
-			is_at_war = yes
-		}
-	}
+	ai_will_do = { factor = 1 }
 }
 the_naval_supremacy_act = {
 	monarch_power = DIP
@@ -891,10 +691,8 @@ the_naval_supremacy_act = {
 	}
 	
 	naval_morale = 0.1
-
-	ai_will_do = {
-		factor = 0.6
-	}
+	
+	ai_will_do = { factor = 1 }
 }
 the_wooden_wall = {
 	monarch_power = DIP
@@ -913,9 +711,7 @@ the_wooden_wall = {
 
 	global_naval_engagement_modifier = 0.10
 	
-	ai_will_do = {
-		factor = 0.75
-	}
+	ai_will_do = { factor = 1 }
 }
 naval_school_act = {
 	monarch_power = DIP
@@ -933,10 +729,8 @@ naval_school_act = {
 	}	
 	
 	navy_tradition = 1
-	
-	ai_will_do = {
-		factor = 1
-	}
+		
+	ai_will_do = { factor = 1 }
 }
 trained_marines_act = {
 	monarch_power = DIP
@@ -954,10 +748,8 @@ trained_marines_act = {
 	}
 
 	allowed_marine_fraction = 0.1
-	
-	ai_will_do = {
-		factor = 1
-	}
+		
+	ai_will_do = { factor = 1 }
 }
 the_foreign_support_act = {
 	monarch_power = DIP
@@ -974,10 +766,8 @@ the_foreign_support_act = {
 	}
 	
 	possible_condottieri = 1.0
-		
-	ai_will_do = {
-		factor = 0.6
-	}
+	
+	ai_will_do = { factor = 1 }
 }
 the_recruiting_act = {
 	monarch_power = DIP
@@ -995,10 +785,8 @@ the_recruiting_act = {
 	}
 
 	global_sailors_modifier = 0.2
-
-	ai_will_do = {
-		factor = 0.8
-	}
+	
+	ai_will_do = { factor = 1 }
 }
 black_chamber_act = {
 	monarch_power = DIP
@@ -1017,13 +805,7 @@ black_chamber_act = {
 
 	ship_durability = 0.1
 	
-	ai_will_do = {
-		factor = 1.0
-		modifier = {
-			factor = 2.5
-			is_at_war = yes
-		}
-	}
+	ai_will_do = { factor = 1 }
 }
 fortified_trading_posts = { 
 	monarch_power = DIP
@@ -1042,13 +824,7 @@ fortified_trading_posts = {
 
 	own_coast_naval_combat_bonus = 1.0
 	
-	ai_will_do = {
-		factor = 1.0
-		modifier = {
-			factor = 1.5
-			is_at_war = yes
-		}
-	}
+	ai_will_do = { factor = 1 }
 }
 streamlined_galley_production = {
 	monarch_power = DIP
@@ -1068,13 +844,7 @@ streamlined_galley_production = {
 	global_ship_recruit_speed = -0.1
 	global_ship_cost = -0.1
 	
-	ai_will_do = {
-		factor = 1.0
-		modifier = {
-			factor = 1.5
-			is_at_war = yes
-		}
-	}
+	ai_will_do = { factor = 1 }
 }
 naval_secrecy_act = {
 	monarch_power = DIP
@@ -1094,13 +864,7 @@ naval_secrecy_act = {
 	naval_attrition = -0.2
 	recover_navy_morale_speed = 0.1
 	
-	ai_will_do = {
-		factor = 1.0
-		modifier = {
-			factor = 1.5
-			is_at_war = yes
-		}
-	}
+	ai_will_do = { factor = 1 }
 }
 chaplains_of_the_fleet = {
 	monarch_power = DIP
@@ -1119,10 +883,8 @@ chaplains_of_the_fleet = {
 	
 	prestige_from_naval = 1.0
 	sunk_ship_morale_hit_recieved = -0.1
-	
-	ai_will_do = {
-		factor = 1
-	}
+		
+	ai_will_do = { factor = 1 }
 }
 canoe_expertise_policy = { 
 	monarch_power = DIP
@@ -1142,13 +904,7 @@ canoe_expertise_policy = {
 	capture_ship_chance = 0.1
 	ship_durability = 0.1
 	
-	ai_will_do = {
-		factor = 1.0
-		modifier = {
-			factor = 1.5
-			is_at_war = yes
-		}
-	}
+	ai_will_do = { factor = 1 }
 }
 protected_shipping_lanes = { 
 	monarch_power = DIP
@@ -1166,12 +922,6 @@ protected_shipping_lanes = {
 	}
 
 	global_naval_engagement_modifier = 0.1
-
-	ai_will_do = {
-		factor = 1.0
-		modifier = {
-			factor = 1.5
-			is_at_war = yes
-		}
-	}
+	
+	ai_will_do = { factor = 1 }
 }

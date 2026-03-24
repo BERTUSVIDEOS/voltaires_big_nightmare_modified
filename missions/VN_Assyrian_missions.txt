@@ -17,6 +17,7 @@ vn_asy_missions_slot_1 = {
         position = 1
         required_missions = {  }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             is_at_war = yes
             army_size_percentage = 0.75
             if = {
@@ -43,6 +44,7 @@ vn_asy_missions_slot_1 = {
         position = 3
         required_missions = { vn_asy_assyrian_militarism }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             num_accepted_cultures = 3
             development_in_provinces = {
 				value = 200
@@ -69,6 +71,7 @@ vn_asy_missions_slot_1 = {
             }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             custom_trigger_tooltip = {
                 tooltip = vn_asy_pacify_palestine.tt
                 OR = {
@@ -110,6 +113,7 @@ vn_asy_missions_slot_2 = {
             province_id = 3690
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             3690 = {
                 owned_by = ROOT
                 has_tax_building_trigger = yes
@@ -137,6 +141,7 @@ vn_asy_missions_slot_2 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             syria_region = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -175,6 +180,7 @@ vn_asy_missions_slot_2 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             palestine_region = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -257,6 +263,7 @@ vn_asy_missions_slot_2 = {
         position = 5
         required_missions = { vn_asy_conquer_palestine }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             has_3_lv2_advisors_trigger = yes
             if = {
                 limit = { has_dlc = "Cradle of Civilization" }
@@ -307,6 +314,7 @@ vn_asy_missions_slot_3 = {
             }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             6330 = {
                 owned_by = ROOT
                 is_core = ROOT
@@ -361,6 +369,7 @@ vn_asy_missions_slot_3 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             assyria_region = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -421,6 +430,7 @@ vn_asy_missions_slot_3 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             sophene_region = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -491,6 +501,7 @@ vn_asy_missions_slot_3 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             teluch_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -557,6 +568,7 @@ vn_asy_missions_slot_3 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
                 value = 30
                 OR = {
@@ -596,6 +608,7 @@ vn_asy_missions_slot_4 = {
         position = 1
         required_missions = {  }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             OR = {
                 inquisitor = 2
                 theologian = 2
@@ -617,6 +630,7 @@ vn_asy_missions_slot_4 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             lower_mesopotamia_region = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -720,6 +734,7 @@ vn_asy_missions_slot_4 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             3432 = { country_or_non_sovereign_subject_holds = ROOT }
             3433 = { country_or_non_sovereign_subject_holds = ROOT }
             3434 = { country_or_non_sovereign_subject_holds = ROOT }
@@ -757,6 +772,7 @@ vn_asy_missions_slot_5 = {
             province_id = 6301
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             owns_core_province = 6301
         }
         effect = {
@@ -773,6 +789,7 @@ vn_asy_missions_slot_5 = {
             province_id = 6304
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             6304 = {
                 owned_by = ROOT
                 is_core = ROOT

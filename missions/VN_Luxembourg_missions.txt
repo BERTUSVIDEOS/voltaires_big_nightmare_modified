@@ -20,6 +20,7 @@ vn_lux_missions_slot_1 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }          
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             luxemburg_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -61,6 +62,7 @@ vn_lux_missions_slot_1 = {
         position = 2
         required_missions = { vn_lux_integrate_neighbors }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             government_rank = 3
 			grown_by_development = 50
         }
@@ -85,6 +87,7 @@ vn_lux_missions_slot_1 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }          
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
                 value = 20
                 OR = {
@@ -124,6 +127,7 @@ vn_lux_missions_slot_1 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }          
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
                 value = 5
                 area = antwerp_area
@@ -202,6 +206,7 @@ vn_lux_missions_slot_2 = {
         position = 1
         required_missions = {  }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             OR = {
                 papal_influence = 50
                 invested_papal_influence = 50
@@ -227,6 +232,7 @@ vn_lux_missions_slot_2 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }          
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
                 value = 5
                 area = triernorth_area
@@ -279,6 +285,7 @@ vn_lux_missions_slot_2 = {
         position = 3
         required_missions = { vn_lux_elevate_to_duchy }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             grown_by_development = 100
             calc_true_if = {
                 desc = gen_hre_electors.tooltip
@@ -301,6 +308,7 @@ vn_lux_missions_slot_2 = {
         position = 4
         required_missions = { vn_lux_influence_in_the_empire vn_lux_dynastic_success }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             is_emperor = yes 
 			imperial_influence = 50
         }
@@ -318,6 +326,7 @@ vn_lux_missions_slot_2 = {
         position = 5
         required_missions = { vn_lux_emperorship }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             is_emperor = yes
             imperial_influence = 50
         }
@@ -346,6 +355,7 @@ vn_lux_missions_slot_3 = {
         position = 2
         required_missions = { vn_lux_religious_influence }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             at_war_with_religious_enemy = yes
         }
         effect = {
@@ -360,6 +370,7 @@ vn_lux_missions_slot_3 = {
         position = 3
         required_missions = { vn_lux_masters_of_diplomacy }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			prestige = 25
             if = {
                 limit = { has_dlc = "Common Sense" }
@@ -396,6 +407,7 @@ vn_lux_missions_slot_3 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }          
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
                 value = 20
                 region = bohemia_region
@@ -451,6 +463,7 @@ vn_lux_missions_slot_3 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }          
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			lusatiasouth_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -505,6 +518,7 @@ vn_lux_missions_slot_3 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }          
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             berlin_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = root
@@ -556,6 +570,7 @@ vn_lux_missions_slot_4 = {
         position = 1
         required_missions = {  }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			diplomatic_reputation = 3
 			OR = {
 				advisor = statesman
@@ -575,6 +590,7 @@ vn_lux_missions_slot_4 = {
         position = 2
         required_missions = { vn_lux_improve_our_reputation }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             dip = 4
 			NOT = { num_of_free_diplomatic_relations = 1 }
 			any_ally = {
@@ -596,6 +612,7 @@ vn_lux_missions_slot_4 = {
         position = 3
         required_missions = { vn_lux_masters_of_diplomacy }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			OR = {
 				owns_core_province = 2172
 				2172 = { #owner of Vienna
@@ -635,6 +652,7 @@ vn_lux_missions_slot_4 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }          
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             moravia_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -700,6 +718,7 @@ vn_lux_missions_slot_4 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }          
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             pest_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -803,6 +822,7 @@ vn_lux_missions_slot_5_a = {
             province_id = 2530
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			advisor = fortification_expert
             2530 = { #Luxemburg
 				owned_by = ROOT
@@ -857,6 +877,7 @@ vn_lux_missions_slot_5_a = {
             province_id = 2530
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			fortification_expert = 3
             2530 = { #Luxemburg
 				owned_by = ROOT
@@ -889,6 +910,7 @@ vn_lux_missions_slot_5_a = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }          
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			OR = {
 				548 = {
 					owner = {
@@ -1003,6 +1025,7 @@ vn_lux_missions_slot_5_b = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }          
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             314 = {
                 country_or_non_sovereign_subject_holds = ROOT
             }
@@ -1089,6 +1112,7 @@ vn_lux_missions_slot_5_c = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }          
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             silesia_region = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT

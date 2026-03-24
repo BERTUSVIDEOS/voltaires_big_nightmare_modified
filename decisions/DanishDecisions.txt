@@ -6,6 +6,7 @@ country_decisions = {
 			NOT = { mission_completed = vn_dan_seize_gotland }
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			calc_true_if = {
 				13 = {
 					custom_trigger_tooltip = {
@@ -130,6 +131,7 @@ country_decisions = {
 			NOT = { government_rank = 6 }	#There is no "Arch-Emperor"
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			legitimacy = 1
 		}
 		effect = {
@@ -149,6 +151,7 @@ country_decisions = {
 			NOT = { has_country_modifier = got_baltic_military_power }
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			faction_influence = {
 				faction = mr_aristocrats
 				influence = 80
@@ -176,6 +179,7 @@ country_decisions = {
 			NOT = { has_country_modifier = got_baltic_monopoly }
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			faction_influence = {
 				faction = mr_traders
 				influence = 80
@@ -203,6 +207,7 @@ country_decisions = {
 			NOT = { has_country_modifier = got_baltic_maritime_empire }
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			faction_influence = {
 				faction = mr_guilds
 				influence = 80
@@ -230,6 +235,7 @@ country_decisions = {
 			NOT = { has_country_modifier = got_the_buccaneers_focus }
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			faction_influence = {
 				faction = pr_buccaneers
 				influence = 80
@@ -257,6 +263,7 @@ country_decisions = {
 			NOT = { has_country_modifier = got_the_smugglers_focus }
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			faction_influence = {
 				faction = pr_smugglers
 				influence = 80
@@ -284,6 +291,7 @@ country_decisions = {
 			NOT = { has_country_modifier = got_the_captains_focus }
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			faction_influence = {
 				faction = pr_captains
 				influence = 80

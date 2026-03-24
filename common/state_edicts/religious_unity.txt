@@ -13,21 +13,7 @@ edict_religious_unity = {
 	
 	color = { 117 38 143 }
 	
-	ai_will_do = {
-		factor = 100
-		modifier = {
-			factor = 0
-			all_province_in_state = {
-				has_missionary = no
-			}
-		}
-		modifier = {
-			factor = 3
-			any_province_in_state = {
-				has_missionary = yes
-			}
-		}
-	}
+	ai_will_do = { factor = 1 }
 }
 edict_improved_religious_unity = {
 	potential = {
@@ -44,7 +30,5 @@ edict_improved_religious_unity = {
 	
 	color = { 117 38 143 }
 	
-	ai_will_do = {
-		factor = 0
-	}
+	ai_will_do = { factor = 1 }
 }

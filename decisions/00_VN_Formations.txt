@@ -38,6 +38,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			adm_tech = 10
 			is_at_war = no
 			owns_core_province = 539 #Belgrade
@@ -52,30 +53,12 @@ country_decisions = {
 		}
 		effect = {
 			change_tag = MGF
-			on_change_tag_effect = yes
-			hidden_effect = { restore_country_name = yes }
-			set_formable_tier = { tier = 3 }
-			add_country_modifier = {
-				name = "centralization_modifier"
-				duration = 7300
-			}
-			if = {
-				limit = { 
-					NOT = { government = republic }
-					is_revolutionary = no
-				}
-				change_government = republic
-				add_republican_tradition = 100
-			}
-			if = {
-				limit = { is_revolutionary = no }
-				add_government_reform = peasants_republic
-			}
-			croatia_region = {
-				limit = {
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = ROOT
+			set_formable_tier = {
+				tier = 3
+				gov_rank = 4
+				region = croatia_region
+				base_reform = republic
+				gov_reform = peasants_republic
 			}
 			serbia_region = {
 				limit = {
@@ -83,13 +66,11 @@ country_decisions = {
 				}
 				add_permanent_claim = ROOT
 			}
-			add_prestige = 25
-			if = {
-				limit = {
-					NOT = { government_rank = 4 }
-				}
-				set_government_rank = 4
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
 			}
+			add_prestige = 25
 			if = {
 				limit = { has_custom_ideas = no }
 				country_event = { id = ideagroups.1 } #Swap Ideas
@@ -147,6 +128,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			adm_tech = 10
 			is_at_war = no
 			owns_core_province = 989 #Arles
@@ -219,6 +201,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
 			is_nomad = no
@@ -310,6 +293,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
 			is_nomad = no
@@ -419,6 +403,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
 			owns_core_province = 1818 #milano
@@ -542,6 +527,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			is_free_or_tributary_trigger = yes
 			NOT = { exists = SIC }
 			is_at_war = no
@@ -643,6 +629,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			is_at_war = no
 			owns_core_province = 1048 #ravenna
 			development_in_provinces = {
@@ -732,6 +719,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
 			owns_core_province = 930 #brussels
@@ -815,6 +803,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			is_at_war = no
 			owns_core_province = 958 #ljubljana
 			development_in_provinces = {
@@ -888,6 +877,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			adm_tech = 10
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
@@ -899,41 +889,22 @@ country_decisions = {
 		}
 		effect = {
 			change_tag = SGC
-			on_change_tag_effect = yes
-			hidden_effect = { restore_country_name = yes }
-			set_formable_tier = { tier = 3 }
-			if = {
-				limit = { has_dlc = "Rights of Man" }
-				change_government = monarchy
-				add_government_reform = prussian_monarchy
-			}
-			if = {
-				limit = { NOT = { has_dlc = "Rights of Man" } }
-				change_government = monarchy
-				add_government_reform = feudalism_reform
+			set_formable_tier = {
+				tier = 3
+				gov_rank = 4
+				region = south_germany_region
+				base_reform = monarchy
+				gov_reform = prussian_monarchy
 			}
 			add_country_modifier = {
 				name = "centralization_modifier"
 				duration = 7300
 			}
-			south_germany_region = {
-				limit = {
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = SGC
-			}
 			add_prestige = 25
-			if = {
-				limit = {
-					NOT = { government_rank = 4 }
-				}
-				set_government_rank = 4
-			}
 			if = {
 				limit = { has_custom_ideas = no NOT = { has_idea_group = SGC_ideas } }
 				country_event = { id = ideagroups.1 } #Swap Ideas
 			}
-			set_country_flag = super_formable_flag
 		}
 		ai_will_do = {
 			factor = 1
@@ -973,6 +944,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			adm_tech = 10
 			is_at_war = no
 			num_of_owned_provinces_with = {
@@ -983,36 +955,18 @@ country_decisions = {
 		}
 		effect = {
 			change_tag = NGC
-			on_change_tag_effect = yes
-			hidden_effect = { restore_country_name = yes }
-			set_formable_tier = { tier = 3 }
-			if = {
-				limit = { has_dlc = "Rights of Man" }
-				change_government = monarchy
-				add_government_reform = prussian_monarchy
-			}
-			if = {
-				limit = { NOT = { has_dlc = "Rights of Man" } }
-				change_government = monarchy
-				add_government_reform = feudalism_reform
+			set_formable_tier = {
+				tier = 3
+				gov_rank = 4
+				region = north_germany_region
+				base_reform = monarchy
+				gov_reform = prussian_monarchy
 			}
 			add_country_modifier = {
 				name = "centralization_modifier"
 				duration = 7300
 			}
-			north_germany_region = {
-				limit = {
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = NGC
-			}
 			add_prestige = 25
-			if = {
-				limit = {
-					NOT = { government_rank = 4 }
-				}
-				set_government_rank = 4
-			}
 			if = {
 				limit = { has_custom_ideas = no NOT = { has_idea_group = NGC_ideas }}
 				country_event = { id = ideagroups.1 } #Swap Ideas
@@ -1056,6 +1010,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			adm_tech = 10
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
@@ -1067,36 +1022,18 @@ country_decisions = {
 		}
 		effect = {
 			change_tag = CGC
-			on_change_tag_effect = yes
-			hidden_effect = { restore_country_name = yes }
-			set_formable_tier = { tier = 3 }
-			if = {
-				limit = { has_dlc = "Rights of Man" }
-				change_government = monarchy
-				add_government_reform = prussian_monarchy
-			}
-			if = {
-				limit = { NOT = { has_dlc = "Rights of Man" } }
-				change_government = monarchy
-				add_government_reform = feudalism_reform
+			set_formable_tier = {
+				tier = 3
+				gov_rank = 4
+				region = south_germany_region
+				base_reform = monarchy
+				gov_reform = prussian_monarchy
 			}
 			add_country_modifier = {
 				name = "centralization_modifier"
 				duration = 7300
 			}
-			south_germany_region = {
-				limit = {
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = CGC
-			}
 			add_prestige = 25
-			if = {
-				limit = {
-					NOT = { government_rank = 4 }
-				}
-				set_government_rank = 4
-			}
 			if = {
 				limit = { has_custom_ideas = no NOT = { has_idea_group = CGC_ideas } }
 				country_event = { id = ideagroups.1 } #Swap Ideas
@@ -1145,6 +1082,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
 			is_nomad = no
@@ -1250,6 +1188,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			is_at_war = no
 			is_nomad = no
 			NOT = { exists = SHL }
@@ -1342,6 +1281,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
 			NOT = { exists = PAL }
@@ -1433,6 +1373,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
 			NOT = { exists = BRU }
@@ -1507,6 +1448,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			is_at_war = no
 			is_nomad = no
 			NOT = { exists = SIL }
@@ -1589,6 +1531,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
 			NOT = { exists = ALS }
@@ -1676,6 +1619,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			adm_tech = 10
 			is_at_war = no
 			owns_core_province = 2324		# Bordeaux
@@ -1687,28 +1631,12 @@ country_decisions = {
 		}
 		effect = {
 			change_tag = AQT
-			on_change_tag_effect = yes
-			hidden_effect = { restore_country_name = yes }
 			swap_non_generic_missions = yes
-			set_formable_tier = { tier = 3 }
-			if = {
-				limit = {
-					NOT = { government = monarchy }
-				}
-				change_government = monarchy
-				add_government_reform = feudalism_reform
-			}
-			if = {
-				limit = {
-					NOT = { government_rank = 4 }
-				}
-				set_government_rank = 4
-			}
-			aquitaine_region = {
-				limit = {
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = ROOT
+			set_formable_tier = {
+				tier = 3
+				gov_rank = 4
+				region = aquitaine_region
+				capital = 710
 			}
 			add_country_modifier = {
 				name = "centralization_modifier"
@@ -1763,6 +1691,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			is_at_war = no
 			NOT = { exists = WLS }
 			owns_core_province = 1067 #glamorgan
@@ -1833,6 +1762,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
 			is_nomad = no
@@ -1901,6 +1831,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
 			is_nomad = no
@@ -1986,6 +1917,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			is_at_war = no
 			owns_core_province = 5685 #tirgoviste
 			development_in_provinces = {
@@ -2069,6 +2001,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			OR = {
 				adm_tech = 10
 				tag = KSV
@@ -2147,7 +2080,8 @@ country_decisions = {
 				NOT = { is_core = ROOT }
 			}
 		}
-		allow = {	
+		allow = {
+			if = { limit = { ai = yes } ai = no }	
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
 			is_nomad = no
@@ -2212,6 +2146,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
 			is_nomad = no
@@ -2269,6 +2204,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			adm_tech = 10
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
@@ -2286,27 +2222,18 @@ country_decisions = {
 			}
 		}
 		effect = {
-			if = {
-				limit = {
-					NOT = { government = monarchy }
-				}
-				change_government = monarchy
-				add_government_reform = feudalism_reform
-			}
 			change_tag = HUN
-			on_change_tag_effect = yes
-			hidden_effect = { restore_country_name = yes }
 			swap_non_generic_missions = yes
-			set_formable_tier = { tier = 3 }
+			set_formable_tier = {
+				tier = 3
+				gov_rank = 4
+				capital = 586
+				base_reform = monarchy
+				gov_reform = feudalism_reform
+			}
 			add_country_modifier = {
 				name = "centralization_modifier"
 				duration = 7300
-			}
-			if = {
-				limit = {
-					NOT = { government_rank = 4 }
-				}
-				set_government_rank = 4
 			}
 			if = {
 				limit = { has_custom_ideas = no NOT = { has_idea_group = HUN_ideas }}
@@ -2359,6 +2286,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
 			NOT = { exists = DLM }
@@ -2415,6 +2343,7 @@ country_decisions = {
 			always = no
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			is_at_war = no
 			is_nomad = no
 			is_free_or_tributary_trigger = yes
@@ -2564,6 +2493,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			adm_tech = 10
 			is_at_war = no
 			owns_core_province = 5732 #Vilna
@@ -2577,14 +2507,12 @@ country_decisions = {
 		}
 		effect = {
 			change_tag = LIT
-			on_change_tag_effect = yes
-			hidden_effect = { restore_country_name = yes }
 			swap_non_generic_missions = yes
-			set_formable_tier = { tier = 3 }
-			if = {
-				limit = { government = native }
-				change_government = tribal
-				add_government_reform = tribal_despotism
+			set_formable_tier = {
+				tier = 3
+				gov_rank = 4
+				base_reform = monarchy
+				gov_reform = feudalism_reform
 			}
 			if = {
 				limit = { NOT = { primary_culture = lithuanian } }
@@ -2637,6 +2565,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			adm_tech = 10
 			is_at_war = no
 			owns_core_province = 586 #Tunis
@@ -2648,24 +2577,18 @@ country_decisions = {
 		}
 		effect = {
 			change_tag = IFQ
-			on_change_tag_effect = yes
-			hidden_effect = { restore_country_name = yes }
 			swap_non_generic_missions = yes
-			set_formable_tier = { tier = 3 }
-			if = {
-				limit = { government = tribal }
-				change_government = monarchy
-				add_government_reform = iqta
+			set_formable_tier = {
+				tier = 3
+				gov_rank = 4
+				region = tunis_region
+				capital = 586
+				base_reform = monarchy
+				gov_reform = iqta
 			}
 			add_country_modifier = {
 				name = "centralization_modifier"
 				duration = 7300
-			}
-			if = {
-				limit = {
-					NOT = { government_rank = 4 }
-				}
-				set_government_rank = 4
 			}
 			if = {
 				limit = { has_custom_ideas = no NOT = { has_idea_group = IFQ_ideas }}
@@ -2724,6 +2647,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			is_free_or_tributary_trigger = yes
 			is_nomad = no
 			is_at_war = no
@@ -2805,6 +2729,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			is_free_or_tributary_trigger = yes
 			is_nomad = no
 			is_at_war = no
@@ -2891,6 +2816,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			adm_tech = 15
 			NOT = { exists = ASY }
 			is_free_or_tributary_trigger = yes
@@ -2910,21 +2836,13 @@ country_decisions = {
 				change_primary_culture = aramaic
 			}
 			change_tag = ASY
-			on_change_tag_effect = yes
-			hidden_effect = { restore_country_name = yes }
 			swap_non_generic_missions = yes
-			set_capital = 6330
-			set_formable_tier = { tier = 4 }
-			if = {
-				limit = {
-					NOT = { government_rank = 5 }
-				}
-				set_government_rank = 5
-			}
-			if = {
-				limit = { government = tribal }
-				change_government = monarchy
-				add_government_reform = feudalism_reform
+			set_formable_tier = {
+				tier = 4
+				gov_rank = 5
+				capital = 6330
+				base_reform = monarchy
+				gov_reform = feudalism_reform
 			}
 			add_country_modifier = {
 				name = "centralization_modifier"
@@ -2968,6 +2886,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			is_free_or_tributary_trigger = yes
 			is_nomad = no
 			is_at_war = no
@@ -3031,6 +2950,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
 			owns_core_province = 3252 #Turku
@@ -3103,6 +3023,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			is_at_war = no
 			owns_core_province = 5889 #Reval
 			owns_core_province = 5875 #Tartu
@@ -3176,6 +3097,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			is_free_or_tributary_trigger = yes
 			is_nomad = no
 			is_at_war = no
@@ -3255,6 +3177,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			is_at_war = no
 			NOT = { exists = MAZ }
 			owns_core_province = 1138 #Warsaw
@@ -3334,6 +3257,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			is_at_war = no
 			1009 = { owned_by = ROOT is_state = yes }	#Turin
 			development_in_provinces = {
@@ -3411,6 +3335,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
 			NOT = { exists = BRI }
@@ -3506,6 +3431,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
 			2233 = { owned_by = ROOT is_state = yes }	#Constantinople

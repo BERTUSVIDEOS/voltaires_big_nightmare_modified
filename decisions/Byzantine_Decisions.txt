@@ -10,6 +10,7 @@ country_decisions = {
 			NOT = { owned_by = ROOT }
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			always = no
 			#mission_completed = BYZ_justinians_ambition
 			#mission_completed = BYZ_egypt
@@ -57,6 +58,7 @@ country_decisions = {
 			province_id = 614
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			owns = 614 # corinth
 			NOT = {	
 				custom_trigger_tooltip = {
@@ -142,6 +144,7 @@ country_decisions = {
 			province_id = 2233
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			owns = 2233 # constantinople
 			NOT = {	
 				custom_trigger_tooltip = {
@@ -266,6 +269,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			2233 = {
 				owned_by = ROOT
 				has_shipyard_building_trigger = yes
@@ -306,6 +310,7 @@ country_decisions = {
 			#mission_completed = BYZ_glass_ware
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			prestige = 50
 			has_adm_advisor_2 = yes
 			custom_trigger_tooltip = {
@@ -335,6 +340,7 @@ country_decisions = {
 			has_country_flag = BYZ_ecumenical_decision_flag
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			custom_trigger_tooltip = {
 				tooltip = BYZ_25_year_cooldown
 				OR = {
@@ -362,6 +368,7 @@ country_decisions = {
 			has_estate_privilege = estate_burghers_exkousseiai_for_latins
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			if = {
 				limit = {
 					trade_income_percentage = 0.01
@@ -402,6 +409,7 @@ country_decisions = {
 			has_estate_privilege = estate_nobles_deteriorating_army
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			if = {
 				limit = {
 					always = no
@@ -440,6 +448,7 @@ country_decisions = {
 			NOT = { religion = catholic }
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			if = {
 				limit = {
 					exists = TUR
@@ -483,6 +492,7 @@ country_decisions = {
 			religion = catholic
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			if = {
 				limit = {
 					exists = TUR
@@ -548,6 +558,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			2233 = {
 				has_most_province_trade_power = ROOT
 				trade_share = {

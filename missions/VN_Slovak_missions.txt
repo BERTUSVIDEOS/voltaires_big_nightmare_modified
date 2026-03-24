@@ -23,6 +23,7 @@ vn_slo_missions_slot_1_a = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			pest_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -123,6 +124,7 @@ vn_slo_missions_slot_1_a = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				value = 30
                 OR = {
@@ -158,6 +160,7 @@ vn_slo_missions_slot_1_a = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				value = 40
 				region = silesia_region
@@ -199,6 +202,7 @@ vn_slo_missions_slot_2_a = {
             }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			army_size_percentage = 0.75
 			is_subject = no
 			num_of_allies = 2
@@ -260,6 +264,7 @@ vn_slo_missions_slot_2_a = {
             }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			is_subject = no
 			abauj_area = {
 				type = all
@@ -309,6 +314,7 @@ vn_slo_missions_slot_2_a = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			sacz_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -384,6 +390,7 @@ vn_slo_missions_slot_2_a = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				value = 35
 				OR = {
@@ -425,6 +432,7 @@ vn_slo_missions_slot_3_a = {
 			}
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			781 = {
 				owned_by = ROOT
 				development = 30
@@ -490,6 +498,7 @@ vn_slo_missions_slot_3_b = {
 		position = 3
 		icon = mission_rb_control_electors
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			is_subject = no
 			OR = {
 				capital_scope = {
@@ -573,6 +582,7 @@ vn_slo_missions_slot_3_b = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				value = 20
 				OR = {
@@ -625,6 +635,7 @@ vn_slo_missions_slot_3_c = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				value = 40
 				region = bohemia_region
@@ -690,6 +701,7 @@ vn_slo_missions_slot_3_c = {
             }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			silesia_region = {
 				type = all
 				owned_by = ROOT
@@ -859,6 +871,7 @@ vn_slo_missions_slot_4_a = {
 			province_id = 440
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			440 = {
 				owned_by = ROOT
 				development = 15
@@ -917,6 +930,7 @@ vn_slo_missions_slot_4_a = {
 			province_id = 2911
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			2911 = {
 				country_or_non_sovereign_subject_holds = ROOT
 				development = 25
@@ -979,6 +993,7 @@ vn_slo_missions_slot_4_a = {
 			province_id = 5150
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			5150 = {
 				owned_by = ROOT
 				development = 15
@@ -1029,6 +1044,7 @@ vn_slo_missions_slot_4_b = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				value = 15
 				OR = {
@@ -1098,6 +1114,7 @@ vn_slo_missions_slot_4_b = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				value = 15
 				OR = {
@@ -1134,6 +1151,7 @@ vn_slo_missions_slot_5_a = {
 			province_id = 444
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			444 = {
 				owned_by = ROOT
 				development = 25
@@ -1156,6 +1174,7 @@ vn_slo_missions_slot_5_a = {
 		icon = mission_conquer_50_development
 		position = 6
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			OR = {
 				alliance_with = emperor
 				is_emperor = yes

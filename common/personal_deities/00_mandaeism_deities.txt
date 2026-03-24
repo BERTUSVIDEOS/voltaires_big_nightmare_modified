@@ -3,10 +3,9 @@ m_john = {
 	global_missionary_strength = 0.01
 	
 	potential = { religion = mandaeism }
-	sprite = 85	
-	ai_will_do = {
-		factor = 1
-	}
+	sprite = 85
+	
+	ai_will_do = { factor = 1 }
 }
 
 m_noah = {
@@ -15,17 +14,8 @@ m_noah = {
 	
 	potential = { religion = mandaeism }
 	sprite = 86	
-	ai_will_do = {
-		factor = 1
-		modifier = {
-			factor = 2
-			personality = ai_capitalist
-		}
-		modifier = {
-			factor = 0
-			NOT = { num_of_ports = 1 }
-		}
-	}
+	
+	ai_will_do = { factor = 1 }
 }
 
 m_adam = {
@@ -34,13 +24,8 @@ m_adam = {
 	
 	potential = { religion = mandaeism }
 	sprite = 87	
-	ai_will_do = {
-		factor = 1
-		modifier = {
-			factor = 2
-			personality = ai_diplomat
-		}
-	}
+	
+	ai_will_do = { factor = 1 }
 }
 
 m_shem = {
@@ -49,13 +34,8 @@ m_shem = {
 
 	potential = { religion = mandaeism }
 	sprite = 88	
-	ai_will_do = {
-		factor = 1	
-		modifier = {
-			factor = 2
-			personality = ai_capitalist
-		}
-	}
+	
+	ai_will_do = { factor = 1 }
 }
 
 m_seth = {
@@ -64,9 +44,8 @@ m_seth = {
 	
 	potential = { religion = mandaeism }
 	sprite = 89	
-	ai_will_do = {
-		factor = 1
-	}
+	
+	ai_will_do = { factor = 1 }
 }
 
 m_abel = {
@@ -75,11 +54,6 @@ m_abel = {
 	
 	potential = { religion = mandaeism }
 	sprite = 90
-	ai_will_do = {
-		factor = 1
-		modifier = {
-			factor = 2
-			personality = ai_militarist
-		}
-	}
+	
+	ai_will_do = { factor = 1 }
 }

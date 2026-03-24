@@ -15,6 +15,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			stability = 1
 			NOT = { num_of_rebel_armies = 1 }
 			NOT = { num_of_rebel_controlled_provinces = 1 }			
@@ -95,6 +96,7 @@ country_decisions = {
 			has_country_flag = estate_church_in_power
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			stability = 1
 			NOT = { num_of_rebel_armies = 1 }
 			NOT = { num_of_rebel_controlled_provinces = 1 }			
@@ -125,6 +127,7 @@ country_decisions = {
 			has_country_flag = estate_brahmins_in_power
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			stability = 1
 			NOT = { num_of_rebel_armies = 1 }
 			NOT = { num_of_rebel_controlled_provinces = 1 }			
@@ -155,6 +158,7 @@ country_decisions = {
 			has_country_flag = estate_burghers_in_power
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			stability = 1
 			NOT = { num_of_rebel_armies = 1 }
 			NOT = { num_of_rebel_controlled_provinces = 1 }			
@@ -183,6 +187,7 @@ country_decisions = {
 			has_country_flag = estate_vaisyas_in_power
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			stability = 1
 			NOT = { num_of_rebel_armies = 1 }
 			NOT = { num_of_rebel_controlled_provinces = 1 }			
@@ -211,6 +216,7 @@ country_decisions = {
 			has_country_flag = estate_nomadic_tribes_in_power
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			stability = 1
 			NOT = { num_of_rebel_armies = 1 }
 			NOT = { num_of_rebel_controlled_provinces = 1 }			
@@ -239,6 +245,7 @@ country_decisions = {
 			has_country_flag = estate_jains_in_power
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			stability = 1
 			NOT = { num_of_rebel_armies = 1 }
 			NOT = { num_of_rebel_controlled_provinces = 1 }			
@@ -271,6 +278,7 @@ country_decisions = {
 			NOT = { is_revolutionary = yes }
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			stability = 0
 			NOT = { government = dictatorship }
 			NOT = { has_reform = presidential_despot_reform }
@@ -307,6 +315,7 @@ country_decisions = {
 			NOT = { has_reform = revolutionary_empire_reform }
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			stability = 1
 			has_any_disaster = no
 			NOT = { num_of_rebel_armies = 1 }
@@ -372,6 +381,7 @@ country_decisions = {
 		major = yes
 		potential = { has_country_flag = estate_eunuchs_in_power }
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			stability = 1
 			NOT = { num_of_rebel_controlled_provinces = 1 }
 		}
@@ -488,6 +498,7 @@ country_decisions = {
 			has_country_flag = estate_qizilbash_in_power
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			stability = 1
 			NOT = { num_of_rebel_armies = 1 }
 			NOT = { num_of_rebel_controlled_provinces = 1 }
@@ -515,6 +526,7 @@ country_decisions = {
 			NOT = { has_country_flag = bred_a_new_war_steed }
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			has_global_modifier_value = {
 				which = cavalry_power  
 				value = 0.4

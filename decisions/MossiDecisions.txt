@@ -9,6 +9,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			is_at_war = yes
 			legitimacy = 20
 			stability = 1
@@ -62,6 +63,7 @@ country_decisions = {
 			is_lesser_in_union = no
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			legitimacy = 20
 			stability = 1
 			custom_trigger_tooltip = {
@@ -99,6 +101,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			is_at_war = no
 			legitimacy = 20
 			custom_trigger_tooltip = {
@@ -143,6 +146,7 @@ country_decisions = {
 			has_government_mechanic = tribal_federation_mechanic
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			is_at_war = no
 			legitimacy = 20
 			custom_trigger_tooltip = {

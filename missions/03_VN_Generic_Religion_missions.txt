@@ -16,6 +16,7 @@ vn_gen_religion_missions_1 = {
 		icon = mission_convert_provinces
 		required_missions = { }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			custom_trigger_tooltip = {
 				tooltip = vn_convert_provinces.tt
 				check_variable = { which = num_converted_religion value = 5 }
@@ -45,6 +46,7 @@ vn_gen_religion_missions_2 = {
 		icon = mission_cannons_firing
 		required_missions = { }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			
 			custom_trigger_tooltip = {
 				tooltip = vn_religious_wars.tt
@@ -77,6 +79,7 @@ vn_gen_religion_missions_3 = {
 		icon = mission_defend_the_faith
 		required_missions = { }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			
 			if = {
 				limit = { NOT = { religion_group = pagan } }

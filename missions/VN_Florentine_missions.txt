@@ -20,6 +20,7 @@ vn_lan_missions_slot_1 = {
 		icon = dreams_of_grandeur
 		required_missions = { vn_lan_loyal_merchants }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			stability = 2
             if = {
                 limit = { has_dlc = "Common Sense" }
@@ -47,6 +48,7 @@ vn_lan_missions_slot_1 = {
 		icon = influence_the_church
 		required_missions = { vn_lan_consolidate_rulership }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			if = {
 				limit = {
 					OR = {
@@ -105,6 +107,7 @@ vn_lan_missions_slot_1 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			lucca_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -141,6 +144,7 @@ vn_lan_missions_slot_2 = {
 		icon = sources_of_trade
 		required_missions = {}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			home_trade_node = {
 				has_trader = ROOT
 				trade_share = {
@@ -225,6 +229,7 @@ vn_lan_missions_slot_2 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			642 = { country_or_non_sovereign_subject_holds = ROOT }
 			646 = { country_or_non_sovereign_subject_holds = ROOT }
 			2595 = { country_or_non_sovereign_subject_holds = ROOT}
@@ -264,6 +269,7 @@ vn_lan_missions_slot_2 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			florence_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -321,6 +327,7 @@ vn_lan_missions_slot_3 = {
 			province_id = 640
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			640 = {
 				owned_by = ROOT
 				is_core = ROOT
@@ -340,6 +347,7 @@ vn_lan_missions_slot_3 = {
 		icon = continue_the_renaissance
 		required_missions = { vn_lan_laurentian_library }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			if = {
 				limit = { has_dlc = "Rule Britannia" }
 				innovativeness = 25
@@ -367,6 +375,7 @@ vn_lan_missions_slot_3 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			pisa_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -390,6 +399,7 @@ vn_lan_missions_slot_3 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			siena_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -451,6 +461,7 @@ vn_lan_missions_slot_4 = {
 		position = 1
 		icon = medici_bank_ledgers
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			treasury = 1000
 			monthly_income = 15
 			NOT = { num_of_loans = 1 }
@@ -474,6 +485,7 @@ vn_lan_missions_slot_4 = {
 			province_id = 640
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			640 = {
 				owned_by = ROOT
 				development = 20
@@ -494,6 +506,7 @@ vn_lan_missions_slot_4 = {
 		icon = florentine_renaissance
 		required_missions = { vn_lan_santa_maria_del_fiore }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			has_institution = renaissance
 			prestige = 50
 			capital_scope = {
@@ -530,6 +543,7 @@ vn_lan_missions_slot_5 = {
 		icon = purely_for_commerce
 		required_missions = { }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			share_of_starting_income = 3
 			trade_income_percentage = 0.35
 		}
@@ -548,6 +562,7 @@ vn_lan_missions_slot_5 = {
 		icon = reform_the_monte
 		required_missions = { vn_lan_promote_textil_trade }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			num_of_owned_provinces_with = {
 				value = 5
 				OR = {

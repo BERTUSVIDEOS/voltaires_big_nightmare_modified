@@ -24,6 +24,7 @@ vn_mco_missions_slot_2 = {
 			}
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
             is_at_war = no
             if = {
                 limit = { has_dlc = "Common Sense" }
@@ -56,6 +57,7 @@ vn_mco_missions_slot_2 = {
 			}
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			navy_size = 12
 			navy_size_percentage = 0.75
             home_trade_node = {
@@ -96,6 +98,7 @@ vn_mco_missions_slot_3 = {
 			province_id = 2560
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			2560 = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		effect = {
@@ -123,6 +126,7 @@ vn_mco_missions_slot_4 = {
 		icon = sway_the_pope
 		required_missions = { }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			army_size = 10
 			army_size_percentage = 0.75
             if = {
@@ -147,6 +151,7 @@ vn_mco_missions_slot_4 = {
 		icon = the_spanish_succession
 		required_missions = { vn_mco_ally_the_papacy }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
             if = {
 				limit = {
 					has_dlc = "Rights of Man"

@@ -20,6 +20,7 @@ vn_ath_missions_slot_1 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             hellas_region = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -42,6 +43,7 @@ vn_ath_missions_slot_1 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			thessalia_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -188,6 +190,7 @@ vn_ath_missions_slot_1 = {
             has_port = yes
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
                 value = 20
                 OR = {
@@ -418,6 +421,7 @@ vn_ath_missions_slot_1 = {
             province_id = 2828
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			if = {
 				limit = { has_dlc = "Dharma" }
 				2828 = { province_has_center_of_trade_of_level = 2 }
@@ -449,6 +453,7 @@ vn_ath_missions_slot_1 = {
         position = 6
         required_missions = { vn_ath_rebirth_of_the_acropolis }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             num_of_owned_provinces_with = {
 	        value = 25
 	        development = 25
@@ -491,6 +496,7 @@ vn_ath_missions_slot_2 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             is_subject = no
             athens_area = {
                 type = all
@@ -526,6 +532,7 @@ vn_ath_missions_slot_2 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             thessalia_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -605,6 +612,7 @@ vn_ath_missions_slot_2 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             chalkidiki_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -703,6 +711,7 @@ vn_ath_missions_slot_2 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			thrace_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -755,6 +764,7 @@ vn_ath_missions_slot_2 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             optimaton_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -869,6 +879,7 @@ vn_ath_missions_slot_2 = {
         position = 6
         required_missions = { vn_ath_control_nicaea }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             custom_trigger_tooltip = {
                 tooltip = vn_ath_black_sea_trade_trigger.tt
                 OR = {
@@ -962,6 +973,7 @@ vn_ath_missions_slot_3 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             euboia_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -1005,6 +1017,7 @@ vn_ath_missions_slot_3 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             euboia_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -1048,6 +1061,7 @@ vn_ath_missions_slot_3 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             ionia_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -1098,6 +1112,7 @@ vn_ath_missions_slot_3 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			lydia_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -1137,6 +1152,7 @@ vn_ath_missions_slot_3 = {
         position = 6
         required_missions = { vn_ath_control_nicaea vn_ath_rule_in_asia_minor }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             if = {
                 limit = {
                     culture_group = byzantine
@@ -1184,6 +1200,7 @@ vn_ath_missions_slot_4 = {
         position = 1
         required_missions = {  }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             has_3_advisors_trigger = yes
         }
         effect = {
@@ -1199,6 +1216,7 @@ vn_ath_missions_slot_4 = {
         position = 2
         required_missions = { vn_ath_the_philosphers }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             num_of_owned_provinces_with = {
             	value = 25
             	has_education_building_trigger = yes
@@ -1218,6 +1236,7 @@ vn_ath_missions_slot_4 = {
         position = 3
         required_missions = { vn_ath_akademia }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             if = {
                 limit = { 
                     OR = { 
@@ -1261,6 +1280,7 @@ vn_ath_missions_slot_4 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             cyrenaica_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -1309,6 +1329,7 @@ vn_ath_missions_slot_4 = {
             NOT = { culture_group = byzantine }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			if = {
 				limit = { has_dlc = "Dharma" }
 				355 = { province_has_center_of_trade_of_level = 2 }
@@ -1356,6 +1377,7 @@ vn_ath_missions_slot_4 = {
         position = 6
         required_missions = { vn_ath_rule_the_seas }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             OR = {
                 if = {
                     limit = {
@@ -1535,6 +1557,7 @@ vn_ath_missions_slot_5 = {
         position = 1
         required_missions = {  }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             government = republic
             stability = 3
         }
@@ -1554,6 +1577,7 @@ vn_ath_missions_slot_5 = {
         position = 2
         required_missions = { vn_ath_democratic_foundations }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             NOT = { average_unrest = 1 }
             republican_tradition = 100
             if = {
@@ -1629,6 +1653,7 @@ vn_ath_missions_slot_5 = {
         position = 3
         required_missions = {  }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             religion_group = christian
             num_of_generals = 1
             any_country = {
@@ -1677,6 +1702,7 @@ vn_ath_missions_slot_5 = {
         position = 4
         required_missions = { vn_ath_crusader_legacy }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             num_accepted_cultures = 1
             OR = {
                 invested_papal_influence = 50
@@ -1764,6 +1790,7 @@ vn_ath_missions_slot_5 = {
         position = 5
         required_missions = {  }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             naval_forcelimit = 50
             navy_size_percentage = 0.75            
         }
@@ -1797,6 +1824,7 @@ vn_ath_missions_slot_5 = {
         position = 6
         required_missions = { vn_ath_rule_the_seas }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             custom_trigger_tooltip = {
                 tooltip = vn_ath_italian_trade_trigger.tt
                 OR = {

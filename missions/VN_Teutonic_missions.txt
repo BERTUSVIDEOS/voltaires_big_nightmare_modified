@@ -32,6 +32,7 @@ vn_teu_missions_slot_1 = {
 			}
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			kulmerland_area = {
 				type = all
 				owner = {
@@ -99,6 +100,7 @@ vn_teu_missions_slot_1 = {
 			}
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			westpreussensouth_area = {
 				type = all
 				owner = {
@@ -167,6 +169,7 @@ vn_teu_missions_slot_1 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			num_of_owned_provinces_with = {
 				value = 12
 				OR = {
@@ -200,6 +203,7 @@ vn_teu_missions_slot_2 = {
 		icon = chivalry_is_not_dead
 		required_missions = { }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			land_maintenance = 1
 			army_size_percentage = 0.75
 			religion_group = christian
@@ -293,6 +297,7 @@ vn_teu_missions_slot_2 = {
 			}
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			ostpreusseneast_area = {
 				type = all
 				owner = {
@@ -322,6 +327,7 @@ vn_teu_missions_slot_2 = {
 			religion_group = pagan
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			religion_group = christian
 			religious_unity = 0.95
 			NOT = {
@@ -342,6 +348,7 @@ vn_teu_missions_slot_2 = {
 		icon = spread_piety
 		required_missions = { vn_teu_convert_prussia vn_teu_conquer_pomerelia }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			religion_group = christian
 			OR = {
 				full_idea_group = religious_ideas
@@ -410,6 +417,7 @@ vn_teu_missions_slot_3 = {
 			}
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			konigsberg_area = {
 				type = all
 				owner = {
@@ -457,6 +465,7 @@ vn_teu_missions_slot_3 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			OR = {
 				AND = {
 					GOT = { exists = no }

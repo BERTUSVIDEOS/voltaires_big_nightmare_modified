@@ -4,17 +4,8 @@ ashkenazi = {
 	
 	potential = { religion = jewish }
 	sprite = 97
-	ai_will_do = {
-		factor = 1	
-		modifier = {
-			factor = 2
-			personality = ai_capitalist
-		}	
-		modifier = {
-			factor = 0.5
-			personality = ai_militarist
-		}
-	}
+	
+	ai_will_do = { factor = 1 }
 }
 
 haredi = {
@@ -23,13 +14,8 @@ haredi = {
 	
 	potential = { religion = jewish }
 	sprite = 98
-	ai_will_do = {
-		factor = 1		
-		modifier = {
-			factor = 2
-			personality = ai_militarist
-		}
-	}
+	
+	ai_will_do = { factor = 1 }
 }
 
 sephardi = {
@@ -38,9 +24,8 @@ sephardi = {
 	
 	potential = { religion = jewish }
 	sprite = 100
-	ai_will_do = {
-		factor = 1
-	}
+	
+	ai_will_do = { factor = 1 }
 }
 
 mizrahi = {
@@ -49,9 +34,8 @@ mizrahi = {
 	
 	potential = { religion = jewish }
 	sprite = 99	
-	ai_will_do = {
-		factor = 1	
-	}
+	
+	ai_will_do = { factor = 1 }
 }
 
 hasidi = {
@@ -60,9 +44,8 @@ hasidi = {
 	
 	potential = { religion = jewish }
 	sprite = 101
-	ai_will_do = {
-		factor = 1
-	}
+	
+	ai_will_do = { factor = 1 }
 }
 
 qaraimi = {
@@ -71,15 +54,6 @@ qaraimi = {
 	
 	potential = { religion = jewish }
 	sprite = 102
-	ai_will_do = {
-		factor = 1	
-		modifier = {
-			factor = 2
-			personality = ai_capitalist
-		}
-		modifier = {
-			factor = 0
-			NOT = { num_of_ports = 1 }
-		}
-	}
+	
+	ai_will_do = { factor = 1 }
 }

@@ -18,8 +18,7 @@ edict_promote_sailor_recruitment = {
 	
 	color = {  188 90 57  }
 	
-	
-	ai_will_do = {factor = 10}
+	ai_will_do = { factor = 1 }
 }
 edict_improved_promote_sailor_recruitment = {
 	potential = {
@@ -41,6 +40,5 @@ edict_improved_promote_sailor_recruitment = {
 	
 	color = {  188 90 57  }
 	
-	
-	ai_will_do = {factor = 0}
+	ai_will_do = { factor = 1 }
 }

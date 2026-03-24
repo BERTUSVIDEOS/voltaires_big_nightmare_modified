@@ -1,4 +1,5 @@
 ﻿l_english:
+
  monthly_military_reform_power_gain:0 "Monthly Military Reform"
  bertus_events.0007.t:0 "Direction of Our New Country"
  bertus_events.0007.d:0 "Our newly found country of $COUNTRY$ requires guidance. We must reform our government to ones of the old world if we are to be taken seriously in the political arena - the question is: what model should we seek to strive for?"
@@ -177,6 +178,11 @@
  montpellier_node:0 "Toulouse"
  barcelona_node:0 "Valencia"
  sevilla:0 "Sevilla"
+ douai_area:0 "Douai"
+ brugge_area:0 "Brugge"
+ kortrijk_area:0 "Kortrijk"
+ gent_area:0 "Gent"
+ gent_area:0 "Gent"
  south_hum_area:0 "South Hum"
  building_ramparts_desc:0 "Requirements:\n  · Development: §Y40§!"
  building_post_office_desc:0 "Requirements:\n  · Development: §Y40§!"
@@ -284,7 +290,7 @@
  boosted_country_economy_3:0 "Economy Boost"
  boosted_country_trade:0 "Trade Boost"
  boosted_country_trade_2:0 "Trade Boost"
- boosted_country_trade_2:0 "Trade Boost"
+ boosted_country_trade_3:0 "Trade Boost"
  boosted_country_administration:0 "Administration Boost"
  boosted_country_administration_2:0 "Administration Boost"
  boosted_country_administration_3:0 "Administration Boost"

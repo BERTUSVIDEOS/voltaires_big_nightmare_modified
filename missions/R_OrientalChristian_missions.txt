@@ -14,6 +14,7 @@ vn_orientalchristian_missions = {
 		icon = mission_envoy_to_ethiopia
 		required_missions = { }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			any_ally = {
 				OR = {
 					religion = catholic
@@ -41,6 +42,7 @@ vn_orientalchristian_missions = {
 		icon = sources_of_trade
         required_missions = { }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			num_of_owned_provinces_with = {
 				value = 15
 				OR = {
@@ -63,6 +65,7 @@ vn_orientalchristian_missions = {
 		icon = mission_conquer_timbuktu
         required_missions = { vn_church_equipment }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			num_of_cities = 50
 		}
 		effect = {

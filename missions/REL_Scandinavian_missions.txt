@@ -24,6 +24,7 @@ VN_swedish_vanilla_missions = {
 		position = 5
 		required_missions = { }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			if = {
 				limit = { NOT = { started_in = 1444.11.110 } }
 				is_year = 1410
@@ -64,6 +65,7 @@ VN_swedish_vanilla_missions = {
 			}
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			if = {
 				limit = { NOT = { started_in = 1444.11.110 } }
 				is_year = 1410
@@ -100,6 +102,7 @@ VN_swedish_vanilla_missions = {
 		icon = mission_swedish_military_advise
 		required_missions = { }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			if = {
 				limit = { NOT = { started_in = 1444.11.110 } }
 				is_year = 1410
@@ -131,6 +134,7 @@ VN_swedish_vanilla_missions = {
 		icon = mission_have_two_subjects
 		required_missions = { }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			if = {
 				limit = { NOT = { started_in = 1444.11.110 } }
 				is_year = 1410
@@ -221,6 +225,7 @@ VN_danish_vanilla_missions = {
 			owned_by = NOR
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			if = {
 				limit = { NOT = { started_in = 1444.11.110 } }
 				is_year = 1410
@@ -260,6 +265,7 @@ VN_danish_vanilla_missions = {
 			owned_by = SWE
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			if = {
 				limit = { NOT = { started_in = 1444.11.110 } }
 				is_year = 1410
@@ -307,6 +313,7 @@ VN_danish_vanilla_missions = {
 			}
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			has_reform = kalmar_union
 			OR = {
 				AND = {
@@ -394,6 +401,7 @@ VN_norwegian_vanilla_missions = {
 			}
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			if = {
 				limit = { NOT = { started_in = 1444.11.110 } }
 				is_year = 1410

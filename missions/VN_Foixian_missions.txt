@@ -21,6 +21,7 @@ vn_FOI_missions_slot_1 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             toulouse_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -55,6 +56,7 @@ vn_FOI_missions_slot_1 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             narbonne_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -93,6 +95,7 @@ vn_FOI_missions_slot_1 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             montpellier_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -123,6 +126,7 @@ vn_FOI_missions_slot_1 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			vizcaya_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -163,6 +167,7 @@ vn_FOI_missions_slot_2 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             bearn_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -194,6 +199,7 @@ vn_FOI_missions_slot_2 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             labourd_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -241,6 +247,7 @@ vn_FOI_missions_slot_2 = {
 			}
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             bearn_area = {
                 type = all
                 owned_by = ROOT
@@ -281,6 +288,7 @@ vn_FOI_missions_slot_2 = {
             province_id = 2910
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
  	    	capital = 2910
             2910 = {
                 development = 25
@@ -319,6 +327,7 @@ vn_FOI_missions_slot_3 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             armagnac_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -343,6 +352,7 @@ vn_FOI_missions_slot_3 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             2324 = {
                 country_or_non_sovereign_subject_holds = ROOT
 				development = 20
@@ -382,6 +392,7 @@ vn_FOI_missions_slot_3 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             nemours_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -425,6 +436,7 @@ vn_FOI_missions_slot_4 = {
 			}
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             OR = {
 				dip = 4 
 				monthly_dip = 12
@@ -453,7 +465,7 @@ vn_FOI_missions_slot_4 = {
         effect = {
             add_dip_power = 50
 			change_ruler_stat = {
-				stat = dip
+				type = dip
 				amount = 2
 			}
         }
@@ -463,6 +475,7 @@ vn_FOI_missions_slot_4 = {
         icon = assert_our_sovereignty
         required_missions = { vn_FOI_good_diplomats }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             if = {
                 limit = {
                     is_subject_of = FRA
@@ -502,6 +515,7 @@ vn_FOI_missions_slot_4 = {
         icon = fra_appease_the_princes
         required_missions = { vn_FOI_crucial_french_ally }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             if = {
                 limit = { has_dlc = "Dharma" }
                 reform_level = 4
@@ -544,6 +558,7 @@ vn_FOI_missions_slot_4 = {
         icon = mission_among_the_great_powers
         required_missions = { vn_FOI_powerful_prince }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             is_subject = no
             total_development = 300
         }
@@ -581,6 +596,7 @@ vn_FOI_missions_slot_5 = {
             province_id = 668
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             668 = {
                 owned_by = ROOT
                 is_core = ROOT
@@ -615,6 +631,7 @@ vn_FOI_missions_slot_5 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             lerida_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -636,6 +653,7 @@ vn_FOI_missions_slot_5 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             tarragona_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -671,6 +689,7 @@ vn_FOI_missions_slot_5 = {
             }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             barcelona_area = {
                 type = all
                 owned_by = ROOT
@@ -706,6 +725,7 @@ vn_FOI_missions_slot_5 = {
         position = 5
         required_missions = { vn_FOI_powerful_prince }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             
 			army_size_percentage = 0.75
 			religion_group = christian

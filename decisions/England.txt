@@ -10,6 +10,7 @@ country_decisions = {
 			NOT = { has_country_modifier = british_merchant_navy }
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			maritime_ideas = 5
 			monthly_income = 60
 			trade_income_percentage = 0.33
@@ -36,6 +37,7 @@ country_decisions = {
 			NOT = { has_country_modifier = britanna_rules_the_waves }
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			num_of_total_ports = 50
 			num_of_heavy_ship = 50
 			num_of_light_ship = 50
@@ -66,6 +68,7 @@ country_decisions = {
 
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			is_at_war = no
 			adm = 2
 			adm_power = 40
@@ -108,6 +111,7 @@ country_decisions = {
 			NOT = { owns_or_non_sovereign_subject_of = 4706 }
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			is_at_war = no
 			treasury = 200
 			4706 = {
@@ -151,6 +155,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			is_at_war = no
 			OR = {
 				has_country_modifier = royal_impressment_act_modifier
@@ -194,6 +199,7 @@ country_decisions = {
 			NOT = { has_country_flag = eng_can_not_adjust_ideas }
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			always = yes
 		}
 		effect = {
@@ -217,6 +223,7 @@ country_decisions = {
 			has_country_flag = eng_can_not_adjust_ideas
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			adm_power_cost = 100
 		}
 		effect = {
@@ -238,6 +245,7 @@ country_decisions = {
 			NOT = { has_country_flag = eng_disabled_colonial_ventures }
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			always = yes
 		}
 		effect = {
@@ -258,6 +266,7 @@ country_decisions = {
 			has_country_flag = eng_disabled_colonial_ventures
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			adm_power_cost = 100
 		}
 		effect = {

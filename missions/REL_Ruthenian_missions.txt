@@ -18,6 +18,7 @@ kievan_rus_ambitions = {
         required_missions = {}
         position = 5
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			if = {
 				limit = {
 					has_dlc = "Third Rome"
@@ -48,6 +49,7 @@ kievan_rus_ambitions = {
 		icon = mission_conquer_moscow
 		required_missions = { vn_establish_druzhina }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			prestige = 25
 			capital_scope = {
 				development = 25
@@ -70,6 +72,7 @@ kievan_rus_ambitions = {
 			province_id = 4237
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			4237 = {
 				owned_by = ROOT
 				has_building = training_fields
@@ -96,6 +99,7 @@ kievan_rus_ambitions = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			OR = {
 				russia_superregion = {
 					type = all

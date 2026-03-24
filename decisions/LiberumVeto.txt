@@ -8,6 +8,7 @@ country_decisions = {
 			government = monarchy
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			estate_loyalty = {
 				estate = estate_nobles 
 				loyalty = 80

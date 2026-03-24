@@ -11,6 +11,7 @@ vn_sunni_missions = {
 		icon = mission_ottoman_harem
 		required_missions = { }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			if = {
 				limit = { government = monarchy }
 				num_of_royal_marriages = 3
@@ -31,6 +32,7 @@ vn_sunni_missions = {
 		icon = mission_mosque
 		required_missions = { vn_expand_our_harem }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			if = {
 				limit = {
 					uses_piety = yes
@@ -56,6 +58,7 @@ vn_sunni_missions = {
 		icon = mission_persian_soldiers
 		required_missions = { }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			custom_trigger_tooltip = {
 				tooltip = vn_fight_a_jihad.tt
 				any_country = {

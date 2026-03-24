@@ -23,6 +23,7 @@ country_decisions = {
 			NOT = { has_country_flag = relocated_capital_warsawa }
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			is_core = 1138
 			is_at_war = no
 		}
@@ -59,6 +60,7 @@ country_decisions = {
 			has_country_flag = pol_enable_pacta_conventa_decision_flag
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			has_estate_privilege = estate_nobles_pacta_conventa
 			stability = 3
 			is_at_war = no

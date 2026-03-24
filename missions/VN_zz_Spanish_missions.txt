@@ -18,6 +18,7 @@ vn_spa_missions_slot_1_a = {
         position = 10
         required_missions = {  }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			if = {
 				limit = { has_dlc = "Art of War" }
 				OR = {
@@ -73,6 +74,7 @@ vn_spa_missions_slot_1_b = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				value = 10
 				superregion = lowlands_superregion
@@ -171,6 +173,7 @@ vn_spa_missions_slot_1_b = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				value = 5
 				area = artois_area
@@ -239,6 +242,7 @@ vn_spa_missions_slot_1_b = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				value = 5
 				OR = {
@@ -294,6 +298,7 @@ vn_spa_missions_slot_1_b = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			west_midlands_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -379,6 +384,7 @@ vn_spa_missions_slot_2_a = {
 			}
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             if = {
                 limit = { has_dlc = "Common Sense" }
                 legitimacy_equivalent = 95
@@ -395,15 +401,15 @@ vn_spa_missions_slot_2_a = {
         }
         effect = {
             change_ruler_stat = {
-				stat = adm
+				type = adm
 				amount = 1
 			}
 			change_ruler_stat = {
-				stat = dip
+				type = dip
 				amount = 1
 			}
 			change_ruler_stat = {
-				stat = mil
+				type = mil
 				amount = 1
 			}
         }
@@ -421,6 +427,7 @@ vn_spa_missions_slot_2_a = {
 			}
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			iberia_superregion = {
 				type = all
 				owned_by = ROOT
@@ -616,6 +623,7 @@ vn_spa_missions_slot_2_b = {
         position = 13
         required_missions = { vn_spa_a_new_dynasty }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			if = {
 				limit = { hre_size = 1 }
 				is_emperor = yes
@@ -644,6 +652,7 @@ vn_spa_missions_slot_2_b = {
 			vn_spa_spanish_emperorship 
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			if = {
 				limit = {
 					any_known_country = {
@@ -695,6 +704,7 @@ vn_spa_missions_slot_2_c = {
         position = 15
         required_missions = {  }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			naval_forcelimit = 100
 			calc_true_if = {
 				num_of_heavy_ship = 10
@@ -729,6 +739,7 @@ vn_spa_missions_slot_2_c = {
         position = 16
         required_missions = { vn_spa_construct_armada }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             NOT = {
 				any_known_country = {
 					navy_size = ROOT
@@ -750,6 +761,7 @@ vn_spa_missions_slot_2_c = {
         position = 18
         required_missions = {  }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			is_year = 1500
             if = {
 				limit = { has_dlc = "Cradle of Civilization" }
@@ -823,6 +835,7 @@ vn_spa_missions_slot_3_a = {
 			}
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			madrid_area = {
 				type = all
 				owned_by = ROOT
@@ -949,6 +962,7 @@ vn_spa_missions_slot_3_a = {
         position = 12
         required_missions = { vn_spa_kingdom_of_spain }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             if = {
 				limit = { exists = HAB }
 				dynasty = HAB
@@ -978,6 +992,7 @@ vn_spa_missions_slot_3_a = {
         position = 13
         required_missions = { vn_spa_a_new_dynasty }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             if = {
 				limit = { exists = FRA }
 				FRA = {
@@ -1093,6 +1108,7 @@ vn_spa_missions_slot_3_a = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				value = 50
 				superregion = french_superregion
@@ -1182,6 +1198,7 @@ vn_spa_missions_slot_3_b = {
 			NOT = { controlled_by = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             2235 = {
 				controlled_by = ROOT
 			}
@@ -1239,6 +1256,7 @@ vn_spa_missions_slot_3_b = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				value = 25
 				OR = {
@@ -1345,6 +1363,7 @@ vn_spa_missions_slot_3_c = {
 			vn_spa_italian_monopoly 
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			custom_trigger_tooltip = {
 				tooltip = vn_spa_mediterranean_dominion.tt
 				westernmed_sea_area = {
@@ -1404,6 +1423,7 @@ vn_spa_missions_slot_3_d = {
 			province_id = 1236
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             1236 = {
 				owned_by = ROOT
 				if = {
@@ -1468,6 +1488,7 @@ vn_spa_missions_slot_4_a = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				value = 35
 				OR = {
@@ -1562,6 +1583,7 @@ vn_spa_missions_slot_4_b = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             sicilia_region = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -1684,6 +1706,7 @@ vn_spa_missions_slot_4_b = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			salento_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -1783,6 +1806,7 @@ vn_spa_missions_slot_4_b = {
 			vn_spa_competition_with_venice 
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             2560 = {
 				is_strongest_trade_power = ROOT
 			}
@@ -1871,6 +1895,7 @@ vn_spa_missions_slot_4_c = {
         position = 17
         required_missions = { }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			NOT = { inflation = 1 }
 			NOT = { num_of_loans = 1 }
 			NOT = { corruption = 1 }
@@ -1901,6 +1926,7 @@ vn_spa_missions_slot_4_c = {
 			vn_spa_port_of_sevilla 
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             if = {
                 limit = { has_dlc = "Mandate of Heaven" }
                 OR = {
@@ -1935,7 +1961,7 @@ vn_spa_missions_slot_4_c = {
 			}
 			else = {
 				change_ruler_stat = {
-					stat = adm
+					type = adm
 					amount = 2
 				}
 			}
@@ -1962,6 +1988,7 @@ vn_spa_missions_slot_5_a = {
         position = 10
         required_missions = {  }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			calc_true_if = {
 				desc = vn_mlo_expansion_of_milan.tt
 				italy_superregion = {
@@ -1981,15 +2008,15 @@ vn_spa_missions_slot_5_a = {
 				country_event = { id = flavor_spa.199 }
 			}
 			change_ruler_stat = {
-				stat = adm
+				type = adm
 				amount = 1
 			}
 			change_ruler_stat = {
-				stat = dip
+				type = dip
 				amount = 1
 			}
 			change_ruler_stat = {
-				stat = mil
+				type = mil
 				amount = 1
 			}
 			corsica_area = {
@@ -2100,6 +2127,7 @@ vn_spa_missions_slot_5_a = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			corsica_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -2141,6 +2169,7 @@ vn_spa_missions_slot_5_a = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             if = {
 				limit = { exists = GEN }
 				GEN = { NOT = { navy_size = ROOT } }
@@ -2181,6 +2210,7 @@ vn_spa_missions_slot_5_a = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             if = {
 				limit = { exists = VEN }
 				VEN = { NOT = { navy_size = ROOT } }
@@ -2232,6 +2262,7 @@ vn_spa_missions_slot_5_b = {
 			area = sevilla_area
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             1867 = {
 				owned_by = ROOT
 				development = 25

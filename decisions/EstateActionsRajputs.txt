@@ -9,6 +9,7 @@ country_decisions = {
 			has_estate = estate_rajput
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			has_not_any_estate_disaster_active = yes
 			estate_loyalty = {
 				estate = estate_rajput
@@ -47,6 +48,7 @@ country_decisions = {
 			has_estate = estate_rajput
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			has_not_any_estate_disaster_active = yes
 			estate_loyalty = {
 				estate = estate_rajput
@@ -94,6 +96,7 @@ country_decisions = {
 			NOT = { has_estate = estate_nobles }
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			has_not_any_estate_disaster_active = yes
 			estate_loyalty = {
 				estate = estate_rajput
@@ -133,6 +136,7 @@ country_decisions = {
 			religion_group = muslim
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			has_not_any_estate_disaster_active = yes
 			estate_influence = {
 				estate = estate_rajput
@@ -174,6 +178,7 @@ country_decisions = {
 			has_estate = estate_rajput
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			has_not_any_estate_disaster_active = yes
 			estate_action_off_cooldown = {
 				estate_action = PROMOTE_RAJPUT_NOBILITY_RAJPUT
@@ -218,6 +223,7 @@ country_decisions = {
 			has_estate = estate_rajput
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			has_not_any_estate_disaster_active = yes
 			estate_loyalty = {
 				estate = estate_rajput

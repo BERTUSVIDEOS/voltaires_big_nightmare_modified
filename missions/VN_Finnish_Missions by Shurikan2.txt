@@ -16,7 +16,8 @@ fin_missions_1 = {
 		icon = end_the_habsburgs
 		required_missions = { } 
 		position = 1 
-		trigger = { 
+		trigger = {
+			if = { limit = { ai = yes } ai = no } 
 			army_size_percentage = 1 
 			OR = { 
 				has_mil_advisor = yes 
@@ -74,7 +75,8 @@ fin_missions_1 = {
 		required_missions = { fin_forcelimit }
 		position = 2
 		provinces_to_highlight = { } 
-		trigger = { 
+		trigger = {
+			if = { limit = { ai = yes } ai = no } 
 			if = {
 				limit = { NOT = { has_country_flag = rus_can_complete_missions_as_subject } }
 				stability = 1
@@ -177,7 +179,8 @@ fin_missions_1 = {
 			province_id = 6109 
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
-		trigger = { 
+		trigger = {
+			if = { limit = { ai = yes } ai = no } 
 			6109 = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		effect = { 
@@ -224,7 +227,8 @@ fin_missions_2 = {
 		required_missions = { }
 		position = 1
 		provinces_to_highlight = { } 
-		trigger = { 
+		trigger = {
+			if = { limit = { ai = yes } ai = no } 
 			OR = { 
 				any_owned_province = {
 					trade_goods = crabs 
@@ -294,7 +298,8 @@ fin_missions_2 = {
 		required_missions = { fin_grow_farms }
 		position = 2
 		provinces_to_highlight = { } 
-		trigger = { 
+		trigger = {
+			if = { limit = { ai = yes } ai = no } 
 			OR = { 
 				num_of_owned_provinces_with = {
 					culture = finnish 
@@ -347,7 +352,8 @@ fin_missions_2 = {
 			province_id = 6123
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
-		trigger = { 
+		trigger = {
+			if = { limit = { ai = yes } ai = no } 
 			6123 = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		effect = { 
@@ -422,6 +428,7 @@ fin_missions_2 = {
 			}
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			num_of_owned_provinces_with = {
 				is_core = ROOT
 				region = livonia_region
@@ -495,6 +502,7 @@ fin_handle_the_sami = {
 			}
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			if = {
 				limit = { NOT = { has_country_flag = rus_can_complete_missions_as_subject } }
 				south_karelia_region = { 
@@ -530,6 +538,7 @@ fin_handle_the_sami = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT } 
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			3282 = { 
 				owned_by = ROOT 
 				has_fort_building_trigger = yes 
@@ -557,7 +566,8 @@ fin_handle_the_sami = {
 		required_missions = { fin_neva }
 		position = 4
 		provinces_to_highlight = { province_id = 3427 }
-		trigger = { 
+		trigger = {
+			if = { limit = { ai = yes } ai = no } 
 			if = {
 				limit = { NOT = { has_country_flag = rus_can_complete_missions_as_subject } }
 				3427 = { 
@@ -590,7 +600,8 @@ fin_handle_the_sami = {
 		required_missions = { fin_tar_trade fin_abo_academy }
 		position = 5
 		provinces_to_highlight = { is_capital_of = ROOT } 
-		trigger = { 
+		trigger = {
+			if = { limit = { ai = yes } ai = no } 
 			if = {
 				limit = { NOT = { has_country_flag = rus_can_complete_missions_as_subject } }
 				is_defender_of_faith = yes 
@@ -630,7 +641,8 @@ fin_missions_4 = {
 		required_missions = { fin_grow_farms }
 		position = 2
 		provinces_to_highlight = { } 
-		trigger = { 
+		trigger = {
+			if = { limit = { ai = yes } ai = no } 
 			share_of_starting_income = 5
 			if = {
 				limit = { NOT = { has_country_flag = rus_can_complete_missions_as_subject } }
@@ -663,7 +675,8 @@ fin_missions_4 = {
 		required_missions = { fin_high_income fin_neva fin_found_helsingfors }
 		position = 4
 		provinces_to_highlight = { province_id = 3252 } 
-		trigger = { 
+		trigger = {
+			if = { limit = { ai = yes } ai = no } 
 			stability = 2
 			3252 = { 
 				owned_by = ROOT 
@@ -743,7 +756,8 @@ fin_missions_5 = {
 		required_missions = { }
 		position = 1
 		provinces_to_highlight = { province_id = 3252 } 
-		trigger = { 
+		trigger = {
+			if = { limit = { ai = yes } ai = no } 
 			3252 = { 
 				num_of_buildings_in_province = 3
 				num_of_times_improved = 5 
@@ -778,7 +792,8 @@ fin_missions_5 = {
 		required_missions = { fin_build_turku }
 		position = 3
 		provinces_to_highlight = { province_id = 3264 } 
-		trigger = { 
+		trigger = {
+			if = { limit = { ai = yes } ai = no } 
 			3264 = { 
 				owned_by = ROOT 
 				development = 30

@@ -20,6 +20,7 @@ vn_sax_missions_slot_1 = {
 		icon = prosperity_for_all
 		required_missions = { }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			num_of_owned_provinces_with = {
 				value = 15
 				development = 5
@@ -53,6 +54,7 @@ vn_sax_missions_slot_1 = {
 			has_production_building_trigger = no
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			num_of_owned_provinces_with = {
 				value = 10
 				OR = {
@@ -107,6 +109,7 @@ vn_sax_missions_slot_1 = {
 			}
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			2803 = {
 				owned_by = ROOT
 				development = 20
@@ -134,6 +137,7 @@ vn_sax_missions_slot_1 = {
 		icon = a_show_of_strength
 		required_missions = { }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			if = {
 				limit = {
 					has_dlc = "Cradle of Civilization"
@@ -179,6 +183,7 @@ vn_sax_missions_slot_1 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			lusatiasouth_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -219,6 +224,7 @@ vn_sax_missions_slot_1 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				value = 20
 				region = silesia_region
@@ -348,6 +354,7 @@ vn_sax_missions_slot_1 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				value = 30
                 OR = {
@@ -403,6 +410,7 @@ vn_sax_missions_slot_2 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			merseburg_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -427,6 +435,7 @@ vn_sax_missions_slot_2 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			anhalt_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -573,6 +582,7 @@ vn_sax_missions_slot_2 = {
 			}
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			if = {
 				limit = {
 					exists = BRA
@@ -702,6 +712,7 @@ vn_sax_missions_slot_2 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				value = 14
 				OR = {
@@ -723,6 +734,7 @@ vn_sax_missions_slot_2 = {
 		icon = industrialized_rhineland
 		required_missions = { vn_sax_conquer_silesia }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			share_of_starting_income = 25
 			num_of_owned_provinces_with = {
 				value = 10
@@ -763,6 +775,7 @@ vn_sax_missions_slot_3 = {
 		icon = empower_the_junkers
 		required_missions = { }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			stability = 2
             if = {
                 limit = { has_dlc = "Common Sense" }
@@ -809,6 +822,7 @@ vn_sax_missions_slot_3 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			osterland_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -860,6 +874,7 @@ vn_sax_missions_slot_3 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				value = 12
 				OR = {
@@ -903,6 +918,7 @@ vn_sax_missions_slot_3 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				value = 8
 				area = brunswick_area
@@ -962,6 +978,7 @@ vn_sax_missions_slot_3 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				value = 12
 				OR = {
@@ -992,6 +1009,7 @@ vn_sax_missions_slot_3 = {
 		icon = become_king
 		required_missions = { vn_sax_conquer_luneburg vn_sax_truthfully_emperor }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			government_rank = 5
             if = {
                 limit = { has_dlc = "Common Sense" }
@@ -1040,6 +1058,7 @@ vn_sax_missions_slot_4 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			meissen_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -1076,6 +1095,7 @@ vn_sax_missions_slot_4 = {
 			}
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			meissen_area = {
 				type = all
 				owned_by = ROOT
@@ -1110,6 +1130,7 @@ vn_sax_missions_slot_4 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				value = 16
 				OR = {
@@ -1129,6 +1150,7 @@ vn_sax_missions_slot_4 = {
 		icon = join_the_reformation
 		required_missions = { vn_sax_schmalkaldic_league }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			OR = {
 				AND = {
 					full_idea_group = religious_ideas
@@ -1166,6 +1188,7 @@ vn_sax_missions_slot_4 = {
 		icon = shift_the_balance
 		required_missions = { vn_sax_religious_doctrines }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			if = {
 				limit = { hre_size = 1 }
 				OR = {
@@ -1223,6 +1246,7 @@ vn_sax_missions_slot_5 = {
 		icon = reform_the_nomocanon
 		required_missions = { }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			OR = {
 				religion = reformed
 				religion = protestant
@@ -1249,6 +1273,7 @@ vn_sax_missions_slot_5 = {
 		icon = victor_for_the_true_faith
 		required_missions = { vn_sax_promote_popular_theology }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			custom_trigger_tooltip = {
 				tooltip = emp_bav_be_good_at_religion_reformation_started_tooltip
 				had_global_flag = {
@@ -1305,6 +1330,7 @@ vn_sax_missions_slot_5 = {
 		icon = the_holy_league
 		required_missions = { vn_sax_embrace_reformation }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			calc_true_if = {
 				desc = vn_sax_schmalkaldic_league.tt
 				amount = 5
@@ -1336,6 +1362,7 @@ vn_sax_missions_slot_5 = {
 			}
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			59 = {
 				owned_by = ROOT
 				has_education_building_trigger = yes
@@ -1358,6 +1385,7 @@ vn_sax_missions_slot_5 = {
 		icon = weimar_classicism
 		required_missions = { }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			has_3_lv3_advisors_trigger = yes
 			is_in_deficit = no
 			capital_scope = {
@@ -1376,6 +1404,7 @@ vn_sax_missions_slot_5 = {
 		icon = regal_splendour
 		required_missions = { vn_sax_saxon_architecture }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			has_institution = enlightenment
 			OR = {
 				AND = {

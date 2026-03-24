@@ -11,6 +11,7 @@ country_decisions = {
 		}
 
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			has_institution = global_trade
 			OR = {
 				full_idea_group = exploration_ideas

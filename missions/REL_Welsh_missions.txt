@@ -18,6 +18,7 @@ vn_welsh_missions = {
         required_missions = {}
         position = 5
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			capital_scope = {
 				has_fort_trigger = yes
 			}
@@ -42,6 +43,7 @@ vn_welsh_missions = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			walesnorth_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -66,6 +68,7 @@ vn_welsh_missions = {
 		icon = mission_high_income
 		required_missions = { vn_unite_wales }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			num_of_owned_provinces_with = {
 				value = 5
 				OR = {
@@ -85,6 +88,7 @@ vn_welsh_missions = {
 		icon = mission_early_modern_university
 		required_missions = { vn_cyfraith_hywel }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			university = 5
 		}
 		effect = {

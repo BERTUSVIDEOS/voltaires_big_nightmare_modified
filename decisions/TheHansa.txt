@@ -20,6 +20,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			num_of_merchants = 4
 			years_of_income = 1
 			adm_power = 20
@@ -59,6 +60,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			if = {
 				limit = { NOT = { has_dlc = "Golden Century" } }
 				years_of_income = 0.7

@@ -16,6 +16,7 @@ vn_aqt_missions_slot_1 = {
         position = 1
         required_missions = {  }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			trade_income_percentage = 0.33 
 			OR = {
 				num_of_owned_provinces_with = {
@@ -66,6 +67,7 @@ vn_aqt_missions_slot_1 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             2324 = {
                 country_or_non_sovereign_subject_holds = ROOT
 				development = 20
@@ -122,6 +124,7 @@ vn_aqt_missions_slot_1 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			raozhon_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -145,6 +148,7 @@ vn_aqt_missions_slot_1 = {
         position = 6
         required_missions = { vn_aqt_subjugate_the_bretons }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             naval_forcelimit = 50
             navy_size_percentage = 0.75
             calc_true_if = {
@@ -182,6 +186,7 @@ vn_aqt_missions_slot_1 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			picardy_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -226,6 +231,7 @@ vn_aqt_missions_slot_2 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             bordeaux_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -268,6 +274,7 @@ vn_aqt_missions_slot_2 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			bearn_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -305,6 +312,7 @@ vn_aqt_missions_slot_2 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             auvergne_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -340,6 +348,7 @@ vn_aqt_missions_slot_2 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             paris_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -367,6 +376,7 @@ vn_aqt_missions_slot_2 = {
         position = 6
         required_missions = { vn_aqt_paris vn_aqt_reims }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             is_subject = no
 			government_rank = 5
 			grown_by_development = 500
@@ -441,6 +451,7 @@ vn_aqt_missions_slot_2 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             burgundy_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -485,6 +496,7 @@ vn_aqt_missions_slot_3 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }		
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             poitou_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -523,6 +535,7 @@ vn_aqt_missions_slot_3 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }		
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             angouleme_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -565,6 +578,7 @@ vn_aqt_missions_slot_3 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }		
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             perigord_area = { 
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -664,6 +678,7 @@ vn_aqt_missions_slot_3 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }		
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             berry_area = { 
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -743,6 +758,7 @@ vn_aqt_missions_slot_3 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }		
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             reims_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -772,6 +788,7 @@ vn_aqt_missions_slot_3 = {
         position = 6
         required_missions = { vn_aqt_diplomatic_traditions }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             total_development = 150
 			grown_by_development = 50
 			diplomatic_reputation = 3
@@ -809,6 +826,7 @@ vn_aqt_missions_slot_3 = {
         position = 7
         required_missions = { vn_aqt_king_of_france }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			stability = 3
             if = {
 				limit = { has_estate = estate_church }
@@ -911,6 +929,7 @@ vn_aqt_missions_slot_4 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }		
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             maine_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -957,6 +976,7 @@ vn_aqt_missions_slot_4 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }		
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             normandy_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -989,6 +1009,7 @@ vn_aqt_missions_slot_4 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }		
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             narbonne_area = { 
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -1015,6 +1036,7 @@ vn_aqt_missions_slot_4 = {
         position = 5
         required_missions = {  }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			OR = {
                 dip = 4
                 full_idea_group = diplomatic_ideas
@@ -1058,6 +1080,7 @@ vn_aqt_missions_slot_4 = {
         position = 6
         required_missions = { vn_aqt_diplomatic_traditions }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             OR = {
 				owns_core_province = 2268
 				2268 = {
@@ -1107,6 +1130,7 @@ vn_aqt_missions_slot_4 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }          
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
             is_subject = no
 			OR = {
 				senior_union_with = ASE 
@@ -1169,6 +1193,7 @@ vn_aqt_missions_slot_5 = {
 			has_fort_trigger = no
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             num_of_owned_provinces_with = {
 				value = 5
 				region = aquitaine_region
@@ -1196,6 +1221,7 @@ vn_aqt_missions_slot_5 = {
         position = 3
         required_missions = { vn_aqt_defend_invasions }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			army_size = 25
 			manpower_percentage = 0.75            
         }
@@ -1220,6 +1246,7 @@ vn_aqt_missions_slot_5 = {
         position = 5
         required_missions = { vn_aqt_levy_army }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			army_size_percentage = 0.75
 			religion_group = christian
             num_of_generals = 1
@@ -1272,6 +1299,7 @@ vn_aqt_missions_slot_5 = {
         position = 6
         required_missions = {  }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			OR = {
 				current_age = age_of_absolutism 
 				current_age = age_of_revolutions
@@ -1298,6 +1326,7 @@ vn_aqt_missions_slot_5 = {
         position = 7
         required_missions = { vn_aqt_english_ties }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			if = {
 				limit = {
 					exists = FRA

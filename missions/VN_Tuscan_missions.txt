@@ -23,6 +23,7 @@ vn_tus_missions_slot_1 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			genoa_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -61,6 +62,7 @@ vn_tus_missions_slot_1 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			num_of_owned_provinces_with = {
 				value = 25
 				OR = {
@@ -113,6 +115,7 @@ vn_tus_missions_slot_2 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			modena_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -148,6 +151,7 @@ vn_tus_missions_slot_2 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			parma_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -284,6 +288,7 @@ vn_tus_missions_slot_3 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				value = 12
 				OR = {
@@ -374,6 +379,7 @@ vn_tus_missions_slot_3 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				value = 12
 				OR = {
@@ -440,6 +446,7 @@ vn_tus_missions_slot_4 = {
 		icon = sponsor_the_arts
 		required_missions = { vn_lan_italian_athens }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			has_3_lv3_advisors_trigger = yes
 			NOT = {
 				any_neighbor_country = {
@@ -464,6 +471,7 @@ vn_tus_missions_slot_4 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT}
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			corsica_area  = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -505,6 +513,7 @@ vn_tus_missions_slot_4 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT}
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				value = 12
 				OR = {
@@ -552,6 +561,7 @@ vn_tus_missions_slot_5 = {
 			owned_by = ROOT
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			if = {
 				limit = { has_dlc = "Mandate of Heaven" }
 				calc_true_if = {
@@ -591,6 +601,7 @@ vn_tus_missions_slot_5 = {
 			province_id = 115
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			115 = {
 				owned_by = ROOT
 				is_core = ROOT
@@ -615,6 +626,7 @@ vn_tus_missions_slot_5 = {
 		icon = mission_aragonese_navy
 		required_missions = { vn_tus_pisa_shipbuilding }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			navy_tradition = 25
 			navy_size = 25
 			navy_size_percentage = 0.75
@@ -662,6 +674,7 @@ vn_tus_missions_slot_5 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			2673 = { country_or_non_sovereign_subject_holds = ROOT }
 			1836 = { country_or_non_sovereign_subject_holds = ROOT }
 			4086 = { country_or_non_sovereign_subject_holds = ROOT }

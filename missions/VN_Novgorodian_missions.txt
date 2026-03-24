@@ -22,6 +22,7 @@ vn_nov_missions_slot_1_a = {
 		position = 1
 		required_missions = {  }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			if = {
 				limit = { has_estate = estate_church }
 				estate_loyalty = {
@@ -103,6 +104,7 @@ vn_nov_missions_slot_1_a = {
 		position = 3
 		required_missions = { vn_nov_balance_of_power }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			is_subject = no
 		}
 		effect = {
@@ -138,6 +140,7 @@ vn_nov_missions_slot_1_a = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			vladimir_region = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -162,6 +165,7 @@ vn_nov_missions_slot_1_a = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			rostov_region = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -190,6 +194,7 @@ vn_nov_missions_slot_1_a = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			vologda_region = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -218,6 +223,7 @@ vn_nov_missions_slot_1_a = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			mordovia_region = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -242,6 +248,7 @@ vn_nov_missions_slot_1_a = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			kazan_region = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -296,6 +303,7 @@ vn_nov_missions_slot_1_b = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			perm_region = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -331,6 +339,7 @@ vn_nov_missions_slot_1_b = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			lower_volga_region = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -355,6 +364,7 @@ vn_nov_missions_slot_1_b = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			kazakhstan_region = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -379,6 +389,7 @@ vn_nov_missions_slot_1_b = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			khwarezmia_region = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -416,6 +427,7 @@ vn_nov_missions_slot_2_a = {
 		position = 1
 		required_missions = {  }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			OR = {
 				philosopher = 3
 			}
@@ -433,6 +445,7 @@ vn_nov_missions_slot_2_a = {
 		position = 2
 		required_missions = { vn_nov_balance_of_power }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			if = {
 				limit = { has_estate = estate_nobles } 
 				estate_loyalty = {
@@ -455,6 +468,7 @@ vn_nov_missions_slot_2_a = {
 		position = 3
 		required_missions = { vn_nov_please_the_boyars }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			has_3_advisors_trigger = yes
 			NOT = {
 				average_unrest = 0
@@ -485,6 +499,7 @@ vn_nov_missions_slot_2_a = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			smolensk_region = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -509,6 +524,7 @@ vn_nov_missions_slot_2_a = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			minsk_region = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -540,6 +556,7 @@ vn_nov_missions_slot_2_a = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			turovpinsk_region = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -600,6 +617,7 @@ vn_nov_missions_slot_2_a = {
 			}
 		}		
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			6577 = {
 				is_state = yes
 				consolidated_region_trigger = yes
@@ -660,6 +678,7 @@ vn_nov_missions_slot_2_a = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			ryazan_region = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -694,6 +713,7 @@ vn_nov_missions_slot_2_a = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			kursk_region = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -717,6 +737,7 @@ vn_nov_missions_slot_2_a = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			perm_region = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -744,6 +765,7 @@ vn_nov_missions_slot_2_b = {
 		position = 11
 		required_missions = {  }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			any_country = {
 				NOT = { has_matching_religion = ROOT }
 				war_with = ROOT
@@ -772,6 +794,7 @@ vn_nov_missions_slot_2_b = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			khopyor_region = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -803,6 +826,7 @@ vn_nov_missions_slot_2_b = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			lower_don_region = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -851,6 +875,7 @@ vn_nov_missions_slot_2_b = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			dagestan_region = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -897,6 +922,7 @@ vn_nov_missions_slot_2_b = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			georgia_region = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -939,6 +965,7 @@ vn_nov_missions_slot_2_b = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			tao_region = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -975,6 +1002,7 @@ vn_nov_missions_slot_3_a = {
 		position = 1
 		required_missions = {  }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			religious_unity = 1
 			tolerance_to_this = 4
 		}
@@ -991,6 +1019,7 @@ vn_nov_missions_slot_3_a = {
 		position = 2
 		required_missions = { vn_nov_balance_of_power vn_nov_devoutness_in_faith }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			if = {
 				limit = { has_estate = estate_church } 
 				estate_loyalty = {
@@ -1014,6 +1043,7 @@ vn_nov_missions_slot_3_a = {
 		position = 3
 		required_missions = { vn_nov_the_power_of_the_church }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			if = {
 				limit = { religion = orthodox }
 				patriarch_authority = 0.75
@@ -1041,6 +1071,7 @@ vn_nov_missions_slot_3_a = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			polotsk_region = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -1061,6 +1092,7 @@ vn_nov_missions_slot_3_a = {
 		position = 5
 		required_missions = {  }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			production_leader = {
 				trade_goods = fur
 			}
@@ -1086,6 +1118,7 @@ vn_nov_missions_slot_3_a = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			kiev_region = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -1123,6 +1156,7 @@ vn_nov_missions_slot_3_a = {
 			province_id = 6144
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			6144 = { is_capital_of = ROOT }
 			if = {
 				limit = {
@@ -1167,6 +1201,7 @@ vn_nov_missions_slot_3_a = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			siveria_region = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -1186,6 +1221,7 @@ vn_nov_missions_slot_3_a = {
 		position = 10
 		required_missions = { vn_nov_the_dnieper_controlled vn_nov_conquer_the_central_rus }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			if = {
 				limit = { government = monarchy }
 				legitimacy = 100
@@ -1272,6 +1308,7 @@ vn_nov_missions_slot_3_b = {
 		position = 11
 		required_missions = { vn_nov_the_rus_reunited }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			government_rank = 6
 			total_development = 1000
 			prestige = 100
@@ -1299,6 +1336,7 @@ vn_nov_missions_slot_3_b = {
 			province_id = 6594
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			6594 = {
 				development = 30
 				owned_by = ROOT
@@ -1329,6 +1367,7 @@ vn_nov_missions_slot_3_b = {
 		position = 13
 		required_missions = { vn_nov_invade_lithuania }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			army_size = 100
 			army_size_percentage = 0.75
 			has_commanding_three_star = yes	  
@@ -1357,6 +1396,7 @@ vn_nov_missions_slot_3_b = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			poland_superregion = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -1384,6 +1424,7 @@ vn_nov_missions_slot_3_b = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			crimea_region = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -1404,6 +1445,7 @@ vn_nov_missions_slot_3_b = {
 		position = 16
 		required_missions = { vn_nov_attack_the_crimeans }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			7034 = {
 				is_strongest_trade_power = ROOT
 			}
@@ -1443,6 +1485,7 @@ vn_nov_missions_slot_4_a = {
 			province_id = 6144
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			6144 = {
 				owned_by = ROOT
 				has_fort_trigger = yes
@@ -1469,6 +1512,7 @@ vn_nov_missions_slot_4_a = {
 			province_id = 6144
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			6144 = {
 				development = 30
 				OR = {
@@ -1494,6 +1538,7 @@ vn_nov_missions_slot_4_a = {
 		position = 3
 		required_missions = { vn_nov_develop_neva }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			num_of_light_ship = 20
 		}
 		effect = {
@@ -1509,6 +1554,7 @@ vn_nov_missions_slot_4_a = {
 		position = 4
 		required_missions = { vn_nov_a_merchant_navy }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			5889 = { #Reval
 				trade_share = {
 					country = ROOT
@@ -1553,6 +1599,7 @@ vn_nov_missions_slot_4_a = {
 		position = 5
 		required_missions = { vn_nov_access_baltic_sea_trade }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			1607 = { #Lubeck
 				trade_share = {
 					country = ROOT
@@ -1588,6 +1635,7 @@ vn_nov_missions_slot_4_a = {
 			province_id = 6144
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			if = {
 				limit = {
 					has_dlc = "Dharma"
@@ -1624,6 +1672,7 @@ vn_nov_missions_slot_4_a = {
 		position = 7
 		required_missions = { vn_nov_defend_our_realm }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			if = {
 				limit = {
 					OR = {
@@ -1669,6 +1718,7 @@ vn_nov_missions_slot_4_a = {
 		position = 8
 		required_missions = { vn_nov_new_capital_of_the_rus }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			6144 = { #Novgorod
 				trade_share = {
 					country = ROOT
@@ -1719,6 +1769,7 @@ vn_nov_missions_slot_4_a = {
 		position = 9
 		required_missions = { vn_nov_revive_old_networks }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			6144 = { #Novgorod
 				trade_share = {
 					country = ROOT
@@ -1763,6 +1814,7 @@ vn_nov_missions_slot_4_a = {
 		position = 10
 		required_missions = { vn_nov_tribute_to_the_mongols vn_nov_the_dnieper_controlled }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			any_country = {
 				government = tribal
 				war_with = ROOT
@@ -1809,6 +1861,7 @@ vn_nov_missions_slot_4_b = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			livonia_region = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -1867,6 +1920,7 @@ vn_nov_missions_slot_4_b = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			lithuania_region = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -1929,6 +1983,7 @@ vn_nov_missions_slot_4_b = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			ostpreussen_region = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -1946,6 +2001,7 @@ vn_nov_missions_slot_4_b = {
 		position = 15
 		required_missions = { vn_nov_teutonic_order }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			num_accepted_cultures = 1
 			ostpreussen_region = {
 				type = all
@@ -1991,6 +2047,7 @@ vn_nov_missions_slot_5_a = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			south_karelia_region = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -2014,6 +2071,7 @@ vn_nov_missions_slot_5_a = {
 			province_id = 3427
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			3427 = {
 				development = 20
 				owned_by = ROOT
@@ -2048,6 +2106,7 @@ vn_nov_missions_slot_5_a = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			north_karelia_region = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -2098,6 +2157,7 @@ vn_nov_missions_slot_5_a = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			suomi_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -2125,6 +2185,7 @@ vn_nov_missions_slot_5_a = {
 		position = 5
 		required_missions = { vn_nov_access_baltic_sea_trade }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			any_ally = {			
 				technology_group = western
 				has_opinion = {
@@ -2147,6 +2208,7 @@ vn_nov_missions_slot_5_a = {
 		position = 6
 		required_missions = {  }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			army_size_percentage = 0.75
 			if = {
 				limit = { has_dlc = "Cradle of Civilization" }
@@ -2168,6 +2230,7 @@ vn_nov_missions_slot_5_a = {
 		position = 7
 		required_missions = { vn_nov_defend_our_realm }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			any_hired_mercenary_company = {
 				template = merc_novgorod_company
 			}
@@ -2193,6 +2256,7 @@ vn_nov_missions_slot_5_a = {
 			province_id = 6594
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			if = {
 				limit = {
 					exists = MOS
@@ -2235,6 +2299,7 @@ vn_nov_missions_slot_5_a = {
 		position = 9
 		required_missions = {  }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			OR = {
 				reverse_has_opinion = {
 					who = GLH
@@ -2263,6 +2328,7 @@ vn_nov_missions_slot_5_a = {
 		position = 10
 		required_missions = { vn_nov_tribute_to_the_mongols }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			OR = {
 				AND = {
 					war_with = GLH
@@ -2308,6 +2374,7 @@ vn_nov_missions_slot_5_b = {
 			province_id = 5793
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			5793 = {
 				development = 20
 				owned_by = ROOT
@@ -2335,6 +2402,7 @@ vn_nov_missions_slot_5_b = {
 		position = 13
 		required_missions = { vn_nov_develop_rigan_port }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			num_of_light_ship = 25	
 			5793 = {
 				country_or_non_sovereign_subject_holds = ROOT
@@ -2361,6 +2429,7 @@ vn_nov_missions_slot_5_b = {
 		position = 14
 		required_missions = { vn_nov_baltic_fleet }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			5889 = { #Reval
 				trade_share = {
 					country = ROOT
@@ -2406,6 +2475,7 @@ vn_nov_missions_slot_5_b = {
 		position = 16
 		required_missions = { vn_nov_secure_trade_routes }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			diplomatic_reputation = 3
 			if = {
 				limit = { 

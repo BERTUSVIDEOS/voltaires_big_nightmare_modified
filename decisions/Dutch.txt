@@ -16,6 +16,7 @@ country_decisions = {
 			NOT = { has_country_flag = trade_company }
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			num_of_ports = 10
 			dip_tech = 10			
 		}
@@ -43,6 +44,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			owns_core_province = 328 #Amsterdam
 			adm_tech = 46 # Improved Drainage
 			adm_power = 50

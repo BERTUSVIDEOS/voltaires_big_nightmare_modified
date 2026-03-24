@@ -15,6 +15,7 @@ vn_romanian_missions = {
         required_missions = {  }
         position = 5
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			share_of_starting_income = 1.8
 		}
 		effect = {
@@ -34,6 +35,7 @@ vn_romanian_missions = {
 			NOT = { development = 10 }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			num_of_owned_provinces_with = {
 				value = 3
 				has_terrain = mountain
@@ -51,6 +53,7 @@ vn_romanian_missions = {
 		icon = mission_galleys_in_port
 		required_missions = { vn_populate_the_mountains }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			num_of_galley = 10
 			navy_size_percentage = 0.9
 		}
@@ -65,6 +68,7 @@ vn_romanian_missions = {
 		icon = mission_tribal_war
 		required_missions = { vn_black_sea_fleet }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			government_rank = 5
 			religious_unity = 0.95
 			total_development = 200

@@ -9,6 +9,7 @@ country_decisions = {
 			has_estate = estate_holy_orders
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			has_not_any_estate_disaster_active = yes
 			estate_influence = {
 				estate = estate_holy_orders
@@ -43,6 +44,7 @@ country_decisions = {
 			has_estate = estate_holy_orders
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			has_not_any_estate_disaster_active = yes
 			estate_influence = {
 				estate = estate_holy_orders

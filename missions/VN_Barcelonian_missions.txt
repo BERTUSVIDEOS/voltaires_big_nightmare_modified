@@ -24,6 +24,7 @@ vn_avl_missions_slot_1_a = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
             NOT = { exists = ARA }
 			aragon_region = {
 				type = all
@@ -32,13 +33,11 @@ vn_avl_missions_slot_1_a = {
 		}
 		effect = {
             change_tag = ARA
-			on_change_tag_effect = yes
 			clr_country_flag = nerfed_ideas_flag
 			swap_non_generic_missions = yes
-			set_formable_tier = { tier = 3 }
-			if = {
-				limit = { NOT = { government_rank = 4 } }
-				set_government_rank = 4
+			set_formable_tier = {
+				tier = 3
+				gov_rank = 4
 			}
 			add_country_modifier = {
 				name = "centralization_modifier"
@@ -109,6 +108,7 @@ vn_brc_missions_slot_1_a = {
         required_missions = { }
         icon = mission_large_army
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			num_of_mercenaries = 10
 			NOT = { num_of_loans = 1 }
             land_maintenance = 1.0
@@ -130,6 +130,7 @@ vn_brc_missions_slot_1_a = {
         required_missions = { vn_brc_mercenary_companies }
         icon = mission_launch_a_flagship
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             calc_true_if = {
                 num_of_galley = 10
                 num_of_transport = 10
@@ -168,6 +169,7 @@ vn_brc_missions_slot_2_a = {
         required_missions = { }
         icon = mission_african_gold
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             OR = {
 				num_of_war_reparations = 2
                 custom_trigger_tooltip = {
@@ -198,6 +200,7 @@ vn_brc_missions_slot_2_a = {
             owner = { religion_group = muslim }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             barcelona_area = {
                 type = all
                 NOT = {
@@ -236,6 +239,7 @@ vn_brc_missions_slot_2_a = {
             NOT = { religion_group = christian }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             barcelona_area = {
                 type = all
                 religion_group = christian
@@ -287,6 +291,7 @@ vn_brc_missions_slot_2_b = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             balears_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -334,6 +339,7 @@ vn_brc_missions_slot_2_b = {
             }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             1955 = {
                 is_strongest_trade_power = ROOT
 			}
@@ -382,6 +388,7 @@ vn_brc_missions_slot_3_a = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			4297 = { country_or_non_sovereign_subject_holds = ROOT }
 			1793 = { country_or_non_sovereign_subject_holds = ROOT }
         }
@@ -457,6 +464,7 @@ vn_brc_missions_slot_3_a = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             4298 = {
                 country_or_non_sovereign_subject_holds = ROOT
             }
@@ -526,6 +534,7 @@ vn_brc_missions_slot_3_a = {
             }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             barcelona_area = {
                 type = all
                 owned_by = ROOT
@@ -572,6 +581,7 @@ vn_brc_missions_slot_3_a = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             valencia_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -601,6 +611,7 @@ vn_brc_missions_slot_3_a = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
             NOT = { exists = ARA }
 			aragon_region = {
 				type = all
@@ -609,13 +620,11 @@ vn_brc_missions_slot_3_a = {
 		}
 		effect = {
             change_tag = ARA
-			on_change_tag_effect = yes
 			clr_country_flag = nerfed_ideas_flag
 			swap_non_generic_missions = yes
-			set_formable_tier = { tier = 3 }
-			if = {
-				limit = { NOT = { government_rank = 4 } }
-				set_government_rank = 4
+			set_formable_tier = {
+				tier = 3
+				gov_rank = 4
 			}
 			add_country_modifier = {
 				name = "centralization_modifier"
@@ -694,6 +703,7 @@ vn_brc_missions_slot_4_a = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			2051 = { country_or_non_sovereign_subject_holds = ROOT }
 			516 = { country_or_non_sovereign_subject_holds = ROOT }
         }
@@ -749,6 +759,7 @@ vn_brc_missions_slot_4_a = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			4293 = { country_or_non_sovereign_subject_holds = ROOT }
 			4076 = { country_or_non_sovereign_subject_holds = ROOT }
 			521 = { country_or_non_sovereign_subject_holds = ROOT }
@@ -801,6 +812,7 @@ vn_brc_missions_slot_4_b = {
         required_missions = { vn_brc_catalonia_united }
         icon = mission_early_modern_university
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             has_3_advisors_trigger = yes
             ADM = 3
             capital_scope = {
@@ -835,6 +847,7 @@ vn_brc_missions_slot_4_c = {
         required_missions = { vn_brc_incorporate_valencia }
         icon = mission_valencian_silk
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             valencia_area = {
                 type = all
                 owned_by = ROOT
@@ -921,6 +934,7 @@ vn_brc_missions_slot_5_a = {
         required_missions = { }
         icon = mission_the_french_menace
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			army_size_percentage = 0.75
 			army_size = 5
             num_of_generals = 1
@@ -947,6 +961,7 @@ vn_brc_missions_slot_5_a = {
             NOT = { owned_by = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             OR = {
                 custom_trigger_tooltip = {
                     tooltip = vn_brc_influence_in_occitania.tt
@@ -1023,6 +1038,7 @@ vn_brc_missions_slot_5_a = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
                 value = 10
                 OR = {

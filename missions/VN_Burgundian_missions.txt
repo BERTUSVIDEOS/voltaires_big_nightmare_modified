@@ -16,6 +16,7 @@ VN_bur_missions_slot_1_a = {
 		position = 1
 		required_missions = { }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			stability = 2
 			estate_loyalty = { estate = estate_nobles loyalty = 60 }
 			estate_loyalty = { estate = estate_church loyalty = 60 }
@@ -55,6 +56,7 @@ VN_bur_missions_slot_1_a = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				value = 10
 				OR = {
@@ -116,6 +118,7 @@ VN_bur_missions_slot_1_a = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			vaud_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -157,6 +160,7 @@ VN_bur_missions_slot_1_a = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			savoy_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -224,6 +228,7 @@ VN_bur_missions_slot_1_a = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			bern_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -287,6 +292,7 @@ VN_bur_missions_slot_1_b = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				value = 5
 				area = hainaut_area
@@ -312,6 +318,7 @@ VN_bur_missions_slot_1_b = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				value = 5
 				area = luxemburg_area
@@ -351,6 +358,7 @@ VN_bur_missions_slot_1_b = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				value = 5
 				area = liege_area
@@ -401,6 +409,7 @@ VN_bur_missions_slot_2_a = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			reims_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -475,6 +484,7 @@ VN_bur_missions_slot_2_b = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			NOT = { exists = DAU }
 			forez_area = {
 				type = all
@@ -530,6 +540,7 @@ VN_bur_missions_slot_2_b = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			NOT = { exists = PRO }
 			arles_area = {
                 type = all
@@ -589,6 +600,7 @@ VN_bur_missions_slot_2_b = {
 			province_id = 989
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			989 = {
 				development = 25
 				NOT = { num_free_building_slots = 1 }
@@ -631,6 +643,7 @@ VN_bur_missions_slot_2_c = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			holland_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -675,6 +688,7 @@ VN_bur_missions_slot_2_c = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			westfrisia_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -702,6 +716,7 @@ VN_bur_missions_slot_2_c = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			lowlands_superregion = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -784,6 +799,7 @@ VN_bur_missions_slot_3_a = {
 		position = 1
 		required_missions = { }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			num_of_generals = 1
 			army_size = 5
 			army_size_percentage = 0.75
@@ -802,6 +818,7 @@ VN_bur_missions_slot_3_a = {
 			vn_bur_stabilize_duchy
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			num_of_allies = 3
 			calc_true_if = {
 				all_ally = {
@@ -826,6 +843,7 @@ VN_bur_missions_slot_3_a = {
 		position = 3
 		required_missions = { vn_bur_diplomatic_effort }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			calc_true_if = {
 				all_neighbor_country = {
 					has_spy_network_from = { 
@@ -908,6 +926,7 @@ VN_bur_missions_slot_3_a = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			nevers_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -955,6 +974,7 @@ VN_bur_missions_slot_3_b = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			barrois_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -997,6 +1017,7 @@ VN_bur_missions_slot_3_b = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				value = 15
 				OR = {
@@ -1053,6 +1074,7 @@ VN_bur_missions_slot_3_b = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				value = 20
 				OR = {
@@ -1119,6 +1141,7 @@ VN_bur_missions_slot_3_c = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				value = 10
 				OR = {
@@ -1176,6 +1199,7 @@ VN_bur_missions_slot_3_c = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				value = 10
 				OR = {
@@ -1216,6 +1240,7 @@ VN_bur_missions_slot_3_c = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				value = 6
 				area = guelders_area
@@ -1259,6 +1284,7 @@ VN_bur_missions_slot_3_d = {
 			}
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			lowlands_superregion = {
 				type = all
 				owned_by = ROOT
@@ -1284,6 +1310,7 @@ VN_bur_missions_slot_3_d = {
 		icon = the_crown_of_lothair
 		required_missions = { vn_bur_consolidate_netherlands }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			government_rank = 5
 			prestige = 50
 		}
@@ -1310,6 +1337,7 @@ VN_bur_missions_slot_4_a = {
 		position = 2
 		required_missions = { vn_bur_assert_independence }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			OR = {
 				temple = 5
 				cathedral = 3
@@ -1327,6 +1355,7 @@ VN_bur_missions_slot_4_a = {
 		icon = chivalry_is_not_dead
 		required_missions = { vn_bur_monasteries_of_burgundy }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			OR = {
 				theologian = 2
 				inquisitor = 2
@@ -1373,6 +1402,7 @@ VN_bur_missions_slot_4_b = {
 		position = 4
 		required_missions = { vn_bur_acquire_influence }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			calc_true_if = {
 				all_country = {
 					custom_trigger_tooltip = {
@@ -1421,6 +1451,7 @@ VN_bur_missions_slot_4_b = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			if = {
 				limit = { exists = FLA }
 				marriage_with = FLA
@@ -1482,6 +1513,7 @@ VN_bur_missions_slot_4_b = {
 			province_id = 896
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			owns_core_province = 896
 			896 = {
 				has_dock_building_trigger = yes
@@ -1501,6 +1533,7 @@ VN_bur_missions_slot_4_b = {
 		icon = develop_the_south
 		required_missions = { vn_bur_shipyard_of_bruges }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			if = {
 				limit = { has_estate = estate_burghers }
 				num_of_estate_privileges = {
@@ -1544,6 +1577,7 @@ VN_bur_missions_slot_4_b = {
 			consolidated_region_trigger = no
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			holland_area = {
 				type = all
                 owned_by = ROOT
@@ -1592,6 +1626,7 @@ VN_bur_missions_slot_5_a = {
 		required_missions = { }
 		position = 1
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			if = {
 				limit = { exists = FRA }
 				num_of_infantry = FRA
@@ -1610,6 +1645,7 @@ VN_bur_missions_slot_5_a = {
 		icon = mission_wine_monopolies
 		required_missions = { vn_bur_assert_independence }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			wine = 5
 			trade_income_percentage = 0.35
 		}
@@ -1624,6 +1660,7 @@ VN_bur_missions_slot_5_a = {
 		icon = mission_the_governing_senate
 		required_missions = { vn_bur_expand_wine_trade }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			capital_scope = {
 				has_fort_trigger = yes
 				development = 20
@@ -1643,6 +1680,7 @@ VN_bur_missions_slot_5_a = {
 		icon = mission_english_renaissance
 		required_missions = { vn_bur_ducal_palace }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			has_institution = renaissance
 			all_state_province = {
 				renaissance = 100
@@ -1685,6 +1723,7 @@ VN_bur_missions_slot_5_b = {
 			}
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			OR = {
 				owns = 548
 				controls = 548
@@ -1708,6 +1747,7 @@ VN_bur_missions_slot_5_b = {
 		icon = king_of_the_franks
 		required_missions = { vn_bur_occupy_paris }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			if = {
 				limit = { exists = FRA }
 				has_won_war_against = {
@@ -1791,6 +1831,7 @@ VN_bur_missions_slot_5_b = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			caux_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -1857,6 +1898,7 @@ VN_bur_missions_slot_5_c = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			artois_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -1892,6 +1934,7 @@ VN_bur_missions_slot_5_c = {
 		required_missions = { vn_bur_claims_in_picardie }
 		position = 10
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			naval_forcelimit = 50
 			navy_size_percentage = 0.75
 			num_of_heavy_ship = 10
@@ -1912,6 +1955,7 @@ VN_bur_missions_slot_5_c = {
 		position = 11
 		required_missions = { vn_bur_burgundian_fleet }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			183 = {
 				is_strongest_trade_power = ROOT
 			}

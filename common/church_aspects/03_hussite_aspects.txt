@@ -17,13 +17,13 @@ clerical_poverty_aspect = {
 			add_estate_loyalty = { estate = estate_church loyalty = 10 }
 		}
 	}
+	ai_will_do = { factor = 1 }
 }
 
-punishment_of_sins_aspect = {
+punishment_of_sins_aspect = { 	#bertus mod
 	cost = 100
 	modifier = {
-		#nobles_influence_modifier = -0.1	#-0.10→0
-		monthly_splendor = 3	#0→3
+		monthly_splendor = 3
 		yearly_corruption = -0.10
 	}
 	effect = {	#bertus mod
@@ -32,6 +32,7 @@ punishment_of_sins_aspect = {
 			add_estate_loyalty = { estate = estate_burghers loyalty = 10 }
 		}
 	}
+	ai_will_do = { factor = 1 }
 }
 
 orphan_hetmans_aspect = {
@@ -45,6 +46,7 @@ orphan_hetmans_aspect = {
 			create_general = { tradition = 100 }
 		}
 	}
+	ai_will_do = { factor = 1 }
 }
 
 bread_and_wine_aspect = {
@@ -66,6 +68,7 @@ bread_and_wine_aspect = {
 			}
 		}
 	}
+	ai_will_do = { factor = 1 }
 }
 
 sola_scriptura_aspect = {
@@ -85,19 +88,21 @@ sola_scriptura_aspect = {
 			}
 		}
 	}
+	ai_will_do = { factor = 1 }
 }
 
-adamite_services_aspect = {
+adamite_services_aspect = { 	#bertus mod
 	cost = 100
 	modifier = {
 		culture_conversion_cost = -0.20
-		culture_conversion_time = -0.20		#0→-0.20
+		culture_conversion_time = -0.20
 	}
-	effect = {	#bertus mod
+	effect = {
 		hidden_effect = { 
 			change_government_reform_progress = 15
 		}
 	}
+	ai_will_do = { factor = 1 }
 }
 
 pacifism_aspect = { 	#bertus mod
@@ -106,7 +111,7 @@ pacifism_aspect = { 	#bertus mod
 		stability_cost_to_declare_war = 2
 		development_cost = -0.05
 	}
-	effect = {	#bertus mod
+	effect = {
 		hidden_effect = { 
 			if = {
 				limit = { is_at_war = yes }
@@ -114,50 +119,50 @@ pacifism_aspect = { 	#bertus mod
 			}
 		}
 	}
-	ai_will_do = {
-		factor = 0
-	}
+	ai_will_do = { factor = 1 }
 }
 
-regular_defenestrations_aspect = {
+regular_defenestrations_aspect = { 	#bertus mod
 	cost = 100
 	modifier = {
-		harsh_treatment_cost = -0.50	#-0.33→-0.50
+		harsh_treatment_cost = -0.50
 		global_unrest = -2
 	}
-	effect = {	#bertus mod
+	effect = {
 		hidden_effect = { 
 			add_rebel_progress = {
 				value = -20
 			}
 		}
 	}
+	ai_will_do = { factor = 1 }
 }
 
-taborite_resurgence_aspect = {
+taborite_resurgence_aspect = {	#bertus mod
 	cost = 100
 	modifier = {
-		#global_manpower_modifier = 0.2	#0.20→0
-		manpower_recovery_speed = 0.20	#0→0.20
+		manpower_recovery_speed = 0.20
 	}
-	effect = {	#bertus mod
+	effect = {
 		hidden_effect = { 
 			add_yearly_manpower = 0.5
 			add_estate_loyalty = { estate = estate_nobles loyalty = 10 }
 		}
 	}
+	ai_will_do = { factor = 1 }
 }
 
-freedom_to_preach_aspect = {
+freedom_to_preach_aspect = {	#bertus mod
 	cost = 100
 	modifier = {
-		religious_unity = 0.20	#0.10→0.20
-		tolerance_heretic = 2	#1→2
+		religious_unity = 0.20
+		tolerance_heretic = 2
 	}
-	effect = {	#bertus mod
+	effect = {
 		hidden_effect = { 
 			add_stability_or_adm_power_per_stab = { amount = 1 }
 			add_estate_loyalty = { estate = estate_jews loyalty = 10 }
 		}
 	}
+	ai_will_do = { factor = 1 }
 }

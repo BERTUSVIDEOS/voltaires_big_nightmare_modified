@@ -11,6 +11,7 @@ vn_jewish_missions = {
 		icon = plague_doctor_training
 		required_missions = { }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			estate_influence = {
 				estate = estate_jews
 				influence = 80
@@ -27,6 +28,7 @@ vn_jewish_missions = {
 		icon = pontifical_universities
 		required_missions = { vn_jewish_healthcare }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			if = {
 				limit = { has_dlc = "Rule Britannia" }
 				innovativeness = 25
@@ -44,6 +46,7 @@ vn_jewish_missions = {
 		icon = dominant_economy
 		required_missions = { }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			treasury = 2500
 			NOT = { inflation = 5 }
 			NOT = { num_of_loans = 1 }

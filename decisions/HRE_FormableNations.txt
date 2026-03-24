@@ -26,6 +26,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
 			if = {
@@ -155,6 +156,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
 			owns_core_province = 4804 #stettin
@@ -242,6 +244,7 @@ country_decisions = {
 		}
 
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
 			owns_core_province = 131 	#Rothenburch
@@ -331,6 +334,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			is_at_war = no
 			owns_core_province = 58 	#ulm
 			development_in_provinces = {
@@ -420,6 +424,7 @@ country_decisions = {
 		}
 
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
 			NOT = { exists = SAX }
@@ -514,6 +519,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
 			owns_core_province = 2230	# Hannover
@@ -611,6 +617,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
 			owns_core_province = 2972	# Westfalen

@@ -27,6 +27,7 @@ vn_brg_kle_jch_missions_slot_1 = {
             }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             if = {
                 limit = { tag = JCH }
                 2502 = {
@@ -93,6 +94,7 @@ vn_brg_kle_jch_missions_slot_1 = {
             }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             owns_core_province = 160
             owns_core_province = 157
             owns_core_province = 4110
@@ -132,6 +134,7 @@ vn_brg_kle_jch_missions_slot_1 = {
             }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             custom_trigger_tooltip = {
                 tooltip = vn_brg_kle_jch_ruhr_valley_industry.tt
                 owns_core_province = 160
@@ -319,6 +322,7 @@ vn_brg_kle_jch_missions_slot_2 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
                 value = 5
                 area = mark_area
@@ -340,6 +344,7 @@ vn_brg_kle_jch_missions_slot_2 = {
         position = 5
         required_missions = { vn_brg_kle_jch_curb_archbishopric }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             OR = {
                 current_age = age_of_reformation
                 current_age = age_of_absolutism
@@ -373,6 +378,7 @@ vn_brg_kle_jch_missions_slot_2 = {
             }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             custom_trigger_tooltip = {
                 tooltip = vn_brg_kle_jch_defeat_hohenzollerns.tt
                 OR = {
@@ -430,6 +436,7 @@ vn_brg_kle_jch_missions_slot_3 = {
             }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             if = {
                 limit = { tag = JCH }
                 2502 = {
@@ -485,6 +492,7 @@ vn_brg_kle_jch_missions_slot_3 = {
         position = 2
         required_missions = { vn_brg_kle_jch_a_superior_capital }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             calc_true_if = {
                 amount = 3
                 all_ally = {
@@ -574,6 +582,7 @@ vn_brg_kle_jch_missions_slot_3 = {
             }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             if = {
                 limit = { tag = BRG }
                 1940 = {
@@ -624,6 +633,7 @@ vn_brg_kle_jch_missions_slot_3 = {
             owned_by = KOL
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             if = {
                 limit = { exists = KOL }
                 army_size = KOL
@@ -696,6 +706,7 @@ vn_brg_kle_jch_missions_slot_3 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             2620 = { country_or_non_sovereign_subject_holds = ROOT }
             1951 = { country_or_non_sovereign_subject_holds = ROOT }
             1878 = { country_or_non_sovereign_subject_holds = ROOT }
@@ -740,6 +751,7 @@ vn_brg_kle_jch_missions_slot_3 = {
             }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             calc_true_if = {
                 amount = 40
                 all_owned_province = {
@@ -891,6 +903,7 @@ vn_brg_kle_jch_missions_slot_4 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
                 value = 5
                 area = dortmund_area
@@ -912,6 +925,7 @@ vn_brg_kle_jch_missions_slot_4 = {
         position = 5
         required_missions = { vn_brg_kle_jch_take_ravensberg }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             government_rank = 4
             num_of_cities = 30
             if = {
@@ -955,6 +969,7 @@ vn_brg_kle_jch_missions_slot_4 = {
             }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             custom_trigger_tooltip = {
                 tooltip = vn_brg_kle_jch_repel_wittelsbachs.tt
                 OR = {
@@ -1018,6 +1033,7 @@ vn_brg_kle_jch_missions_slot_5 = {
             }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             if = {
                 limit = { tag = KLE }
                 2501 = {
@@ -1114,6 +1130,7 @@ vn_brg_kle_jch_missions_slot_5 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             limburg_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -1154,6 +1171,7 @@ vn_brg_kle_jch_missions_slot_5 = {
             }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             OR = {
                 GEL = { is_subject_of = ROOT }
                 guelders_area = {

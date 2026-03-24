@@ -18,7 +18,8 @@ vn_ifq_missions_slot_1 = {
         icon = mission_raid_christian_trade
         position = 1
         required_missions = {  }
-        trigger = {	
+        trigger = {
+			if = { limit = { ai = yes } ai = no }	
 			OR = {
 				1619 = { #Genoa
                     trade_share = {
@@ -74,8 +75,9 @@ vn_ifq_missions_slot_1 = {
         position = 2
         required_missions = { vn_ifq_trade_with_europe vn_ifq_construction_of_a_fleet }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             OR = {
-		AND = {
+		        AND = {
                     navy_size = 50
                     navy_tradition = 100
                 }
@@ -100,6 +102,7 @@ vn_ifq_missions_slot_1 = {
         position = 3
         required_missions = {  }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			religious_unity = 1
             if = {
                 limit = { has_dlc = "Common Sense" }
@@ -126,6 +129,7 @@ vn_ifq_missions_slot_1 = {
         position = 4
         required_missions = { vn_ifq_devout_sunnis }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             any_country = {
                 religion_group = christian
                 war_with = ROOT
@@ -155,6 +159,7 @@ vn_ifq_missions_slot_1 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             sahara_oases = {
 				type = all
                 OR = {
@@ -175,6 +180,7 @@ vn_ifq_missions_slot_1 = {
         position = 6
         required_missions = { vn_ifq_subjugate_the_berbers }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			5105 = {
 				has_most_province_trade_power = ROOT
 			}
@@ -221,6 +227,7 @@ vn_ifq_missions_slot_2 = {
         position = 1
         required_missions = {  }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			navy_size = 30
 			navy_size_percentage = 1
         }
@@ -250,6 +257,7 @@ vn_ifq_missions_slot_2 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             sicilia_region = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -418,6 +426,7 @@ vn_ifq_missions_slot_2 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             if = {
                 limit = {
                     exists = GEN
@@ -474,6 +483,7 @@ vn_ifq_missions_slot_2 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             calc_true_if = {
                 all_owned_province = {
                     religion_group = christian
@@ -498,6 +508,7 @@ vn_ifq_missions_slot_2 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             granada_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -583,6 +594,7 @@ vn_ifq_missions_slot_3 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			tunis_area = {
 				type = all
                 OR = {
@@ -678,6 +690,7 @@ vn_ifq_missions_slot_3 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			bejaia_area = {
 				type = all
                 OR = {
@@ -755,6 +768,7 @@ vn_ifq_missions_slot_3 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			oran_area = {
 				type = all
                 OR = {
@@ -823,6 +837,7 @@ vn_ifq_missions_slot_3 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             tangiers_area = {
 				type = all
                 OR = {
@@ -977,6 +992,7 @@ vn_ifq_missions_slot_3 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             macaronesia_area = {
 				type = all
                 OR = {
@@ -1102,6 +1118,7 @@ vn_ifq_missions_slot_4 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             tripolitania_area = {
 				type = all
                 OR = {
@@ -1151,6 +1168,7 @@ vn_ifq_missions_slot_4 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			delta_area = {
 				type = all
                 OR = {
@@ -1231,6 +1249,7 @@ vn_ifq_missions_slot_4 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             bahari_area = {
 				type = all
                 OR = {
@@ -1309,6 +1328,7 @@ vn_ifq_missions_slot_4 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             al_wahat_area = {
 				type = all
                 OR = {
@@ -1374,6 +1394,7 @@ vn_ifq_missions_slot_4 = {
 			province_id = 586
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             586 = {
 			    owned_by = ROOT
                 is_core = ROOT
@@ -1410,6 +1431,7 @@ vn_ifq_missions_slot_4 = {
         position = 6
         required_missions = { vn_ifq_the_rise_of_tunis }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             any_ally = {
 				primary_culture = turkish
 #				capital_scope = {
@@ -1444,6 +1466,7 @@ vn_ifq_missions_slot_5 = {
         position = 1
         required_missions = {  }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			religion = sunni
 			OR = {
 				piety = 0.5
@@ -1473,6 +1496,7 @@ vn_ifq_missions_slot_5 = {
         position = 2
         required_missions = { vn_ifq_recognize_the_sunni_caliph }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             if = {
 				limit = {
 					exists = MAM
@@ -1531,6 +1555,7 @@ vn_ifq_missions_slot_5 = {
 			province_id = 4576
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             4576 = {
 			    owned_by = ROOT
                 is_core = ROOT
@@ -1557,6 +1582,7 @@ vn_ifq_missions_slot_5 = {
 			province_id = 4576
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             4576 = {
 			    owned_by = ROOT
                 is_core = ROOT
@@ -1578,6 +1604,7 @@ vn_ifq_missions_slot_5 = {
         position = 5
         required_missions = { vn_ifq_the_mosque_of_uqba }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 		    num_accepted_cultures = 3
 			OR = {
 				has_3_advisors_trigger = yes
@@ -1600,6 +1627,7 @@ vn_ifq_missions_slot_5 = {
 			province_id = 586
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			586 = {
 				OR = {
 					has_building = college

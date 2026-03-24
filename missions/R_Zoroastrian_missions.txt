@@ -12,6 +12,7 @@ vn_zoroastrian_missions = {
 		icon = mission_conquer_sindh_mer
 		required_missions = {}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			custom_trigger_tooltip = {
 				tooltip = vn_humiliate_the_muslims.tt
 				calc_true_if = {
@@ -42,6 +43,7 @@ vn_zoroastrian_missions = {
 		icon = mission_friends_or_enemies
 		required_missions = {}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			calc_true_if = {
 				all_ally = {
 					NOT = { religion_group = ROOT }
@@ -64,6 +66,7 @@ vn_zoroastrian_missions = {
 		icon = mission_reclaim_dehli
 		required_missions = { vn_inimitable_respect }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
             if = {
 				limit = { has_estate = estate_church }
 				estate_loyalty = {

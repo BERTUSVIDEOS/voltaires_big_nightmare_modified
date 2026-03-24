@@ -15,6 +15,7 @@ VN_curonian_missions = {
 		icon = mission_se_birdmen
         required_missions = {  }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			is_at_war = no
 			capital_scope = {
 				OR = {
@@ -79,6 +80,7 @@ VN_curonian_missions = {
 			is_capital = yes
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			any_country = {
 				capital_scope = {
 					superregion = scandinavia_superregion
@@ -114,6 +116,7 @@ VN_curonian_missions = {
 			}
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			num_of_owned_provinces_with = {
 				value = 3
 				has_port = yes
@@ -137,6 +140,7 @@ VN_curonian_missions = {
 		icon = mission_pirate_flag
         required_missions = { vn_curonian_fisheries }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			num_of_admirals = 1
 			navy_size = 10
 			sailors_percentage = 0.8
@@ -195,6 +199,7 @@ VN_curonian_missions = {
 		icon = mission_marwari_horses
         required_missions = {  }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			OR = {
 				mil_tech = 3
 				horses = 1
@@ -235,6 +240,7 @@ VN_curonian_missions = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT}
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				value = 25
 				OR = {
@@ -343,6 +349,7 @@ VN_curonian_missions = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
             warsaw_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT

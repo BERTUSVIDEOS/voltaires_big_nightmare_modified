@@ -24,6 +24,7 @@ vn_sar_missions_slot_1 = {
 		icon = friends_in_high_places
 		required_missions = { }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
             any_ally = {
 				total_development = 50
 				culture_group = latin
@@ -55,6 +56,7 @@ vn_sar_missions_slot_1 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
             sassari_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -96,6 +98,7 @@ vn_sar_missions_slot_1 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			corsica_area = {
 				type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -134,6 +137,7 @@ vn_sar_missions_slot_1 = {
 			province_id = 319
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
             319 = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		effect = {
@@ -183,6 +187,7 @@ vn_sar_missions_slot_1 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			albenga_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -241,6 +246,7 @@ vn_sar_missions_slot_1 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				value = 15
 				OR = {
@@ -286,6 +292,7 @@ vn_sar_missions_slot_2 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
             pisa_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -307,6 +314,7 @@ vn_sar_missions_slot_2 = {
 			province_id = 640
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
             640 = {
 				is_strongest_trade_power = ROOT
 			}
@@ -378,6 +386,7 @@ vn_sar_missions_slot_3 = {
             }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			num_of_owned_provinces_with = {
 				value = 10
 				OR = {
@@ -439,6 +448,7 @@ vn_sar_missions_slot_3 = {
 		icon = appease_the_estates
 		required_missions = { vn_sar_develop_the_isles }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
             if = {
 				limit = { has_estate = estate_nobles }
 				estate_influence = {
@@ -490,6 +500,7 @@ vn_sar_missions_slot_3 = {
 		icon = sway_the_pope
 		required_missions = { vn_sar_influential_estates }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			if = {
 				limit = { religion = catholic exists = PAP }
 				OR = {
@@ -578,6 +589,7 @@ vn_sar_missions_slot_4 = {
 		icon = invest_in_the_rich_trades
 		required_missions = { vn_sar_develop_the_isles }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             num_of_owned_provinces_with = {
 				value = 2
 				area = arborea_area
@@ -623,6 +635,7 @@ vn_sar_missions_slot_4 = {
 		icon = military_self_reliance
 		required_missions = { vn_sar_defend_the_isles }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
             land_forcelimit = 10
             army_size_percentage = 0.75
             num_of_heavy_ship = 3
@@ -651,6 +664,7 @@ vn_sar_missions_slot_4 = {
             NOT = { owned_by = ROOT }
         }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
             sicilia_region = {
                 owned_by = ROOT
                 has_fort_trigger = yes

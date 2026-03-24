@@ -16,6 +16,7 @@ VN_latvian_missions = {
 		icon = mission_peasantry
 		required_missions = { }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			reform_level = 3
 			num_of_owned_provinces_with = {
 				value = 2
@@ -49,6 +50,7 @@ VN_latvian_missions = {
 			}
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			5793 = {
 				trade_share = {
 					country = ROOT
@@ -97,6 +99,7 @@ VN_latvian_missions = {
 			owner = { NOT = { alliance_with = ROOT } }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			OR = {
 				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 					OR = {
@@ -170,6 +173,7 @@ VN_latvian_missions = {
 		icon = mission_zim_cults
 		required_missions = { vn_lithuanian_diplomacy }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			if = {
 				limit = {
 					has_dlc = "Wealth of Nations"
@@ -223,6 +227,7 @@ VN_latvian_missions = {
 		icon = mission_se_platform_mounds
 		required_missions = { }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			num_of_owned_provinces_with = {
 				value = 2
 				OR = {
@@ -258,6 +263,7 @@ VN_latvian_missions = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			livonia_region = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -325,6 +331,7 @@ VN_latvian_missions = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			polotsk_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT

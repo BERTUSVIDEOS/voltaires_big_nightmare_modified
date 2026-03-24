@@ -36,46 +36,34 @@ country_decisions = {
 			}
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			adm_tech = 15
 			is_at_war = no
 			2268 = { owned_by = ROOT is_state = yes }	# London
 			num_of_owned_provinces_with = {
 				is_core = ROOT
 				superregion = british_isles_superregion
-				value = 166	#166/252	of british islands superregion
+				value = 166	# 166/252	of british islands superregion
 			}
 		}
 		effect = {
 			change_tag = GBR
-			on_change_tag_effect = yes
-			hidden_effect = { restore_country_name = yes }
-			set_formable_tier = { tier = 4 }
+			set_formable_tier = {
+				tier = 4
+				gov_rank = 5
+				superregion = british_isles_superregion
+				capital = 2268
+				base_reform = monarchy
+				gov_reform = english_monarchy
+			}
 			swap_non_generic_missions = yes
 			remove_non_electors_emperors_from_empire_effect = yes
-			if = {
-				limit = { NOT = { government_rank = 5 } }
-				set_government_rank = 5
-			}
 			change_primary_culture = english
 			set_ruler_culture = english
-			if = {
-				limit = { NOT = { government = monarchy } }
-				change_government = monarchy
-			}
-			add_government_reform = english_monarchy
 			add_prestige = 25
-			GBR = {
-				set_capital = 2268
-			}
 			add_country_modifier = {
 				name = "centralization_modifier"
 				duration = 7300
-			}
-			british_isles_superregion = {
-				limit = {
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = GBR
 			}
 			if = {
 				limit = { 
@@ -143,6 +131,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			adm_tech = 15
 			is_free_or_tributary_trigger = yes
 			is_nomad = no
@@ -187,23 +176,16 @@ country_decisions = {
 				inherit = ENG
 			}
 			change_tag = GBR
-			on_change_tag_effect = yes
-			set_formable_tier = { tier = 4 }
-			hidden_effect = { restore_country_name = yes }
+			set_formable_tier = {
+				tier = 4
+				gov_rank = 5
+				superregion = british_isles_superregion
+				capital = 2268
+				base_reform = monarchy
+				gov_reform = english_monarchy
+			}
 			swap_non_generic_missions = yes
 			remove_non_electors_emperors_from_empire_effect = yes
-			if = {
-				limit = {
-					NOT = { government_rank = 5 }
-				}
-				set_government_rank = 5
-			}
-			british_isles_superregion = {
-				limit = {
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = GBR
-			}
 			add_prestige = 25
 			add_country_modifier = {
 				name = "centralization_modifier"
@@ -250,6 +232,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			has_issue_unlocked_tooltip = {
 				issue = english_scottish_act_of_union
 			}
@@ -349,7 +332,7 @@ country_decisions = {
 								NOT = {
 									num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 										superregion = french_superregion
-										value = 138	#138/277
+										value = 138	# 138/277
 									}
 								}
 							}
@@ -360,6 +343,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			adm_tech = 15
 			has_issue_unlocked_tooltip = {
 				issue = english_french_act_of_union
@@ -376,7 +360,7 @@ country_decisions = {
 			}
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				superregion = french_superregion
-				value = 138	#138/277
+				value = 138	# 138/277
 			}
 		}
 		effect = {
@@ -412,8 +396,10 @@ country_decisions = {
 				}
 			}
 			change_tag = AVE
-			on_change_tag_effect = yes
-			set_formable_tier = { tier = 4 }
+			set_formable_tier = {
+				tier = 4
+				gov_rank = 5
+			}
 			if = {
 				limit = {
 					OR = {
@@ -432,12 +418,6 @@ country_decisions = {
 				country_event = { id = flavor_gbr.20 }	#Renew renaming
 			}
 			remove_non_electors_emperors_from_empire_effect = yes
-			if = {
-				limit = {
-					NOT = { government_rank = 5 }
-				}
-				set_government_rank = 5
-			}
 			if = {
 				limit = { 
 					has_custom_ideas = no

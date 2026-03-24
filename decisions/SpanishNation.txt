@@ -43,6 +43,7 @@ country_decisions = {	#bertus mod
 			}
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			adm_tech = 15
 			is_nomad = no
 			is_free_or_tributary_trigger = yes
@@ -57,34 +58,25 @@ country_decisions = {	#bertus mod
 		}
 		effect = {
 			change_tag = SPA
-			on_change_tag_effect = yes
-			hidden_effect = { restore_country_name = yes }
 			remove_non_electors_emperors_from_empire_effect = yes
 			set_country_flag = formed_spain_flag
-			set_formable_tier = { tier = 4 }
-			swap_non_generic_missions = yes
-			if = {
-				limit = { NOT = { government_rank = 5 } }
-				set_government_rank = 5
+			set_formable_tier = {
+				tier = 4
+				gov_rank = 5
+				superregion = iberia_superregion
+				base_reform = monarchy
+				gov_reform = system_of_councils_reform
 			}
+			swap_non_generic_missions = yes
 			if = {
 				limit = { NOT = { government = monarchy } }
 				change_government = monarchy
 			}
-			add_government_reform = system_of_councils_reform
 			add_country_modifier = {
 				name = "centralization_modifier"
 				duration = 7300
 			}
 			add_prestige = 25
-			hidden_effect = {
-				iberia_superregion = {
-					limit = {
-						NOT = { region = portugal_region }
-					}
-					add_permanent_claim = SPA
-				}
-			}
 			if = {
 				limit = {
 					has_custom_ideas = no
@@ -168,6 +160,7 @@ country_decisions = {	#bertus mod
 			}
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			adm_tech = 15
 			is_nomad = no
 			is_free_or_tributary_trigger = yes
@@ -241,24 +234,21 @@ country_decisions = {	#bertus mod
 				}
 				inherit = CAS
 			}
-			set_formable_tier = { tier = 4 }
 			change_tag = SPA
-			on_change_tag_effect = yes
-			hidden_effect = { restore_country_name = yes }
+			set_formable_tier = {
+				tier = 4
+				gov_rank = 5
+				superregion = iberia_superregion
+				capital = 5685
+				base_reform = monarchy
+				gov_reform = system_of_councils_reform
+			}
 			swap_non_generic_missions = yes
 			if = {
 				limit = {
 					has_custom_ideas = no
 				}
 				country_event = { id = ideagroups.1 } #Swap Ideas
-			}
-			hidden_effect = {
-				iberia_superregion = {
-					limit = {
-						NOT = { region = portugal_region }
-					}
-					add_permanent_claim = SPA
-				}
 			}
 			set_country_flag = formed_spain_flag
 		}

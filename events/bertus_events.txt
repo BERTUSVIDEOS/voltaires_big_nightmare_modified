@@ -230,10 +230,10 @@ country_event = {   #military investment
     option = {
         name = bertus_events.3.f
         trigger = {
-			NOT = {has_country_flag = military_investment_shock_reduction_10_flag}
+			NOT = {has_country_flag = military_investment_dmg_reduction_10_flag}
         }
         increase_military_investment = {
-            type = shock_reduction
+            type = dmg_reduction
         }
     }
 }
@@ -876,7 +876,7 @@ country_event = {   #Boost estate notification
             estate = all
             share = -5
         }
-        get_boosted_bonus = { modifier = estate }
+        get_boosted_bonus = { modifier = estates }
     }
 }
 country_event = {   #Boost religion notification

@@ -26,6 +26,7 @@ vn_pol_missions_slot_1 = {
         position = 1
         required_missions = {  }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             papal_influence = 100
             num_of_generals = 2
             army_size_percentage = 0.75
@@ -74,6 +75,7 @@ vn_pol_missions_slot_1 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             westpreussensouth_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -156,6 +158,7 @@ vn_pol_missions_slot_1 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             neumark_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -224,6 +227,7 @@ vn_pol_missions_slot_1 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             werle_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -258,6 +262,7 @@ vn_pol_missions_slot_1 = {
         position = 6
         required_missions = {  }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             1138 = {
                 owned_by = ROOT
                 is_core = ROOT
@@ -300,6 +305,7 @@ vn_pol_missions_slot_1 = {
         position = 7
         required_missions = { vn_pol_royal_residences }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             has_institution = renaissance
             all_state_province = {
 				renaissance = 100
@@ -340,6 +346,7 @@ vn_pol_missions_slot_2 = {
         position = 1
         required_missions = {  }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             development_in_provinces = {
                 value = 200
                 OR = {
@@ -382,6 +389,7 @@ vn_pol_missions_slot_2 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             kulmerland_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -433,6 +441,7 @@ vn_pol_missions_slot_2 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             konigsberg_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -489,6 +498,7 @@ vn_pol_missions_slot_2 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			lusatiasouth_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -514,6 +524,7 @@ vn_pol_missions_slot_2 = {
         position = 6
         required_missions = { }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             if = {
                 limit = {
                     OR = {
@@ -565,6 +576,7 @@ vn_pol_missions_slot_2 = {
         position = 7
         required_missions = { vn_pol_royal_cathedrals }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             OR = {
                 current_age = age_of_reformation
                 current_age = age_of_absolutism
@@ -601,6 +613,7 @@ vn_pol_missions_slot_2 = {
         position = 8
         required_missions = { vn_pol_polish_bible }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             NOT = { corruption = 0.01 }
             NOT = { num_of_rebel_armies = 1 }
             NOT = { num_of_rebel_controlled_provinces = 1 }
@@ -640,6 +653,7 @@ vn_pol_missions_slot_3 = {
         position = 1
         required_missions = {  }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             custom_trigger_tooltip = {
 				tooltip = vn_nrm_safeguard_borders.tt
 				num_of_owned_provinces_with = {
@@ -667,6 +681,7 @@ vn_pol_missions_slot_3 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             silesia_region = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -693,6 +708,7 @@ vn_pol_missions_slot_3 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             bohemia_region = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -711,6 +727,7 @@ vn_pol_missions_slot_3 = {
         position = 4
         required_missions = { vn_pol_conquer_bohemia }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             OR = {
 				is_emperor = yes
 				NOT = { hre_size = 1 }
@@ -744,6 +761,7 @@ vn_pol_missions_slot_3 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             grodno_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -806,6 +824,7 @@ vn_pol_missions_slot_3 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             turov_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -869,6 +888,7 @@ vn_pol_missions_slot_3 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             lithuania_region = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -900,6 +920,7 @@ vn_pol_missions_slot_3 = {
         position = 8
         required_missions = { vn_pol_conquer_lithuania vn_pol_conquer_kiev }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             tag = PLC
             stability = 2
             NOT = { overextension_percentage = 1 }
@@ -942,6 +963,7 @@ vn_pol_missions_slot_4 = {
         position = 1
         required_missions = {  }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             custom_trigger_tooltip = {
                 tooltip = vn_pol_avoid_fragmentation.tt
                 OR = {
@@ -1003,6 +1025,7 @@ vn_pol_missions_slot_4 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             warsaw_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -1070,6 +1093,7 @@ vn_pol_missions_slot_4 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             peremyshl_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -1178,6 +1202,7 @@ vn_pol_missions_slot_4 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             podolia_region = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -1214,6 +1239,7 @@ vn_pol_missions_slot_4 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             kiev_region = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -1253,6 +1279,7 @@ vn_pol_missions_slot_5 = {
         position = 1
         required_missions = {  }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             num_of_owned_provinces_with = {
                 value = 12
                 development = 10
@@ -1293,6 +1320,7 @@ vn_pol_missions_slot_5 = {
             }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             num_of_owned_provinces_with = {
                 value = 5
                 trade_goods = salt
@@ -1324,6 +1352,7 @@ vn_pol_missions_slot_5 = {
         position = 3
         required_missions = {  }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             if = {
                 limit = { has_dlc = "Cradle of Civilization" }
                 army_professionalism = 0.5
@@ -1391,6 +1420,7 @@ vn_pol_missions_slot_5 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             nyitra_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -1537,6 +1567,7 @@ vn_pol_missions_slot_5 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			nagyatad_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -1610,6 +1641,7 @@ vn_pol_missions_slot_5 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             moldavia_region = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT

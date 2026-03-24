@@ -230,8 +230,8 @@ add_army_professionalism = 0.05
 		adm = 5
 		dip = 5
 		mil = 5
-		add_ruler_personality = conqueror_personality
 	}
+	add_ruler_personality = conqueror_personality
 }
 1478.6.13 = {
 	monarch = {

@@ -25,6 +25,7 @@ country_decisions = {
 			has_not_enacted_parliament_action = { parliament_action = acts_of_high_admiralty }
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			has_active_debate = no
 		}
 		effect = {
@@ -54,6 +55,7 @@ country_decisions = {
 			has_not_enacted_parliament_action = { parliament_action = acts_of_maritime_courage }
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			has_active_debate = no
 		}
 		effect = {
@@ -87,6 +89,7 @@ country_decisions = {
 			has_not_enacted_parliament_action = { parliament_action = acts_of_maritime_professionalism }
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			has_active_debate = no
 		}
 		effect = {
@@ -113,6 +116,7 @@ country_decisions = {
 			has_not_enacted_parliament_action = { parliament_action = acts_of_naval_professionalism }
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			has_active_debate = no
 		}
 		effect = {
@@ -173,6 +177,7 @@ country_decisions = {
 			has_not_enacted_parliament_action = { parliament_action = crown_of_iberia_act }
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			has_active_debate = no
 			num_of_owned_provinces_with = {
 				superregion = iberia_superregion
@@ -205,6 +210,7 @@ country_decisions = {
 			has_not_enacted_parliament_action = { parliament_action = acts_of_impressment }
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			has_active_debate = no
 		}
 		effect = {
@@ -232,6 +238,7 @@ country_decisions = {
 			has_not_enacted_parliament_action = { parliament_action = act_of_representation }
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			has_active_debate = no
 		}
 		effect = {
@@ -259,6 +266,7 @@ country_decisions = {
 			has_not_enacted_parliament_action = { parliament_action = acts_of_taxation }
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			has_active_debate = no
 		}
 		effect = {
@@ -285,6 +293,7 @@ country_decisions = {
 			has_not_enacted_parliament_action = { parliament_action = crown_of_italy_act }
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			has_active_debate = no
 			num_of_owned_provinces_with = {
 				superregion = italy_superregion
@@ -314,6 +323,7 @@ country_decisions = {
 			has_not_enacted_parliament_action = { parliament_action = crown_of_ireland_act }
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			has_active_debate = no
 			num_of_owned_provinces_with = {
 				region = 	ireland_region
@@ -343,6 +353,7 @@ country_decisions = {
 			has_not_enacted_parliament_action = { parliament_action = crown_of_the_empire_act }
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			has_active_debate = no
 			is_emperor = yes
 		}
@@ -444,6 +455,7 @@ country_decisions = {
 			has_not_enacted_parliament_action = { parliament_action = establish_the_imperial_diet_act }
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			has_active_debate = no
 			is_emperor = yes
 		}
@@ -466,6 +478,7 @@ country_decisions = {
 			has_not_enacted_parliament_action = { parliament_action = french_english_reconciliation_act }
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			OR = {
 				FRA = { is_subject_of = ROOT }
 				development_in_provinces = {

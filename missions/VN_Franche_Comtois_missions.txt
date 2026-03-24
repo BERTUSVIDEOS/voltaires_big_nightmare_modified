@@ -17,6 +17,7 @@ vn_fcm_missions_slot_1 = {
         position = 1
         required_missions = {  }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             has_mil_advisor_2 = yes
             num_of_owned_provinces_with = {
                 value = 4
@@ -35,6 +36,7 @@ vn_fcm_missions_slot_1 = {
         position = 2
         required_missions = { vn_fcm_castle_supremacy }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             any_rival_country = {
                 OR = {
                     has_opinion_modifier = {
@@ -71,6 +73,7 @@ vn_fcm_missions_slot_1 = {
         position = 3
         required_missions = { vn_fcm_tete_hardie }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             any_ally = {
                 marriage_with = ROOT
                 has_opinion = {
@@ -137,6 +140,7 @@ vn_fcm_missions_slot_1 = {
         position = 4
         required_missions = { vn_fcm_amis_italiens }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             OR = {
                 AND = {
                     religion = catholic
@@ -180,6 +184,7 @@ vn_fcm_missions_slot_1 = {
         position = 5
         required_missions = { vn_fcm_filium_papalis }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             if = {
                 limit = {
                     any_country = {
@@ -273,6 +278,7 @@ vn_fcm_missions_slot_2 = {
             NOT = { is_core = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             if = {
                 limit = { has_dlc = "Common Sense" }
                 legitimacy_equivalent = 100
@@ -366,6 +372,7 @@ vn_fcm_missions_slot_2 = {
         position = 5
         required_missions = {  }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			land_forcelimit = 25
 			army_size_percentage = 0.75
 			army_tradition = 50
@@ -404,6 +411,7 @@ vn_fcm_missions_slot_3 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             wallis_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -459,6 +467,7 @@ vn_fcm_missions_slot_3 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             forez_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -518,6 +527,7 @@ vn_fcm_missions_slot_3 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			arles_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -545,6 +555,7 @@ vn_fcm_missions_slot_3 = {
         position = 6
         required_missions = { vn_fcm_conquer_provence vn_fcm_comtois_knights }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             government_rank = 5
             reform_level = 5
             has_any_disaster = no
@@ -586,6 +597,7 @@ vn_fcm_missions_slot_4 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             dole_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -608,6 +620,7 @@ vn_fcm_missions_slot_4 = {
         position = 2
         required_missions = { vn_fcm_conquer_franche_comte }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             stability = 1
             NOT = { average_autonomy = 50 }
             crown_land_share = 30
@@ -693,6 +706,7 @@ vn_fcm_missions_slot_4 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             charolais_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -735,6 +749,7 @@ vn_fcm_missions_slot_4 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             nevers_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -759,6 +774,7 @@ vn_fcm_missions_slot_4 = {
         position = 5
         required_missions = { vn_fcm_conquer_nevers }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             OR = {
                 NOT = { exists = FRA }
                 AND = {
@@ -795,6 +811,7 @@ vn_fcm_missions_slot_5 = {
             province_id = 1123
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             1123 = {
                 has_merchant = ROOT
                 trade_share = {
@@ -821,6 +838,7 @@ vn_fcm_missions_slot_5 = {
             has_trade_building_trigger = no
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             num_of_owned_provinces_with = {
                 value = 3
                 trade_goods = cheese
@@ -867,7 +885,8 @@ vn_fcm_missions_slot_5 = {
         icon = les_invalides
         position = 4
         required_missions = { vn_fcm_comte_cheese vn_fcm_conquer_burgundy }
-        trigger = {     #BERTUS MOD
+        trigger = {
+			if = { limit = { ai = yes } ai = no }     #BERTUS MOD
             employed_advisor = {
                 category = ADM
                 culture = ROOT
@@ -911,6 +930,7 @@ vn_fcm_missions_slot_5 = {
 			province_id = 2671
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
             2671 = {
 				is_strongest_trade_power = ROOT
 			}

@@ -15,6 +15,7 @@ vn_hsa_missions_1 = {
 			province_id = 5793 
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			OR = {
 				5793 = { country_or_non_sovereign_subject_holds = ROOT }
 				AND = {
@@ -62,6 +63,7 @@ vn_hsa_missions_1 = {
 			province_id = 6144 
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			6144 = {
 				OR = {
 					country_or_non_sovereign_subject_holds = ROOT 
@@ -118,6 +120,7 @@ vn_hsa_missions_1 = {
 			}
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			OR = {
 				411 = { country_or_non_sovereign_subject_holds = ROOT }
 				411 = {
@@ -165,6 +168,7 @@ vn_hsa_missions_1 = {
 			}
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			OR = {
 				13 = { 
 					higher_development_than = 654
@@ -224,6 +228,7 @@ vn_hsa_missions_1 = {
 		position = 9
 		provinces_to_highlight = { province_id = 896 }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			OR = {
 				896 = { country_or_non_sovereign_subject_holds = ROOT }
 				896 = {
@@ -280,6 +285,7 @@ vn_hsa_missions_1 = {
 			}
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			OR = {
 				dip = 4 
 				ruler_has_personality = charismatic_negotiator_personality
@@ -414,6 +420,7 @@ vn_hsa_missions_1 = {
 		required_missions = { hsa_organize_hanseatic_diets hsa_tend_towns } 
 		position = 11 
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			mercantilism = 60 
 			OR = {
 				full_idea_group = trade_ideas 
@@ -462,6 +469,7 @@ vn_hsa_missions_2 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			OR = {
 				AND = { 
 					GOT = { 
@@ -535,6 +543,7 @@ vn_hsa_missions_2 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			402 = { country_or_non_sovereign_subject_holds = ROOT }
 			OR = {
 				faction_influence = {
@@ -560,6 +569,7 @@ vn_hsa_missions_2 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
                 value = 15
                 OR = {
@@ -594,6 +604,7 @@ vn_hsa_missions_2 = {
 			}
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			45 = {
 				OR = {
                     has_building = road_network
@@ -618,6 +629,7 @@ vn_hsa_missions_2 = {
 		required_missions = { hsa_herring_migration hsa_expand_market_square } 
 		position = 9 
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			stability = 1 
 			adm = 3 
 			dip = 3 
@@ -761,7 +773,8 @@ vn_hsa_missions_2 = {
 				NOT = { development = 10 }
 			}
 		}
-		trigger = { 
+		trigger = {
+			if = { limit = { ai = yes } ai = no } 
 			share_of_starting_income = 5
 			grown_by_development = 50
 			all_owned_province = {
@@ -801,6 +814,7 @@ vn_hsa_missions_2 = {
 			province_id = 3002
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			OR = {
 				adm = 6 
 				full_idea_group = economic_ideas 
@@ -935,6 +949,7 @@ vn_hsa_missions_3 = {
 		required_missions = { } 
 		position = 1 
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			army_size_percentage = 0.9
 			manpower_percentage = 0.6
 		}
@@ -1088,6 +1103,7 @@ vn_hsa_missions_3 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			OR = {
 				AND = {
 					development_in_provinces = {
@@ -1200,6 +1216,7 @@ vn_hsa_missions_3 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			OR = {
 				stolp_area = {
                     type = all 
@@ -1259,6 +1276,7 @@ vn_hsa_missions_3 = {
 		required_missions = { hsa_expand_market_square }
 		position = 7
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			OR = {
 				custom_trigger_tooltip = {
 					tooltip = hsa_trigger_4_tt
@@ -1296,6 +1314,7 @@ vn_hsa_missions_3 = {
 		position = 8 
 		provinces_to_highlight = { province_id = 13 }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			OR = {
 				13 = { num_of_times_improved = 10 }
 				monthly_adm = 10 
@@ -1325,6 +1344,7 @@ vn_hsa_missions_3 = {
 		position = 9 
 		provinces_to_highlight = { province_id = 13 }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			fortification_expert = 3
             if = {
                 limit = { has_dlc = "Leviathan" }
@@ -1357,6 +1377,7 @@ vn_hsa_missions_3 = {
 		required_missions = { hsa_construct_holstentor }
 		position = 10 
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			mercantilism = 40 
 			trader = 3
 			13 = {
@@ -1395,6 +1416,7 @@ vn_hsa_missions_3 = {
 			NOT = { is_strongest_trade_power = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			mercantilism = 75 
 			OR = {
 				is_great_power = yes 
@@ -1515,6 +1537,7 @@ vn_hsa_missions_4 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			1857 = { country_or_non_sovereign_subject_holds = ROOT }
 			5274 = { country_or_non_sovereign_subject_holds = ROOT }
 			2627 = { country_or_non_sovereign_subject_holds = ROOT }
@@ -1710,6 +1733,7 @@ vn_hsa_missions_4 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			OR = {
 				stade_area = { country_or_non_sovereign_subject_holds = ROOT }
 				AND = { 
@@ -1761,6 +1785,7 @@ vn_hsa_missions_4 = {
 		required_missions = { hsa_royal_prussia hsa_flow_trade hsa_bypass_sound_toll }
 		position = 5 
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			has_mil_advisor_3 = yes
 			OR = {
 				army_professionalism = 0.6
@@ -1882,6 +1907,7 @@ vn_hsa_missions_4 = {
 		required_missions = { hsa_expand_market_square }
 		position = 7
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			capital_scope = {
 				OR = {
 					has_building = artisan
@@ -1955,6 +1981,7 @@ vn_hsa_missions_4 = {
 		required_missions = { hsa_queens_hall hsa_finance_guilds hsa_schiffbauer_gilde } 
 		position = 9
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			navy_size_percentage = 1 
 			num_of_admirals = 1
 			num_of_light_ship = 10 
@@ -1981,6 +2008,7 @@ vn_hsa_missions_5 = {
 		required_missions = { } 
 		position = 1 
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			if = {
 				limit = { hre_size = 1 }
 				OR = {
@@ -2042,6 +2070,7 @@ vn_hsa_missions_5 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			holstein_area = {
 				type = all 
 				OR = {
@@ -2104,6 +2133,7 @@ vn_hsa_missions_5 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			OR = {
 				411 = { country_or_non_sovereign_subject_holds = ROOT }
 				AND = {
@@ -2158,6 +2188,7 @@ vn_hsa_missions_5 = {
 		position = 5
 		provinces_to_highlight = { province_id = 6001 }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			6001 = {
 				trade_share = {
 					country = ROOT 
@@ -2180,6 +2211,7 @@ vn_hsa_missions_5 = {
 		required_missions = { }
 		position = 6 
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			navy_size_percentage = 1 
 			naval_maintenance = 1 
 			num_of_galley = 5
@@ -2209,6 +2241,7 @@ vn_hsa_missions_5 = {
 		position = 8 
 		provinces_to_highlight = { province_id = 13 }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			13 = {
 				OR = {
 					has_building = shipyard 
@@ -2247,6 +2280,7 @@ vn_hsa_missions_5 = {
 		required_missions = { hsa_schiffbauer_gilde }
 		position = 10
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			naval_forcelimit = 25
 			has_leader_with = { 
 				manuever = 4 
@@ -2281,6 +2315,7 @@ vn_hsa_missions_5 = {
 		required_missions = { hsa_marine_pilots }
 		position = 11
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			if = { 
 				limit = { has_dlc = "Golden Century" }
 				has_flagship = yes 

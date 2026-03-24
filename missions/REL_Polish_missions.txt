@@ -21,6 +21,7 @@ VN_polish_missions = {
         required_missions = {}
         position = 5
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			stability = 2
             if = {
                 limit = { has_dlc = "Common Sense" }
@@ -51,6 +52,7 @@ VN_polish_missions = {
 		icon = mission_galleys_in_port
 		required_missions = { vn_prove_polish_legitimacy }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			naval_forcelimit = 12
 			navy_size_percentage = 0.9
 		}
@@ -65,6 +67,7 @@ VN_polish_missions = {
 		icon = mission_noble_council
 		required_missions = { vn_reach_the_sea }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			num_of_owned_provinces_with = {
 				value = 5
 				OR = {
@@ -85,6 +88,7 @@ VN_polish_missions = {
 		icon = mission_monarch_in_throne_room
 		required_missions = { vn_establish_polish_crown_tribunal }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			absolutism = 50
 			if = {
 				limit = { has_estate = estate_nobles }

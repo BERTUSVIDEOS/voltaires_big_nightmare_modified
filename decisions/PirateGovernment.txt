@@ -49,6 +49,7 @@ country_decisions = {
 			is_emperor = no
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			if = {
 				limit = {
 					OR = {

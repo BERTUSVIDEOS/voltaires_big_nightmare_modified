@@ -32,6 +32,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			is_at_war = no
 			is_free_or_tributary_trigger = yes		
 			NOT = { exists = HSA }

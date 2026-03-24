@@ -30,6 +30,7 @@ vn_cas_missions_slot_1_a = {
        
         required_missions = {  }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             if = {
                 limit = { has_estate = estate_church }
                 estate_loyalty = {
@@ -77,6 +78,7 @@ vn_cas_missions_slot_1_a = {
 			}
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			has_3_advisors_trigger = yes
 			employed_advisor = {
 				culture = leonese
@@ -110,6 +112,7 @@ vn_cas_missions_slot_1_a = {
 		required_missions = { vn_cas_cortes_of_castile }
 		position = 4
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             wool = 5
             any_owned_province = {
                 trade_goods = wool
@@ -162,6 +165,7 @@ vn_cas_missions_slot_1_b = {
         required_missions = { }
         position = 5
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             custom_trigger_tooltip = {
                 tooltip = vn_cas_dynastic_claims.tt
                 has_global_flag = lon_split_flag
@@ -287,6 +291,7 @@ vn_cas_missions_slot_1_b = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             galicia_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -346,6 +351,7 @@ vn_cas_missions_slot_1_b = {
 			}
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             government_rank = 5
             if = {
                 limit = { has_dlc = "Common Sense" }
@@ -470,6 +476,7 @@ vn_cas_missions_slot_1_b = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             aragon_region = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -505,6 +512,7 @@ vn_cas_missions_slot_1_b = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			balears_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -578,6 +586,7 @@ vn_cas_missions_slot_2_a = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             badajoz_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -644,6 +653,7 @@ vn_cas_missions_slot_2_a = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             huelva_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -714,6 +724,7 @@ vn_cas_missions_slot_2_b = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             if = {
                 limit = {
                     OR = {
@@ -892,6 +903,7 @@ vn_cas_missions_slot_2_c = {
             province_id = 2718
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             2718 = {
                 owned_by = ROOT
                 is_core = ROOT
@@ -955,6 +967,7 @@ vn_cas_missions_slot_2_d = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             OR = {
                 AND = {
                     alliance_with = POR
@@ -1057,6 +1070,7 @@ vn_cas_missions_slot_2_d = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			5113 = { country_or_non_sovereign_subject_holds = ROOT }
 			5112 = { country_or_non_sovereign_subject_holds = ROOT }
 			5111 = { country_or_non_sovereign_subject_holds = ROOT }
@@ -1106,6 +1120,7 @@ vn_cas_missions_slot_3_a = {
 		provinces_to_highlight = {
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			army_size_percentage = 0.75
 			num_of_generals = 1
 			NOT = { num_of_loans = 1 }
@@ -1203,6 +1218,7 @@ vn_cas_missions_slot_3_b = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             ciudad_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -1253,6 +1269,7 @@ vn_cas_missions_slot_3_b = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             cordoba_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -1303,6 +1320,7 @@ vn_cas_missions_slot_3_b = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             malaga_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -1353,6 +1371,7 @@ vn_cas_missions_slot_3_b = {
             owner = { religion_group = muslim }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			custom_trigger_tooltip = {
 				tooltip = vn_cas_triumph_over_islam.tt
 				NOT = {
@@ -1416,6 +1435,7 @@ vn_cas_missions_slot_3_b = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			4626 = { country_or_non_sovereign_subject_holds = ROOT }
 			4627 = { country_or_non_sovereign_subject_holds = ROOT }
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
@@ -1566,6 +1586,7 @@ vn_cas_missions_slot_3_b = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			num_of_owned_provinces_with = {
 				value = 10
 				development = 15
@@ -1672,6 +1693,7 @@ vn_cas_missions_slot_4_a = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			madrid_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -1720,6 +1742,7 @@ vn_cas_missions_slot_4_a = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             almeria_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -1781,6 +1804,7 @@ vn_cas_missions_slot_4_b = {
             NOT = { owned_by = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             OR = {
                 custom_trigger_tooltip = {
                     tooltip = vn_brc_influence_in_occitania.tt
@@ -1879,6 +1903,7 @@ vn_cas_missions_slot_4_c = {
             religion_group = muslim
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             NOT = {
                 any_owned_province = {
                     superregion = iberia_superregion
@@ -1921,6 +1946,7 @@ vn_cas_missions_slot_4_c = {
             culture = andalucian
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             NOT = {
                 num_of_owned_provinces_with = {
                     superregion = iberia_superregion
@@ -1988,6 +2014,7 @@ vn_cas_missions_slot_4_d = {
             province_id = 1946
         }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			1946 = {
 				trade_share = {
 					country = ROOT
@@ -2039,6 +2066,7 @@ vn_cas_missions_slot_5_a = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             rioja_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -2074,6 +2102,7 @@ vn_cas_missions_slot_5_a = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			navarra_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -2141,6 +2170,7 @@ vn_cas_missions_slot_5_a = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			bearn_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -2221,6 +2251,7 @@ vn_cas_missions_slot_5_b = {
         required_missions = { vn_cas_triumph_over_islam }
         position = 7
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
                 value = 10
                 religion_group = muslim
@@ -2239,6 +2270,7 @@ vn_cas_missions_slot_5_b = {
         icon = mission_patronize_art_and_religion
         required_missions = { vn_cas_policy_of_tolerance }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			employed_advisor = {
 				culture = andalucian
 			}

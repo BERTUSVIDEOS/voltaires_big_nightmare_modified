@@ -22,6 +22,7 @@ vn_russian_minors_missions_1 = {
 		required_missions = { } 
 		position = 1 
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			grown_by_development = 100
 		}
 		effect = {
@@ -44,6 +45,7 @@ vn_russian_minors_missions_1 = {
 			}
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			OR = {
 				6594 = {
 					owned_by = ROOT 
@@ -96,6 +98,7 @@ vn_russian_minors_missions_1 = {
 		required_missions = { mandate_cities } 
 		position = 3 
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			OR = { 
 				war_score_against = {
 					who = event_target:EmperorOfChina 
@@ -126,15 +129,15 @@ vn_russian_minors_missions_1 = {
 				add_ruler_personality = conqueror_personality
 			}
 			change_ruler_stat = {
-				stat = adm
+				type = adm
 				amount = 3
 			}
 			change_ruler_stat = {
-				stat = dip
+				type = dip
 				amount = 3
 			}
 			change_ruler_stat = {
-				stat = mil
+				type = mil
 				amount = 3
 			}
 			custom_tooltip = chi_warscore_reward_tt
@@ -197,6 +200,7 @@ vn_russian_minors_missions_2 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT } 
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				OR = {
 					region = smolensk_region
@@ -252,6 +256,7 @@ vn_russian_minors_missions_2 = {
 		required_missions = { fate_of_the_mandate chi_unify_china } 
 		position = 4 
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			OR = { 
 				if = {
 					limit = { has_dlc = "Mandate of Heaven" }
@@ -381,6 +386,7 @@ vn_russian_minors_missions_3 = {
 		required_missions = { } 
 		position = 1 
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			OR = { 
 				has_reform = principality
 				has_reform = veche_republic
@@ -454,6 +460,7 @@ vn_russian_minors_missions_3 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT } 
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				OR = {
 					region = vladimir_region
@@ -518,7 +525,8 @@ vn_russian_minors_missions_3 = {
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT } 
 		}
-		trigger = { 
+		trigger = {
+			if = { limit = { ai = yes } ai = no } 
 			russia_superregion = {
 				type = all 
 				country_or_non_sovereign_subject_holds = ROOT
@@ -572,6 +580,7 @@ vn_russian_minors_missions_3 = {
 		position = 4
 		
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			OR = {
 				crown_land_share = 95 
 				absolutism = 50 
@@ -634,6 +643,7 @@ vn_russian_minors_missions_4 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT } 
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				OR = {
 					region = kiev_region
@@ -709,6 +719,7 @@ vn_russian_minors_missions_4 = {
 		required_missions = { conquer_south_china renovate_capital } 
 		position = 3
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			home_trade_node = { is_strongest_trade_power = ROOT }
 			trader = 3
 			num_of_owned_provinces_with = {
@@ -775,6 +786,7 @@ vn_russian_minors_missions_5 = {
 		position = 1
 		
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			if = {
 				limit = { has_estate = estate_burghers }
 				estate_loyalty = {
@@ -821,6 +833,7 @@ vn_russian_minors_missions_5 = {
 		position = 2
 		provinces_to_highlight = { is_capital_of = ROOT }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			capital_scope = {
 				num_of_times_improved = 10 
 				has_tax_building_trigger = yes 
@@ -876,6 +889,7 @@ vn_russian_minors_missions_5 = {
 			}
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			OR = {
 				4237 = { 
 					country_or_non_sovereign_subject_holds = ROOT 

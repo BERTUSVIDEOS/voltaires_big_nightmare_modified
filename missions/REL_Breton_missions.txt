@@ -24,6 +24,7 @@ VN_breton_minors_missions = {
 			NOT = { development = 10 }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			num_of_owned_provinces_with = {
 				value = 5
 				trade_goods = livestock
@@ -41,6 +42,7 @@ VN_breton_minors_missions = {
 		icon = mission_trade_company_region_abroad
 		required_missions = { vn_strengthen_agriculture }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			naval_forcelimit = 12
 			num_of_light_ship = 10
 		}
@@ -55,6 +57,7 @@ VN_breton_minors_missions = {
 		icon = mission_alliances
 		required_missions = { vn_breton_fishery }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			calc_true_if = {
 				all_ally = {
 					total_development = 150
@@ -76,6 +79,7 @@ VN_breton_minors_missions = {
 			province_id = 2294
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			2294 = {
 				owned_by = ROOT
 				development = 20
@@ -152,6 +156,7 @@ VN_breton_conquest_missions = {
 			}
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			raozhon_area = {
 				type = all
 				owned_by = ROOT
@@ -191,6 +196,7 @@ VN_breton_conquest_missions = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			normandy_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -247,6 +253,7 @@ VN_breton_conquest_missions = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			320 = { country_or_non_sovereign_subject_holds = ROOT }
 			2141 = { country_or_non_sovereign_subject_holds = ROOT }
 		}

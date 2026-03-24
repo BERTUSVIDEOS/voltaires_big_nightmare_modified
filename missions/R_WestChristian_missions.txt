@@ -18,6 +18,7 @@ vn_westchristian_missions_1 = {
 		icon = control_the_church
 		required_missions = {}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			if = {
 				limit = { uses_church_aspects = yes }
 				church_power = 200
@@ -62,6 +63,7 @@ vn_westchristian_missions_2 = {
 		icon = mission_luther_theses
 		required_missions = { }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			current_age = age_of_reformation
 			OR = {
 				OR = {
@@ -87,6 +89,7 @@ vn_westchristian_missions_2 = {
 		icon = back_the_league
 		required_missions = { vn_question_of_reform }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			is_in_league_war = yes
 		}
 		effect = {

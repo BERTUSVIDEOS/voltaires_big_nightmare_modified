@@ -21,6 +21,7 @@ vn_sjk_missions_slot_1 = {
 			has_owner_religion = no        
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             lower_mesopotamia_region = {
                 type = all
 				religion_group = muslim
@@ -39,6 +40,7 @@ vn_sjk_missions_slot_1 = {
         position = 2
         required_missions = { vn_sjk_islam_in_baghdad }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			has_global_modifier_value = {
 				which = tolerance_heretic
 				value = 1
@@ -60,6 +62,7 @@ vn_sjk_missions_slot_1 = {
         position = 3
         required_missions = { vn_sjk_religious_toleration vn_sjk_facilitate_urban_growth }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			OR = {
 				has_3_advisors_trigger = yes
 				full_idea_group = innovativeness_ideas
@@ -81,6 +84,7 @@ vn_sjk_missions_slot_1 = {
 			province_id = 6301
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			6301 = {
 				OR = {
 					has_building = college
@@ -119,6 +123,7 @@ vn_sjk_missions_slot_1 = {
 			province_id = 6301
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             6301 = {
 				has_education_building_trigger = yes
 			}  
@@ -144,6 +149,7 @@ vn_sjk_missions_slot_1 = {
 			province_id = 6301
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             6301 = {
 				has_education_building_trigger = yes
 			} 
@@ -175,6 +181,7 @@ vn_sjk_missions_slot_1 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }          
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             transjordan_region = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -199,6 +206,7 @@ vn_sjk_missions_slot_1 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }          
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             nabatea_region = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -256,6 +264,7 @@ vn_sjk_missions_slot_1 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }          
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             bahari_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -318,6 +327,7 @@ vn_sjk_missions_slot_1 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             al_wahat_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -372,6 +382,7 @@ vn_sjk_missions_slot_1 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }          
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			tripolitania_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -436,6 +447,7 @@ vn_sjk_missions_slot_2 = {
 			province_id = 6301
 		}
       	trigger = {
+			if = { limit = { ai = yes } ai = no }
             num_of_owned_provinces_with = {
 				value = 10
 				development = 10
@@ -471,6 +483,7 @@ vn_sjk_missions_slot_2 = {
 			province_id = 6301
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			6301 = {
 				owned_by = ROOT
 				has_fort_trigger = yes
@@ -494,6 +507,7 @@ vn_sjk_missions_slot_2 = {
         position = 4
         required_missions = { vn_sjk_fortify_the_round_city }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			num_of_owned_provinces_with = {
 				value = 20
 				has_tax_building_trigger = yes
@@ -514,6 +528,7 @@ vn_sjk_missions_slot_2 = {
 			province_id = 6301
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			6301 = {
 				development = 50
 			}            
@@ -539,6 +554,7 @@ vn_sjk_missions_slot_2 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             outremer_region = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -563,6 +579,7 @@ vn_sjk_missions_slot_2 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             palestine_region = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -590,6 +607,7 @@ vn_sjk_missions_slot_2 = {
         position = 9
         required_missions = { vn_sjk_feared_armies vn_sjk_capture_jerusalem }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             any_country = {
                 religion_group = christian
                 war_with = ROOT
@@ -619,6 +637,7 @@ vn_sjk_missions_slot_2 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             red_sea_coast_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -633,6 +652,7 @@ vn_sjk_missions_slot_2 = {
         position = 11
         required_missions = { vn_sjk_fatimid_lands_conquered }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             production_income_percentage = 0.33
 			production_efficiency = 0.20
 			OR = {
@@ -675,7 +695,8 @@ vn_sjk_missions_slot_2 = {
         icon = mission_peasantry
         position = 13
         required_missions = { vn_sjk_agricultual_revolution }
-        trigger = { 
+        trigger = {
+			if = { limit = { ai = yes } ai = no } 
 			trading_part = {
 				trade_goods = barley
 				value = 0.33
@@ -697,6 +718,7 @@ vn_sjk_missions_slot_2 = {
         position = 14
         required_missions = { vn_sjk_barley_producer }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			trading_bonus = {
 				trade_goods = barley
 				value = yes
@@ -751,6 +773,7 @@ vn_sjk_missions_slot_3 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }          
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             6301 = {
                 country_or_non_sovereign_subject_holds = ROOT
             }
@@ -774,6 +797,7 @@ vn_sjk_missions_slot_3 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }          
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             lower_mesopotamia_region = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -812,6 +836,7 @@ vn_sjk_missions_slot_3 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }          
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             bahrain_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -826,6 +851,7 @@ vn_sjk_missions_slot_3 = {
         position = 4
         required_missions = { }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			piety = 0.5
         }
         effect = {
@@ -841,6 +867,7 @@ vn_sjk_missions_slot_3 = {
         position = 5
         required_missions = { vn_sjk_worthy_architecture vn_sjk_devoutness_in_faith }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			religious_unity = 0.95
 			num_of_cities = 50
         }
@@ -863,6 +890,7 @@ vn_sjk_missions_slot_3 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }          
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             nafud_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -888,6 +916,7 @@ vn_sjk_missions_slot_3 = {
         position = 7
         required_missions = {  }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             cavalry_fraction = 0.5
 			num_of_cavalry = 25
         }
@@ -900,6 +929,7 @@ vn_sjk_missions_slot_3 = {
         position = 8
         required_missions = { vn_sjk_shore_up_cavalry vn_sjk_alp_arslan }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			OR = {
 				army_professionalism = 1
 				army_tradition = 50
@@ -932,6 +962,7 @@ vn_sjk_missions_slot_3 = {
 			}
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			NOT = {
 				any_province = {
 					OR = {
@@ -968,6 +999,7 @@ vn_sjk_missions_slot_3 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }          
         }        
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
             cappadokia_region = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -1046,6 +1078,7 @@ vn_sjk_missions_slot_3 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }          
         }        
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			lydia_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -1094,6 +1127,7 @@ vn_sjk_missions_slot_3 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }          
         }        
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
             bukellarion_region = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -1143,7 +1177,8 @@ vn_sjk_missions_slot_3 = {
             province_id = 2233
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
-        trigger = {	    
+        trigger = {
+			if = { limit = { ai = yes } ai = no }	    
 			2233 = {
 				country_or_non_sovereign_subject_holds = ROOT     
 			}        
@@ -1162,6 +1197,7 @@ vn_sjk_missions_slot_3 = {
         position = 14
         required_missions = { vn_sjk_fall_of_constantinople }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			if = {
 				limit = {
 					exists = BYZ 
@@ -1208,6 +1244,7 @@ vn_sjk_missions_slot_4 = {
         position = 2
         required_missions = { vn_sjk_atabegs }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             tax_income_percentage = 0.33
 			monthly_income = 100
         }
@@ -1239,6 +1276,7 @@ vn_sjk_missions_slot_4 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }          
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             al_jazira_region = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -1262,6 +1300,7 @@ vn_sjk_missions_slot_4 = {
             province_id = 6301         
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			6301 = {
 				has_trade_building_trigger = yes
 			}
@@ -1295,6 +1334,7 @@ vn_sjk_missions_slot_4 = {
             province_id = 6301
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			if = {
                 limit = { has_dlc = "Dharma" }
             	6301 = { province_has_center_of_trade_of_level = 3 }
@@ -1337,6 +1377,7 @@ vn_sjk_missions_slot_4 = {
 			}
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			num_of_trading_bonuses = 3
 			if = {
                 limit = { has_dlc = "Dharma" }
@@ -1368,6 +1409,7 @@ vn_sjk_missions_slot_4 = {
         position = 7
         required_missions = {  }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			is_monarch_leader = yes
 			OR = {
 				has_commanding_three_star = yes
@@ -1389,6 +1431,7 @@ vn_sjk_missions_slot_4 = {
 			province_id = 3459
         }        
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			OR = {
 				war_score_against = {
 					who = BYZ
@@ -1442,6 +1485,7 @@ vn_sjk_missions_slot_4 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }          
         }        
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
             chaldia_region = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -1471,6 +1515,7 @@ vn_sjk_missions_slot_4 = {
 			}          
         }   
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			num_of_owned_provinces_with = {
 				value = 50
                 superregion = anatolia_superregion
@@ -1502,6 +1547,7 @@ vn_sjk_missions_slot_4 = {
             province_id = 2233
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			2233 = { country_or_non_sovereign_subject_holds = ROOT }
 			if = {
                 limit = { has_dlc = "Dharma" }
@@ -1542,6 +1588,7 @@ vn_sjk_missions_slot_5 = {
         position = 1
         required_missions = {  }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             if = {
                 limit = { has_estate = estate_nobles }
                 estate_loyalty = {
@@ -1563,6 +1610,7 @@ vn_sjk_missions_slot_5 = {
         position = 2
         required_missions = { vn_sjk_atabegs }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             if = {
                 limit = { has_estate = estate_nobles }
                 NOT = {
@@ -1608,6 +1656,7 @@ vn_sjk_missions_slot_5 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }          
         }        
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
             assyria_region = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -1632,6 +1681,7 @@ vn_sjk_missions_slot_5 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }          
         }        
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
             sophene_region = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -1656,6 +1706,7 @@ vn_sjk_missions_slot_5 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }          
         }        
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
             syria_region = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -1721,6 +1772,7 @@ vn_sjk_missions_slot_5 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }          
         }        
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
             teluch_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -1757,6 +1809,7 @@ vn_sjk_missions_slot_5 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }          
         }        
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
             corduene_region = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -1807,6 +1860,7 @@ vn_sjk_missions_slot_5 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }          
         }        
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
             georgia_region = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -1849,6 +1903,7 @@ vn_sjk_missions_slot_5 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }          
         }        
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
             dagestan_region = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -1877,6 +1932,7 @@ vn_sjk_missions_slot_5 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }          
         }        
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
             astrakhan_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -1911,6 +1967,7 @@ vn_sjk_missions_slot_5 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }          
         }        
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
             kazakhstan_region = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT

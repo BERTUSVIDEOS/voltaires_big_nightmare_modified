@@ -1,5 +1,25 @@
 
 
+accepted_culture_give_morale_20 = { land_morale = 0.20 development_cost = -0.20 }
+accepted_culture_give_morale_19 = { land_morale = 0.19 development_cost = -0.19 }
+accepted_culture_give_morale_18 = { land_morale = 0.18 development_cost = -0.18 }
+accepted_culture_give_morale_17 = { land_morale = 0.17 development_cost = -0.17 }
+accepted_culture_give_morale_16 = { land_morale = 0.16 development_cost = -0.16 }
+accepted_culture_give_morale_15 = { land_morale = 0.15 development_cost = -0.15 }
+accepted_culture_give_morale_14 = { land_morale = 0.14 development_cost = -0.14 }
+accepted_culture_give_morale_13 = { land_morale = 0.13 development_cost = -0.13 }
+accepted_culture_give_morale_12 = { land_morale = 0.12 development_cost = -0.12 }
+accepted_culture_give_morale_11 = { land_morale = 0.11 development_cost = -0.11 }
+accepted_culture_give_morale_10 = { land_morale = 0.10 development_cost = -0.10 }
+accepted_culture_give_morale_9 = { land_morale = 0.09 development_cost = -0.09 }
+accepted_culture_give_morale_8 = { land_morale = 0.08 development_cost = -0.08 }
+accepted_culture_give_morale_7 = { land_morale = 0.07 development_cost = -0.07 }
+accepted_culture_give_morale_6 = { land_morale = 0.06 development_cost = -0.06 }
+accepted_culture_give_morale_5 = { land_morale = 0.05 development_cost = -0.05 }
+accepted_culture_give_morale_4 = { land_morale = 0.04 development_cost = -0.04 }
+accepted_culture_give_morale_3 = { land_morale = 0.03 development_cost = -0.03 }
+accepted_culture_give_morale_2 = { land_morale = 0.02 development_cost = -0.02 }
+accepted_culture_give_morale_1 = { land_morale = 0.01 development_cost = -0.01 }
 humanist_bonus = {
 	land_morale = 0.05
 }
@@ -88,22 +108,25 @@ shock_policy_tech_28 = {
     infantry_shock = 0.195
 }
 shock_cav_policy_tech_1 = {
-    cavalry_shock = 0.0375
+    cavalry_shock = 0.06
 }
 shock_cav_policy_tech_2 = {
     cavalry_shock = 0.075
 }
-shock_cav_policy_tech_6 = {
-    cavalry_shock = 0.1125	
+shock_cav_policy_tech_5 = {
+    cavalry_shock = 0.09
 }
-shock_cav_policy_tech_10 = {
+shock_cav_policy_tech_8 = {
     cavalry_shock = 0.15
 }
-shock_cav_policy_tech_14 = {
-    cavalry_shock = 0.1875
-}
-shock_cav_policy_tech_18 = {
+shock_cav_policy_tech_17 = {
     cavalry_shock = 0.225
+}
+shock_cav_policy_tech_23 = {
+    cavalry_shock = 0.30
+}
+shock_cav_policy_tech_31 = {
+    cavalry_shock = 0.375
 }
 ab_justified_wars_modifier = {
 	warscore_cost_vs_other_religion = -0.10
@@ -460,7 +483,7 @@ boosted_country_trade_2 = {
 	trade_efficiency = 0.20
 	global_trade_power = 0.20
 }
-boosted_country_trade_2 = {
+boosted_country_trade_3 = {
 	trade_efficiency = 0.30
 	global_trade_power = 0.30
 }
@@ -486,7 +509,7 @@ boosted_country_powers_2 = {
 	country_diplomatic_power = 4
 	country_military_power = 4
 }
-boosted_country_powers_2 = {
+boosted_country_powers_3 = {
 	country_admin_power = 6
 	country_diplomatic_power = 6
 	country_military_power = 6
@@ -940,44 +963,44 @@ military_investment_morale_10_modifier = {
 	land_morale_constant = 0.75
 }
 military_investment_dmg_reduction_1_modifier = {
-	shock_damage_received = -0.03
-	fire_damage_received = -0.03
+	shock_damage_received = -0.02
+	fire_damage_received = -0.02
 }
 military_investment_dmg_reduction_2_modifier = {
+	shock_damage_received = -0.04
+	fire_damage_received = -0.04
+}
+military_investment_dmg_reduction_3_modifier = {
 	shock_damage_received = -0.06
 	fire_damage_received = -0.06
 }
-military_investment_dmg_reduction_3_modifier = {
-	shock_damage_received = -0.09
-	fire_damage_received = -0.09
-}
 military_investment_dmg_reduction_4_modifier = {
+	shock_damage_received = -0.08
+	fire_damage_received = -0.08
+}
+military_investment_dmg_reduction_5_modifier = {
+	shock_damage_received = -0.10
+	fire_damage_received = -0.10
+}
+military_investment_dmg_reduction_6_modifier = {
 	shock_damage_received = -0.12
 	fire_damage_received = -0.12
 }
-military_investment_dmg_reduction_5_modifier = {
-	shock_damage_received = -0.15
-	fire_damage_received = -0.15
+military_investment_dmg_reduction_7_modifier = {
+	shock_damage_received = -0.14
+	fire_damage_received = -0.14
 }
-military_investment_dmg_reduction_6_modifier = {
+military_investment_dmg_reduction_8_modifier = {
+	shock_damage_received = -0.16
+	fire_damage_received = -0.16
+}
+military_investment_dmg_reduction_9_modifier = {
 	shock_damage_received = -0.18
 	fire_damage_received = -0.18
 }
-military_investment_dmg_reduction_7_modifier = {
-	shock_damage_received = -0.21
-	fire_damage_received = -0.21
-}
-military_investment_dmg_reduction_8_modifier = {
-	shock_damage_received = -0.24
-	fire_damage_received = -0.24
-}
-military_investment_dmg_reduction_9_modifier = {
-	shock_damage_received = -0.27
-	fire_damage_received = -0.27
-}
 military_investment_dmg_reduction_10_modifier = {
-	shock_damage_received = -0.30
-	fire_damage_received = -0.30
+	shock_damage_received = -0.20
+	fire_damage_received = -0.20
 }
 bavaria_unification = {
 	fabricate_claims_cost = -0.50 	#0→-0.50

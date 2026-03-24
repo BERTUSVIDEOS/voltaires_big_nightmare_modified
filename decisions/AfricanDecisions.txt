@@ -6,6 +6,7 @@ country_decisions = {
 			has_dlc = "Rights of Man"
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			uses_cults = yes
 		}
 		effect = {
@@ -27,6 +28,7 @@ country_decisions = {
 			has_country_flag = has_selected_a_primary_cult
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			custom_trigger_tooltip = {
 				tooltip = swap_primary_cult_tt
 				NOT = { has_country_modifier = swapped_primary_cult }
@@ -59,6 +61,7 @@ country_decisions = {
 			has_dlc = "Rights of Man"
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			if = {
 				limit = {
 					government = republic
@@ -122,6 +125,7 @@ country_decisions = {
 			NOT = { has_country_flag = swaps_scholar_flag }
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			has_regency = no
 			custom_trigger_tooltip = {
 				tooltip = decision_once_every_twenty_years

@@ -3222,7 +3222,6 @@ erzurum_area = {}
 kastamonu_area = {}
 brugge_area = {}
 gent_area = {}
-kortrijk_area = {}
 laponia_area = {}
 baltic_area = {}
 kortrijk_area = {}

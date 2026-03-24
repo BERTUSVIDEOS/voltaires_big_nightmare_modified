@@ -1355,9 +1355,6 @@ the_spice_act = {
 		increase_trade_goods_discovery = {
 			trade_goods = spices
 		}
-		increase_trade_goods_discovery = {
-			trade_goods = cloves
-		}
 	}
 	
 	modifier = {

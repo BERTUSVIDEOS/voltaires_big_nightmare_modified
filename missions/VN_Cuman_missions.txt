@@ -17,6 +17,7 @@ vn_cmn_missions_slot_1 = {
         position = 1
         required_missions = {  }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             stability = 2
             religious_unity = 1
             if = {
@@ -36,6 +37,7 @@ vn_cmn_missions_slot_1 = {
         position = 2
         required_missions = { vn_cmn_eternal_blue_sky }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             religious_unity = 0.75
             num_of_owned_provinces_with = {
                 value = 250
@@ -60,6 +62,7 @@ vn_cmn_missions_slot_1 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             OR = {
                 AND = {
                     num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
@@ -110,6 +113,7 @@ vn_cmn_missions_slot_1 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             soroca_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -175,6 +179,7 @@ vn_cmn_missions_slot_2 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             bessarabia_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -285,6 +290,7 @@ vn_cmn_missions_slot_2 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }   
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             buzau_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -381,6 +387,7 @@ vn_cmn_missions_slot_2 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			thrace_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -418,6 +425,7 @@ vn_cmn_missions_slot_2 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             podolia_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -469,6 +477,7 @@ vn_cmn_missions_slot_2 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             volhynia_region = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -498,6 +507,7 @@ vn_cmn_missions_slot_2 = {
         position = 8
         required_missions = { vn_cmn_conquer_ryazan vn_cmn_conquer_volyn }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             if = {
 				limit = {
 					has_dlc = "Mandate of Heaven"
@@ -548,6 +558,7 @@ vn_cmn_missions_slot_3 = {
         position = 1
         required_missions = {  }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             is_at_war = no
             land_forcelimit = 0.75
             land_maintenance = 1
@@ -584,6 +595,7 @@ vn_cmn_missions_slot_3 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             zaporizhia_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -631,6 +643,7 @@ vn_cmn_missions_slot_3 = {
 			NOT = { owner = { war_with = ROOT } }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			OR = {
 				AND = {
 					4237 = { country_or_non_sovereign_subject_holds = ROOT }
@@ -691,6 +704,7 @@ vn_cmn_missions_slot_3 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			kiev_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -786,6 +800,7 @@ vn_cmn_missions_slot_3 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             seversk_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -830,6 +845,7 @@ vn_cmn_missions_slot_3 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             ryazan_region = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -865,6 +881,7 @@ vn_cmn_missions_slot_4 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             cherson_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -953,6 +970,7 @@ vn_cmn_missions_slot_4 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             3133 = { country_or_non_sovereign_subject_holds = ROOT }
             3088 = { country_or_non_sovereign_subject_holds = ROOT }
             3206 = { country_or_non_sovereign_subject_holds = ROOT }
@@ -999,6 +1017,7 @@ vn_cmn_missions_slot_4 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             adygea_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -1050,6 +1069,7 @@ vn_cmn_missions_slot_4 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             shapsug_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -1114,6 +1134,7 @@ vn_cmn_missions_slot_4 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             imereti_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -1150,6 +1171,7 @@ vn_cmn_missions_slot_4 = {
             province_id = 6301
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             6301 = {
                 country_or_non_sovereign_subject_holds = ROOT
             }
@@ -1197,6 +1219,7 @@ vn_cmn_missions_slot_5 = {
         position = 1
         required_missions = {  }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			if = {
 				limit = {
 					has_dlc = "The Cossacks"
@@ -1227,6 +1250,7 @@ vn_cmn_missions_slot_5 = {
         position = 2
         required_missions = { vn_cmn_great_khan }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             NOT = { alliance_with = QYP }
             grown_by_development = 150
             army_strength = {
@@ -1275,6 +1299,7 @@ vn_cmn_missions_slot_5 = {
             province_id = 3794
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             3794 = {
                 country_or_non_sovereign_subject_holds = ROOT
             }
@@ -1297,6 +1322,7 @@ vn_cmn_missions_slot_5 = {
         position = 4
         required_missions = { vn_cmn_subjugate_kipchaks }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             government_rank = 6
             total_development = 1000
             prestige = 50
@@ -1322,6 +1348,7 @@ vn_cmn_missions_slot_5 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             alania_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -1372,6 +1399,7 @@ vn_cmn_missions_slot_5 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             lekia_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT

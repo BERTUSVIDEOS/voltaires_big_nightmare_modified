@@ -6,7 +6,7 @@
 
 feudalism = {
 	bonus = {
-		free_plumbumer_pool = 1
+		#free_plumbumer_pool = 1
 	}
 
 	trade_company_efficiency = 0.2

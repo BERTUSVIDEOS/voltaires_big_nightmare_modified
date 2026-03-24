@@ -27,6 +27,7 @@ vn_eng_missions_slot_1_a = {
         required_missions = { }
         position = 1
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             if = {
                 limit = { has_dlc = "Common Sense" }
                 legitimacy_equivalent = 100
@@ -98,6 +99,7 @@ vn_eng_missions_slot_1_a = {
             }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			2240 = {
 				owned_by = ROOT
 				is_core = ROOT
@@ -184,6 +186,7 @@ vn_eng_missions_slot_1_a = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			walesnorth_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -240,6 +243,7 @@ vn_eng_missions_slot_1_a = {
 			}
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			walesnorth_area = {
                 type = all
                 owned_by = ROOT
@@ -319,6 +323,7 @@ vn_eng_missions_slot_1_b = {
 			}
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
             normandy_area = {
 				type = all
 				owned_by = ROOT
@@ -359,6 +364,7 @@ vn_eng_missions_slot_1_b = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			maine_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -407,6 +413,7 @@ vn_eng_missions_slot_1_c = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			bearn_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -489,6 +496,7 @@ vn_eng_missions_slot_1_c = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             auvergne_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -558,6 +566,7 @@ vn_eng_missions_slot_1_c = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             rodez_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -617,6 +626,7 @@ vn_eng_missions_slot_1_c = {
         icon = mission_rb_a_mighty_fleet
         required_missions = { vn_eng_conquer_languedoc }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			num_of_owned_provinces_with = {
 				value = 3
                 OR = {
@@ -677,6 +687,7 @@ vn_eng_missions_slot_2_a = {
         completed_by = 1070.1.1
         position = 1
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			num_of_owned_provinces_with = {
 				value = 8
 				has_fort_trigger = yes
@@ -723,6 +734,7 @@ vn_eng_missions_slot_2_b = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             cumberland_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -797,6 +809,7 @@ vn_eng_missions_slot_2_b = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             hebrides_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -847,6 +860,7 @@ vn_eng_missions_slot_2_b = {
 			}
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             NOT = {
                 OR = {
                     exists = SCO
@@ -899,6 +913,7 @@ vn_eng_missions_slot_2_b = {
 			}
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             ireland_region = {
                 type = all
                 owned_by = ROOT
@@ -968,6 +983,7 @@ vn_eng_missions_slot_2_c = {
 		required_missions = { }
 		position = 8
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			OR = {
 				is_in_war = {
 					casus_belli = cb_crusade   #BERTUS MOD
@@ -990,6 +1006,7 @@ vn_eng_missions_slot_2_c = {
         required_missions = { vn_eng_a_new_religion }
         position = 9
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             religious_unity = 1
             OR = {
 				AND = {
@@ -1078,6 +1095,7 @@ vn_eng_missions_slot_2_d = {
 		position = 10
         required_missions = { vn_eng_claims_in_anjou }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             if = {
                 limit = { exists = FRA }
 				OR = {
@@ -1177,6 +1195,7 @@ vn_eng_missions_slot_2_d = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			raozhon_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -1246,6 +1265,7 @@ vn_eng_missions_slot_2_e = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             tours_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -1360,6 +1380,7 @@ vn_eng_missions_slot_2_e = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             OR = {
                 has_won_war_against = {
                     who = BUR
@@ -1398,6 +1419,7 @@ vn_eng_missions_slot_2_e = {
         required_missions = { vn_eng_dual_monarchy }
         position = 13
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             if = {
                 limit = { hre_size = 1 }
                 calc_true_if = {
@@ -1466,6 +1488,7 @@ vn_eng_missions_slot_2_f = {
 			trade_goods = wine
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             bordeaux_area = {
 				owned_by = ROOT
                 trade_goods = wine
@@ -1537,6 +1560,7 @@ vn_eng_missions_slot_3_a = {
 			}
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             west_riding_area = {
                 type = all
                 owned_by = ROOT
@@ -1599,6 +1623,7 @@ vn_eng_missions_slot_3_a = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             edinburgh_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -1635,6 +1660,7 @@ vn_eng_missions_slot_3_a = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             fife_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -1679,6 +1705,7 @@ vn_eng_missions_slot_3_b = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             desmond_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -1729,6 +1756,7 @@ vn_eng_missions_slot_3_c = {
 		required_missions = { }
 		position = 7
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			if = {
 				limit = { uses_church_aspects = yes }
                 num_of_aspects = 3
@@ -1775,6 +1803,7 @@ vn_eng_missions_slot_3_c = {
         completed_by = 1534.1.1
 		required_missions = { vn_eng_order_of_the_garter }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			OR = {
 				AND = {
 					OR = {
@@ -1839,6 +1868,7 @@ vn_eng_missions_slot_3_c = {
         completed_by = 1549.1.1
         required_missions = { vn_eng_a_new_religion }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             OR = {
                 religion = anglican
                 religion = protestant
@@ -1886,6 +1916,7 @@ vn_eng_missions_slot_3_d = {
 			}
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             142 = {
                 owned_by = ROOT
                 is_core = ROOT
@@ -1949,6 +1980,7 @@ vn_eng_missions_slot_3_e = {
         completed_by = 1340.1.1
         position = 11
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			OR = {
 				custom_trigger_tooltip = {
 					tooltip = vn_eng_claim_french_throne.tt
@@ -2026,6 +2058,7 @@ vn_eng_missions_slot_3_e = {
             }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             548 = {
                 OR = {
 					country_or_non_sovereign_subject_holds = ROOT
@@ -2102,6 +2135,7 @@ vn_eng_missions_slot_3_e = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             paris_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -2163,6 +2197,7 @@ vn_eng_missions_slot_4_a = {
         required_missions = { }
         position = 1
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			treasurer = 1
 			recruitmaster = 1
         }
@@ -2186,6 +2221,7 @@ vn_eng_missions_slot_4_a = {
             vn_eng_domesday_survey
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             num_of_owned_provinces_with = {
                 OR = {
                     area = east_riding_area
@@ -2260,6 +2296,7 @@ vn_eng_missions_slot_4_b = {
 			}
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             ireland_region = {
 				owned_by = ROOT
 				has_port = yes
@@ -2285,6 +2322,7 @@ vn_eng_missions_slot_4_b = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             ireland_region = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -2354,6 +2392,7 @@ vn_eng_missions_slot_4_b = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             connacht_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -2397,6 +2436,7 @@ vn_eng_missions_slot_4_b = {
 			}
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			num_of_owned_provinces_with = {
 				value = 10
 				region = ireland_region
@@ -2485,6 +2525,7 @@ vn_eng_missions_slot_4_c = {
         required_missions = { }
         position = 7
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             silver = 1
             treasury = 200
             tax_income_percentage = 0.33
@@ -2504,6 +2545,7 @@ vn_eng_missions_slot_4_c = {
         completed_by = 1694.7.27
         required_missions = { vn_eng_centralise_royal_mint }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             master_of_mint = 3
             NOT = { num_of_loans = 1 }
             NOT = { inflation = 1 }
@@ -2540,6 +2582,7 @@ vn_eng_missions_slot_4_d = {
         required_missions = { vn_eng_develop_harbors }
         position = 9
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			num_of_owned_provinces_with = {
 				value = 6
 				superregion = british_isles_superregion
@@ -2587,6 +2630,7 @@ vn_eng_missions_slot_4_e = {
         required_missions = { vn_eng_found_royal_navy }
         position = 10
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             2729 = {
                 is_strongest_trade_power = ROOT
             }
@@ -2611,6 +2655,7 @@ vn_eng_missions_slot_4_e = {
         icon = mission_seize_north_sea_trade
         required_missions = { vn_eng_trade_in_low_countries }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             13 = {
                 is_strongest_trade_power = ROOT
             }
@@ -2633,6 +2678,7 @@ vn_eng_missions_slot_4_e = {
             province_id = 3427
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			3427 = {
 				trade_share = {
 					country = ROOT
@@ -2679,6 +2725,7 @@ vn_eng_missions_slot_4_f = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             balears_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -2698,6 +2745,7 @@ vn_eng_missions_slot_4_f = {
         icon = mission_dominate_home_trade_node
         required_missions = { vn_eng_conquer_baleares }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             mercantilism = 50
         }
         effect = {
@@ -2721,6 +2769,7 @@ vn_eng_missions_slot_4_f = {
         icon = mission_rb_mediterranean_authority
         required_missions = { vn_eng_mercantilist_policy }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             calc_true_if = {
                 1955 = {
 					is_strongest_trade_power = ROOT
@@ -2786,6 +2835,7 @@ vn_eng_missions_slot_5_a = {
 			province_id = 2268
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             2268 = {
 				owned_by = ROOT
 				is_core = ROOT
@@ -2832,6 +2882,7 @@ vn_eng_missions_slot_5_a = {
 			}
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             OR = {
                 college = 5
                 university = 5
@@ -2934,6 +2985,7 @@ vn_eng_missions_slot_5_b = {
         required_missions = { }
         position = 3
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             wool = 10
             production_leader = {
                 trade_goods = wool
@@ -2954,6 +3006,7 @@ vn_eng_missions_slot_5_b = {
         icon = mission_rb_monopolize_the_channel
         required_missions = { vn_eng_dominate_wool_trade }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             cloth = 10
             production_leader = {
                 trade_goods = cloth
@@ -3007,6 +3060,7 @@ vn_eng_missions_slot_5_c = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             ulster_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -3063,6 +3117,7 @@ vn_eng_missions_slot_5_d = {
 			}
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             4688 = {
                 owned_by = ROOT
                 development = 10
@@ -3094,6 +3149,7 @@ vn_eng_missions_slot_5_d = {
         completed_by = 1200.1.1
         required_missions = { vn_eng_cinque_ports }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             num_of_owned_provinces_with = {
                 has_port = yes
                 OR = {
@@ -3116,6 +3172,7 @@ vn_eng_missions_slot_5_d = {
         required_missions = { vn_eng_develop_harbors }
         position = 9
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             navy_size_percentage = 0.75
             num_of_heavy_ship = 5
             OR = {
@@ -3140,6 +3197,7 @@ vn_eng_missions_slot_5_d = {
         icon = mission_rb_monopolize_the_channel
         required_missions = { vn_eng_found_royal_navy }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             2173 = {
                 is_strongest_trade_power = ROOT
             }
@@ -3175,6 +3233,7 @@ vn_eng_missions_slot_5_d = {
 			}
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             owns_core_province = 761
         }
         effect = {
@@ -3206,6 +3265,7 @@ vn_eng_missions_slot_5_d = {
 			}
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             owns_core_province = 2711
         }
         effect = {
@@ -3239,6 +3299,7 @@ vn_eng_missions_slot_5_d = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			cyprus_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT

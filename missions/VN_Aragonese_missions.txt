@@ -22,6 +22,7 @@ vn_ara_missions_slot_1_a = {
 		icon = mission_taula_de_canvi
 		required_missions = { }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			num_of_owned_provinces_with = {
 				value = 5
 				development = 10
@@ -45,6 +46,7 @@ vn_ara_missions_slot_1_a = {
 		icon = mission_educated_people
 		required_missions = { vn_ara_issue_fueros }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			if = {
 				limit = {
 					has_estate = estate_nobles
@@ -81,6 +83,7 @@ vn_ara_missions_slot_1_a = {
 			}
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			has_3_advisors_trigger = yes
 			employed_advisor = {
 				culture = valencian
@@ -108,6 +111,7 @@ vn_ara_missions_slot_1_a = {
 			vn_ara_the_catalan_company
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			accepted_culture = catalan
 			employed_advisor = {
 				culture = catalan
@@ -134,6 +138,7 @@ vn_ara_missions_slot_1_a = {
 		icon = mission_consulate_of_the_sea
 		required_missions = { vn_ara_catalan_patronage }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			1955 = {
 				is_strongest_trade_power = ROOT
 			}
@@ -200,6 +205,7 @@ vn_ara_missions_slot_1_b = {
 			development = 10
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			custom_trigger_tooltip = {
 				tooltip = vn_ara_ports_on_maghreb.tt
 				num_of_owned_provinces_with = {
@@ -267,6 +273,7 @@ vn_ara_missions_slot_1_b = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			OR = {
 				tunis_area = {
 					type = all
@@ -438,6 +445,7 @@ vn_ara_missions_slot_2_a = {
 		icon = mission_diplomatic_relation
 		required_missions = { }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			all_ally = {
 				has_opinion = {
 					who = ROOT
@@ -479,6 +487,7 @@ vn_ara_missions_slot_2_b = {
 			province_id = 711
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			711 = {
 				is_capital_of = ROOT
 				owned_by = ROOT
@@ -531,6 +540,7 @@ vn_ara_missions_slot_2_c = {
 			}
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			barcelona_area = {
 				type = all
 				owned_by = ROOT
@@ -618,6 +628,7 @@ vn_ara_missions_slot_2_d = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			almeria_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -655,6 +666,7 @@ vn_ara_missions_slot_2_d = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			granada_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -711,6 +723,7 @@ vn_ara_missions_slot_2_e = {
 			}
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			OR = {
 				AND = {
 					any_known_country = {
@@ -753,6 +766,7 @@ vn_ara_missions_slot_2_e = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			porto_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -826,6 +840,7 @@ vn_ara_missions_slot_3_a = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			huesca_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -876,6 +891,7 @@ vn_ara_missions_slot_3_a = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			zaragoza_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -915,6 +931,7 @@ vn_ara_missions_slot_3_a = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			valencia_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -963,6 +980,7 @@ vn_ara_missions_slot_3_a = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			aragon_region = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -974,7 +992,9 @@ vn_ara_missions_slot_3_a = {
 					has_country_flag = nerfed_ideas_flag
 				}
 				clr_country_flag = nerfed_ideas_flag
-				set_formable_tier = { tier = 3 }
+				set_formable_tier = {
+					tier = 3
+				}
 				custom_tooltip = "Upgrade Ideas"
 				country_event = { id = ideagroups.1 } #Swap Ideas
 			}
@@ -1038,6 +1058,7 @@ vn_ara_missions_slot_3_a = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			madrid_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -1153,6 +1174,7 @@ vn_ara_missions_slot_3_a = {
 			consolidated_region_trigger = no
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			reform_level = 5
 			aragon_region = {
 				type = all
@@ -1186,6 +1208,7 @@ vn_ara_missions_slot_3_a = {
 		icon = mission_convert_provinces
 		required_missions = { vn_ara_centralize_kingdom }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			num_of_owned_provinces_with = {
 				value = 50
 				superregion = iberia_superregion
@@ -1226,6 +1249,7 @@ vn_ara_missions_slot_4_a = {
 		icon = mission_war_for_the_crown
 		required_missions = { }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
             army_size_percentage = 0.75
             num_of_generals = 1
 			NOT = {
@@ -1295,6 +1319,7 @@ vn_ara_missions_slot_4_a = {
 			vn_ara_reach_ebro
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			if = {
 				limit = { exists = BRC }
 				BRC = {
@@ -1387,6 +1412,7 @@ vn_ara_missions_slot_4_a = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			barcelona_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -1445,6 +1471,7 @@ vn_ara_missions_slot_4_b = {
 		icon = cross_the_pindus
 		required_missions = { vn_ara_crown_of_aragon }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
             num_of_mercenaries = 5
 			any_known_country = {
 				OR = {
@@ -1502,6 +1529,7 @@ vn_ara_missions_slot_4_b = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			athens_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -1549,6 +1577,7 @@ vn_ara_missions_slot_4_c = {
 			NOT = { culture = aragonese }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			aragon_region = {
 				type = all
 				culture = aragonese
@@ -1596,6 +1625,7 @@ vn_ara_missions_slot_5_a = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			navarra_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -1662,6 +1692,7 @@ vn_ara_missions_slot_5_a = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			narbonne_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -1707,6 +1738,7 @@ vn_ara_missions_slot_5_a = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
             narbonne_area = { 
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -1765,6 +1797,7 @@ vn_ara_missions_slot_5_a = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
                 value = 10
 				OR = {
@@ -1829,6 +1862,7 @@ vn_ara_missions_slot_5_b = {
 		icon = mission_aragonese_navy
 		required_missions = { vn_ara_crown_of_aragon }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			naval_forcelimit = 30
 			calc_true_if = {
 				num_of_heavy_ship = 5
@@ -1853,6 +1887,7 @@ vn_ara_missions_slot_5_b = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			balears_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT

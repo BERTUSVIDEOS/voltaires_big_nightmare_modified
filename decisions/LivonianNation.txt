@@ -40,6 +40,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			is_nomad = no			
 			is_at_war = no
 			OR = {
@@ -156,6 +157,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			is_nomad = no			
 			is_at_war = no
 			OR = {

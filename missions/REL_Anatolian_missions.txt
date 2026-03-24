@@ -16,6 +16,7 @@ VN_anatolian_missions = {
         required_missions = {}
         position = 5
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			is_subject = no
 			is_at_war = no
 			army_size_percentage = 1
@@ -39,6 +40,7 @@ VN_anatolian_missions = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			OR = {
 				594 = { country_or_non_sovereign_subject_holds = ROOT }
 				355 = { country_or_non_sovereign_subject_holds = ROOT }
@@ -55,6 +57,7 @@ VN_anatolian_missions = {
 		icon = mission_galleys_in_port
 		required_missions = { vn_conquer_a_trade_port }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			naval_forcelimit = 20
 			num_of_light_ship = 10
 		}
@@ -69,6 +72,7 @@ VN_anatolian_missions = {
 		icon = mission_mosque
 		required_missions = { vn_turkish_pirate_fleet }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			theologian = 3
 			if = { 
 				limit = { uses_piety = yes }
@@ -104,6 +108,7 @@ VN_anatolian_conquest_missions = {
 		icon = mission_have_two_subjects
 		required_missions = {}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			RUM = {
 				OR = {
 					exists = no
@@ -126,6 +131,7 @@ VN_anatolian_conquest_missions = {
 			province_id = 2233
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			2233 = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		effect = {
@@ -144,6 +150,7 @@ VN_anatolian_conquest_missions = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			anatolia_superregion = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT

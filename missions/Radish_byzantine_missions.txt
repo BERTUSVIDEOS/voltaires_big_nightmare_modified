@@ -16,6 +16,7 @@ vn_byz_missions_slot_1_a = {
 		required_missions = { }
 		
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			OR = {
 				army_size = 20
 				army_size_percentage = 1
@@ -57,6 +58,7 @@ vn_byz_missions_slot_1_a = {
 			vn_byz_a_broken_shell
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			any_owned_province = {
 				development = 10
 				trade_goods = marble
@@ -101,6 +103,7 @@ vn_byz_missions_slot_1_a = {
 		required_missions = {	}
 		
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			innovativeness = 25
 		}
 		
@@ -122,6 +125,7 @@ vn_byz_missions_slot_1_a = {
 		}
 		
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			innovativeness = 100
 		}
 		
@@ -141,6 +145,7 @@ vn_byz_missions_slot_1_a = {
 		required_missions = { }
 		
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			num_of_owned_provinces_with = {
 				value = 20
 				OR = {
@@ -186,6 +191,7 @@ vn_byzantium_missions_slot_2_a = {
 		required_missions = {	}
 		
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			stability = 1
 			employed_advisor = {
 				category = ADM
@@ -221,6 +227,7 @@ vn_byzantium_missions_slot_2_a = {
 		}
 		
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			estate_loyalty = {
 					estate = estate_church
 					loyalty = 60
@@ -246,6 +253,7 @@ vn_byzantium_missions_slot_2_a = {
 		}
 		
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			owns_all_provinces = {
 					area = serres_area		
 			}
@@ -299,6 +307,7 @@ vn_byzantium_missions_slot_2_a = {
 		}
 		
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			owns_all_provinces = {
 					area = epirus_area
 			}
@@ -340,6 +349,7 @@ vn_byzantium_missions_slot_3_a = {
 		required_missions = { }
 		
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			2233 = { NOT = { has_province_modifier = BYZ_galata } }
 		}
 		effect = {
@@ -369,6 +379,7 @@ vn_byzantium_missions_slot_3_a = {
 			vn_byz_control_our_trade
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			2233 = {
 				num_of_buildings_in_province = 5
 				num_of_times_expanded_infrastructure = 2
@@ -389,6 +400,7 @@ vn_byzantium_missions_slot_3_a = {
 		}
 		
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			trade_goods_produced_amount = {
 				trade_goods = munitions
 				amount = 3
@@ -431,6 +443,7 @@ vn_byzantium_missions_slot_3_a = {
 		}
 		
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 		
 		}
 		
@@ -451,6 +464,7 @@ vn_byzantium_missions_slot_3_a = {
 		required_missions = { }
 		
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			owns_all_provinces = {
 					area = thrace_area		
 			}
@@ -571,6 +585,7 @@ vn_byzantium_missions_slot_3_a = {
 		}
 		
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			num_of_owned_provinces_with = {
 				value = 45
 				OR = {
@@ -611,6 +626,7 @@ vn_byzantium_missions_slot_3_a = {
 		}
 		
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			
 		}
 		
@@ -671,6 +687,7 @@ vn_byz_missions_slot_4_a = {
 		}
 		
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			num_of_estate_privileges = {
 				estate = estate_jews
 				value = 2
@@ -700,6 +717,7 @@ vn_byz_missions_slot_4_a = {
 		required_missions = {	}
 		
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			has_spy_network_in = {
 				who = TUR
 				value = 50
@@ -725,6 +743,7 @@ vn_byz_missions_slot_4_a = {
 		}
 		
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			owns_all_provinces = {
 					area = ionia_area		
 			}
@@ -780,6 +799,7 @@ vn_byz_missions_slot_4_a = {
 		}
 		
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			all_owned_province = { 
 				OR = {
 					area = ionia_area
@@ -817,6 +837,7 @@ vn_byz_missions_slot_5_a = {
 		required_missions = {}
 		
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			num_of_galley = 20
 		}
 		
@@ -843,6 +864,7 @@ vn_byz_missions_slot_5_a = {
 		}
 		
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			estate_loyalty = {
 					estate = estate_burghers
 					loyalty = 60
@@ -881,6 +903,7 @@ vn_byz_missions_slot_5_a = {
 		required_missions = { }
 		
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			any_owned_province = {
 				region = west_anatolia_region
 			}
@@ -928,6 +951,7 @@ vn_byz_missions_slot_5_a = {
 		}
 		
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			owns_all_provinces = {
 					area = optimaton_area		
 			}
@@ -1026,6 +1050,7 @@ vn_byz_missions_slot_5_a = {
 		}
 		
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			4181 = {
 				has_most_province_trade_power = ROOT
 			}
@@ -1044,6 +1069,7 @@ vn_byz_missions_slot_5_a = {
 		}
 		
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			trader = 1
 		}
 		

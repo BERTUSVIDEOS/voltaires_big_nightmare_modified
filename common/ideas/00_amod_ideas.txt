@@ -175,7 +175,7 @@ LNE_ideas = {
         trade_range_modifier = 0.15
     }
     LNE_idea_2 = {
-        enemy_core_creation = 0.25
+        enemy_core_creation = 0.10
     }
     LNE_idea_3 = {
         privateer_efficiency = 0.15
@@ -517,7 +517,7 @@ LGS_ideas = {
         tolerance_own = 2
     }
     LGS_idea_6 = {
-        enemy_core_creation = 0.25
+        enemy_core_creation = 0.10
     }
     LGS_idea_7 = {
         capture_ship_chance = 0.1
@@ -576,7 +576,7 @@ ALG_ideas = {
     free = yes
 
     ALG_idea_1 = {
-        enemy_core_creation = 0.25
+        enemy_core_creation = 0.10
         development_cost_modifier = -0.10   #0→-0.10
     }
     ALG_idea_2 = {
@@ -612,7 +612,7 @@ URG_ideas = {
         num_accepted_cultures = 1
     }
     bonus = {
-        enemy_core_creation = 0.25
+        enemy_core_creation = 0.10
     }
     
     trigger = {
@@ -821,7 +821,7 @@ IFQ_ideas = {  #bertus mod
 MNI_ideas = {
     start = {
         discipline = 0.05
-        enemy_core_creation = 0.25
+        enemy_core_creation = 0.10
     }
     bonus = {
         naval_forcelimit_modifier = 0.25
@@ -1249,7 +1249,7 @@ ZBB_ideas = {
 LVC_ideas = {
     start = {
         defensiveness = 0.2
-        enemy_core_creation = 0.25
+        enemy_core_creation = 0.10
     }
     
     bonus = {
@@ -1776,7 +1776,7 @@ LSX_ideas = {
         garrison_size = 0.25
     }
     LSX_idea_2 = {
-        enemy_core_creation = 0.25
+        enemy_core_creation = 0.10
         global_spy_defence = 0.1
     }
     LSX_idea_3 = {
@@ -1815,7 +1815,7 @@ BKY_ideas = {
         land_forcelimit_modifier = 0.2
     }
     BKY_idea_2 = {
-        enemy_core_creation = 0.25
+        enemy_core_creation = 0.10
     }
     BKY_idea_3 = {
         improve_relation_modifier = 0.25
@@ -2240,7 +2240,7 @@ CBR_ideas = {   #bertus mod
 RIB_ideas = {
 	start = {
 		heir_chance = 0.5
-		enemy_core_creation = 0.25
+		enemy_core_creation = 0.10
 	}
 	bonus = {
 		reinforce_speed = 0.15
@@ -2570,7 +2570,7 @@ MUA_ideas = {
 		global_foreign_trade_power = 0.1
     }
     MUA_idea_7 = {
-		enemy_core_creation = 0.25
+		enemy_core_creation = 0.10
     }
 }
 
@@ -2841,7 +2841,7 @@ ALS_ideas = {
     ALS_idea_2 = {
 		#heir_chance = 0.5  #0.5→0
         culture_conversion_cost = -0.20     #0→-0.20
-        development_cost_in_primary_culture = -0.20     #0→-0.20
+        development_cost_in_primary_culture = -0.15     #0→-0.15
     }
     ALS_idea_3 = {
 		#tolerance_heathen = 1  #1→0
@@ -2915,7 +2915,7 @@ VLK_ideas = {
 
 PCA_ideas = {
     start = {
-        enemy_core_creation = 0.25
+        enemy_core_creation = 0.10
         leader_land_manuever = 1
     }
     bonus = {
@@ -3060,7 +3060,7 @@ SEV_ideas = {
         discipline = 0.05
     }
     SEV_idea_6 = {
-        enemy_core_creation = 0.25
+        enemy_core_creation = 0.10
     }
     SEV_idea_7 = {
         legitimacy = 1
@@ -3128,7 +3128,7 @@ BRC_ideas = {
         build_cost = -0.1
     }
     BRC_idea_2 = {
-        enemy_core_creation = 0.25
+        enemy_core_creation = 0.10
     }
     BRC_idea_3 = {
         global_unrest = -1
@@ -3471,7 +3471,7 @@ friulan_ideas = {
 	}
 
 	bonus = {
-		enemy_core_creation = 0.25
+		enemy_core_creation = 0.10
 	}
 
 	trigger = {
@@ -3704,7 +3704,7 @@ WDS_ideas = {
         land_morale = 0.1
     }
     The_Fatherland_of_uri = {
-        enemy_core_creation = 0.25
+        enemy_core_creation = 0.10
     }
 }
 
@@ -4415,7 +4415,7 @@ XSY_ideas = {
     }
     free = yes
     XSY_idea_1 = {
-        enemy_core_creation = 0.25
+        enemy_core_creation = 0.10
     }
     XSY_idea_2 = {
         diplomatic_upkeep = 1
@@ -4953,7 +4953,7 @@ PTR_ideas = {
 
 XSM_ideas = {
     start = {
-        enemy_core_creation = 0.25
+        enemy_core_creation = 0.10
         caravan_power = 0.2
     }
 
@@ -5456,7 +5456,7 @@ MLL_ideas = {
         global_prov_trade_power_modifier = 0.15
     }
     MLL_idea_6 = {
-        enemy_core_creation = 0.25
+        enemy_core_creation = 0.10
     }
     MLL_idea_7 = {
         global_sailors_modifier = 0.25
@@ -5527,7 +5527,7 @@ SMB_ideas = {
         land_forcelimit_modifier = 0.2
     }
     SMB_idea_4 = {
-        enemy_core_creation = 0.25
+        enemy_core_creation = 0.10
     }
     SMB_idea_5 = {
         prestige_decay = -0.01
@@ -5690,7 +5690,7 @@ FCM_ideas = {
         all_estate_loyalty_equilibrium = 0.05
     }
     FCM_antifrench = {
-        enemy_core_creation = 0.25
+        enemy_core_creation = 0.10
     }
     FCM_teachings = {
         leader_land_fire = 1
@@ -5847,7 +5847,7 @@ ICN_ideas = {
         prestige = 0.5
     }
     ICN_idea_3 = {
-        enemy_core_creation = 0.25
+        enemy_core_creation = 0.10
     }
     ICN_idea_4 = {
         infantry_power = 0.15
@@ -5994,7 +5994,7 @@ CMB_ideas = {
     }
     free = yes
     CMB_idea_1 = {
-        enemy_core_creation = 0.25
+        enemy_core_creation = 0.10
     }
     CMB_idea_2 = {
         global_foreign_trade_power = 0.1
@@ -6139,7 +6139,7 @@ AAI_ideas = {
 POJ_ideas = {
     start = {
         global_unrest = -1
-        enemy_core_creation = 0.25
+        enemy_core_creation = 0.10
     }
 
     bonus = {
@@ -6546,7 +6546,7 @@ BLR_ideas = {
 ONU_ideas = {
     start = {
         culture_conversion_cost = -0.15
-        enemy_core_creation = 0.25
+        enemy_core_creation = 0.10
     }
 
     bonus = {
@@ -7279,7 +7279,7 @@ WGR_ideas = {
 SMX_ideas = {
     start = {
         discipline = 0.05
-        enemy_core_creation = 0.25
+        enemy_core_creation = 0.10
     }
     bonus = {
         global_manpower_modifier = 0.15
@@ -7902,7 +7902,7 @@ SLZ_ideas = {
 WDX_ideas = {
     start = {
         army_tradition = 0.5
-        enemy_core_creation = 0.25
+        enemy_core_creation = 0.10
     }
     bonus = {
         spy_offence = 0.2
@@ -7938,7 +7938,7 @@ WDX_ideas = {
 PAA_ideas = {
     start = {
         global_institution_spread = 0.1
-        enemy_core_creation = 0.25
+        enemy_core_creation = 0.10
     }
     bonus = {
         reinforce_cost_modifier = -0.2
@@ -8269,7 +8269,7 @@ MCO_ideas = {
         diplomatic_reputation = 1
     }
     MCO_idea_6 = {
-        enemy_core_creation = 0.25
+        enemy_core_creation = 0.10
         land_morale = 0.1
     }
     MCO_idea_7 = {
@@ -8477,7 +8477,7 @@ VMG_ideas = {
 
 VIV_ideas = {
     start = {
-        enemy_core_creation = 0.25
+        enemy_core_creation = 0.10
         papal_influence = 2
     }
     bonus = {
@@ -8769,7 +8769,7 @@ VGT_ideas = {
     }
     VGT_idea_2 = {
         hostile_attrition = 1
-        enemy_core_creation = 0.25
+        enemy_core_creation = 0.10
     }
     VGT_idea_3 = {
         diplomatic_upkeep = 1
@@ -9093,7 +9093,7 @@ CIE_ideas = {
         development_cost = -0.1
     }
     CIE_idea_7 = {
-        enemy_core_creation = 0.25
+        enemy_core_creation = 0.10
     }
 }
 
@@ -9393,7 +9393,7 @@ hashshashin_ideas = {
         defensiveness = 0.2
     }
     mountain_fortresses = {
-        enemy_core_creation = 0.25
+        enemy_core_creation = 0.10
     }
     dagger_and_a_note = {
         diplomatic_reputation = 2	#exception
@@ -9626,7 +9626,7 @@ BAR_ideas = {
         infantry_cost = -0.1
     }
     BAR_idea_2 = {
-        enemy_core_creation = 0.25
+        enemy_core_creation = 0.10
         diplomatic_upkeep = 1
     }
     BAR_idea_3 = {
@@ -9705,7 +9705,7 @@ NMR_ideas = {
         defensiveness = 0.2
     }
     NMR_idea_3 = {
-        enemy_core_creation = 0.25
+        enemy_core_creation = 0.10
         land_morale = 0.1
     }
     NMR_idea_4 = {
@@ -9887,7 +9887,7 @@ AVR_ideas = {
         land_attrition = -0.1
     }
     bonus = {
-        enemy_core_creation = 0.25
+        enemy_core_creation = 0.10
     }
     
     trigger = {
@@ -10076,7 +10076,7 @@ GAZ_ideas = {
         spy_offence = 0.2
     }
     GAZ_idea_7 = {
-        enemy_core_creation = 0.25
+        enemy_core_creation = 0.10
     }
 }
 
@@ -10889,7 +10889,7 @@ SVN_ideas = {
         defensiveness = 0.2
     }
     SVN_idea_2 = {
-        enemy_core_creation = 0.25
+        enemy_core_creation = 0.10
     }
     SVN_idea_3 = {
         free_leader_pool = 1
@@ -11200,7 +11200,7 @@ PIC_ideas = {
 		war_exhaustion = -0.02
     }
     bonus = {
-        enemy_core_creation = 0.25
+        enemy_core_creation = 0.10
     }
     
     trigger = {
@@ -11363,7 +11363,7 @@ NCH_ideas = {
     }
     free = yes
     NCH_idea_1 = {
-        enemy_core_creation = 0.25
+        enemy_core_creation = 0.10
     }
     NCH_idea_2 = {
         governing_capacity_modifier = 0.1
@@ -11727,7 +11727,7 @@ ASY_ideas = {
     free = yes
 
     ASY_idea_1 = {
-        enemy_core_creation = 0.25
+        enemy_core_creation = 0.10
         tolerance_own = 1
     }
     ASY_idea_2 = {
@@ -11792,7 +11792,7 @@ KTI_ideas = {
 ORK_ideas = {
     start = {
         naval_forcelimit_modifier = 0.25
-        enemy_core_creation = 0.25
+        enemy_core_creation = 0.10
     }
     bonus = {
         global_sailors_modifier = 0.25
@@ -11898,7 +11898,7 @@ REU_ideas = {
     }
     REU_idea_5 = {
 		discipline = 0.05
-        enemy_core_creation = 0.25
+        enemy_core_creation = 0.10
     }
     REU_idea_6 = {
         global_missionary_strength = 0.02
@@ -11922,7 +11922,7 @@ RWI_ideas = {
     }
     free = yes
     RWI_idea_1 = {
-		enemy_core_creation = 0.25
+		enemy_core_creation = 0.10
         defensiveness = 0.2
     }
     RWI_idea_2 = {
@@ -12263,7 +12263,7 @@ AHL_ideas = {
         global_institution_spread = 0.1
     }
     AHL_idea_7 = {
-        enemy_core_creation = 0.25
+        enemy_core_creation = 0.10
     }
 }
 
@@ -12461,7 +12461,7 @@ QAS_ideas = {
         reform_progress_growth  = 0.15
     }
     QAS_idea_6 = {
-        enemy_core_creation = 0.25
+        enemy_core_creation = 0.10
     }
     QAS_idea_7 = {
         diplomatic_reputation = 1
@@ -12822,7 +12822,7 @@ XGR_ideas = {
     }
     free = yes
     XGR_idea_1 = {
-        enemy_core_creation = 0.25
+        enemy_core_creation = 0.10
     }
     XGR_idea_2 = {
         diplomatic_reputation = 1
@@ -12913,7 +12913,7 @@ MTZ_ideas = {
     }
     MTZ_idea_5 = {
         land_morale = 0.1
-        enemy_core_creation = 0.25
+        enemy_core_creation = 0.10
     }
     MTZ_idea_6 = {
         tolerance_own = 2
@@ -13551,7 +13551,7 @@ VBK_ideas = {
         missionaries = 1
     }
     VBK_idea_7 = {
-        enemy_core_creation = 0.25
+        enemy_core_creation = 0.10
     }
 }
 

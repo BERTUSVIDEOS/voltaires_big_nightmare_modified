@@ -16,6 +16,7 @@ vn_nav_missions_slot_1_a = {
         position = 1
         required_missions = {  }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             num_of_owned_provinces_with = {
 				value = 3
 				development = 10
@@ -34,6 +35,7 @@ vn_nav_missions_slot_1_a = {
         position = 2
         required_missions = { vn_nav_navarran_institutions }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			stability = 1
 			reform_level = 3
 			NOT = { corruption = 0.01 }
@@ -71,6 +73,7 @@ vn_nav_missions_slot_1_b = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			bearn_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -154,6 +157,7 @@ vn_nav_missions_slot_1_b = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			OR = {
 				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 					value = 5
@@ -205,6 +209,7 @@ vn_nav_missions_slot_2_a = {
         position = 2
         required_missions = { vn_nav_navarran_institutions }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             num_of_owned_provinces_with = {
 				value = 5
 				development = 15
@@ -255,6 +260,7 @@ vn_nav_missions_slot_2_b = {
 			}
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             4103 = {
 				culture = ROOT
 				owned_by = ROOT
@@ -301,6 +307,7 @@ vn_nav_missions_slot_2_b = {
         position = 4
         required_missions = { vn_nav_beyond_pyrenees }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             if = {
 				limit = { exists = FRA }
 				FRA = {
@@ -340,6 +347,7 @@ vn_nav_missions_slot_2_b = {
         position = 6
         required_missions = { vn_nav_french_trouble }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			FRA = {
 				OR = {
 					exists = no
@@ -398,6 +406,7 @@ vn_nav_missions_slot_3_a = {
         position = 1
         required_missions = {  }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			custom_trigger_tooltip = {
 				tooltip = vn_nrm_safeguard_borders.tt
 				num_of_owned_provinces_with = {
@@ -430,6 +439,7 @@ vn_nav_missions_slot_3_a = {
         position = 2
         required_missions = { vn_nav_fortify_borders }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             num_of_allies = 3
 			calc_true_if = {
 				all_ally = {
@@ -518,6 +528,7 @@ vn_nav_missions_slot_3_b = {
 			vn_nav_emperor_of_spains 
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             if = {
 				limit = { has_dlc = "Rights of Man" }
 				is_great_power = yes
@@ -563,6 +574,7 @@ vn_nav_missions_slot_4_a = {
         position = 2
         required_missions = { vn_nav_strengthen_culture }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				value = 10
 				NOT = { 
@@ -599,6 +611,7 @@ vn_nav_missions_slot_4_b = {
         position = 3
 		required_missions = { vn_nav_seeking_alliances }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			army_size_percentage = 0.75
 			num_of_generals = 1
 			army_tradition = 30
@@ -620,6 +633,7 @@ vn_nav_missions_slot_4_b = {
         position = 4
 		required_missions = { vn_nav_iberian_domains }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			if = {
 				limit = { exists = CAS }
 				OR = {
@@ -688,6 +702,7 @@ vn_nav_missions_slot_4_b = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			madrid_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -793,6 +808,7 @@ vn_nav_missions_slot_4_b = {
 			}
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			madrid_area = {
 				type = all
 				owned_by = ROOT
@@ -875,6 +891,7 @@ vn_nav_missions_slot_5_a = {
             }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			vizcaya_area = {
 				type = all
 				owned_by = ROOT
@@ -913,6 +930,7 @@ vn_nav_missions_slot_5_a = {
         position = 2
         required_missions = { vn_nav_strengthen_culture }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			if = {
 				limit = { has_dlc = "Rule Britannia" }
 				innovativeness = 10
@@ -958,6 +976,7 @@ vn_nav_missions_slot_5_b = {
         position = 4
         required_missions = { vn_nav_iberian_domains }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             if = {
 				limit = { exists = ARA }
 				OR = {
@@ -1008,6 +1027,7 @@ vn_nav_missions_slot_5_b = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             aragon_region = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT

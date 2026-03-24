@@ -19,6 +19,7 @@ vn_nrm_missions_slot_1_a = {
 			is_capital_of = ASE
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			num_of_heavy_ship = CRN
 		}
 		effect = {
@@ -43,6 +44,7 @@ vn_nrm_missions_slot_1_a = {
 		required_missions = { vn_nrm_english_succession }
 		
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			any_owned_province = {
 				OR = {
 					area = devon_area
@@ -114,6 +116,7 @@ vn_nrm_missions_slot_1_a = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			OR = {
 				senior_union_with = ASE
 				AND = {
@@ -223,6 +226,7 @@ vn_nrm_missions_slot_2_b = {
 		provinces_to_highlight = {
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			prestige = 50
 		}
 		effect = {
@@ -247,6 +251,7 @@ vn_nrm_missions_slot_2_b = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			maine_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -274,6 +279,7 @@ vn_nrm_missions_slot_2_b = {
 		icon = mission_rb_conquer_wales
 		required_missions = { vn_nrm_invade_anjou }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			maine_area = {
 				is_prosperous = yes
 			}
@@ -347,6 +353,7 @@ vn_nrm_missions_slot_2_b = {
 			}
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			custom_trigger_tooltip = {
 				tooltip = vn_nrm_control_channel.tt
 				#France
@@ -404,6 +411,7 @@ vn_nrm_missions_slot_2_b = {
 		required_missions = { vn_nrm_appease_the_estates }
 		
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			
 		}
 		
@@ -438,6 +446,7 @@ vn_nrm_missions_slot_3_a = {
             }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			stability = 1
 			army_size_percentage = 0.75
             if = {
@@ -511,6 +520,7 @@ vn_nrm_missions_slot_3_a = {
 		position = 3
 		required_missions = { vn_nrm_consolidate_duchy }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			custom_trigger_tooltip = {
 				tooltip = vn_nrm_safeguard_borders.tt
 				num_of_owned_provinces_with = {
@@ -563,6 +573,7 @@ vn_nrm_missions_slot_3_a = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			raozhon_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -592,6 +603,7 @@ vn_nrm_missions_slot_3_a = {
 			province_id = 4049
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 				owns_core_province = 4049
 				4049 = {
 					development = 15
@@ -613,6 +625,7 @@ vn_nrm_missions_slot_3_a = {
 		required_missions = { }
 		
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			num_of_estate_agendas_completed = {
 				estate = estate_nobles
 				value = 1
@@ -649,11 +662,12 @@ vn_nrm_missions_slot_3_a = {
 		}
 	}
 	
-		vn_nrm_paris_military_academy = {
+	vn_nrm_paris_military_academy = {
 		position = 9
 		icon = Compulsory_Education
 		required_missions = { vn_nrm_appease_the_estates }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			army_tradition = 50
 			army_professionalism = 0.2
 		}
@@ -680,6 +694,7 @@ vn_nrm_missions_slot_3_a = {
 			}
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			stability = 3
 			legitimacy = 100
 			NOT = { exists = FRA }
@@ -738,11 +753,12 @@ vn_nrm_missions_slot_4_a = {
 	}
 	has_country_shield = yes
 	
-		vn_nrm_norman_architecture = {
+	vn_nrm_norman_architecture = {
 		position = 2
 		icon = mission_portico
 		required_missions = { vn_nrm_consolidate_duchy }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			OR = {
 				monument = 7
 				temple = 5
@@ -758,7 +774,7 @@ vn_nrm_missions_slot_4_a = {
 		}
 	}
 	
-		vn_nrm_crown_seat_of_paris = {
+	vn_nrm_crown_seat_of_paris = {
 		position = 4
 		icon = fra_crown_seat_capital
 		required_missions = { vn_nrm_safeguard_borders }
@@ -767,6 +783,7 @@ vn_nrm_missions_slot_4_a = {
 			NOT = { is_state = yes }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			owns = 548
 			548 = {
 				is_state = yes
@@ -805,6 +822,7 @@ vn_nrm_missions_slot_4_a = {
 		required_missions = { vn_nrm_crown_seat_of_paris }
 		
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			owns = 548
 			owns = 4020
 		}
@@ -855,6 +873,7 @@ vn_nrm_missions_slot_4_a = {
 		icon = claim_the_borderlands
 		required_missions = { vn_nrm_appease_the_estates }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			num_of_owned_provinces_with = {
 				value = 35
 				has_terrain = farmlands
@@ -892,6 +911,7 @@ vn_nrm_missions_slot_5_a = {
 		}
 		
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			picardy_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -928,6 +948,7 @@ vn_nrm_missions_slot_5_a = {
 		required_missions = { vn_nrm_claim_amiens }
 		
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			artois_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT

@@ -6,6 +6,7 @@ country_decisions = {
 			has_country_modifier = hun_black_army
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			has_country_modifier = hun_black_army
 			is_at_war = no
 		}

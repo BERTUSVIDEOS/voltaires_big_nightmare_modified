@@ -26,6 +26,7 @@ vn_hol_missions_slot_1_a = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             418 = {
                 country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -54,6 +55,7 @@ vn_hol_missions_slot_1_a = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             utrecht_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -87,6 +89,7 @@ vn_hol_missions_slot_1_a = {
 			}
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             2306 = {
 				owned_by = ROOT
                 NOT = { controlled_by = REB }
@@ -131,6 +134,7 @@ vn_hol_missions_slot_1_a = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             liege_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -163,6 +167,7 @@ vn_hol_missions_slot_1_a = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             luxemburg_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -194,6 +199,7 @@ vn_hol_missions_slot_1_b = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             artois_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -228,6 +234,7 @@ vn_hol_missions_slot_1_b = {
         icon = the_true_freedom
         required_missions = { }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			has_reform = dutch_republic
 			has_any_disaster = no
 			is_at_war = no
@@ -257,6 +264,7 @@ vn_hol_missions_slot_1_b = {
 			}
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			has_reform = dutch_republic
 			low_countries_region = {
 				type = all
@@ -276,6 +284,7 @@ vn_hol_missions_slot_1_b = {
         icon = mission_noble_council
         required_missions = { vn_hol_the_act_of_abjuration }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			has_reform = dutch_republic
 			if = {
 				limit = {
@@ -306,6 +315,7 @@ vn_hol_missions_slot_1_b = {
         icon = become_king
         required_missions = { vn_hol_orangists }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			has_reform = dutch_republic
 			if = {
 				limit = {
@@ -358,6 +368,7 @@ vn_hol_missions_slot_2_a = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             overijssel_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -384,6 +395,7 @@ vn_hol_missions_slot_2_a = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             guelders_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -458,6 +470,7 @@ vn_hol_missions_slot_2_a = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             flanders_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -477,6 +490,7 @@ vn_hol_missions_slot_2_a = {
         icon = mission_village
         required_missions = { vn_hol_flemish_throne }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			any_owned_province = {
 				has_building = town_hall
 				base_tax = 8
@@ -514,6 +528,7 @@ vn_hol_missions_slot_2_a = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			antwerp_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -563,6 +578,7 @@ vn_hol_missions_slot_2_a = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			tag = NED
 			low_countries_region = {
 				type = all
@@ -602,6 +618,7 @@ vn_hol_missions_slot_2_b = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			antwerp_area = {
                 type = all
 				OR = {
@@ -644,6 +661,7 @@ vn_hol_missions_slot_2_b = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             metz_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -704,6 +722,7 @@ vn_hol_missions_slot_2_b = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             burgundy_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -726,6 +745,7 @@ vn_hol_missions_slot_2_b = {
         icon = mission_noble_council
         required_missions = { vn_hol_the_act_of_abjuration }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			has_reform = dutch_republic
 			if = {
 				limit = {
@@ -750,6 +770,7 @@ vn_hol_missions_slot_2_b = {
         icon = mission_noble_council
         required_missions = { vn_hol_statists }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			has_reform = dutch_republic
 			if = {
 				limit = {
@@ -791,6 +812,7 @@ vn_hol_missions_slot_2_b = {
         icon = mission_build_up_to_force_limit
         required_missions = { vn_hol_the_stadthouder }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			army_size = 50
 			army_size_percentage = 0.8
         }
@@ -806,7 +828,8 @@ vn_hol_missions_slot_2_b = {
     vn_hol_dynastic_claims = {
         icon = mission_alliances
         required_missions = { vn_hol_army_expansion }
-        trigger = { 
+        trigger = {
+			if = { limit = { ai = yes } ai = no } 
 			prestige = 25
 			if = {
                 limit = { has_dlc = "Common Sense" }
@@ -850,6 +873,7 @@ vn_hol_missions_slot_2_b = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             nassau_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -907,6 +931,7 @@ vn_hol_missions_slot_3_a = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             holland_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -930,6 +955,7 @@ vn_hol_missions_slot_3_a = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             westfrisia_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -953,6 +979,7 @@ vn_hol_missions_slot_3_a = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             eastfrisia_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -978,6 +1005,7 @@ vn_hol_missions_slot_3_a = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             brabant_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -1075,6 +1103,7 @@ vn_hol_missions_slot_3_a = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             hainaut_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -1143,6 +1172,7 @@ vn_hol_missions_slot_3_b = {
         icon = mission_build_up_to_force_limit
         required_missions = { }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			navy_size = 50
 			navy_size_percentage = 1
         }
@@ -1160,6 +1190,7 @@ vn_hol_missions_slot_3_b = {
         icon = overshadow_venice
         required_missions = { vn_hol_dutch_trading_culture }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			num_of_light_ship = 25
         }
         effect = {
@@ -1183,6 +1214,7 @@ vn_hol_missions_slot_3_b = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             dole_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -1210,6 +1242,7 @@ vn_hol_missions_slot_3_b = {
             }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             low_countries_region = {
 				type = all
                 owned_by = ROOT
@@ -1242,6 +1275,7 @@ vn_hol_missions_slot_3_b = {
             }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			calc_true_if = {
 				low_countries_region = {
 					type = all
@@ -1282,6 +1316,7 @@ vn_hol_missions_slot_4_a = {
         icon = indonesian_trade
         required_missions = { }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             if = {
                 limit = { 
                     OR = { 
@@ -1316,6 +1351,7 @@ vn_hol_missions_slot_4_a = {
         icon = dominant_economy
         required_missions = { vn_hol_dutch_golden_age }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			treasury = 1000
 			NOT = { inflation = 1 }
         }
@@ -1328,6 +1364,7 @@ vn_hol_missions_slot_4_a = {
         icon = mission_alliances
         required_missions = { vn_hol_stable_dutch_banks }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			any_owned_province = { 
 				has_building = stock_exchange 
 			}
@@ -1344,6 +1381,7 @@ vn_hol_missions_slot_4_a = {
         icon = dominant_economy
         required_missions = { vn_hol_stock_exchange }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			treasury = 10000
 			NOT = { inflation = 1 }        
 		}
@@ -1363,6 +1401,7 @@ vn_hol_missions_slot_4_a = {
 			NOT = { owned_by = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             calc_true_if = {
 				all_owned_province = {
 					OR = {
@@ -1435,6 +1474,7 @@ vn_hol_missions_slot_4_b = {
             province_id = 2729
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             2729 = {
                 development = 30
                 NOT = { devastation = 1 }
@@ -1460,6 +1500,7 @@ vn_hol_missions_slot_4_b = {
         icon = sources_of_trade
         required_missions = { vn_hol_port_of_antwerp }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			2729 = { #Antwerp
 				is_strongest_trade_power = ROOT
 			}      
@@ -1487,6 +1528,7 @@ vn_hol_missions_slot_4_b = {
 			}
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			owns_core_province = 328 
 			employed_advisor = {
 				type = trader
@@ -1507,6 +1549,7 @@ vn_hol_missions_slot_4_b = {
         icon = sources_of_trade
         required_missions = { vn_hol_dutch_trading_culture }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			OR = {
 				13 = { has_merchant = ROOT }
 				5793 = { has_merchant = ROOT }
@@ -1525,6 +1568,7 @@ vn_hol_missions_slot_4_b = {
         icon = overshadow_venice
         required_missions = { vn_hol_oostsee_handel }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			num_of_owned_provinces_with = {
 				has_province_modifier = hanseatic_city
 				value = 10
@@ -1613,6 +1657,7 @@ vn_hol_missions_slot_4_b = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             429 = {
                 country_or_non_sovereign_subject_holds = ROOT
             } 
@@ -1649,6 +1694,7 @@ vn_hol_missions_slot_4_b = {
 			vn_hol_rival_english_trade 
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			2729 = {
 				highest_value_trade_node = yes
 				is_strongest_trade_power = ROOT
@@ -1665,6 +1711,7 @@ vn_hol_missions_slot_4_b = {
         icon = religious_resolution
         required_missions = { }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			is_force_converted = no
 			OR = {
 				uses_church_aspects = yes
@@ -1683,6 +1730,7 @@ vn_hol_missions_slot_4_b = {
         icon = geneva_conventions
         required_missions = { vn_hol_become_protestant }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			has_institution = printing_press
 			all_state_province = {
 				printing_press = 100
@@ -1703,6 +1751,7 @@ vn_hol_missions_slot_4_b = {
         icon = wars_of_religion
         required_missions = { vn_hol_the_statenvertaling }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			OR = {
 				temple = 10
 				cathedral = 5
@@ -1726,6 +1775,7 @@ vn_hol_missions_slot_4_b = {
         icon = mission_arts_and_letters
         required_missions = { vn_hol_the_beeldenstorm }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			full_idea_group = humanist_ideas
 			num_of_religion = {
 				heretic = yes
@@ -1764,6 +1814,7 @@ vn_hol_missions_slot_5_a = {
 			has_fort_trigger = no
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             num_of_owned_provinces_with = {
 				value = 8
 				region = low_countries_region
@@ -1784,6 +1835,7 @@ vn_hol_missions_slot_5_a = {
             province_id = 3197
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             3197 = {
 				has_education_building_trigger = yes
                 owned_by = ROOT
@@ -1807,6 +1859,7 @@ vn_hol_missions_slot_5_a = {
         icon = imperial_ascendancy
         required_missions = { }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			is_part_of_hre = yes 			
 			is_elector = yes
 		}
@@ -1822,6 +1875,7 @@ vn_hol_missions_slot_5_a = {
         icon = influence_the_princes
         required_missions = { vn_hol_dutch_electorship }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			is_elector = yes
 			is_part_of_hre = yes 			
 			calc_true_if = {
@@ -1852,6 +1906,7 @@ vn_hol_missions_slot_5_a = {
 			}
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			328 = {
 				development = 25
 				base_production = 10		
@@ -1880,6 +1935,7 @@ vn_hol_missions_slot_5_a = {
 			}
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			328 = {
 				development = 30
 				base_production = 12
@@ -1918,6 +1974,7 @@ vn_hol_missions_slot_5_b = {
         icon = english_alliance
         required_missions = { vn_hol_dutch_trading_culture }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			OR = {
 				owns_core_province = 2268
 				2268 = {
@@ -1948,6 +2005,7 @@ vn_hol_missions_slot_5_b = {
         icon = charter_the_wic
         required_missions = { vn_hol_against_the_english }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			2268 = { 
 				trade_share = {
 					country = ROOT
@@ -1990,6 +2048,7 @@ vn_hol_missions_slot_5_b = {
         icon = the_glorious_revolution
         required_missions = { vn_hol_rival_english_trade }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			OR = {
 				owns_core_province = 2268
 				2268 = {
@@ -2026,6 +2085,7 @@ vn_hol_missions_slot_5_b = {
             province_id = 2268		
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             2268 = {
                 country_or_non_sovereign_subject_holds = ROOT
             }
@@ -2150,6 +2210,7 @@ vn_hol_missions_slot_5_b = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			east_riding_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -2224,6 +2285,7 @@ vn_hol_missions_slot_5_b = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
           	british_isles_superregion = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT

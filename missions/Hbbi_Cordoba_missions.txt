@@ -20,6 +20,7 @@ cordoba_missions_1 = {	#absolute habibi mod
 			##PROVINCESHIGHLIGHTCODE
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			##missionTRIGGER
 		}
 		effect = {
@@ -38,6 +39,7 @@ cordoba_missions_1 = {	#absolute habibi mod
 			##PROVINCESHIGHLIGHTCODE
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			##missionTRIGGER
 		}
 		effect = {
@@ -56,6 +58,7 @@ cordoba_missions_1 = {	#absolute habibi mod
 			##PROVINCESHIGHLIGHTCODE
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			##missionTRIGGER
 		}
 		effect = {
@@ -74,6 +77,7 @@ cordoba_missions_1 = {	#absolute habibi mod
 			##PROVINCESHIGHLIGHTCODE
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			##missionTRIGGER
 		}
 		effect = {
@@ -107,6 +111,7 @@ cordoba_missions_2 = {	#absolute habibi mod
 			##PROVINCESHIGHLIGHTCODE
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			##missionTRIGGER
 		}
 		effect = {
@@ -125,6 +130,7 @@ cordoba_missions_2 = {	#absolute habibi mod
 			##PROVINCESHIGHLIGHTCODE
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			##missionTRIGGER
 		}
 		effect = {
@@ -158,6 +164,7 @@ cordoba_missions_3 = {	#absolute habibi mod
 			##PROVINCESHIGHLIGHTCODE
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			##missionTRIGGER
 		}
 		effect = {
@@ -176,6 +183,7 @@ cordoba_missions_3 = {	#absolute habibi mod
 			##PROVINCESHIGHLIGHTCODE
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			##missionTRIGGER
 		}
 		effect = {
@@ -194,6 +202,7 @@ cordoba_missions_3 = {	#absolute habibi mod
 			##PROVINCESHIGHLIGHTCODE
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			##missionTRIGGER
 		}
 		effect = {
@@ -212,6 +221,7 @@ cordoba_missions_3 = {	#absolute habibi mod
 			##PROVINCESHIGHLIGHTCODE
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			##missionTRIGGER
 		}
 		effect = {
@@ -230,6 +240,7 @@ cordoba_missions_3 = {	#absolute habibi mod
 			##PROVINCESHIGHLIGHTCODE
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			##missionTRIGGER
 		}
 		effect = {
@@ -263,6 +274,7 @@ cordoba_missions_4 = {	#absolute habibi mod
 			##PROVINCESHIGHLIGHTCODE
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			##missionTRIGGER
 		}
 		effect = {
@@ -281,6 +293,7 @@ cordoba_missions_4 = {	#absolute habibi mod
 			##PROVINCESHIGHLIGHTCODE
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			##missionTRIGGER
 		}
 		effect = {
@@ -299,6 +312,7 @@ cordoba_missions_4 = {	#absolute habibi mod
 			##PROVINCESHIGHLIGHTCODE
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			##missionTRIGGER
 		}
 		effect = {
@@ -317,6 +331,7 @@ cordoba_missions_4 = {	#absolute habibi mod
 			##PROVINCESHIGHLIGHTCODE
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			##missionTRIGGER
 		}
 		effect = {
@@ -350,6 +365,7 @@ cordoba_missions_5 = {	#absolute habibi mod
 			##PROVINCESHIGHLIGHTCODE
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			##missionTRIGGER
 		}
 		effect = {
@@ -368,6 +384,7 @@ cordoba_missions_5 = {	#absolute habibi mod
 			##PROVINCESHIGHLIGHTCODE
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			##missionTRIGGER
 		}
 		effect = {
@@ -386,6 +403,7 @@ cordoba_missions_5 = {	#absolute habibi mod
 			##PROVINCESHIGHLIGHTCODE
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			##missionTRIGGER
 		}
 		effect = {
@@ -404,6 +422,7 @@ cordoba_missions_5 = {	#absolute habibi mod
 			##PROVINCESHIGHLIGHTCODE
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			##missionTRIGGER
 		}
 		effect = {
@@ -422,6 +441,7 @@ cordoba_missions_5 = {	#absolute habibi mod
 			##PROVINCESHIGHLIGHTCODE
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			##missionTRIGGER
 		}
 		effect = {

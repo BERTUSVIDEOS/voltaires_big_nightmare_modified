@@ -17,6 +17,7 @@ vn_tou_missions_slot_1 = {
 		icon = sponsor_the_arts
 		required_missions = { }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			primary_culture = occitain
 			development_in_provinces = {
 				value = 150
@@ -43,6 +44,7 @@ vn_tou_missions_slot_1 = {
 		icon = mission_humiliate_provence
 		required_missions = { vn_tou_patron_of_troubadours }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			OR = {
 				NOT = { exists = AQT }
 				AND = {
@@ -131,6 +133,7 @@ vn_tou_missions_slot_1 = {
 			}
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			if = {
 				limit = {
 					exists = FRA
@@ -197,6 +200,7 @@ vn_tou_missions_slot_1 = {
 		icon = mission_the_french_menace
 		required_missions = { vn_tou_challenge_the_king vn_tou_conquer_auvergne }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			is_subject = no
 			government_rank = 5
 			prestige = 50
@@ -250,6 +254,7 @@ vn_tou_missions_slot_2 = {
 			}
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			owns_core_province = 758
 			owns_core_province = 1273
 			owns_core_province = 1279
@@ -351,6 +356,7 @@ vn_tou_missions_slot_2 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			labourd_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -387,6 +393,7 @@ vn_tou_missions_slot_2 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			bordeaux_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -427,6 +434,7 @@ vn_tou_missions_slot_2 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			710 = { country_or_non_sovereign_subject_holds = ROOT }
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				value = 12
@@ -462,6 +470,7 @@ vn_tou_missions_slot_2 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			auvergne_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -510,6 +519,7 @@ vn_tou_missions_slot_3 = {
 			}
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			owns_core_province = 2423
 			owns_core_province = 2816
 			owns_core_province = 4044
@@ -696,6 +706,7 @@ vn_tou_missions_slot_3 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			perigord_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -722,6 +733,7 @@ vn_tou_missions_slot_3 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			limousin_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -739,6 +751,7 @@ vn_tou_missions_slot_3 = {
 		icon = mission_invade_occitania
 		required_missions = { vn_tou_conquer_bordeaux vn_tou_conquer_limoges vn_tou_conquer_languedoc }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			OR = {
 				is_subject_of_type = appanage
 				is_subject = no
@@ -771,6 +784,7 @@ vn_tou_missions_slot_3 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			arles_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -811,6 +825,7 @@ vn_tou_missions_slot_3 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			huesca_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -867,6 +882,7 @@ vn_tou_missions_slot_4 = {
 			}
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			owns_core_province = 550
 			owns_core_province = 1283
 			owns_core_province = 1285
@@ -957,6 +973,7 @@ vn_tou_missions_slot_4 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			montpellier_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -989,6 +1006,7 @@ vn_tou_missions_slot_4 = {
 		icon = italia_transalpina
 		required_missions = { vn_tou_conquer_languedoc }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			monthly_dip = 12
 			OR = {
 				calc_true_if = {
@@ -1153,6 +1171,7 @@ vn_tou_missions_slot_4 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			521 = { country_or_non_sovereign_subject_holds = ROOT }
 			668 = { country_or_non_sovereign_subject_holds = ROOT }
 			1245 = { country_or_non_sovereign_subject_holds = ROOT }
@@ -1251,6 +1270,7 @@ vn_tou_missions_slot_4 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			barcelona_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -1287,6 +1307,7 @@ vn_tou_missions_slot_5 = {
 		icon = restore_the_hospitallers
 		required_missions = { }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			if = {
 				limit = {
 					has_estate = estate_church
@@ -1335,6 +1356,7 @@ vn_tou_missions_slot_5 = {
 		icon = mission_crusade
 		required_missions = { vn_tou_crusading_army }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			OR = {
 				is_in_war = {
 					casus_belli = cb_crusade   #BERTUS MOD
@@ -1366,6 +1388,7 @@ vn_tou_missions_slot_5 = {
 		icon = protectors_of_christendom
 		required_missions = { }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			OR = {
 				is_force_converted = no
 				AND = {
@@ -1407,6 +1430,7 @@ vn_tou_missions_slot_5 = {
 			}
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			OR = {
 				religion = cathar
 				custom_trigger_tooltip = {
@@ -1469,6 +1493,7 @@ vn_tou_missions_slot_5 = {
 			}
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			1949 = {
 				owned_by = ROOT
 				is_core = ROOT
@@ -1532,6 +1557,7 @@ vn_tou_missions_slot_5 = {
 			}
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			num_of_owned_provinces_with = {
 				value = 10
 				trade_goods = wine

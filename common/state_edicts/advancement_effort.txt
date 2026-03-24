@@ -15,14 +15,10 @@ edict_advancement_effort = {
 	modifier = {
 		institution_growth = 10
 	}
-	
 
 	color = { 50 173 192 }
 	
-	
-	ai_will_do = {
-		factor = 10
-	}
+	ai_will_do = { factor = 1 }
 }
 edict_improved_advancement_effort = {
 	potential = {
@@ -45,8 +41,5 @@ edict_improved_advancement_effort = {
 
 	color = { 50 173 192 }
 	
-	
-	ai_will_do = {
-		factor = 10
-	}
+	ai_will_do = { factor = 1 }
 }

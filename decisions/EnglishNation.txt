@@ -33,6 +33,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			adm_tech = 10
 			is_at_war = no
 			2268 = { owned_by = ROOT is_state = yes }	# London
@@ -44,48 +45,21 @@ country_decisions = {
 		}
 		effect = {
 			change_tag = ENG
-			on_change_tag_effect = yes
-			hidden_effect = { restore_country_name = yes }
 			swap_non_generic_missions = yes
 			remove_non_electors_emperors_from_empire_effect = yes
-			set_formable_tier = { tier = 3 }
-			if = {
-				limit = {
-					NOT = { government_rank = 5 }
-				}
-				set_government_rank = 5
-			}
-			british_isles_region = {
-				limit = {
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = ENG
+			set_formable_tier = {
+				tier = 3
+				gov_rank = 5
+				region = british_isles_region
+				capital = 2268
+				base_reform = monarchy
+				gov_reform = english_monarchy
 			}
 			add_country_modifier = {
 				name = "centralization_modifier"
 				duration = 7300
 			}
 			add_prestige = 25
-			if = {
-				limit = {
-					NOT = { government = monarchy }
-					NOT = { has_government_attribute = locked_government_type }
-				}
-				change_government = monarchy
-			}
-			if = {
-				limit = {
-					OR = {
-						government = monarchy
-						NOT = { has_government_attribute = locked_government_type }
-					}
-					has_not_locked_first_tier_reform = yes
-				}
-				add_government_reform = english_monarchy 
-			}
-			ENG = {
-				set_capital = 2268
-			}
 			if = {
 				limit = { 
 					has_custom_ideas = no 

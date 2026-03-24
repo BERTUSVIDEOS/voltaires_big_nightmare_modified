@@ -4,31 +4,7 @@ ordain_preachers = {
 	modifier = {
 		global_heretic_missionary_strength = 0.015
 	}
-	ai_will_do = {
-		factor = 10
-		modifier = {
-			factor = 2
-			NOT = {
-				religious_unity = 0.9
-			}
-		}
-		modifier = {
-			factor = 2
-			NOT = {
-				religious_unity = 0.7
-			}
-		}
-		modifier = {
-			factor = 2
-			NOT = {
-				religious_unity = 0.5
-			}
-		}
-		modifier = {
-			factor = 0
-			NOT = { religion = fraticelli }
-		}
-	}
+	ai_will_do = { factor = 1 }
 }
 
 found_colonies_in_the_east = {
@@ -37,13 +13,7 @@ found_colonies_in_the_east = {
 	modifier = {
 		monthly_reform_progress_modifier = 0.1
 	}
-	ai_will_do = {
-		factor = 10
-		modifier = {
-			factor = 0
-			NOT = { religion = fraticelli }
-		}
-	}
+	ai_will_do = { factor = 1 }
 }
 
 establish_franciscan_monasteries = {
@@ -52,13 +22,7 @@ establish_franciscan_monasteries = {
 	modifier = {
 		build_cost = -0.1
 	}
-	ai_will_do = {
-		factor = 10
-		modifier = {
-			factor = 0
-			NOT = { religion = fraticelli }
-		}
-	}
+	ai_will_do = { factor = 1 }
 }
 
 promote_apostolic_poverty = {
@@ -67,13 +31,7 @@ promote_apostolic_poverty = {
 	modifier = {
 		global_unrest = -1
 	}
-	ai_will_do = {
-		factor = 10
-		modifier = {
-			factor = 0
-			NOT = { religion = fraticelli }
-		}
-	}
+	ai_will_do = { factor = 1 }
 }
 
 create_fraticelli_papacy = {
@@ -82,29 +40,5 @@ create_fraticelli_papacy = {
 	modifier = {
 		missionaries = 1
 	}
-	ai_will_do = {
-		factor = 10
-		modifier = {
-			factor = 2
-			NOT = {
-				religious_unity = 0.9
-			}
-		}
-		modifier = {
-			factor = 2
-			NOT = {
-				religious_unity = 0.7
-			}
-		}
-		modifier = {
-			factor = 2
-			NOT = {
-				religious_unity = 0.5
-			}
-		}
-		modifier = {
-			factor = 0
-			NOT = { religion = fraticelli }
-		}
-	}
+	ai_will_do = { factor = 1 }
 }

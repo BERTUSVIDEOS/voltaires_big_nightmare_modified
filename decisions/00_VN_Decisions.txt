@@ -8,6 +8,7 @@ country_decisions = {
 			technology_group = north_american
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			primitives = no
 			technology_group = north_american
 			is_at_war = no
@@ -79,6 +80,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			is_at_war = no
 			is_subject = no
 			adm_power = 200
@@ -112,6 +114,7 @@ country_decisions = {
 			has_reform = italian_monarchy
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			is_at_war = no
 			stability = 1
 			adm_tech = 12
@@ -147,6 +150,7 @@ country_decisions = {
 			has_country_modifier = kilkennystatutesmod
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			OR = {
 				AND = {
 					prestige = 15
@@ -188,6 +192,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			arbanon_area = {
 				type = all
 				owned_by = ROOT
@@ -225,6 +230,7 @@ country_decisions = {
 			has_country_modifier = edwardian_isolation
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			OR = {
 				adm = 5
 				adm_tech = 4
@@ -242,6 +248,7 @@ country_decisions = {
 		major = yes
 		potential = { has_reform = feudal_france_reform }
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			OR = {
 				current_age = age_of_absolutism
 				calc_true_if = {
@@ -282,6 +289,7 @@ country_decisions = {
 			primitives = no
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			mil_tech = 20
 		}
 		effect = {
@@ -387,6 +395,7 @@ country_decisions = {
 			NOT = { has_country_flag = relocated_capital_turin }
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			is_core = 1009
 			OR = {
 				adm_tech = 46
@@ -415,6 +424,7 @@ country_decisions = {
 			any_owned_province = { has_province_modifier = hanseatic_city }
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			dip_tech = 35
 			NOT = { government = republic }
 			OR = {
@@ -476,6 +486,7 @@ country_decisions = {
 			has_reform = eastern_monarchy
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			adm_tech = 12
 			stability = 1
 			is_at_war = no
@@ -576,6 +587,7 @@ country_decisions = {
 			has_estate = estate_holy_orders
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			adm_tech = 20
 			stability = 1
 			NOT = {
@@ -626,6 +638,7 @@ country_decisions = {
 			NOT = { primary_culture = central_margravian }
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			num_of_owned_provinces_with = {
 				value = 5
 				area = berlin_area
@@ -710,6 +723,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
 			is_nomad = no
@@ -767,6 +781,7 @@ country_decisions = {
 			NOT = { is_religion_enabled = protestant }
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			reverse_has_opinion = { who = PAP value = 0 }
 		}
 		effect = {
@@ -800,6 +815,7 @@ country_decisions = {
 			NOT = { is_religion_enabled = protestant }
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			stability = 1
 			has_regency = no
 			is_free_or_tributary_trigger = yes
@@ -853,6 +869,7 @@ country_decisions = {
 			NOT = { is_religion_enabled = protestant }
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			has_regency = yes
 			is_at_war = no
 		}
@@ -876,6 +893,7 @@ country_decisions = {
 			always = no
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			stability = 1
 			is_at_war = no
 			always = no
@@ -934,6 +952,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			OR = {
 				tag = EGY
 				AND = {
@@ -1001,6 +1020,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			owns_core_province = 4986 #Gazzah
 			owns_core_province = 4974 #Jerusalem
 			owns_core_province = 4971 #Jaffa
@@ -1078,6 +1098,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			NOT = { exists = KOJ }
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
@@ -1131,6 +1152,7 @@ country_decisions = {
 			has_country_flag = estate_maratha_triggered
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			stability = 1
 			NOT = { num_of_rebel_armies = 1 }
 			NOT = { num_of_rebel_controlled_provinces = 1 }			
@@ -1156,6 +1178,7 @@ country_decisions = {
 			has_reform = germanic_monarchy
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			OR = {
 				current_age = age_of_absolutism
 				current_age = age_of_revolutions
@@ -1202,6 +1225,7 @@ country_decisions = {
         	}
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			NOT = { any_country = { has_country_modifier = irish_high_king } }
 			owns_or_vassal_of = 891 #Limerick
 			owns_or_vassal_of = 2737 #Dublin
@@ -1250,6 +1274,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			NOT = { exists = WRM }
 			is_at_war = no
 			is_excommunicated = no
@@ -1367,6 +1392,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			NOT = { exists = KUR }
 			is_at_war = no
 			is_excommunicated = no
@@ -1490,6 +1516,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			NOT = { exists = RIG }
 			is_at_war = no
 			is_excommunicated = no
@@ -1648,6 +1675,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			NOT = { exists = OSL }
 			is_at_war = no
 			is_excommunicated = no
@@ -1804,6 +1832,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			NOT = { exists = DPT }
 			is_at_war = no
 			is_excommunicated = no
@@ -1922,6 +1951,7 @@ country_decisions = {
 			always = no
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			primitives = no
 			capital_scope = {
 				culture_group = germanic
@@ -1968,6 +1998,7 @@ country_decisions = {
 			is_emperor_of_china = yes
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			is_at_war = no
 			stability = 3
 			meritocracy = 100
@@ -1994,6 +2025,7 @@ country_decisions = {
 			has_country_modifier = byz_aristocrats_m
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			stability = 1
 			NOT = {
 				has_estate_privilege = estate_nobles_emboldened_aristocrats
@@ -2019,6 +2051,7 @@ country_decisions = {
 			has_country_modifier = byz_bureaucrats_m
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			government_reform_progress = 10
 			NOT = { num_of_states = 25 }
 			has_3_lv2_advisors_trigger = yes
@@ -2042,6 +2075,7 @@ country_decisions = {
 			has_country_modifier = byz_defenses_m
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			#calc_true_if = {
 				#desc = byz_defenses_d.tt2
 				#all_owned_province = {
@@ -2172,6 +2206,7 @@ country_decisions = {
 			has_country_modifier = byz_army_m
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			if = {
 				limit = { has_dlc = "Cradle of Civilization" }
 				OR = {
@@ -2204,6 +2239,7 @@ country_decisions = {
 			has_country_modifier = byz_unrest_m
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			is_at_war = no
 			NOT = { average_autonomy_above_min = 1 }
 			NOT = {
@@ -2259,6 +2295,7 @@ country_decisions = {
 			has_estate = estate_church
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			has_regency = no
 			has_estate_privilege = estate_church_flexible_deities
 			custom_trigger_tooltip = {
@@ -2298,6 +2335,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			is_at_war = no
 			papacy_active = yes
 			papal_influence = 100
@@ -2339,6 +2377,7 @@ country_decisions = {
 			NOT = { has_country_flag = ended_fitna_by_low_authority }
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			stability = 1
 			custom_trigger_tooltip = {
 				tooltip = great_fitna.tt
@@ -2365,6 +2404,7 @@ country_decisions = {
 			NOT = { has_country_flag = ended_fitna_by_low_authority }
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			stability = 1
 			OR = {
 				custom_trigger_tooltip = {

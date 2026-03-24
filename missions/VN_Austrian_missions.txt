@@ -19,6 +19,7 @@ vn_hab_missions_slot_1 = {
 		icon = mission_the_austrian_succession
         required_missions = { }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
             reform_level = 2
             stability = 2
 			if = {
@@ -42,6 +43,7 @@ vn_hab_missions_slot_1 = {
 		icon = the_spanish_succession
         required_missions = { vn_hab_overcome_bruderzwist }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
             if = {
                 limit = { has_dlc = "Common Sense" }
                 legitimacy_equivalent = 95
@@ -72,6 +74,7 @@ vn_hab_missions_slot_1 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
             tirol_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -96,6 +99,7 @@ vn_hab_missions_slot_1 = {
 		icon = secure_our_rule
 		required_missions = { vn_hab_conquer_tirol }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			if = {
                 limit = { government = monarchy }
                 num_of_royal_marriages = 5
@@ -167,6 +171,7 @@ vn_hab_missions_slot_1 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				value = 12
 				OR = {
@@ -212,6 +217,7 @@ vn_hab_missions_slot_1 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
             num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				value = 12
 				OR = {
@@ -268,6 +274,7 @@ vn_hab_missions_slot_1 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
             num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				value = 12
                 OR = {
@@ -299,6 +306,7 @@ vn_hab_missions_slot_1 = {
             }
         }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
             NOT = {
                 any_owned_province = {
                     culture = hungarian
@@ -342,6 +350,7 @@ vn_hab_missions_slot_1 = {
 		icon = multicultural_empire
         required_missions = { vn_hab_hungarian_restriction }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			num_accepted_cultures = 7
 			NOT = { has_spawned_rebels = nationalist_rebels }
 		}
@@ -366,6 +375,7 @@ vn_hab_missions_slot_1 = {
             }
         }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
             any_ally = {
                 any_rival_country = {
                     primary_culture = turkish
@@ -404,6 +414,7 @@ vn_hab_missions_slot_2 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			carinthia_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -450,6 +461,7 @@ vn_hab_missions_slot_2 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
             salzburg_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -476,6 +488,7 @@ vn_hab_missions_slot_2 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
             num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
                 value = 18
                 OR = {
@@ -524,6 +537,7 @@ vn_hab_missions_slot_2 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
             ingolstadt_area = {
                 country_or_non_sovereign_subject_holds = ROOT
             }
@@ -593,6 +607,7 @@ vn_hab_missions_slot_2 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
             ingolstadt_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -627,6 +642,7 @@ vn_hab_missions_slot_2 = {
         icon = alpine_defenses
         required_missions = { }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
             capital_scope = {
                 has_fort_15th_trigger = yes
             }
@@ -806,6 +822,7 @@ vn_hab_missions_slot_2 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			nagyatad_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -934,6 +951,7 @@ vn_hab_missions_slot_2 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
             num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
                 value = 14
                 region = transylvania_region
@@ -1000,6 +1018,7 @@ vn_hab_missions_slot_2 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
             num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
                 value = 14
                 OR = {
@@ -1075,6 +1094,7 @@ vn_hab_missions_slot_2 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
             num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
                 value = 16
                 OR = {
@@ -1104,6 +1124,7 @@ vn_hab_missions_slot_2 = {
             }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             any_country = {
                 primary_culture = turkish
                 humiliated_by = ROOT
@@ -1153,6 +1174,7 @@ vn_hab_missions_slot_3 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			styria_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -1193,6 +1215,7 @@ vn_hab_missions_slot_3 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			linz_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -1228,6 +1251,7 @@ vn_hab_missions_slot_3 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			carniola_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -1256,6 +1280,7 @@ vn_hab_missions_slot_3 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			istria_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -1276,6 +1301,7 @@ vn_hab_missions_slot_3 = {
 		icon = mission_monarch_in_throne_room
         required_missions = { }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
             if = {
                 limit = { has_dlc = "Emperor" }
                 OR = {
@@ -1342,6 +1368,7 @@ vn_hab_missions_slot_3 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
             burgundy_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -1392,6 +1419,7 @@ vn_hab_missions_slot_3 = {
         icon = king_of_aragon
         required_missions = { vn_hab_conquer_burgundy }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             OR = {
                 NOT = { exists = FRA }
                 is_rival = FRA
@@ -1428,6 +1456,7 @@ vn_hab_missions_slot_3 = {
 		icon = king_of_the_franks
         required_missions = { vn_hab_spanish_union }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			calc_true_if = {
 				OR = {
 					french_superregion = {
@@ -1470,6 +1499,7 @@ vn_hab_missions_slot_3 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
             num_of_owned_provinces_with = {
                 value = 24
                 OR = {
@@ -1565,6 +1595,7 @@ vn_hab_missions_slot_3 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
             num_of_owned_provinces_with = {
                 value = 16
                 OR = {
@@ -1631,6 +1662,7 @@ vn_hab_missions_slot_3 = {
         icon = a_place_among_the_great_powers
         required_missions = { }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             if = {
                 limit = { has_dlc = "Rights of Man" }
                 is_great_power = yes
@@ -1678,6 +1710,7 @@ vn_hab_missions_slot_3 = {
 		icon = professional_army
         required_missions = { vn_hab_reorganize_alliances }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
             if = {
                 limit = { has_dlc = "Cradle of Civilization" }
                 army_professionalism = 0.25
@@ -1716,6 +1749,7 @@ vn_hab_missions_slot_3 = {
             }
         }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
             is_in_war = {
                 attacker_leader = ROOT
                 casus_belli = cb_crush_the_revolution
@@ -1752,6 +1786,7 @@ vn_hab_missions_slot_4 = {
 		icon = support_the_orders
         required_missions = { }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
             num_of_owned_provinces_with = {
 				value = 3
 				area = wien_area
@@ -1782,6 +1817,7 @@ vn_hab_missions_slot_4 = {
 		icon = wars_of_religion
         required_missions = { vn_hab_join_the_inquisition }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
             custom_trigger_tooltip = {
                 tooltip = vn_hab_survive_reformation.tt
                 OR = {
@@ -1800,6 +1836,7 @@ vn_hab_missions_slot_4 = {
 		icon = mission_hands_praying
         required_missions = { vn_hab_survive_reformation }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
             OR = {
                 AND = {
                     full_idea_group = humanist_ideas
@@ -1835,6 +1872,7 @@ vn_hab_missions_slot_4 = {
             }
         }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
             is_emperor = yes
             if = {
                 limit = { has_dlc = "Emperor" }
@@ -1870,6 +1908,7 @@ vn_hab_missions_slot_4 = {
 		icon = lead_the_empire
         required_missions = { vn_hab_united_in_faith }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             is_emperor = yes
             OR = {
                 hre_reform_passed = emperor_erbkaisertum
@@ -1901,6 +1940,7 @@ vn_hab_missions_slot_4 = {
 		icon = a.e.i.o.u.
         required_missions = { vn_hab_eternal_empire }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
             tag = EAH
             NOT = {
                 any_owned_province = {
@@ -1934,6 +1974,7 @@ vn_hab_missions_slot_4 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
             antwerp_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -1999,6 +2040,7 @@ vn_hab_missions_slot_4 = {
            NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			antwerp_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -2055,6 +2097,7 @@ vn_hab_missions_slot_4 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
             num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
                 value = 10
                 OR = {
@@ -2148,6 +2191,7 @@ vn_hab_missions_slot_4 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
             num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
                 value = 20
                 area = brescia_area
@@ -2278,6 +2322,7 @@ vn_hab_missions_slot_4 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
                 value = 30
                 OR = {
@@ -2311,6 +2356,7 @@ vn_hab_missions_slot_4 = {
 		icon = imperial_ascendancy
         required_missions = { vn_hab_university_of_wien }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
             government = monarchy
             absolutism = 50
             has_institution = enlightenment
@@ -2336,6 +2382,7 @@ vn_hab_missions_slot_4 = {
             province_id = 2172
         }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
             2172 = {
                 owned_by = ROOT
                 is_capital_of = ROOT
@@ -2390,6 +2437,7 @@ vn_hab_missions_slot_5 = {
             }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             is_emperor = yes
             calc_true_if = {
                 desc = gen_hre_electors.tooltip
@@ -2411,6 +2459,7 @@ vn_hab_missions_slot_5 = {
 		icon = all_bases_covered
         required_missions = { vn_hab_imperial_ambition }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             is_emperor = yes
             imperial_influence = 25
 			OR = {
@@ -2450,6 +2499,7 @@ vn_hab_missions_slot_5 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             bohemia_region = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOt
@@ -2478,6 +2528,7 @@ vn_hab_missions_slot_5 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             silesia_region = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -2544,6 +2595,7 @@ vn_hab_missions_slot_5 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             peremyshl_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -2614,6 +2666,7 @@ vn_hab_missions_slot_5 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             radom_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -2643,6 +2696,7 @@ vn_hab_missions_slot_5 = {
         icon = mission_control_venice
         required_missions = { }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             is_year = 1450
             any_owned_province = {
                 superregion = italy_superregion
@@ -2713,6 +2767,7 @@ vn_hab_missions_slot_5 = {
         icon = mission_rb_grow_the_channel
         required_missions = { vn_hab_rivalry_with_venice }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             calc_true_if = {
                 amount = 2
                 num_of_light_ship = 10
@@ -2748,6 +2803,7 @@ vn_hab_missions_slot_5 = {
             }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             112 = {
                 is_strongest_trade_power = ROOT
             }
@@ -2771,6 +2827,7 @@ vn_hab_missions_slot_5 = {
 		icon = balance_the_estates
         required_missions = { }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
             stability = 1
             OR = {
                 NOT = { has_estate = estate_nobles }
@@ -2815,6 +2872,7 @@ vn_hab_missions_slot_5 = {
             }
         }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
             has_3_lv3_advisors_trigger = yes
             2172 = {
                 owned_by = ROOT

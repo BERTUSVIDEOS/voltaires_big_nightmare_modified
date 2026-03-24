@@ -37,6 +37,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
 			NOT = { exists = EFR }
@@ -109,6 +110,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
 			NOT = { exists = FRI }
@@ -185,6 +187,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			is_at_war = no
 			owns_core_province = 2383 #Groningen
 			development_in_provinces = {
@@ -244,7 +247,7 @@ country_decisions = {
 			root = {
 				NOT = {
 					num_of_owned_provinces_with = {
-						value = 1121	#1121/1697
+						value = 1121	# 1121/1697
 						OR = {
 							superregion = french_superregion
 							superregion = italy_superregion
@@ -260,11 +263,12 @@ country_decisions = {
 			}
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			is_at_war = no
 			is_free_or_tributary_trigger = yes
 			government = monarchy
 			num_of_owned_provinces_with = {
-				value = 1121	#1121/1697
+				value = 1121	# 1121/1697
 				OR = {
 					superregion = french_superregion
 					superregion = italy_superregion
@@ -275,10 +279,13 @@ country_decisions = {
 		}
 		effect = {
 			change_tag = FKE
-			on_change_tag_effect = yes
-			hidden_effect = { restore_country_name = yes }
 			swap_non_generic_missions = yes
-			set_formable_tier = { tier = 5 }
+			set_formable_tier = {
+				tier = 5
+				gov_rank = 6
+				base_reform = monarchy
+				gov_reform = frankish_monarchy_reform
+			}
 			custom_tooltip = frankish_culture_provinces_tooltip
 			hidden_effect = {
 				every_owned_province = {
@@ -296,26 +303,6 @@ country_decisions = {
 					}
 					set_in_empire = no
 				}
-			}
-			if = {
-				limit = { 
-					NOT = { government = monarchy }
-					is_revolutionary = no
-				}
-				change_government = monarchy
-			}
-			if = {
-				limit = { is_revolutionary = no }
-				unlock_government_reform = {
-					government_reform = frankish_monarchy_reform
-				}
-				add_government_reform = frankish_monarchy_reform
-			}
-			if = {
-				limit = {
-					NOT = { government_rank = 6 }
-				}
-				set_government_rank = 6
 			}
 			custom_tooltip = tooltip_new_claims_unlocked
 			hidden_effect = {
@@ -403,6 +390,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			is_at_war = no
 			government = monarchy
 			adm_tech = 15
@@ -433,10 +421,19 @@ country_decisions = {
 		}
 		effect = {
 			change_tag = EAH
-			on_change_tag_effect = yes
-			hidden_effect = { restore_country_name = yes }
 			remove_non_electors_emperors_from_empire_effect = yes
-			set_formable_tier = { tier = 4 }
+			set_formable_tier = {
+				tier = 4
+				gov_rank = 6
+				region = austria_region
+			}
+			bohemia_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = OSE
+			}
 			if = {
 				limit = {
 					senior_union_with = BOH
@@ -451,32 +448,11 @@ country_decisions = {
 				}
 				inherit = HUN
 			}
-			if = {
-				limit = {
-					NOT = { government_rank = 6 }
-				}
-				set_government_rank = 6
-			}
-			austria_region = {
-				limit = {
-					NOT = { owned_by = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = OSE
-			}
-			bohemia_region = {
-				limit = {
-					NOT = { owned_by = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = OSE
-			}
 			add_country_modifier = {
 				name = "centralization_modifier"
 				duration = 3650
 			}
 			add_prestige = 50
-			set_country_flag = super_formable_flag
 			if = {
 				limit = { has_custom_ideas = no }
 				country_event = { id = ideagroups.1 } #Swap Ideas
@@ -528,8 +504,9 @@ country_decisions = {
 			}
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			is_at_war = no
-			own_core_province = 344
+			is_core = 344
 			development_in_provinces = {
 				value = 300
 				OR = {
@@ -601,6 +578,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
 			owns_core_province = 1951 #koln

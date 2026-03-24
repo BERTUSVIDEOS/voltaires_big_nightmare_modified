@@ -9,6 +9,7 @@ country_decisions = {
 			has_estate = estate_church
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			has_not_any_estate_disaster_active = yes
 			estate_action_off_cooldown = {
 				estate_action = MAKE_GENEROUS_DONATION_CHURCH
@@ -50,6 +51,7 @@ country_decisions = {
 			has_estate = estate_church
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			has_not_any_estate_disaster_active = yes
 			estate_action_off_shared_cooldown = {
 				estate_action = RECRUIT_ADVISOR_CHURCH
@@ -84,6 +86,7 @@ country_decisions = {
 			has_estate = estate_church
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			has_not_any_estate_disaster_active = yes
 			estate_action_off_shared_cooldown = {
 				estate_action = RECRUIT_ADVISOR_CHURCH
@@ -119,6 +122,7 @@ country_decisions = {
 			NOT = { tag = PAP }
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			has_not_any_estate_disaster_active = yes
 			estate_action_off_cooldown = {
 				estate_action = RELIGIOUS_DELEGATION_CHURCH
@@ -160,6 +164,7 @@ country_decisions = {
 			has_estate = estate_church
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			has_not_any_estate_disaster_active = yes
 			estate_loyalty = {
 				estate = estate_church
@@ -209,6 +214,7 @@ country_decisions = {
 			has_estate = estate_church
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			has_not_any_estate_disaster_active = yes
 			estate_action_off_cooldown = {
 				estate_action = SEEK_SUPPORT_OF_CLERGY_CHURCH
@@ -269,6 +275,7 @@ country_decisions = {
 			has_estate = estate_church
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			has_not_any_estate_disaster_active = yes
 			estate_action_off_cooldown = {
 				estate_action = NEW_WORLD_MISSION_CHURCH

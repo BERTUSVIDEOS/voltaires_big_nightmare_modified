@@ -13,6 +13,7 @@ VN_generic_horde_missions = {
         required_missions = {}
         position = 5
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			horses = 5
 			num_of_cavalry = 15
 		}
@@ -28,6 +29,7 @@ VN_generic_horde_missions = {
 		icon = mission_roads
 		required_missions = { vn_children_of_the_steppes }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			num_of_owned_provinces_with = {
 				value = 10
 				OR = {
@@ -47,6 +49,7 @@ VN_generic_horde_missions = {
 		icon = mission_have_manufactories
 		required_missions = { vn_improve_horde_infrastructure }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			grown_by_development = 200
 			num_of_owned_provinces_with = {
 				value = 10
@@ -64,6 +67,7 @@ VN_generic_horde_missions = {
 		icon = mission_tribal_war
 		required_missions = { vn_development_of_the_horde }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			NOT = { average_unrest = 1 }
 			num_of_owned_provinces_with = {
 				value = 50
@@ -103,6 +107,7 @@ VN_generic_horde_missions_2 = {
 			province_id = 4237
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			4237 = {
 				OR = {
 					owned_by = ROOT
@@ -129,6 +134,7 @@ VN_generic_horde_missions_2 = {
 			province_id = 2419
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			2419 = {
 				OR = {
 					owned_by = ROOT
@@ -155,6 +161,7 @@ VN_generic_horde_missions_2 = {
 			province_id = 2233
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			2233 = {
 				OR = {
 					owned_by = ROOT

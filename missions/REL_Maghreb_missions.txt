@@ -15,6 +15,7 @@ vn_maghrebian_missions = {
         required_missions = {}
         position = 5
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			capital_scope = {
 				num_of_times_improved = 5
 				has_fort_trigger = yes
@@ -31,6 +32,7 @@ vn_maghrebian_missions = {
 		icon = mission_galleys_in_port
 		required_missions = { vn_palace_of_rule }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			naval_forcelimit = 16
 			num_of_light_ship = 10
 		}
@@ -45,6 +47,7 @@ vn_maghrebian_missions = {
 		icon = mission_bedouins
 		required_missions = { vn_maghrebian_piracy }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			num_of_owned_provinces_with = {
 				value = 5
 				OR = {
@@ -77,6 +80,7 @@ vn_maghrebian_missions = {
 			}
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			owns_core_province = 586
 			owns_core_province = 1153
 			owns_core_province = 1946

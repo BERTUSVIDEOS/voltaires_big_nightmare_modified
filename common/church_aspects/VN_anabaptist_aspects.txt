@@ -5,9 +5,7 @@ pentecostalism_aspect = {
 	modifier = {
 		global_missionary_strength = 0.01
 	}
-	ai_will_do = {
-		factor = 10
-	}
+	ai_will_do = { factor = 1 }
 	effect = {
 		hidden_effect = {
 			clr_protestant_aspects_buffs = yes
@@ -26,9 +24,7 @@ biblical_literalism_aspect = {
 	modifier = {
 		tolerance_own = 1
 	}
-	ai_will_do = {
-		factor = 10
-	}
+	ai_will_do = { factor = 1 }
 	effect = {
 		hidden_effect = {
 			clr_protestant_aspects_buffs = yes
@@ -45,17 +41,7 @@ banned_oaths_aspect = {
 	modifier = {
 		inflation_reduction = 0.1
 	}
-	ai_will_do = {
-		factor = 10
-		modifier = {
-			factor = 2
-			inflation = 5
-		}
-		modifier = {
-			factor = 2
-			inflation = 20
-		}
-	}
+	ai_will_do = { factor = 1 }
 	effect = {
 		hidden_effect = {
 			clr_protestant_aspects_buffs = yes
@@ -72,14 +58,7 @@ conscientious_objectors_aspect = {
 	modifier = {
 		war_exhaustion_cost = -0.075
 	}
-	ai_will_do = {
-		factor = 10
-		modifier = {
-			factor = 2
-			is_at_war = yes
-			war_exhaustion = 5
-		}
-	}
+	ai_will_do = { factor = 1 }
 	effect = {
 		hidden_effect = {
 			clr_protestant_aspects_buffs = yes
@@ -96,13 +75,7 @@ charismatic_manifestations_aspect = {
 	modifier = {
 		culture_conversion_cost = -0.075
 	}
-	ai_will_do = {
-		factor = 10
-		modifier = {
-			factor = 2
-			NOT = { dominant_culture = capital }
-		}
-	}
+	ai_will_do = { factor = 1 }
 	effect = {
 		hidden_effect = {
 			clr_protestant_aspects_buffs = yes
@@ -119,9 +92,7 @@ nonconformity_world_aspect = {
 	modifier = {
 		yearly_corruption = -0.05
 	}
-	ai_will_do = {
-		factor = 12
-	}
+	ai_will_do = { factor = 1 }
 	effect = {
 		hidden_effect = {
 			clr_protestant_aspects_buffs = yes
@@ -138,17 +109,7 @@ church_and_state_aspect = {
 	modifier = {
 		religious_unity = 0.1
 	}
-	ai_will_do = {
-		factor = 10
-		modifier = {
-			factor = 2
-			NOT = { religious_unity = 0.8 }
-		}
-		modifier = {
-			factor = 2
-			NOT = { religious_unity = 0.4 }
-		}
-	}
+	ai_will_do = { factor = 1 }
 	effect = {
 		hidden_effect = {
 			clr_protestant_aspects_buffs = yes
@@ -165,9 +126,7 @@ restricted_communion_aspect = {
 	modifier = {
 		hostile_attrition = 1
 	}
-	ai_will_do = {
-		factor = 14
-	}
+	ai_will_do = { factor = 1 }
 	effect = {
 		hidden_effect = {
 			clr_protestant_aspects_buffs = yes
@@ -184,9 +143,7 @@ communion_symbolism_aspect = {
 	modifier = {
 		land_maintenance_modifier = -0.05
 	}
-	ai_will_do = {
-		factor = 10
-	}
+	ai_will_do = { factor = 1 }
 	effect = {
 		hidden_effect = {
 			clr_protestant_aspects_buffs = yes
@@ -203,17 +160,7 @@ polygamy_aspect = {
 	modifier = {
 		global_tax_modifier = 0.1
 	}
-	ai_will_do = {
-		factor = 12
-		modifier = {
-			factor = 0.5
-			treasury = 500
-		}
-		modifier = {
-			factor = 0
-			treasury = 2500
-		}
-	}
+	ai_will_do = { factor = 1 }
 	effect = {
 		hidden_effect = {
 			clr_protestant_aspects_buffs = yes
@@ -230,9 +177,7 @@ ban_property_aspect = {
 	modifier = {
 		build_cost = -0.05
 	}
-	ai_will_do = {
-		factor = 10
-	}
+	ai_will_do = { factor = 1 }
 	effect = {
 		hidden_effect = {
 			clr_protestant_aspects_buffs = yes
@@ -249,13 +194,7 @@ celestial_flesh_aspect = {
 	modifier = {
 		warscore_cost_vs_other_religion = -0.1
 	}
-	ai_will_do = {
-		factor = 10
-		modifier = {
-			factor = 2
-			is_at_war = yes
-		}
-	}
+	ai_will_do = { factor = 1 }
 	effect = {
 		hidden_effect = {
 			clr_protestant_aspects_buffs = yes
@@ -272,9 +211,7 @@ millenarianism_aspect = {
 	modifier = {
 		free_mil_policy = 1
 	}
-	ai_will_do = {
-		factor = 10
-	}
+	ai_will_do = { factor = 1 }
 	effect = {
 		hidden_effect = {
 			clr_protestant_aspects_buffs = yes
@@ -291,9 +228,7 @@ piety_works_aspect = {
 	modifier = {
 		global_spy_defence = 0.1
 	}
-	ai_will_do = {
-		factor = 10
-	}
+	ai_will_do = { factor = 1 }
 	effect = {
 		hidden_effect = {
 			clr_protestant_aspects_buffs = yes

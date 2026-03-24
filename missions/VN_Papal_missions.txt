@@ -16,6 +16,7 @@ vn_pap_missions_slot_1 = {
         position = 1
         required_missions = {  }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             if = {
                 limit = { has_dlc = "Emperor" }
                 curia_treasury_size = 2500
@@ -59,6 +60,7 @@ vn_pap_missions_slot_1 = {
             }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             calc_true_if = {
                 desc = vn_pap_sanction_the_reconquista.tt
                 all_country = {
@@ -101,6 +103,7 @@ vn_pap_missions_slot_1 = {
             }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             iberia_superregion = {
                 type = all
                 owner = {
@@ -133,6 +136,7 @@ vn_pap_missions_slot_1 = {
             }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             if = {
 				limit = {
 					exists = SWE
@@ -194,6 +198,7 @@ vn_pap_missions_slot_1 = {
             }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             OR = {
                 custom_trigger_tooltip = {
                     tooltip = vn_pap_northern_crusades.tt
@@ -247,6 +252,7 @@ vn_pap_missions_slot_1 = {
             NOT = { religion_group = christian }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             6109 = { religion_group = christian }
             402 = { religion_group = christian }
             5793 = { religion_group = christian }
@@ -276,6 +282,7 @@ vn_pap_missions_slot_1 = {
         position = 7
         required_missions = {  }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             army_size = 25
             army_size_percentage = 0.75
             manpower_percentage = 0.75
@@ -294,6 +301,7 @@ vn_pap_missions_slot_1 = {
         position = 10
         required_missions = { vn_pap_milites_christianus }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             is_religion_enabled = waldensian
             is_religion_enabled = cathar
             is_religion_enabled = fraticelli
@@ -307,6 +315,7 @@ vn_pap_missions_slot_1 = {
         position = 11
         required_missions = { vn_pap_form_the_inquistion }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             is_religion_enabled = protestant
             is_religion_enabled = reformed
             num_of_missionaries = 3
@@ -320,6 +329,7 @@ vn_pap_missions_slot_1 = {
         position = 12
         required_missions = { vn_pap_weather_the_reformation }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             if = {
                 limit = { has_dlc = "Emperor" }
                 OR = {
@@ -372,6 +382,7 @@ vn_pap_missions_slot_1 = {
         position = 13
         required_missions = { vn_pap_council_of_trent }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             if = {
 				limit = { 
 					has_dlc = "Art of War"
@@ -481,6 +492,7 @@ vn_pap_missions_slot_1 = {
             NOT = { religion = catholic }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             italy_superregion = {
                 type = all
                 religion = catholic
@@ -511,6 +523,7 @@ vn_pap_missions_slot_2 = {
         position = 2
         required_missions = { vn_pap_in_nomine_domini }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             OR = {
                 NOT = { is_part_of_hre = yes }
                 is_elector = yes
@@ -529,6 +542,7 @@ vn_pap_missions_slot_2 = {
         position = 3
         required_missions = { vn_pap_supremacy_and_infallibility }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             is_papal_controller = yes
             OR = {
                 AND = {
@@ -607,6 +621,7 @@ vn_pap_missions_slot_2 = {
             }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             if = {
                 limit = {
                     hre_size = 1
@@ -646,6 +661,7 @@ vn_pap_missions_slot_2 = {
         position = 6
         required_missions = { vn_pap_influence_the_electors vn_pap_guelphian_victory }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             if = {
                 limit = {
                     hre_size = 1
@@ -682,7 +698,8 @@ vn_pap_missions_slot_2 = {
         icon = shield_of_christendom
         position = 7
         required_missions = {  }
-        trigger = {   #BERTUS MOD
+        trigger = {
+			if = { limit = { ai = yes } ai = no }   #BERTUS MOD
             any_country = {
                 ROOT = {
                     OR = {
@@ -746,6 +763,7 @@ vn_pap_missions_slot_2 = {
             }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             4974 = {
                 owner = {
                     religion = catholic
@@ -788,6 +806,7 @@ vn_pap_missions_slot_2 = {
             NOT = { religion = catholic }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             calc_true_if = {
                 amount = 50
                 desc = vn_pap_revive_christian_communities.tt
@@ -819,6 +838,7 @@ vn_pap_missions_slot_2 = {
             }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             OR = {
 				custom_trigger_tooltip = {
 					tooltip = vn_pap_cradle_of_christianity.tt
@@ -891,6 +911,7 @@ vn_pap_missions_slot_2 = {
             }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             calc_true_if = {
                 amount = 5
                 all_country = {
@@ -922,6 +943,7 @@ vn_pap_missions_slot_2 = {
             owner = { NOT = { religion = catholic } }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             if = {
                 limit = { has_dlc = "Rights of Man" }
                 is_great_power = yes
@@ -980,6 +1002,7 @@ vn_pap_missions_slot_3 = {
         position = 1
         required_missions = { }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			devotion = 90
             num_of_cardinals = 3
         }
@@ -1008,6 +1031,7 @@ vn_pap_missions_slot_3 = {
             }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			custom_trigger_tooltip = {
 				tooltip = vn_pap_guelphs_and_ghibellines.tt
 				has_global_flag = guelph_ghib_enabled
@@ -1043,6 +1067,7 @@ vn_pap_missions_slot_3 = {
             }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             OR = {
                 NOT = { hre_size = 1 }
                 war_score_against = {
@@ -1076,6 +1101,7 @@ vn_pap_missions_slot_3 = {
             NOT = { religion = catholic }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             calc_true_if = {
                 amount = 25
                 desc = vn_pap_conquer_egypt.tt
@@ -1114,6 +1140,7 @@ vn_pap_missions_slot_3 = {
             NOT = { religion = catholic }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             calc_true_if = {
                 amount = 25
                 desc = vn_pap_conquer_tunis.tt
@@ -1140,6 +1167,7 @@ vn_pap_missions_slot_3 = {
         position = 11
         required_missions = { vn_pap_cradle_of_christianity }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             exists = ILK
             ILK = { NOT = { religion_group = christian } }
             reverse_has_opinion = {
@@ -1175,6 +1203,7 @@ vn_pap_missions_slot_4 = {
             owned_by = LZO
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             LZO = {
                 OR = {
                     exists = no
@@ -1202,6 +1231,7 @@ vn_pap_missions_slot_4 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             spoleto_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -1236,6 +1266,7 @@ vn_pap_missions_slot_4 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             urbino_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -1336,6 +1367,7 @@ vn_pap_missions_slot_4 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
                 value = 16
                 OR = {
@@ -1435,6 +1467,7 @@ vn_pap_missions_slot_4 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
                 value = 24
                 OR = {
@@ -1528,6 +1561,7 @@ vn_pap_missions_slot_4 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
                 value = 20
                 OR = {
@@ -1558,6 +1592,7 @@ vn_pap_missions_slot_4 = {
         position = 7
         required_missions = { vn_pap_conquer_lombardy }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             num_of_cities = 250
             has_reform = kingdom_of_god_reform
         }
@@ -1591,6 +1626,7 @@ vn_pap_missions_slot_4 = {
             province_id = 2233
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             2233 = {
                 owner = {
                     religion = catholic
@@ -1631,6 +1667,7 @@ vn_pap_missions_slot_4 = {
             }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			2233 = {
 				owner = {
                     religion = catholic
@@ -1685,6 +1722,7 @@ vn_pap_missions_slot_4 = {
         position = 12
         required_missions = {  }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             any_country = {
                 primary_culture = swiss
                 army_tradition = 50
@@ -1725,6 +1763,7 @@ vn_pap_missions_slot_5 = {
         position = 1
         required_missions = {  }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             if = {
 				limit = {
 					has_dlc = "Emperor"
@@ -1744,6 +1783,7 @@ vn_pap_missions_slot_5 = {
         position = 2
         required_missions = { vn_pap_papal_treasuries }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			if = {
 				limit = { has_dlc = "Mandate of Heaven" }
 				OR = {
@@ -1773,6 +1813,7 @@ vn_pap_missions_slot_5 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
                 value = 9
                 OR = {
@@ -1842,6 +1883,7 @@ vn_pap_missions_slot_5 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
                 value = 16
                 OR = {
@@ -1871,6 +1913,7 @@ vn_pap_missions_slot_5 = {
             }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             owns_core_province = 202
         }
         effect = {
@@ -1891,6 +1934,7 @@ vn_pap_missions_slot_5 = {
         required_missions = { vn_pap_a_courteous_gift }
         completed_by = 1378.9.20
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             is_religion_enabled = catholique
             custom_trigger_tooltip = {
                 tooltip = vn_pap_babylonian_captivity.tt
@@ -1931,6 +1975,7 @@ vn_pap_missions_slot_5 = {
         position = 8
         required_missions = { vn_pap_babylonian_captivity }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             202 = { country_or_non_sovereign_subject_holds = ROOT }
         }
         effect = {
@@ -1953,6 +1998,7 @@ vn_pap_missions_slot_5 = {
             province_id = 2708
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             2708 = {
                 owned_by = ROOT
                 num_of_times_improved_by_owner = 10
@@ -2022,6 +2068,7 @@ vn_pap_missions_slot_5 = {
         position = 10
         required_missions = { vn_pap_the_city_of_god }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			num_of_owned_provinces_with = {
 				value = 5
 				has_education_building_trigger = yes
@@ -2050,6 +2097,7 @@ vn_pap_missions_slot_5 = {
             }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             monthly_adm = 10
             2708 = {
                 owned_by = ROOT
@@ -2090,6 +2138,7 @@ vn_pap_missions_slot_5 = {
             }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             monthly_income = 50
             2708 = {
                 owned_by = ROOT
@@ -2119,6 +2168,7 @@ vn_pap_missions_slot_5 = {
         position = 14
         required_missions = { vn_pap_sistine_chapel }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             has_completed_all_reforms_trigger = yes
             absolutism = 50
         }

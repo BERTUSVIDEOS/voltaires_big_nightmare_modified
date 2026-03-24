@@ -10,6 +10,7 @@ country_decisions = {
 			has_dlc = "Emperor"
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			is_revolutionary = yes
 
 			if = {
@@ -43,6 +44,7 @@ country_decisions = {
 			NOT = { has_country_modifier = professional_revolutionary_guard_modifier }
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			is_revolutionary = yes
 			army_professionalism = 0.4
 		}
@@ -68,6 +70,7 @@ country_decisions = {
 			NOT = { has_country_modifier = professional_revolutionary_guard_modifier }
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			is_revolutionary = yes
 		}
 		effect = {
@@ -95,6 +98,7 @@ country_decisions = {
 			has_dlc = "Emperor"
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			is_revolutionary = yes
 			if = {
 				limit = { has_dlc = "Cradle of Civilization" }

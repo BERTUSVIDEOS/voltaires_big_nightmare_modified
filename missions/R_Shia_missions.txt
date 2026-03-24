@@ -11,6 +11,7 @@ vn_shia_missions = {
 		icon = mission_muslim_warrior
 		required_missions = {}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			is_defender_of_faith = yes
 			num_of_generals = 2
 			army_size = 20
@@ -26,6 +27,7 @@ vn_shia_missions = {
 		icon = mission_ottoman_harem
 		required_missions = {}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			spymaster = 3
 			if = {
 				limit = { has_dlc = "Cradle of Civilization" }
@@ -46,6 +48,7 @@ vn_shia_missions = {
 		icon = mission_mosque
 		required_missions = { vn_recruit_hashashin }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			diplomatic_reputation = 8
 			if = {
 				limit = { uses_piety = yes }

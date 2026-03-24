@@ -67,6 +67,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			if = {
 				limit = { has_dlc = "Mandate of Heaven" }
 				OR = {

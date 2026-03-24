@@ -30,6 +30,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			adm_tech = 10
 			is_at_war = no
 			owns_core_province = 4656 #fez
@@ -46,24 +47,15 @@ country_decisions = {
 			hidden_effect = { restore_country_name = yes }
 			swap_non_generic_missions = yes
 			remove_non_electors_emperors_from_empire_effect = yes
-			set_formable_tier = { tier = 3 }
-			if = {
-				limit = {
-					NOT = { government_rank = 4 }
-				}
-				set_government_rank = 4
-			}
-			morocco_region = {
-				limit = {
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = MOR
+			set_formable_tier = {
+				tier = 3
+				gov_rank = 4
+				region = morocco_region
+				capital = 4762
+				base_reform = monarchy
+				gov_reform = barbary_sultanate_reform
 			}
 			add_prestige = 25
-			if = {
-				limit = { is_tribal = yes }
-				change_government = monarchy
-			}
 			change_primary_culture = moroccan
 			set_country_flag = formed_morocco_flag
 			if = {
@@ -123,6 +115,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			is_at_war = no
 			owns_core_province = 1946 #Algiers
 			development_in_provinces = {
@@ -216,6 +209,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			NOT = { exists = TUN }
 			is_at_war = no
 			is_nomad = no
@@ -304,6 +298,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			NOT = { exists = TRP }
 			is_at_war = no
 			is_free_or_tributary_trigger = yes

@@ -20,6 +20,7 @@ vn_crn_missions_slot_1 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             is_subject = no
             devon_area = {
                 type = all
@@ -49,6 +50,7 @@ vn_crn_missions_slot_1 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             somerset_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -76,6 +78,7 @@ vn_crn_missions_slot_1 = {
             NOT = { culture = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             calc_true_if = {
                 desc = vn_crn_enlarge_our_culture.tt
                 amount = 15
@@ -109,6 +112,7 @@ vn_crn_missions_slot_2 = {
         position = 1
         required_missions = {  }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             if = {
                 limit = {
                     any_country = { primary_culture = breton }
@@ -180,6 +184,7 @@ vn_crn_missions_slot_2 = {
             owner = { is_elector = yes }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             OR = {
                 is_emperor = yes
                 any_elector = {
@@ -203,6 +208,7 @@ vn_crn_missions_slot_2 = {
             province_id = 320
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             320 = {
                 owned_by = ROOT
                 is_core = ROOT
@@ -228,6 +234,7 @@ vn_crn_missions_slot_2 = {
             vn_crn_enlarge_our_culture
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             artist = 3
             has_3_lv3_advisors_trigger = yes
             is_subject = no
@@ -255,6 +262,7 @@ vn_crn_missions_slot_3 = {
         position = 1
         required_missions = {  }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             if = {
                 limit = {
                     any_country = { primary_culture = welsh }
@@ -327,6 +335,7 @@ vn_crn_missions_slot_3 = {
 			vn_crn_irish_relations 
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             OR = {
                 AND = {
                     num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
@@ -395,6 +404,7 @@ vn_crn_missions_slot_3 = {
             province_id = 2170
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             2170 = {
                 owned_by = ROOT
                 is_core = ROOT
@@ -427,6 +437,7 @@ vn_crn_missions_slot_4 = {
         position = 1
         required_missions = {  }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             if = {
                 limit = {
                     any_country = { 
@@ -500,6 +511,7 @@ vn_crn_missions_slot_4 = {
             province_id = 320
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             320 = {
                 owned_by = ROOT
                 is_core = ROOT
@@ -524,6 +536,7 @@ vn_crn_missions_slot_4 = {
         position = 3
         required_missions = { vn_crn_tin_miners_of_cornwall }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             reform_level = 5
             stability = 2
         }
@@ -541,6 +554,7 @@ vn_crn_missions_slot_4 = {
         position = 4
         required_missions = { vn_crn_stannary_laws }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             has_institution = industrialization
             320 = {
                 owned_by = ROOT
@@ -592,6 +606,7 @@ vn_crn_missions_slot_5 = {
         position = 1
         required_missions = {  }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             num_ships_privateering = 10
             num_of_admirals = 1
         }
@@ -609,6 +624,7 @@ vn_crn_missions_slot_5 = {
         position = 2
         required_missions = { vn_crn_smuggling_business }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             navy_size_percentage = 0.8
             naval_forcelimit = 40
             navy_tradition = 50
@@ -636,6 +652,7 @@ vn_crn_missions_slot_5 = {
             NOT = { owned_by = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             tin = 10
         }
         effect = {

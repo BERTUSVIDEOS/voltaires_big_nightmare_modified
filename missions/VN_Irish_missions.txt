@@ -16,6 +16,7 @@ vn_ire_missions_slot_1_a = {
         position = 3
         required_missions = { vn_ire_take_back_dal_riata }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             num_of_transport = 20
             navy_tradition = 40
             has_leader_with = {
@@ -38,6 +39,7 @@ vn_ire_missions_slot_1_a = {
         position = 5
         required_missions = { vn_ire_construct_long_fata }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             num_of_owned_provinces_with = {
                 value = 10
                 trade_goods = fish
@@ -70,6 +72,7 @@ vn_ire_missions_slot_1_a = {
             }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             258 = {
                 trade_share = {
                     country = ROOT
@@ -123,6 +126,7 @@ vn_ire_missions_slot_2_a = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             hebrides_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -157,6 +161,7 @@ vn_ire_missions_slot_2_a = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             caithness_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -189,6 +194,7 @@ vn_ire_missions_slot_2_a = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             scotland_region = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -216,6 +222,7 @@ vn_ire_missions_slot_2_a = {
             owned_by = ROOT
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             NOT = {
                 any_owned_province = {
                     unrest = 0
@@ -253,6 +260,7 @@ vn_ire_missions_slot_3_a = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             108 = { country_or_non_sovereign_subject_holds = ROOT }
         }
         effect = {
@@ -327,6 +335,7 @@ vn_ire_missions_slot_3_a = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			walesnorth_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -378,6 +387,7 @@ vn_ire_missions_slot_3_a = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			wessex_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -422,6 +432,7 @@ vn_ire_missions_slot_3_b = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             british_isles_superregion = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -529,6 +540,7 @@ vn_ire_missions_slot_3_b = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
                 value = 10
                 has_port = yes
@@ -617,6 +629,7 @@ vn_ire_missions_slot_4_a = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			east_riding_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -672,6 +685,7 @@ vn_ire_missions_slot_4_a = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			west_midlands_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -764,6 +778,7 @@ vn_ire_missions_slot_4_a = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			norwich_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -805,6 +820,7 @@ vn_ire_missions_slot_4_b = {
         position = 5
         required_missions = { vn_ire_cu_chulainn }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             num_of_infantry = 40
             army_tradition = 60
             army_professionalism = 0.5
@@ -823,6 +839,7 @@ vn_ire_missions_slot_4_b = {
         position = 6
         required_missions = { vn_ire_revive_fianna }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             manpower = 10
             calc_true_if = {
                 amount = 3
@@ -880,6 +897,7 @@ vn_ire_missions_slot_5_a = {
         position = 1
         required_missions = {  }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             num_of_owned_provinces_with = {
                 value = 3
                 area = meath_area
@@ -911,6 +929,7 @@ vn_ire_missions_slot_5_a = {
             province_id = 2737
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             2737 = {
                 num_of_times_improved_by_owner = 10
                 calc_true_if = {
@@ -941,6 +960,7 @@ vn_ire_missions_slot_5_a = {
         position = 3
         required_missions = { vn_ire_the_fair_city }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             num_of_owned_provinces_with = {
                 value = 15
                 has_tax_building_trigger = yes
@@ -975,6 +995,7 @@ vn_ire_missions_slot_5_a = {
         position = 4
         required_missions = { vn_ire_irish_faith }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             land_forcelimit = 75
             NOT = {
                 any_owned_province = {
@@ -1011,6 +1032,7 @@ vn_ire_missions_slot_5_b = {
         position = 7
         required_missions = { vn_ire_foreign_volunteers }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             num_of_heavy_ship = 20
             naval_forcelimit = 75
             naval_reformer = 3

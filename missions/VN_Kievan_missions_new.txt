@@ -58,6 +58,7 @@ vn_kie_missions_1 = {
 		}
 
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			if = { 
 				limit = {
 					OR = { 
@@ -216,6 +217,7 @@ vn_kie_missions_1 = {
 		}
 
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			OR = { 
 				AND = {
 					yedisan_area = {
@@ -284,6 +286,7 @@ vn_kie_missions_1 = {
 		}
 
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			if = {
 				limit = { 
 					any_country = {
@@ -363,6 +366,7 @@ vn_kie_missions_1 = {
 		required_missions = { vn_kie_cuman_threat }
 
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			if = {
 				limit = { has_estate = estate_cossacks }
 				estate_loyalty = {
@@ -440,6 +444,7 @@ vn_kie_missions_2 = {
 		provinces_to_highlight = {  }
 
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			is_in_deficit = no
 			if = {
 				limit = { has_dlc = "Cradle of Civilization" }
@@ -462,7 +467,7 @@ vn_kie_missions_2 = {
 
 		effect = {
 			change_ruler_stat = {
-				stat = mil
+				type = mil
 				amount = 1
 			}
 			add_country_modifier = {
@@ -494,6 +499,7 @@ vn_kie_missions_2 = {
 		}
 
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			if = {
 				limit = { has_dlc = "Mandate of Heaven" }
 				OR = {
@@ -571,7 +577,8 @@ vn_kie_missions_3_1 = {
 		required_missions = { vn_kie_aftermath_of_the_war }
 		provinces_to_highlight = {  }
 
-		trigger = { 
+		trigger = {
+			if = { limit = { ai = yes } ai = no } 
 			custom_trigger_tooltip = {
 				tooltip = selectable_mission_trigger_tt
 				always = no
@@ -604,6 +611,7 @@ vn_kie_missions_3_b = {
 		}
 
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			OR = {
 				owns_or_non_sovereign_subject_of = 2233
 				controls = 2233
@@ -659,6 +667,7 @@ vn_kie_missions_3_c = {
 		}
 
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			OR = {
 				owns_or_non_sovereign_subject_of = 2233
 				custom_trigger_tooltip = {
@@ -721,6 +730,7 @@ vn_kie_missions_3_d = {
 		}
 
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			owns_or_subject_of = 620
 			owns_or_subject_of = 2626
 			num_of_provinces_owned_or_owned_by_subjects_with = {
@@ -785,7 +795,8 @@ vn_kie_missions_3_d = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 
-		trigger = { 
+		trigger = {
+			if = { limit = { ai = yes } ai = no } 
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				value = 15
 				region = moldavia_region
@@ -851,6 +862,7 @@ vn_kie_missions_4_a = {
 		}
 
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			if = {
 				limit = { exists = BYZ }
 				BYZ = {
@@ -914,7 +926,8 @@ vn_kie_missions_4_b = {
 		required_missions = { vn_kie_aftermath_of_the_war }
 		provinces_to_highlight = {  }
 
-		trigger = { 
+		trigger = {
+			if = { limit = { ai = yes } ai = no } 
 			custom_trigger_tooltip = {
 				tooltip = selectable_mission_trigger_tt
 				always = no
@@ -930,7 +943,8 @@ vn_kie_missions_4_b = {
 		required_missions = { vn_kie_branching_mission_1 }
 		provinces_to_highlight = {  }
 
-		trigger = { 
+		trigger = {
+			if = { limit = { ai = yes } ai = no } 
 			custom_trigger_tooltip = {
 				tooltip = selectable_mission_trigger_tt
 				always = no
@@ -986,6 +1000,7 @@ vn_kie_missions_4_c = {
 		}
 
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			reform_level = 4
 			4237 = {
 				owned_by = ROOT
@@ -1045,7 +1060,8 @@ vn_kie_missions_4_c = {
 		required_missions = { vn_kie_patriarchal_seat }
 		provinces_to_highlight = {  }
 
-		trigger = { 
+		trigger = {
+			if = { limit = { ai = yes } ai = no } 
 			custom_trigger_tooltip = {  
 				tooltip = rus_6_tot_tt
 				has_global_modifier_value = { 
@@ -1108,7 +1124,8 @@ vn_kie_missions_4_d = {
 			}
 		}
 
-		trigger = { 
+		trigger = {
+			if = { limit = { ai = yes } ai = no } 
 			religion = orthodox
 			reform_level = 4
 			calc_true_if = {
@@ -1170,7 +1187,8 @@ vn_kie_missions_4_d = {
 			}
 		}
 
-		trigger = { 
+		trigger = {
+			if = { limit = { ai = yes } ai = no } 
 			religion = orthodox
 			stability = 1
 			if = {
@@ -1230,7 +1248,8 @@ vn_kie_missions_4_e = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 
-		trigger = { 
+		trigger = {
+			if = { limit = { ai = yes } ai = no } 
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				value = 30
 				OR = {
@@ -1271,7 +1290,8 @@ vn_kie_missions_5 = {
 			}
 		}
 
-		trigger = { 
+		trigger = {
+			if = { limit = { ai = yes } ai = no } 
 			4237 = {
 				owned_by = ROOT
 				num_of_times_improved = 5
@@ -1323,7 +1343,8 @@ vn_kie_missions_5 = {
 			}
 		}
 
-		trigger = { 
+		trigger = {
+			if = { limit = { ai = yes } ai = no } 
 			OR = {
 				NOT = { has_idea_group = KIE_ideas }
 				has_idea = mother_of_russian_cities

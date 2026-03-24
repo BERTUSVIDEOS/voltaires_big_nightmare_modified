@@ -21,6 +21,7 @@ VN_BYZ_missions_slot_1_a = {
 		required_missions = { }
 		completed_by = 1081.4.4
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			custom_trigger_tooltip = {
 				tooltip = vn_byz_komnenian_succession.tt
 				OR = {
@@ -41,6 +42,7 @@ VN_BYZ_missions_slot_1_a = {
 		icon = mission_monarch_in_throne_room
 		required_missions = { vn_byz_komnenian_succession }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			crown_land_share = 30
 			months_of_ruling = 120
 			adm = 4
@@ -59,6 +61,7 @@ VN_BYZ_missions_slot_1_a = {
 		icon = mission_restore_kiev
 		required_missions = { vn_byz_talented_ruler }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			prestige = 50
 			if = {
 				limit = { uses_patriarch_authority = yes }
@@ -120,6 +123,7 @@ VN_BYZ_missions_slot_1_a = {
 			}
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			OR = {
 				NOT = { hre_size = 1 }
 				AND = {
@@ -163,6 +167,7 @@ VN_BYZ_missions_slot_2_a = {
 		required_missions = { vn_byz_komnenian_succession }
 		completed_by = 1100.1.1
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
             if = {
                 limit = { has_dlc = "Common Sense" }
                 legitimacy_equivalent = 100
@@ -195,6 +200,7 @@ VN_BYZ_missions_slot_2_a = {
 		required_missions = { vn_byz_born_in_the_purple }
 		completed_by = 1100.1.1
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			OR = {
 				AND = {
 					is_rival = PAP
@@ -241,6 +247,7 @@ VN_BYZ_missions_slot_2_a = {
 		icon = mission_rb_mediterranean_authority
 		required_missions = { vn_byz_abolish_eastern_monarchy vn_byz_talented_ruler }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			if = {
 				limit = { has_dlc = "Rights of Man" }
 				any_ally = {
@@ -289,6 +296,7 @@ VN_BYZ_missions_slot_3_a = {
 		icon = mission_african_gold
 		required_missions = {}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			treasury = 5000
 			NOT = { inflation = 2 }
 			NOT = { num_of_loans = 1 }
@@ -310,6 +318,7 @@ VN_BYZ_missions_slot_3_a = {
 			NOT = { has_building = textile }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			trade_goods_produced_amount = {
 				trade_goods = silk
 				amount = 15
@@ -363,6 +372,7 @@ VN_BYZ_missions_slot_3_a = {
 			NOT = { is_strongest_trade_power = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			custom_trigger_tooltip = {
 				tooltip = vn_byz_mare_nostrum.tt
 				calc_true_if = {
@@ -406,6 +416,7 @@ VN_BYZ_missions_slot_3_a = {
 		required_missions = { vn_byz_pandoras_box }
 		completed_by = 1204.5.16
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			stability = 2
 			NOT = { has_reform = eastern_monarchy }
 		}
@@ -421,6 +432,7 @@ VN_BYZ_missions_slot_3_a = {
 		icon = mission_pf_map_table
 		required_missions = { vn_byz_abolish_eastern_monarchy }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			num_accepted_cultures = 6
 			num_of_different_religions_in_court = 4
 			num_of_different_cultures_in_court = 4
@@ -447,6 +459,7 @@ VN_BYZ_missions_slot_3_a = {
 			}
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			owns_core_province = 2233
 			owns_core_province = 2828
 			owns_core_province = 2398
@@ -488,6 +501,7 @@ VN_BYZ_missions_slot_4_a = {
 			province_id = 2233
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			2233 = {
 				owned_by = ROOT
 				development = 40
@@ -513,6 +527,7 @@ VN_BYZ_missions_slot_4_a = {
 			province_id = 2233
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			2233 = {
 				owned_by = ROOT
 				has_education_building_trigger = yes
@@ -532,6 +547,7 @@ VN_BYZ_missions_slot_4_a = {
 			province_id = 2233
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			2233 = {
 				owned_by = ROOT
 				has_fort_17th_trigger = yes
@@ -550,6 +566,7 @@ VN_BYZ_missions_slot_4_a = {
 		icon = mission_african_trade_post
 		required_missions = { vn_byz_abolish_eastern_monarchy }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			slaves = 5
 			has_3_lv3_advisors_trigger = yes
 		}
@@ -569,6 +586,7 @@ VN_BYZ_missions_slot_4_a = {
 			has_education_building_trigger = no
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			num_of_owned_provinces_with = {
 				value = 10
 				culture_group = turko_semitic
@@ -624,6 +642,7 @@ VN_BYZ_missions_slot_5_a = {
 			}
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			if = {
 				limit = { religion = orthodox }
 				religious_unity = 0.75
@@ -671,6 +690,7 @@ VN_BYZ_missions_slot_5_a = {
 		icon = mission_autocephalous_archbishopric
 		required_missions = { vn_byz_root_out_heresies }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			if = {
 				limit = { has_dlc = "Third Rome" religion = orthodox }
 				patriarch_authority = 0.75
@@ -735,6 +755,7 @@ VN_BYZ_missions_slot_5_a = {
 			}
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			2233 = {
 				owned_by = ROOT
 				religion = ROOT
@@ -776,6 +797,7 @@ VN_BYZ_missions_slot_5_a = {
 		icon = mission_secure_the_malabar_coast
 		required_missions = { vn_byz_pandoras_box }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			navy_size_percentage = 0.75
 			custom_trigger_tooltip = {
 				tooltip = vn_byz_fortify_coasts.tt
@@ -803,6 +825,7 @@ VN_BYZ_missions_slot_5_a = {
 		icon = mission_colonize_the_west
 		required_missions = { vn_byz_fortify_coasts }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			num_of_galley = 50
 			galley_fraction = 0.3
 		}
@@ -818,6 +841,7 @@ VN_BYZ_missions_slot_5_a = {
 		icon = mission_raid_christian_trade
 		required_missions = { vn_byz_reignite_the_greek_fire }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			dip_tech = 10
 			NOT = {
 				any_country = {
@@ -851,6 +875,7 @@ VN_BYZ_missions_slot_1_b = {
 		icon = mission_city_of_the_world's_desire
 		required_missions = { }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			owns_core_province = 2233
 			OR = {
 				AND = {
@@ -925,7 +950,8 @@ VN_BYZ_missions_slot_1_c = {
 		position = 8
 		icon = mission_pf_cross
 		required_missions = { vn_byz_battle_of_manzikert }
-		trigger = {	#bertus mod
+		trigger = {
+			if = { limit = { ai = yes } ai = no }	#bertus mod
 			num_of_cities = 150
 		}
 		effect = {
@@ -942,6 +968,7 @@ VN_BYZ_missions_slot_1_c = {
 		icon = a_roman_empire 
 		required_missions = { vn_byz_rise_of_the_phoenix }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			tag = ROM
 			num_of_cities = 300
             NOT = { great_power_rank = 2 }
@@ -974,6 +1001,7 @@ VN_BYZ_missions_slot_1_c = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			balears_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -1040,6 +1068,7 @@ VN_BYZ_missions_slot_1_c = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
             sevilla_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -1096,6 +1125,7 @@ VN_BYZ_missions_slot_1_c = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			torino_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -1185,6 +1215,7 @@ VN_BYZ_missions_slot_1_c = {
 			is_city = yes
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			tripolitania_area = {
 				type = all
 				OR = {
@@ -1286,6 +1317,7 @@ VN_BYZ_missions_slot_1_c = {
 			is_city = yes
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			tunis_area = {
 				type = all
 				OR = {
@@ -1385,6 +1417,7 @@ VN_BYZ_missions_slot_1_c = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			bejaia_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -1454,6 +1487,7 @@ VN_BYZ_missions_slot_1_c = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			rabat_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -1506,6 +1540,7 @@ VN_BYZ_missions_slot_2_c = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			serbia_region = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -1635,6 +1670,7 @@ VN_BYZ_missions_slot_2_c = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
             dalmatia_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -1698,6 +1734,7 @@ VN_BYZ_missions_slot_2_c = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			sicilia_region = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -1798,6 +1835,7 @@ VN_BYZ_missions_slot_2_c = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			corsica_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -1851,6 +1889,7 @@ VN_BYZ_missions_slot_2_c = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			arezzo_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -2071,6 +2110,7 @@ VN_BYZ_missions_slot_2_c = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
             venice_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -2118,6 +2158,7 @@ VN_BYZ_missions_slot_2_c = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			cyprus_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -2163,6 +2204,7 @@ VN_BYZ_missions_slot_2_c = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			delta_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -2224,6 +2266,7 @@ VN_BYZ_missions_slot_2_c = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			vostani_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -2260,6 +2303,7 @@ VN_BYZ_missions_slot_3_b = {
 		required_missions = { }
 		#completed_by = 1071.8.26
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			custom_trigger_tooltip = {
 				tooltip = vn_byz_komnenian_succession.tt
 				OR = {
@@ -2377,6 +2421,7 @@ VN_BYZ_missions_slot_3_b = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			salento_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -2474,6 +2519,7 @@ VN_BYZ_missions_slot_3_b = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
             abruzzo_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -2528,6 +2574,7 @@ VN_BYZ_missions_slot_3_b = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			latium_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -2659,6 +2706,7 @@ VN_BYZ_missions_slot_3_b = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			bologna_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -2700,6 +2748,7 @@ VN_BYZ_missions_slot_3_b = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			antioch_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -2739,6 +2788,7 @@ VN_BYZ_missions_slot_3_b = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			syria_region = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -2763,6 +2813,7 @@ VN_BYZ_missions_slot_3_b = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			outremer_region = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -2787,6 +2838,7 @@ VN_BYZ_missions_slot_3_b = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			palestine_region = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -2837,6 +2889,7 @@ VN_BYZ_missions_slot_4_b = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			bithynia_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -2964,6 +3017,7 @@ VN_BYZ_missions_slot_4_b = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			lydia_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -3082,6 +3136,7 @@ VN_BYZ_missions_slot_4_b = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			anemorion_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -3139,6 +3194,7 @@ VN_BYZ_missions_slot_4_b = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			commagene_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -3176,6 +3232,7 @@ VN_BYZ_missions_slot_4_b = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			arzanene_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -3207,6 +3264,7 @@ VN_BYZ_missions_slot_4_b = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			transjordan_region = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -3246,6 +3304,7 @@ VN_BYZ_missions_slot_5 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			chaldia_region = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -3272,6 +3331,7 @@ VN_BYZ_missions_slot_5 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			crimea_region = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -3298,6 +3358,7 @@ VN_BYZ_missions_slot_5 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			phrygia_region = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -3371,6 +3432,7 @@ VN_BYZ_missions_slot_5 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			charsianon_region = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -3437,6 +3499,7 @@ VN_BYZ_missions_slot_5 = {
 			}
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			anatolia_superregion = {
 				type = all
 				owned_by = ROOT

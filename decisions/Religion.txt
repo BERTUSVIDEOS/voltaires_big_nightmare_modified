@@ -15,6 +15,7 @@ country_decisions = {
 			NOT = { has_country_modifier = jesuits_expelled }
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			adm_tech = 10
 		}
 		effect = {	
@@ -36,6 +37,7 @@ country_decisions = {
 			reform_desire = 0.10
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			adm_tech = 6
 		}
 		effect = {	
@@ -56,6 +58,7 @@ country_decisions = {
 			religion_group = christian
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			advisor = theologian
 		}
 		effect = {	
@@ -85,6 +88,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			adm = 3
 		}
 		effect = {	
@@ -104,6 +108,7 @@ country_decisions = {
 			NOT = { has_country_modifier = the_declaration_of_indulgence }
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			NOT = { has_country_modifier = the_test_act }
 			adm_tech = 10
 		}
@@ -132,6 +137,7 @@ country_decisions = {
 			religion_group = christian
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			adm_tech = 8
 		}
 		effect = {	
@@ -157,6 +163,7 @@ country_decisions = {
 			adm_tech = 17
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			adm = 2
 			stability = 2
 		}
@@ -182,6 +189,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			adm_tech = 10
 		}
 		effect = {	
@@ -206,6 +214,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			adm_tech = 10
 			NOT = { has_country_modifier = the_declaration_of_indulgence }
 		}
@@ -239,6 +248,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			adm = 4
 		}
 		effect = {	
@@ -268,6 +278,7 @@ country_decisions = {
 			adm_tech = 11
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			mil = 3
 		}
 		effect = {	
@@ -289,6 +300,7 @@ country_decisions = {
 			religion_group = muslim
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			adm = 3
 			has_regency = no
 		}
@@ -327,6 +339,7 @@ country_decisions = {
 			ruler_religion = sunni
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			mil = 3
 			has_regency = no
 			is_female = no
@@ -351,6 +364,7 @@ country_decisions = {
 			religion_group = muslim
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			dip = 3
 			has_regency = no
 		}
@@ -373,6 +387,7 @@ country_decisions = {
 			adm_tech = 8
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			dip = 5
 			has_regency = no
 		}
@@ -396,6 +411,7 @@ country_decisions = {
 			religion = buddhism
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			adm = 3
 		}
 		effect = {	
@@ -428,6 +444,7 @@ country_decisions = {
 			ruler_religion = sunni
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			piety = 1.0 #100 Legalism
 		}
 		effect = {
@@ -457,6 +474,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			if = {
 				limit = { OR = { government = monarchy government = tribal } }
 				legitimacy = 90
@@ -538,6 +556,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			if = {
 				limit = { OR = { government = monarchy government = tribal } }
 				legitimacy = 90
@@ -583,6 +602,7 @@ country_decisions = {
 			religion = buddhism
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			adm = 3
 		}
 		effect = {	
@@ -611,6 +631,7 @@ country_decisions = {
 			is_free_or_tributary_trigger = yes
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			stability = 1
 			is_at_war = no
 			OR = {
@@ -645,6 +666,7 @@ country_decisions = {
 			religion = buddhism
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			stability = 1
 			prestige = 25
 			is_at_war = no
@@ -672,6 +694,7 @@ country_decisions = {
 			any_neighbor_country = { religion_group = christian }
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			is_defender_of_faith = no
 			any_neighbor_country = {
 				religion_group = christian
@@ -708,6 +731,7 @@ country_decisions = {
 			religion_group = muslim
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			full_idea_group = innovativeness_ideas
 		}
 		effect = {
@@ -727,6 +751,7 @@ country_decisions = {
 			religion_group = pagan
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			is_at_war = no
 			stability = 1
 		}
@@ -758,6 +783,7 @@ country_decisions = {
 			religion_group = pagan
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			adm = 3
 			stability = 1
 		}
@@ -786,6 +812,7 @@ country_decisions = {
 			religion_group = pagan
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			ADM = 3
 		}
 		effect = {	
@@ -813,6 +840,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			ADM = 3
 		}
 		effect = {	
@@ -836,6 +864,7 @@ country_decisions = {
 			religion_group = eastern
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			any_neighbor_country = {
 				NOT = { religion_group = eastern }
 			}
@@ -862,6 +891,7 @@ country_decisions = {
 			religion = jewish
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			ADM = 3
 		}
 		effect = {
@@ -885,6 +915,7 @@ country_decisions = {
 			religion = norse_pagan_reformed
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			ADM = 3
 		}
 		effect = {	
@@ -909,6 +940,7 @@ country_decisions = {
 			has_country_flag = has_norse_flexible_deities_permanent
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			has_regency = no
 			custom_trigger_tooltip = {
 				tooltip = decision_once_every_twenty_years
@@ -962,6 +994,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			6112 = {
 				owned_by = ROOT
 				is_core = ROOT
@@ -1008,6 +1041,7 @@ country_decisions = {
 			NOT = { has_country_flag = sca_unlock_norse_missions }
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			religion = norse_pagan_reformed
 		}
 		major = yes
@@ -1029,6 +1063,7 @@ country_decisions = {
 			religion = tengri_pagan_reformed
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			ADM = 3
 		}
 		effect = {	
@@ -1049,6 +1084,7 @@ country_decisions = {
 			religion = tengri_pagan_reformed
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			ADM = 3
 			NOT = { has_country_modifier = yellow_shamanism_modifier }
 			NOT = { has_secondary_religion = yes }
@@ -1076,6 +1112,7 @@ country_decisions = {
 			num_of_cities = 4
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			legitimacy_or_horde_unity = 75
 			NOT = { has_ruler_modifier = support_of_the_khojas }
 		}
@@ -1135,6 +1172,7 @@ country_decisions = {
 			religion = zoroastrian
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			stability = 2
 			ADM = 3
 			adm_power = 50
@@ -1171,6 +1209,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			adm_tech = 8
 			stability = 2
 			ADM = 3
@@ -1201,6 +1240,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			adm_tech = 8
 			stability = 2
 			ADM = 3
@@ -1234,6 +1274,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			stability = 2
 			ADM = 3
 			adm_power = 50
@@ -1263,6 +1304,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			OR = {
 				AND = {	
 					has_dlc = "El Dorado"
@@ -1303,6 +1345,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			OR = {
 				AND = {	
 					has_dlc = "El Dorado"
@@ -1343,6 +1386,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			OR = {
 				AND = {	
 					has_dlc = "El Dorado"
@@ -1384,6 +1428,7 @@ country_decisions = {
 			is_free_or_tributary_trigger = yes
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			NOT = { government = tribal }
 			stability = 1
 		}
@@ -1411,6 +1456,7 @@ country_decisions = {
 			is_free_or_tributary_trigger = yes
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			NOT = { government = tribal }
 			stability = 1
 		}
@@ -1438,6 +1484,7 @@ country_decisions = {
 			is_free_or_tributary_trigger = yes
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			NOT = { government = tribal }
 			stability = 1
 		}
@@ -1465,6 +1512,7 @@ country_decisions = {
 			is_free_or_tributary_trigger = yes
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			NOT = { government = tribal }
 			stability = 1
 		}
@@ -1492,6 +1540,7 @@ country_decisions = {
 			is_free_or_tributary_trigger = yes
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			NOT = { government = tribal }
 			stability = 1
 		}
@@ -1528,6 +1577,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			stability = 1
 			capital_scope = {
 				has_owner_religion = yes
@@ -1568,6 +1618,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			religion = jewish
 			4974 = {
 				owned_by = ROOT

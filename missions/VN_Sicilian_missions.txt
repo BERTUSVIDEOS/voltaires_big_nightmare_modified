@@ -29,6 +29,7 @@ vn_sic_missions_slot_1 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             4974 = { country_or_non_sovereign_subject_holds = ROOT }
             num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
                 value = 10
@@ -58,6 +59,7 @@ vn_sic_missions_slot_1 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
                 value = 10
                 OR = {
@@ -94,6 +96,7 @@ vn_sic_missions_slot_1 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             tunis_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -168,6 +171,7 @@ vn_sic_missions_slot_1 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             achaea_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -196,6 +200,7 @@ vn_sic_missions_slot_1 = {
         position = 8
         required_missions = {  }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             num_accepted_cultures = 3
         }
         effect = {
@@ -222,6 +227,7 @@ vn_sic_missions_slot_1 = {
 			}
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             564 = {
 				owned_by = ROOT
 				has_education_building_trigger = yes
@@ -255,6 +261,7 @@ vn_sic_missions_slot_1 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			corsica_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -318,6 +325,7 @@ vn_sic_missions_slot_2 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
                 value = 10
                 region = outremer_region
@@ -346,6 +354,7 @@ vn_sic_missions_slot_2 = {
             }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
                 value = 25
                 OR = {
@@ -436,6 +445,7 @@ vn_sic_missions_slot_2 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             bahari_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -469,6 +479,7 @@ vn_sic_missions_slot_2 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             djerba_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -497,6 +508,7 @@ vn_sic_missions_slot_2 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             epirus_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -543,6 +555,7 @@ vn_sic_missions_slot_2 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             athens_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -586,6 +599,7 @@ vn_sic_missions_slot_2 = {
         position = 8
         required_missions = {  }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             naval_forcelimit = 50
             navy_size_percentage = 0.75
         }
@@ -604,6 +618,7 @@ vn_sic_missions_slot_2 = {
         position = 9
         required_missions = { vn_sic_maritime_power }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             OR = {
                 NOT = { exists = GEN }
                 navy_size = GEN
@@ -685,6 +700,7 @@ vn_sic_missions_slot_2 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			albenga_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -755,6 +771,7 @@ vn_sic_missions_slot_3 = {
         position = 1
         required_missions = { }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             religion_group = christian
             num_of_generals = 1
             if = {
@@ -847,6 +864,7 @@ vn_sic_missions_slot_3 = {
 			province_id = 2711
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             2711 = {
                 owned_by = ROOT
                 has_building = harbour
@@ -921,6 +939,7 @@ vn_sic_missions_slot_3 = {
             is_city = yes
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             delta_area = {
                 type = all
                 OR = {
@@ -976,6 +995,7 @@ vn_sic_missions_slot_3 = {
 			province_id = 503
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             503 = {
                 OR = {
                     country_or_non_sovereign_subject_holds = ROOT
@@ -1023,6 +1043,7 @@ vn_sic_missions_slot_3 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             arbanon_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -1049,6 +1070,7 @@ vn_sic_missions_slot_3 = {
         position = 8
         required_missions = {  }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             custom_trigger_tooltip = {
                 tooltip = vn_sic_ally_the_balkans.tt
                 any_ally = {
@@ -1086,6 +1108,7 @@ vn_sic_missions_slot_3 = {
             province_id = 2233
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             2233 = {
                 OR = {
                     country_or_non_sovereign_subject_holds = ROOT
@@ -1109,6 +1132,7 @@ vn_sic_missions_slot_3 = {
         position = 10
         required_missions = { vn_sic_challenge_byzantium }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             custom_trigger_tooltip = {
                 tooltip = vn_sic_defeat_byzantium.tt
                 NOT = {
@@ -1163,6 +1187,7 @@ vn_sic_missions_slot_4 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             is_subject = no
             palermo_area = {
                 type = all
@@ -1215,6 +1240,7 @@ vn_sic_missions_slot_4 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			calabria_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -1267,6 +1293,7 @@ vn_sic_missions_slot_4 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             salerno_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -1296,6 +1323,7 @@ vn_sic_missions_slot_4 = {
 			}
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             stability = 1
 			NOT = { average_autonomy = 50 }
 			sicilia_region = {
@@ -1357,6 +1385,7 @@ vn_sic_missions_slot_4 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             abruzzo_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -1478,6 +1507,7 @@ vn_sic_missions_slot_4 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			arezzo_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -1590,6 +1620,7 @@ vn_sic_missions_slot_4 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             brescia_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -1751,6 +1782,7 @@ vn_sic_missions_slot_4 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             italy_superregion = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -1812,6 +1844,7 @@ vn_sic_missions_slot_4 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }          
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			OR = {
 				senior_union_with = MEI
 				senior_union_with = SAX
@@ -1918,6 +1951,7 @@ vn_sic_missions_slot_5 = {
 			religion_group = christian
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             sicilia_region = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -1980,6 +2014,7 @@ vn_sic_missions_slot_5 = {
         position = 3
         required_missions = { vn_sic_latin_sicily }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             custom_trigger_tooltip = {
                 tooltip = vn_sic_defeat_the_vespers.tt
                 OR = {
@@ -2020,6 +2055,7 @@ vn_sic_missions_slot_5 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             foggia_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -2059,6 +2095,7 @@ vn_sic_missions_slot_5 = {
 			}
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			#Succession crisis of Sicily has happened
 			OR = {
 				senior_union_with = PRO
@@ -2299,6 +2336,7 @@ vn_sic_missions_slot_5 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			aquitaine_region = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -2378,6 +2416,7 @@ vn_sic_missions_slot_5 = {
         position = 7
 		required_missions = {  }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			OR = {
 				is_part_of_hre = yes
 				is_elector = yes
@@ -2416,6 +2455,7 @@ vn_sic_missions_slot_5 = {
         position = 8
 		required_missions = { vn_sic_imperial_power }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			is_emperor = yes
 			hre_reform_passed = erbkaisertum
 		}
@@ -2439,6 +2479,7 @@ vn_sic_missions_slot_5 = {
         position = 9
 		required_missions = {  }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			prestige = 25
             if = {
                 limit = { has_dlc = "Common Sense" }
@@ -2547,6 +2588,7 @@ vn_sic_missions_slot_5 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }          
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			OR = {
 				senior_union_with = SWA 
 				AND = {

@@ -5,6 +5,7 @@ country_decisions = {
 			has_estate = estate_brahmins
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			has_regency = no
 			has_estate_privilege = estate_brahmins_flexible_deities
 			if = {

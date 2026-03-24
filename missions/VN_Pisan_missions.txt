@@ -21,6 +21,7 @@ vn_pis_missions_slot_1 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			corsica_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -79,6 +80,7 @@ vn_pis_missions_slot_1 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			corsica_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -123,6 +125,7 @@ vn_pis_missions_slot_1 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			balears_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -178,6 +181,7 @@ vn_pis_missions_slot_1 = {
 			}
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			religion_group = christian
 			has_3_advisors_trigger = yes
 			treasury = 100
@@ -222,6 +226,7 @@ vn_pis_missions_slot_1 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			custom_trigger_tooltip = {
 				tooltip = vn_pis_interests_in_france.tt
 				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
@@ -313,6 +318,7 @@ vn_pis_missions_slot_2 = {
 			province_id = 115
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			115 = {
 				owned_by = ROOT
 				NOT = { devastation = 1 }
@@ -350,6 +356,7 @@ vn_pis_missions_slot_2 = {
         position = 3
         required_missions = { vn_pis_expand_triturrita }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			advisor = trader
             if = {
                 limit = { exists = GEN }
@@ -401,6 +408,7 @@ vn_pis_missions_slot_2 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			albenga_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -465,6 +473,7 @@ vn_pis_missions_slot_2 = {
         position = 5
         required_missions = { vn_pis_revenge_for_meloria }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			treasury = 2000
             NOT = { num_of_loans = 1 }
 			640 = { is_strongest_trade_power = ROOT } #Firenze
@@ -498,6 +507,7 @@ vn_pis_missions_slot_2 = {
         position = 6
         required_missions = { vn_pis_tyrrhenian_dominance }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			if = {
 				limit = { has_dlc = "Dharma" }
 				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
@@ -665,6 +675,7 @@ vn_pis_missions_slot_2 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			custom_trigger_tooltip = {
 				tooltip = vn_pis_colonies_in_iberia.tt
 				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
@@ -714,6 +725,7 @@ vn_pis_missions_slot_3 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			115 = {
 				owned_by = ROOT
 				province_has_current_tech_fort_trigger = yes
@@ -771,6 +783,7 @@ vn_pis_missions_slot_3 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			florence_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -853,6 +866,7 @@ vn_pis_missions_slot_3 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			arezzo_area = {
 				type = all
 				consolidated_region_trigger = yes
@@ -923,6 +937,7 @@ vn_pis_missions_slot_3 = {
         position = 4
         required_missions = { vn_pis_trading_rivalries }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			advisor = trader
             if = {
                 limit = { exists = VEN }
@@ -958,6 +973,7 @@ vn_pis_missions_slot_3 = {
             province_id = 112
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             OR = {
 				112 = { country_or_non_sovereign_subject_holds = ROOT }
                 112 = {
@@ -993,6 +1009,7 @@ vn_pis_missions_slot_3 = {
             province_id = 2233
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			OR = {
 				2233 = {
 					owner = {
@@ -1035,6 +1052,7 @@ vn_pis_missions_slot_3 = {
         position = 7
         required_missions = { vn_pis_privileges_in_constantinople vn_pis_possessions_near_and_far }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			if = {
 				limit = {
 					has_dlc = "Emperor"
@@ -1089,6 +1107,7 @@ vn_pis_missions_slot_4 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			lucca_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -1169,6 +1188,7 @@ vn_pis_missions_slot_4 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			custom_trigger_tooltip = {
 				tooltip = vn_pis_invasion_of_tunis.tt
 				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
@@ -1315,6 +1335,7 @@ vn_pis_missions_slot_4 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			custom_trigger_tooltip = {
 				tooltip = vn_pis_saracens_in_algeria.tt
 				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
@@ -1415,6 +1436,7 @@ vn_pis_missions_slot_4 = {
 			}
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			religion_group = christian
 			has_3_advisors_trigger = yes
 			treasury = 100
@@ -1454,6 +1476,7 @@ vn_pis_missions_slot_4 = {
         position = 6
         required_missions = {  }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			custom_trigger_tooltip = {
 				tooltip = vn_pis_renew_via_francigena.tt
 				has_country_flag = vn_crusade_committed
@@ -1540,6 +1563,7 @@ vn_pis_missions_slot_4 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             5022 = { country_or_non_sovereign_subject_holds = ROOT }
 			custom_trigger_tooltip = {
 				tooltip = vn_pis_alexandrine_colonies.tt
@@ -1609,6 +1633,7 @@ vn_pis_missions_slot_5 = {
 			province_id = 551
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             551 = {
 				OR = {
 					AND = {
@@ -1651,6 +1676,7 @@ vn_pis_missions_slot_5 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
                 value = 5
                 region = sicilia_region
@@ -1828,6 +1854,7 @@ vn_pis_missions_slot_5 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			custom_trigger_tooltip = {
 				tooltip = vn_pis_domain_in_naples.tt
 				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
@@ -1866,6 +1893,7 @@ vn_pis_missions_slot_5 = {
         position = 4
         required_missions = {  }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             has_3_lv2_advisors_trigger = yes
         }
         effect = {
@@ -1881,6 +1909,7 @@ vn_pis_missions_slot_5 = {
         position = 5
         required_missions = { vn_pis_mathematical_genius }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             has_3_lv3_advisors_trigger = yes           
 			115 = {
 				has_education_building_trigger = yes
@@ -1903,6 +1932,7 @@ vn_pis_missions_slot_5 = {
         position = 6
         required_missions = { vn_pis_universita_di_pisa }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			115 = {
 				owned_by = ROOT
 				development = 40
@@ -1940,6 +1970,7 @@ vn_pis_missions_slot_5 = {
             }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 		    4974 = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}

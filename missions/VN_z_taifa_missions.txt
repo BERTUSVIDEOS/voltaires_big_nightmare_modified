@@ -29,6 +29,7 @@ vn_taifa_missions_slot_1 = {
         icon = mission_african_gold
         required_missions = { vn_taifa_gather_support }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             calc_true_if = {
                 amount = 3
                 all_country = {
@@ -66,6 +67,7 @@ vn_taifa_missions_slot_1 = {
         icon = mission_tear_down_spanish_strongholds
         required_missions = { vn_taifa_spoils_of_war vn_taifa_placate_the_christians }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             num_of_owned_provinces_with = {
                 value = 5
                 has_fort_trigger = yes
@@ -125,6 +127,7 @@ vn_taifa_missions_slot_2_a = {
         icon = mission_restore_trade_superiority
         required_missions = { }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             calc_true_if = {
                 amount = 2
                 all_ally = {
@@ -181,6 +184,7 @@ vn_taifa_missions_slot_3 = {
         icon = mission_afghan_frontier
         required_missions = { }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
             stability = 2
             is_at_war = no
 			capital_scope = {
@@ -207,6 +211,7 @@ vn_taifa_missions_slot_3 = {
         icon = mission_eliminate_pretenders
         required_missions = { vn_taifa_gather_support vn_taifa_protect_the_locals vn_taifa_promote_mozarabs }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
             has_regency = no
             num_of_generals = 2
             OR = {
@@ -251,6 +256,7 @@ vn_taifa_missions_slot_3 = {
             NOT = { owned_by = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             2670 = {
                 owned_by = ROOT
                 is_core = ROOT
@@ -274,6 +280,7 @@ vn_taifa_missions_slot_3 = {
         icon = mission_mal_riches_of_trade
         required_missions = { vn_taifa_conquer_cordoba }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             if = {
                 limit = {
                     has_any_estates = yes
@@ -328,6 +335,7 @@ vn_taifa_missions_slot_3 = {
             }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             tag = ADU
             if = {
                 limit = { has_dlc = "Common Sense" }
@@ -384,6 +392,7 @@ vn_taifa_missions_slot_4_a = {
         icon = mission_cope_with_refugees
         required_missions = { }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             if = {
                 limit = { has_estate = estate_dhimmi }
                 estate_loyalty = {
@@ -467,6 +476,7 @@ vn_taifa_missions_slot_4_b = {
 			}
         }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
             capital_scope = {
                 development = 20
                 culture = ROOT
@@ -496,6 +506,7 @@ vn_taifa_missions_slot_4_b = {
         icon = mission_secure_khandesh
         required_missions = { vn_taifa_cultural_splendor vn_taifa_conquer_cordoba }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             is_in_deficit = no
             is_bankrupt = no
             NOT = { inflation = 1 }
@@ -518,6 +529,7 @@ vn_taifa_missions_slot_4_b = {
             NOT = { owned_by = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             has_any_disaster = no
             is_subject = no
             all_core_province = {
@@ -581,6 +593,7 @@ vn_taifa_missions_slot_5_a = {
         icon = mission_ottoman_harem
         required_missions = { }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             has_3_advisors_trigger = yes
         }
         effect = {
@@ -595,6 +608,7 @@ vn_taifa_missions_slot_5_a = {
         icon = mission_son_military_expertise
         required_missions = { vn_taifa_summon_a_council }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             OR = {
                 monthly_dip = 10
                 diplomat = 1
@@ -612,6 +626,7 @@ vn_taifa_missions_slot_5_a = {
         icon = mission_traverse_the_sahara
         required_missions = { vn_taifa_foreign_military_aid }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             custom_trigger_tooltip = {
 				tooltip = vn_taifa_berber_support.tt
 				has_country_flag = won_war_with_berber_mercs
@@ -637,6 +652,7 @@ vn_taifa_missions_slot_5_a = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             tangiers_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -728,6 +744,7 @@ vn_taifa_missions_slot_5_b = {
         icon = mission_ottoman_harem
         required_missions = { }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             has_3_advisors_trigger = yes
         }
         effect = {
@@ -761,6 +778,7 @@ vn_sev_missions_slot_2 = {
         icon = mission_levantine_restoration
         required_missions = { vn_taifa_gather_support }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             if = {
                 limit = {
                     any_country = {
@@ -818,6 +836,7 @@ vn_sev_missions_slot_4 = {
         icon = mission_court_education
         required_missions = { vn_taifa_summon_a_council_specific }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             is_in_deficit = no
             num_of_owned_provinces_with = {
                 value = 5
@@ -850,6 +869,7 @@ vn_sev_missions_slot_4 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             sevilla_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -883,6 +903,7 @@ vn_sev_missions_slot_4 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             badajoz_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -912,6 +933,7 @@ vn_sev_missions_slot_4 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             almeria_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -961,6 +983,7 @@ vn_sev_missions_slot_5 = {
             }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             gold_income = 5
             num_of_owned_provinces_with = {
 				trade_goods = silver
@@ -1002,6 +1025,7 @@ vn_sev_missions_slot_5 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             ciudad_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -1023,6 +1047,7 @@ vn_sev_missions_slot_5 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             murcia_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -1047,6 +1072,7 @@ vn_sev_missions_slot_5 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             valencia_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -1099,6 +1125,7 @@ vn_crd_missions_slot_2 = {
         icon = mission_valencian_silk
         required_missions = { vn_taifa_gather_support }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             trade_income_percentage = 0.3
             if = {
                 limit = { has_dlc = "Dharma" }
@@ -1156,6 +1183,7 @@ vn_crd_missions_slot_4 = {
         icon = mission_friends_or_enemies
         required_missions = { vn_taifa_summon_a_council_specific }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             OR = {
                 AND = {
                     alliance_with = SEV
@@ -1200,6 +1228,7 @@ vn_crd_missions_slot_4 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             huelva_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -1225,6 +1254,7 @@ vn_crd_missions_slot_4 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             granada_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -1260,6 +1290,7 @@ vn_crd_missions_slot_4 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             malaga_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -1302,6 +1333,7 @@ vn_crd_missions_slot_5 = {
         icon = mission_reclaim_morocco
         required_missions = { vn_taifa_summon_a_council_specific }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             reform_level = 3
             stability = 2
             if = {
@@ -1325,6 +1357,7 @@ vn_crd_missions_slot_5 = {
         icon = mission_patronize_art_and_religion
         required_missions = { vn_crd_promote_republicanism }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             num_accepted_cultures = 4
             num_of_owned_provinces_with = {
                 value = 10
@@ -1349,6 +1382,7 @@ vn_crd_missions_slot_5 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             alentejo_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -1374,6 +1408,7 @@ vn_crd_missions_slot_5 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             murcia_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -1415,6 +1450,7 @@ vn_tld_missions_slot_2 = {
         icon = mission_reclaim_morocco
         required_missions = { vn_taifa_gather_support }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             if = {
                 limit = {
                     any_country = {
@@ -1476,6 +1512,7 @@ vn_tld_missions_slot_4 = {
             }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             grown_by_development = 40
             4395 = {
                 owned_by = ROOT
@@ -1502,6 +1539,7 @@ vn_tld_missions_slot_4 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             caceres_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -1530,6 +1568,7 @@ vn_tld_missions_slot_4 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             OR = {
                 any_ally = {
                     capital_scope = {
@@ -1586,6 +1625,7 @@ vn_tld_missions_slot_4 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             granada_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -1633,6 +1673,7 @@ vn_tld_missions_slot_5 = {
             }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             prestige = 50
             1208 = {
                 owned_by = ROOT
@@ -1658,6 +1699,7 @@ vn_tld_missions_slot_5 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             OR = {
                 any_ally = {
                     capital_scope = {
@@ -1702,6 +1744,7 @@ vn_tld_missions_slot_5 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             valencia_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -1738,6 +1781,7 @@ vn_tld_missions_slot_5 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             sevilla_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -1827,6 +1871,7 @@ vn_vlk_missions_slot_2 = {
         icon = mission_cope_with_refugees
         required_missions = { vn_taifa_gather_support }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             if = {
                 limit = { has_dlc = "Cradle of Civilization" }
                 army_professionalism = 0.15
@@ -1898,6 +1943,7 @@ vn_vlk_missions_slot_4 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             custom_trigger_tooltip = {
                 tooltip = vn_vlk_unite_the_dynasty.tt
                 NOT = {
@@ -1931,6 +1977,7 @@ vn_vlk_missions_slot_4 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             almeria_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -1952,6 +1999,7 @@ vn_vlk_missions_slot_4 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             almeria_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -1976,6 +2024,7 @@ vn_vlk_missions_slot_4 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             sevilla_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -2027,6 +2076,7 @@ vn_vlk_missions_slot_5 = {
         icon = mission_launch_a_flagship
         required_missions = { vn_taifa_summon_a_council_specific }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             num_of_galley = 10
             navy_size_percentage = 0.75
             num_of_admirals = 1
@@ -2054,6 +2104,7 @@ vn_vlk_missions_slot_5 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             balears_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -2101,6 +2152,7 @@ vn_vlk_missions_slot_5 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             sassari_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -2135,6 +2187,7 @@ vn_vlk_missions_slot_5 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             pisa_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -2190,6 +2243,7 @@ vn_mgg_missions_slot_2 = {
         icon = mission_patronize_sufi_scholars
         required_missions = { vn_taifa_gather_support }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             religion = shiite
             calc_true_if = {
                 amount = 2
@@ -2242,6 +2296,7 @@ vn_mgg_missions_slot_4 = {
             has_owner_religion = no
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             religion = shiite
             religious_unity = 0.75
             num_of_owned_provinces_with = {
@@ -2268,6 +2323,7 @@ vn_mgg_missions_slot_4 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             huelva_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -2295,6 +2351,7 @@ vn_mgg_missions_slot_4 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             badajoz_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -2322,6 +2379,7 @@ vn_mgg_missions_slot_4 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             alentejo_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -2371,6 +2429,7 @@ vn_mgg_missions_slot_5 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             custom_trigger_tooltip = {
                 tooltip = vn_mgg_unite_the_dynasty.tt
                 NOT = {
@@ -2402,6 +2461,7 @@ vn_mgg_missions_slot_5 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             granada_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -2422,6 +2482,7 @@ vn_mgg_missions_slot_5 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             almeria_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -2446,6 +2507,7 @@ vn_mgg_missions_slot_5 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             murcia_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT

@@ -12,6 +12,7 @@ vn_italian_minor_group_1 = {
 		position = 11
 		icon = florentine_renaissance
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			has_institution = renaissance
 		}
 		effect = {
@@ -38,6 +39,7 @@ vn_italian_minor_group_2 = {
 		icon = mission_italian_condottiere
 		required_missions = { }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			is_subject = no
 			if = {
 				limit = {
@@ -92,6 +94,7 @@ vn_italian_minor_group_2 = {
 		icon = mission_diplomatic_relation
 		required_missions = { itm_princely_rule }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			custom_trigger_tooltip = {
 				tooltip = itm_two_guaranteed_countries
 				calc_true_if = {
@@ -113,6 +116,7 @@ vn_italian_minor_group_2 = {
 		icon = mission_bridge_the_heresy
 		required_missions = { itm_spheres_of_influence }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			if = {
 				limit = {
 					OR = {
@@ -184,6 +188,7 @@ vn_italian_minor_group_2 = {
 			NOT = { owned_by = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			OR = {
 				is_papal_controller = yes
 				is_elector = yes
@@ -214,6 +219,7 @@ vn_italian_minor_group_3 = {
 		icon = neapolitan_govenance
 		required_missions = { }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			NOT = { num_of_loans = 1 }
 			has_mil_advisor = yes
 			has_adm_advisor = yes
@@ -229,6 +235,7 @@ vn_italian_minor_group_3 = {
 		icon = control_the_means_of_transaction
 		required_missions = { itm_educated_court }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			capital_scope = {
 				num_of_times_improved = 3
 			}
@@ -248,6 +255,7 @@ vn_italian_minor_group_3 = {
 		icon = complete_the_risorgimento
 		required_missions = { itm_urbanization }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			home_trade_node = {
 				trade_share = {
 					country = ROOT

@@ -27,6 +27,7 @@ vn_got_monarchy_slot_1 = {
 			}
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			OR = {
 				NOT = { hre_size = 1 }
 				is_emperor = yes
@@ -65,6 +66,7 @@ vn_got_monarchy_slot_1 = {
 		provinces_to_highlight = {
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			if = {
 				limit = {
 					has_estate = estate_nobles
@@ -136,6 +138,7 @@ vn_got_monarchy_slot_1 = {
 			is_capital_of = NOR
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			OR = {
 				NOT = { exists = NOR }
 				reverse_has_opinion = {
@@ -228,6 +231,7 @@ vn_got_monarchy_slot_2 = {
 			}
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			OR = {
 				NOT = { exists = DAN }
 				any_known_country = {
@@ -279,6 +283,7 @@ vn_got_monarchy_slot_2 = {
 			is_capital_of = DAN
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			OR = {
 				NOT = { exists = DAN }
 				has_casus_belli_against = DAN
@@ -321,6 +326,7 @@ vn_got_monarchy_slot_2 = {
 			is_capital_of = DAN
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			if = {
 				limit = {
 					exists = DAN
@@ -370,6 +376,7 @@ vn_got_monarchy_slot_2 = {
 			}
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			OR = {
 				NOT = { exists = DAN }
 				AND = {
@@ -522,6 +529,7 @@ vn_got_monarchy_slot_2 = {
 			}
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			legitimacy = 95
 			stability = 2
 			DAN = {
@@ -579,6 +587,7 @@ vn_got_monarchy_slot_3 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			OR = {
 				custom_trigger_tooltip = {
 					tooltip = got_monarchy_pomerania_tt
@@ -655,6 +664,7 @@ vn_got_monarchy_slot_3 = {
 			}
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			owns_core_province = 2697
 			2697 = {
 				development = 15
@@ -679,6 +689,7 @@ vn_got_monarchy_slot_3 = {
 			is_capital_of = SWE
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			OR = {
 				NOT = { exists = SWE }
 				reverse_has_opinion = {
@@ -746,6 +757,7 @@ vn_got_republic_slot_1 = {
 			is_capital_of = emperor
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			OR = {
 				NOT = { hre_size = 1 }
 				reverse_has_opinion = {
@@ -832,6 +844,7 @@ vn_got_republic_slot_1 = {
 			NOT = { owned_by = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			if = {
 				limit = { has_dlc = "Mare Nostrum" }
 				OR = {
@@ -912,6 +925,7 @@ vn_got_republic_slot_1 = {
 			}
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			2697 = {
 				trade_share = {
 					country = ROOT
@@ -1006,6 +1020,7 @@ vn_got_republic_slot_1 = {
 			}
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			13 = {
 				country_or_non_sovereign_subject_holds = ROOT
 				trade_share = {
@@ -1038,6 +1053,7 @@ vn_got_republic_slot_1 = {
 		}
 
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			OR = {
 				2268 = {
 					trade_share = {
@@ -1092,6 +1108,7 @@ vn_got_republic_slot_2 = {
 		provinces_to_highlight = {
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			num_of_light_ship = 10
 		}
 		effect = {
@@ -1151,6 +1168,7 @@ vn_got_republic_slot_2 = {
 		provinces_to_highlight = {
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			if = {
 				limit = {
 					OR = {
@@ -1242,6 +1260,7 @@ vn_got_republic_slot_2 = {
 			}
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			if = {
 				limit = {
 					has_dlc = "Mare Nostrum"
@@ -1336,6 +1355,7 @@ vn_got_republic_slot_3 = {
 		provinces_to_highlight = {
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			num_of_hired_mercenary_companies = 2
 		}
 		effect = {
@@ -1380,6 +1400,7 @@ vn_got_republic_slot_3 = {
 			}
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			owns_core_province = 411
 		}
 		effect = {
@@ -1412,6 +1433,7 @@ vn_got_republic_slot_3 = {
 			}
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			3427 = {
 				owner = {
 					OR = {
@@ -1452,6 +1474,7 @@ vn_got_republic_slot_3 = {
 		}
 
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			OR = {
 				if = {
 					limit = {
@@ -1522,6 +1545,7 @@ vn_got_pirate_slot_1 = {
 		}
 		
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			has_leader_with = { admiral = yes total_pips = 12 }
 			is_monarch_leader = yes
 			republican_tradition = 95
@@ -1567,6 +1591,7 @@ vn_got_pirate_slot_2 = {
 		provinces_to_highlight = {
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			naval_forcelimit = 20
 			navy_size_percentage = 1
 			num_of_light_ship = 6
@@ -1608,6 +1633,7 @@ vn_got_pirate_slot_2 = {
 			is_capital_of = DAN
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			OR = {
 				NOT = { exists = DAN }
 				AND = {
@@ -1650,6 +1676,7 @@ vn_got_pirate_slot_2 = {
 			}
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			owns_core_province = 1994
 		}
 		effect = {
@@ -1673,6 +1700,7 @@ vn_got_pirate_slot_2 = {
 			NOT = { controlled_by = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			OR = {
 				owns_or_non_sovereign_subject_of = 2268
 				controls = 2268
@@ -1737,6 +1765,7 @@ vn_got_pirate_slot_2 = {
 			}
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			calc_true_if = {
 				all_province = {
 					has_port = yes
@@ -1811,6 +1840,7 @@ vn_got_pirate_slot_3 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			owns_or_non_sovereign_subject_of = 13
 		}
 		effect = {
@@ -1852,6 +1882,7 @@ vn_got_pirate_slot_3 = {
 			}
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			1734 = {
 				privateer_power = {
 					country = ROOT
@@ -1906,6 +1937,7 @@ vn_got_pirate_slot_3 = {
 			NOT = { has_province_modifier = slaves_raided }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			calc_true_if = {
 				all_province = {
 					superregion = lowlands_superregion
@@ -1992,6 +2024,7 @@ vn_got_pirate_slot_3 = {
 			}
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			2708 = {
 				OR = {
 					country_or_non_sovereign_subject_holds = ROOT
@@ -2067,6 +2100,7 @@ vn_got_pirate_slot_4 = {
 			}
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			1542 = {
 				privateer_power = {
 					country = ROOT
@@ -2134,6 +2168,7 @@ vn_got_pirate_slot_4 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			owns_or_non_sovereign_subject_of = 402
 		}
 		effect = {
@@ -2167,6 +2202,7 @@ vn_got_pirate_slot_4 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			num_of_owned_provinces_with = {
 				continent = europe
 				OR = {
@@ -2246,6 +2282,7 @@ vn_got_pirate_slot_4 = {
 			}
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			custom_trigger_tooltip = {
 				tooltip = got_pirate_reach_the_mediterrenean_sea_tt
 				OR = {
@@ -2452,6 +2489,7 @@ vn_got_pirate_slot_4 = {
 			}
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			112 = {
 				OR = {
 					country_or_non_sovereign_subject_holds = ROOT
@@ -2520,6 +2558,7 @@ got_pirate_slot_5 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			owns_or_non_sovereign_subject_of = 5793
 		}
 		effect = {
@@ -2542,6 +2581,7 @@ got_pirate_slot_5 = {
 		}
 		
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			OR = {
 				any_subject_country = {
 					has_reform = pirate_republic_reform
@@ -2574,6 +2614,7 @@ got_pirate_slot_5 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			OR = {
 				owns_or_non_sovereign_subject_of = 2641
 				exists = RUG
@@ -2645,6 +2686,7 @@ got_pirate_slot_5 = {
 		}
 		
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			calc_true_if = {
 				desc = got_pirate_global_piracy_tt
 				all_trade_node = {

@@ -19,6 +19,7 @@ vn_pie_missions_slot_1_a = {
 			province_id = 1009
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			1009 = {
 				owned_by = ROOT
 				base_manpower = 5
@@ -40,6 +41,7 @@ vn_pie_missions_slot_1_a = {
         position = 3
         required_missions = { vn_pie_sitadela_of_turin }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			army_tradition = 75
 			army_size = 30
 			NOT = { num_of_mercenaries = 1 }
@@ -74,6 +76,7 @@ vn_pie_missions_slot_2_a = {
         position = 1
         required_missions = { }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			army_size_percentage = 0.75
 			land_forcelimit = 10
 			num_of_generals = 1
@@ -96,6 +99,7 @@ vn_pie_missions_slot_2_a = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			aosta_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -124,6 +128,7 @@ vn_pie_missions_slot_2_a = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				value = 6
 				area = savoy_area
@@ -156,6 +161,7 @@ vn_pie_missions_slot_2_a = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				value = 6
 				area = dauphine_area
@@ -196,6 +202,7 @@ vn_pie_missions_slot_3_a = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				value = 10
 				OR = {
@@ -257,6 +264,7 @@ vn_pie_missions_slot_3_a = {
 			}
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			owns = 1818
 			torino_area = {
 				type = all
@@ -317,6 +325,7 @@ vn_pie_missions_slot_3_a = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			corsica_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -384,6 +393,7 @@ vn_pie_missions_slot_4_a = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			2086 = { country_or_non_sovereign_subject_holds = ROOT }
 			1812 = { country_or_non_sovereign_subject_holds = ROOT }
 			1806 = { country_or_non_sovereign_subject_holds = ROOT }
@@ -408,6 +418,7 @@ vn_pie_missions_slot_4_a = {
 			province_id = 2560
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			2560 = {
 				owned_by = ROOT
 				is_core = ROOT
@@ -440,6 +451,7 @@ vn_pie_missions_slot_4_a = {
 			province_id = 2560
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			2560 = {
 				trade_share = {
 					country = ROOT
@@ -487,6 +499,7 @@ vn_pie_missions_slot_5_a = {
 			}
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			custom_trigger_tooltip = {
 				tooltip = vn_pie_pedemontana_road.tt
 				1009 = {
@@ -566,6 +579,7 @@ vn_pie_missions_slot_5_a = {
 			province_id = 1009
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			post_office = 5
 			1009 = {
 				owned_by = ROOT
@@ -592,6 +606,7 @@ vn_pie_missions_slot_5_a = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				value = 15
 				OR = {

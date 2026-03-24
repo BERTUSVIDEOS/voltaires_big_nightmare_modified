@@ -23,6 +23,7 @@ vn_als_missions_slot_1 = {
 			trade_goods = paper
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             OR = {
 				has_institution = printing_press
 				any_owned_province = {
@@ -107,6 +108,7 @@ vn_als_missions_slot_1 = {
 			}
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			OR = {
 				current_age = age_of_absolutism
 				current_age = age_of_revolutions
@@ -161,6 +163,7 @@ vn_als_missions_slot_1 = {
 			}
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			num_of_owned_provinces_with = {
 				value = 5
 				OR = {
@@ -218,6 +221,7 @@ vn_als_missions_slot_2 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             sundgau_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -241,6 +245,7 @@ vn_als_missions_slot_2 = {
             province_id = 37
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             37 = {
 				owned_by = ROOT
 				has_fort_trigger = yes
@@ -293,6 +298,7 @@ vn_als_missions_slot_2 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			baden_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -428,6 +434,7 @@ vn_als_missions_slot_3 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             strassburg_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -484,6 +491,7 @@ vn_als_missions_slot_3 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             nordgau_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -513,6 +521,7 @@ vn_als_missions_slot_3 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			nordgau_area = {
 				type = all
 				owned_by = ROOT
@@ -627,6 +636,7 @@ vn_als_missions_slot_4 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             hagenau_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -658,6 +668,7 @@ vn_als_missions_slot_4 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			barrois_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -717,6 +728,7 @@ vn_als_missions_slot_5 = {
 			}
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			primary_culture = boden_alemannic
 			grown_by_development = 50
             num_of_owned_provinces_with = {
@@ -752,6 +764,7 @@ vn_als_missions_slot_5 = {
             province_id = 1959
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             1959 = {
 				owned_by = ROOT
 				has_fort_trigger = yes
@@ -784,6 +797,7 @@ vn_als_missions_slot_5 = {
 			}
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			OR = {
 				custom_trigger_tooltip = {
 					tooltip = vn_als_drive_out_the_habsburgs.tt
@@ -822,6 +836,7 @@ vn_als_missions_slot_5 = {
         position = 4
         required_missions = { vn_als_drive_out_the_habsburgs }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             OR = {
 				NOT = { hre_size = 1 }
 				is_elector = yes
@@ -830,15 +845,15 @@ vn_als_missions_slot_5 = {
         }
         effect = {
 			change_ruler_stat = {
-				stat = adm
+				type = adm
 				amount = 2
 			}
 			change_ruler_stat = {
-				stat = dip
+				type = dip
 				amount = 2
 			}
 			change_ruler_stat = {
-				stat = mil
+				type = mil
 				amount = 2
 			}
 			add_country_modifier = {

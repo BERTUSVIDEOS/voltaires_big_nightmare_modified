@@ -15,7 +15,8 @@ vn_kar_missions_slot_1_a = {
 		icon = per_the_city_of_daman
 		required_missions = {	}
 		
-		trigger = { 
+		trigger = {
+			if = { limit = { ai = yes } ai = no } 
 			6783 = {
 				development = 15
 				num_of_buildings_in_province = 5
@@ -51,6 +52,7 @@ vn_kar_missions_slot_2_a = {
 		required_missions = {	}
 		
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			ruler_total_stats = {
 				amount = 9
 			}
@@ -97,6 +99,7 @@ vn_kar_missions_slot_3_a = {
 		required_missions = {	}
 		
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			stability = 1
 			OR = {
 				army_size = 20
@@ -139,6 +142,7 @@ vn_kar_missions_slot_3_a = {
 		}
 		
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			owns_all_provinces = {
 					area = anemorion_area		
 			}
@@ -219,6 +223,7 @@ vn_kar_missions_slot_3_a = {
 		}
 		
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			NOT = {	exists = ANY }
 			NOT = {	exists = RAM }
 			NOT = {	exists = DUL }
@@ -240,6 +245,7 @@ vn_kar_missions_slot_3_a = {
 		}
 		
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			army_size = 60
 			manpower_percentage = 0.9
 			mil_tech = 6
@@ -266,6 +272,7 @@ vn_kar_missions_slot_3_a = {
 		}
 		
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			war_score_against = {
 				who = TUR
 				value = 75
@@ -299,6 +306,7 @@ vn_kar_missions_slot_4_a = {
 		required_missions = { }
 		
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			OR = {
 				piety = 0.5
 				NOT = { piety = -0.5 }
@@ -353,6 +361,7 @@ vn_kar_missions_slot_5_a = {
 		required_missions = {	}
 		
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			owns = 3083
 		}
 		
@@ -374,6 +383,7 @@ vn_kar_missions_slot_5_a = {
 		}
 		
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			owns_all_provinces = {
 				area = cyprus_area
 			}

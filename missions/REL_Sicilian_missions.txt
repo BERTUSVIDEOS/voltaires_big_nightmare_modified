@@ -18,6 +18,7 @@ vn_sic_muslimilian_missions = {
 			NOT = { province_is_or_accepts_culture = yes }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			if = {
 				limit = {
 					has_estate = estate_dhimmi
@@ -57,6 +58,7 @@ vn_sic_muslimilian_missions = {
 		icon = mission_fatimid_caliphate
 		required_missions = { }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			custom_trigger_tooltip = {
 				tooltip = vn_caliphal_assistance.tt
 				any_ally = {
@@ -94,6 +96,7 @@ vn_sic_muslimilian_missions = {
 			NOT = { num_of_times_improved_by_owner = 2 }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			OR = {
 				NOT = { has_idea_group = SIC_TAI_ideas }
 				has_idea = SIC_TAI_idea_3
@@ -124,6 +127,7 @@ vn_sic_muslimilian_missions = {
 			province_id = 2041
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			owns_core_province = 2041
 			2041 = {
 				num_of_buildings_in_province = 5
@@ -1015,6 +1019,7 @@ vn_sic_muslim_missions_slot_2 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
             venice_area = {
 				type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -1959,6 +1964,7 @@ vn_sic_muslim_missions_slot_5 = {
         required_missions = { }
         position = 1
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			any_rival_country = {
 				humiliated_by = ROOT
 			}

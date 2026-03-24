@@ -29,6 +29,7 @@ country_decisions = {
 			NOT = { owned_by = ROOT }
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			hellas_region = { type = all owned_by = BYZ }
 			furthergreece_region = { type = all owned_by = BYZ }
 		}
@@ -75,6 +76,7 @@ country_decisions = {
 			NOT = { owned_by = ROOT }
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			owns = 1047 #Silistra
 			owns = 2166 #Burgas
 			owns = 573 #Edirne
@@ -136,6 +138,7 @@ country_decisions = {
 			NOT = { owned_by = ROOT }
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			optimaton_area = { type = all owned_by = BYZ }
 			nikaia_area = { type = all owned_by = BYZ }
 			mysia_area = { type = all owned_by = BYZ }
@@ -176,6 +179,7 @@ country_decisions = {
 			NOT = { owned_by = ROOT }
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			anatolia_superregion = { type = all owned_by = BYZ }
 		}
 		effect = {
@@ -215,6 +219,7 @@ country_decisions = {
 			NOT = { owned_by = ROOT }
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			apulia_region = { type = all owned_by = BYZ }
 			sicilia_region = { type = all owned_by = BYZ }
 		}

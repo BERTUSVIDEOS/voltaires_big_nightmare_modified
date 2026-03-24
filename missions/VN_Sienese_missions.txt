@@ -19,6 +19,7 @@ vn_sie_missions_slot_1_a = {
 			province_id = 117
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			117 = {
 				owned_by = ROOT
 				is_core = ROOT
@@ -44,6 +45,7 @@ vn_sie_missions_slot_1_a = {
 			province_id = 1843
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			1843 = {
 				owned_by = ROOT
 				is_core = ROOT
@@ -86,6 +88,7 @@ vn_sie_missions_slot_2_a = {
 			}
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			117 = {
 				owned_by = ROOT
 				is_core = ROOT
@@ -126,6 +129,7 @@ vn_sie_missions_slot_2_a = {
 			province_id = 117
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			117 = {
 				owned_by = ROOT
 				is_core = ROOT
@@ -158,6 +162,7 @@ vn_sie_missions_slot_2_a = {
 			vn_sie_studium_senese 
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			customs_house = 5
         }
         effect = {
@@ -181,6 +186,7 @@ vn_sie_missions_slot_2_a = {
 			province_id = 117
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			total_development = 100
 			117 = {
 				owned_by = ROOT
@@ -218,6 +224,7 @@ vn_sie_missions_slot_3_a = {
         position = 1
         required_missions = {  }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			artist = 2
 			OR = {
 				full_idea_group = innovativeness_ideas
@@ -243,6 +250,7 @@ vn_sie_missions_slot_3_a = {
 			province_id = 117
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			117 = {
 				owned_by = ROOT
 				is_core = ROOT
@@ -268,6 +276,7 @@ vn_sie_missions_slot_3_a = {
 			province_id = 117
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			117 = {
 				owned_by = ROOT
 				is_core = ROOT
@@ -288,6 +297,7 @@ vn_sie_missions_slot_3_a = {
 			province_id = 117
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			if = {
 				limit = { government = monarchy }
 				legitimacy = 100
@@ -337,6 +347,7 @@ vn_sie_missions_slot_4_a = {
             }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			army_size_percentage = 1
 			117 = {
 				owned_by = ROOT
@@ -432,6 +443,7 @@ vn_sie_missions_slot_4_a = {
             }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			1030 = {
 				owned_by = ROOT
 				is_core = ROOT
@@ -475,6 +487,7 @@ vn_sie_missions_slot_4_a = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				value = 5
 				area = pisa_area
@@ -504,6 +517,7 @@ vn_sie_missions_slot_4_a = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				value = 5
 				area = florence_area
@@ -549,6 +563,7 @@ vn_sie_missions_slot_5_a = {
             }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			323 = {
 				owned_by = ROOT
 				is_core = ROOT
@@ -582,6 +597,7 @@ vn_sie_missions_slot_5_a = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				value = 5
 				area = arezzo_area

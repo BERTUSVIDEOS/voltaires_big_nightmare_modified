@@ -16,6 +16,7 @@ vn_cmo_missions_slot_2_a = {
 		required_missions = {  }
 		position = 1
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			army_size_percentage = 0.75
 			if = {
 				limit = { MLO = { owns = 1818 } }
@@ -53,6 +54,7 @@ vn_cmo_missions_slot_2_a = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			milan_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -93,6 +95,7 @@ vn_cmo_missions_slot_3_a = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			1136 = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -169,6 +172,7 @@ vn_cmo_missions_slot_3_a = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			1143 = { country_or_non_sovereign_subject_holds = ROOT }
 			2292 = { country_or_non_sovereign_subject_holds = ROOT }
 			4128 = { country_or_non_sovereign_subject_holds = ROOT }
@@ -228,6 +232,7 @@ vn_cmo_missions_slot_4_a = {
 			province_id = 2717
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			2717 = {
 				owned_by = ROOT
 				is_capital = yes
@@ -251,6 +256,7 @@ vn_cmo_missions_slot_4_a = {
 			province_id = 2717
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			2717 = {
 				owned_by = ROOT
 				is_capital = yes

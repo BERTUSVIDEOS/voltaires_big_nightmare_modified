@@ -20,6 +20,7 @@ vn_ven_missions_slot_1 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             venice_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -55,6 +56,7 @@ vn_ven_missions_slot_1 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             verona_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -136,6 +138,7 @@ vn_ven_missions_slot_1 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             brescia_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -167,6 +170,7 @@ vn_ven_missions_slot_1 = {
             province_id = 1818
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             MLO = {
                 OR = {
                     exists = no
@@ -192,6 +196,7 @@ vn_ven_missions_slot_1 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             crete_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -234,6 +239,7 @@ vn_ven_missions_slot_1 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             chios_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -284,6 +290,7 @@ vn_ven_missions_slot_1 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             cyprus_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -318,6 +325,7 @@ vn_ven_missions_slot_2 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             friuli_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -345,6 +353,7 @@ vn_ven_missions_slot_2 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             2612 = { country_or_non_sovereign_subject_holds = ROOT }
             729 = { country_or_non_sovereign_subject_holds = ROOT }
             113 = { country_or_non_sovereign_subject_holds = ROOT }
@@ -366,6 +375,7 @@ vn_ven_missions_slot_2 = {
         position = 4
         required_missions = { vn_ven_conquer_brescia }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             development_in_provinces = {
 				value = 150
                 OR = {
@@ -551,6 +561,7 @@ vn_ven_missions_slot_2 = {
         position = 5
         required_missions = {  }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             OR = {
                 OR = {
                     is_in_war = {
@@ -633,6 +644,7 @@ vn_ven_missions_slot_2 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             624 = { country_or_non_sovereign_subject_holds = ROOT }
             623 = { country_or_non_sovereign_subject_holds = ROOT }
             622 = { country_or_non_sovereign_subject_holds = ROOT }
@@ -670,6 +682,7 @@ vn_ven_missions_slot_2 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             morea_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -697,6 +710,7 @@ vn_ven_missions_slot_2 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             euboia_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -731,6 +745,7 @@ vn_ven_missions_slot_2 = {
             }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             calc_true_if = {
                 amount = 3
                 2233 = {
@@ -797,6 +812,7 @@ vn_ven_missions_slot_3 = {
             }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             owns_core_province = 305
             owns_core_province = 1081
             owns_core_province = 2420
@@ -835,6 +851,7 @@ vn_ven_missions_slot_3 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             ragusa_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -874,6 +891,7 @@ vn_ven_missions_slot_3 = {
             }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             624 = {
                 trade_share = {
                     country = ROOT
@@ -897,6 +915,7 @@ vn_ven_missions_slot_3 = {
         position = 6
         required_missions = { vn_ven_paticipate_in_crusades }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             any_ally = {
                 primary_culture = outremer
                 has_opinion = {
@@ -921,6 +940,7 @@ vn_ven_missions_slot_3 = {
         position = 7
         required_missions = {  }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             monthly_income = 300
             num_of_trading_bonuses = 3
             OR = {
@@ -943,6 +963,7 @@ vn_ven_missions_slot_3 = {
         position = 9
         required_missions = { vn_ven_thalassocracy }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             has_institution = global_trade
             all_owned_province = {
                 global_trade = 100
@@ -978,6 +999,7 @@ vn_ven_missions_slot_4 = {
         position = 1
         required_missions = {  }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             is_at_war = no
             navy_size_percentage = 0.75
             num_of_galley = 12
@@ -1041,6 +1063,7 @@ vn_ven_missions_slot_4 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             istria_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -1076,6 +1099,7 @@ vn_ven_missions_slot_4 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             durres_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -1107,6 +1131,7 @@ vn_ven_missions_slot_4 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             zeta_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -1128,6 +1153,7 @@ vn_ven_missions_slot_4 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             cherson_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -1158,6 +1184,7 @@ vn_ven_missions_slot_5 = {
         position = 1
         required_missions = {  }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             112 = {
                 owned_by = ROOT
                 num_of_times_improved = 12
@@ -1178,6 +1205,7 @@ vn_ven_missions_slot_5 = {
         position = 2
         required_missions = { vn_ven_expand_la_serenissima }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             112 = {
                 owned_by = ROOT
                 has_education_building_trigger = yes
@@ -1197,6 +1225,7 @@ vn_ven_missions_slot_5 = {
         position = 3
         required_missions = {  }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             has_3_lv3_advisors_trigger = yes
             employed_advisor = {
                 culture = ROOT
@@ -1221,6 +1250,7 @@ vn_ven_missions_slot_5 = {
         position = 4
         required_missions = { vn_ven_institutionalize_sapientes }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             if = {
                 limit = { has_dlc = "Dharma" }
                 reform_level = 6
@@ -1241,6 +1271,7 @@ vn_ven_missions_slot_5 = {
         position = 5
         required_missions = {  }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             total_own_and_non_tributary_subject_development = 500
             num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
                 value = 5
@@ -1259,6 +1290,7 @@ vn_ven_missions_slot_5 = {
         position = 6
         required_missions = { vn_ven_expand_strato_da_mar }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             NOT = { average_autonomy = 40 }
             num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
                 value = 10
@@ -1281,6 +1313,7 @@ vn_ven_missions_slot_5 = {
         position = 7
         required_missions = {  }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             num_of_admirals = 2
             num_of_owned_provinces_with = {
                 value = 5
@@ -1319,6 +1352,7 @@ vn_ven_missions_slot_5 = {
             }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             874 = {
                 trade_share = {
                     country = ROOT
@@ -1364,6 +1398,7 @@ vn_ven_missions_slot_5 = {
             province_id = 2560
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             OR = {
 				2560 = { country_or_non_sovereign_subject_holds = ROOT }
                 2560 = {

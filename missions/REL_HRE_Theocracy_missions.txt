@@ -18,6 +18,7 @@ VN_hre_theocracies_missions = {
         required_missions = { }
         position = 5
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			devotion = 100
 			stability = 1
 			if = {
@@ -60,6 +61,7 @@ VN_hre_theocracies_missions = {
 		icon = mission_convert_provinces
 		required_missions = { vn_pious_ruler }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			temple = 5
 		}
 		effect = {
@@ -73,6 +75,7 @@ VN_hre_theocracies_missions = {
 		icon = mission_european_church
 		required_missions = { vn_new_monasteries }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			capital_scope = {
 				has_building = cathedral
 			}
@@ -88,6 +91,7 @@ VN_hre_theocracies_missions = {
 		icon = mission_religious
 		required_missions = { vn_cathedral_in_capital }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			OR  = {
 				current_age = age_of_absolutism
 				current_age = age_of_revolutions

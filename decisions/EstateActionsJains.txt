@@ -9,6 +9,7 @@ country_decisions = {
 			has_estate = estate_jains
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			has_not_any_estate_disaster_active = yes
 			is_bankrupt = no
 			estate_influence = {
@@ -44,6 +45,7 @@ country_decisions = {
 			has_estate = estate_jains
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			has_not_any_estate_disaster_active = yes
 			corruption = 2
 			estate_loyalty = {
@@ -83,6 +85,7 @@ country_decisions = {
 			has_estate = estate_jains
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			has_not_any_estate_disaster_active = yes
 			estate_action_off_cooldown = {
 				estate_action = PATRONIZE_JAIN_FAMILIES_JAINS
@@ -143,6 +146,7 @@ country_decisions = {
 			has_estate = estate_jains
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			has_not_any_estate_disaster_active = yes
 			estate_influence = {
 				estate = estate_jains
@@ -193,6 +197,7 @@ country_decisions = {
 			NOT = { has_estate = estate_vaisyas }
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			has_not_any_estate_disaster_active = yes
 			estate_loyalty = {
 				estate = estate_jains

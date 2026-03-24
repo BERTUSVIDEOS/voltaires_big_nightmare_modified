@@ -11,6 +11,7 @@ vn_khawarij_missions = {
 		icon = mission_muslim_warrior
 		required_missions = {}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			is_defender_of_faith = yes
 			if = {
 				limit = { has_dlc = "Cradle of Civilization" }
@@ -32,6 +33,7 @@ vn_khawarij_missions = {
 		icon = mission_mosque
 		required_missions = {}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			religious_unity = 0.95
 			if = {
 				limit = {
@@ -54,6 +56,7 @@ vn_khawarij_missions = {
 		icon = mission_arabian_fort
 		required_missions = { vn_prove_religiousness }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			OR = {
 				college = 10
 				university = 5

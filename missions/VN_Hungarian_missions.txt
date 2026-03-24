@@ -17,6 +17,7 @@ vn_hun_missions_slot_1 = {
 		icon = personal_diplomacy
         required_missions = {  }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			any_ally = {
                 culture_group = south_slavic
                 has_opinion = {
@@ -100,6 +101,7 @@ vn_hun_missions_slot_1 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
             slavonia_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -168,6 +170,7 @@ vn_hun_missions_slot_1 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			zagreb_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -197,6 +200,7 @@ vn_hun_missions_slot_1 = {
             province_id = 5475
         }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			5475 = {
                 owned_by = ROOT
                 development = 30
@@ -218,6 +222,7 @@ vn_hun_missions_slot_1 = {
         icon = mission_rb_weather_the_reformation
         required_missions = { vn_hun_found_buda }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
             num_of_owned_provinces_with = {
                 value = 5
                 OR = {
@@ -250,6 +255,7 @@ vn_hun_missions_slot_1 = {
             }
         }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
             num_of_owned_provinces_with = {
                 value = 3
                 trade_goods = silver
@@ -302,6 +308,7 @@ vn_hun_missions_slot_2 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
             donji_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -344,6 +351,7 @@ vn_hun_missions_slot_2 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			serbia_region = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -392,6 +400,7 @@ vn_hun_missions_slot_2 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
             arbanon_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -465,6 +474,7 @@ vn_hun_missions_slot_2 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
             chalkidiki_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -502,6 +512,7 @@ vn_hun_missions_slot_2 = {
         icon = danubian_power
         required_missions = { }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
             num_of_owned_provinces_with = {
                 value = 10
                 has_trade_building_trigger = yes
@@ -568,6 +579,7 @@ vn_hun_missions_slot_3 = {
         icon = gory_to_the_black_army
         required_missions = { vn_hun_assimilate_the_magyars }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
             OR = {
 				has_country_modifier = hun_black_army
 				has_reform = black_army_reform
@@ -611,6 +623,7 @@ vn_hun_missions_slot_3 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
             buzau_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -655,6 +668,7 @@ vn_hun_missions_slot_3 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			bulgaria_region = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -704,6 +718,7 @@ vn_hun_missions_slot_3 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			thrace_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -733,6 +748,7 @@ vn_hun_missions_slot_3 = {
         icon = law_of_the_pious
         required_missions = { vn_hun_conquer_macedonia }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
             religious_unity = 1
             is_defender_of_faith = yes
 		}
@@ -778,6 +794,7 @@ vn_hun_missions_slot_4 = {
             religion = tengri_pagan_reformed
         }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
             pest_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -851,6 +868,7 @@ vn_hun_missions_slot_4 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
             NOT = { exists = TRA }
 			transylvania_region = {
                 type = all
@@ -923,6 +941,7 @@ vn_hun_missions_slot_4 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			moldavia_region = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -960,6 +979,7 @@ vn_hun_missions_slot_4 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			sacz_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -1094,6 +1114,7 @@ vn_hun_missions_slot_4 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
             lublin_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -1169,6 +1190,7 @@ vn_hun_missions_slot_4 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			styria_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -1200,6 +1222,7 @@ vn_hun_missions_slot_4 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			austria_region = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -1230,6 +1253,7 @@ vn_hun_missions_slot_5 = {
         icon = all_bases_covered
         required_missions = { }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             is_at_war = no
             NOT = { num_of_rebel_armies = 1 }
             NOT = { num_of_rebel_controlled_provinces = 1 }
@@ -1257,6 +1281,7 @@ vn_hun_missions_slot_5 = {
         icon = the_hungarian_succession
         required_missions = { vn_hun_weaken_the_oligarchs }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
             stability = 2
             custom_trigger_tooltip = {
                 tooltip = vn_hun_survive_fall_of_arpads.tt
@@ -1277,6 +1302,7 @@ vn_hun_missions_slot_5 = {
         icon = league_of_the_public_weal
         required_missions = { vn_hun_survive_fall_of_arpads }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
             grown_by_development = 250
             prestige = 50
 		}
@@ -1305,6 +1331,7 @@ vn_hun_missions_slot_5 = {
         icon = influence_the_princes
         required_missions = { vn_hun_humiliate_rivals }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
             OR = {
                 is_emperor = yes
                 government_rank = 6
@@ -1349,6 +1376,7 @@ vn_hun_missions_slot_5 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
             moravia_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -1380,6 +1408,7 @@ vn_hun_missions_slot_5 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			bohemia_region = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT

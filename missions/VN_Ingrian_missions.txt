@@ -20,6 +20,7 @@ vn_igr_missions_slot_1 = {
         position = 2
         required_missions = { vn_igr_gateway_to_russia }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			OR = {
 				AND = {
 					uses_papacy = yes
@@ -47,6 +48,7 @@ vn_igr_missions_slot_1 = {
         position = 3
         required_missions = { vn_igr_new_religion }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			religious_unity = 1
 			NOT = { average_unrest = 1 }
         }
@@ -66,6 +68,7 @@ vn_igr_missions_slot_1 = {
         position = 4
         required_missions = { vn_igr_found_monasteries }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			check_variable = { which = num_converted_religion value = 10 }
         }
         effect = {
@@ -100,6 +103,7 @@ vn_igr_missions_slot_2 = {
         position = 1
         required_missions = {  }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			any_country = {
 				OR = {
 					culture_group = east_slavic
@@ -124,6 +128,7 @@ vn_igr_missions_slot_2 = {
         position = 3
         required_missions = { vn_igr_conquer_ingria }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			any_country = {
 				culture_group = scandinavian
 				has_opinion = {
@@ -152,6 +157,7 @@ vn_igr_missions_slot_2 = {
         position = 2
         required_missions = { vn_igr_ingrian_diplomats }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			calc_true_if = {
 				amount = 2
 				calc_true_if = {
@@ -296,6 +302,7 @@ vn_igr_missions_slot_2 = {
 			}
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			num_of_owned_provinces_with = {
 				value = 3
 				has_fort_trigger = yes
@@ -348,6 +355,7 @@ vn_igr_missions_slot_3 = {
         position = 1
         required_missions = {  }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			stability = 2
 			army_size_percentage = 0.75
 			capital_scope = {
@@ -407,6 +415,7 @@ vn_igr_missions_slot_3 = {
 			}
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			primitives = no
 			treasury = 180
 			ingria_area = {
@@ -450,6 +459,7 @@ vn_igr_missions_slot_3 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			kymenlaakso_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -484,6 +494,7 @@ vn_igr_missions_slot_3 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			suomi_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -524,6 +535,7 @@ vn_igr_missions_slot_4 = {
         position = 1
         required_missions = { }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			num_of_light_ship = 7
 			monthly_income = 7
 			capital_scope = {
@@ -544,6 +556,7 @@ vn_igr_missions_slot_4 = {
 			province_id = 3427
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			3427 = {
 				trade_share = {
 					country = ROOT
@@ -584,6 +597,7 @@ vn_igr_missions_slot_4 = {
 			province_id = 3427
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			3427 = {
 				owned_by = ROOT
 				is_core = ROOT
@@ -658,6 +672,7 @@ vn_igr_missions_slot_4 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			ladoga_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -696,6 +711,7 @@ vn_igr_missions_slot_4 = {
 			}
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			3427 = {
 				owned_by = ROOT
 				is_core = ROOT
@@ -746,6 +762,7 @@ vn_igr_missions_slot_5 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			pskov_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT

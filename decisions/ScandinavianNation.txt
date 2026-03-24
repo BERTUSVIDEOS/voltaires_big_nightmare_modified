@@ -22,7 +22,7 @@ country_decisions = {
 							num_of_owned_provinces_with = {
 								is_core = ROOT
 								superregion = scandinavia_superregion
-								value = 171	#171/259
+								value = 171	# 171/259
 							}
 						}
 					}
@@ -34,6 +34,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			adm_tech = 15
 			is_free_or_tributary_trigger = yes
 			is_nomad = no
@@ -42,23 +43,17 @@ country_decisions = {
 			num_of_owned_provinces_with = {
 				is_core = ROOT
 				superregion = scandinavia_superregion
-				value = 171	#171/259
+				value = 171	# 171/259
 			}
 		}
 		effect = {
 			change_tag = SCA
-			on_change_tag_effect = yes
-			hidden_effect = { restore_country_name = yes }
-			set_formable_tier = { tier = 4 }
 			remove_non_electors_emperors_from_empire_effect = yes
-			if = {
-				limit = { NOT = { government_rank = 5 } }
-				set_government_rank = 5
+			set_formable_tier = {
+				tier = 4
+				gov_rank = 5
+				superregion = scandinavia_superregion
 			}
-			scandinavia_superregion = {
-				limit = { NOT = { owned_by = ROOT } }
-				add_permanent_claim = SCA
-			}	
 			add_country_modifier = {
 				name = "centralization_modifier"
 				duration = 7300

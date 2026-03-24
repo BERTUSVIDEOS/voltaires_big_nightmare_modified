@@ -9,6 +9,7 @@ country_decisions = {
 			has_estate = estate_brahmins
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			has_not_any_estate_disaster_active = yes
 			estate_action_off_cooldown = {
 				estate_action = MAKE_GENEROUS_DONATION_BRAHMINS
@@ -50,6 +51,7 @@ country_decisions = {
 			has_estate = estate_brahmins
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			has_not_any_estate_disaster_active = yes
 			estate_action_off_cooldown = {
 				estate_action = SEEK_SUPPORT_OF_BRAHMINS
@@ -110,6 +112,7 @@ country_decisions = {
 			has_estate = estate_brahmins
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			has_not_any_estate_disaster_active = yes
 			estate_action_off_shared_cooldown = {
 				estate_action = RECRUIT_ADVISOR_BRAHMINS
@@ -144,6 +147,7 @@ country_decisions = {
 			has_estate = estate_brahmins
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			has_not_any_estate_disaster_active = yes
 			estate_action_off_cooldown = {
 				estate_action = RECRUIT_ADVISOR_BRAHMINS
@@ -179,6 +183,7 @@ country_decisions = {
 			NOT = { has_estate = estate_church }
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			has_not_any_estate_disaster_active = yes
 			estate_loyalty = {
 				estate = estate_brahmins
@@ -217,6 +222,7 @@ country_decisions = {
 			has_estate = estate_brahmins
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			has_not_any_estate_disaster_active = yes
 			estate_influence = {
 				estate = estate_brahmins

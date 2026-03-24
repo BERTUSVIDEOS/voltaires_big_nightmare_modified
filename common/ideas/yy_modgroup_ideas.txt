@@ -9,8 +9,8 @@ SAS_ideas = {
     
     trigger = {
         OR = {
-            dynasty = "Ó Chonaing"
-            dynasty = "Ó Chernaig"
+            dynasty = "ï¿½ Chonaing"
+            dynasty = "ï¿½ Chernaig"
         }
     }
     free = yes
@@ -35,7 +35,7 @@ SAS_ideas = {
         war_exhaustion = -0.02
     }
     SAS_idea_7 = {
-        enemy_core_creation = 0.25
+        enemy_core_creation = 0.10
     }
 }
 
@@ -50,12 +50,12 @@ CNC_ideas = {
     
     trigger = {
         OR = {
-            dynasty = "Ó Breisléin"
-            dynasty = "Ó Maíl Doraid"
-            dynasty = "Ó Canannáin"
-            dynasty = "Ó Domhnaill"
-            dynasty = "Ó Baoighill"
-            dynasty = "Ó Maoldúin"
+            dynasty = "ï¿½ Breislï¿½in"
+            dynasty = "ï¿½ Maï¿½l Doraid"
+            dynasty = "ï¿½ Canannï¿½in"
+            dynasty = "ï¿½ Domhnaill"
+            dynasty = "ï¿½ Baoighill"
+            dynasty = "ï¿½ Maoldï¿½in"
         }
     }
     free = yes
@@ -94,13 +94,13 @@ CNE_ideas = {
     
     trigger = {
         OR = {
-            dynasty = "Ó Maelmuire"
-            dynasty = "Ó hAinniarraidh"
-            dynasty = "Ó Catháin"
-            dynasty = "Ó hAodhagáin"
+            dynasty = "ï¿½ Maelmuire"
+            dynasty = "ï¿½ hAinniarraidh"
+            dynasty = "ï¿½ Cathï¿½in"
+            dynasty = "ï¿½ hAodhagï¿½in"
             dynasty = "Mac Lochlainn"
-            dynasty = "Ó Dochartaigh"
-            dynasty = "Ó Néill"
+            dynasty = "ï¿½ Dochartaigh"
+            dynasty = "ï¿½ Nï¿½ill"
         }
     }
     free = yes
@@ -179,10 +179,10 @@ DLN_ideas = {
     
     trigger = {
         OR = {
-            dynasty = "Ó hAitidhe"
-            dynasty = "Ó Loingsigh"
-            dynasty = "Ó Fearghail"
-            dynasty = "Ó Dubhuir"
+            dynasty = "ï¿½ hAitidhe"
+            dynasty = "ï¿½ Loingsigh"
+            dynasty = "ï¿½ Fearghail"
+            dynasty = "ï¿½ Dubhuir"
             dynasty = "Mac Aonghusa"
         }
     }
@@ -224,9 +224,9 @@ SUI_ideas = {
     
     trigger = {
         OR = {
-            dynasty = "Ó Máel Sechlainn"
-            dynasty = "Ó Chonaing"
-            dynasty = "Mac Eochagáin"
+            dynasty = "ï¿½ Mï¿½el Sechlainn"
+            dynasty = "ï¿½ Chonaing"
+            dynasty = "Mac Eochagï¿½in"
         }
     }
     free = yes
@@ -270,15 +270,15 @@ TTC_ideas = {
     
     trigger = {
         OR = {
-            dynasty = "Ó Laidhgnén"
-            dynasty = "Ó Baoighealláin"
-            dynasty = "Ó Chremthainn"
-            dynasty = "Ó Cearbhaill"
-            dynasty = "Ó hEignigh"
-            dynasty = "Ó hAnluain"
+            dynasty = "ï¿½ Laidhgnï¿½n"
+            dynasty = "ï¿½ Baoigheallï¿½in"
+            dynasty = "ï¿½ Chremthainn"
+            dynasty = "ï¿½ Cearbhaill"
+            dynasty = "ï¿½ hEignigh"
+            dynasty = "ï¿½ hAnluain"
             dynasty = "Mac Uidhir"
             dynasty = "Mac Mathghamha"
-            dynasty = "Mac Samhradháin"
+            dynasty = "Mac Samhradhï¿½in"
         }
     }
     free = yes
@@ -318,9 +318,9 @@ GLN_ideas = {
     
     trigger = {
         OR = {
-            dynasty = "Ó Gadhra"
-            dynasty = "Ó hEaghra"
-            dynasty = "Mac Maoláin"
+            dynasty = "ï¿½ Gadhra"
+            dynasty = "ï¿½ hEaghra"
+            dynasty = "Mac Maolï¿½in"
         }
     }
     free = yes
@@ -365,19 +365,19 @@ CNT_ideas = {
     
     trigger = {
         OR = {
-            dynasty = "Ó Cellaigh"
-            dynasty = "Ó Ruairc"
-            dynasty = "Ó Raghallaigh"
-            dynasty = "Ó Conchobhair"
-            dynasty = "Ó Flaithbheartaigh"
-            dynasty = "Ó Con Cheanain"
+            dynasty = "ï¿½ Cellaigh"
+            dynasty = "ï¿½ Ruairc"
+            dynasty = "ï¿½ Raghallaigh"
+            dynasty = "ï¿½ Conchobhair"
+            dynasty = "ï¿½ Flaithbheartaigh"
+            dynasty = "ï¿½ Con Cheanain"
             dynasty = "Mac Fhirbhisigh"
             dynasty = "Mac Diarmata"
-            dynasty = "Ó Dubhda"
-            dynasty = "Ó hEidhin"
-            dynasty = "Ó Cathail"
-            dynasty = "Ó Máille"
-            dynasty = "Ó Búrca"
+            dynasty = "ï¿½ Dubhda"
+            dynasty = "ï¿½ hEidhin"
+            dynasty = "ï¿½ Cathail"
+            dynasty = "ï¿½ Mï¿½ille"
+            dynasty = "ï¿½ Bï¿½rca"
         }
     }
     free = yes
@@ -418,13 +418,13 @@ LGN_ideas = {
     
     trigger = {
         OR = {
-            dynasty = "Ó Faelain"
-            dynasty = "Ó Chennselaig"
-            dynasty = "Ó Tuathail"
-            dynasty = "Ó Broin"
+            dynasty = "ï¿½ Faelain"
+            dynasty = "ï¿½ Chennselaig"
+            dynasty = "ï¿½ Tuathail"
+            dynasty = "ï¿½ Broin"
             dynasty = "Mac Murchada"
-            dynasty = "Mac Giolla Phádraig"
-            dynasty = "Ó Bairrche"
+            dynasty = "Mac Giolla Phï¿½draig"
+            dynasty = "ï¿½ Bairrche"
         }
     }
     free = yes
@@ -466,13 +466,13 @@ EGN_ideas = {
     
     trigger = {
         OR = {
-            dynasty = "Ó Donnchadha"
-            dynasty = "Ó Súilleabháin"
-            dynasty = "Ó Mathghamhna"
-            dynasty = "Mac Cárthaigh"
-            dynasty = "Ó Meic Caille"
-            dynasty = "Ó Coileáin"
-            dynasty = "Ó Caoimh"
+            dynasty = "ï¿½ Donnchadha"
+            dynasty = "ï¿½ Sï¿½illeabhï¿½in"
+            dynasty = "ï¿½ Mathghamhna"
+            dynasty = "Mac Cï¿½rthaigh"
+            dynasty = "ï¿½ Meic Caille"
+            dynasty = "ï¿½ Coileï¿½in"
+            dynasty = "ï¿½ Caoimh"
         }
     }
     free = yes
@@ -512,11 +512,11 @@ DGC_ideas = {
     
     trigger = {
         OR = {
-            dynasty = "Ó Cinnéide"
-            dynasty = "Mac Cú Na Mara"
-            dynasty = "Ó Briain"
-            dynasty = "Ó Lochlainn"
-            dynasty = "Ó Bruicc"
+            dynasty = "ï¿½ Cinnï¿½ide"
+            dynasty = "Mac Cï¿½ Na Mara"
+            dynasty = "ï¿½ Briain"
+            dynasty = "ï¿½ Lochlainn"
+            dynasty = "ï¿½ Bruicc"
         }
     }
     free = yes
@@ -539,7 +539,7 @@ DGC_ideas = {
         defensiveness = 0.2
     }
     DGC_idea_6 = {
-        enemy_core_creation = 0.25
+        enemy_core_creation = 0.10
     }
     DGC_idea_7 = {
         fabricate_claims_cost = -0.25
@@ -593,7 +593,7 @@ CrusaderS_ideas = {
     }
 
     bonus = {
-        enemy_core_creation = 0.25
+        enemy_core_creation = 0.10
     }
 
     trigger = {
@@ -782,7 +782,7 @@ frisian_ideas = {
     free = yes
         
     frisia1 = {
-        enemy_core_creation = 0.5
+        enemy_core_creation = 0.10
     }
     frisia3 = {
         merc_maintenance_modifier = -0.15
@@ -867,7 +867,7 @@ abbacy_ideas = {
         global_autonomy = -0.05
     }
     abbacy_idea_4 = {
-        enemy_core_creation = 0.25
+        enemy_core_creation = 0.10
     }
     abbacy_idea_5 = {
         stability_cost_modifier = -0.1
@@ -1144,7 +1144,7 @@ pruthenian_ideas = {
         reinforce_speed = 0.1
     }
     pruthenian_idea_3 = {
-        enemy_core_creation = 0.25
+        enemy_core_creation = 0.10
     }
     pruthenian_idea_4 = {
         global_missionary_strength = 0.02
@@ -1189,7 +1189,7 @@ catducal_ideas = {
         global_tax_modifier = 0.1
     }
     catducal_idea_6 = {
-        enemy_core_creation = 0.25
+        enemy_core_creation = 0.10
     }
     catducal_idea_7 = {
         production_efficiency = 0.1
@@ -1198,7 +1198,7 @@ catducal_ideas = {
 
 wendish_ideas = {
     start = {
-        enemy_core_creation = 0.25
+        enemy_core_creation = 0.10
         technology_cost = -0.05
     }
     bonus = {
@@ -1382,7 +1382,7 @@ sslav_ideas = {
         global_autonomy = -0.05
     }
     sslav_idea_7 = {
-        enemy_core_creation = 0.25
+        enemy_core_creation = 0.10
     }
 }
 
@@ -1434,7 +1434,7 @@ hunduc_ideas = {
 
 walduc_ideas = {
     start = {
-        enemy_core_creation = 0.25
+        enemy_core_creation = 0.10
         trade_efficiency = 0.1
     }
     bonus = {
@@ -1636,7 +1636,7 @@ volgaic_ideas = {
 
 eastfrisian_ideas = {
     start = {
-        enemy_core_creation = 0.25
+        enemy_core_creation = 0.10
         global_own_trade_power = 0.15
     }
     bonus = {
@@ -1783,7 +1783,7 @@ aromanian_ideas = {
     }
     aromanian_idea_4 = {
         build_time = -0.1
-        enemy_core_creation = 0.25
+        enemy_core_creation = 0.10
     }
     aromanian_idea_5 = {
         prestige_decay = -0.01

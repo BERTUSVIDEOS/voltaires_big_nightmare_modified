@@ -16,6 +16,7 @@ vn_pal_missions_slot_1_a = {
         position = 1
         required_missions = {  }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             OR = {
                 current_age = age_of_reformation
                 current_age = age_of_absolutism
@@ -48,6 +49,7 @@ vn_pal_missions_slot_1_a = {
 			vn_pal_support_conversion 
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			if = {
 				limit = { has_dlc = "Art of War" }
 				OR = {
@@ -109,6 +111,7 @@ vn_pal_missions_slot_1_a = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             OR = {
                 BOH = { is_subject_of = ROOT }
                 bohemia_region = {
@@ -133,6 +136,7 @@ vn_pal_missions_slot_1_a = {
         position = 4
         required_missions = {  }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             if = {
                 limit = { government = monarchy }
                 num_of_royal_marriages = 3
@@ -158,6 +162,7 @@ vn_pal_missions_slot_1_a = {
 			vn_pal_a_contested_realm 
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             is_emperor = yes
             imperial_influence = 50
             calc_true_if = {
@@ -194,6 +199,7 @@ vn_pal_missions_slot_2_a = {
         position = 1
         required_missions = {  }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             army_size = 25
             NOT = { num_of_loans = 1 }
             NOT = { num_of_mercenaries = 1 }
@@ -214,6 +220,7 @@ vn_pal_missions_slot_2_a = {
         position = 3
         required_missions = { vn_pal_finance_army }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             OR = {
                 owns = 548
                 548 = { is_part_of_hre = yes }
@@ -259,6 +266,7 @@ vn_pal_missions_slot_2_a = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
                 value = 20
                 OR = {
@@ -300,6 +308,7 @@ vn_pal_missions_slot_3_a = {
             }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             1951 = { 
                 owned_by = ROOT 
                 NOT = { controlled_by = REB }
@@ -332,6 +341,7 @@ vn_pal_missions_slot_3_a = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
                 value = 5
                 area = triernorth_area
@@ -390,6 +400,7 @@ vn_pal_missions_slot_3_a = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
                 value = 40
                 OR = {
@@ -438,6 +449,7 @@ vn_pal_missions_slot_3_a = {
         position = 6
         required_missions = { vn_pal_consolidate_rhineland }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             trade_income_percentage = 0.33
             monthly_income = 50
             1951 = {
@@ -470,6 +482,7 @@ vn_pal_missions_slot_4_a = {
         position = 1
         required_missions = {  }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             if = {
                 limit = { has_dlc = "Common Sense" }
                 legitimacy_equivalent = 100
@@ -509,6 +522,7 @@ vn_pal_missions_slot_4_a = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
                 value = 5
                 area = pfalzeast_area
@@ -551,6 +565,7 @@ vn_pal_missions_slot_4_a = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
                 value = 5
                 area = pfalzwest_area
@@ -589,6 +604,7 @@ vn_pal_missions_slot_4_a = {
             province_id = 2732
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             2732 = {
                 owned_by = ROOT
                 is_core = ROOT
@@ -617,6 +633,7 @@ vn_pal_missions_slot_4_a = {
             province_id = 2732
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 		    has_3_advisors_trigger = yes
             2732 = {
                 development = 20
@@ -658,6 +675,7 @@ vn_pal_missions_slot_5 = {
 			has_fort_trigger = no
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             num_of_owned_provinces_with = {
 				value = 8
                 OR = {
@@ -684,6 +702,7 @@ vn_pal_missions_slot_5 = {
             province_id = 2732
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             2732 = {
                 development = 20
                 has_building = fort_18th
@@ -711,6 +730,7 @@ vn_pal_missions_slot_5 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
                 value = 5
                 area = hohenlohe_area
@@ -749,6 +769,7 @@ vn_pal_missions_slot_5 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
                 value = 5
                 area = oberpfalz_area
@@ -826,6 +847,7 @@ vn_pal_missions_slot_5 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
                 value = 40
                 OR = {

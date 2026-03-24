@@ -20,6 +20,7 @@ vn_nap_missions_slot_1 = {
 			province_id = 564
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             564 = {
                 owned_by = ROOT
                 is_core = ROOT
@@ -83,6 +84,7 @@ vn_nap_missions_slot_1 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			corsica_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -141,6 +143,7 @@ vn_nap_missions_slot_1 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			albenga_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -237,6 +240,7 @@ vn_nap_missions_slot_1 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			barcelona_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -265,6 +269,7 @@ vn_nap_missions_slot_1 = {
         position = 5
         required_missions = {  }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             naval_forcelimit = 50
             navy_size_percentage = 0.75
         }
@@ -293,6 +298,7 @@ vn_nap_missions_slot_1 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             num_of_owned_provinces_with = {
             	value = 5
 				area = siena_area
@@ -367,6 +373,7 @@ vn_nap_missions_slot_1 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             4974 = { country_or_non_sovereign_subject_holds = ROOT }
             num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
                 value = 10
@@ -398,6 +405,7 @@ vn_nap_missions_slot_2 = {
         position = 2
         required_missions = { vn_nap_a_bustling_port }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			has_3_lv3_advisors_trigger = yes
 			has_institution = enlightenment   
             has_any_disaster = no
@@ -435,6 +443,7 @@ vn_nap_missions_slot_2 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             ancona_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -578,6 +587,7 @@ vn_nap_missions_slot_2 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			arezzo_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -733,6 +743,7 @@ vn_nap_missions_slot_2 = {
         position = 5
         required_missions = {  }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             if = {
                 limit = { 
                     exists = PAP
@@ -763,6 +774,7 @@ vn_nap_missions_slot_2 = {
         position = 6
         required_missions = { vn_nap_turn_towards_the_sea vn_nap_papal_backing }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			army_size_percentage = 0.75
 			religion_group = christian
             num_of_generals = 1
@@ -824,6 +836,7 @@ vn_nap_missions_slot_2 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			tunis_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -908,6 +921,7 @@ vn_nap_missions_slot_3 = {
         position = 1
         required_missions = {  }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             is_subject = no
 			NOT = { num_of_free_diplomatic_relations = 1 }
 			OR = {
@@ -941,6 +955,7 @@ vn_nap_missions_slot_3 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			capua_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -1047,6 +1062,7 @@ vn_nap_missions_slot_3 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             abruzzo_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -1148,6 +1164,7 @@ vn_nap_missions_slot_3 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			salento_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -1197,6 +1214,7 @@ vn_nap_missions_slot_3 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			sicilia_region = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -1261,6 +1279,7 @@ vn_nap_missions_slot_3 = {
             }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             abruzzo_area = {
                 type = all
                 owned_by = ROOT
@@ -1377,6 +1396,7 @@ vn_nap_missions_slot_4 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			salerno_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -1439,6 +1459,7 @@ vn_nap_missions_slot_4 = {
         position = 3
         required_missions = { vn_nap_dominate_salerno }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			if = {
 				limit = { has_dlc = "Dharma" }
 				2880 = { province_has_center_of_trade_of_level = 2 }
@@ -1486,6 +1507,7 @@ vn_nap_missions_slot_4 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             arbanon_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -1530,6 +1552,7 @@ vn_nap_missions_slot_4 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			aetolia_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -1561,6 +1584,7 @@ vn_nap_missions_slot_4 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			hellas_region = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -1586,6 +1610,7 @@ vn_nap_missions_slot_4 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			thrace_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -1692,6 +1717,7 @@ vn_nap_missions_slot_5 = {
             NOT = { culture_group = latin }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             culture_group = latin
             abruzzo_area = {
                 type = all
@@ -1760,6 +1786,7 @@ vn_nap_missions_slot_5 = {
         position = 2
         required_missions = {  }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			prestige = 25
             if = {
                 limit = { has_dlc = "Common Sense" }
@@ -1823,6 +1850,7 @@ vn_nap_missions_slot_5 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }          
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			OR = {
 				senior_union_with = PRO 
 				AND = {
@@ -1868,6 +1896,7 @@ vn_nap_missions_slot_5 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             dalmatia_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -2018,6 +2047,7 @@ vn_nap_missions_slot_5 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }          
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			OR = {
 				senior_union_with = HUN 
 				AND = {
@@ -2098,6 +2128,7 @@ vn_nap_missions_slot_5 = {
         position = 6
         required_missions = {  }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             if = {
 				limit = { has_estate = estate_church }
 				estate_loyalty = {
@@ -2179,6 +2210,7 @@ vn_nap_missions_slot_5 = {
         position = 7
         required_missions = { vn_nap_rein_in_the_barons }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			absolutism = 50
 			crown_land_share = 75
 			NOT = {

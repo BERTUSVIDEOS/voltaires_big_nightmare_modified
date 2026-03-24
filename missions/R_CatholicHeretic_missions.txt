@@ -17,6 +17,7 @@ vn_catholic_heretic_missions = {
 		icon = victor_for_the_true_faith
 		required_missions = { }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			if = {
 				limit = { has_estate = estate_church }
 				num_of_estate_privileges = {
@@ -36,6 +37,7 @@ vn_catholic_heretic_missions = {
 		icon = the_land_of_moses
 		required_missions = { }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			check_variable = { which = num_converted_religion value = 15 }
 			custom_trigger_tooltip = {
 				tooltip = obj_force_converted_tooltip
@@ -71,6 +73,7 @@ vn_catholic_heretic_missions = {
 			}
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			owns_core_province = 2708
 		}
 		effect = {

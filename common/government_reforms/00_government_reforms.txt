@@ -112,16 +112,8 @@ feudal_monarchy = {
 		global_manpower_modifier = 0.1
 		vassal_income = 0.25
 	}
-	ai = {
-		factor = 2
-		modifier = {
-			factor = 0
-			NOT = {
-				has_idea_group = aristocracy_ideas
-				has_reform = feudal_monarchy
-			}
-		}
-	}
+	
+	ai = { factor = 1.0 }
 }
 
 ####################################
@@ -144,17 +136,8 @@ administrative_monarchy = {
 		global_tax_modifier = 0.05
 		global_autonomy = -0.025
 	}
-	ai = {
-		factor = 1
-		modifier = {
-			factor = 3
-			has_idea_group = economic_ideas
-		}
-		modifier = {
-			factor = 3
-			has_idea_group = trade_ideas
-		}
-	}
+	
+	ai = { factor = 1.0 }
 }
 
 constitutional_monarchy = {
@@ -182,18 +165,8 @@ constitutional_monarchy = {
 			blocked_call_diet = yes
 		}
 	}
-
-	ai = {
-		factor = 1
-		modifier = {
-			factor = 2
-			has_idea_group = humanist_ideas
-		}
-		modifier = {
-			factor = 2
-			has_idea_group = innovativeness_ideas
-		}
-	}
+	
+	ai = { factor = 1.0 }
 }
 
 
@@ -811,25 +784,8 @@ administrative_republic = {
 		global_autonomy = -0.05
 		max_absolutism = -30
 	}
-
-	ai = {
-		factor = 1
-		modifier = {
-			factor = 0
-			NOT = {
-				AND = {
-					has_reform = merchant_republic
-					capital_scope = { has_port = no }
-				}
-				AND = {
-					has_reform = republican_dictatorship
-					NOT = { dip = 4 }
-					NOT = { adm = 4 }
-					NOT = { mil = 4 }
-				}
-			}
-		}
-	}
+	
+	ai = { factor = 1.0 }
 }
 
 military_dictatorship = {
@@ -901,31 +857,8 @@ republican_dictatorship = {
 		tolerance_heathen = 1
 		land_morale = 0.1
 	}
-
-	ai = {
-		factor = 1
-		modifier = {
-			factor = 0
-			NOT = {
-				AND = {
-					has_reform = merchant_republic
-					capital_scope = { has_port = no }
-				}
-				has_reform = administrative_republic
-				has_reform = constitutional_republic
-			}
-		}
-		modifier = {
-			factor = 0
-			NOT = {
-				AND = {
-					dip = 5
-					adm = 5
-					mil = 5
-				}
-			}
-		}
-	}
+	
+	ai = { factor = 1.0 }
 }
 
 constitutional_republic = {
@@ -958,26 +891,8 @@ constitutional_republic = {
 			blocked_call_diet = yes
 		}
 	}
-
-	ai = {
-		factor = 1
-		modifier = {
-			factor = 0
-			NOT = {
-				has_reform = administrative_republic
-				AND = {
-					has_reform = merchant_republic
-					capital_scope = { has_port = no }
-				}
-				AND = {
-					has_reform = republican_dictatorship
-					NOT = { dip = 4 }
-					NOT = { adm = 4 }
-					NOT = { mil = 4 }
-				}
-			}
-		}
-	}
+	
+	ai = { factor = 1.0 }
 }
 
 revolutionary_republic = {

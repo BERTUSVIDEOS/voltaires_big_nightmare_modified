@@ -11,6 +11,7 @@ province_event = {
 	goto = root
 	
 	trigger = {
+		if = { limit = { owner = { ai = yes } } owner = { ai = no } }
 		OR = {
 			religion = druwi
 			religion = dievturiba
@@ -94,6 +95,7 @@ province_event = {
 	goto = root
 	
 	trigger = {
+		if = { limit = { owner = { ai = yes } } owner = { ai = no } }
 		OR = {
 			religion = druwi
 			religion = dievturiba
@@ -178,6 +180,7 @@ province_event = {
 	goto = root
 
 	trigger = {
+		if = { limit = { owner = { ai = yes } } owner = { ai = no } }
 		OR = {
 			religion = druwi
 			religion = dievturiba
@@ -263,6 +266,7 @@ province_event = {
 	goto = root
 	
 	trigger = {
+		if = { limit = { owner = { ai = yes } } owner = { ai = no } }
 		OR = {
 			religion = druwi
 			religion = dievturiba
@@ -353,6 +357,7 @@ province_event = {
 	goto = root
 
 	trigger = {
+		if = { limit = { owner = { ai = yes } } owner = { ai = no } }
 		fort_level = 1
 		owner = {
 			mil = 4
@@ -410,6 +415,7 @@ province_event = {
 	goto = root
 
 	trigger = {
+		if = { limit = { owner = { ai = yes } } owner = { ai = no } }
 		owner = {
 			innovativeness_ideas = 6
 			adm = 3
@@ -472,6 +478,7 @@ province_event = {
 	goto = claim_province
 
 	trigger = {
+		if = { limit = { owner = { ai = yes } } owner = { ai = no } }
 		owner = { is_free_or_tributary_trigger = yes }
 		any_neighbor_province = {
 			NOT = { owned_by = ROOT }
@@ -609,6 +616,7 @@ province_event = {
 	goto = root
 
 	trigger = {
+		if = { limit = { owner = { ai = yes } } owner = { ai = no } }
 		religion_group = pagan
 		owner = {
 			NOT = { has_country_flag = honor_ancestors_buddhism }
@@ -674,6 +682,7 @@ province_event = {
 	goto = claim_province
 
 	trigger = {
+		if = { limit = { owner = { ai = yes } } owner = { ai = no } }
 		owner = { religion = ROOT }
 		owner = { is_subject  = no }
 		any_neighbor_province = {
@@ -785,6 +794,7 @@ province_event = {
 	goto = claim_province
 
 	trigger = {
+		if = { limit = { owner = { ai = yes } } owner = { ai = no } }
 		owner = { culture_group = ROOT }
 		owner = { is_subject  = no }
 		any_neighbor_province = {
@@ -894,6 +904,7 @@ province_event = {
 	goto = root
 
 	trigger = {
+		if = { limit = { owner = { ai = yes } } owner = { ai = no } }
 		always = no
 		owner = {
 			war_exhaustion = 15
@@ -961,6 +972,7 @@ province_event = {
 	goto = root
 	
 	trigger = {
+		if = { limit = { owner = { ai = yes } } owner = { ai = no } }
 		owner = { NOT = { num_of_rebel_controlled_provinces = 3 } }
 		owner = { overextension_percentage = 1.01 }
 		owner = { war_exhaustion = 6 }
@@ -1036,6 +1048,7 @@ province_event = {
 	goto = root
 	
 	trigger = {
+		if = { limit = { owner = { ai = yes } } owner = { ai = no } }
 		is_capital = yes
 		is_part_of_hre = yes
 		owner = {
@@ -1089,6 +1102,7 @@ province_event = {
 	goto = root
 	
 	trigger = {
+		if = { limit = { owner = { ai = yes } } owner = { ai = no } }
 		owner = { 
 			has_idea_group = humanist_ideas
 			NOT = { has_country_modifier = narrowminded_modifier }
@@ -1135,6 +1149,7 @@ province_event = {
 	goto = root
 	
 	trigger = {
+		if = { limit = { owner = { ai = yes } } owner = { ai = no } }
 		is_capital = no
 		any_neighbor_province = {
 			NOT = { owned_by = ROOT }

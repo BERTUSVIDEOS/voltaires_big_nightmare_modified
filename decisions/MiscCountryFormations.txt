@@ -37,6 +37,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			adm_tech = 10
 			is_at_war = no
 			2828 = { owned_by = ROOT is_state = yes }	#Athens
@@ -48,15 +49,11 @@ country_decisions = {
 		}
 		effect = {
 			change_tag = GRE
-			on_change_tag_effect = yes
-			hidden_effect = { restore_country_name = yes }
-			set_formable_tier = { tier = 3 }
-			set_capital = 2828
-			if = {
-				limit = {
-					NOT = { government_rank = 4 }
-				}
-				set_government_rank = 4
+			set_formable_tier = {
+				tier = 3
+				gov_rank = 4
+				region = hellas_region
+				capital = 2828
 			}
 			add_country_modifier = {
 				name = "centralization_modifier"
@@ -119,6 +116,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			is_at_war = no
 			781 = { owned_by = ROOT is_state = yes }	#Praha
 			development_in_provinces = {

@@ -16,6 +16,7 @@ vn_nor_missions_slot_1_a = {
         position = 1
         required_missions = {  }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			has_heir = yes
 			heir_claim = 90
 			heir_age = 15
@@ -51,6 +52,7 @@ vn_nor_missions_slot_1_a = {
         position = 2
         required_missions = { vn_nor_settle_succession }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			OR = {
 				ADM = 3
 				DIP = 3
@@ -79,19 +81,19 @@ vn_nor_missions_slot_1_a = {
 			random_list = {
 				33 = {
 					change_ruler_stat = {
-                        stat = adm
+                        type = adm
                         amount = 1
                     }
 				}
 				33 = {
 					change_ruler_stat = {
-                        stat = dip
+                        type = dip
                         amount = 1
                     }
 				}
 				33 = {
 					change_ruler_stat = {
-                        stat = mil
+                        type = mil
                         amount = 1
                     }
 				}
@@ -118,6 +120,7 @@ vn_nor_missions_slot_1_a = {
             }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			oslo_area = {
 				type = all
 				owned_by = ROOT
@@ -188,6 +191,7 @@ vn_nor_missions_slot_1_a = {
         position = 4
         required_missions = { vn_nor_institute_landslov }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			has_reform = germanic_monarchy
 			has_adm_advisor_2 = yes
 			has_dip_advisor_2 = yes
@@ -232,6 +236,7 @@ vn_nor_missions_slot_1_b = {
         position = 5
         required_missions = {  }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			mil_tech = 3
 			if = {
 				limit = {
@@ -271,6 +276,7 @@ vn_nor_missions_slot_1_c = {
 			province_id = 6023
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             6023 = {
 				owned_by = ROOT
 				is_core = ROOT
@@ -294,6 +300,7 @@ vn_nor_missions_slot_1_c = {
         position = 8
 		required_missions = { vn_nor_bahus_fortress }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             num_of_owned_provinces_with = {
 				value = 6
 				fort_level = 2
@@ -324,6 +331,7 @@ vn_nor_missions_slot_2_a = {
         position = 2
         required_missions = { vn_nor_settle_succession }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			has_adm_advisor_3 = yes
             artist = 2
 			prestige = 50
@@ -358,6 +366,7 @@ vn_nor_missions_slot_2_b = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             jutland_region = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -398,6 +407,7 @@ vn_nor_missions_slot_2_c = {
         position = 4
         required_missions = { vn_nor_institute_landslov }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             if = {
 				limit = { has_estate = estate_nobles }
 				NOT = {
@@ -441,6 +451,7 @@ vn_nor_missions_slot_2_d = {
         position = 5
         required_missions = { }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			share_of_starting_income = 1.25
 			treasury = 200
 			NOT = { num_of_loans = 1 }
@@ -496,6 +507,7 @@ vn_nor_missions_slot_2_d = {
         position = 6
         required_missions = { vn_nor_raise_leidangr }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			OR = {
 				is_in_war = {
 					casus_belli = cb_crusade   #BERTUS MOD
@@ -525,6 +537,7 @@ vn_nor_missions_slot_2_d = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				value = 5
 				OR = {
@@ -557,6 +570,7 @@ vn_nor_missions_slot_3_a = {
         position = 1
 		required_missions = {  }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             OR = {
 				DAN = {
 					exists = yes
@@ -622,6 +636,7 @@ vn_nor_missions_slot_3_a = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			ronneby_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -655,6 +670,7 @@ vn_nor_missions_slot_3_a = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			sjaelland_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -699,6 +715,7 @@ vn_nor_missions_slot_3_a = {
 			vn_nor_conquer_stockholm
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			calc_true_if = {
 				2652 = {
 					is_strongest_trade_power = ROOT
@@ -748,6 +765,7 @@ vn_nor_missions_slot_3_a = {
             }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             scandinavia_superregion = {
 				type = all
                 owned_by = ROOT
@@ -779,6 +797,7 @@ vn_nor_missions_slot_4_a = {
         position = 1
 		required_missions = {  }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             OR = {
 				SWE = {
 					exists = yes
@@ -886,6 +905,7 @@ vn_nor_missions_slot_4_a = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             dalsland_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -928,6 +948,7 @@ vn_nor_missions_slot_4_a = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             scandinavia_region = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -965,6 +986,7 @@ vn_nor_missions_slot_4_b = {
         position = 4
 		required_missions = { }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			whales = 10
 			num_of_owned_provinces_with = {
 				value = 10
@@ -1011,6 +1033,7 @@ vn_nor_missions_slot_4_b = {
         position = 5
 		required_missions = { vn_nor_develop_fish_trade }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			lumber = 10
 			num_of_owned_provinces_with = {
 				value = 10
@@ -1059,6 +1082,7 @@ vn_nor_missions_slot_4_b = {
 			vn_nor_growth_of_bergen 
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			1084 = {
 				is_strongest_trade_power = ROOT
 			}
@@ -1104,6 +1128,7 @@ vn_nor_missions_slot_4_b = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             2173 = {
 				is_strongest_trade_power = ROOT
 			}
@@ -1145,6 +1170,7 @@ vn_nor_missions_slot_5_a = {
         position = 1
         required_missions = {  }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			OR = {
 				AND = {
 					if = {
@@ -1210,6 +1236,7 @@ vn_nor_missions_slot_5_b = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			dalarna_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -1260,6 +1287,7 @@ vn_nor_missions_slot_5_b = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			stockholm_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -1305,6 +1333,7 @@ vn_nor_missions_slot_5_b = {
 			trade_goods = copper
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             num_of_owned_provinces_with = {
 				value = 3
 				OR = {
@@ -1348,6 +1377,7 @@ vn_nor_missions_slot_5_c = {
 			province_id = 6038
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             6038 = {
 				is_capital_of = ROOT
 				owned_by = ROOT
@@ -1392,6 +1422,7 @@ vn_nor_missions_slot_5_c = {
         position = 6
         required_missions = { vn_nor_growth_of_bergen }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             calc_true_if = {
 				2621 = {
 					is_strongest_trade_power = ROOT

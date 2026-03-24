@@ -19,6 +19,7 @@ vn_mam_missions_slot_1 = {
         position = 1
         required_missions = {  }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             stability = 2
             has_3_advisors_trigger = yes
         }
@@ -34,6 +35,7 @@ vn_mam_missions_slot_1 = {
         position = 3
         required_missions = { vn_mam_two_designations }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             NOT = { corruption = 0.01 }
             if = {
                 limit = { has_estate = estate_nobles }
@@ -76,6 +78,7 @@ vn_mam_missions_slot_1 = {
         position = 4
         required_missions = { vn_mam_debilitate_the_vizirate }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             if = {
                 limit = { has_reform = fatimid_caliphate_reform }
                 NOT = { has_disaster = great_fitna }
@@ -100,6 +103,7 @@ vn_mam_missions_slot_1 = {
         position = 5
         required_missions = {  }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             num_of_mercenaries = 10
             land_maintenance = 1
             num_of_generals = 2
@@ -117,6 +121,7 @@ vn_mam_missions_slot_1 = {
         position = 6
         required_missions = { vn_mam_deploy_mercenaries }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             OR = {
 				war_with = MGE
 				war_with = ILK
@@ -141,6 +146,7 @@ vn_mam_missions_slot_1 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             tunis_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -234,6 +240,7 @@ vn_mam_missions_slot_1 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			oran_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -336,6 +343,7 @@ vn_mam_missions_slot_1 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             macaronesia_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -554,6 +562,7 @@ vn_mam_missions_slot_1 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             sevilla_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -639,6 +648,7 @@ vn_mam_missions_slot_2 = {
         position = 1
         required_missions = {  }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             if = {
 				limit = { has_estate = estate_dhimmi }
 				estate_loyalty = {
@@ -672,6 +682,7 @@ vn_mam_missions_slot_2 = {
         position = 2
         required_missions = { vn_mam_cultural_matters vn_mam_government_quarrels }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             custom_trigger_tooltip = {
 				tooltip = vn_mam_two_designations.tt
 				NOT = { has_heir_flag = nizar_heir_flag }
@@ -719,6 +730,7 @@ vn_mam_missions_slot_2 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             sirte_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -780,6 +792,7 @@ vn_mam_missions_slot_2 = {
 			is_city = yes
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             tripolitania_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -837,6 +850,7 @@ vn_mam_missions_slot_2 = {
         position = 8
         required_missions = { vn_mam_conquer_lebanon vn_mam_conquer_tunis }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			num_of_transport = 20
 			naval_maintenance = 1
 			num_of_admirals = 2
@@ -876,6 +890,7 @@ vn_mam_missions_slot_2 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             sicilia_region = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -999,6 +1014,7 @@ vn_mam_missions_slot_2 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			salento_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -1080,6 +1096,7 @@ vn_mam_missions_slot_2 = {
 			is_city = yes
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             marrakesh_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -1145,6 +1162,7 @@ vn_mam_missions_slot_3 = {
         position = 1
         required_missions = {  }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             religious_unity = 1
             num_accepted_cultures = 5
         }
@@ -1160,6 +1178,7 @@ vn_mam_missions_slot_3 = {
         position = 2
         required_missions = { vn_mam_social_unity }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             university = 20
         }
         effect = {
@@ -1175,6 +1194,7 @@ vn_mam_missions_slot_3 = {
         position = 3
         required_missions = { vn_mam_two_designations }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             land_maintenance = 1
             army_size_percentage = 0.75
             num_of_cavalry = 15
@@ -1204,6 +1224,7 @@ vn_mam_missions_slot_3 = {
 			is_city = yes
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             tabuk_area = {
 				type = all
 				OR = {
@@ -1297,6 +1318,7 @@ vn_mam_missions_slot_3 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             3026 = { country_or_non_sovereign_subject_holds = ROOT }
             3027 = { country_or_non_sovereign_subject_holds = ROOT }
             3028 = { country_or_non_sovereign_subject_holds = ROOT }
@@ -1324,6 +1346,7 @@ vn_mam_missions_slot_3 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             cyprus_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -1349,6 +1372,7 @@ vn_mam_missions_slot_3 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             crete_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -1380,6 +1404,7 @@ vn_mam_missions_slot_3 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             optimaton_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -1472,6 +1497,7 @@ vn_mam_missions_slot_3 = {
         position = 13
         required_missions = { vn_mam_conquer_south_morocco vn_mam_conquer_constantinople vn_mam_conquer_baghdad vn_mam_conquer_andalusia }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             if = {
 				limit = { has_dlc = "Star and Crescent" }
 				has_country_modifier = unified_islam
@@ -1513,6 +1539,7 @@ vn_mam_missions_slot_4 = {
         position = 2
         required_missions = { vn_mam_develop_cairo }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             OR = {
                 temple = 10
                 cathedral = 5
@@ -1534,6 +1561,7 @@ vn_mam_missions_slot_4 = {
         position = 4
 		required_missions = { vn_mam_streets_and_canals }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             mercantilism = 35
             num_of_owned_provinces_with = {
                 value = 3
@@ -1591,6 +1619,7 @@ vn_mam_missions_slot_4 = {
         position = 6
         required_missions = { vn_mam_conquer_hejaz }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             is_defender_of_faith = yes
             if = {
                 limit = { has_dlc = "Cradle of Civilization" }
@@ -1636,6 +1665,7 @@ vn_mam_missions_slot_4 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             syria_region = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -1694,6 +1724,7 @@ vn_mam_missions_slot_4 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             teluch_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -1752,6 +1783,7 @@ vn_mam_missions_slot_4 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             cappadokia_region = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -1820,6 +1852,7 @@ vn_mam_missions_slot_4 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             kibyrraioton_region = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -1921,6 +1954,7 @@ vn_mam_missions_slot_5 = {
 			province_id = 5054
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             5054 = {
 				owned_by = ROOT
 				development = 30
@@ -1944,6 +1978,7 @@ vn_mam_missions_slot_5 = {
         position = 2
 		required_missions = { vn_mam_develop_cairo }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
            monthly_income = 100
            NOT = { num_of_loans = 1 }
            num_of_trading_bonuses = 10
@@ -1972,6 +2007,7 @@ vn_mam_missions_slot_5 = {
 			}
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             5030 = {
 			    owned_by = ROOT
                 base_production = 12
@@ -2015,6 +2051,7 @@ vn_mam_missions_slot_5 = {
         position = 4
 		required_missions = { vn_mam_develop_the_delta }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			num_of_light_ship = 50
 			light_ship_fraction = 0.3
         }
@@ -2044,6 +2081,7 @@ vn_mam_missions_slot_5 = {
             }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             owns_core_province = 5075
             owns_core_province = 5082
             owns_core_province = 5052
@@ -2076,6 +2114,7 @@ vn_mam_missions_slot_5 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             al_jazira_region = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -2104,6 +2143,7 @@ vn_mam_missions_slot_5 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             assyria_region = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -2129,6 +2169,7 @@ vn_mam_missions_slot_5 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             lower_mesopotamia_region = {
                 type = all
 				country_or_non_sovereign_subject_holds = ROOT

@@ -61,6 +61,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			NOT = { exists = GEO }
 			is_at_war = no
 			is_free_or_tributary_trigger = yes
@@ -150,6 +151,7 @@ country_decisions = {
 			has_country_flag = geo_move_capital_flag
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			is_core = 2233
 			owns = 2233
 			NOT = { capital = 2233 }

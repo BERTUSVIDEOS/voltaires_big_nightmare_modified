@@ -32,6 +32,7 @@ vn_sco_missions_slot_1_a = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			3001 = { country_or_non_sovereign_subject_holds = ROOT }
 			FFE = {
                 OR = {
@@ -70,6 +71,7 @@ vn_sco_missions_slot_1_a = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             ayrshire_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -182,6 +184,7 @@ vn_sco_missions_slot_1_a = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             caithness_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -253,6 +256,7 @@ vn_sco_missions_slot_1_a = {
             }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             caithness_area = {
                 type = all
 				owned_by = ROOT
@@ -298,6 +302,7 @@ vn_sco_missions_slot_1_a = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			4706 = { country_or_non_sovereign_subject_holds = ROOT }
 			4707 = { country_or_non_sovereign_subject_holds = ROOT }
         }
@@ -339,6 +344,7 @@ vn_sco_missions_slot_1_b = {
         icon = mission_marines
         required_missions = { }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             calc_true_if = {
                 num_of_heavy_ship = 10
                 num_of_light_ship = 15
@@ -359,6 +365,7 @@ vn_sco_missions_slot_1_b = {
         icon = mission_unite_scandinavia
         required_missions = { vn_sco_royal_scots_navy }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             any_known_country = {
                 culture_group = scandinavian
                 has_opinion = {
@@ -403,6 +410,7 @@ vn_sco_missions_slot_2_a = {
         icon = mission_the_french_menace
         required_missions = { vn_sco_introduce_feudalism }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             any_known_country = {
                 culture_group = french
                 marriage_with = ROOT
@@ -419,6 +427,7 @@ vn_sco_missions_slot_2_a = {
         icon = the_auld_alliance
         required_missions = { vn_sco_french_influence }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             if = {
                 limit = { exists = FRA }
                 alliance_with = FRA
@@ -482,6 +491,7 @@ vn_sco_missions_slot_2_b = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             ulster_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -540,6 +550,7 @@ vn_sco_missions_slot_2_b = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             connacht_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -621,6 +632,7 @@ vn_sco_missions_slot_2_c = {
             }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			hebrides_area = {
                 type = all
                 owned_by = ROOT
@@ -680,6 +692,7 @@ vn_sco_missions_slot_2_d = {
         icon = mission_rb_into_ireland
         required_missions = { vn_sco_royal_scots_navy }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             num_of_centers_of_trade = 5
             258 = {
                 is_strongest_trade_power = ROOT
@@ -722,6 +735,7 @@ vn_sco_missions_slot_3_a = {
         icon = mission_buildings
         required_missions = { }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			has_institution = feudalism
 			all_state_province = {
 				feudalism = 100
@@ -769,6 +783,7 @@ vn_sco_missions_slot_3_b = {
         icon = mission_rb_the_education_acts
         required_missions = { vn_sco_found_royal_burghs }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             OR = {
                 college = 8
                 university = 3
@@ -785,6 +800,7 @@ vn_sco_missions_slot_3_b = {
         icon = mission_rb_college_of_justice
         required_missions = { vn_sco_education_act }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             OR = {
                 courthouse = 8
                 town_hall = 3
@@ -831,6 +847,7 @@ vn_sco_missions_slot_3_c = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             ireland_region = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -874,6 +891,7 @@ vn_sco_missions_slot_3_c = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             desmond_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -947,6 +965,7 @@ vn_sco_missions_slot_3_c = {
             }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             ireland_region = {
                 type = all
                 owned_by = ROOT
@@ -981,6 +1000,7 @@ vn_sco_missions_slot_3_c = {
             }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             ireland_region = {
                 type = all
                 owned_by = ROOT
@@ -1049,6 +1069,7 @@ vn_sco_missions_slot_4_a = {
         icon = mission_rb_the_bank_of_scotland
         required_missions = { vn_sco_introduce_feudalism }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             NOT = { num_of_loans = 1 }
             treasury = 300
             NOT = { inflation = 1 }
@@ -1074,6 +1095,7 @@ vn_sco_missions_slot_4_a = {
         icon = mission_village
         required_missions = { vn_sco_economic_expansion }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             num_of_owned_provinces_with = {
                 value = 6
                 development = 10
@@ -1105,6 +1127,7 @@ vn_sco_missions_slot_4_a = {
         icon = mission_convert_provinces
         required_missions = { vn_sco_found_royal_burghs }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             temple = 8
             if = {
                 limit = {
@@ -1131,6 +1154,7 @@ vn_sco_missions_slot_4_a = {
             province_id = 2621
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             2621 = {
                 owned_by = ROOT
                 is_core = ROOT
@@ -1186,6 +1210,7 @@ vn_sco_missions_slot_4_b = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			walesnorth_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -1236,6 +1261,7 @@ vn_sco_missions_slot_4_b = {
             }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             british_isles_superregion = {
                 type = all
                 owned_by = ROOT
@@ -1286,6 +1312,7 @@ vn_sco_missions_slot_5_a = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             cumberland_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -1345,6 +1372,7 @@ vn_sco_missions_slot_5_a = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			east_riding_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -1400,6 +1428,7 @@ vn_sco_missions_slot_5_a = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			west_midlands_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -1449,6 +1478,7 @@ vn_sco_missions_slot_5_a = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			norwich_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -1499,6 +1529,7 @@ vn_sco_missions_slot_5_a = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			wessex_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -1565,6 +1596,7 @@ vn_sco_missions_slot_5_b = {
         icon = mission_rb_weather_the_reformation
         required_missions = { }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             current_age = age_of_reformation
             OR = {
             	OR = {
@@ -1594,6 +1626,7 @@ vn_sco_missions_slot_5_b = {
         icon = mission_european_church
         required_missions = { vn_sco_scottish_reformation }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             cathedral = 5
             capital_scope = {
                 religion = ROOT

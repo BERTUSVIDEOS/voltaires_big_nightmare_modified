@@ -8,6 +8,7 @@ country_decisions = {
 			capital_scope = { culture = peloponnesian }
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			stability = 2
 			dip_power = 100
 		}

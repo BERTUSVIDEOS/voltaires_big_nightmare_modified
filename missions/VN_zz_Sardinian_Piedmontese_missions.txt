@@ -23,6 +23,7 @@ vn_spi_missions_slot_1 = {
             local_autonomy = 1
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             absolutism = 50
             num_of_owned_provinces_with = {
                 value = 50
@@ -41,6 +42,7 @@ vn_spi_missions_slot_1 = {
         position = 6
         required_missions = { vn_spi_centralize_the_state }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             has_adm_advisor_3 = yes
             if = {
                 limit = {
@@ -103,6 +105,7 @@ vn_spi_missions_slot_1 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			bologna_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -148,6 +151,7 @@ vn_spi_missions_slot_2 = {
         position = 5
         required_missions = { vn_sav_conquer_sardinia vn_sav_fortify_cisjurania }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             if = {
                 limit = { has_dlc = "Art of War" }
                 is_great_power = yes
@@ -204,6 +208,7 @@ vn_spi_missions_slot_2 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			albenga_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -266,6 +271,7 @@ vn_spi_missions_slot_2 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             milan_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -386,6 +392,7 @@ vn_spi_missions_slot_2 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             parma_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -476,6 +483,7 @@ vn_spi_missions_slot_2 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			arezzo_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -553,6 +561,7 @@ vn_spi_missions_slot_3 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             sicilia_region = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -595,6 +604,7 @@ vn_spi_missions_slot_3 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             calabria_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -641,6 +651,7 @@ vn_spi_missions_slot_3 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             venice_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -685,6 +696,7 @@ vn_spi_missions_slot_3 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             spoleto_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -728,6 +740,7 @@ vn_spi_missions_slot_3 = {
             }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             italy_superregion = {
 				type = all
                 owned_by = ROOT
@@ -765,6 +778,7 @@ vn_spi_missions_slot_4 = {
         position = 5
         required_missions = { vn_sav_move_to_turin }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             if = {
                 limit = { has_dlc = "Rights of Man" }
                 OR = {
@@ -798,6 +812,7 @@ vn_spi_missions_slot_4 = {
         position = 6
         required_missions = { vn_spi_foreign_support }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             OR = {
 				NOT = { hre_size = 1 }
 				AND = {
@@ -834,6 +849,7 @@ vn_spi_missions_slot_4 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             trent_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -887,6 +903,7 @@ vn_spi_missions_slot_4 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             salento_area = {
                 type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -970,6 +987,7 @@ vn_spi_missions_slot_4 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             abruzzo_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -1027,6 +1045,7 @@ vn_spi_missions_slot_5 = {
             NOT = { owned_by = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             has_institution = industrialization
             num_of_owned_provinces_with = {
                 value = 3
@@ -1049,6 +1068,7 @@ vn_spi_missions_slot_5 = {
         position = 6
         required_missions = { vn_spi_piedmontese_industry }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             monthly_income = 1000
         }
         effect = {
@@ -1073,6 +1093,7 @@ vn_spi_missions_slot_5 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
                 value = 10
                 OR = {

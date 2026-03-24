@@ -16,6 +16,7 @@ vn_epi_missions_slot_1 = {
         position = 1
         required_missions = {  }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             navy_size_percentage = 0.75
             num_of_transport = 10
             calc_true_if = {
@@ -82,6 +83,7 @@ vn_epi_missions_slot_1 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             624 = { country_or_non_sovereign_subject_holds = ROOT }
             623 = { country_or_non_sovereign_subject_holds = ROOT }
             622 = { country_or_non_sovereign_subject_holds = ROOT }
@@ -160,6 +162,7 @@ vn_epi_missions_slot_1 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			salento_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -250,6 +253,7 @@ vn_epi_missions_slot_1 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			sicilia_region = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -285,6 +289,7 @@ vn_epi_missions_slot_2 = {
         position = 1
         required_missions = {  }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			stability = 2
             if = {
                 limit = { has_dlc = "Common Sense" }
@@ -366,6 +371,7 @@ vn_epi_missions_slot_2 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             arbanon_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -419,6 +425,7 @@ vn_epi_missions_slot_2 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             abruzzo_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -463,6 +470,7 @@ vn_epi_missions_slot_2 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			latium_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -493,6 +501,7 @@ vn_epi_missions_slot_3 = {
         position = 1
         required_missions = { }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
                 value = 3
                 culture = greek
@@ -536,6 +545,7 @@ vn_epi_missions_slot_3 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             bulgariasouth_region = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -584,6 +594,7 @@ vn_epi_missions_slot_3 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             zeta_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -616,6 +627,7 @@ vn_epi_missions_slot_3 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             serbia_region = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -646,6 +658,7 @@ vn_epi_missions_slot_4 = {
         position = 1
         required_missions = {  }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             OR = {
 				NOT = { exists = PAP }
 				reverse_has_opinion = {
@@ -683,6 +696,7 @@ vn_epi_missions_slot_4 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             thessalia_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -732,6 +746,7 @@ vn_epi_missions_slot_4 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             kastoria_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -791,6 +806,7 @@ vn_epi_missions_slot_4 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			thrace_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -817,6 +833,7 @@ vn_epi_missions_slot_4 = {
         position = 5
         required_missions = { vn_epi_conquer_thrace vn_epi_conquer_achaea }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             government_rank = 5
             grown_by_development = 500
         }
@@ -852,6 +869,7 @@ vn_epi_missions_slot_5 = {
             province_id = 2773
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             2773 = {
                 owned_by = ROOT
                 development = 25
@@ -881,6 +899,7 @@ vn_epi_missions_slot_5 = {
             }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             if = {
                 limit = { has_estate = estate_church }
                 num_of_estate_privileges = {
@@ -920,6 +939,7 @@ vn_epi_missions_slot_5 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             athens_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -962,6 +982,7 @@ vn_epi_missions_slot_5 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             achaea_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT

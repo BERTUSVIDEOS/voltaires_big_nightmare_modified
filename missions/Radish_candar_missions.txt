@@ -17,6 +17,7 @@ vn_cnd_missions_slot_1_a = {
 		required_missions = {	}
 		
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			num_of_owned_provinces_with = {
 				value = 7
 				development = 11
@@ -40,6 +41,7 @@ vn_cnd_missions_slot_1_a = {
 		}
 		
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			6705 = {
 				development = 20
 				num_of_times_expanded_infrastructure = 2
@@ -75,6 +77,7 @@ vn_cnd_missions_slot_2_a = {
 		}
 		
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			num_of_owned_provinces_with = {
 				value = 5
 				fort_level = 2
@@ -109,6 +112,7 @@ vn_cnd_missions_slot_2_a = {
 		}
 		
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			owns_all_provinces = {
 					area = optimaton_area		
 			}
@@ -199,6 +203,7 @@ vn_cnd_missions_slot_2_a = {
 		}
 		
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			owns = 2233
 		}
 		
@@ -230,6 +235,7 @@ vn_cnd_missions_slot_3_a = {
 		required_missions = {	}
 		
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			OR = {
 				army_size = 20
 				army_size_percentage = 1
@@ -259,6 +265,7 @@ vn_cnd_missions_slot_3_a = {
 		}
 		
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			owns = 3388
 			owns = 6708
 		}
@@ -280,6 +287,7 @@ vn_cnd_missions_slot_3_a = {
 		}
 		
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			army_size = 40
 			manpower_percentage = 0.9
 			mil_tech = 6
@@ -345,6 +353,7 @@ vn_cnd_missions_slot_3_a = {
 		}
 		
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			has_won_war_against = {
 				who = TUR
 				max_years_since = 300
@@ -378,6 +387,7 @@ vn_cnd_missions_slot_4_a = {
 		required_missions = { }
 		
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			OR = {
 				piety = 0.5
 				NOT = { piety = -0.5 }
@@ -424,6 +434,7 @@ vn_cnd_missions_slot_4_a = {
 		}
 		
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			NOT = { average_autonomy = 5 }
 			num_of_owned_provinces_with = {
 				value = 70
@@ -461,6 +472,7 @@ vn_cnd_missions_slot_5_a = {
 		}
 		
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			navy_size = TRE
 		}
 		
@@ -486,6 +498,7 @@ vn_cnd_missions_slot_5_a = {
 		}
 		
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			OR = {
 				TRE = {
 					is_subject_of = CND
@@ -514,6 +527,7 @@ vn_cnd_missions_slot_5_a = {
 		}
 		
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			OR = {
 				AKK = {
 					is_subject_of = CND

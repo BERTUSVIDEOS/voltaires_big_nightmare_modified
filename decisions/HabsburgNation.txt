@@ -46,6 +46,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			NOT = { exists = HAB }
 			NOT = { exists = EAH }
 			has_regency = no

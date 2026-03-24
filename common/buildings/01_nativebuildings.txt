@@ -13,13 +13,7 @@ native_earthwork = {
 	}
 	government_specific = yes
 	
-	ai_will_do = {
-		factor = 100
-		modifier = {
-			factor = 2.0
-			is_capital = yes
-		}				
-	}
+	ai_will_do = { factor = 1 }
 }
 
 native_palisade = {
@@ -39,13 +33,7 @@ native_palisade = {
 	
 	onmap = yes
 	
-	ai_will_do = {
-		factor = 100
-		modifier = {
-			factor = 2.0
-			is_capital = yes
-		}				
-	}
+	ai_will_do = { factor = 1 }
 }
 
 native_fortified_house = {
@@ -63,13 +51,7 @@ native_fortified_house = {
 	one_per_country = yes
 	government_specific = yes
 	
-	ai_will_do = {
-		factor = 100
-		modifier = {
-			factor = 2.0
-			is_capital = yes
-		}				
-	}
+	ai_will_do = { factor = 1 }
 }
 
 native_ceremonial_fire_pit = {
@@ -88,13 +70,7 @@ native_ceremonial_fire_pit = {
 	one_per_country = yes
 	government_specific = yes
 	
-	ai_will_do = {
-		factor = 100
-		modifier = {
-			factor = 2.0
-			is_capital = yes
-		}				
-	}
+	ai_will_do = { factor = 1 }
 }
 
 native_irrigation = {
@@ -111,13 +87,7 @@ native_irrigation = {
 	}
 	government_specific = yes
 	
-	ai_will_do = {
-		factor = 100
-		modifier = {
-			factor = 2.0
-			is_capital = yes
-		}				
-	}
+	ai_will_do = { factor = 1 }
 }
 
 native_storehouse = {
@@ -134,13 +104,7 @@ native_storehouse = {
 	}
 	government_specific = yes
 	
-	ai_will_do = {
-		factor = 100
-		modifier = {
-			factor = 2.0
-			is_capital = yes
-		}				
-	}
+	ai_will_do = { factor = 1 }
 }
 
 native_longhouse = {
@@ -158,13 +122,7 @@ native_longhouse = {
 	}
 	government_specific = yes
 	
-	ai_will_do = {
-		factor = 100
-		modifier = {
-			factor = 2.0
-			is_capital = yes
-		}				
-	}
+	ai_will_do = { factor = 1 }
 }
 
 native_sweat_lodge = {
@@ -182,13 +140,7 @@ native_sweat_lodge = {
 	one_per_country = yes
 	government_specific = yes
 	
-	ai_will_do = {
-		factor = 100
-		modifier = {
-			factor = 2.0
-			is_capital = yes
-		}				
-	}
+	ai_will_do = { factor = 1 }
 }
 
 native_great_trail = {
@@ -206,13 +158,7 @@ native_great_trail = {
 	government_specific = yes
 
 	
-	ai_will_do = {
-		factor = 100
-		modifier = {
-			factor = 2.0
-			is_capital = yes
-		}				
-	}
+	ai_will_do = { factor = 1 }
 }
 
 
@@ -230,11 +176,5 @@ native_three_sisters_field = {
 	}
 	government_specific = yes
 	
-	ai_will_do = {
-		factor = 100
-		modifier = {
-			factor = 2.0
-			is_capital = yes
-		}				
-	}
+	ai_will_do = { factor = 1 }
 }

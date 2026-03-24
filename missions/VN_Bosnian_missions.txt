@@ -17,6 +17,7 @@ vn_bos_missions_slot_1 = {
         position = 1
         required_missions = {  }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             
         }
         effect = {
@@ -31,6 +32,7 @@ vn_bos_missions_slot_1 = {
 			vn_bos_dinaric_trade_routes 
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             
         }
         effect = {
@@ -42,6 +44,7 @@ vn_bos_missions_slot_1 = {
         position = 3
         required_missions = { }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             
         }
         effect = {
@@ -53,6 +56,7 @@ vn_bos_missions_slot_1 = {
         position = 5
         required_missions = { vn_bos_consolidate_bosnia }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             
         }
         effect = {
@@ -77,6 +81,7 @@ vn_bos_missions_slot_2 = {
         position = 2
         required_missions = {  }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             
         }
         effect = {
@@ -88,6 +93,7 @@ vn_bos_missions_slot_2 = {
         position = 3
         required_missions = { vn_bos_side_with_rome }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             
         }
         effect = {
@@ -99,6 +105,7 @@ vn_bos_missions_slot_2 = {
         position = 4
         required_missions = { vn_bos_reaffirm_papal_ties }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             
         }
         effect = {
@@ -110,6 +117,7 @@ vn_bos_missions_slot_2 = {
         position = 5
         required_missions = { vn_bos_invade_the_south }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             
         }
         effect = {
@@ -121,6 +129,7 @@ vn_bos_missions_slot_2 = {
         position = 6
         required_missions = { vn_bos_expand_holy_see }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             
         }
         effect = {
@@ -145,6 +154,7 @@ vn_bos_missions_slot_3 = {
         position = 1
         required_missions = {  }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             
         }
         effect = {
@@ -156,6 +166,7 @@ vn_bos_missions_slot_3 = {
         position = 2
         required_missions = {  }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             
         }
         effect = {
@@ -167,6 +178,7 @@ vn_bos_missions_slot_3 = {
         position = 3
         required_missions = { vn_bos_enforce_bogomilism }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             
         }
         effect = {
@@ -178,6 +190,7 @@ vn_bos_missions_slot_3 = {
         position = 4
         required_missions = { vn_bos_move_against_dubrovnik }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             
         }
         effect = {
@@ -189,6 +202,7 @@ vn_bos_missions_slot_3 = {
         position = 5
         required_missions = { vn_bos_bastion_of_bogomilism }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             
         }
         effect = {
@@ -200,6 +214,7 @@ vn_bos_missions_slot_3 = {
         position = 6
         required_missions = { vn_bos_serbian_throne }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             
         }
         effect = {
@@ -224,6 +239,7 @@ vn_bos_missions_slot_4 = {
         position = 2
         required_missions = {  }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             
         }
         effect = {
@@ -235,6 +251,7 @@ vn_bos_missions_slot_4 = {
         position = 3
         required_missions = { vn_bos_side_with_constantinople }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             
         }
         effect = {
@@ -246,6 +263,7 @@ vn_bos_missions_slot_4 = {
         position = 4
         required_missions = { vn_bos_blessing_of_patriarch }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             
         }
         effect = {
@@ -257,6 +275,7 @@ vn_bos_missions_slot_4 = {
         position = 5
         required_missions = { vn_bos_reaffirm_eastern_ties }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             
         }
         effect = {
@@ -268,6 +287,7 @@ vn_bos_missions_slot_4 = {
         position = 6
         required_missions = { vn_bos_ravage_croatia }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             
         }
         effect = {
@@ -292,6 +312,7 @@ vn_bos_missions_slot_5 = {
         position = 1
         required_missions = {  }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             
         }
         effect = {
@@ -306,6 +327,7 @@ vn_bos_missions_slot_5 = {
 			vn_bos_establish_bosnian_navy 
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             
         }
         effect = {
@@ -317,6 +339,7 @@ vn_bos_missions_slot_5 = {
         position = 3
         required_missions = {  }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             
         }
         effect = {
@@ -328,6 +351,7 @@ vn_bos_missions_slot_5 = {
         position = 5
         required_missions = { vn_bos_fortify_sava_river }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             
         }
         effect = {

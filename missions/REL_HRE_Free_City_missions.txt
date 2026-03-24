@@ -20,6 +20,7 @@ VN_free_cities_missions = {
         required_missions = { }
         position = 5
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			custom_trigger_tooltip = {
 				tooltip = vn_republican_alliances.tt
 				calc_true_if = {
@@ -42,6 +43,7 @@ VN_free_cities_missions = {
 		icon = mission_fort
 		required_missions = { vn_republican_alliances }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			capital_scope = {
 				has_fort_trigger = yes
 			}
@@ -59,6 +61,7 @@ VN_free_cities_missions = {
 		icon = mission_have_manufactories
 		required_missions = { vn_defense_for_the_city }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			capital_scope = {
 				development = 25
 				has_building = post_office
@@ -75,6 +78,7 @@ VN_free_cities_missions = {
 		icon = mission_buildings
 		required_missions = { vn_urban_production }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			OR = {
 				full_idea_group = innovativeness_ideas
 				full_idea_group = humanist_ideas

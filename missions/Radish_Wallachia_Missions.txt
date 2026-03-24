@@ -17,6 +17,7 @@ vn_wal_missions_slot_1_a = {
 		required_missions = {	}
 		
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			TUR = {
 				capital_scope = {
 					controller = {	
@@ -60,6 +61,7 @@ vn_wal_missions_slot_2_a = {
 		}
 		
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			owns = 577
 		}
 		
@@ -98,6 +100,7 @@ vn_wal_missions_slot_2_a = {
 		}
 		
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			num_of_owned_provinces_with = {
 				value = 15
 				OR = {
@@ -130,7 +133,8 @@ vn_wal_missions_slot_2_a = {
 			vn_wal_transylvanian_incursion
 		}
 		
-		trigger = {	
+		trigger = {
+			if = { limit = { ai = yes } ai = no }	
 			owns_all_provinces = {
 				area = haromszek_area	
 			}
@@ -179,6 +183,7 @@ vn_wal_missions_slot_3_a = {
 		required_missions = {	}
 		
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			stability = 1
 			OR = {
 				army_size = 25
@@ -218,6 +223,7 @@ vn_wal_missions_slot_3_a = {
 		}
 		
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			tag = RMN
 		}
 		
@@ -249,6 +255,7 @@ vn_wal_missions_slot_4_a = {
 		required_missions = {	vn_wal_standing_army	}
 		
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			owns = 5388
 			owns = 615
 			owns = 1046
@@ -298,6 +305,7 @@ vn_wal_missions_slot_4_a = {
 		}
 		
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			owns_all_provinces = {
 				area = vidin_area	
 			}
@@ -354,6 +362,7 @@ vn_wal_missions_slot_4_a = {
 		}
 		
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			num_of_owned_provinces_with = {
 				value = 40
 				culture_group = vlach
@@ -487,6 +496,7 @@ vn_wal_missions_slot_5_a = {
 		required_missions = {	}
 		
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			calc_true_if = {
                 amount = 2
                 all_ally = {

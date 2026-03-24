@@ -21,6 +21,7 @@ VN_frankish_missions = {
         required_missions = {}
         position = 5
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			num_of_allies = 3
 			if = {
 				limit = { government = monarchy }
@@ -56,6 +57,7 @@ VN_frankish_missions = {
 		icon = mission_fort
 		required_missions = { vn_frankish_alliances }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			if = {
 				limit = {
 					OR = {
@@ -89,6 +91,7 @@ VN_frankish_missions = {
 		icon = mission_teutonic_knights
 		required_missions = { vn_support_of_the_templars }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			army_tradition = 50
 			if = {
 				limit = { has_dlc = "Cradle of Civilization" }
@@ -109,6 +112,7 @@ VN_frankish_missions = {
 		icon = mission_coronation
 		required_missions = { vn_french_chivalry }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			is_subject = no
 			total_development = 150
 		}

@@ -18,6 +18,7 @@ VN_mazovian_missions_slot_1 = {
 		icon = mission_develop_nevas_port
 		required_missions = {}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			num_of_owned_provinces_with = {
 				value = 4
 				has_port = yes
@@ -35,6 +36,7 @@ VN_mazovian_missions_slot_1 = {
 		icon = mission_aragonese_navy
 		required_missions = { vn_maz_conquer_coastlines }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			navy_size_percentage = 0.75
 			num_of_galley = 25
 		}
@@ -66,6 +68,7 @@ VN_mazovian_missions_slot_1 = {
 			}
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			5793 = {
 				is_strongest_trade_power = ROOT
 				trade_share = {
@@ -103,6 +106,7 @@ VN_mazovian_missions_slot_1 = {
 		icon = mission_state_manufactories
 		required_missions = {}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			num_of_owned_provinces_with = {
 				value = 5
 				base_production = 12
@@ -129,6 +133,7 @@ VN_mazovian_missions_slot_1 = {
 			}
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			if = {
 				limit = { has_dlc = "Rule Britannia" }
 				innovativeness = 30
@@ -165,6 +170,7 @@ VN_mazovian_missions_slot_2 = {
 		icon = mission_rb_conquer_the_highlands
 		required_missions = {}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			num_of_generals = 2
 			army_size_percentage = 0.75
 			is_at_war = no
@@ -193,6 +199,7 @@ VN_mazovian_missions_slot_2 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			ostpreussen_region = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -248,6 +255,7 @@ VN_mazovian_missions_slot_2 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			kulmerland_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -334,6 +342,7 @@ VN_mazovian_missions_slot_2 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			lithuania_region = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -374,6 +383,7 @@ VN_mazovian_missions_slot_2 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			samogitian_region = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -433,6 +443,7 @@ VN_mazovian_missions_slot_2 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			latvian_region = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -484,6 +495,7 @@ VN_mazovian_missions_slot_2 = {
 			NOT = { religion = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			samogitian_region = {
 				type = all
 				religion = ROOT
@@ -548,6 +560,7 @@ VN_mazovian_missions_slot_3 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			turov_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -598,6 +611,7 @@ VN_mazovian_missions_slot_3 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			podolia_region = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -623,6 +637,7 @@ VN_mazovian_missions_slot_3 = {
 		icon = mission_hands_praying
 		required_missions = { vn_maz_convert_tribes vn_maz_anti_schism_convertion }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			religious_unity = 1
 			num_of_owned_provinces_with = {
 				value = 25
@@ -661,6 +676,7 @@ VN_mazovian_missions_slot_4 = {
 		icon = mission_religious
 		required_missions = {}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			if = {
 				limit = {
 					uses_papacy = yes
@@ -708,6 +724,7 @@ VN_mazovian_missions_slot_4 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			brest_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -754,6 +771,7 @@ VN_mazovian_missions_slot_4 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			volhynia_region = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -799,6 +817,7 @@ VN_mazovian_missions_slot_4 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
             peremyshl_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -836,6 +855,7 @@ VN_mazovian_missions_slot_4 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			moldavia_region = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -867,6 +887,7 @@ VN_mazovian_missions_slot_4 = {
 			NOT = { religion = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
             peremyshl_area = {
 				type = all
 				religion = ROOT
@@ -930,6 +951,7 @@ VN_mazovian_missions_slot_5 = {
 		icon = mission_restore_kiev
 		required_missions = {}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			stability = 2
 			adm = 3
 			dip = 3
@@ -947,6 +969,7 @@ VN_mazovian_missions_slot_5 = {
 		icon = mission_noble_council
 		required_missions = { vn_maz_stable_government }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
             if = {
                 limit = { has_dlc = "Common Sense" }
                 legitimacy_equivalent = 100
@@ -994,6 +1017,7 @@ VN_mazovian_missions_slot_5 = {
 			}
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			OR = {
 				AND = {
 					war_with = POL
@@ -1107,6 +1131,7 @@ VN_mazovian_missions_slot_5 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
             lublin_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -1172,6 +1197,7 @@ VN_mazovian_missions_slot_5 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			silesia_region = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -1201,6 +1227,7 @@ VN_mazovian_missions_slot_5 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			total_development = 1000
 			all_province = {
 				culture_group = ROOT

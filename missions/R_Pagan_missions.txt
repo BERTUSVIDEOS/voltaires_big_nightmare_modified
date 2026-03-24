@@ -13,6 +13,7 @@ vn_pagan_missions = {
 		icon = defender_of_the_faith
 		required_missions = { }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			calc_true_if = {
 				desc = vn_pagan_brothers_in_faith.tt
 				all_country = {
@@ -37,6 +38,7 @@ vn_pagan_missions = {
 		icon = mission_crusade_for_varna
 		required_missions = { vn_pagan_brothers_in_faith }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			num_of_owned_provinces_with = {
 				value = 25
 				has_owner_religion = yes
@@ -53,6 +55,7 @@ vn_pagan_missions = {
 		icon = mission_colonial
 		required_missions = { }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			num_of_owned_provinces_with = {
 				value = 10
 				has_tax_building_trigger = yes

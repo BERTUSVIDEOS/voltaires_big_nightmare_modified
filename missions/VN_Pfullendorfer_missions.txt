@@ -20,6 +20,7 @@ vn_pfu_missions_slot_1 = {
             is_capital_of = emperor
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			if = {
 				limit = { hre_size = 1 }
 				OR = {
@@ -74,6 +75,7 @@ vn_pfu_missions_slot_2 = {
             is_capital_of = emperor
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             OR = {
 				reverse_has_opinion = {
 					who = emperor
@@ -113,6 +115,7 @@ vn_pfu_missions_slot_2 = {
 			NOT = { owned_by = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			owns = 1875
             OR = {
 				AND = {
@@ -181,6 +184,7 @@ vn_pfu_missions_slot_2 = {
 			}
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			1875 = {
 				owned_by = ROOT
 				development = 30
@@ -229,6 +233,7 @@ vn_pfu_missions_slot_3 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             vorarlberg_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -256,6 +261,7 @@ vn_pfu_missions_slot_3 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             stgallen_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -281,6 +287,7 @@ vn_pfu_missions_slot_3 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             thurgau_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -335,6 +342,7 @@ vn_pfu_missions_slot_4 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             argengau_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -366,6 +374,7 @@ vn_pfu_missions_slot_4 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             hegau_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -402,6 +411,7 @@ vn_pfu_missions_slot_4 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				value = 20
 				OR = {
@@ -440,6 +450,7 @@ vn_pfu_missions_slot_4 = {
         position = 4
         required_missions = { vn_pfu_conquer_baden }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			num_of_ports = 1
 			num_of_admirals = 1
 			num_of_heavy_ship = 1
@@ -479,6 +490,7 @@ vn_pfu_missions_slot_5 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				value = 25
 				OR = {

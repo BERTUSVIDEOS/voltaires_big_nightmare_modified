@@ -25,6 +25,7 @@ vn_por_missions_slot_1_a = {
         required_missions = { }
         position = 1
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             naval_forcelimit = 30
 			calc_true_if = {
 				num_of_heavy_ship = 5
@@ -47,6 +48,7 @@ vn_por_missions_slot_1_a = {
         required_missions = { vn_por_found_portuguese_navy }
         position = 3
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             num_of_owned_provinces_with = {
                 value = 5
 				has_port = yes
@@ -109,6 +111,7 @@ vn_por_missions_slot_1_a = {
         icon = mission_launch_a_flagship
         required_missions = { vn_por_prosperous_ports }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			num_of_heavy_ship = 10
 			num_of_owned_provinces_with = {
 				value = 5
@@ -135,6 +138,7 @@ vn_por_missions_slot_1_a = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			5115 = { country_or_non_sovereign_subject_holds = ROOT }
         }
         effect = {
@@ -226,6 +230,7 @@ vn_por_missions_slot_1_a = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			5113 = { country_or_non_sovereign_subject_holds = ROOT }
 			5112 = { country_or_non_sovereign_subject_holds = ROOT }
 			5111 = { country_or_non_sovereign_subject_holds = ROOT }
@@ -250,6 +255,7 @@ vn_por_missions_slot_1_a = {
 			vn_por_moroccan_ports 
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			4749 = {
 				is_strongest_trade_power = ROOT
 			}
@@ -303,6 +309,7 @@ vn_por_missions_slot_2_a = {
         required_missions = { }
         position = 1
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             any_owned_province = {
                 OR = {
                     area = porto_area
@@ -344,6 +351,7 @@ vn_por_missions_slot_2_a = {
         icon = mission_rb_colonise_spice_islands
         required_missions = { vn_por_douro_trade }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             peaches = 5
 			olive = 3
 			rice = 3
@@ -420,6 +428,7 @@ vn_por_missions_slot_2_a = {
         }
         position = 4
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             1135 = {
                 is_strongest_trade_power = ROOT
 			}
@@ -477,6 +486,7 @@ vn_por_missions_slot_2_b = {
         required_missions = { vn_por_seize_algarve }
         position = 6
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             num_of_owned_provinces_with = {
 				value = 10
                 OR = {
@@ -527,6 +537,7 @@ vn_por_missions_slot_2_b = {
         icon = mission_establish_jesuit_missions
         required_missions = { vn_por_repopulate_territories }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             OR = {
                 AND = {
                     full_idea_group = humanist_ideas
@@ -577,6 +588,7 @@ vn_por_missions_slot_2_b = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			num_of_owned_provinces_with = {
 				value = 10
 				development = 15
@@ -670,6 +682,7 @@ vn_por_missions_slot_3_a = {
         required_missions = { }
         position = 1
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             army_size_percentage = 0.75
             num_of_generals = 1
             NOT = {
@@ -731,6 +744,7 @@ vn_por_missions_slot_3_a = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             coimbra_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -754,6 +768,7 @@ vn_por_missions_slot_3_a = {
 			province_id = 2243
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             2243 = {
                 owned_by = ROOT
                 is_core = ROOT
@@ -806,6 +821,7 @@ vn_por_missions_slot_3_b = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             avis_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -834,6 +850,7 @@ vn_por_missions_slot_3_b = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             algarve_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -856,6 +873,7 @@ vn_por_missions_slot_3_b = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			4626 = { country_or_non_sovereign_subject_holds = ROOT }
         }
         effect = {
@@ -961,6 +979,7 @@ vn_por_missions_slot_3_b = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			4626 = { country_or_non_sovereign_subject_holds = ROOT }
 			4625 = { country_or_non_sovereign_subject_holds = ROOT }
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
@@ -1106,6 +1125,7 @@ vn_por_missions_slot_3_b = {
         required_missions = { vn_por_moroccan_ports }
 		position = 8
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			num_of_owned_provinces_with = {
 				value = 10
 				continent = africa
@@ -1165,6 +1185,7 @@ vn_por_missions_slot_4_a = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             galicia_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -1223,6 +1244,7 @@ vn_por_missions_slot_4_b = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             lisboa_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -1256,6 +1278,7 @@ vn_por_missions_slot_4_b = {
             province_id = 1135
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             capital = 1135
             1135 = {
                 owned_by = ROOT
@@ -1320,6 +1343,7 @@ vn_por_missions_slot_4_c = {
             }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             if = {
 				limit = { has_estate = estate_nobles }
 				estate_loyalty = {
@@ -1436,6 +1460,7 @@ vn_por_missions_slot_4_c = {
         required_missions = { }
         position = 6
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             has_institution = renaissance
 			all_state_province = {
 				renaissance = 100
@@ -1477,6 +1502,7 @@ vn_por_missions_slot_4_d = {
         required_missions = { vn_por_papal_relations }
         position = 7
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             government_rank = 5
             is_subject = no
             tag = POR
@@ -1568,6 +1594,7 @@ vn_por_missions_slot_5_a = {
         required_missions = { }
         position = 1
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			is_subject = no
 			num_of_allies = 2
         }
@@ -1601,6 +1628,7 @@ vn_por_missions_slot_5_a = {
         }
         position = 4
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             government_rank = 5
             is_subject = no
             tag = POR
@@ -1691,6 +1719,7 @@ vn_por_missions_slot_5_a = {
         required_missions = { vn_por_kingdom_of_portugal }
         position = 6
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             government_rank = 5
             is_subject = no
             tag = POR
@@ -1711,6 +1740,7 @@ vn_por_missions_slot_5_a = {
         icon = mission_rb_invade_england
         required_missions = { vn_por_papal_relations }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             government_rank = 5
             is_subject = no
             tag = POR

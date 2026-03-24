@@ -20,6 +20,7 @@ vn_scottish_missions = {
         required_missions = { }
         position = 5
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			num_of_owned_provinces_with = {
 				value = 5
 				development = 10
@@ -38,6 +39,7 @@ vn_scottish_missions = {
 		icon = mission_trade_company_region_abroad
 		required_missions = { vn_development_of_the_highlands }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			fish = 10
 		}
 		effect = {
@@ -69,6 +71,7 @@ vn_scottish_missions = {
 			}
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			258 = {
 				has_trader = ROOT
 				trade_share = {
@@ -102,6 +105,7 @@ vn_scottish_missions = {
 			}
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			has_institution = enlightenment
 			all_state_province = {
 				enlightenment = 100
@@ -152,6 +156,7 @@ vn_scottish_conquest_missions = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			scotland_region = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -172,6 +177,7 @@ vn_scottish_conquest_missions = {
 			NOT = { owned_by = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			ireland_region = {
 				owned_by = ROOT
 				has_fort_trigger = yes
@@ -189,6 +195,7 @@ vn_scottish_conquest_missions = {
 		icon = mission_assemble_an_army
 		required_missions = { vn_foothold_in_ireland }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			is_subject = no
 			if = {
 				limit = { exists = GBR }

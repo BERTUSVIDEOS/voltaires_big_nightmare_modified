@@ -19,6 +19,7 @@ vn_lor_missions_slot_1_a = {
         required_missions = { }
         position = 1
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             if = {
 				limit = { exists = FRA }
 				FRA = {
@@ -63,6 +64,7 @@ vn_lor_missions_slot_1_a = {
             province_id = 1959
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			if = {
 				limit = {
 					has_dlc = "Dharma"
@@ -97,6 +99,7 @@ vn_lor_missions_slot_1_a = {
             vn_lor_merge_ville_vieille
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             num_of_owned_provinces_with = {
                 culture = lorrainian
                 value = 30
@@ -133,6 +136,7 @@ vn_lor_missions_slot_2_a = {
             province_id = 869
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             869 = {
                 owned_by = ROOT
                 is_core = ROOT
@@ -182,6 +186,7 @@ vn_lor_missions_slot_2_b = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			132 = { country_or_non_sovereign_subject_holds = ROOT }
 			1959 = { country_or_non_sovereign_subject_holds = ROOT }
 			2385 = { country_or_non_sovereign_subject_holds = ROOT }
@@ -257,6 +262,7 @@ vn_lor_missions_slot_2_b = {
             }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			num_of_owned_provinces_with = {
 				value = 8
 				has_fort_trigger = yes
@@ -313,6 +319,7 @@ vn_lor_missions_slot_2_b = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
                 area = pfalzwest_area
                 value = 5
@@ -432,6 +439,7 @@ vn_lor_missions_slot_2_b = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             cologne_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -487,6 +495,7 @@ vn_lor_missions_slot_3_a = {
         required_missions = { }
         position = 1
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             army_size_percentage = 0.75
             stability = 2
             has_heir = yes
@@ -529,6 +538,7 @@ vn_lor_missions_slot_3_a = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
                 area = metz_area
                 value = 5
@@ -564,6 +574,7 @@ vn_lor_missions_slot_3_a = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			1930 = { country_or_non_sovereign_subject_holds = ROOT }
             num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
                 area = barrois_area
@@ -622,6 +633,7 @@ vn_lor_missions_slot_3_a = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			2511 = { country_or_non_sovereign_subject_holds = ROOT }
 			1760 = { country_or_non_sovereign_subject_holds = ROOT }
             num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
@@ -662,6 +674,7 @@ vn_lor_missions_slot_3_a = {
 			}
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             limburg_area = {
                 type = all
                 owned_by = ROOT
@@ -692,6 +705,7 @@ vn_lor_missions_slot_3_a = {
         icon = mission_among_the_great_powers
         required_missions = { vn_lor_imperial_capital }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             if = {
                 limit = { has_dlc = "Rights of Man" }
                 is_great_power = yes
@@ -750,6 +764,7 @@ vn_lor_missions_slot_3_a = {
 			}
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             tag = LOT
             if = {
                 limit = { has_dlc = "Common Sense" }
@@ -896,6 +911,7 @@ vn_lor_missions_slot_4_a = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
                 area = luxemburg_area
                 value = 5
@@ -966,6 +982,7 @@ vn_lor_missions_slot_4_a = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			930 = { country_or_non_sovereign_subject_holds = ROOT }
 			2729 = { country_or_non_sovereign_subject_holds = ROOT }
 			2975 = { country_or_non_sovereign_subject_holds = ROOT }
@@ -1025,6 +1042,7 @@ vn_lor_missions_slot_4_a = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			330 = { country_or_non_sovereign_subject_holds = ROOT }
 			407 = { country_or_non_sovereign_subject_holds = ROOT }
 			2299 = { country_or_non_sovereign_subject_holds = ROOT }
@@ -1127,6 +1145,7 @@ vn_lor_missions_slot_5_a = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             OR = {
                 calc_true_if = {
                     reverse_has_opinion = {
@@ -1162,6 +1181,7 @@ vn_lor_missions_slot_5_a = {
         icon = mission_sell_indulgences
         required_missions = { vn_lor_trois_eveches }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             reverse_has_opinion = {
                 who = PAP
                 value = 125
@@ -1183,6 +1203,7 @@ vn_lor_missions_slot_5_a = {
         required_missions = { vn_lor_ecclesiastical_relations }
         position = 5
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			if = {
 				limit = { has_estate = estate_church }
 				estate_loyalty = {
@@ -1232,6 +1253,7 @@ vn_lor_missions_slot_5_b = {
             province_id = 2960
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             2960 = {
 				country_or_non_sovereign_subject_holds = ROOT
                 has_fort_trigger = yes

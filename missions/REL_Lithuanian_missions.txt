@@ -16,6 +16,7 @@ VN_lithuanian_missions = {
 		icon = mission_the_hakkapeliitta
 		required_missions = { }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			custom_trigger_tooltip = {
 				tooltip = vn_lithuanian_raiders.tt
 				any_hired_mercenary_company = {
@@ -35,6 +36,7 @@ VN_lithuanian_missions = {
 		icon = mission_lit_harness_steppes
 		required_missions = { vn_lithuanian_raiders }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			num_of_owned_provinces_with = {
 				value = 3
 				OR = {
@@ -71,6 +73,7 @@ VN_lithuanian_missions = {
 			owner = { NOT = { alliance_with = ROOT } }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			OR = {
 				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 					OR = {
@@ -153,6 +156,7 @@ VN_lithuanian_missions = {
 			}
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			OR = {
 				custom_trigger_tooltip = {
 					tooltip = vn_observing_the_stars.tt
@@ -195,6 +199,7 @@ VN_lithuanian_missions = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				value = 25
 				OR = {
@@ -286,6 +291,7 @@ VN_lithuanian_missions = {
 			is_capital = yes
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			any_country = {
 				war_with = ROOT
 				army_strength = {
@@ -347,6 +353,7 @@ VN_lithuanian_missions = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			turov_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT

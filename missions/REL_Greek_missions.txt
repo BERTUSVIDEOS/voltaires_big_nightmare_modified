@@ -14,6 +14,7 @@ VN_greek_minor_missions = {
         required_missions = {}
         position = 5
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			stability = 2
             if = {
                 limit = { has_dlc = "Common Sense" }
@@ -37,6 +38,7 @@ VN_greek_minor_missions = {
 		icon = mission_hanseatic_city
 		required_missions = { vn_greek_government }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			custom_trigger_tooltip = {
 				tooltip = vn_fruit_trees_of_greece.tt
 				num_of_owned_provinces_with = {
@@ -68,6 +70,7 @@ VN_greek_minor_missions = {
 			province_id = 2233
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			2233 = {
 				owned_by = ROOT
 				development = 30
@@ -85,6 +88,7 @@ VN_greek_minor_missions = {
 		icon = mission_portico
 		required_missions = { vn_restore_constantinople }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			marble = 3
 			artist = 3
 			num_of_owned_provinces_with = {

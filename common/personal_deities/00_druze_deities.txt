@@ -4,13 +4,8 @@ dr_shiite = {
 	
 	potential = { religion = druze }
 	sprite = 49	
-	ai_will_do = {
-		factor = 1	
-		modifier = {
-			factor = 2
-			personality = ai_diplomat
-		}
-	}
+	
+	ai_will_do = { factor = 1 }
 }
 
 dr_hinduism = {
@@ -19,13 +14,8 @@ dr_hinduism = {
 	
 	potential = { religion = druze }
 	sprite = 50	
-	ai_will_do = {
-		factor = 1		
-		modifier = {
-			factor = 2
-			personality = ai_capitalist
-		}
-	}
+	
+	ai_will_do = { factor = 1 }
 }
 
 dr_neoplatonism = {
@@ -34,17 +24,8 @@ dr_neoplatonism = {
 	
 	potential = { religion = druze }
 	sprite = 51
-	ai_will_do = {
-		factor = 1	
-		modifier = {
-			factor = 2
-			personality = ai_diplomat
-		}
-		modifier = {
-			factor = 0.5
-			personality = ai_militarist
-		}
-	}
+	
+	ai_will_do = { factor = 1 }
 }
 
 dr_gnosticism = {
@@ -53,13 +34,8 @@ dr_gnosticism = {
 	
 	potential = { religion = druze }
 	sprite = 52	
-	ai_will_do = {
-		factor = 1
-		modifier = {
-			factor = 2
-			personality = ai_capitalist
-		}	
-	}
+	
+	ai_will_do = { factor = 1 }
 }
 
 dr_pythagoreanism = {
@@ -68,17 +44,8 @@ dr_pythagoreanism = {
 	
 	potential = { religion = druze }
 	sprite = 53	
-	ai_will_do = {
-		factor = 1	
-		modifier = {
-			factor = 2
-			personality = ai_militarist
-		}
-		modifier = {
-			factor = 0.5
-			personality = ai_diplomat
-		}	
-	}
+	
+	ai_will_do = { factor = 1 }
 }
 
 dr_druze = {
@@ -87,11 +54,6 @@ dr_druze = {
 	
 	potential = { religion = druze }
 	sprite = 54
-	ai_will_do = {
-		factor = 1	
-		modifier = {
-			factor = 2
-			personality = ai_capitalist
-		}
-	}
+	
+	ai_will_do = { factor = 1 }
 }

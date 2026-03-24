@@ -14,6 +14,7 @@ VN_naval_missions = {
 		required_missions = { }
 		position = 1
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			OR = {
 				num_of_galley = 10
 				num_of_transport = 10
@@ -31,7 +32,8 @@ VN_naval_missions = {
 		icon = mission_establish_high_seas_navy
 		required_missions = { vn_naval_expansion }
 		position = 2
-		trigger = { 
+		trigger = {
+			if = { limit = { ai = yes } ai = no } 
 			OR = {
 				num_of_heavy_ship = 10 
 				num_of_galley = 30
@@ -50,6 +52,7 @@ VN_naval_missions = {
 		required_missions = { establish_high_seas_navy }
 		position = 3
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			OR = {
 				dock = 5
 				drydock = 5
@@ -69,6 +72,7 @@ VN_naval_missions = {
 		required_missions = { vn_build_shipyards }
 		position = 4
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			num_of_total_ports = 50
 		}
 		effect = {
@@ -94,6 +98,7 @@ VN_trade_missions = {
 		required_missions = { }
 		position = 1
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			OR = {
 				road_network = 6
 				post_office = 3
@@ -111,6 +116,7 @@ VN_trade_missions = {
 		required_missions = { vn_build_roads }
 		position = 2
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 		}
 		effect = {
 			add_mercantilism = 1
@@ -125,6 +131,7 @@ VN_trade_missions = {
 		required_missions = { vn_embrace_guilds }
 		position = 3
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			num_of_centers_of_trade = 5
 		}
 		effect = {
@@ -139,6 +146,7 @@ VN_trade_missions = {
 		required_missions = { vn_control_trade_centers }
 		position = 4
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			home_trade_node = {
 				trade_share = {
 					country = ROOT
@@ -229,6 +237,7 @@ VN_diplomatic_missions = {
 		required_missions = {  }
 		position = 1
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			custom_trigger_tooltip = {
 				tooltip = building_alliances.tooltip
 				num_of_allies = 2
@@ -254,7 +263,10 @@ VN_diplomatic_missions = {
 		icon = mission_have_two_subjects
 		required_missions = { building_alliances }
 		position = 2
-		trigger = { num_of_non_tributary_subjects = 2 }
+		trigger = {
+			if = { limit = { ai = yes } ai = no } 
+			num_of_non_tributary_subjects = 2
+		}
 		effect = {
 			add_country_modifier = {
 				name = "obedient_subjects"
@@ -273,6 +285,7 @@ VN_diplomatic_missions = {
 			}
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			calc_true_if = {
 				desc = vn_inspire_loyalty.tt
 				all_subject_country = {
@@ -303,6 +316,7 @@ VN_diplomatic_missions = {
 			}
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			if = {
 				limit = { has_dlc = "Art of War" }
 				march = 2
@@ -367,6 +381,7 @@ vn_expansion_missions = {
 		required_missions = { }
 		position = 1
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			if = {
 				limit = { government_rank = 5 }
 				capital_scope = {
@@ -439,7 +454,10 @@ vn_expansion_missions = {
 		icon = mission_conquer_5_states
 		required_missions = { expand_country_mission }
 		position = 2
-		trigger = { grown_by_states = 3 }
+		trigger = {
+			if = { limit = { ai = yes } ai = no } 
+			grown_by_states = 3
+		}
 		effect = {
 			add_country_modifier = {
 				name = "expansionist_country"
@@ -452,6 +470,7 @@ vn_expansion_missions = {
 		required_missions = { conquer_states }
 		position = 3
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			calc_true_if = {
 				desc = vn_fortify_frontiers.tt
 				all_owned_province = {
@@ -481,6 +500,7 @@ vn_expansion_missions = {
 			NOT = { owned_by = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			custom_trigger_tooltip = {
 				tooltip = unite_home_region_ct
 				capital_scope = {
@@ -517,6 +537,7 @@ vn_titular_missions = {
 		required_missions = { }
 		position = 1
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			government_rank = 3
 			grown_by_development = 100
 		}
@@ -537,6 +558,7 @@ vn_titular_missions = {
 		required_missions = { vn_sizeable_state }
 		position = 2
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			government_rank = 4
 			grown_by_development = 250
 		}
@@ -566,6 +588,7 @@ vn_titular_missions = {
 		required_missions = { vn_regional_power }
 		position = 3
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			government_rank = 5
 			grown_by_development = 500
 		}
@@ -595,6 +618,7 @@ vn_titular_missions = {
 		required_missions = { vn_major_power }
 		position = 4
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			government_rank = 6
 			grown_by_development = 1000
 		}
@@ -635,6 +659,7 @@ vn_military_missions = {
 		required_missions = {  }
 		position = 5
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			army_size_percentage = 1
 		}
 		effect = {
@@ -652,6 +677,7 @@ vn_military_missions = {
 		required_missions = { build_army_mission }
 		position = 6
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			army_tradition = 40
 		}
 		effect = {
@@ -665,7 +691,10 @@ vn_military_missions = {
 		icon = mission_soldiers_in_line
 		required_missions = { vn_high_tradition }
 		position = 7
-		trigger = { army_size = 80 }
+		trigger = {
+			if = { limit = { ai = yes } ai = no } 
+			army_size = 80
+		}
 		effect = {
 			add_country_modifier = {
 				name = "army_enthusiasm"
@@ -678,6 +707,7 @@ vn_military_missions = {
 		required_missions = { assemble_an_army }
 		position = 8
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			artillery_fraction = 0.15
 			num_of_generals = 5
 			army_size = 100
@@ -720,6 +750,7 @@ vn_buildings_missions = {
         required_missions = { }
         position = 5
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			num_of_owned_provinces_with = {
 				has_tax_building_trigger = yes
 				value = 5
@@ -741,7 +772,10 @@ vn_buildings_missions = {
 		icon = mission_war_chest
 		required_missions = { build_temples }
 		position = 6
-		trigger = { treasury = 2000 }
+		trigger = {
+			if = { limit = { ai = yes } ai = no } 
+			treasury = 2000
+		}
 		effect = {
 			add_country_modifier = {
 				name = "strong_treasury"
@@ -754,6 +788,7 @@ vn_buildings_missions = {
 		required_missions = { build_treasury }
 		position = 7
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			OR = {
 				customs_house = 5
 				arsenal = 3
@@ -776,6 +811,7 @@ vn_buildings_missions = {
 		required_missions = { vn_build_hospitals }
 		position = 8
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			num_of_owned_provinces_with = {
 				value = 20
 				has_manufactory_trigger = yes
@@ -804,7 +840,10 @@ vn_development_missions = {
 		icon = mission_high_income
 		required_missions = {  }
         position = 5
-		trigger = { share_of_starting_income = 1.5 }
+		trigger = {
+			if = { limit = { ai = yes } ai = no }
+			share_of_starting_income = 1.5
+		}
 		effect = {
 			add_country_modifier = {
 				name = "growing_economy"
@@ -820,6 +859,7 @@ vn_development_missions = {
 			is_capital_of = ROOT
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			capital_scope = {
 				#development = 25
 				#num_of_times_improved = 5
@@ -840,6 +880,7 @@ vn_development_missions = {
 		position = 7
 		required_missions = { vn_expand_the_capital }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			if = {
 				limit = { has_dlc = "Rule Britannia" }
 				innovativeness = 25
@@ -888,6 +929,7 @@ vn_development_missions = {
 			is_capital_of = ROOT
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			capital_scope = {
 				#development = 50
 				#num_of_times_improved = 10
@@ -931,6 +973,7 @@ vn_administrative_missions = {
         required_missions = { }
         position = 5
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			stability = 3
 		}
 		effect = {
@@ -945,6 +988,7 @@ vn_administrative_missions = {
 		required_missions = { vn_stable_nation }
 		position = 6
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			calc_true_if = {
 				desc = vn_expand_court.tt
 				has_adm_advisor_2 = yes
@@ -965,6 +1009,7 @@ vn_administrative_missions = {
 		required_missions = { vn_expand_court }
 		position = 7
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			crown_land_share = 30
             if = {
                 limit = {
@@ -1025,6 +1070,7 @@ vn_administrative_missions = {
 		required_missions = { vn_loyal_estates }
 		position = 8
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			has_completed_all_reforms_trigger = yes
 			if = {
 				limit = { has_dlc = "Emperor" }

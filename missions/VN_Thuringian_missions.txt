@@ -29,6 +29,7 @@ vn_thu_missions_slot_1 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             hessesouth_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -107,6 +108,7 @@ vn_thu_missions_slot_1 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			ansbach_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -169,6 +171,7 @@ vn_thu_missions_slot_1 = {
 			}
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             OR = {
 				FRA = { is_subject_of = ROOT }
 				FRA = { exists = no }
@@ -228,6 +231,7 @@ vn_thu_missions_slot_2 = {
 			NOT = { owned_by = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             if = {
 				limit = {
 					calc_true_if = {
@@ -282,6 +286,7 @@ vn_thu_missions_slot_2 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             zeitz_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -336,6 +341,7 @@ vn_thu_missions_slot_2 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             westergau_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -467,6 +473,7 @@ vn_thu_missions_slot_2 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             merseburg_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -517,6 +524,7 @@ vn_thu_missions_slot_3 = {
         position = 3
         required_missions = { vn_thu_starrsinn }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             government_rank = 4
 			total_development = 300
 			is_subject = no
@@ -567,6 +575,7 @@ vn_thu_missions_slot_3 = {
 			}
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             232 = {
 				owned_by = ROOT
 				OR = {
@@ -627,6 +636,7 @@ vn_thu_missions_slot_4 = {
 			}
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             OR = {
 				232 = {
 					is_capital_of = ROOT
@@ -708,6 +718,7 @@ vn_thu_missions_slot_4 = {
 			}
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			owns_core_province = 2925
             if = {
 				limit = {
@@ -760,6 +771,7 @@ vn_thu_missions_slot_4 = {
 			}
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
             is_religion_enabled = protestant
 			owns_core_province = 2925
 			stability = 3
@@ -781,6 +793,7 @@ vn_thu_missions_slot_4 = {
         position = 4
         required_missions = { vn_thu_proud_and_free }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             OR = {
 				calc_true_if = {
 					amount = 2
@@ -838,6 +851,7 @@ vn_thu_missions_slot_5 = {
 			}
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			capital_scope = {
 				has_education_building_trigger = yes
 				development = 30
@@ -901,6 +915,7 @@ vn_thu_missions_slot_5 = {
 			}
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			owns_core_province = 2851
             2851 = {
 				development = 35

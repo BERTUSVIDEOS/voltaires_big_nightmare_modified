@@ -19,6 +19,7 @@ vn_norse_missions_1 = {
 			NOT = { religion = norse_pagan_reformed }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			religion = norse_pagan_reformed
 			if = {
 				limit = { has_dlc = "Wealth of Nations" }
@@ -48,6 +49,7 @@ vn_norse_missions_1 = {
 		required_missions = { swe_spread_the_norse_faith }
 		provinces_to_highlight = {}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			religion = norse_pagan_reformed
 			OR = {
 				custom_trigger_tooltip = {
@@ -91,6 +93,7 @@ vn_norse_missions_1 = {
 			NOT = { religion = norse_pagan_reformed }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			religion = norse_pagan_reformed
 			government_rank = 6
 			religious_unity = 1
@@ -132,6 +135,7 @@ vn_norse_missions_2 = {
 			}
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			religion = norse_pagan_reformed
 			num_of_owned_provinces_with = {
 				has_manpower_building_trigger = yes
@@ -181,6 +185,7 @@ vn_norse_missions_2 = {
 		position = 10
 		required_missions = { swe_worship_the_gods }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			religion = norse_pagan_reformed
 			OR = {
 				calc_true_if = {
@@ -222,6 +227,7 @@ vn_norse_missions_2 = {
 			}
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			religion = norse_pagan_reformed
 			num_of_owned_provinces_with = {
 				religion = norse_pagan_reformed

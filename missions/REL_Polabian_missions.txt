@@ -12,6 +12,7 @@ VN_polabian_missions = {
 		icon = mission_ne_palisades
         required_missions = {  }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			num_of_owned_provinces_with = {
 				value = 2
 				OR = {
@@ -48,6 +49,7 @@ VN_polabian_missions = {
 		icon = mission_modernized_vikings
         required_missions = { vn_castles_in_our_swamps }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			OR = {
 				num_of_generals = 2
 				is_monarch_leader = yes
@@ -142,6 +144,7 @@ VN_polabian_missions = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			854 = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -310,6 +313,7 @@ VN_polabian_missions = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				value = 15
 				OR = {
@@ -352,6 +356,7 @@ VN_polabian_missions = {
 		icon = mission_che_botanical_exports
         required_missions = { }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			num_of_owned_provinces_with = {
 				value = 5
 				OR = {
@@ -386,6 +391,7 @@ VN_polabian_missions = {
 			province_id = 410
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			owns_core_province = 410
 			410 = {
 				NOT = { local_autonomy = 20 }
@@ -410,6 +416,7 @@ VN_polabian_missions = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				value = 10
 				culture = kashubian

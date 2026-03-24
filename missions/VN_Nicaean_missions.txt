@@ -17,6 +17,7 @@ NKA_missions_slot_1 = {
 		icon = prosperity_for_all
 		required_missions = { }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
             treasury = 1000
             share_of_starting_income = 5
             is_bankrupt = no
@@ -37,6 +38,7 @@ NKA_missions_slot_1 = {
             province_id = 2233
         }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
             2233 = {
                 trade_share = {
                     country = ROOT
@@ -67,6 +69,7 @@ NKA_missions_slot_1 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
             chios_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -117,6 +120,7 @@ NKA_missions_slot_1 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			achaea_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -153,6 +157,7 @@ NKA_missions_slot_2 = {
 		icon = mission_colonize_the_west
 		required_missions = { vn_nka_consolidate_the_realm }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
             num_of_admirals = 2
             navy_size = 25
             navy_size_percentage = 0.75
@@ -194,6 +199,7 @@ NKA_missions_slot_2 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
             euboia_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -217,6 +223,7 @@ NKA_missions_slot_2 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			athens_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -262,6 +269,7 @@ NKA_missions_slot_2 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
             OR = {
                 EPI = { is_subject_of = ROOT }
                 num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
@@ -306,6 +314,7 @@ NKA_missions_slot_3 = {
 		icon = balance_the_estates
 		required_missions = {}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
             has_any_disaster = no
             if = {
                 limit = { has_dlc = "Common Sense" }
@@ -326,6 +335,7 @@ NKA_missions_slot_3 = {
 		icon = legacy_of_the_sclavinias
 		required_missions = { vn_nka_consolidate_the_realm }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
             reform_level = 4
             NOT = { corruption = 1 }
 		}
@@ -355,6 +365,7 @@ NKA_missions_slot_3 = {
             }
         }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
             custom_trigger_tooltip = {
                 tooltip = vn_nka_expell_latins.tt
                 thrace_area = {
@@ -401,6 +412,7 @@ NKA_missions_slot_3 = {
 		icon = mission_pf_cross
 		required_missions = { vn_nka_conquer_epirus vn_nka_expell_latins vn_nka_conquer_constantinople }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
             government_rank = 5
 			grown_by_development = 500
 		}
@@ -434,6 +446,7 @@ NKA_missions_slot_4 = {
 		icon = mission_pf_soldier
 		required_missions = { vn_nka_consolidate_the_realm }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
             num_of_generals = 2
             army_size = 25
             army_size_percentage = 0.75
@@ -461,6 +474,7 @@ NKA_missions_slot_4 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			thessalia_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -513,6 +527,7 @@ NKA_missions_slot_4 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			serres_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -573,6 +588,7 @@ NKA_missions_slot_4 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			thrace_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -612,6 +628,7 @@ NKA_missions_slot_5 = {
 		icon = mission_trade_in_gold_coast
 		required_missions = { }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
             calc_true_if = {
                 desc = vn_nka_asian_diplomacy.tt
                 all_ally = {
@@ -641,6 +658,7 @@ NKA_missions_slot_5 = {
 		icon = protect_against_the_turks
         required_missions = { vn_nka_asian_diplomacy }
  		trigger = {
+			if = { limit = { ai = yes } ai = no }
             num_of_owned_provinces_with = {
                 value = 5
                 superregion = anatolia_superregion
@@ -670,6 +688,7 @@ NKA_missions_slot_5 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
                 value = 75
                 superregion = anatolia_superregion
@@ -691,6 +710,7 @@ NKA_missions_slot_5 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
             bulgariasouth_region = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -715,6 +735,7 @@ NKA_missions_slot_5 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
             OR = {
                 BUL = {
                     is_subject_of = ROOT

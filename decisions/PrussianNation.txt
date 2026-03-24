@@ -33,6 +33,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			NOT = { exists = PRU }
 			OR = { 	#bertus mod
 				religion = protestant

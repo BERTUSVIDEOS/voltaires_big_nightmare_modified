@@ -16,6 +16,7 @@ vn_swe_missions_slot_1_a = {
         position = 1
         required_missions = {  }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			reform_level = 2
 			NOT = { has_ruler = "Emund I" }
 			NOT = { exists = GTH }
@@ -62,6 +63,7 @@ vn_swe_missions_slot_1_a = {
 			province_id = 6109
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             6109 = {
 				owned_by = ROOT
 				is_core = ROOT
@@ -108,6 +110,7 @@ vn_swe_missions_slot_1_a = {
         position = 3
         required_missions = { vn_swe_develop_stockholm }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			custom_trigger_tooltip = {
                 tooltip = vn_swe_abolish_serfdom.tt
                 OR = {
@@ -127,6 +130,7 @@ vn_swe_missions_slot_1_a = {
         position = 4
         required_missions = { vn_swe_abolish_serfdom }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			reform_level = 4
 			if = {
 				limit = { has_estate = estate_burghers }
@@ -184,6 +188,7 @@ vn_swe_missions_slot_1_b = {
             }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			if = {
 				limit = {
 					has_dlc = "Leviathan"
@@ -240,6 +245,7 @@ vn_swe_missions_slot_1_b = {
         position = 6
 		required_missions = { vn_swe_copper_mines_of_falun }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             num_of_owned_provinces_with = {
 				value = 10
 				OR = {
@@ -322,6 +328,7 @@ vn_swe_missions_slot_1_b = {
 			province_id = 6070
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             6070 = {
 				owned_by = ROOT
 				is_core = ROOT
@@ -365,6 +372,7 @@ vn_swe_missions_slot_1_b = {
 			owned_by = ROOT
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             OR = {
 				lumber = 10
 				num_of_owned_provinces_with = {
@@ -435,6 +443,7 @@ vn_swe_missions_slot_1_c = {
 			NOT = { religion = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			6112 = {
 				owned_by = ROOT
 				religion = ROOT
@@ -472,6 +481,7 @@ vn_swe_missions_slot_1_c = {
         position = 10
         required_missions = { vn_swe_convert_sweden }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			current_age = age_of_reformation
 			OR = {
 				religion = norse_pagan_reformed
@@ -529,6 +539,7 @@ vn_swe_missions_slot_1_c = {
         position = 11
         required_missions = { vn_swe_position_on_reformation }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			if = {
 				limit = { has_dlc = "Art of War" }
 				OR = {
@@ -592,6 +603,7 @@ vn_swe_missions_slot_2_a = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			oslo_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -642,6 +654,7 @@ vn_swe_missions_slot_2_a = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			agder_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -676,6 +689,7 @@ vn_swe_missions_slot_2_b = {
         position = 4
         required_missions = { vn_swe_abolish_serfdom }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             if = {
 				limit = { has_estate = estate_nobles }
 				NOT = {
@@ -738,6 +752,7 @@ vn_swe_missions_slot_2_c = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			slesvig_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -796,6 +811,7 @@ vn_swe_missions_slot_2_d = {
         position = 6
         required_missions = { vn_swe_copper_mines_of_falun }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			share_of_starting_income = 2.0
 			OR = {
 				master_of_mint = 3
@@ -817,6 +833,7 @@ vn_swe_missions_slot_2_d = {
         position = 7
         required_missions = { vn_swe_economic_reforms }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			reform_level = 5
 			OR = {
 				quartermaster = 3
@@ -854,6 +871,7 @@ vn_swe_missions_slot_2_d = {
         position = 8
         required_missions = { vn_swe_military_reforms }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			total_development = 1000
 			government_rank = 6
 			is_great_power = yes
@@ -905,6 +923,7 @@ vn_swe_missions_slot_2_d = {
         position = 9
         required_missions = { vn_swe_stormakstiden }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			has_institution = enlightenment
 			all_state_province = {
 				enlightenment = 100
@@ -927,6 +946,7 @@ vn_swe_missions_slot_2_d = {
         position = 10
         required_missions = { vn_swe_convert_sweden }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			OR = {
 				AND = {
 					uses_papacy = yes
@@ -987,6 +1007,7 @@ vn_swe_missions_slot_3_a = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			ronneby_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -1039,6 +1060,7 @@ vn_swe_missions_slot_3_a = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			sjaelland_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -1075,6 +1097,7 @@ vn_swe_missions_slot_3_a = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             jutland_region = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -1128,6 +1151,7 @@ vn_swe_missions_slot_3_a = {
 			}
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			scandinavia_superregion = {
 				type = all
                 owned_by = ROOT
@@ -1177,6 +1201,7 @@ vn_swe_missions_slot_3_a = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				value = 15
 				OR = {
@@ -1231,6 +1256,7 @@ vn_swe_missions_slot_3_a = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				value = 15
 				OR = {
@@ -1285,6 +1311,7 @@ vn_swe_missions_slot_3_a = {
 			vn_swe_occupy_prussia 
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			baltic_sea_region = {
 				type = all
 				NOT = {
@@ -1331,6 +1358,7 @@ vn_swe_missions_slot_3_a = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				value = 5
 				area = stade_area
@@ -1523,6 +1551,7 @@ vn_swe_missions_slot_3_a = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			calc_true_if = {
 				1084 = { country_or_non_sovereign_subject_holds = ROOT }
 				429 = { country_or_non_sovereign_subject_holds = ROOT }
@@ -1597,6 +1626,7 @@ vn_swe_missions_slot_4_a = {
         position = 1
 		required_missions = {  }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			num_of_generals = 2
 			army_size_percentage = 0.75
 			stability = 1
@@ -1684,6 +1714,7 @@ vn_swe_missions_slot_4_a = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			suomi_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -1754,6 +1785,7 @@ vn_swe_missions_slot_4_b = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			6131 = { country_or_non_sovereign_subject_holds = ROOT }
 			2697 = { country_or_non_sovereign_subject_holds = ROOT }
 			6130 = { country_or_non_sovereign_subject_holds = ROOT }
@@ -1779,6 +1811,7 @@ vn_swe_missions_slot_4_b = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			livonia_region = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -1843,6 +1876,7 @@ vn_swe_missions_slot_4_b = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			curonia_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -1895,6 +1929,7 @@ vn_swe_missions_slot_4_b = {
 			NOT = { controlled_by = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			OR = {
 				calc_true_if = {
 					ostpreussen_region = {
@@ -2005,6 +2040,7 @@ vn_swe_missions_slot_4_c = {
 			}
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			if = {
 				limit = { exists = TUR }
 				TUR = {
@@ -2061,6 +2097,7 @@ vn_swe_missions_slot_5_a = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             vyborg_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -2098,6 +2135,7 @@ vn_swe_missions_slot_5_a = {
 			province_id = 3427
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             3427 = {
 				owned_by = ROOT
 				is_core = ROOT
@@ -2190,6 +2228,7 @@ vn_swe_missions_slot_5_a = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             veps_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -2241,6 +2280,7 @@ vn_swe_missions_slot_5_a = {
 			}
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             NOT = {
 				any_known_country = {
 					custom_trigger_tooltip = {
@@ -2303,6 +2343,7 @@ vn_swe_missions_slot_5_b = {
 			}
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             num_of_owned_provinces_with = {
 				value = 30
 				OR = {
@@ -2418,6 +2459,7 @@ vn_swe_missions_slot_5_c = {
         position = 9
         required_missions = { vn_swe_occupy_prussia }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			OR = {
 				any_known_country = {
 					custom_trigger_tooltip = {
@@ -2484,6 +2526,7 @@ vn_swe_missions_slot_5_c = {
         position = 10
         required_missions = { vn_swe_wars_with_poland }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			OR = {
 				has_estate = estate_cossacks
 				any_known_country = {
@@ -2518,6 +2561,7 @@ vn_swe_missions_slot_5_c = {
 			}
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             NOT = {
 				any_known_country = {
 					custom_trigger_tooltip = {

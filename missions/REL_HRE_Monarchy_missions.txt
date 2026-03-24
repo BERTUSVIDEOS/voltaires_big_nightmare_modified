@@ -17,6 +17,7 @@ VN_hre_monarchies_missions = {
         required_missions = { }
         position = 5
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			custom_trigger_tooltip = {
 				tooltip = vn_royal_marriages.tt
 				calc_true_if = {
@@ -39,6 +40,7 @@ VN_hre_monarchies_missions = {
 		icon = mission_landsknecht_soldier
 		required_missions = { vn_royal_marriages }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			stability = 1
             if = {
                 limit = { has_dlc = "Common Sense" }
@@ -65,6 +67,7 @@ VN_hre_monarchies_missions = {
 		icon = mission_high_income
 		required_missions = { vn_secure_our_domain }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			NOT = { average_home_autonomy = 50 }
 			if = {
 				limit = { has_estate = estate_nobles }
@@ -91,6 +94,7 @@ VN_hre_monarchies_missions = {
 		icon = mission_coronation
 		required_missions = { vn_reduce_local_autonomy }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			custom_trigger_tooltip = {
 				tooltip = vn_become_elector.tt
 				OR = {

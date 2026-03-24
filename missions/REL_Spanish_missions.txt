@@ -20,6 +20,7 @@ VN_spanish_missions = {
         required_missions = {}
         position = 5
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			custom_trigger_tooltip = {
 				tooltip = vn_iberian_alliances.tt
 				calc_true_if = {
@@ -42,6 +43,7 @@ VN_spanish_missions = {
 		icon = mission_iberian_conquistador
 		required_missions = { vn_iberian_alliances } 
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			custom_trigger_tooltip = {
 				tooltip = vn_convert_spain.tt
 				calc_true_if = {
@@ -66,6 +68,7 @@ VN_spanish_missions = {
 		icon = mission_establish_high_seas_navy
 		required_missions = { vn_convert_spain } 
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			num_of_heavy_ship = 20
 			navy_tradition = 40
 		}
@@ -83,6 +86,7 @@ VN_spanish_missions = {
 		icon = mission_have_manufactories
 		required_missions = { vn_colonial_aspirations } 
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			custom_trigger_tooltip = {
 				tooltip = vn_iberian_agriculture.tt
 				num_of_owned_provinces_with = {
@@ -133,6 +137,7 @@ VN_iberian_conquest_missions = {
 		required_missions = {}
 		completed_by = 1444.12.2 	#bertus mod
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			num_of_cities = 25
 			army_size_percentage = 1
 		}
@@ -159,6 +164,7 @@ VN_iberian_conquest_missions = {
 			owner = { NOT = { religion_group = christian } }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			443 = { owner = { religion_group = christian } }
 			711 = { owner = { religion_group = christian } }
 			1208 = { owner = { religion_group = christian } }
@@ -182,6 +188,7 @@ VN_iberian_conquest_missions = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			custom_trigger_tooltip = {
 				tooltip = vn_pacify_the_berbers.tt
 				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {

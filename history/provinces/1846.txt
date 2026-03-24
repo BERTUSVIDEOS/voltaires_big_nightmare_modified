@@ -20,7 +20,7 @@ center_of_trade = 1
 
 1337.1.1 = { fort_14th = no fort_15th = yes }
 1444.11.12 = {	#BERTUS MOD
-	oowner = UTR
+	owner = UTR
 	controller = UTR
 	add_core = UTR
 	remove_core = HOL

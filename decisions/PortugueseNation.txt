@@ -30,6 +30,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			NOT = { exists = POR }
 			adm_tech = 8
 			is_nomad = no

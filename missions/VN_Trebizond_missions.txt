@@ -20,6 +20,7 @@ vn_tre_missions_slot_1 = {
             superregion = anatolia_superregion
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             custom_trigger_tooltip = {
                 tooltip = vn_tre_expel_latins.tt
                 NOT = {
@@ -77,6 +78,7 @@ vn_tre_missions_slot_1 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             thrace_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -144,6 +146,7 @@ vn_tre_missions_slot_1 = {
             }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             NOT = { exists = LAE }
             num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
                 value = 25
@@ -175,6 +178,7 @@ vn_tre_missions_slot_1 = {
             }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             EPI = {
                 OR = {
                     exists = no
@@ -228,6 +232,7 @@ vn_tre_missions_slot_2 = {
             }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             polemonion_area = {
                 type = all
                 owned_by = ROOT
@@ -287,6 +292,7 @@ vn_tre_missions_slot_2 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             optimaton_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -378,6 +384,7 @@ vn_tre_missions_slot_2 = {
             }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             NOT = { exists = NKA }
             num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
                 value = 15
@@ -413,6 +420,7 @@ vn_tre_missions_slot_2 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
                 value = 15
                 region = kibyrraioton_region
@@ -441,6 +449,7 @@ vn_tre_missions_slot_2 = {
             vn_tre_crush_the_turks 
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
                 value = 250
                 superregion = anatolia_superregion
@@ -462,6 +471,7 @@ vn_tre_missions_slot_2 = {
             vn_tre_connect_cherson 
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             NOT = { exists = BYZ }
             total_development = 1500
             stability = 2
@@ -509,6 +519,7 @@ vn_tre_missions_slot_3 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
                 value = 10
                 OR = {
@@ -566,6 +577,7 @@ vn_tre_missions_slot_3 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
                 value = 25
                 OR = {
@@ -606,6 +618,7 @@ vn_tre_missions_slot_3 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
                 value = 25
                 OR = {
@@ -634,6 +647,7 @@ vn_tre_missions_slot_3 = {
             owner = { primary_culture = turkish }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             NOT = {
                 anatolia_superregion = {
                     owner = { primary_culture = turkish }
@@ -653,6 +667,7 @@ vn_tre_missions_slot_3 = {
         position = 6
         required_missions = { vn_tre_crush_the_turks }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             calc_true_if = {
                 amount = 250
                 anatolia_superregion = {
@@ -762,6 +777,7 @@ vn_tre_missions_slot_4 = {
         position = 1
         required_missions = {  }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             navy_size_percentage = 0.8
             num_of_admirals = 2
             num_of_galley = 10
@@ -799,6 +815,7 @@ vn_tre_missions_slot_4 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
                 value = 10
                 OR = {
@@ -844,6 +861,7 @@ vn_tre_missions_slot_4 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             OR = {
                 GEO = {
                     is_subject_of = ROOT
@@ -893,6 +911,7 @@ vn_tre_missions_slot_4 = {
             }   
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             3718 = {
                 owned_by = ROOT
                 is_core = ROOT
@@ -936,6 +955,7 @@ vn_tre_missions_slot_5 = {
             }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             num_of_owned_provinces_with = {
                 value = 10
                 OR = {
@@ -973,6 +993,7 @@ vn_tre_missions_slot_5 = {
             province_id = 4181
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             4181 = {
                 trade_share = {
                     country = ROOT
@@ -996,6 +1017,7 @@ vn_tre_missions_slot_5 = {
             province_id = 4181
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             OR = {
                 dock = 5
                 drydock = 5
@@ -1025,6 +1047,7 @@ vn_tre_missions_slot_5 = {
             }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             3461 = {
                 trade_share = {
                     country = ROOT
@@ -1078,6 +1101,7 @@ vn_tre_missions_slot_5 = {
             province_id = 4181
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             4181 = {
                 owned_by = ROOT
                 has_tax_building_trigger = yes
@@ -1110,6 +1134,7 @@ vn_tre_missions_slot_5 = {
             province_id = 4181
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             4181 = {
                 owned_by = ROOT
                 is_capital_of = ROOT

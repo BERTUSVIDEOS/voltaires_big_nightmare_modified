@@ -15,6 +15,7 @@ VN_swiss_missions = {
         required_missions = { }
         position = 5
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			num_of_owned_provinces_with = {
 				value = 5
 				OR = {
@@ -34,6 +35,7 @@ VN_swiss_missions = {
 		icon = mission_alliances
 		required_missions = { vn_great_minds_of_switzerland }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			diplomatic_reputation = 6
 		}
 		effect = {
@@ -49,6 +51,7 @@ VN_swiss_missions = {
 		required_missions = { vn_swiss_neutrality }
 		provinces_to_highlight = {}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			num_of_owned_provinces_with = {
 				value = 5
 				OR = {
@@ -69,6 +72,7 @@ VN_swiss_missions = {
 		icon = mission_religious
 		required_missions = { vn_swiss_trade_infrastructure }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			has_institution = enlightenment
 			all_state_province = {
 				enlightenment = 100

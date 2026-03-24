@@ -27,6 +27,7 @@ vn_apl_missions_slot_1 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			salento_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -47,6 +48,7 @@ vn_apl_missions_slot_1 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			salerno_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -70,6 +72,7 @@ vn_apl_missions_slot_1 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			capua_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -104,6 +107,7 @@ vn_apl_missions_slot_1 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			molise_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -170,6 +174,7 @@ vn_apl_missions_slot_1 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			corsica_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -230,6 +235,7 @@ vn_apl_missions_slot_2 = {
 			}
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			owns_core_province = 2218
 			owns_core_province = 5175
 			owns_core_province = 2049
@@ -252,6 +258,7 @@ vn_apl_missions_slot_2 = {
 		icon = adjust_the_general_means
 		required_missions = { vn_apl_integrate_subjects }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			stability = 2
 			reform_level = 3
 			calc_true_if = {
@@ -293,6 +300,7 @@ vn_apl_missions_slot_2 = {
 			}
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			syracuse_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -322,6 +330,7 @@ vn_apl_missions_slot_2 = {
 		icon = king_of_sicily
 		required_missions = { vn_apl_convert_sicily }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			tag = SIC
 			government_rank = 5
 			stability = 2
@@ -363,6 +372,7 @@ vn_apl_missions_slot_2 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			OR = {
 				NRM = { is_subject_of = ROOT }
 				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
@@ -409,6 +419,7 @@ vn_apl_missions_slot_3 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			calabria_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -436,6 +447,7 @@ vn_apl_missions_slot_3 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			sicilia_region = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -464,6 +476,7 @@ vn_apl_missions_slot_3 = {
 			province_id = 2711
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			2711 = {
 				country_or_non_sovereign_subject_holds = ROOT
 				OR = {
@@ -497,6 +510,7 @@ vn_apl_missions_slot_3 = {
 			province_id = 2041
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			2041 = {
 				owned_by = ROOT
 				province_has_current_tech_fort_trigger = yes
@@ -527,6 +541,7 @@ vn_apl_missions_slot_3 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				value = 16
 				OR = {
@@ -568,6 +583,7 @@ vn_apl_missions_slot_4 = {
 		icon = catholic_confraternity
 		required_missions = { }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			calc_true_if = {
 				desc = vn_apl_prepare_for_war.tt
 				all_ally = {
@@ -588,6 +604,7 @@ vn_apl_missions_slot_4 = {
 		icon = crusader_fleet
 		required_missions = { vn_apl_conquer_sicily }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			navy_size_percentage = 0.75
 			calc_true_if = {
 				amount = 3
@@ -613,6 +630,7 @@ vn_apl_missions_slot_4 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			tunis_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -668,6 +686,7 @@ vn_apl_missions_slot_4 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			num_of_owned_provinces_with = {
 				value = 18
 				OR = {
@@ -750,6 +769,7 @@ vn_apl_missions_slot_4 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			num_of_owned_provinces_with = {
 				value = 14
 				OR = {
@@ -811,6 +831,7 @@ vn_apl_missions_slot_5 = {
 		icon = emperor_and_autocrat
 		required_missions = { }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			OR = {
 				war_score_against = {
 					who = BYZ
@@ -880,6 +901,7 @@ vn_apl_missions_slot_5 = {
 			}
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			622 = {
 				OR = {
 					country_or_non_sovereign_subject_holds = ROOT
@@ -949,6 +971,7 @@ vn_apl_missions_slot_5 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			thessalia_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -1016,6 +1039,7 @@ vn_apl_missions_slot_5 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				value = 50
 				OR = {

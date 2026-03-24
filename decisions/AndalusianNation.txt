@@ -33,6 +33,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			is_at_war = no
 			2670 = { owned_by = ROOT is_state = yes }	# Cordoba
 			num_of_owned_provinces_with = {

@@ -16,6 +16,7 @@ country_decisions = {
 			NOT = { has_country_flag = relocated_capital_st_petersburg }
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			is_core = 3427
 			is_at_war = no
 			3427 = {
@@ -65,6 +66,7 @@ country_decisions = {
 			religion = orthodox
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			is_at_war = no
 			NOT = { 2233 = { owned_by = BYZ } }
 			prestige = 2
@@ -86,6 +88,7 @@ country_decisions = {
 			has_country_flag = rus_enable_vodka_sales_decision
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			grain = 1
 			custom_trigger_tooltip = {
 				tooltip = decision_once_every_ten_years
@@ -144,6 +147,7 @@ country_decisions = {
 			has_country_flag = final_serfdom_privileges
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			stability = 1
 			adm_power_cost = 100
 			dip_power_cost = 100
@@ -197,6 +201,7 @@ country_decisions = {
 		}
 		major = yes
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			if = {
 				limit = {
 					OR = {

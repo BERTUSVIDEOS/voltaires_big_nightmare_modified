@@ -35,6 +35,7 @@ vn_teu_liv_missions_slot_1 = {
             }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			dobrzyn_area = {
 				type = all
 				owner = {
@@ -92,6 +93,7 @@ vn_teu_liv_missions_slot_1 = {
             }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			warsaw_area = {
 				type = all
 				owner = {
@@ -192,6 +194,7 @@ vn_teu_liv_missions_slot_2 = {
 		icon = the_hungarian_question
 		required_missions = { }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			army_size_percentage = 0.75
 			manpower_percentage = 0.75
 			if = {
@@ -272,6 +275,7 @@ vn_teu_liv_missions_slot_2 = {
             }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			samogitian_region = {
 				type = all
 				owner = {
@@ -325,6 +329,7 @@ vn_teu_liv_missions_slot_2 = {
             }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			lithuania_region = {
 				type = all
 				owner = {
@@ -374,7 +379,7 @@ vn_teu_liv_missions_slot_2 = {
 		}
 		effect = {
 			change_ruler_stat = {
-				stat = adm
+				type = adm
 				amount = 1
 			}
 			add_country_modifier = {
@@ -387,6 +392,7 @@ vn_teu_liv_missions_slot_2 = {
 		icon = kingdom_of_heaven
 		required_missions = { vn_teu_liv_defeat_poland vn_teu_liv_conquer_lithuania }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			total_development = 1000
 			has_completed_all_reforms_trigger = yes
 			NOT = { num_of_rebel_armies = 1 }
@@ -586,6 +592,7 @@ vn_teu_liv_missions_slot_3 = {
 		icon = mission_zambezi_gold
 		required_missions = { vn_teu_liv_river_navigation }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			NOT = { has_estate_privilege = estate_nobles_monopoly_of_gems }
 			share_of_starting_income = 5
 			trading_bonus = {
@@ -618,6 +625,7 @@ vn_teu_liv_missions_slot_3 = {
 		icon = mission_rb_weather_the_reformation
 		required_missions = { vn_teu_liv_improve_communication }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			current_age = age_of_reformation
 			OR = {
 				AND = {
@@ -708,6 +716,7 @@ vn_teu_liv_missions_slot_4 = {
 		icon = mission_fort
 		required_missions = { }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			num_of_owned_provinces_with = {
 				value = 5
 				province_has_current_tech_fort_trigger = yes
@@ -745,6 +754,7 @@ vn_teu_liv_missions_slot_4 = {
 			}
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			is_at_war = no
 			num_of_owned_provinces_with = {
 				value = 10
@@ -766,6 +776,7 @@ vn_teu_liv_missions_slot_4 = {
 		icon = mission_rb_grow_the_channel
 		required_missions = {  }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			monthly_dip = 10
 			navy_size_percentage = 0.75
 			num_of_owned_provinces_with = {
@@ -843,6 +854,7 @@ vn_teu_liv_missions_slot_4 = {
 		icon = mission_se_along_the_river
 		required_missions = { vn_teu_liv_baltic_fleet }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			OR = {
 				road_network = 5
 				post_office = 3
@@ -868,6 +880,7 @@ vn_teu_liv_missions_slot_4 = {
 			}
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			if = {
 				limit = { has_dlc = "Dharma" }
 				num_of_owned_provinces_with = {
@@ -907,6 +920,7 @@ vn_teu_liv_missions_slot_4 = {
 			}
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			NOT = { num_of_loans = 1 }
 			OR = {
 				402 = {
@@ -948,6 +962,7 @@ vn_teu_liv_missions_slot_4 = {
 			}
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			NOT = { corruption = 0.01 }
 			NOT = {
 				any_owned_province = {
@@ -973,6 +988,7 @@ vn_teu_liv_missions_slot_4 = {
 		icon = hand-picked_bureaucrats
 		required_missions = { vn_teu_liv_improve_communication }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			if = {
 				limit = { has_estate = estate_church }
 				estate_loyalty = {
@@ -1036,6 +1052,7 @@ vn_teu_liv_missions_slot_5 = {
 		icon = knights_of_the_new_world
 		required_missions = { }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			current_income_balance = 0
 			has_mil_advisor = yes
 			any_country = {
@@ -1052,6 +1069,7 @@ vn_teu_liv_missions_slot_5 = {
 		icon = mission_marwari_horses
 		required_missions = { vn_teu_liv_invite_knights vn_teu_liv_teutonic_castles }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			num_of_cavalry = 10
 			cavalry_fraction = 0.25
 			OR = {
@@ -1074,6 +1092,7 @@ vn_teu_liv_missions_slot_5 = {
 		icon = the_shape_of_trades_to_come
 		required_missions = { vn_teu_liv_warhorses_and_swoyken }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			is_in_deficit = no
 			any_country = {
 				NOT = { government = theocracy }
@@ -1097,6 +1116,7 @@ vn_teu_liv_missions_slot_5 = {
 		icon = develop_konigsberg
 		required_missions = { }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			grown_by_development = 50
 			num_of_owned_provinces_with = {
 				value = 3
@@ -1126,6 +1146,7 @@ vn_teu_liv_missions_slot_5 = {
 			is_capital_of = ROOT
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			capital_scope = {
 				development = 20
 				num_of_times_improved_by_owner = 5
@@ -1153,6 +1174,7 @@ vn_teu_liv_missions_slot_5 = {
 			owned_by = ROOT
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			development_in_provinces = {
 				value = 30
 				has_river_estuary_trigger = yes
@@ -1170,6 +1192,7 @@ vn_teu_liv_missions_slot_5 = {
 		icon = immaculate_government
 		required_missions = { vn_teu_liv_improve_communication }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			stability = 1
 			if = {
 				limit = { has_dlc = "Common Sense" }

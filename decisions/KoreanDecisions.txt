@@ -8,6 +8,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			mil_power_cost = 25
 			any_owned_province = {
 				has_province_modifier = tripitaka_koreana
@@ -48,6 +49,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			is_in_war = {
 				defenders = ROOT
 			}

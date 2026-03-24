@@ -50,6 +50,7 @@ vn_hannoverian_group_1 = {
 		}
 		
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			if = {
 				limit = {
 					exists = BRU
@@ -144,6 +145,7 @@ vn_hannoverian_group_1 = {
 			}
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			if = {
 				limit = {
 					exists = SDL
@@ -296,6 +298,7 @@ vn_hannoverian_group_1 = {
 			}
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				value = 20
 				OR = {
@@ -412,6 +415,7 @@ vn_hannoverian_group_1 = {
 			NOT = { country_or_non_sovereign_subject_holds = root }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			berlin_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = root
@@ -484,6 +488,7 @@ vn_hannoverian_group_2 = {
 			NOT = { development = 25 }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			is_or_was_tag = { tag = HAN }
 			capital_scope = {
 				development = 25
@@ -619,6 +624,7 @@ vn_hannoverian_group_3 = {
 			}
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			owns_core_province = 429
 			owns_core_province = 1084
 			owns_core_province = 13
@@ -671,6 +677,7 @@ vn_hannoverian_group_4 = {
 			}
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			is_or_was_tag = { tag = HAN }
 			custom_trigger_tooltip = {
 				tooltip = han_rule_the_waves_trigger_tooltip
@@ -847,6 +854,7 @@ vn_hannoverian_group_4 = {
 			NOT = { country_or_non_sovereign_subject_holds = root }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			is_or_was_tag = { tag = HAN }
 			owns_or_non_sovereign_subject_of = 2268
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
@@ -922,6 +930,7 @@ vn_hannoverian_group_4 = {
 			}
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			is_or_was_tag = { tag = HAN }
 			OR = {
 				is_emperor = yes

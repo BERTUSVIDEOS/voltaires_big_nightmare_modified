@@ -20,6 +20,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			is_at_war = no
 			primary_culture = turkish
 			religion_group = muslim
@@ -117,6 +118,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			mil_power = 100
 		}
 		effect = {
@@ -160,6 +162,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			NOT = { has_estate_privilege = estate_janissary_janissaries_from_muslims }
 			if = {
 				limit = { has_estate = estate_janissaries }
@@ -195,6 +198,7 @@ country_decisions = {
 			normal_or_historical_nations = yes
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			has_disaster = janissary_decadence
 			if = {
 				limit = { has_dlc = "Cradle of Civilization" }
@@ -229,6 +233,7 @@ country_decisions = {
 			religion_group = muslim
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			OR = {
 				in_golden_age = yes
 				has_had_golden_age = yes
@@ -258,6 +263,7 @@ country_decisions = {
 			NOT = { has_country_flag = tur_fight_against_the_janissaries_1_flag }
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			stability = 0
 			num_of_owned_provinces_with = {
 				superregion = balkans_superregion
@@ -282,6 +288,7 @@ country_decisions = {
 			NOT = { has_country_flag = tur_fight_against_the_janissaries_2_flag }
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			stability = 0
 			num_of_owned_provinces_with = {
 				superregion = anatolia_superregion
@@ -306,6 +313,7 @@ country_decisions = {
 			NOT = { has_country_flag = tur_fight_against_the_janissaries_3_flag }
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			stability = 0
 			capital_scope = {
 				controlled_by = ROOT
@@ -341,6 +349,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			adm_power_cost = 100
 			dip_power_cost = 100
 			mil_power_cost = 100

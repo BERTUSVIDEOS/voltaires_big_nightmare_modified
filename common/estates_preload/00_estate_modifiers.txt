@@ -775,5 +775,26 @@ estate_holy_orders = {
 			always = yes
 		}
 	}
+	modifier_definition = {
+		#type = privileges
+		key = accepted_culture_give_morale
+		trigger = {
+			always = yes
+		}
+	}
+	modifier_definition = {
+		type = privileges
+		key = reform_progress_per_adm_tech
+		trigger = {
+			always = yes
+		}
+	}
+	modifier_definition = {
+		#type = privileges
+		key = edict_efficiency
+		trigger = {
+			always = yes
+		}
+	}
 
 }

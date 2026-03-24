@@ -27,6 +27,7 @@ vn_westfalian_group_1 = {
 			}
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			capital_scope = { culture = hannoverian }
 			capital_scope = {
 				area_for_scope_province = {
@@ -72,6 +73,7 @@ vn_westfalian_group_1 = {
 			NOT = { owned_by = ROOT }
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			82 = {
 				owned_by = ROOT
 				is_state_core = ROOT
@@ -149,6 +151,7 @@ vn_westfalian_group_1 = {
 			}
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			westfalen_area = {
 				type = all
 				owned_by = ROOT
@@ -191,6 +194,7 @@ vn_westfalian_group_1 = {
 			}
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			custom_trigger_tooltip = {
 				tooltip = westphal_lower_saxon_tt
 				NOT = {
@@ -232,6 +236,7 @@ vn_westfalian_group_2 = {
 		position = 11
 		required_missions = { vn_religious_wars }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			is_or_was_tag = { tag = WES }
 			if = {
 				limit = {
@@ -319,6 +324,7 @@ vn_westfalian_group_3 = {
 			}
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			1951 = {
 				is_strongest_trade_power = ROOT
 				trade_share = {
@@ -340,6 +346,7 @@ vn_westfalian_group_3 = {
 		icon = unite_the_league
 		required_missions = { wes_rheinland_start }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			num_of_owned_provinces_with = {
 				continent = europe
 				culture = ripuarian
@@ -470,6 +477,7 @@ vn_westfalian_group_3 = {
 		}
 		
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			owns_core_province = 1951	# Koln
 			owns_core_province = 1760	# Koblenz
 			owns_core_province = 2501	# Nuremburg

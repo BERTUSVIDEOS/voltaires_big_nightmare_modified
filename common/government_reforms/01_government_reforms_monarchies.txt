@@ -32,9 +32,8 @@ feudalism_reform = {
 	custom_attributes = {
 		buffed_strong_duchies = yes #+5% Loyalty
 	}
-	ai = {
-		factor = 0.5 #generic
-	}
+	
+	ai = { factor = 1.0 }
 }
 
 autocracy_reform = {
@@ -48,9 +47,8 @@ autocracy_reform = {
 		harsh_treatment_cost = -0.1
 		global_rebel_suppression_efficiency = 0.1
 	}
-	ai = {
-		factor = 0.5 #generic
-	}
+	
+	ai = { factor = 1.0 }
 }
 
 elective_monarchy_reform = {
@@ -68,9 +66,8 @@ elective_monarchy_reform = {
 	custom_attributes = {
 		has_ruler_election = yes
 	}
-	ai = {
-		factor = 0.5
-	}
+	
+	ai = { factor = 1.0 }
 }
 
 plutocratic_reform = {
@@ -122,9 +119,8 @@ plutocratic_reform = {
 		can_form_trade_league = yes
 		trade_city_reform = trading_city
 	}
-	ai = {
-		factor = 0.75 #generic
-	}
+	
+	ai = { factor = 1.0 }
 }
 
 austrian_archduchy_reform = {
@@ -152,6 +148,8 @@ austrian_archduchy_reform = {
 	custom_attributes = {
 		buffed_strong_duchies = yes #+5% Loyalty
 	}
+	
+	ai = { factor = 1.0 }
 }
 
 grand_duchy_reform = {
@@ -180,6 +178,8 @@ grand_duchy_reform = {
 	modifiers = {
 		governing_capacity = 200
 	}
+	
+	ai = { factor = 1.0 }
 }
 
 feudal_france_reform = {
@@ -222,6 +222,8 @@ feudal_france_reform = {
 			france_mechanic
 		}
 	}
+	
+	ai = { factor = 1.0 }
 }
 
 appanage_reform = {
@@ -243,6 +245,8 @@ appanage_reform = {
 	custom_attributes = {
 		locked_government_type = yes
 	}
+	
+	ai = { factor = 1.0 }
 }
 
 absolutist_france_reform = {
@@ -298,6 +302,8 @@ absolutist_france_reform = {
 	custom_attributes = {
 		centralize_state_development = yes 
 	}
+	
+	ai = { factor = 1.0 }
 }
 
 celestial_empire = {
@@ -353,10 +359,6 @@ celestial_empire = {
 		governing_capacity = 300
 	}
 
-	ai = {
-		factor = 1000 # should always be picked if available
-	}
-
 	custom_attributes = {
 		locked_government_type = yes
 		#has_unify_china_cb = yes
@@ -378,6 +380,8 @@ celestial_empire = {
 			russian_mechanic
 		}
 	}
+	
+	ai = { factor = 1.0 }
 }
 
 kalmar_union = {
@@ -418,9 +422,8 @@ kalmar_union = {
 		cannot_integrate_personal_unions = yes
 		cannot_abandon_personal_unions = yes
 	}
-	ai = {
-		factor = 1
-	}
+	
+	ai = { factor = 1.0 }
 }
 
 danish_archkingdom = {
@@ -443,9 +446,8 @@ danish_archkingdom = {
 	custom_attributes = {
 		personal_union_war_contribution = yes
 	}
-	ai = {
-		factor = 1
-	}
+	
+	ai = { factor = 1.0 }
 }
 
 elective_monarchy = {
@@ -522,9 +524,8 @@ iqta = {
 		}
 	}
 
-	ai = {
-		factor = 1
-	}
+	
+	ai = { factor = 1.0 }
 }
 
 english_monarchy = {
@@ -614,9 +615,8 @@ british_monarchy = {
 			english_parliament = yes
 		}
 	}
-	ai = {
-		factor = 100
-	}
+	
+	ai = { factor = 1.0 }
 }
 
 angevin_monarchy = {
@@ -668,9 +668,8 @@ angevin_monarchy = {
 			english_parliament = yes
 		}
 	}
-	ai = {
-		factor = 100
-	}
+	
+	ai = { factor = 1.0 }
 }
 
 absolute_british_monarchy = {
@@ -875,9 +874,8 @@ margraviate_reform = {
 		fort_maintenance_modifier = -0.2
 		defensiveness = 0.1
 	}
-	ai = {
-		factor = 1
-	}
+	
+	ai = { factor = 1.0 }
 }
 
 serbian_despotate_reform = {
@@ -903,9 +901,8 @@ serbian_despotate_reform = {
 		warscore_cost_vs_other_religion = -0.1
 		tolerance_own = 1
 	}
-	ai = {
-		factor = 1
-	}
+	
+	ai = { factor = 1.0 }
 }
 
 bulgarian_tsardom_reform = {
@@ -942,9 +939,8 @@ bulgarian_tsardom_reform = {
 		harsh_treatment_cost = -0.25
 	}
 	fixed_rank = 6
-	ai = {
-		factor = 100
-	}
+	
+	ai = { factor = 1.0 }
 }
 
 tanistry_reform = {
@@ -977,9 +973,8 @@ tanistry_reform = {
 			can_elect_from_relative = yes
 		}
 	}
-	ai = {
-		factor = 1
-	}
+	
+	ai = { factor = 1.0 }
 }
 
 irish_highkingdom_reform = {
@@ -1027,9 +1022,8 @@ irish_highkingdom_reform = {
 			can_elect_from_relative = yes
 		}
 	}
-	ai = {
-		factor = 1
-	}
+	
+	ai = { factor = 1.0 }
 }
 
 scottish_monarchy_reform = {
@@ -1066,9 +1060,8 @@ scottish_monarchy_reform = {
 		}
 		has_parliament = yes
 	}
-	ai = {
-		factor = 1
-	}
+	
+	ai = { factor = 1.0 }
 }
 
 sharifate_reform = {
@@ -1108,9 +1101,8 @@ sharifate_reform = {
 			iqta_mechanic
 		}
 	}
-	ai = {
-		factor = 1
-	}
+	
+	ai = { factor = 1.0 }
 }
 
 caliphate_reform = {
@@ -1152,9 +1144,8 @@ caliphate_reform = {
 			feudal_theocracy_mechanic
 		}
 	}
-	ai = {
-		factor = 1
-	}
+	
+	ai = { factor = 1.0 }
 }
 
 league_of_lezhe_reform = {
@@ -1176,9 +1167,8 @@ league_of_lezhe_reform = {
 	custom_attributes = {
 		winning_battles_increases_legitimacy = yes
 	}
-	ai = {
-		factor = 1
-	}
+	
+	ai = { factor = 1.0 }
 }
 
 barbary_sultanate_reform = {
@@ -1215,9 +1205,8 @@ barbary_sultanate_reform = {
 			iqta_mechanic
 		}
 	}
-	ai = {
-		factor = 1
-	}
+	
+	ai = { factor = 1.0 }
 }
 
 roman_empire_reform = {
@@ -1254,9 +1243,8 @@ roman_empire_reform = {
 			enables_pronoias = yes 
 		}
 	}
-	ai = {
-		factor = 1
-	}
+	
+	ai = { factor = 1.0 }
 }
 
 persian_government_reform = {
@@ -1303,9 +1291,8 @@ persian_government_reform = {
 			feudal_theocracy_mechanic
 		}
 	}
-	ai = {
-		factor = 1
-	}
+	
+	ai = { factor = 1.0 }
 }
 
 zoroastrian_persian_government_reform = {
@@ -1366,9 +1353,8 @@ zoroastrian_persian_government_reform = {
 	#		}
 	#	}
 	#}
-	ai = {
-		factor = 1
-	}
+	
+	ai = { factor = 1.0 }
 }
 
 portuguese_monarchy_reform = {
@@ -1387,9 +1373,8 @@ portuguese_monarchy_reform = {
 		global_tax_modifier = 0.1
 		sailors_recovery_speed = 0.2
 	}
-	ai = {
-		factor = 1
-	}
+	
+	ai = { factor = 1.0 }
 }
 
 holy_imperial_monarchy_reform = {
@@ -1418,9 +1403,8 @@ holy_imperial_monarchy_reform = {
 		seizing_land_loyalty = yes
 		seizing_land_no_rebels = yes
 	}
-	ai = {
-		factor = 1
-	}
+	
+	ai = { factor = 1.0 }
 }
 
 burgundian_state_reform = {
@@ -1440,9 +1424,8 @@ burgundian_state_reform = {
 		diplomatic_upkeep = 2
 		years_to_integrate_personal_union = -5
 	}
-	ai = {
-		factor = 1
-	}
+	
+	ai = { factor = 1.0 }
 }
 
 bohemian_elective_kingdom_reform = {
@@ -1469,9 +1452,8 @@ bohemian_elective_kingdom_reform = {
 			has_improved_ruler_election = yes
 		}
 	}
-	ai = {
-		factor = 1
-	}
+	
+	ai = { factor = 1.0 }
 }
 
 stadthalter_monarchy_reform = {
@@ -1545,9 +1527,8 @@ stadthalter_monarchy_reform = {
 		}
 		has_parliament = yes
 	}
-	ai = {
-		factor = 1
-	}
+	
+	ai = { factor = 1.0 }
 }
 
 janissary_autocracy_reform = {
@@ -1577,9 +1558,8 @@ janissary_autocracy_reform = {
 	custom_attributes = {
 		force_general_leader = yes
 	}
-	ai = {
-		factor = 1
-	}
+	
+	ai = { factor = 1.0 }
 }
 
 admiralty_regime_reform = {
@@ -1645,9 +1625,8 @@ admiralty_regime_reform = {
 			}
 		}
 	}
-	ai = {
-		factor = 1
-	}
+	
+	ai = { factor = 1.0 }
 }
 
 modernized_ottoman_government = {
@@ -1893,24 +1872,12 @@ eyalet_government = {
 	custom_attributes = {
 		locked_government_type = yes
 	}
-	ai = {
-		factor = 100
-		modifier = {
-			factor = 0
-			OR = {
-				has_reform = barbary_eyalet_government
-				have_had_reform = barbary_eyalet_government
-			}
-		}
-	}
+	
+	ai = { factor = 1.0 }
 }
 
 barbary_eyalet_government = {
 	lock_level_when_selected = yes
-
-
-
-
 	allow_normal_conversion = yes
 	icon = "barbary_eyalet_government"
 	potential = {
@@ -1950,9 +1917,8 @@ barbary_eyalet_government = {
 		locked_government_type = yes
 		force_admiral_leader = yes
 	}
-	ai = {
-		factor = 100
-	}
+	
+	ai = { factor = 1.0 }
 }
 
 beylik_government = {
@@ -2710,9 +2676,8 @@ mossi_federal_kingdom = {
 		}
 	}
 
-	ai = {
-		factor = 1
-	}
+	
+	ai = { factor = 1.0 }
 }
 
 polish_great_sejm = {
@@ -3663,13 +3628,8 @@ enforce_privileges_reform = {
 		nobles_influence_modifier = 0.1
 		maratha_exclusive_influence_modifier = 0.1
 	}
-	ai = {
-		factor = 1
-		modifier = {
-			factor = 2
-			NOT = { max_manpower = 22 }
-		}
-	}
+	
+	ai = { factor = 1.0 }
 }
 
 quash_noble_power_reform = {
@@ -3684,13 +3644,8 @@ quash_noble_power_reform = {
 		maratha_exclusive_influence_modifier = -0.1
 		rajput_exclusive_influence_modifier = -0.1
 	}
-	ai = {
-		factor = 1
-		modifier = {
-			factor = 1.5
-			is_in_deficit = yes
-		}
-	}
+	
+	ai = { factor = 1.0 }
 }
 
 grant_noble_castle_rights_reform = {
@@ -3708,22 +3663,8 @@ grant_noble_castle_rights_reform = {
 	custom_attributes = {
 		on_fort_built_nobles_loyalty = yes	#5 Loyalty
 	}
-	ai = {
-		factor = 1
-		modifier = {
-			factor = 1.5
-			num_of_owned_provinces_with = {
-				OR = {
-					has_building = fort_14th
-					has_building = fort_15th
-					has_building = fort_16th
-					has_building = fort_17th
-					has_building = fort_18th
-				}
-				value = 5
-			}
-		}
-	}
+	
+	ai = { factor = 1.0 }
 }
 
 maintain_nobles_status_quo_reform = {
@@ -3740,13 +3681,8 @@ maintain_nobles_status_quo_reform = {
 	custom_attributes = {
 		free_noble_levies = yes
 	}
-	ai = {
-		factor = 1
-		modifier = {
-			factor = 0
-			crown_land_share = 50
-		}
-	}
+	
+	ai = { factor = 1.0 }
 }
 
 grant_military_command_reform = {
@@ -3765,9 +3701,8 @@ grant_military_command_reform = {
 	custom_attributes = {
 		recruiting_generals_increases_nobles_loyalty = yes
 	}
-	ai = {
-		factor = 1
-	}
+	
+	ai = { factor = 1.0 }
 }
 
 grant_nobles_electorate_reform = {
@@ -3823,17 +3758,8 @@ grant_nobles_electorate_reform = {
 			has_improved_ruler_election = yes
 		}
 	}
-	ai = {
-		factor = 1
-		modifier = {
-			factor = 100
-			has_government_attribute = has_ruler_election
-		}
-		modifier = {
-			factor = 0
-			NOT = { has_government_attribute = has_ruler_election }
-		}
-	}
+	
+	ai = { factor = 1.0 }
 }
 
 blackmail_nobility_reform = {
@@ -3855,9 +3781,8 @@ blackmail_nobility_reform = {
 	custom_attributes = {
 		seizing_land_no_rebels_from_estate_nobles = yes
 	}
-	ai = {
-		factor = 0
-	}
+	
+	ai = { factor = 1.0 }
 }
 
 enforce_trader_privileges_reform = {
@@ -3877,19 +3802,8 @@ enforce_trader_privileges_reform = {
 		trade_range_modifier = 0.3
 		trade_efficiency = 0.05
 	}
-	ai = {
-		factor = 2
-		modifier = {
-			factor = 1.5
-			trade_income_percentage = 0.35
-		}
-		modifier = {
-			factor = 0.5
-			NOT = {
-				trade_income_percentage = 0.25
-			}
-		}
-	}
+	
+	ai = { factor = 1.0 }
 }
 
 black_army_reform = {
@@ -3910,9 +3824,8 @@ black_army_reform = {
 	custom_attributes = {
 		mercs_do_not_cost_army_professionalism = yes
 	}
-	ai = {
-		factor = 3
-	}
+	
+	ai = { factor = 1.0 }
 }
 
 legion_of_honor_reform = {
@@ -3939,9 +3852,8 @@ legion_of_honor_reform = {
 	custom_attributes = {
 		winning_battles_increases_legitimacy = yes
 	}
-	ai = {
-		factor = 2.5
-	}
+	
+	ai = { factor = 1.0 }
 }
 
 imperial_nobility_reform = {
@@ -3959,9 +3871,8 @@ imperial_nobility_reform = {
 		enables_estate_nobles = yes
 		seizing_land_no_rebels_from_estate_nobles = yes
 	}
-	ai = {
-		factor = 2.5
-	}
+	
+	ai = { factor = 1.0 }
 }
 
 devshirme_system_reform = {
@@ -3999,9 +3910,8 @@ devshirme_system_reform = {
 			devshirme_mechanic
 		}
 	}
-	ai = {
-		factor = 300
-	}
+	
+	ai = { factor = 1.0 }
 }
 
 ottoman_conscription_reform = {
@@ -4026,9 +3936,8 @@ ottoman_conscription_reform = {
 		manpower_in_own_culture_provinces = 0.1
 		manpower_in_true_faith_provinces = 0.1
 	}
-	ai = {
-		factor = 300
-	}
+	
+	ai = { factor = 1.0 }
 }
 
 separation_of_boyars_from_court_reform = {
@@ -4050,9 +3959,8 @@ separation_of_boyars_from_court_reform = {
 		maratha_exclusive_influence_modifier = -0.1
 		rajput_exclusive_influence_modifier = -0.1
 	}
-	ai = {
-		factor = 10
-	}
+	
+	ai = { factor = 1.0 }
 }
 
 reform_the_pronoiars_reform = {
@@ -4065,9 +3973,8 @@ reform_the_pronoiars_reform = {
 		allow_client_states = yes
 		num_of_pronoiars = 2
 	}
-	ai = {
-		factor = 10
-	}
+	
+	ai = { factor = 1.0 }
 }
 pronoiar_monarchy_reform = {
 	icon = "pronoiar_monarchy_reform"
@@ -4087,9 +3994,9 @@ pronoiar_monarchy_reform = {
 			enables_pronoias = yes 
 		}
 	}
-	ai = {
-		factor = 10
-	}
+	
+	
+	ai = { factor = 1.0 }
 }
 
 house_of_lords_reform = {
@@ -4108,9 +4015,9 @@ house_of_lords_reform = {
 		parliament_effect_duration = 5
 		nobles_loyalty_modifier = 0.05
 	}
-	ai = {
-		factor = 10
-	}
+	
+	
+	ai = { factor = 1.0 }
 }
 
 ministerialis_promotion_reform = {
@@ -4128,9 +4035,8 @@ ministerialis_promotion_reform = {
 		advisor_cost = -0.1
 		monthly_favor_modifier = 0.1
 	}
-	ai = {
-		factor = 1
-	}
+	
+	ai = { factor = 1.0 }
 }
 
 #Bureaucracy:
@@ -4408,9 +4314,8 @@ decentralize_reform = {
 		num_accepted_cultures = 2
 		all_estate_loyalty_equilibrium = 0.05
 	}
-	ai = {
-		factor = 1
-	}
+	
+	ai = { factor = 1.0 }
 }
 
 expand_imperial_court_reform = {
@@ -4545,9 +4450,8 @@ ottoman_provincial_government_system_reform = {	#bertus mod
 			}
 		}
 	}
-	ai = {
-		factor = 1
-	}
+	
+	ai = { factor = 1.0 }
 }
 
 legacy_of_timur_reform = {
@@ -4568,9 +4472,9 @@ legacy_of_timur_reform = {
 	}
 	effect = {
 	}
-	ai = {
-		factor = 10
-	}
+	
+	
+	ai = { factor = 1.0 }
 }
 
 #State and Religion
@@ -4597,9 +4501,8 @@ restoration_of_clergy_reform = {
 	custom_attributes = {
 		enables_estate_church = yes
 	}
-	ai = {
-		factor = 2.5
-	}
+	
+	ai = { factor = 1.0 }
 }
 
 #Growth of Administration
@@ -4622,25 +4525,8 @@ clergy_in_administration_reform = {
 		church_loyalty_modifier = 0.05
 		tolerance_own = 1
 	}
-	ai = {
-		factor = 1
-		modifier = {
-			factor = 0.1
-			OR = {
-				AND = {
-					religion = zoroastrian
-					estate_influence = {
-						estate = estate_brahmins
-						influence = 90
-					}
-				}
-				estate_influence = {
-					estate = estate_church
-					influence = 90
-				}
-			}
-		}
-	}
+	
+	ai = { factor = 1.0 }
 }
 
 of_noble_bearing_reform = {
@@ -4674,31 +4560,8 @@ of_noble_bearing_reform = {
 		maratha_exclusive_loyalty_modifier = 0.05
 		rajput_exclusive_loyalty_modifier = 0.05
 	}
-	ai = {
-		factor = 1
-		modifier = {
-			factor = 0.1
-			OR = {
-				AND = {
-					NOT = { has_estate = estate_nobles }
-					OR = {
-						estate_influence = {
-							estate = estate_rajput
-							influence = 90
-						}
-						estate_influence = {
-							estate = estate_maratha
-							influence = 90
-						}
-					}
-				}
-				estate_influence = {
-					estate = estate_nobles
-					influence = 90
-				}
-			}
-		}
-	}
+	
+	ai = { factor = 1.0 }
 }
 
 meritocratic_focus_reform = {
@@ -4720,38 +4583,8 @@ meritocratic_focus_reform = {
 		burghers_loyalty_modifier = 0.05
 		vaisyas_non_muslim_influence_modifier = 0.1
 	}
-	ai = {
-		factor = 1
-		modifier = {
-			factor = 0.1
-			OR = {
-				AND = {
-					religion_group = muslim
-					OR = {
-						estate_influence = {
-							estate = estate_rajput
-							influence = 90
-						}
-						estate_influence = {
-							estate = estate_maratha
-							influence = 90
-						}
-					}
-				}
-				AND = {
-					NOT = { religion_group = muslim }
-					estate_influence = {
-						estate = estate_vaisyas
-						influence = 90
-					}
-				}
-				estate_influence = {
-					estate = estate_burghers
-					influence = 90
-				}
-			}
-		}
-	}
+	
+	ai = { factor = 1.0 }
 }
 
 # zabt_reform = {
@@ -4788,9 +4621,8 @@ dyanstic_administration_reform = {
 		monarch_admin_power = 1
 		advisor_pool = 1
 	}
-	ai = {
-		factor = 1
-	}
+	
+	ai = { factor = 1.0 }
 }
 
 standardized_millets_reform = {
@@ -4809,9 +4641,8 @@ standardized_millets_reform = {
 		reform_progress_growth = 0.1
 		diplomatic_annexation_cost = -0.1
 	}
-	ai = {
-		factor = 1
-	}
+	
+	ai = { factor = 1.0 }
 }
 
 direct_royal_administration_reform = {
@@ -4835,9 +4666,8 @@ direct_royal_administration_reform = {
 	custom_attributes = {
 		reform_progress_from_advisors = yes
 	}
-	ai = {
-		factor = 2
-	}
+	
+	ai = { factor = 1.0 }
 }
 
 administration_of_the_parliament_reform = {
@@ -4882,9 +4712,8 @@ administration_of_the_parliament_reform = {
 			}
 		}
 	}
-	ai = {
-		factor = 2
-	}
+	
+	ai = { factor = 1.0 }
 }
 
 legacy_of_eranshahr_reform = {
@@ -4902,9 +4731,8 @@ legacy_of_eranshahr_reform = {
 	custom_attributes = {
 		reform_progress_from_advisors = yes
 	}
-	ai = {
-		factor = 2
-	}
+	
+	ai = { factor = 1.0 }
 }
 court_of_art_and_culture_reform = {
 	icon = "court_of_art_and_culture_reform"
@@ -4934,9 +4762,8 @@ court_of_art_and_culture_reform = {
 			id = persian_influence_events.3000
 		}
 	}
-	ai = {
-		factor = 5
-	}
+	
+	ai = { factor = 1.0 }
 }
 
 #deliberative_assembly
@@ -4953,9 +4780,8 @@ royal_decree_reform = {
 		max_absolutism = 10	#5→10
 		yearly_absolutism = 0.5
 	}
-	ai = {
-		factor = 1
-	}
+	
+	ai = { factor = 1.0 }
 }
 
 aristocratic_court_reform = {
@@ -4966,9 +4792,8 @@ aristocratic_court_reform = {
 		monthly_favor_modifier = 0.25
 		improve_relation_modifier = 0.15
 	}
-	ai = {
-		factor = 1
-	}
+	
+	ai = { factor = 1.0 }
 }
 
 states_general_reform = {
@@ -5032,9 +4857,8 @@ general_estates_reform = {
 	custom_attributes = {
 		diet_increases_not_influence = yes
 	}
-	ai = {
-		factor = 1
-	}
+	
+	ai = { factor = 1.0 }
 }
 
 ottoman_siyasah_tax_reform = {
@@ -5129,9 +4953,8 @@ legislative_sejm = {
 		local_heir_mil = 1
 	}
 	
-	ai = {
-		factor = 1
-	}
+	
+	ai = { factor = 1.0 }
 }
 
 integrated_sejmiks = {
@@ -5157,9 +4980,8 @@ integrated_sejmiks = {
 		years_of_nationalism = -5
 	}
 	
-	ai = {
-		factor = 1
-	}
+	
+	ai = { factor = 1.0 }
 }
 
 imperial_decree_reform = {
@@ -5171,9 +4993,8 @@ imperial_decree_reform = {
 	modifiers = {
 		max_revolutionary_zeal = 20
 	}
-	ai = {
-		factor = 2.5
-	}
+	
+	ai = { factor = 1.0 }
 }
 
 justicia_de_aragon_reform = {
@@ -5238,9 +5059,9 @@ strengthened_parliament_reform = {
 		development_cost_in_primary_culture = -0.1
 		parliament_backing_chance = 0.05
 	}
-	ai = {
-		factor = 10
-	}
+	
+	
+	ai = { factor = 1.0 }
 }
 
 parliament_vs_monarchy_reform = {
@@ -5270,9 +5091,8 @@ parliament_vs_monarchy_reform = {
 			parliament_vs_monarchy_mechanic
 		}
 	}
-	ai = {
-		factor = 1
-	}
+	
+	ai = { factor = 1.0 }
 }
 
 #Legitimation of Power
@@ -5289,9 +5109,8 @@ machiavellianistic_rule_reform = {	#bertus mod
 		administrative_efficiency = 0.10
 		stability_cost_to_declare_war = -1
 	}
-	ai = {
-		factor = 1
-	}
+	
+	ai = { factor = 1.0 }
 }
 
 six_livres_reform = {	#bertus mod
@@ -5308,9 +5127,8 @@ six_livres_reform = {	#bertus mod
 		all_estate_loyalty_equilibrium = 0.10
 		global_unrest = -1
 	}
-	ai = {
-		factor = 1
-	}
+	
+	ai = { factor = 1.0 }
 }
 
 two_treatises_reform = {
@@ -5333,9 +5151,8 @@ two_treatises_reform = {
 			halved_parliament_bribes = yes
 		}
 	}
-	ai = {
-		factor = 1
-	}
+	
+	ai = { factor = 1.0 }
 }
 
 the_leviathan_reform = {	#bertus mod
@@ -5354,9 +5171,8 @@ the_leviathan_reform = {	#bertus mod
 		vassal_naval_forcelimit_bonus = 1.0
 		vassal_sailors_bonus = 1.0
 	}
-	ai = {
-		factor = 1
-	}
+	
+	ai = { factor = 1.0 }
 }
 
 the_social_contract_reform = {	#bertus mod
@@ -5377,9 +5193,8 @@ the_social_contract_reform = {	#bertus mod
 	custom_attributes = {
 		enforced_interfaith_dialogue_buff = yes
 	}
-	ai = {
-		factor = 1
-	}
+	
+	ai = { factor = 1.0 }
 }
 
 #absolute_rule_vs_constitutional
@@ -5390,13 +5205,8 @@ letat_cest_moi_reform = {
 	modifiers = {
 		governing_capacity = 250
 	}
-	ai = {
-		factor = 1.5
-		modifier = {
-			factor = 2
-			tag = FRA
-		}
-	}
+	
+	ai = { factor = 1.0 }
 }
 
 regional_representation_reform = {	#bertus mod
@@ -5414,9 +5224,8 @@ peoples_kingdom_reform = {
 	modifiers = {
 		possible_policy = 1
 	}
-	ai = {
-		factor = 1
-	}
+	
+	ai = { factor = 1.0 }
 }
 
 deified_monarchy_reform = {	#bertus mod
@@ -5426,9 +5235,8 @@ deified_monarchy_reform = {	#bertus mod
 		warscore_cost_vs_other_religion = -0.10
 		tolerance_own = 2
 	}
-	ai = {
-		factor = 1
-	}
+	
+	ai = { factor = 1.0 }
 }
 
 consulate_reform = {
@@ -5441,9 +5249,8 @@ consulate_reform = {
 		global_autonomy = -0.05
 		governing_capacity = 150
 	}
-	ai = {
-		factor = 2.5
-	}
+	
+	ai = { factor = 1.0 }
 }
 
 #separation_of_power
@@ -5458,13 +5265,8 @@ political_absolutism_reform = {
 		administrative_efficiency = 0.05	#0.025→0.05
 		max_absolutism = 10
 	}
-	ai = {
-		factor = 1.5
-		modifier = {
-			factor = 2
-			tag = FRA
-		}
-	}
+	
+	ai = { factor = 1.0 }
 }
 
 legislative_houses_reform = {
@@ -5573,9 +5375,8 @@ emperor_of_the_revolution_reform = {
 		yearly_revolutionary_zeal = 1.5
 		max_revolutionary_zeal = 10
 	}
-	ai = {
-		factor = 2.5
-	}
+	
+	ai = { factor = 1.0 }
 }
 
 enlightened_monarchy_reform = {
@@ -5588,9 +5389,8 @@ enlightened_monarchy_reform = {
 		global_unrest = -2
 		num_accepted_cultures = 2
 	}
-	ai = {
-		factor = 2.5
-	}
+	
+	ai = { factor = 1.0 }
 }
 
 become_rev_republic_reform = {
@@ -5667,9 +5467,9 @@ nizam_i_cedid_reform = {
 		reinforce_speed = 0.15
 		recover_army_morale_speed = 0.1
 	}
-	ai = {
-		factor = 10
-	}
+	
+	
+	ai = { factor = 1.0 }
 }
 
 # mng_seal_of_the_emperor_reform = {
@@ -5922,9 +5722,9 @@ reform_the_pronoiars_reform = {
 		allow_client_states = yes
 		num_of_pronoiars = 2
 	}
-	ai = {
-		factor = 10
-	}
+	
+	
+	ai = { factor = 1.0 }
 }
 pronoiar_monarchy_reform = {
 	icon = "pronoiar_monarchy_reform"
@@ -5944,9 +5744,9 @@ pronoiar_monarchy_reform = {
 			enables_pronoias = yes 
 		}
 	}
-	ai = {
-		factor = 10
-	}
+	
+	
+	ai = { factor = 1.0 }
 }
 
 cawa_auxiliary_forces = {

@@ -5,29 +5,17 @@ organised_through_bishops_aspect = {
 			remove_country_modifier = organised_through_bishops_aspect_modifier
 			if = {
 				limit = { has_government_attribute = longer_bonuses_from_aspects }
-				add_country_modifier = {
-					name = organised_through_bishops_aspect_modifier
-					duration = 5475
-				}
+				add_country_modifier = { name = organised_through_bishops_aspect_modifier duration = 5475 }
 			}
 			else = {
-				add_country_modifier = {
-					name = organised_through_bishops_aspect_modifier
-					duration = 3650
-				}
+				add_country_modifier = { name = organised_through_bishops_aspect_modifier duration = 3650 }
 			}
 		}
 	}
 	modifier = {
 		development_cost = -0.05
 	}
-	ai_will_do = {
-		factor = 15
-		modifier = {
-			factor = 1
-			is_at_war = no
-		}
-	}
+	ai_will_do = { factor = 1 }
 }
 
 priests_may_marry_aspect = {
@@ -37,34 +25,17 @@ priests_may_marry_aspect = {
 			remove_country_modifier = priests_may_marry_aspect_modifier
 			if = {
 				limit = { has_government_attribute = longer_bonuses_from_aspects }
-				add_country_modifier = {
-					name = priests_may_marry_aspect_modifier
-					duration = 5475
-				}
+				add_country_modifier = { name = priests_may_marry_aspect_modifier duration = 5475 }
 			}
 			else = {
-				add_country_modifier = {
-					name = priests_may_marry_aspect_modifier
-					duration = 3650
-				}
+				add_country_modifier = { name = priests_may_marry_aspect_modifier duration = 3650 }
 			}
 		}
 	}
 	modifier = {
 		same_religion_advisor_cost = -0.075	#-0.15→-0.075
 	}
-	ai_will_do = {
-		factor = 10
-		modifier = {
-			factor = 2
-			NOT = { religious_unity = 0.8 }
-		}
-		modifier = {
-			factor = 2
-			unrest = 4
-			NOT = { stability = 0 }
-		}
-	}
+	ai_will_do = { factor = 1 }
 }
 
 adult_baptism_aspect = {
@@ -74,37 +45,17 @@ adult_baptism_aspect = {
 			remove_country_modifier = adult_baptism_aspect_modifier
 			if = {
 				limit = { has_government_attribute = longer_bonuses_from_aspects }
-				add_country_modifier = {
-					name = adult_baptism_aspect_modifier
-					duration = 5475
-				}
+				add_country_modifier = { name = adult_baptism_aspect_modifier duration = 5475 }
 			}
 			else = {
-				add_country_modifier = {
-					name = adult_baptism_aspect_modifier
-					duration = 3650
-				}
+				add_country_modifier = { name = adult_baptism_aspect_modifier duration = 3650 }
 			}
 		}
 	}
 	modifier = { 
 		global_missionary_strength = 0.01
 	}
-	ai_will_do = {
-		factor = 12
-		modifier = {
-			factor = 2
-			NOT = { religious_unity = 0.8 }
-		}
-		modifier = {
-			factor = 0
-			NOT = {
-				any_owned_province = {
-					has_owner_religion = no
-				}
-			}
-		}
-	}
+	ai_will_do = { factor = 1 }
 }
 
 holy_sacraments_aspect = {
@@ -114,29 +65,17 @@ holy_sacraments_aspect = {
 			remove_country_modifier = holy_sacraments_aspect_modifier
 			if = {
 				limit = { has_government_attribute = longer_bonuses_from_aspects }
-				add_country_modifier = {
-					name = holy_sacraments_aspect_modifier
-					duration = 5475
-				}
+				add_country_modifier = { name = holy_sacraments_aspect_modifier duration = 5475 }
 			}
 			else = {
-				add_country_modifier = {
-					name = holy_sacraments_aspect_modifier
-					duration = 3650
-				}
+				add_country_modifier = { name = holy_sacraments_aspect_modifier duration = 3650 }
 			}
 		}
 	}
 	modifier = { 
 		discipline = 0.025
 	}
-	ai_will_do = {
-		factor = 12
-		modifier = {
-			factor = 2
-			is_at_war = yes
-		}
-	}
+	ai_will_do = { factor = 1 }
 }
 
 saints_accept_prayers_aspect = {
@@ -146,16 +85,10 @@ saints_accept_prayers_aspect = {
 			remove_country_modifier = saints_accept_prayers_aspect_modifier
 			if = {
 				limit = { has_government_attribute = longer_bonuses_from_aspects }
-				add_country_modifier = {
-					name = saints_accept_prayers_aspect_modifier
-					duration = 5475
-				}
+				add_country_modifier = { name = saints_accept_prayers_aspect_modifier duration = 5475 }
 			}
 			else = {
-				add_country_modifier = {
-					name = saints_accept_prayers_aspect_modifier
-					duration = 3650
-				}
+				add_country_modifier = { name = saints_accept_prayers_aspect_modifier duration = 3650 }
 			}
 		}
 	}
@@ -163,13 +96,7 @@ saints_accept_prayers_aspect = {
 		land_morale = 0.05
 		naval_morale = 0.05
 	}
-	ai_will_do = {
-		factor = 12
-		modifier = {
-			factor = 2
-			is_at_war = yes
-		}
-	}
+	ai_will_do = { factor = 1 }
 }
 
 icons_images_aspect = {
@@ -179,29 +106,17 @@ icons_images_aspect = {
 			remove_country_modifier = icons_images_aspect_modifier
 			if = {
 				limit = { has_government_attribute = longer_bonuses_from_aspects }
-				add_country_modifier = {
-					name = icons_images_aspect_modifier
-					duration = 5475
-				}
+				add_country_modifier = { name = icons_images_aspect_modifier duration = 5475 }
 			}
 			else = {
-				add_country_modifier = {
-					name = icons_images_aspect_modifier
-					duration = 3650
-				}
+				add_country_modifier = { name = icons_images_aspect_modifier duration = 3650 }
 			}
 		}
 	}
 	modifier = { 
 		prestige = 0.5
 	}
-	ai_will_do = {
-		factor = 12
-		modifier = {
-			factor = 2
-			NOT = { prestige = -40 }
-		}
-	}
+	ai_will_do = { factor = 1 }
 }
 
 legalised_divorces_aspect = {
@@ -211,16 +126,10 @@ legalised_divorces_aspect = {
 			remove_country_modifier = legalised_divorces_aspect_modifier
 			if = {
 				limit = { has_government_attribute = longer_bonuses_from_aspects }
-				add_country_modifier = {
-					name = legalised_divorces_aspect_modifier
-					duration = 5475
-				}
+				add_country_modifier = { name = legalised_divorces_aspect_modifier duration = 5475 }
 			}
 			else = {
-				add_country_modifier = {
-					name = legalised_divorces_aspect_modifier
-					duration = 3650
-				}
+				add_country_modifier = { name = legalised_divorces_aspect_modifier duration = 3650 }
 			}
 		}
 	}
@@ -230,25 +139,7 @@ legalised_divorces_aspect = {
 		horde_unity = 0.5
 		republican_tradition = 0.2
 	}
-	ai_will_do = {
-		factor = 6
-		modifier = {
-			factor = 2
-			NOT = { legitimacy_equivalent = 80 }
-		}
-		modifier = {
-			factor = 2
-			NOT = { legitimacy_equivalent = 60 }
-		}
-		modifier = {
-			factor = 2
-			NOT = { legitimacy_equivalent = 40 }
-		}
-		modifier = {
-			factor = 0
-			legitimacy_equivalent = 95
-		}
-	}
+	ai_will_do = { factor = 1 }
 }
 
 heretics_deported_aspect = {
@@ -258,33 +149,17 @@ heretics_deported_aspect = {
 			remove_country_modifier = heretics_deported_aspect_modifier
 			if = {
 				limit = { has_government_attribute = longer_bonuses_from_aspects }
-				add_country_modifier = {
-					name = heretics_deported_aspect_modifier
-					duration = 5475
-				}
+				add_country_modifier = { name = heretics_deported_aspect_modifier duration = 5475 }
 			}
 			else = {
-				add_country_modifier = {
-					name = heretics_deported_aspect_modifier
-					duration = 3650
-				}
+				add_country_modifier = { name = heretics_deported_aspect_modifier duration = 3650 }
 			}
 		}
 	}
 	modifier = {
 		global_colonial_growth = 15
 	}
-	ai_will_do = {
-		factor = 10
-		modifier = {
-			factor = 2
-			num_of_colonies = 1
-		}
-		modifier = {
-			factor = 2
-			num_of_colonists = 2
-		}
-	}
+	ai_will_do = { factor = 1 }
 }
 
 parish_registers_aspect = {
@@ -294,25 +169,17 @@ parish_registers_aspect = {
 			remove_country_modifier = parish_registers_aspect_modifier
 			if = {
 				limit = { has_government_attribute = longer_bonuses_from_aspects }
-				add_country_modifier = {
-					name = parish_registers_aspect_modifier
-					duration = 5475
-				}
+				add_country_modifier = { name = parish_registers_aspect_modifier duration = 5475 }
 			}
 			else = {
-				add_country_modifier = {
-					name = parish_registers_aspect_modifier
-					duration = 3650
-				}
+				add_country_modifier = { name = parish_registers_aspect_modifier duration = 3650 }
 			}
 		}
 	}
 	modifier = {
 		free_adm_policy = 1 
 	}
-	ai_will_do = {
-		factor = 5
-	}
+	ai_will_do = { factor = 1 }
 }
 
 individual_creeds_aspect = {
@@ -322,25 +189,17 @@ individual_creeds_aspect = {
 			remove_country_modifier = individual_creeds_aspect_modifier
 			if = {
 				limit = { has_government_attribute = longer_bonuses_from_aspects }
-				add_country_modifier = {
-					name = individual_creeds_aspect_modifier
-					duration = 5475
-				}
+				add_country_modifier = { name = individual_creeds_aspect_modifier duration = 5475 }
 			}
 			else = {
-				add_country_modifier = {
-					name = individual_creeds_aspect_modifier
-					duration = 3650
-				}
+				add_country_modifier = { name = individual_creeds_aspect_modifier duration = 3650 }
 			}
 		}
 	}
 	modifier = { 
 		idea_cost = -0.05
 	}
-	ai_will_do = {
-		factor = 15
-	}
+	ai_will_do = { factor = 1 }
 }
 
 allow_usury_aspect = {
@@ -350,33 +209,17 @@ allow_usury_aspect = {
 			remove_country_modifier = allow_usury_aspect_modifier
 			if = {
 				limit = { has_government_attribute = longer_bonuses_from_aspects }
-				add_country_modifier = {
-					name = allow_usury_aspect_modifier
-					duration = 5475
-				}
+				add_country_modifier = { name = allow_usury_aspect_modifier duration = 5475 }
 			}
 			else = {
-				add_country_modifier = {
-					name = allow_usury_aspect_modifier
-					duration = 3650
-				}
+				add_country_modifier = { name = allow_usury_aspect_modifier duration = 3650 }
 			}
 		}
 	}
 	modifier = { 
 		production_efficiency = 0.1
 	}
-	ai_will_do = {
-		factor = 17
-		modifier = {
-			factor = 0.5
-			treasury = 500
-		}
-		modifier = {
-			factor = 0
-			treasury = 2500
-		}
-	}
+	ai_will_do = { factor = 1 }
 }
 
 translated_bibles_aspect = {
@@ -386,33 +229,17 @@ translated_bibles_aspect = {
 			remove_country_modifier = translated_bibles_aspect_modifier
 			if = {
 				limit = { has_government_attribute = longer_bonuses_from_aspects }
-				add_country_modifier = {
-					name = translated_bibles_aspect_modifier
-					duration = 5475
-				}
+				add_country_modifier = { name = translated_bibles_aspect_modifier duration = 5475 }
 			}
 			else = {
-				add_country_modifier = {
-					name = translated_bibles_aspect_modifier
-					duration = 3650
-				}
+				add_country_modifier = { name = translated_bibles_aspect_modifier duration = 3650 }
 			}
 		}
 	}
 	modifier = {
 		global_unrest = -1
 	}
-	ai_will_do = {
-		factor = 10
-		modifier = {
-			factor = 2
-			unrest = 2
-		}
-		modifier = {
-			factor = 2
-			num_of_rebel_controlled_provinces = 1
-		}	
-	}
+	ai_will_do = { factor = 1 }
 }
 
 justified_religious_war_aspect = {
@@ -422,29 +249,17 @@ justified_religious_war_aspect = {
 			remove_country_modifier = justified_religious_war_aspect_modifier
 			if = {
 				limit = { has_government_attribute = longer_bonuses_from_aspects }
-				add_country_modifier = {
-					name = justified_religious_war_aspect_modifier
-					duration = 5475
-				}
+				add_country_modifier = { name = justified_religious_war_aspect_modifier duration = 5475 }
 			}
 			else = {
-				add_country_modifier = {
-					name = justified_religious_war_aspect_modifier
-					duration = 3650
-				}
+				add_country_modifier = { name = justified_religious_war_aspect_modifier duration = 3650 }
 			}
 		}
 	}
 	modifier = {
 		ae_impact = -0.10	#-0.05→-0.10
 	}
-	ai_will_do = {
-		factor = 1
-		modifier = {
-			factor = 0
-			is_at_war = no
-		}
-	}
+	ai_will_do = { factor = 1 }
 }
 
 war_preaches_aspect = {
@@ -454,29 +269,17 @@ war_preaches_aspect = {
 			remove_country_modifier = war_preaches_aspect_modifier
 			if = {
 				limit = { has_government_attribute = longer_bonuses_from_aspects }
-				add_country_modifier = {
-					name = war_preaches_aspect_modifier
-					duration = 5475
-				}
+				add_country_modifier = { name = war_preaches_aspect_modifier duration = 5475 }
 			}
 			else = {
-				add_country_modifier = {
-					name = war_preaches_aspect_modifier
-					duration = 3650
-				}
+				add_country_modifier = { name = war_preaches_aspect_modifier duration = 3650 }
 			}
 		}
 	}
 	modifier = {
 		war_exhaustion = -0.03
 	}
-	ai_will_do = {
-		factor = 2
-		modifier = {
-			factor = 0
-			is_at_war = no
-		}
-	}
+	ai_will_do = { factor = 1 }
 }
 
 head_of_the_church_aspect = {
@@ -486,29 +289,17 @@ head_of_the_church_aspect = {
 			remove_country_modifier = head_of_the_church_aspect_modifier
 			if = {
 				limit = { has_government_attribute = longer_bonuses_from_aspects }
-				add_country_modifier = {
-					name = head_of_the_church_aspect_modifier
-					duration = 5475
-				}
+				add_country_modifier = { name = head_of_the_church_aspect_modifier duration = 5475 }
 			}
 			else = {
-				add_country_modifier = {
-					name = head_of_the_church_aspect_modifier
-					duration = 3650
-				}
+				add_country_modifier = { name = head_of_the_church_aspect_modifier duration = 3650 }
 			}
 		}
 	}
 	modifier = {
 		global_autonomy = -0.05
 	}
-	ai_will_do = {
-		factor = 2
-		modifier = {
-			factor = 0
-			is_at_war = no
-		}
-	}
+	ai_will_do = { factor = 1 }
 }
 
 anglican_aspect = {
@@ -523,27 +314,15 @@ anglican_aspect = {
 			remove_country_modifier = anglican_aspect_aspect_modifier
 			if = {
 				limit = { has_government_attribute = longer_bonuses_from_aspects }
-				add_country_modifier = {
-					name = anglican_aspect_aspect_modifier
-					duration = 5475
-				}
+				add_country_modifier = { name = anglican_aspect_aspect_modifier duration = 5475 }
 			}
 			else = {
-				add_country_modifier = {
-					name = anglican_aspect_aspect_modifier
-					duration = 3650
-				}
+				add_country_modifier = { name = anglican_aspect_aspect_modifier duration = 3650 }
 			}
 		}
 	}
 	modifier = {
 		tolerance_of_heretics_capacity = 1
 	}
-	ai_will_do = {
-		factor = 2
-		modifier = {
-			factor = 0
-			is_at_war = no
-		}
-	}
+	ai_will_do = { factor = 1 }
 }

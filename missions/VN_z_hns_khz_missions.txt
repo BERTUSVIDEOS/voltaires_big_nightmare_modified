@@ -23,6 +23,7 @@ vn_hns_khz_missions_slot_1 = {
             owned_by = HUN
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             OR = {
                 HUN = { exists = no }
                 AND = {
@@ -69,6 +70,7 @@ vn_hns_khz_missions_slot_1 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             hiberia_region = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -93,6 +95,7 @@ vn_hns_khz_missions_slot_1 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             georgia_region = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -127,6 +130,7 @@ vn_hns_khz_missions_slot_1 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             armenia_region = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -152,6 +156,7 @@ vn_hns_khz_missions_slot_1 = {
             province_id = 6301
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             OR = {
                 6301 = { controlled_by = ROOT }
                 custom_trigger_tooltip = {
@@ -202,6 +207,7 @@ vn_hns_khz_missions_slot_2 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             alania_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -237,6 +243,7 @@ vn_hns_khz_missions_slot_2 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             circassia_region = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -287,6 +294,7 @@ vn_hns_khz_missions_slot_2 = {
             is_city = yes
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             3710 = { country_or_non_sovereign_subject_holds = ROOT }
             kuban_area = {
                 type = all
@@ -347,6 +355,7 @@ vn_hns_khz_missions_slot_2 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             khopyor_region = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -380,6 +389,7 @@ vn_hns_khz_missions_slot_2 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             cherson_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -420,6 +430,7 @@ vn_hns_khz_missions_slot_3 = {
         position = 1
         required_missions = {  }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             num_of_cities = 10
             prestige = 25
             is_at_war = no
@@ -522,6 +533,7 @@ vn_hns_khz_missions_slot_3 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             astrakhan_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -555,6 +567,7 @@ vn_hns_khz_missions_slot_3 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             lower_volga_region = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -628,6 +641,7 @@ vn_hns_khz_missions_slot_3 = {
             is_city = yes
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             lower_don_region = {
                 type = all
                 OR = {
@@ -694,6 +708,7 @@ vn_hns_khz_missions_slot_3 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             wild_fields_region = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -744,6 +759,7 @@ vn_hns_khz_missions_slot_3 = {
             }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             OR = {
                 is_emperor_of_china = yes
                 custom_trigger_tooltip = {
@@ -782,6 +798,7 @@ vn_hns_khz_missions_slot_3 = {
         position = 7
         required_missions = { vn_hns_khz_defeat_the_caliphate vn_hns_khz_defeat_the_romans vn_hns_khz_defeat_the_rus vn_hns_khz_defeat_the_mongols }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             is_great_power = yes
             total_development = 1000
             all_rival_country = {
@@ -856,6 +873,7 @@ vn_hns_khz_missions_slot_4 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             derbent_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -884,6 +902,7 @@ vn_hns_khz_missions_slot_4 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             azerbaijan_region = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -941,6 +960,7 @@ vn_hns_khz_missions_slot_4 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             kazakhstan_region = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -991,6 +1011,7 @@ vn_hns_khz_missions_slot_4 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             erzya_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -1017,6 +1038,7 @@ vn_hns_khz_missions_slot_4 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             NOT = { exists = GLH }
             khwarezmia_region = {
                 type = all
@@ -1054,6 +1076,7 @@ vn_hns_khz_missions_slot_5 = {
         position = 1
         required_missions = {  }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             NOT = { num_of_rebel_armies = 1 }
             NOT = { num_of_rebel_controlled_provinces = 1 }
             stability = 2
@@ -1109,6 +1132,7 @@ vn_hns_khz_missions_slot_5 = {
         position = 3
         required_missions = { vn_hns_khz_stable_horde }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             reform_level = 3
             all_core_province = {
                 owned_by = ROOT
@@ -1142,6 +1166,7 @@ vn_hns_khz_missions_slot_5 = {
             NOT = { is_strongest_trade_power = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             3785 = { is_strongest_trade_power = ROOT }
             6232 = { is_strongest_trade_power = ROOT }
             3577 = { is_strongest_trade_power = ROOT }

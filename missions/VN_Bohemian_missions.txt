@@ -14,6 +14,7 @@ vn_boh_missions_slot_1 = {
         position = 1
         required_missions = { }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             
 			prestige = 25
             if = {
@@ -54,6 +55,7 @@ vn_boh_missions_slot_1 = {
         position = 2
         required_missions = { vn_boh_kingdom_of_bohemia }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             if = {
                 limit = { hre_size = 1 }
                 is_emperor = yes
@@ -84,6 +86,7 @@ vn_boh_missions_slot_1 = {
         position = 3
         required_missions = { }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             OR = {
                 trading_bonus = {
                     trade_goods = glass
@@ -115,6 +118,7 @@ vn_boh_missions_slot_1 = {
         position = 4
         required_missions = {  }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             OR ={
                 any_rival_country = {
                     primary_culture = austrian
@@ -166,6 +170,7 @@ vn_boh_missions_slot_1 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
                 value = 20
                 region = austria_region
@@ -200,6 +205,7 @@ vn_boh_missions_slot_1 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
                 value = 5
                 area = styria_area
@@ -252,6 +258,7 @@ vn_boh_missions_slot_1 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
                 value = 5
                 area = sannmark_area
@@ -290,6 +297,7 @@ vn_boh_missions_slot_2 = {
         position = 1
         required_missions = {  }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             is_free_or_tributary_trigger = yes
             is_at_war = no
             army_size_percentage = 0.8
@@ -345,6 +353,7 @@ vn_boh_missions_slot_2 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             NOT = { exists = MRV }
             moravia_area = {
                 type = all
@@ -452,6 +461,7 @@ vn_boh_missions_slot_2 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             legnica_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -523,6 +533,7 @@ vn_boh_missions_slot_2 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             opava_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -650,6 +661,7 @@ vn_boh_missions_slot_2 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			posen_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -740,6 +752,7 @@ vn_boh_missions_slot_2 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             warsaw_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -767,6 +780,7 @@ vn_boh_missions_slot_2 = {
         position = 7
         required_missions = { vn_boh_golden_age }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             absolutism = 50
             if = {
                 limit = { has_estate = estate_nobles }
@@ -804,6 +818,7 @@ vn_boh_missions_slot_2 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
                 value = 5
                 area = carinthia_area
@@ -872,6 +887,7 @@ vn_boh_missions_slot_3 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             nyitra_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -1018,6 +1034,7 @@ vn_boh_missions_slot_3 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             pest_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -1095,6 +1112,7 @@ vn_boh_missions_slot_3 = {
         position = 6
 		required_missions = {  }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             has_institution = renaissance
             calc_true_if = {
                 amount = 2
@@ -1157,6 +1175,7 @@ vn_boh_missions_slot_3 = {
 			province_id = 781
 		}
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
             781 = {
                 owned_by = ROOT
                 has_education_building_trigger = yes
@@ -1178,6 +1197,7 @@ vn_boh_missions_slot_3 = {
         position = 8
         required_missions = { vn_boh_university_of_prague }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             has_institution = enlightenment
             full_idea_group = humanist_ideas
             stability = 3
@@ -1218,6 +1238,7 @@ vn_boh_missions_slot_4 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             lusatiasouth_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -1242,6 +1263,7 @@ vn_boh_missions_slot_4 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             lusatianorth_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -1300,6 +1322,7 @@ vn_boh_missions_slot_4 = {
             }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             owns_core_province = 2841
         }
         effect = {
@@ -1331,6 +1354,7 @@ vn_boh_missions_slot_4 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
                 value = 5
                 area = oberpfalz_area
@@ -1352,6 +1376,7 @@ vn_boh_missions_slot_4 = {
         position = 6
         required_missions = { }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             num_of_owned_provinces_with = {
                 value = 5
                 base_manpower = 10
@@ -1375,6 +1400,7 @@ vn_boh_missions_slot_4 = {
         position = 8
         required_missions = { vn_boh_castles_of_ottokar }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             num_of_generals = 3
             army_size = 50
             num_of_owned_provinces_with = {
@@ -1410,6 +1436,7 @@ vn_boh_missions_slot_5 = {
         position = 1
         required_missions = { }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             if = {
                 limit = {
                     OR = {
@@ -1449,6 +1476,7 @@ vn_boh_missions_slot_5 = {
         position = 2
         required_missions = { vn_boh_archbishoric_of_prague }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             custom_trigger_tooltip = {
                 tooltip = vn_boh_protestant_bohemia.tt
                 OR = {
@@ -1471,6 +1499,7 @@ vn_boh_missions_slot_5 = {
         position = 3
         required_missions = { vn_boh_protestant_bohemia }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             OR = {
                 current_age = age_of_reformation
                 current_age = age_of_absolutism
@@ -1502,6 +1531,7 @@ vn_boh_missions_slot_5 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
                 value = 5
                 area = meissen_area
@@ -1568,6 +1598,7 @@ vn_boh_missions_slot_5 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             berlin_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = root
@@ -1612,6 +1643,7 @@ vn_boh_missions_slot_5 = {
             }
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             share_of_starting_income = 5
             2414 = {
                 owned_by = ROOT
@@ -1678,6 +1710,7 @@ vn_boh_missions_slot_5 = {
             }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             has_institution = industrialization
             if = {
                 limit = { has_dlc = "Rule Britannia" }

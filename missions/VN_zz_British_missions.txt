@@ -20,6 +20,7 @@ vn_gbr_missions_slot_1_a = {
 			province_id = 2268
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             2268 = {
 				owned_by = ROOT
 				is_core = ROOT
@@ -62,6 +63,7 @@ vn_gbr_missions_slot_1_a = {
         required_missions = { vn_gbr_london }
         position = 17
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             num_of_owned_provinces_with = {
 				value = 15
 				OR = {
@@ -99,6 +101,7 @@ vn_gbr_missions_slot_1_b = {
         required_missions = { vn_gbr_a_modern_navy }
         position = 18
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             num_of_owned_provinces_with = {
 				value = 6
 				has_port = yes
@@ -163,6 +166,7 @@ vn_gbr_missions_slot_2_a = {
         required_missions = { vn_gbr_industrial_revolution }
         position = 16
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             if = {
 				limit = {
 					has_dlc = "Rule Britannia"
@@ -208,6 +212,7 @@ vn_gbr_missions_slot_2_a = {
         required_missions = { vn_gbr_improved_ironmaking }
         position = 17
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			navy_size = 150
 			navy_size_percentage = 0.75
 			num_of_admirals = 3
@@ -226,6 +231,7 @@ vn_gbr_missions_slot_2_a = {
         required_missions = { vn_gbr_a_modern_navy }
         position = 18
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			dip_tech = 75
 			custom_trigger_tooltip = {
 				tooltip = vn_gbr_naval_innovations.tt
@@ -264,6 +270,7 @@ vn_gbr_missions_slot_3_a = {
 		icon = mission_look_west
         required_missions = { }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             is_institution_enabled = industrialization
         }
         effect = {
@@ -275,6 +282,7 @@ vn_gbr_missions_slot_3_a = {
         required_missions = { vn_gbr_winds_of_change }
         position = 15
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             has_institution = industrialization
         }
         effect = {
@@ -289,6 +297,7 @@ vn_gbr_missions_slot_3_a = {
         required_missions = { vn_gbr_industrial_revolution }
         position = 16
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             if = {
 				limit = {
 					has_dlc = "Rule Britannia"
@@ -339,6 +348,7 @@ vn_gbr_missions_slot_3_a = {
 			}
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             ayrshire_area = {
 				type = all
 				owned_by = ROOT
@@ -444,6 +454,7 @@ vn_gbr_missions_slot_3_a = {
 			province_id = 282
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             282 = {
 				industrialization = 100
 				owned_by = ROOT
@@ -493,6 +504,7 @@ vn_gbr_missions_slot_4_a = {
 			}
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			west_midlands_area = {
 				type = all
 				owned_by = ROOT
@@ -548,6 +560,7 @@ vn_gbr_missions_slot_4_a = {
 			province_id = 4693
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             4693 = {
 				owned_by = ROOT
 				is_core = ROOT
@@ -582,6 +595,7 @@ vn_gbr_missions_slot_4_a = {
 			province_id = 4693
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             4693 = {
 				owned_by = ROOT
 				is_core = ROOT
@@ -637,6 +651,7 @@ vn_gbr_missions_slot_5_a = {
 			}
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             cumberland_area = {
 				type = all
 				owned_by = ROOT
@@ -721,6 +736,7 @@ vn_gbr_missions_slot_5_a = {
 			province_id = 2247
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             2247 = {
 				owned_by = ROOT
 				is_core = ROOT
@@ -778,6 +794,7 @@ vn_gbr_missions_slot_5_b = {
 			}
 		}
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			walesnorth_area = {
 				type = all
 				owned_by = ROOT

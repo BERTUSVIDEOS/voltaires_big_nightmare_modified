@@ -14,6 +14,7 @@ country_event = {
 	}
 	
 	trigger = {
+		if = { limit = { ai = yes } ai = no }
 		stability = 0 #otherwise it ain't good governance
 	}
 
@@ -105,6 +106,7 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
+		if = { limit = { ai = yes } ai = no }
 		government = monarchy
 		NOT = { adm = 2 }
 		NOT = { luck = yes }
@@ -169,6 +171,7 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
+		if = { limit = { ai = yes } ai = no }
 		government = monarchy
 		prestige = 2
 		has_regency = no
@@ -355,6 +358,7 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
+		if = { limit = { ai = yes } ai = no }
 		num_of_royal_marriages = 2
 		has_regency = no
 	}
@@ -559,6 +563,7 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
+		if = { limit = { ai = yes } ai = no }
 		NOT = { has_country_modifier = obscurantism }
 		NOT = { has_institution = enlightenment }
 	}
@@ -668,6 +673,7 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
+		if = { limit = { ai = yes } ai = no }
 		is_year = 1450
 		NOT = { is_year = 1550 }
 		NOT = { has_country_modifier = exceptional_year }
@@ -770,6 +776,7 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
+		if = { limit = { ai = yes } ai = no }
 		is_year = 1550
 		NOT = { is_year = 1650 }
 		NOT = { has_country_modifier = exceptional_year }
@@ -872,6 +879,7 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
+		if = { limit = { ai = yes } ai = no }
 		is_year = 1650
 		NOT = { has_country_modifier = exceptional_year }
 		OR = {
@@ -986,6 +994,7 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
+		if = { limit = { ai = yes } ai = no }
 		colony = 1
 		num_of_ports = 1
 		NOT =  { has_country_modifier = monetary_benefits }
@@ -1046,6 +1055,7 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
+		if = { limit = { ai = yes } ai = no }
 		advisor = trader
 		NOT = {
 			has_country_modifier = rush_of_merchants
@@ -1142,6 +1152,7 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
+		if = { limit = { ai = yes } ai = no }
 		dip = 4
 	}
 
@@ -1205,6 +1216,7 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
+		if = { limit = { ai = yes } ai = no }
 		diplomat = 2
 		OR = {
 			is_at_war = no
@@ -1297,6 +1309,7 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
+		if = { limit = { ai = yes } ai = no }
 		army_reformer = 2
 	}
 
@@ -1387,6 +1400,7 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
+		if = { limit = { ai = yes } ai = no }
 		naval_reformer = 2
 		num_of_ports = 1
 		primitives = no
@@ -1474,6 +1488,7 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
+		if = { limit = { ai = yes } ai = no }
 		adm = 5
 	}
 	
@@ -1637,6 +1652,7 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
+		if = { limit = { ai = yes } ai = no }
 		NOT = { adm = 5 }
 	}
 
@@ -1725,6 +1741,7 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
+		if = { limit = { ai = yes } ai = no }
 		has_estate = estate_church
 		OR = {
 			religion = catholic
@@ -1876,6 +1893,7 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
+		if = { limit = { ai = yes } ai = no }
 		if = {
 			limit = { has_estate = estate_burghers }
 			NOT = {
@@ -2012,6 +2030,7 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
+		if = { limit = { ai = yes } ai = no }
 		any_owned_province = {
 			is_core = ROOT
 			is_state = yes
@@ -2100,6 +2119,7 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
+		if = { limit = { ai = yes } ai = no }
 		NOT = { mercantilism = 30 }
 		if = {
 			limit = { has_estate = estate_burghers }
@@ -2159,6 +2179,7 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
+		if = { limit = { ai = yes } ai = no }
 		or = {
 			government = monarchy
 			government = republic
@@ -2257,7 +2278,8 @@ country_event = {
 
 	is_triggered_only = yes
 	
-	trigger = {}
+	trigger = {
+		if = { limit = { ai = yes } ai = no }}
 
 	mean_time_to_happen = {
 		days = 1
@@ -2334,6 +2356,7 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
+		if = { limit = { ai = yes } ai = no }
 		OR = {
 			has_regency = no
 			has_consort_regency = yes
@@ -2409,6 +2432,7 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
+		if = { limit = { ai = yes } ai = no }
 		has_estate = estate_nobles
 		OR = {
 			NOT = {
@@ -2522,6 +2546,7 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
+		if = { limit = { ai = yes } ai = no }
 		is_year = 1700
 		OR = {
 			religion_group = christian
@@ -2576,6 +2601,7 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
+		if = { limit = { ai = yes } ai = no }
 		NOT = { has_country_flag = no_more_comet_sighted_event }
 	}
 
@@ -2745,6 +2771,7 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
+		if = { limit = { ai = yes } ai = no }
 		NOT = { is_year = 1700 }
 		OR = {
 			religion = catholic
@@ -2799,6 +2826,7 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
+		if = { limit = { ai = yes } ai = no }
 		capital_scope = { continent = europe }
 		NOT = { dip = 4 }
 		has_estate = estate_nobles
@@ -2882,6 +2910,7 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
+		if = { limit = { ai = yes } ai = no }
 		government = monarchy
 		NOT = { dip = 3 }
 		is_free_or_tributary_trigger = yes
@@ -2970,6 +2999,7 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
+		if = { limit = { ai = yes } ai = no }
 		OR = {
 			religion = catholic
 			religion = catholique
@@ -3069,6 +3099,7 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
+		if = { limit = { ai = yes } ai = no }
 		OR = {
 			num_of_loans = 25
 			is_bankrupt = yes
@@ -3131,6 +3162,7 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
+		if = { limit = { ai = yes } ai = no }
 		NOT = {mercantilism = 50 }
 		NOT = { has_country_modifier = trade_income_increase }
 		OR = {
@@ -3180,6 +3212,7 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
+		if = { limit = { ai = yes } ai = no }
 		OR = {
 			government = monarchy
 			has_reform = noble_elite_reform
@@ -3255,6 +3288,7 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
+		if = { limit = { ai = yes } ai = no }
 		is_lesser_in_union = no
 		NOT = { has_country_modifier = tax_income_boost }
 		NOT = { government = tribal }
@@ -3464,6 +3498,7 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
+		if = { limit = { ai = yes } ai = no }
 		government = monarchy
 		num_of_cities = 2
 		NOT = { has_country_modifier = old_rights_granted_to_nobility }
@@ -3578,6 +3613,7 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
+		if = { limit = { ai = yes } ai = no }
 		OR = {
 			government = monarchy
 			government = republic
@@ -3678,6 +3714,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
+		if = { limit = { ai = yes } ai = no }
 		num_of_cities = 2
 		any_owned_province = {
 			is_capital = no
@@ -3756,6 +3793,7 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
+		if = { limit = { ai = yes } ai = no }
 		has_estate = estate_burghers
 		NOT = {
 			num_of_estate_privileges = {
@@ -3835,6 +3873,7 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
+		if = { limit = { ai = yes } ai = no }
 		capital_scope = { continent = europe }
 		NOT = { is_year = 1650 }
 		any_known_country = {
@@ -3921,6 +3960,7 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
+		if = { limit = { ai = yes } ai = no }
 		capital_scope = { continent = europe }
 		mil_tech = 5 #firearms generally adopted
 		any_neighbor_country = {
@@ -4050,6 +4090,7 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
+		if = { limit = { ai = yes } ai = no }
 		government = monarchy
 		is_lesser_in_union = no
 	}
@@ -4130,6 +4171,7 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
+		if = { limit = { ai = yes } ai = no }
 		advisor = philosopher
 		OR = {
 			religion = catholic
@@ -4253,6 +4295,7 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
+		if = { limit = { ai = yes } ai = no }
 		num_of_merchants = 2
 		overextension_percentage = 0.25
 		any_country = {
@@ -4339,6 +4382,7 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
+		if = { limit = { ai = yes } ai = no }
 		religion_group = christian
 		has_estate = estate_nobles
 		any_owned_province = {
@@ -4415,6 +4459,7 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
+		if = { limit = { ai = yes } ai = no }
 		government = monarchy
 		has_regency = no
 	}
@@ -4467,6 +4512,7 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
+		if = { limit = { ai = yes } ai = no }
 		NOT = { adm = 3 }
 		any_neighbor_country = {
 			is_neighbor_of = ROOT
@@ -4519,6 +4565,7 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
+		if = { limit = { ai = yes } ai = no }
 		num_of_merchants = 3
 	}
 
@@ -4573,6 +4620,7 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
+		if = { limit = { ai = yes } ai = no }
 		has_parliament = yes
 		advisor = statesman
 	}
@@ -4605,6 +4653,7 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
+		if = { limit = { ai = yes } ai = no }
 		government = theocracy
 		has_estate = estate_church
 		employed_advisor = {
@@ -4710,6 +4759,7 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
+		if = { limit = { ai = yes } ai = no }
 		statesman = 2
 	}
 
@@ -4743,6 +4793,7 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
+		if = { limit = { ai = yes } ai = no }
 		is_elector = yes
 		is_emperor = no
 	}
@@ -4784,6 +4835,7 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
+		if = { limit = { ai = yes } ai = no }
 		government = monarchy
 		is_lesser_in_union = no
 		is_revolutionary = no
@@ -4840,6 +4892,7 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
+		if = { limit = { ai = yes } ai = no }
 		NOT = { stability = -1 }
 		government = theocracy
 		has_estate = estate_church
@@ -4909,6 +4962,7 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
+		if = { limit = { ai = yes } ai = no }
 		num_of_merchants = 3
 		is_year = 1560
 	}
@@ -4956,6 +5010,7 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
+		if = { limit = { ai = yes } ai = no }
 		navy_tradition = 10
 		NOT = { navy_tradition = 35 }
 		army_tradition = 40
@@ -4995,6 +5050,7 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
+		if = { limit = { ai = yes } ai = no }
 		num_of_ports = 1
 		army_tradition = 10
 		NOT = { army_tradition = 35 }
@@ -5093,6 +5149,7 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
+		if = { limit = { ai = yes } ai = no }
 		government = monarchy
 		has_institution = printing_press
 		has_parliament = no
@@ -5146,6 +5203,7 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
+		if = { limit = { ai = yes } ai = no }
 		OR = {
 			religion = catholic
 			religion = catholique
@@ -5191,6 +5249,7 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
+		if = { limit = { ai = yes } ai = no }
 		always = no
 		NOT = { exists = GEN }
 		owns = 101
@@ -5229,6 +5288,7 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
+		if = { limit = { ai = yes } ai = no }
 		always = no
 		NOT = { exists = VEN }
 		is_year = 1700
@@ -5270,6 +5330,7 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
+		if = { limit = { ai = yes } ai = no }
 		NOT = { overextension_percentage = 0.01 }
 		capital_scope = { continent = europe }
 		is_at_war = no
@@ -5319,6 +5380,7 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
+		if = { limit = { ai = yes } ai = no }
 		religion_group = christian
 		is_at_war = no
 	}
@@ -5359,6 +5421,7 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
+		if = { limit = { ai = yes } ai = no }
 		is_at_war = no
 		has_any_disaster = no
 		adm = 3
@@ -5441,6 +5504,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
+		if = { limit = { ai = yes } ai = no }
 		stability = 0
 		NOT = { government = tribal }
 		NOT = { government = native }
@@ -5561,6 +5625,7 @@ country_event = {
 	goto = heresy_province
 	
 	trigger = {
+		if = { limit = { ai = yes } ai = no }
 		stability = 0
 		OR = {
 			religion = catholic
@@ -5699,6 +5764,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
+		if = { limit = { ai = yes } ai = no }
 		stability = 0
 		inflation = 5
 	}
@@ -5755,6 +5821,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
+		if = { limit = { ai = yes } ai = no }
 		stability = 1
 		is_at_war = no
 		is_bankrupt = no
@@ -5806,6 +5873,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
+		if = { limit = { ai = yes } ai = no }
 		NOT = { has_country_modifier = defensive_modifier }
 		NOT = { has_country_modifier = offensive_modifier }
 	}
@@ -5877,6 +5945,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
+		if = { limit = { ai = yes } ai = no }
 		stability = 0
 		government = monarchy
 		has_regency = no
@@ -5912,6 +5981,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
+		if = { limit = { ai = yes } ai = no }
 		stability = 1
 		is_at_war = no
 		is_bankrupt = no
@@ -5970,6 +6040,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
+		if = { limit = { ai = yes } ai = no }
 		stability = 0
 		inflation = 5
 		NOT = { advisor = master_of_mint }
@@ -6019,6 +6090,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
+		if = { limit = { ai = yes } ai = no }
 		war_exhaustion = 5
 		is_at_war = no
 	}
@@ -6063,6 +6135,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
+		if = { limit = { ai = yes } ai = no }
 		stability = 0
 		army_tradition = 50
 	}
@@ -6126,6 +6199,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
+		if = { limit = { ai = yes } ai = no }
 		stability = 0
 		navy_tradition = 50
 	}
@@ -6186,6 +6260,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
+		if = { limit = { ai = yes } ai = no }
 		stability = 0
 		has_regency = no
 		government = monarchy
@@ -6271,6 +6346,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
+		if = { limit = { ai = yes } ai = no }
 		num_of_cities = 30
 		any_owned_province = {
 			has_owner_culture = no
@@ -6371,6 +6447,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
+		if = { limit = { ai = yes } ai = no }
 		OR = {
 			religion = catholic
 			religion = catholique
@@ -6454,6 +6531,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
+		if = { limit = { ai = yes } ai = no }
 		num_of_cities = 5
 		NOT = { has_country_modifier = serfdom_modifier }
 		any_owned_province = {
@@ -6546,6 +6624,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
+		if = { limit = { ai = yes } ai = no }
 		NOT = { dip = 5 }
 		has_regency = no
 		is_lesser_in_union = no
@@ -6611,6 +6690,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
+		if = { limit = { ai = yes } ai = no }
 		any_enemy_country = {
 			OR = {
 				is_in_war = {
@@ -6667,6 +6747,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
+		if = { limit = { ai = yes } ai = no }
 		dip = 3
 		is_free_or_tributary_trigger = yes
 		any_rival_country = {
@@ -6736,6 +6817,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
+		if = { limit = { ai = yes } ai = no }
 		is_at_war = no
 	}
 
@@ -6795,6 +6877,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
+		if = { limit = { ai = yes } ai = no }
 		stability = 0
 	}
 
@@ -6843,6 +6926,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
+		if = { limit = { ai = yes } ai = no }
 		stability = 0
 		num_of_ports = 1
 		primitives = no
@@ -6893,6 +6977,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
+		if = { limit = { ai = yes } ai = no }
 		stability = 0
 	}
 
@@ -6941,6 +7026,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
+		if = { limit = { ai = yes } ai = no }
 		stability = 0
 	}
 
@@ -6989,6 +7075,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
+		if = { limit = { ai = yes } ai = no }
 		stability = 0
 	}
 
@@ -7057,6 +7144,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
+		if = { limit = { ai = yes } ai = no }
 		stability = 0
 		is_at_war = no
 		NOT = { war_exhaustion = 1 }
@@ -7175,6 +7263,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
+		if = { limit = { ai = yes } ai = no }
 		always = yes
 	}
 
@@ -7349,6 +7438,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
+		if = { limit = { ai = yes } ai = no }
 		num_of_cities = 2
 		any_owned_province = {
 			is_overseas = no
@@ -7447,6 +7537,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
+		if = { limit = { ai = yes } ai = no }
 		stability = 0
 		has_regency = no
 		government = monarchy
@@ -7486,6 +7577,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
+		if = { limit = { ai = yes } ai = no }
 		OR = {
 			religion = catholic
 			religion = catholique
@@ -7515,6 +7607,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
+		if = { limit = { ai = yes } ai = no }
 		stability = 0
 		NOT = { has_country_modifier = smugglers_dominating }
 		NOT = { has_country_modifier = cooperation_with_merchant_class }
@@ -7584,6 +7677,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
+		if = { limit = { ai = yes } ai = no }
 		has_institution = printing_press
 	}
 
@@ -7625,6 +7719,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
+		if = { limit = { ai = yes } ai = no }
 		mil = 4
 		is_monarch_leader = yes
 		NOT = { manpower_percentage = 0.6 }
@@ -7690,6 +7785,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
+		if = { limit = { ai = yes } ai = no }
 		capital_scope = { continent = europe }
 		government = monarchy
 		has_regency = no
@@ -7754,6 +7850,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
+		if = { limit = { ai = yes } ai = no }
 		government = monarchy
 		NOT = { has_reform = celestial_empire }
 		legitimacy_or_horde_unity = 20
@@ -7809,6 +7906,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
+		if = { limit = { ai = yes } ai = no }
 		government = republic
 	}
 	
@@ -7868,6 +7966,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
+		if = { limit = { ai = yes } ai = no }
 		adm = 5
 		inflation = 3
 	}
@@ -7898,6 +7997,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
+		if = { limit = { ai = yes } ai = no }
 		stability = 1
 		prestige = 50
 	}
@@ -7952,6 +8052,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
+		if = { limit = { ai = yes } ai = no }
 		is_at_war = yes
 		NOT = {
 			has_country_modifier = warriors_do_not_read_books
@@ -7998,6 +8099,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
+		if = { limit = { ai = yes } ai = no }
 		is_at_war = no
 		dip = 4
 		overextension_percentage = 0.25
@@ -8039,6 +8141,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
+		if = { limit = { ai = yes } ai = no }
 		OR = {
 			NOT = { dip = 4 }
 			ruler_has_personality = babbling_buffoon_personality
@@ -8072,6 +8175,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
+		if = { limit = { ai = yes } ai = no }
 		is_at_war = yes
 		war_exhaustion = 2
 	}
@@ -8120,6 +8224,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
+		if = { limit = { ai = yes } ai = no }
 		is_at_war = yes
 		war_exhaustion = 5
 	}
@@ -8170,6 +8275,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
+		if = { limit = { ai = yes } ai = no }
 		NOT = { has_country_modifier = shady_people }
 	}
 	
@@ -8212,6 +8318,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
+		if = { limit = { ai = yes } ai = no }
 		has_idea = quest_for_the_new_world
 		capital_scope = { continent = europe }
 		any_owned_province = {
@@ -8264,6 +8371,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
+		if = { limit = { ai = yes } ai = no }
 		num_of_merchants = 2
 		capital_scope = { continent = europe }
 		any_active_trade_node = {
@@ -8427,6 +8535,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
+		if = { limit = { ai = yes } ai = no }
 		any_neighbor_country = {
 			religion = ROOT
 			NOT = { war_with = ROOT }
@@ -8490,6 +8599,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
+		if = { limit = { ai = yes } ai = no }
 		OR = {
 			religion = catholic
 			religion = catholique
@@ -8531,6 +8641,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
+		if = { limit = { ai = yes } ai = no }
 		mil_tech = 6
 		NOT = { mil_tech = 15 }
 	}
@@ -8580,6 +8691,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
+		if = { limit = { ai = yes } ai = no }
 		num_of_ports = 1
 		primitives = no
 	}
@@ -8629,6 +8741,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
+		if = { limit = { ai = yes } ai = no }
 	}
 	
 	mean_time_to_happen = {
@@ -8676,6 +8789,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
+		if = { limit = { ai = yes } ai = no }
 		NOT = { adm = 950 }
 	}
 	
@@ -8723,7 +8837,8 @@ country_event = {
 
 	is_triggered_only = yes
 	
-	trigger = {	
+	trigger = {
+		if = { limit = { ai = yes } ai = no }	
 		NOT = { dip = 950 }
 	}
 	
@@ -8772,6 +8887,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
+		if = { limit = { ai = yes } ai = no }
 		has_estate = estate_nobles
 		crown_land_share = 5
 	}
@@ -8869,6 +8985,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
+		if = { limit = { ai = yes } ai = no }
 		always = yes
 	}
 	
@@ -8925,6 +9042,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
+		if = { limit = { ai = yes } ai = no }
 		is_month = 7
 	}
 	
@@ -8949,6 +9067,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
+		if = { limit = { ai = yes } ai = no }
 		OR = {
 			AND = {
 				religion = catholic
@@ -9069,6 +9188,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
+		if = { limit = { ai = yes } ai = no }
 		OR = {
 			religion = catholic
 			religion = catholique
@@ -9138,6 +9258,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
+		if = { limit = { ai = yes } ai = no }
 		OR = {
 			religion = catholic
 			religion = catholique
@@ -9212,6 +9333,7 @@ country_event = {
 	goto = capital
 	
 	trigger = {
+		if = { limit = { ai = yes } ai = no }
 		is_year = 1480
 		capital_scope = {
 			continent = europe
@@ -9278,6 +9400,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
+		if = { limit = { ai = yes } ai = no }
 		has_advisor = yes
 		has_regency = no
 	}
@@ -9360,6 +9483,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
+		if = { limit = { ai = yes } ai = no }
 		has_country_modifier = hire_privateers
 		num_of_ports = 3
 		any_rival_country = {
@@ -9455,6 +9579,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
+		if = { limit = { ai = yes } ai = no }
 		num_of_ports = 5
 		num_of_heavy_ship = 1
 		colony = 1
@@ -9513,6 +9638,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
+		if = { limit = { ai = yes } ai = no }
 		has_idea = quest_for_the_new_world
 		num_of_ports = 1
 		num_of_merchants = 2
@@ -9568,6 +9694,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
+		if = { limit = { ai = yes } ai = no }
 		religion_group = christian
 		capital_scope = {
 			continent = europe
@@ -9758,6 +9885,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
+		if = { limit = { ai = yes } ai = no }
 		has_estate = estate_nobles
 		capital_scope = { continent = europe }
 		NOT = { adm = 3 }
@@ -9929,6 +10057,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
+		if = { limit = { ai = yes } ai = no }
 		capital_scope = {
 			continent = europe
 		}
@@ -9970,6 +10099,7 @@ country_event = {
 	}
 	
 	trigger = {
+		if = { limit = { ai = yes } ai = no }
 		war_exhaustion = 10
 		stability = -2
 	}
@@ -10015,6 +10145,7 @@ country_event = {
 	}
 	
 	trigger = {
+		if = { limit = { ai = yes } ai = no }
 		num_of_ports = 1
 		primitives = no
 		NOT = { has_idea_group = maritime_ideas }
@@ -10051,6 +10182,7 @@ country_event = {
 	}
 
 	trigger = {
+		if = { limit = { ai = yes } ai = no }
 		num_of_ports = 1
 		primitives = no
 		NOT = { has_idea_group = maritime_ideas }
@@ -10085,6 +10217,7 @@ country_event = {
 	}
 	
 	trigger = {
+		if = { limit = { ai = yes } ai = no }
 		NOT = { has_idea_group = maritime_ideas }
 		OR = { 
 			has_idea_group = offensive_ideas
@@ -10272,6 +10405,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
+		if = { limit = { ai = yes } ai = no }
 		has_parliament = yes
 		is_at_war = yes
 	}
@@ -10326,6 +10460,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
+		if = { limit = { ai = yes } ai = no }
 		has_institution = enlightenment
 		has_advisor = yes
 		government = monarchy
@@ -10394,6 +10529,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
+		if = { limit = { ai = yes } ai = no }
 		government = monarchy
 		is_lesser_in_union = no
 		NOT = { legitimacy_or_horde_unity = 40 }
@@ -10465,6 +10601,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
+		if = { limit = { ai = yes } ai = no }
 		NOT = {
 			is_year = 1500
 		}
@@ -10517,6 +10654,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
+		if = { limit = { ai = yes } ai = no }
 		NOT = { has_dlc = "Golden Century" }
 		naval_forcelimit = 90
 		num_of_ports = 1
@@ -10596,6 +10734,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
+		if = { limit = { ai = yes } ai = no }
 		OR = {
 			religion = catholic
 			religion = catholique
@@ -10743,6 +10882,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
+		if = { limit = { ai = yes } ai = no }
 		has_regency = no
 		is_at_war = yes
 		any_war_enemy_country = {
@@ -10794,6 +10934,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
+		if = { limit = { ai = yes } ai = no }
 		naval_forcelimit = 50
 		num_of_ports = 1
 		OR = {
@@ -10842,6 +10983,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
+		if = { limit = { ai = yes } ai = no }
 		is_at_war = yes
 		NOT = { army_tradition = 20 } 
 		any_neighbor_country = {
@@ -10971,6 +11113,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
+		if = { limit = { ai = yes } ai = no }
 		owns = 5012 # Mecca
 		NOT = {
 			has_country_modifier = mecca_timer
@@ -11057,6 +11200,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
+		if = { limit = { ai = yes } ai = no }
 		capital_scope = { continent = europe }
 		religion_group = christian
 		has_idea_group = innovativeness_ideas
@@ -11119,6 +11263,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
+		if = { limit = { ai = yes } ai = no }
 		mil_tech = 41
 		NOT = {
 			mil_tech = 47
@@ -11161,6 +11306,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
+		if = { limit = { ai = yes } ai = no }
 		is_at_war = yes
 		blockade = 75
 		NOT = {
@@ -11206,6 +11352,7 @@ province_event = {
 	goto = root
 	
 	trigger = {
+		if = { limit = { owner = { ai = yes } } owner = { ai = no } }
 		owner = {
 			NOT = { has_country_flag = bible_translated }
 			OR = {
@@ -11390,6 +11537,7 @@ province_event = {
 	goto = root
 	
 	trigger = {
+		if = { limit = { owner = { ai = yes } } owner = { ai = no } }
 		has_port = yes
 		is_capital = no
 		OR = {
@@ -11475,6 +11623,7 @@ province_event = {
 	goto = root
 	
 	trigger = {
+		if = { limit = { owner = { ai = yes } } owner = { ai = no } }
 		development = 8
 		OR = {
 			NOT = { has_province_flag = province_had_influenza }
@@ -11574,6 +11723,7 @@ country_event = {
 	picture = RELIGIOUS_TURMOIL_eventPicture
 	
 	trigger = {
+		if = { limit = { ai = yes } ai = no }
 		is_year = 1500
 		NOT = { is_year = 1600 }
 		NOT = { has_country_flag = iconoclastic_fury }
@@ -11793,6 +11943,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
+		if = { limit = { ai = yes } ai = no }
 		gold_income_percentage = 0.1
 		inflation = 1
 	}
@@ -11816,6 +11967,7 @@ country_event = {
 	picture = COUNTRY_COLLAPSE_eventPicture
 	is_triggered_only = yes
 	trigger = {
+		if = { limit = { ai = yes } ai = no }
 		NOT = { has_country_flag = had_capital_fire }
 		capital_scope = {
 			development = 25
@@ -11865,6 +12017,7 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
+		if = { limit = { ai = yes } ai = no }
 		grain = 1
 	}
 
@@ -11889,6 +12042,7 @@ country_event = {
 	
 
 	trigger = {
+		if = { limit = { ai = yes } ai = no }
 		wine = 1
 		NOT = { has_country_modifier = excellent_vintage }
 	}
@@ -11917,6 +12071,7 @@ country_event = {
 	picture = TRADEGOODS_eventPicture
 
 	trigger = {
+		if = { limit = { ai = yes } ai = no }
 		wine  = 1
 	}
 
@@ -11942,6 +12097,7 @@ country_event = {
 	picture = TRADEGOODS_eventPicture
 
 	trigger = {
+		if = { limit = { ai = yes } ai = no }
 		wool = 1
 	}
 
@@ -11965,6 +12121,7 @@ country_event = {
 	picture = TRADEGOODS_eventPicture
 
 	trigger = {
+		if = { limit = { ai = yes } ai = no }
 		cloth = 1 
 		NOT = { has_country_modifier = poor_uniforms }
 	}
@@ -11993,6 +12150,7 @@ country_event = {
 	picture = TRADEGOODS_eventPicture
 
 	trigger = {
+		if = { limit = { ai = yes } ai = no }
 		fish =  1
 		num_of_ports = 1
 		primitives = no
@@ -12019,6 +12177,7 @@ country_event = {
 	picture = TRADEGOODS_eventPicture
 
 	trigger = {
+		if = { limit = { ai = yes } ai = no }
 		fur =  1
 		OR = {
 			capital_scope = {
@@ -12056,6 +12215,7 @@ country_event = {
 	picture = TRADE_GOODS_FURS_FISH_AND_SALT_eventPicture
 
 	trigger = {
+		if = { limit = { ai = yes } ai = no }
 		salt = 1
 		NOT = { has_country_modifier = salt_crisis }
 	}
@@ -12084,6 +12244,7 @@ country_event = {
 	picture = TRADEGOODS_eventPicture
 
 	trigger = {
+		if = { limit = { ai = yes } ai = no }
 		naval_supplies = 1
 		num_of_ports = 1
 		primitives = no
@@ -12113,6 +12274,7 @@ country_event = {
 	picture = TRADE_GOODS_METALS_AND_MINING_EQUIPENT_eventPicture
 
 	trigger = {
+		if = { limit = { ai = yes } ai = no }
 		copper = 1
 		mil_tech = 7
 		NOT = { has_country_modifier = poor_copper }
@@ -12141,6 +12303,7 @@ country_event = {
 	picture = TRADE_GOODS_METALS_AND_MINING_EQUIPENT_eventPicture
 
 	trigger = {
+		if = { limit = { ai = yes } ai = no }
 		gold = 1
 		NOT = { religion_group = pagan }
 	}
@@ -12166,6 +12329,7 @@ country_event = {
 	picture = TRADE_GOODS_METALS_AND_MINING_EQUIPENT_eventPicture
 
 	trigger = {
+		if = { limit = { ai = yes } ai = no }
 		iron = 1
 		NOT = { has_country_modifier = poor_iron }
 	}
@@ -12195,6 +12359,7 @@ country_event = {
 	picture = TRADEGOODS_eventPicture
 
 	trigger = {
+		if = { limit = { ai = yes } ai = no }
 		ivory = 1
 	}
 
@@ -12219,6 +12384,7 @@ country_event = {
 	goto = tea_province
 
 	trigger = {
+		if = { limit = { ai = yes } ai = no }
 		any_owned_province = {
 			trade_goods = tea 
 			is_overseas = yes
@@ -12262,6 +12428,7 @@ country_event = {
 	goto = chinaware_province
 
 	trigger = {
+		if = { limit = { ai = yes } ai = no }
 		chinaware = 1
 	}
 
@@ -12303,6 +12470,7 @@ country_event = {
 	goto = spice_province
 
 	trigger = {
+		if = { limit = { ai = yes } ai = no }
 		spices = 1
 		any_owned_province = {
 			trade_goods = spices
@@ -12350,6 +12518,7 @@ country_event = {
 	goto = benign_neglect_province
 	
 	trigger = {
+		if = { limit = { ai = yes } ai = no }
 		num_of_cities = 20
 	}
 	
@@ -12414,6 +12583,7 @@ country_event = {
 	goto = jackals_and_vultures_province
 	
 	trigger = {
+		if = { limit = { ai = yes } ai = no }
 		num_of_rebel_armies = 1
 		NOT = { religious_unity = 1.0 }
 		any_owned_province = {
@@ -12460,6 +12630,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
+		if = { limit = { ai = yes } ai = no }
 		num_of_cities = 2
 		any_owned_province = {
 			is_capital = no
@@ -12516,6 +12687,7 @@ country_event = {
 	goto = plague_province
 
 	trigger = {
+		if = { limit = { ai = yes } ai = no }
 		grain = 1
 		num_of_cities = 2
 		any_owned_province = {
@@ -12576,6 +12748,7 @@ country_event = {
 	goto = province_in_question
 
 	trigger = {
+		if = { limit = { ai = yes } ai = no }
 		grain = 1
 	}
 	
@@ -12629,6 +12802,7 @@ country_event = {
 	goto = province_in_question
 
 	trigger = {
+		if = { limit = { ai = yes } ai = no }
 		government = monarchy
 		any_owned_province = {
 			is_city = yes
@@ -12683,6 +12857,7 @@ country_event = {
 	picture = FEAST_eventPicture
 
 	trigger = {
+		if = { limit = { ai = yes } ai = no }
 		is_month = 8
 	}
 

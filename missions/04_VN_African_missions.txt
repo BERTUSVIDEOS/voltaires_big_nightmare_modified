@@ -14,6 +14,7 @@ vn_gen_africa_1 = {
 		icon = mission_african_soldier
 		required_missions = { }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			OR = {
 				AND = {
 					trade_goods_produced_amount = { 	#bertus mod
@@ -56,6 +57,7 @@ vn_gen_africa_1 = {
 		icon = mission_have_manufactories
 		required_missions = { }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			is_tribal = no
 			NOT = { has_reform = iqta }
 			is_institution_enabled = renaissance	 #bertus mod
@@ -75,6 +77,7 @@ vn_gen_africa_1 = {
 		icon = mission_war_chest
 		required_missions = { }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			OR = {
 				trade_goods_produced_amount = { 	#bertus mod
 					trade_goods = gold

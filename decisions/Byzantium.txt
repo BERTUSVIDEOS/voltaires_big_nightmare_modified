@@ -31,6 +31,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			owns = 2233 # Constantinople
 			owns = 573 # Edirne
 			owns = 1060 # Izmit

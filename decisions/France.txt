@@ -24,6 +24,7 @@ country_decisions = {
 			government = monarchy
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			full_idea_group = economic_ideas
 			adm_tech = 50
 		}
@@ -54,6 +55,7 @@ country_decisions = {
 			government = monarchy
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			current_age = age_of_absolutism
 			adm = 5
 			monthly_income = 100
@@ -92,6 +94,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			OR = {
 				AND = {
 					religion = catholic
@@ -143,6 +146,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			OR = {
 				NOT = {
 					OR = {
@@ -179,6 +183,7 @@ country_decisions = {
 			started_in = 1430.5.23
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			owns_or_non_sovereign_subject_of = 548 # Paris
 			owns_or_non_sovereign_subject_of = 1172 # Rouen
 			owns_or_non_sovereign_subject_of = 2482 # Bar

@@ -11,6 +11,7 @@ vn_bogomilst_missions = {
 		icon = show_piety
 		required_missions = { }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			calc_true_if = {
 				desc = vn_interface_of_two_faiths.tt
 				all_country = {
@@ -39,6 +40,7 @@ vn_bogomilst_missions = {
 		icon = nagyszombat_university
 		required_missions = { vn_interface_of_two_faiths }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			if = {
 				limit = { has_estate = estate_church }
 				estate_loyalty = {
@@ -66,6 +68,7 @@ vn_bogomilst_missions = {
 		icon = law_of_the_pious
 		required_missions = { vn_loyal_bosnian_clerics }
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			num_accepted_cultures = 4
 			if = {
 				limit = { has_dlc = "Mandate of Heaven" }

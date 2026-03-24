@@ -5,9 +5,7 @@ biblical_literalism_aspect = {
 	modifier = {
 		tolerance_own = 1
 	}
-	ai_will_do = {
-		factor = 10
-	}
+	ai_will_do = { factor = 1 }
 }
 
 banned_oaths_aspect = {
@@ -15,17 +13,7 @@ banned_oaths_aspect = {
 	modifier = {
 		inflation_reduction = 0.1
 	}
-	ai_will_do = {
-		factor = 10
-		modifier = {
-			factor = 2
-			inflation = 5
-		}
-		modifier = {
-			factor = 2
-			inflation = 20
-		}
-	}
+	ai_will_do = { factor = 1 }
 }
 
 conscientious_objectors_aspect = {
@@ -33,14 +21,7 @@ conscientious_objectors_aspect = {
 	modifier = {
 		war_exhaustion_cost = -0.075
 	}
-	ai_will_do = {
-		factor = 10
-		modifier = {
-			factor = 2
-			is_at_war = yes
-			war_exhaustion = 5
-		}
-	}
+	ai_will_do = { factor = 1 }
 }
 
 charismatic_manifestations_aspect = {
@@ -48,13 +29,7 @@ charismatic_manifestations_aspect = {
 	modifier = {
 		culture_conversion_cost = -0.075
 	}
-	ai_will_do = {
-		factor = 10
-		modifier = {
-			factor = 2
-			NOT = { dominant_culture = capital }
-		}
-	}
+	ai_will_do = { factor = 1 }
 }
 
 nonconformity_world_aspect = {
@@ -62,9 +37,7 @@ nonconformity_world_aspect = {
 	modifier = {
 		yearly_corruption = -0.05
 	}
-	ai_will_do = {
-		factor = 12
-	}
+	ai_will_do = { factor = 1 }
 }
 
 church_and_state_aspect = {
@@ -72,17 +45,7 @@ church_and_state_aspect = {
 	modifier = {
 		religious_unity = 0.1
 	}
-	ai_will_do = {
-		factor = 10
-		modifier = {
-			factor = 2
-			NOT = { religious_unity = 0.8 }
-		}
-		modifier = {
-			factor = 2
-			NOT = { religious_unity = 0.4 }
-		}
-	}
+	ai_will_do = { factor = 1 }
 }
 
 restricted_communion_aspect = {
@@ -90,9 +53,7 @@ restricted_communion_aspect = {
 	modifier = {
 		hostile_attrition = 1
 	}
-	ai_will_do = {
-		factor = 14
-	}
+	ai_will_do = { factor = 1 }
 }
 
 polygamy_aspect = {
@@ -101,17 +62,7 @@ polygamy_aspect = {
 		global_tax_modifier = 0.05
 		heir_chance = 0.1
 	}
-	ai_will_do = {
-		factor = 12
-		modifier = {
-			factor = 0.5
-			treasury = 500
-		}
-		modifier = {
-			factor = 0
-			treasury = 2500
-		}
-	}
+	ai_will_do = { factor = 1 }
 }
 
 ban_property_aspect = {
@@ -119,9 +70,7 @@ ban_property_aspect = {
 	modifier = {
 		build_cost = -0.05
 	}
-	ai_will_do = {
-		factor = 10
-	}
+	ai_will_do = { factor = 1 }
 }
 
 communion_symbolism_aspect = {
@@ -129,9 +78,7 @@ communion_symbolism_aspect = {
 	modifier = {
 		land_maintenance_modifier = -0.05
 	}
-	ai_will_do = {
-		factor = 10
-	}
+	ai_will_do = { factor = 1 }
 }
 
 celestial_flesh_aspect = {
@@ -140,11 +87,5 @@ celestial_flesh_aspect = {
 		siege_ability = 0.05
 		province_warscore_cost = -0.05
 	}
-	ai_will_do = {
-		factor = 10
-		modifier = {
-			factor = 2
-			is_at_war = yes
-		}
-	}
+	ai_will_do = { factor = 1 }
 }

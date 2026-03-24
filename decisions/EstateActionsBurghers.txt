@@ -10,6 +10,7 @@ country_decisions = {
 			num_of_ports = 1
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			has_not_any_estate_disaster_active = yes
 			estate_loyalty = {
 				estate = estate_burghers
@@ -57,6 +58,7 @@ country_decisions = {
 			has_estate = estate_burghers
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			has_not_any_estate_disaster_active = yes
 			estate_loyalty = {
 				estate = estate_burghers
@@ -95,6 +97,7 @@ country_decisions = {
 			has_estate = estate_burghers
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			has_not_any_estate_disaster_active = yes
 			estate_action_off_cooldown = {
 				estate_action = GRANT_MONOPOLY_CHARTER_BURGHERS
@@ -155,6 +158,7 @@ country_decisions = {
 			has_estate = estate_burghers
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			has_not_any_estate_disaster_active = yes
 			estate_influence = {
 				estate = estate_burghers
@@ -190,6 +194,7 @@ country_decisions = {
 			num_of_ports = 1
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			has_not_any_estate_disaster_active = yes
 			estate_loyalty = {
 				estate = estate_burghers
@@ -228,6 +233,7 @@ country_decisions = {
 			has_estate = estate_burghers
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			has_not_any_estate_disaster_active = yes
 			estate_loyalty = {
 				estate = estate_burghers
@@ -268,6 +274,7 @@ country_decisions = {
 			primitives = no
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			has_not_any_estate_disaster_active = yes
 			estate_loyalty = {
 				estate = estate_burghers

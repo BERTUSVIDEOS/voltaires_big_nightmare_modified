@@ -123,28 +123,19 @@ fort_14th = {
 					limit = {
 						has_estate = estate_nobles
 					}
-					add_estate_loyalty = {
-						estate = estate_nobles
-						loyalty = 5
-					}
+					add_estate_loyalty = { estate = estate_nobles loyalty = 5 }
 				}
 				if = {
 					limit = {
 						has_estate = estate_maratha
 					}
-					add_estate_loyalty = {
-						estate = estate_maratha
-						loyalty = 5
-					}
+					add_estate_loyalty = { estate = estate_maratha loyalty = 5 }
 				}
 				if = {
 					limit = {
 						has_estate = estate_rajput
 					}
-					add_estate_loyalty = {
-						estate = estate_rajput
-						loyalty = 5
-					}
+					add_estate_loyalty = { estate = estate_rajput loyalty = 5 }
 				}
 			}
 		}
@@ -155,10 +146,7 @@ fort_14th = {
 				}
 				NOT = { has_province_modifier = estate_nobles_development_of_castles_mod }
 			}
-			add_province_modifier = {
-				name = estate_nobles_development_of_castles_mod
-				duration = -1
-			}
+			add_province_modifier = { name = estate_nobles_development_of_castles_mod duration = -1 }
 		}
 	}
 
@@ -173,15 +161,12 @@ fort_14th = {
 	}
 
 	# THIS = Province, FROM = Destroyer, Will not be called on buildings destroyed!
-	on_obsolete = {
-	}
+	on_obsolete = { }
 
 	onmap = yes
 	influencing_fort = yes
 
-	ai_will_do = {
-		factor = 1
-	}
+	ai_will_do = { factor = 1 }
 }
 
 road_network = {	#bertus mod
@@ -194,13 +179,7 @@ road_network = {	#bertus mod
 		local_hostile_movement_speed = 0.20
 	}
 
-	ai_will_do = {
-		factor = 1.5
-		modifier = {
-			factor = 100
-			development = 10
-		}
-	}
+	ai_will_do = { factor = 1 }
 }
 
 post_office = {	#bertus mod
@@ -218,13 +197,7 @@ post_office = {	#bertus mod
 		allowed_num_of_buildings = 1
 	}
 
-	ai_will_do = {
-		factor = 1.5
-		modifier = {
-			factor = 100
-			development = 30
-		}
-	}
+	ai_will_do = { factor = 1 }
 }
 
 harbour = {	#bertus mod
@@ -249,9 +222,7 @@ harbour = {	#bertus mod
 		allowed_num_of_buildings = 1
 	}
 
-	ai_will_do = {
-		factor = 1
-	}
+	ai_will_do = { factor = 1 }
 }
 
 armory = {	#bertus mod
@@ -278,9 +249,7 @@ armory = {	#bertus mod
 		on_province_manpower_building_destroyed_estate_privileges_effect = yes
 	}
 
-	ai_will_do = {
-		factor = 1
-	}
+	ai_will_do = { factor = 1 }
 }
 
 college = {	#bertus mod
@@ -292,25 +261,7 @@ college = {	#bertus mod
 		allowed_num_of_buildings = 1
 	}
 
-	ai_will_do = {
-		factor = 1
-		modifier = {
-			factor = 250
-			development = 20
-			is_state = yes
-		}
-		modifier = {
-			factor = 2
-			OR = {
-				has_terrain = grasslands
-				has_terrain = drylands
-			}
-		}
-		modifier = {
-			factor = 3
-			has_terrain = farmlands
-		}
-	}
+	ai_will_do = { factor = 1 }
 }
 
 customs_house = {
@@ -327,22 +278,7 @@ customs_house = {
 		on_province_medical_building_destroyed_estate_privileges_effect = yes
 	}
 
-	ai_will_do = {
-		factor = 1
-		modifier = {
-			factor = 150
-			OR = {
-				has_terrain = coastal_desert
-				has_terrain = desert
-				has_terrain = mountain
-				has_terrain = forest
-			}
-		}
-		modifier = {
-			factor = 300
-			has_terrain = glacier
-		}
-	}
+	ai_will_do = { factor = 1 }
 }
 
 arsenal = {
@@ -361,22 +297,7 @@ arsenal = {
 
 	make_obsolete = customs_house
 
-	ai_will_do = {
-		factor = 1
-		modifier = {
-			factor = 150
-			OR = {
-				has_terrain = coastal_desert
-				has_terrain = desert
-				has_terrain = mountain
-				has_terrain = forest
-			}
-		}
-		modifier = {
-			factor = 300
-			has_terrain = glacier
-		}
-	}
+	ai_will_do = { factor = 1 }
 }
 
 monument = {
@@ -394,30 +315,21 @@ monument = {
 				FROM = { has_government_attribute = on_church_built_clergy_loyalty }
 			}
 			FROM = {
-				add_estate_loyalty = {
-					estate = estate_church
-					loyalty = 5
-				}
+				add_estate_loyalty = { estate = estate_church loyalty = 5 }
 			}
 		}
 		if = {
 			limit = {
 				FROM = { has_country_flag = pap_sistine_chapel_mission_flag }
 			}
-			add_province_modifier = {
-				name = pap_sistine_chapel_mission
-				duration = -1
-			}
+			add_province_modifier = { name = pap_sistine_chapel_mission duration = -1 }
 		}
 		if = {
 			limit = {
 				FROM = { has_government_attribute = temples_modifier }
 				owned_by = FROM
 			}
-			add_province_modifier = {
-				name = gov_expanded_temple_rights_mod
-				duration = -1
-			}
+			add_province_modifier = { name = gov_expanded_temple_rights_mod duration = -1 }
 		}
 		#mod
 		FROM = {
@@ -435,19 +347,14 @@ monument = {
 				FROM = { has_government_attribute = on_church_built_clergy_loyalty }
 			}
 			FROM = {
-				add_estate_loyalty = {
-					estate = estate_church
-					loyalty = -5
-				}
+				add_estate_loyalty = { estate = estate_church loyalty = -5 }
 			}
 		}
 		remove_province_modifier = pap_sistine_chapel_mission
 		remove_province_modifier = gov_expanded_temple_rights_mod
 	}
 
-	ai_will_do = {
-		factor = 1
-	}
+	ai_will_do = { factor = 1 }
 }
 
 artisan = {
@@ -459,9 +366,7 @@ artisan = {
 
 	allow_in_gold_provinces = no
 
-	ai_will_do = {
-		factor = 1
-	}
+	ai_will_do = { factor = 1 }
 }
 
 watchman = {
@@ -474,64 +379,7 @@ watchman = {
 		allowed_num_of_buildings = 1
 	}
 
-	ai_will_do = {
-		factor = 1
-		modifier = {
-			factor = 2
-			FROM = { governing_capacity_percentage = 0.8 }
-		}
-		modifier = {
-			factor = 3
-			FROM = { governing_capacity_percentage = 1 }
-		}
-		modifier = {
-			factor = 5
-			FROM = { governing_capacity_percentage = 1.1 }
-		}
-		modifier = {
-			factor = 0.75
-			FROM = { num_of_loans = 1 }
-		}
-		modifier = {
-			factor = 0.25
-			FROM = { num_of_loans = 2 }
-		}
-		modifier = {
-			factor = 0
-			FROM = { num_of_loans = 3 }
-		}
-		modifier = {
-			factor = 0.5
-			FROM = { is_in_deficit = yes }
-		}
-		modifier = {
-			factor = 1.25
-			development = 10
-		}
-		modifier = {
-			factor = 1.25
-			development = 20
-		}
-		modifier = {
-			factor = 1.25
-			development = 30
-		}
-		modifier = {
-			factor = 0.5
-			FROM = { NOT = { treasury = 200 } }
-		}
-		modifier = {
-			factor = 1.25
-			FROM = { treasury = 300 }
-		}
-		#Provinces in the Capital Area don't need a courthouse
-		modifier = {
-			factor = 0
-			area_for_scope_province = {
-				is_capital_of = FROM
-			}
-		}
-	}
+	ai_will_do = { factor = 1 }
 }
 
 ################################################
@@ -585,12 +433,9 @@ marketplace = {
 	on_construction_started = { } #Fires when you start the construction,  ROOT - Province FROM - Country that started
 	on_construction_canceled = { } #Fires when you cancel the construction, ROOT - Province FROM - Country that canceled
 
-	on_obsolete = {
-	}
+	on_obsolete = { }
 
-	ai_will_do = {
-		factor = 1.5 # Because hard-coded AI only considers what it will gain, not what its enemies will lose.
-	}
+	ai_will_do = { factor = 1 }
 }
 
 workshop = {
@@ -614,15 +459,12 @@ workshop = {
 			value = 1
 		}
 	}
-	on_obsolete = {
-	}
+	on_obsolete = { }
 	
 	make_obsolete = artisan
 	allow_in_gold_provinces = no
 
-	ai_will_do = {
-		factor = 1
-	}
+	ai_will_do = { factor = 1 }
 }
 
 temple = {
@@ -645,51 +487,34 @@ temple = {
 				FROM = { has_government_attribute = on_church_built_clergy_loyalty }
 			}
 			FROM = {
-				add_estate_loyalty = {
-					estate = estate_church
-					loyalty = 2
-				}
+				add_estate_loyalty = { estate = estate_church loyalty = 2 }
 			}
 		}
 		if = {
 			limit = {
 				FROM = { has_country_flag = pap_sistine_chapel_mission_flag }
 			}
-			add_province_modifier = {
-				name = pap_sistine_chapel_mission
-				duration = -1
-			}
+			add_province_modifier = { name = pap_sistine_chapel_mission duration = -1 }
 		}
 		if = {
 			limit = {
 				FROM = { has_government_attribute = temples_modifier }
 				owned_by = FROM 
 			}
-			add_province_modifier = {
-				name = gov_expanded_temple_rights_mod
-				duration = -1
-			}
+			add_province_modifier = { name = gov_expanded_temple_rights_mod duration = -1 }
 		}
 		if = {
 			limit = {
-				FROM = {
-					has_country_flag = mosque_local_unrest_flag
-				}
+				FROM = { has_country_flag = mosque_local_unrest_flag }
 			}
-			add_province_modifier = {
-				name = turkoman_peaceful_worshipping
-				duration = -1
-			}
+			add_province_modifier = { name = turkoman_peaceful_worshipping duration = -1 }
 		}
 		if = {
 			limit = {
 				FROM = { has_country_modifier = mam_mosque_great_mosque_generates_crown_land_modifier }
 			}
 			FROM = {
-				change_estate_land_share = {
-					estate = all
-					share = -0.25
-				}
+				change_estate_land_share = { estate = all share = -0.25 }
 			}
 		}
 		#mod
@@ -710,9 +535,7 @@ temple = {
 		}
 		if = {
 			limit = {
-				FROM = {
-					has_country_flag = mosque_local_unrest_flag
-				}
+				FROM = { has_country_flag = mosque_local_unrest_flag }
 			}
 			remove_province_modifier = turkoman_peaceful_worshipping
 		}
@@ -721,10 +544,7 @@ temple = {
 				FROM = { has_government_attribute = on_church_built_clergy_loyalty }
 			}
 			FROM = {
-				add_estate_loyalty = {
-					estate = estate_church
-					loyalty = -2
-				}
+				add_estate_loyalty = { estate = estate_church loyalty = -2 }
 			}
 		}
 		remove_province_modifier = pap_sistine_chapel_mission
@@ -734,19 +554,13 @@ temple = {
 				FROM = { has_country_modifier = mam_mosque_great_mosque_generates_crown_land_modifier }
 			}
 			FROM = {
-				change_estate_land_share = {
-					estate = all
-					share = 0.25
-				}
+				change_estate_land_share = { estate = all share = 0.25 }
 			}
 		}
 	}
-	on_obsolete = {
-	}
+	on_obsolete = { }
 	make_obsolete = monument
-	ai_will_do = {
-		factor = 1
-	}
+	ai_will_do = { factor = 1 }
 }
 
 barracks = {
@@ -817,12 +631,9 @@ barracks = {
 			building = barracks
 		}
 	}
-	on_obsolete = {
-	}
+	on_obsolete = { }
 
-	ai_will_do = {
-		factor = 1
-	}
+	ai_will_do = { factor = 1 }
 }
 
 shipyard = {
@@ -859,20 +670,9 @@ shipyard = {
 			remove_province_modifier = sca_swe_danish_shipyard
 		}
 	}
-	on_obsolete = {
-	}
+	on_obsolete = { }
 
-	ai_will_do = {
-		factor = 1
-		modifier = {
-			factor = 1.5 # bit more likely if close to the naval force limit
-			FROM = { navy_size_percentage = 0.95 }
-		}
-		modifier = {
-			factor = 1.1
-			local_autonomy = 50
-		}
-	}
+	ai_will_do = { factor = 1 }
 }
 
 fort_15th = {
@@ -972,28 +772,19 @@ fort_15th = {
 					limit = {
 						has_estate = estate_nobles
 					}
-					add_estate_loyalty = {
-						estate = estate_nobles
-						loyalty = 5
-					}
+					add_estate_loyalty = { estate = estate_nobles loyalty = 5 }
 				}
 				if = {
 					limit = {
 						has_estate = estate_maratha
 					}
-					add_estate_loyalty = {
-						estate = estate_maratha
-						loyalty = 5
-					}
+					add_estate_loyalty = { estate = estate_maratha loyalty = 5 }
 				}
 				if = {
 					limit = {
 						has_estate = estate_rajput
 					}
-					add_estate_loyalty = {
-						estate = estate_rajput
-						loyalty = 5
-					}
+					add_estate_loyalty = { estate = estate_rajput loyalty = 5 }
 				}
 			}
 		}
@@ -1004,10 +795,7 @@ fort_15th = {
 				}
 				NOT = { has_province_modifier = estate_nobles_development_of_castles_mod }
 			}
-			add_province_modifier = {
-				name = estate_nobles_development_of_castles_mod
-				duration = -1
-			}
+			add_province_modifier = { name = estate_nobles_development_of_castles_mod duration = -1 }
 		}
 	}
 
@@ -1022,15 +810,12 @@ fort_15th = {
 	}
 
 	# THIS = Province, FROM = Destroyer, Will not be called on buildings destroyed!
-	on_obsolete = {
-	}
+	on_obsolete = { }
 
 	onmap = yes
 	influencing_fort = yes
 
-	ai_will_do = {
-		factor = 1 #Lots of logic in code instead, that multiplies with this value
-	}
+	ai_will_do = { factor = 1 }
 }
 
 coastal_defence = {
@@ -1046,9 +831,7 @@ coastal_defence = {
 		block_slave_raid = yes
 	}
 
-	ai_will_do = {
-		factor = 1
-	}
+	ai_will_do = { factor = 1 }
 }
 
 
@@ -1081,10 +864,7 @@ courthouse = {
 			limit = { 
 				FROM = { has_country_flag = fra_courthouse_bonus_flag }
 			}
-			add_province_modifier = {
-				name = fra_improved_court_houses_modifier
-				duration = -1 
-			}
+			add_province_modifier = { name = fra_improved_court_houses_modifier duration = -1 }
 		}
 	}
 	on_destroyed = {
@@ -1095,71 +875,9 @@ courthouse = {
 		}
 		remove_province_modifier = fra_improved_court_houses_modifier
 	}
-	on_obsolete = {
-	}
+	on_obsolete = { }
 	
-	ai_will_do = {
-		factor = 1
-		modifier = {
-			factor = 10
-			has_building = watchman
-		}
-		modifier = {
-			factor = 2
-			FROM = { governing_capacity_percentage = 0.8 }
-		}
-		modifier = {
-			factor = 3
-			FROM = { governing_capacity_percentage = 1 }
-		}
-		modifier = {
-			factor = 5
-			FROM = { governing_capacity_percentage = 1.1 }
-		}
-		modifier = {
-			factor = 0.75
-			FROM = { num_of_loans = 1 }
-		}
-		modifier = {
-			factor = 0.25
-			FROM = { num_of_loans = 2 }
-		}
-		modifier = {
-			factor = 0
-			FROM = { num_of_loans = 3 }
-		}
-		modifier = {
-			factor = 0.5
-			FROM = { is_in_deficit = yes }
-		}
-		modifier = {
-			factor = 1.25
-			development = 10
-		}
-		modifier = {
-			factor = 1.25
-			development = 20
-		}
-		modifier = {
-			factor = 1.25
-			development = 30
-		}
-		modifier = {
-			factor = 0.5
-			FROM = { NOT = { treasury = 200 } }
-		}
-		modifier = {
-			factor = 1.25
-			FROM = { treasury = 300 }
-		}
-		#Provinces in the Capital Area don't need a courthouse
-		modifier = {
-			factor = 0
-			area_for_scope_province = {
-				is_capital_of = FROM
-			}
-		}
-	}
+	ai_will_do = { factor = 1 }
 }
 
 dock = {
@@ -1208,56 +926,9 @@ dock = {
 			value = 1
 		}
 	}
-	on_obsolete = {
-	}
+	on_obsolete = { }
 
-	ai_will_do = {
-		factor = 1
-		modifier = {
-			current_age = age_of_discovery 
-			owner = { NOT = { navy_size = 25 } }
-			factor = 0.25
-		}
-		modifier = {
-			current_age = age_of_reformation
-			owner = { NOT = { navy_size = 50 } }
-			factor = 0.35
-		}
-		modifier = {
-			current_age = age_of_absolutism
-			owner = { NOT = { navy_size = 75 } }
-			factor = 0.5
-		}
-		modifier = {
-			current_age = age_of_revolutions 
-			owner = { NOT = { navy_size = 100 } }
-			factor = 0.65
-		}
-		modifier = {
-			owner = {
-				OR = {
-					full_idea_group = naval_ideas
-					has_idea_group = maritime_ideas
-				}
-			}
-			factor = 1.25
-		}
-		modifier = {
-			owner = {
-				capital_scope = { 
-					has_port = yes 
-					is_island = yes 
-				}
-			}
-			factor = 1.35
-		}
-		modifier = {
-			owner = {
-				sailors_percentage = 0.75 
-			}
-			factor = 0
-		}
-	}
+	ai_will_do = { factor = 1 }
 }
 
 regimental_camp = {
@@ -1289,20 +960,9 @@ regimental_camp = {
 			building = regimental_camp
 		}
 	}
-	on_obsolete = {
-	}
+	on_obsolete = { }
 
-	ai_will_do = {
-		factor = 1
-		modifier = {
-			factor = 1.5 # more likely if we have an army close to the force limit
-			FROM = { army_size_percentage = 0.95 }
-		}
-		modifier = {
-			factor = 1.1
-			local_autonomy = 50
-		}
-	}
+	ai_will_do = { factor = 1 }
 }
 
 fort_16th = {
@@ -1402,28 +1062,19 @@ fort_16th = {
 					limit = {
 						has_estate = estate_nobles
 					}
-					add_estate_loyalty = {
-						estate = estate_nobles
-						loyalty = 5
-					}
+					add_estate_loyalty = { estate = estate_nobles loyalty = 5 }
 				}
 				if = {
 					limit = {
 						has_estate = estate_maratha
 					}
-					add_estate_loyalty = {
-						estate = estate_maratha
-						loyalty = 5
-					}
+					add_estate_loyalty = { estate = estate_maratha loyalty = 5 }
 				}
 				if = {
 					limit = {
 						has_estate = estate_rajput
 					}
-					add_estate_loyalty = {
-						estate = estate_rajput
-						loyalty = 5
-					}
+					add_estate_loyalty = { estate = estate_rajput loyalty = 5 }
 				}
 			}
 		}
@@ -1434,10 +1085,7 @@ fort_16th = {
 				}
 				NOT = { has_province_modifier = estate_nobles_development_of_castles_mod }
 			}
-			add_province_modifier = {
-				name = estate_nobles_development_of_castles_mod
-				duration = -1
-			}
+			add_province_modifier = { name = estate_nobles_development_of_castles_mod duration = -1 }
 		}
 	}
 
@@ -1452,16 +1100,13 @@ fort_16th = {
 	}
 
 	# THIS = Province, FROM = Destroyer, Will not be called on buildings destroyed!
-	on_obsolete = {
-	}
+	on_obsolete = { }
 
 	onmap = yes
 
 	influencing_fort = yes
 
-	ai_will_do = {
-		factor = 1
-	}
+	ai_will_do = { factor = 1 }
 }
 
 naval_battery = {
@@ -1477,9 +1122,7 @@ naval_battery = {
 		hostile_fleet_attrition = 10	#5→10
 		block_slave_raid = yes
 	}
-	ai_will_do = {
-		factor = 1 #Lots of logic in code instead, that multiplies with this value
-	}
+	ai_will_do = { factor = 1 }
 }
 
 ################################################
@@ -1509,51 +1152,34 @@ cathedral = {
 				FROM = { has_government_attribute = on_church_built_clergy_loyalty }
 			}
 			FROM = {
-				add_estate_loyalty = {
-					estate = estate_church
-					loyalty = 5
-				}
+				add_estate_loyalty = { estate = estate_church loyalty = 5 }
 			}
 		}
 		if = {
 			limit = {
 				FROM = { has_country_flag = pap_sistine_chapel_mission_flag }
 			}
-			add_province_modifier = {
-				name = pap_sistine_chapel_mission
-				duration = -1
-			}
+			add_province_modifier = { name = pap_sistine_chapel_mission duration = -1 }
 		}
 		if = {
 			limit = {
 				FROM = { has_government_attribute = temples_modifier }
 				owned_by = FROM
 			}
-			add_province_modifier = {
-				name = gov_expanded_temple_rights_mod
-				duration = -1
-			}
+			add_province_modifier = { name = gov_expanded_temple_rights_mod duration = -1 }
 		}
 		if = {
 			limit = {
-				FROM = {
-					has_country_flag = mosque_local_unrest_flag
-				}
+				FROM = { has_country_flag = mosque_local_unrest_flag }
 			}
-			add_province_modifier = {
-				name = turkoman_peaceful_worshipping
-				duration = -1
-			}
+			add_province_modifier = { name = turkoman_peaceful_worshipping duration = -1 }
 		}
 		if = {
 			limit = {
 				FROM = { has_country_modifier = mam_mosque_great_mosque_generates_crown_land_modifier }
 			}
 			FROM = {
-				change_estate_land_share = {
-					estate = all
-					share = -0.25
-				}
+				change_estate_land_share = { estate = all share = -0.25 }
 			}
 		}
 		#mod
@@ -1574,9 +1200,7 @@ cathedral = {
 		}
 		if = {
 			limit = {
-				FROM = {
-					has_country_flag = mosque_local_unrest_flag
-				}
+				FROM = { has_country_flag = mosque_local_unrest_flag }
 			}
 			remove_province_modifier = turkoman_peaceful_worshipping
 		}
@@ -1585,10 +1209,7 @@ cathedral = {
 				FROM = { has_government_attribute = on_church_built_clergy_loyalty }
 			}
 			FROM = {
-				add_estate_loyalty = {
-					estate = estate_church
-					loyalty = -5
-				}
+				add_estate_loyalty = { estate = estate_church loyalty = -5 }
 			}
 		}
 		remove_province_modifier = pap_sistine_chapel_mission
@@ -1598,19 +1219,13 @@ cathedral = {
 				FROM = { has_country_modifier = mam_mosque_great_mosque_generates_crown_land_modifier }
 			}
 			FROM = {
-				change_estate_land_share = {
-					estate = all
-					share = 0.25
-				}
+				change_estate_land_share = { estate = all share = 0.25 }
 			}
 		}
 	}
-	on_obsolete = {
-	}
+	on_obsolete = { }
 
-	ai_will_do = {
-		factor = 1
-	}
+	ai_will_do = { factor = 1 }
 }
 
 
@@ -1636,76 +1251,11 @@ university = {	#bertus mod
 			value = 2
 		}
 	}
-	on_obsolete = {
-	}
+	on_obsolete = { }
 
 	make_obsolete = college
 
-	ai_will_do = {
-		# Hard coded AI sees no value in this above the 0.01 ducats base. Let's multiply that
-		factor = 12 # Base of 0.01 ducats per MONTH
-		modifier = {
-			factor = 10
-			development = 16
-		}
-		modifier = {
-			factor = 1.4
-			development = 21
-		}
-		modifier = {
-			factor = 1.4
-			development = 26
-		}
-		modifier = {
-			factor = 1.4
-			development = 30
-		}
-		modifier = {
-			factor = 0
-			is_state = no
-		}
-		modifier = {
-			factor = 2
-			is_capital = yes
-		}
-		modifier = {
-			factor = 0.5
-			OR = {
-				has_climate = tropical
-				has_climate = arid
-			}
-		}
-		modifier = {
-			factor = 0.2
-			has_climate = arctic
-		}
-		modifier = {
-			factor = 1.2
-			OR = {
-				has_terrain = grasslands
-				has_terrain = drylands
-			}
-		}
-		modifier = {
-			factor = 1.3
-			has_terrain = farmlands
-		}
-		modifier = {
-			factor = 2
-			is_year = 1690 # Enlightenment spawns in 1700
-			not = {
-				owner = {
-					has_institution = enlightenment
-				}
-			}
-			not = {
-				provincial_institution_progress = {
-					which = enlightenment
-					value = 20
-				}
-			}
-		}
-	}
+	ai_will_do = { factor = 1 }
 }
 
 trade_depot = {
@@ -1738,13 +1288,10 @@ trade_depot = {
 		}
 		remove_province_modifier = trade_buildings_boost_modifier
 	}
-	on_obsolete = {
-	}
+	on_obsolete = { }
 
 
-	ai_will_do = {
-		factor = 1.5 # Because hard-coded AI only considers what it will gain, not what its enemies will lose.
-	}
+	ai_will_do = { factor = 1 }
 }
 
 grand_shipyard = {
@@ -1786,20 +1333,9 @@ grand_shipyard = {
 			remove_province_modifier = sca_swe_danish_shipyard
 		}
 	}
-	on_obsolete = {
-	}
+	on_obsolete = { }
 
-	ai_will_do = {
-		factor = 1
-		modifier = {
-			factor = 1.5 # bit more likely if close to the force limit
-			FROM = { navy_size_percentage = 0.95 }
-		}
-		modifier = {
-			factor = 1.1
-			local_autonomy = 50
-		}
-	}
+	ai_will_do = { factor = 1 }
 }
 
 training_fields = {
@@ -1858,12 +1394,9 @@ training_fields = {
 		#mod
 		on_province_manpower_building_destroyed_estate_privileges_effect = yes
 	}
-	on_obsolete = {
-	}
+	on_obsolete = { }
 
-	ai_will_do = {
-		factor = 1
-	}
+	ai_will_do = { factor = 1 }
 }
 
 
@@ -1966,28 +1499,19 @@ fort_17th = {
 					limit = {
 						has_estate = estate_nobles
 					}
-					add_estate_loyalty = {
-						estate = estate_nobles
-						loyalty = 5
-					}
+					add_estate_loyalty = { estate = estate_nobles loyalty = 5 }
 				}
 				if = {
 					limit = {
 						has_estate = estate_maratha
 					}
-					add_estate_loyalty = {
-						estate = estate_maratha
-						loyalty = 5
-					}
+					add_estate_loyalty = { estate = estate_maratha loyalty = 5 }
 				}
 				if = {
 					limit = {
 						has_estate = estate_rajput
 					}
-					add_estate_loyalty = {
-						estate = estate_rajput
-						loyalty = 5
-					}
+					add_estate_loyalty = { estate = estate_rajput loyalty = 5 }
 				}
 			}
 		}
@@ -1998,10 +1522,7 @@ fort_17th = {
 				}
 				NOT = { has_province_modifier = estate_nobles_development_of_castles_mod }
 			}
-			add_province_modifier = {
-				name = estate_nobles_development_of_castles_mod
-				duration = -1
-			}
+			add_province_modifier = { name = estate_nobles_development_of_castles_mod duration = -1 }
 		}
 	}
 
@@ -2016,16 +1537,13 @@ fort_17th = {
 	}
 
 	# THIS = Province, FROM = Destroyer, Will not be called on buildings destroyed!
-	on_obsolete = {
-	}
+	on_obsolete = { }
 
 	onmap = yes
 
 	influencing_fort = yes
 
-	ai_will_do = {
-		factor = 1 #Lots of logic in code instead, that multiplies with this value
-	}
+	ai_will_do = { factor = 1 }
 }
 
 
@@ -2088,12 +1606,9 @@ stock_exchange = {
 		}
 		remove_province_modifier = trade_buildings_boost_modifier
 	}
-	on_obsolete = {
-	}
+	on_obsolete = { }
 
-	ai_will_do = {
-		factor = 1.5 # Because hard-coded AI only considers what it will gain, not what its enemies will lose.
-	}
+	ai_will_do = { factor = 1 }
 }
 
 counting_house = {
@@ -2120,14 +1635,11 @@ counting_house = {
 			value = 2
 		}
 	}
-	on_obsolete = {
-	}
+	on_obsolete = { }
 
 	allow_in_gold_provinces = no
 
-	ai_will_do = {
-		factor = 1
-	}
+	ai_will_do = { factor = 1 }
 }
 
 town_hall = {
@@ -2159,10 +1671,7 @@ town_hall = {
 				FROM = { has_country_flag = fra_courthouse_bonus_flag }
 				NOT = { has_province_modifier = fra_improved_court_houses_modifier }
 			}
-			add_province_modifier = {
-				name = fra_improved_court_houses_modifier
-				duration = -1 
-			}
+			add_province_modifier = { name = fra_improved_court_houses_modifier duration = -1 }
 		}
 	}
 	on_destroyed = {
@@ -2174,19 +1683,11 @@ town_hall = {
 		remove_province_modifier = fra_improved_court_houses_modifier 
 		if = {
 			limit = {owner = {has_idea = flottenbasis1}}
-			add_province_modifier = {
-				name = flottenbasis1_dock_bonus_1
-				duration = -1
-				hidden = yes
-			}
+			add_province_modifier = { name = flottenbasis1_dock_bonus_1 duration = -1 hidden = yes }
 		}
 		if = {
 			limit = {owner = {has_idea = flottenbasis4}}
-			add_province_modifier = {
-				name = flottenbasis4_dock_bonus_1
-				duration = -1
-				hidden = yes
-			}
+			add_province_modifier = { name = flottenbasis4_dock_bonus_1 duration = -1 hidden = yes }
 		}
 	}
 
@@ -2201,33 +1702,7 @@ town_hall = {
 		}
 	}
 
-	ai_will_do = {
-		factor = 1
-		modifier = {
-			factor = 10
-			has_building = courthouse
-		}
-		modifier = {
-			factor = 2
-			FROM = { governing_capacity_percentage = 0.8 }
-		}
-		modifier = {
-			factor = 3
-			FROM = { governing_capacity_percentage = 1 }
-		}
-		modifier = {
-			factor = 5
-			FROM = { governing_capacity_percentage = 1.1 }
-		}
-		modifier = {
-			factor = 0
-			FROM = { num_of_loans = 3 }
-		}
-		modifier = {
-			factor = 0.5
-			FROM = { is_in_deficit = yes }
-		}
-	}
+	ai_will_do = { factor = 1 }
 }
 
 drydock = {
@@ -2266,20 +1741,12 @@ drydock = {
 		if = {
 			limit = {owner = {has_idea = flottenbasis1}}
 			remove_province_modifier = flottenbasis1_dock_bonus_1
-			add_province_modifier = {
-				name = flottenbasis1_dock_bonus_2
-				duration = -1
-				hidden = yes
-			}
+			add_province_modifier = { name = flottenbasis1_dock_bonus_2 duration = -1 hidden = yes }
 		}
 		if = {
 			limit = {owner = {has_idea = flottenbasis4}}
 			remove_province_modifier = flottenbasis4_dock_bonus_1
-			add_province_modifier = {
-				name = flottenbasis4_dock_bonus_2
-				duration = -1
-				hidden = yes
-			}
+			add_province_modifier = { name = flottenbasis4_dock_bonus_2 duration = -1 hidden = yes }
 		}
 	}
 
@@ -2294,9 +1761,7 @@ drydock = {
 		}
 		if = {
 			limit = {
-				FROM = {
-					has_government_attribute = manpower_sailors_on_build
-				}
+				FROM = { has_government_attribute = manpower_sailors_on_build }
 			}
 			FROM = {
 				add_sailors = -200
@@ -2308,12 +1773,9 @@ drydock = {
 			value = 2
 		}
 	}
-	on_obsolete = {
-	}
+	on_obsolete = { }
 
-	ai_will_do = {
-		factor = 1
-	}
+	ai_will_do = { factor = 1 }
 }
 
 conscription_center = {
@@ -2351,20 +1813,9 @@ conscription_center = {
 			building = conscription_center
 		}
 	}
-	on_obsolete = {
-	}
+	on_obsolete = { }
 
-	ai_will_do = {
-		factor = 1
-		modifier = {
-			factor = 1.5 # more likely if we have an army close to the force limit
-			FROM = { army_size_percentage = 0.95 }
-		}
-		modifier = {
-			factor = 1.1
-			local_autonomy = 50
-		}
-	}
+	ai_will_do = { factor = 1 }
 }
 
 fort_18th = {
@@ -2466,8 +1917,7 @@ fort_18th = {
 					limit = {
 						has_estate = estate_nobles
 					}
-					add_estate_loyalty = {
-						estate = estate_nobles
+					add_estate_loyalty = { estate = estate_nobles
 						loyalty = 5
 					}
 				}
@@ -2475,19 +1925,13 @@ fort_18th = {
 					limit = {
 						has_estate = estate_maratha
 					}
-					add_estate_loyalty = {
-						estate = estate_maratha
-						loyalty = 5
-					}
+					add_estate_loyalty = { estate = estate__maratha loyalty = 5 }
 				}
 				if = {
 					limit = {
 						has_estate = estate_rajput
 					}
-					add_estate_loyalty = {
-						estate = estate_rajput
-						loyalty = 5
-					}
+					add_estate_loyalty = { estate = estate__rajput loyalty = 5 }
 				}
 			}
 		}
@@ -2498,10 +1942,7 @@ fort_18th = {
 				}
 				NOT = { has_province_modifier = estate_nobles_development_of_castles_mod }
 			}
-			add_province_modifier = {
-				name = estate_nobles_development_of_castles_mod
-				duration = -1
-			}
+			add_province_modifier = { name = estate_nobles_development_of_castles_mod duration = -1 }
 		}
 	}
 
@@ -2516,16 +1957,13 @@ fort_18th = {
 	}
 
 	# THIS = Province, FROM = Destroyer, Will not be called on buildings destroyed!
-	on_obsolete = {
-	}
+	on_obsolete = { }
 
 	onmap = yes
 
 	influencing_fort = yes
 
-	ai_will_do = {
-		factor = 1 #Lots of logic in code instead, that multiplies with this value
-	}
+	ai_will_do = { factor = 1 }
 }
 
 ################################################
@@ -2585,37 +2023,9 @@ wharf = {
 		}
 	}
 
-	on_obsolete = {
-	}
+	on_obsolete = { }
 
-	ai_will_do = {
-		factor = 1
-
-		modifier = {
-			factor = 0.4
-			NOT = { base_production = 6 }
-		}
-		modifier = {
-			factor = 1.5
-			base_production = 10
-		}
-		modifier = {
-			factor = 1.5
-			base_production = 15
-		}
-		modifier = {
-			factor = 5
-			OR = {
-				has_province_modifier = skanemarket
-				has_province_modifier = comet_ore_modifier
-				has_province_modifier = paradise_modifier
-			}
-		}
-		modifier = {
-			NOT = { num_free_building_slots = 3 }
-			factor = 1.5
-		}
-	}
+	ai_will_do = { factor = 1 }
 }
 
 weapons = {
@@ -2658,12 +2068,9 @@ weapons = {
 			value = 1
 		}
 	}
-	on_obsolete = {
-	}
+	on_obsolete = { }
 
-	ai_will_do = {
-		factor = 1
-	}
+	ai_will_do = { factor = 1 }
 }
 
 textile = {
@@ -2706,12 +2113,9 @@ textile = {
 			value = 1
 		}
 	}
-	on_obsolete = {
-	}
+	on_obsolete = { }
 
-	ai_will_do = {
-		factor = 1
-	}
+	ai_will_do = { factor = 1 }
 }
 
 plantations = {
@@ -2754,12 +2158,9 @@ plantations = {
 			value = 1
 		}
 	}
-	on_obsolete = {
-	}
+	on_obsolete = { }
 
-	ai_will_do = {
-		factor = 1
-	}
+	ai_will_do = { factor = 1 }
 }
 
 tradecompany = {
@@ -2802,12 +2203,9 @@ tradecompany = {
 			value = 1
 		}
 	}
-	on_obsolete = {
-	}
+	on_obsolete = { }
 
-	ai_will_do = {
-		factor = 1
-	}
+	ai_will_do = { factor = 1 }
 }
 
 farm_estate = {
@@ -2865,12 +2263,9 @@ farm_estate = {
 			add_base_production = -1
 		}
 	}
-	on_obsolete = {
-	}
+	on_obsolete = { }
 
-	ai_will_do = {
-		factor = 1
-	}
+	ai_will_do = { factor = 1 }
 }
 
 mills = {
@@ -2913,12 +2308,9 @@ mills = {
 			value = 1
 		}
 	}
-	on_obsolete = {
-	}
+	on_obsolete = { }
 
-	ai_will_do = {
-		factor = 1
-	}
+	ai_will_do = { factor = 1 }
 }
 
 furnace = {
@@ -2954,12 +2346,9 @@ furnace = {
 			value = 2
 		}
 	}
-	on_obsolete = {
-	}
+	on_obsolete = { }
 
-	ai_will_do = {
-		factor = 1
-	}
+	ai_will_do = { factor = 1 }
 }
 
 ramparts = {
@@ -2994,10 +2383,7 @@ ramparts = {
 				}
 				NOT = { has_province_modifier = estate_nobles_development_of_castles_ramparts_mod }
 			}
-			add_province_modifier = {
-				name = estate_nobles_development_of_castles_ramparts_mod
-				duration = -1
-			}
+			add_province_modifier = { name = estate_nobles_development_of_castles_ramparts_mod duration = -1 }
 		}
 	}
 	
@@ -3019,21 +2405,7 @@ ramparts = {
 		}
 	}
 
-	ai_will_do = {
-		factor = 1
-		modifier = {
-			factor = 0
-			from = { num_of_loans = 3 }
-		}
-		modifier = {
-			factor = 20
-			has_terrain = mountain
-		}
-		modifier = {
-			factor = 0
-			from = { personality = ai_militarist }
-		}
-	}
+	ai_will_do = { factor = 1 }
 }
 
 soldier_households = {
@@ -3076,14 +2448,9 @@ soldier_households = {
 		}
 		if = {
 			limit = {
-				FROM = {
-					has_government_attribute = improved_military_buildings
-				}
+				FROM = { has_government_attribute = improved_military_buildings }
 			}
-			add_province_modifier = {
-				name = wei_suo_system_reform_soldier_households_modifier
-				duration = -1
-			}
+			add_province_modifier = { name = wei_suo_system_reform_soldier_households_modifier duration = -1 }
 		}
 	}
 	on_destroyed = {
@@ -3104,12 +2471,9 @@ soldier_households = {
 			remove_province_modifier = wei_suo_system_reform_soldier_households_modifier
 		}
 	}
-	on_obsolete = {
-	}
+	on_obsolete = { }
 
-	ai_will_do = {
-		factor = 1
-	}
+	ai_will_do = { factor = 1 }
 }
 
 impressment_offices = {	#bertus mod
@@ -3175,11 +2539,8 @@ impressment_offices = {	#bertus mod
 		}
 	}
 
-	on_obsolete = {
-	}
-	ai_will_do = {
-		factor = 1
-	}
+	on_obsolete = { }
+	ai_will_do = { factor = 1 }
 }
 
 state_house = {
@@ -3248,9 +2609,6 @@ state_house = {
 			value = 2
 		}
 	}
-	on_obsolete = {
-	}
-	ai_will_do = {
-		factor = 1
-	}
+	on_obsolete = { }
+	ai_will_do = { factor = 1 }
 }

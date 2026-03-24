@@ -9,6 +9,7 @@ country_decisions = {
 			has_estate = estate_nobles
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			has_not_any_estate_disaster_active = yes
 			estate_action_off_cooldown = {
 				estate_action = CALL_DIET_NOBLES
@@ -69,6 +70,7 @@ country_decisions = {
 			has_estate = estate_nobles
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			has_not_any_estate_disaster_active = yes
 			estate_loyalty = {
 				estate = estate_nobles
@@ -111,6 +113,7 @@ country_decisions = {
 			has_estate = estate_nobles
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			has_not_any_estate_disaster_active = yes
 			estate_action_off_shared_cooldown = {
 				estate_action = GENERAL_FROM_ESTATES
@@ -141,6 +144,7 @@ country_decisions = {
 			has_estate = estate_nobles
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			has_not_any_estate_disaster_active = yes
 			estate_loyalty = {
 				estate = estate_nobles
@@ -179,6 +183,7 @@ country_decisions = {
 			has_estate = estate_nobles
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			has_not_any_estate_disaster_active = yes
 			estate_influence = {
 				estate = estate_nobles
@@ -213,6 +218,7 @@ country_decisions = {
 			has_estate = estate_nobles
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			has_not_any_estate_disaster_active = yes
 			estate_loyalty = {
 				estate = estate_nobles

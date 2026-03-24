@@ -51,6 +51,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			if = { limit = { ai = yes } ai = no }
 			is_at_war = no
 			owns_core_province = 4986 #Gazzah
 			owns_core_province = 4974 #Jerusalem

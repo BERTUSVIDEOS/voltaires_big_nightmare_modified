@@ -34,6 +34,7 @@ vn_ser_missions_slot_1_a = {
             has_fort_trigger = no
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             num_of_owned_provinces_with = {
                 value = 4
                 OR = {
@@ -74,6 +75,7 @@ vn_ser_missions_slot_1_a = {
             has_fort_trigger = no
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             num_of_owned_provinces_with = {
                 value = 2
                 OR = {
@@ -102,6 +104,7 @@ vn_ser_missions_slot_1_a = {
             province_id = 539
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             539 = {
                 is_capital_of = ROOT
                 num_of_buildings_in_province = 3
@@ -130,6 +133,7 @@ vn_ser_missions_slot_1_a = {
             province_id = 539
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             539 = {
                 is_capital_of = ROOT
                 num_of_buildings_in_province = 6
@@ -178,6 +182,7 @@ vn_ser_missions_slot_1_b = {
             NOT = { owned_by = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             NOT = {
                 any_province = {
                     OR = {
@@ -221,6 +226,7 @@ vn_ser_missions_slot_1_b = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
                 value = 50
                 culture = bulgarian
@@ -269,6 +275,7 @@ vn_ser_missions_slot_2_a = {
         position = 2
         required_missions = { vn_ser_fortify_danube }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             num_of_owned_provinces_with = {
                 value = 5
                 OR = {
@@ -299,6 +306,7 @@ vn_ser_missions_slot_2_a = {
         position = 3
         required_missions = { vn_ser_mines_of_serbia }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             if = {
                 limit = { has_dlc = "Rule Britannia" }
                 num_of_owned_provinces_with = {
@@ -353,6 +361,7 @@ vn_ser_missions_slot_2_b = {
             province_id = 1947
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             1947 = {
                 owned_by = ROOT
                 is_core = ROOT
@@ -392,6 +401,7 @@ vn_ser_missions_slot_2_c = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             croatia_region = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -428,6 +438,7 @@ vn_ser_missions_slot_2_d = {
         position = 7
         required_missions = { vn_ser_unite_south_slavs }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             NOT = { average_unrest = 1 }
             NOT = { average_autonomy = 10 }
             if = {
@@ -489,6 +500,7 @@ vn_ser_missions_slot_3_a = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             rashka_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -596,6 +608,7 @@ vn_ser_missions_slot_3_a = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             5555 = { country_or_non_sovereign_subject_holds = ROOT }
             535 = { country_or_non_sovereign_subject_holds = ROOT }
             5549 = { country_or_non_sovereign_subject_holds = ROOT }
@@ -664,6 +677,7 @@ vn_ser_missions_slot_3_a = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             donji_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -738,6 +752,7 @@ vn_ser_missions_slot_3_a = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             dalmatia_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -831,6 +846,7 @@ vn_ser_missions_slot_3_a = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             arbanon_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -910,6 +926,7 @@ vn_ser_missions_slot_3_a = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             skopia_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT 
@@ -981,6 +998,7 @@ vn_ser_missions_slot_3_b = {
         position = 8
         required_missions = { vn_ser_tsar_of_romans }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             government_rank = 6
             is_great_power = yes
             calc_true_if = {
@@ -1045,6 +1063,7 @@ vn_ser_missions_slot_4_a = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             zlatibor_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -1097,6 +1116,7 @@ vn_ser_missions_slot_4_a = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             belgrade_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -1146,6 +1166,7 @@ vn_ser_missions_slot_4_b = {
         position = 4
         required_missions = { vn_ser_bosnian_question }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             OR = {
                 calc_true_if = {
                     all_known_country = {
@@ -1204,6 +1225,7 @@ vn_ser_missions_slot_4_b = {
         position = 5
         required_missions = { vn_ser_dalmatian_conquest }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             naval_forcelimit = 30
 			calc_true_if = {
 				num_of_heavy_ship = 5
@@ -1237,6 +1259,7 @@ vn_ser_missions_slot_4_b = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             624 = { country_or_non_sovereign_subject_holds = ROOT }
             630 = { country_or_non_sovereign_subject_holds = ROOT }
             623 = { country_or_non_sovereign_subject_holds = ROOT }
@@ -1287,6 +1310,7 @@ vn_ser_missions_slot_4_b = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             chalkidiki_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
@@ -1380,6 +1404,7 @@ vn_ser_missions_slot_5_a = {
         position = 1
         required_missions = {  }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             OR = {
                 serbia_region = {
                     type = all
@@ -1401,6 +1426,7 @@ vn_ser_missions_slot_5_a = {
         position = 2
         required_missions = { vn_ser_deal_with_bogomils }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             if = {
                 limit = { uses_patriarch_authority = yes }
                 patriarch_authority = 0.5
@@ -1424,6 +1450,7 @@ vn_ser_missions_slot_5_a = {
         position = 3
         required_missions = { vn_ser_nomocanon_of_saint_sava }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             if = {
                 limit = { uses_patriarch_authority = yes }
                 patriarch_authority = 1
@@ -1460,6 +1487,7 @@ vn_ser_missions_slot_5_b = {
         position = 4
         required_missions = {  }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             army_tradition = 50
             army_size_percentage = 0.8
             land_forcelimit = 25
@@ -1476,6 +1504,7 @@ vn_ser_missions_slot_5_b = {
         position = 5
         required_missions = { vn_ser_banners_of_serbs }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             cavalry_fraction = 0.25
             num_of_cavalry = 8
             is_in_deficit = no
@@ -1503,6 +1532,7 @@ vn_ser_missions_slot_5_b = {
         required_missions = { }
         completed_by = 1331.1.1
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             num_of_mercenaries = 10
             is_in_deficit = no
             NOT = { num_of_loans = 1 }
@@ -1531,6 +1561,7 @@ vn_ser_missions_slot_5_c = {
         position = 7
         required_missions = { vn_ser_isles_of_ionian_sea }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
             if = {
                 limit = { exists = VEN }
                 navy_size = VEN
@@ -1589,6 +1620,7 @@ vn_ser_missions_slot_5_d = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         trigger = {
+			if = { limit = { ai = yes } ai = no }
 			thrace_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT

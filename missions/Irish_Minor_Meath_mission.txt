@@ -18,6 +18,7 @@ mth_column_7 = {
 		position = 1
 		
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			army_size_percentage = 1
 		}
 		
@@ -60,6 +61,7 @@ mth_column_8 = {
 		position = 1
 		
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			owns_all_provinces = {
 				 region = ireland_region
 			}
@@ -85,13 +87,14 @@ mth_column_8 = {
 		position = 2
 		
 		trigger = {
-				num_of_owned_provinces_with = {
-					value = 20
-						OR = {
-							region = scotland_region
-							region = british_isles_region
-						}
-				}
+			if = { limit = { ai = yes } ai = no }
+			num_of_owned_provinces_with = {
+				value = 20
+					OR = {
+						region = scotland_region
+						region = british_isles_region
+					}
+			}
 		}
 		
 		effect = {
@@ -124,6 +127,7 @@ mth_column_9 = {
 		position = 1
 		
 		trigger = {
+			if = { limit = { ai = yes } ai = no }
 			navy_size_percentage = 1
 		}
 		

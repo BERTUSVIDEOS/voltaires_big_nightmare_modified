@@ -1,5 +1,14 @@
 
-
+remove_idea_modifiers = {
+	remove_country_modifier = sav_defy_france_mission
+	remove_country_modifier = sav_conquer_sardinia_mission
+	remove_country_modifier = sav_conquer_aosta_mission
+	remove_country_modifier = sav_order_of_saint_maurice_mission
+	remove_country_modifier = nerfed_patron_of_music_modifier
+	remove_country_modifier = nerfed_lowered_power_of_barons_modifier
+	remove_country_modifier = nerfed_age_of_condottieri_modifier
+	remove_country_modifier = nerfed_merchant_princes_modifier
+}
 get_dynastic_bonus_modifier = {
 	remove_country_modifier = dynastic_bonus_1
 	remove_country_modifier = dynastic_bonus_2

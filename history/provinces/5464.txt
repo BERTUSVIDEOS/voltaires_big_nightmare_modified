@@ -25,6 +25,12 @@ discovered_by = north_american
 	remove_core = HUN
 	remove_core = SLO
 }
+1444.11.12 = {	#BERTUS MOD
+	add_core = HUN
+	owner = HUN
+	controller = HUN
+	remove_core = POL
+}
 1549.1.1 = { religion = protestant }
 1569.7.1 = {
 	owner = PLC

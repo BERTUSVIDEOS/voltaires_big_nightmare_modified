@@ -361,6 +361,7 @@ change_estate_land_share = {
 }
 1444.11.12 = {	#bertus mod
 	set_capital = 1818
+	set_country_flag = nerfed_ideas_flag
 	set_government_rank = 2
 	monarch = {
 		name = "Beatrice II"

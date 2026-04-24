@@ -59,6 +59,8 @@ discovered_by = north_american
 	add_core = XCB
 	remove_core = BOU
 	remove_core = FRA
+	remove_core = SKR
+	remove_core = AUV
 }
 1451.1.1 = {
 	owner = XCB

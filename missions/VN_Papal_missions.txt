@@ -529,12 +529,17 @@ vn_pap_missions_slot_2 = {
                 is_elector = yes
             }
             NOT = { war_with = emperor }
+            NOT = { truce_with = emperor }
         }
         effect = {
             add_country_modifier = {
                 name = pap_supremacy_and_infallibility_mission
                 duration = 9125
             }
+            add_reform_progress_big_effect = yes
+            add_estate_nobles_loyalty_effect = yes
+            add_estate_church_loyalty_effect = yes
+            add_estate_burghers_loyalty_effect = yes
         }
     }
     vn_pap_fight_for_the_pontificate = {
@@ -545,61 +550,25 @@ vn_pap_missions_slot_2 = {
 			if = { limit = { ai = yes } ai = no }
             is_papal_controller = yes
             OR = {
-                AND = {
-                    faction_in_power = pap_orsini
-                    faction_influence = {
-                        faction = pap_orsini
-                        influence = 60
+			    if = { limit = { NOT = { current_age = age_of_reformation } } current_age = age_of_reformation }
+                else = {
+                    custom_trigger_tooltip = {
+                        tooltip = vn_pap_fight_for_the_pontificate.tt
+                        has_global_flag = pax_romana
                     }
+                }
+                AND = {
                     NOT = { corruption = 0.01 }
-                }
-                AND = {
-                    faction_in_power = pap_roman_mob
-                    faction_influence = {
-                        faction = pap_roman_mob
-                        influence = 60
-                    }
                     devotion = 95
-                }
-                AND = {
-                    faction_in_power = pap_colonna
-                    faction_influence = {
-                        faction = pap_colonna
-                        influence = 60
-                    }
-                    stability = 2
-                }
-                custom_trigger_tooltip = {
-                    tooltip = vn_pap_fight_for_the_pontificate.tt
-                    has_global_flag = pax_romana
+                    stability = 3
+                    development = 1000
                 }
             }
         }
         effect = {
-            if = {
-                limit = {
-                    faction_in_power = pap_orsini
-                }
-                add_adm_power = 75
-            }
-            else_if = {
-                limit = {
-                    faction_in_power = pap_colonna
-                }
-                add_dip_power = 75
-            }
-            else_if = {
-                limit = {
-                    faction_in_power = pap_roman_mob
-                }
-                add_mil_power = 75
-            }
-            else = {
-                add_stability_or_adm_power = yes
-            }
             add_country_modifier = {
                 name = pap_fight_for_the_pontificate_mission
-                duration = 9125
+                duration = -1
             }
         }
     }
@@ -671,19 +640,19 @@ vn_pap_missions_slot_2 = {
                     emperor = {
                         culture_group = latin
                         capital_scope = {
-            superregion = italy_superregion
+                            superregion = italy_superregion
                         }
                     }
                 }
             }
             else = {
-                total_development = 1000
+				government_rank = 6
             }
         }
         effect = {
-            add_dip_power = 100
+            add_prestige_or_monarch_power = { amount = 100 } 
             emperor = {
-                add_prestige_or_monarch_power = { amount = 10 } 
+		        add_imperial_influence = 20
                 random_owned_province = {
                     limit = {
                         has_cardinal = no
@@ -1001,6 +970,10 @@ vn_pap_missions_slot_3 = {
         icon = sway_the_pope
         position = 1
         required_missions = { }
+        provinces_to_highlight = {
+            NOT = { owned_by = ROOT }
+            has_cardinal = yes
+        }
         trigger = {
 			if = { limit = { ai = yes } ai = no }
 			devotion = 90
@@ -1011,6 +984,7 @@ vn_pap_missions_slot_3 = {
                 name = pap_in_nomine_domini_mission
                 duration = 9125
             }
+            change_adm = 2
         }
     }
     vn_pap_guelphs_and_ghibellines = {
@@ -1053,7 +1027,10 @@ vn_pap_missions_slot_3 = {
             }
         }
         effect = {
-            add_reform_progress_big_effect = yes
+            add_army_tradition = 20
+            create_general = {
+                tradition = 100
+            }
         }
     }
     vn_pap_guelphian_victory = {
@@ -1195,37 +1172,10 @@ vn_pap_missions_slot_4 = {
     }
     has_country_shield = yes
 
-    vn_pap_conquer_latium = {
-        icon = republican_yearnings
-        position = 1
-        required_missions = {  }
-        provinces_to_highlight = {
-            owned_by = LZO
-        }
-        trigger = {
-			if = { limit = { ai = yes } ai = no }
-            LZO = {
-                OR = {
-                    exists = no
-                    is_subject_of = ROOT
-                }
-            }
-        }
-        effect = {
-            add_adm_power = 50
-            spoleto_area = {
-                limit = {
-                    NOT = { is_core = ROOT }
-                    NOT = { is_permanent_claim = ROOT }
-                }
-                add_permanent_claim = ROOT
-            }
-        }
-    }
     vn_pap_conquer_spoleto = {
         icon = fund_the_monasteries
-        position = 2
-        required_missions = { vn_pap_conquer_latium }
+        position = 1
+        required_missions = {  }
         provinces_to_highlight = {
             area = spoleto_area
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
@@ -1256,7 +1206,7 @@ vn_pap_missions_slot_4 = {
     }
     vn_pap_conquer_marche = {
         icon = dalmatian_conquest
-        position = 3
+        position = 2
         required_missions = { vn_pap_conquer_spoleto }
         provinces_to_highlight = {
             OR = {
@@ -1351,7 +1301,7 @@ vn_pap_missions_slot_4 = {
     }
     vn_pap_conquer_tuscany = {
         icon = mission_arts_and_letters
-        position = 4
+        position = 3
         required_missions = { vn_pap_conquer_marche }
         provinces_to_highlight = {
 			OR = {
@@ -1450,7 +1400,7 @@ vn_pap_missions_slot_4 = {
     }
     vn_pap_conquer_piedmont = {
         icon = unify_piedmont
-        position = 5
+        position = 4
         required_missions = { vn_pap_conquer_tuscany }
         provinces_to_highlight = {
 			OR = {
@@ -1545,7 +1495,7 @@ vn_pap_missions_slot_4 = {
     }
     vn_pap_conquer_lombardy = {
         icon = seize_lombardy
-        position = 6
+        position = 5
         required_missions = { vn_pap_conquer_piedmont vn_pap_conquer_venetia }
         provinces_to_highlight = {
 			OR = {
@@ -1589,21 +1539,26 @@ vn_pap_missions_slot_4 = {
     }
     vn_pap_empire_of_the_allmighty = {
         icon = kingdom_of_heaven
-        position = 7
+        position = 6
         required_missions = { vn_pap_conquer_lombardy }
+        provinces_to_highlight = {
+			OR = {
+                superregion = italy_superregion
+			}
+            NOT = { country_or_non_sovereign_subject_holds = ROOT }
+        }
         trigger = {
 			if = { limit = { ai = yes } ai = no }
             num_of_cities = 250
             has_reform = kingdom_of_god_reform
         }
         effect = {
-            if = {
-                limit = { is_absolutism_active = yes }
-                add_absolutism = 10
-            }
-            else = {
-                add_prestige_or_monarch_power = { amount = 10 } 
-                add_devotion = 10
+            add_prestige_or_monarch_power = { amount = 100 } 
+            add_absolutism = 10
+            add_devotion = 10
+            add_country_modifier = {
+                name = pap_empire_of_the_allmighty_mission
+                duration = -1
             }
             italy_superregion = {
                 limit = {
@@ -1611,10 +1566,6 @@ vn_pap_missions_slot_4 = {
                     NOT = { is_permanent_claim = ROOT }
                 }
                 add_permanent_claim = ROOT
-            }
-            add_country_modifier = {
-                name = pap_empire_of_the_allmighty_mission
-                duration = 36500
             }
         }
     }
@@ -1770,12 +1721,16 @@ vn_pap_missions_slot_5 = {
 				}
 				curia_treasury_size = 2500
 			}
-            treasury = 500
+            years_of_income = 2.0
             is_in_deficit = no
             NOT = { num_of_loans = 1 }
         }
         effect = {
-            add_inflation = -1
+            add_prestige_or_monarch_power = { amount = 50 } 
+            add_country_modifier = {
+                name = growing_economy
+                duration = 7300
+            }
         }
     }
     vn_pap_catholic_splendour = {
@@ -1784,26 +1739,26 @@ vn_pap_missions_slot_5 = {
         required_missions = { vn_pap_papal_treasuries }
         trigger = {
 			if = { limit = { ai = yes } ai = no }
-			if = {
-				limit = { has_dlc = "Mandate of Heaven" }
-				OR = {
-					in_golden_age = yes
-					has_had_golden_age = yes
-				}
-            }
             stability = 3
+            is_papal_controller = yes
+            is_defender_of_faith = yes
+            is_defender_of_faith_of_tier = 5
             is_at_war = no
+            italy_superregion = {
+                type = all
+                NOT = { religion_group = christian }
+            }
         }
         effect = {
-            add_years_of_income = 1
-            add_estate_nobles_loyalty_effect = yes
-            add_estate_church_loyalty_effect = yes
-            add_estate_burghers_loyalty_effect = yes
+            add_country_modifier = {
+                name = pap_fight_for_the_pontificate_mission
+                duration = -1
+            }
         }
     }
     vn_pap_conquer_ferrara = {
         icon = secure_the_republic
-        position = 4
+        position = 3
         required_missions = { vn_pap_conquer_marche }
         provinces_to_highlight = {
             OR = {
@@ -1869,7 +1824,7 @@ vn_pap_missions_slot_5 = {
     }
     vn_pap_conquer_venetia = {
         icon = mission_control_venice
-        position = 5
+        position = 4
         required_missions = { vn_pap_conquer_ferrara }
         provinces_to_highlight = {
             OR = {
@@ -1902,37 +1857,44 @@ vn_pap_missions_slot_5 = {
     }
     vn_pap_a_courteous_gift = {
         icon = negotiate_for_avignon
-        position = 6
+        position = 5
         required_missions = {  }
-        completed_by = 1309.3.9
         provinces_to_highlight = {
             province_id = 202
-            OR = {
-                NOT = { owned_by = ROOT }
-                NOT = { is_core = ROOT }
-            }
         }
         trigger = {
 			if = { limit = { ai = yes } ai = no }
-            owns_core_province = 202
+            202 = {
+                owner = {
+                    has_opinion = {
+                        who = PAP
+                        value = 150
+                    }
+                    PAP = {
+                        has_opinion = {
+                            who = PREV
+                            value = 150
+                        }
+                    }
+                }
+            }
         }
         effect = {
             202 = {
-                add_base_tax = 1
-                add_base_production = 1
-                add_base_manpower = 1
-                add_province_modifier = {
-                    name = pap_a_courteous_gift_mission
-                    duration = 9125
+                owner = {
+                    add_papal_influence = 50
+                    add_prestige_or_monarch_power = { amount = 20 } 
                 }
+                remove_core = owner
+                cede_province = ROOT
+                add_core = ROOT
             }
         }
     }
     vn_pap_babylonian_captivity = {
         icon = sway_the_pope
-        position = 7
+        position = 6
         required_missions = { vn_pap_a_courteous_gift }
-        completed_by = 1378.9.20
         trigger = {
 			if = { limit = { ai = yes } ai = no }
             is_religion_enabled = catholique
@@ -1944,39 +1906,33 @@ vn_pap_missions_slot_5 = {
                 }
             }
             monthly_dip = 12
+            202 = {
+                development = 20
+                owned_by = ROOT
+            }
         }
         effect = {
-            add_prestige_or_monarch_power = { amount = 5 } 
-            add_dip_power = 50
-            if = {
-                limit = {
-                    AVI = {
-                        exists = yes
-                        is_subject_other_than_tributary_trigger = yes
-                        religion = catholique
-                        has_reform = papacy_reform
-                    }
-                }
-                add_casus_belli = {
-                    type = cb_vassalize_mission
-                    target = AVI
-                    months = 9125
-                }
-            }
-            else = {
-                202 = {
-                    add_permanent_claim = ROOT
+            202 = {
+                add_base_tax = 2
+                add_base_production = 2
+                add_base_manpower = 2
+                add_province_modifier = {
+                    name = pap_a_courteous_gift_mission
+                    duration = -1
                 }
             }
         }
     }
     vn_pap_end_anti_papacy = {
         icon = spread_piety
-        position = 8
+        position = 7
         required_missions = { vn_pap_babylonian_captivity }
         trigger = {
 			if = { limit = { ai = yes } ai = no }
-            202 = { country_or_non_sovereign_subject_holds = ROOT }
+            202 = {
+                development = 40
+                owned_by = ROOT
+            }
         }
         effect = {
             add_prestige_or_monarch_power = { amount = 25 } 
@@ -1986,14 +1942,40 @@ vn_pap_missions_slot_5 = {
                     limit = { religion = catholique }
                     add_prestige = -10
                     add_papal_influence = -10
+                    change_religion = catholic
                 }
             }
+            202 = {
+                add_province_modifier = {
+                    name = vn_pap_end_anti_papacy_modifier
+                    duration = -1
+                }
+            }
+        }
+    }
+    vn_pap_conquer_latium = {
+        icon = republican_yearnings
+        position = 8
+        required_missions = {  }
+        provinces_to_highlight = {
+            province_id = 2708
+        }
+        trigger = {
+			if = { limit = { ai = yes } ai = no }
+            2708 = {
+                development = 10
+            }
+        }
+        effect = {
+            set_capital = 2708
+            add_mil_power = 100
+            change_mil = 2
         }
     }
     vn_pap_the_city_of_god = {
         icon = develop_our_capital
         position = 9
-        required_missions = {  }
+        required_missions = { vn_pap_conquer_latium }
         provinces_to_highlight = {
             province_id = 2708
         }

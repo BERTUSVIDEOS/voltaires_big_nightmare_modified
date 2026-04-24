@@ -35,6 +35,8 @@ add_core = RDZ
 	controller = RDZ
 	add_core = RDZ
 	remove_core = FRA
+	remove_core = AMG
+	remove_core = AUV
 }
 1477.8.4 = {
 	owner = BOU

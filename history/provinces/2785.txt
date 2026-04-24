@@ -1,4 +1,4 @@
-capital = "Ciechanów"
+capital = "Ciechanï¿½w"
 culture = mazovian
 religion = catholic
 trade_goods = lumber
@@ -22,6 +22,9 @@ add_core = MAZ
 	controller = MAZ
 	add_core = MAZ
 	remove_core = RAA
+}
+1444.11.12 = {	#BERTUS MOD
+	fort_14th = yes
 }
 1526.3.9 = {
 	owner = POL

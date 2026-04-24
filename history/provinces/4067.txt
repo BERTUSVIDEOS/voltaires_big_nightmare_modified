@@ -35,6 +35,7 @@ discovered_by = muslim
 	owner = FOI
 	controller = FOI
 	add_core = FOI
+	remove_core = AMG
 }
 1497.6.3 = {
 	owner = ALE

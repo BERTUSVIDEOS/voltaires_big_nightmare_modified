@@ -30,6 +30,7 @@ add_core = XVL
 	controller = PRO
 	add_core = PRO
 	remove_core = FRA
+	remove_core = DAU
 }
 1446.9.27 = { revolt = { type = pretender_rebels size = 0 } controller = REB }
 1461.7.22 = { revolt = {} controller = FRA }

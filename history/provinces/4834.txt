@@ -25,9 +25,9 @@ add_core = SKL
 }
 1337.1.1 = { fort_14th = no fort_15th = yes }
 1444.11.12 = {	#BERTUS MOD
-	owner = WRM
-	controller = WRM
-	add_core = WRM
+	owner = SKL
+	controller = SKL
+	add_core = SKL
 	remove_core = TEU
 }
 1454.2.10 = {

@@ -13,6 +13,7 @@ add_core = MGG
 add_core = CEU
 fort_14th = yes
 
+
 1058.1.1 = {
 	owner = GRA
 	controller = GRA

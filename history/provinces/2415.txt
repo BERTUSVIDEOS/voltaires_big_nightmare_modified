@@ -1,4 +1,4 @@
-capital = "Luków" 
+capital = "Lukï¿½w" 
 culture = polish
 religion = catholic
 trade_goods = rye
@@ -21,6 +21,14 @@ add_core = SDZ
 	owner = POL
 	controller = POL
 	add_core = POL
+}
+1444.11.12 = {	#BERTUS MOD
+	owner = MAZ
+	controller = MAZ
+	add_core = MAZ
+	remove_core = POL
+	remove_core = SDZ
+	add_base_tax = 2
 }
 1569.7.1 = {
 	owner = PLC

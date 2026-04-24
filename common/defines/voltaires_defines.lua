@@ -79,6 +79,8 @@ NDefines.NMilitary.BATTLE_DAILY_MORALE_DAMAGE = 0       --0.01→0	-- Deployed t
 NDefines.NMilitary.NAVAL_SUPPLY_RANGE = 300             --150→300 						-- Supply range for ships.
 NDefines.NMilitary.MERCENARY_COMPANY_MIN_REGIMENTS = 10     --4→10			-- Minimum regiments
 NDefines.NMilitary.MERCENARY_COMPANY_MAX_REGIMENTS = 40		--60→40     	-- Maximum regiments
+NDefines.NMilitary.TRANSPORT_COST = 5                       -- 12→5			-- _MDEF_TRANSPORT_COST = 10,
+NDefines.NMilitary.TRANSPORT_TIME = 30                      -- 365→30	 	-- _MDEF_TRANSPORT_TIME = 10,
 
 NDefines.NGovernment.GOVERNMENT_REFORM_COST_CENTRALIZE_STATE = 20.0	                --50→20
 NDefines.NGovernment.CENTRALIZE_STATE_ADM_COST = 100	                            --50→100
@@ -99,9 +101,9 @@ NDefines.NCountry.PRESTIGE_GAIN_FOR_GOV_RANK_3 = 10
 NDefines.NCountry.MIN_PRESTIGE_FOR_GOV_RANK_2 = 10
 NDefines.NCountry.MIN_PRESTIGE_FOR_GOV_RANK_3 = 25
 NDefines.NCountry.MIN_DEVELOPMENT_FOR_GOV_RANK_2 = 100
-NDefines.NCountry.MIN_DEVELOPMENT_FOR_GOV_RANK_3 = 250
+NDefines.NCountry.MIN_DEVELOPMENT_FOR_GOV_RANK_3 = 300
 NDefines.NCountry.MIN_PRESTIGE_FOR_GOV_RANK_X = 50
-NDefines.NCountry.ADDITIONAL_MIN_DEVELOPMENT_FOR_GOV_RANK_X = 250
+NDefines.NCountry.ADDITIONAL_MIN_DEVELOPMENT_FOR_GOV_RANK_X = 300
 NDefines.NCountry.MAX_GOV_RANK = 6
 NDefines.NCountry.EXPLORE_COAST_EVENT_CHANCE = 0
 NDefines.NCountry.CIRCUMNAVIGATION_PROVINCE_1 = 3004

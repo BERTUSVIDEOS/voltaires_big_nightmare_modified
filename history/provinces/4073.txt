@@ -39,6 +39,7 @@ discovered_by = north_american
 	controller = RDZ
 	add_core = RDZ
 	remove_core = FRA
+	remove_core = AMG
 }
 1497.6.3 = {
 	owner = ALE

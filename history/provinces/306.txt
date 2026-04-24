@@ -46,6 +46,8 @@ add_core = XRU
 	add_core = SKR
 	remove_core = FRA
 	remove_core = TOU
+	remove_core = AMG
+	remove_core = RDZ
 }
 1497.6.3 = {
 	owner = ALE

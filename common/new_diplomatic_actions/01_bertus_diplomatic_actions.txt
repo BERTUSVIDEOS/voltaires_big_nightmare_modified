@@ -131,7 +131,7 @@ send_bonus_action = {
 	require_acceptance = no
 	
 	is_visible = {
-		start_date = 1444.11.13
+		start_date = 1444.12.1
 		TAG = CNA
 		ai = no
     }

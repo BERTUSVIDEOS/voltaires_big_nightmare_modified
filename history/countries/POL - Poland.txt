@@ -313,6 +313,24 @@ historical_neutral = HUN
 	}
 	add_truce_with = HUN
 }
+1444.11.12 = {	#bertus mod
+	monarch = {
+		name = "Kazimierz IV"
+		dynasty = "Jagiellon"
+		birth_date = 1427.11.30
+		adm = 1
+		dip = 1
+		mil = 1
+	}
+	clear_scripted_personalities = yes
+	every_owned_province = {
+		set_local_autonomy = 75
+	}
+	every_province = {
+		limit = { core_claim = POL }
+		remove_core = POL
+	}
+}
 1447.6.25 = {
 	monarch = {
 		name = "Kazimierz IV"
@@ -437,7 +455,7 @@ historical_neutral = HUN
 	queen = {
 		country_of_origin = TRA
 		name = "Barbara"
-		dynasty = "Zápolya"
+		dynasty = "Zï¿½polya"
 		birth_date = 1490.1.1
 		death_date = 1515.10.2
 		culture = transylvanian

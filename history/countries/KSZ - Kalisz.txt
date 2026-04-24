@@ -63,8 +63,8 @@ capital = 593
 		mil = 3
 	}
 }
-#1229-1234 united
-#1238-1247 united
+# 1229-1234 united
+# 1238-1247 united
 1239.6.5 = {
 	monarch = {
 		name = "Boleslaw I"
@@ -77,6 +77,18 @@ capital = 593
 }
 1249.1.1 = { capital = 2757 }
 1250.1.1 = { capital = 593 }
-#1250-1253 united
-#1257-1277 united
-#1279 done
+# 1250-1253 united
+# 1257-1277 united
+# 1279 done
+1444.11.12 = {	#bertus mod
+	set_government_rank = 2
+	monarch = {
+		name = "Zlewikkus I"
+		dynasty = "Piast"
+		birth_date = 1414.1.1
+		adm = 4
+		dip = 4
+		mil = 4
+	}
+	clear_scripted_personalities = yes
+}

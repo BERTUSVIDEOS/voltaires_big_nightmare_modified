@@ -18,7 +18,7 @@ country_event = {
 	
 	
 	trigger = {
-		NOT = { start_date = 1444.11.13 }
+		NOT = { start_date = 1444.12.1 }
 		NOT = { exists = SPA }
 		OR = {
 			AND = {
@@ -245,7 +245,7 @@ country_event = {
 		name = "flavor_spa.EVTOPTA3150"
 		define_advisor = {
 			type = inquisitor
-			name = "Tomás de Torquemada"
+			name = "Tomï¿½s de Torquemada"
 			location = 2720 # Castilla La Vieja 
 			discount = yes
 			skill = 1
@@ -363,7 +363,7 @@ country_event = {
 		add_years_of_income = -0.25
 		set_global_flag = columbus_happened
 		define_explorer = {
-			name = "Cristóbal Colón"
+			name = "Cristï¿½bal Colï¿½n"
 			fire = 2
 			shock = 2
 			manuever = 6
@@ -558,7 +558,7 @@ country_event = {
 }
 
 
-# Casa de Contratación
+# Casa de Contrataciï¿½n
 country_event = {
 	id = flavor_spa.1003
 	title = "flavor_spa.EVTNAME1003"
@@ -1226,7 +1226,7 @@ country_event = {
 	}
 }
 
-# José Monino
+# Josï¿½ Monino
 country_event = {
 	id = flavor_spa.3094
 	title = "flavor_spa.EVTNAME3094"
@@ -1257,7 +1257,7 @@ country_event = {
 		}
 		define_advisor = {
 			type = statesman
-			name = "José Monino"
+			name = "Josï¿½ Monino"
 			culture = mozarabic
 			discount = yes
 			skill = 3
@@ -1331,7 +1331,7 @@ country_event = {
 	}
 }
 
-# Tomás Luis de Victoria
+# Tomï¿½s Luis de Victoria
 country_event = {
 	id = flavor_spa.1101
 	title = "flavor_spa.EVTNAME1101"
@@ -1562,7 +1562,7 @@ country_event = {
 	
 	
 
-	option = {		# Allow Sepúlveda's arguments to shape our policies
+	option = {		# Allow Sepï¿½lveda's arguments to shape our policies
 		name = "flavor_spa.2.a"
 		ai_chance = {
 			factor = 15
@@ -1861,7 +1861,7 @@ country_event = {
 	}
 }
 
-# Sólo Madrid es corte
+# Sï¿½lo Madrid es corte
 country_event = {
 	id = flavor_spa.6
 	title = "flavor_spa.6.t"
@@ -2004,7 +2004,7 @@ country_event = {
 			}
 			spawn_rebels = {
 				type = nationalist_rebels
-				leader = "Ibn Banû ‘Umayya"
+				leader = "Ibn Banï¿½ ï¿½Umayya"
 				friend = GRA
 				size = 2
 				win = yes

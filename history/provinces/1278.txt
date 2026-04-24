@@ -7,7 +7,7 @@ base_tax = 1
 base_production = 1
 trade_goods = honey
 base_manpower = 1
-capital = "Gauré"
+capital = "Gaurï¿½"
 is_city = yes
 add_core = XLM
 
@@ -33,6 +33,7 @@ add_core = XLM
 	owner = FOI
 	controller = FOI
 	add_core = FOI
+	remove_core = AMG
 }
 1497.6.3 = {
 	owner = ALE

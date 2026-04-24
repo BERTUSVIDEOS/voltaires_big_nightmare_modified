@@ -79,6 +79,17 @@ add_core = KSZ
 	controller = POL
 	add_core = POL
 }
+1444.11.12 = {	#BERTUS MOD
+	owner = KSZ
+	controller = KSZ
+	add_core = KSZ
+	remove_core = POL
+	remove_core = WKP
+	add_base_tax = 2
+	add_base_manpower = 2
+	add_base_production = 2
+	fort_15th = yes
+}
 1569.7.1 = {
 	owner = PLC
 	controller = PLC

@@ -65,6 +65,7 @@ discovered_by = north_american
 	controller = FOI
 	add_core = FOI
 	remove_core = FRA
+	remove_core = GUY
 	fort_15th = yes
 }
 1557.1.1 = { religion = reformed }

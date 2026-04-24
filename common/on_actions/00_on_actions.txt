@@ -9,7 +9,16 @@ on_startup = {
 	}
 	if = {
 		limit = {
-			start_date = 1444.11.13
+			start_date = 1444.12.1
+		}
+		every_country = {
+			limit = {
+				ai = no
+			}
+			add_country_modifier = {
+				name = starting_player_bonus_modifier
+				duration = 3650
+			}
 		}
 		if = {
 			limit = {

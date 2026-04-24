@@ -27,6 +27,7 @@ add_core = UTR
 	owner = AUC
 	controller = AUC
 	add_core = AUC
+	remove_core = UTR
 }
 1549.11.4 = {
 	owner = NED

@@ -53,6 +53,7 @@ add_core = XSZ
 	cede_province = ---
 	owner = ---
 	controller = ---
+	remove_core = MAZ
 }
 1462.7.1 = {
 	owner = POL

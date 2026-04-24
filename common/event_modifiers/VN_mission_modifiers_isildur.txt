@@ -555,8 +555,8 @@ ase_continental_foothold_mission = {
 }
 
 #Milan
-mlo_university_of_pavia_mission = {
-    local_institution_spread = 0.25
+mlo_university_of_pavia_mission = { 	# bertus mod
+	institution_growth = 10
     local_development_cost = -0.1
     allowed_num_of_buildings = 1
 }
@@ -575,8 +575,8 @@ mlo_safeguard_alps_mission = {
     fort_maintenance_modifier = -0.2
     defensiveness = 0.2
 }
-mlo_po_trading_hubs_mission = {
-    trade_value = 5
+mlo_po_trading_hubs_mission = { 	#bertus mod
+	province_trade_power_value = 25
 }
 mlo_prosperous_pisa_mission = {
     local_monthly_devastation = -0.1

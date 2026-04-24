@@ -1,4 +1,4 @@
-capital = "Wegrów"
+capital = "Wegrï¿½w"
 culture = mazovian
 religion = catholic
 trade_goods = vegetables
@@ -17,6 +17,12 @@ add_core = MAZ
 	add_core = LIT
 	add_core = BTY
 	remove_core = MAZ
+}
+1444.11.12 = {	#BERTUS MOD
+	owner = MAZ
+	controller = MAZ
+	add_core = MAZ
+	remove_core = LIT
 }
 1569.7.1 = {
 	owner = PLC

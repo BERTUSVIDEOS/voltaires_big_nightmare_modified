@@ -19,6 +19,7 @@ discovered_by = muslim
 	owner = MUN
 	controller = MUN
 	add_core = MUN
+	remove_core = UTR
 }
 1528.10.20 = {
 	owner = BNT

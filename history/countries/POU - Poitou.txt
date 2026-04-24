@@ -37,4 +37,16 @@ fixed_capital = 710
 		dip = 5
 		mil = 2
 	}
-} #1360 to eng
+} # 1360 to eng
+
+1444.11.12 = {	#bertus mod
+	monarch = {
+		name = "Jean II"
+		dynasty = "de Valois"
+		birth_date = 1414.1.13
+		adm = 5
+		dip = 5
+		mil = 5
+	}
+	add_ruler_personality = conqueror_personality
+}

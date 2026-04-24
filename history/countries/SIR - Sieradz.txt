@@ -60,3 +60,14 @@ capital = 1993
 }
 #done 1352.4.1
 1352.4.1 = { capital = 1993 }
+1444.11.12 = {	#bertus mod
+	set_government_rank = 2
+	monarch = {
+		name = "Wladyslaw II"
+		dynasty = "Piast"
+		birth_date = 1414.1.1
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}

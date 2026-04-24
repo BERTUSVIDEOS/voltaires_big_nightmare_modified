@@ -1,5 +1,5 @@
 ﻿l_english:
-
+ starting_player_bonus_modifier:0 "Starting player bonus"
  monthly_military_reform_power_gain:0 "Monthly Military Reform"
  bertus_events.0007.t:0 "Direction of Our New Country"
  bertus_events.0007.d:0 "Our newly found country of $COUNTRY$ requires guidance. We must reform our government to ones of the old world if we are to be taken seriously in the political arena - the question is: what model should we seek to strive for?"
@@ -268,7 +268,8 @@
  bertus_events.0003.title:0 "Treasury Stolen"
  bertus_events.0003.desc:0 ""
  bertus_events.0003.a:0 "Damn"
- CANNOT_AGAINST_GM:0 "GM cant have diplomatic interactions"
+ CANNOT_AGAINST_GM:0 "GM can't have diplomatic interactions"
+ CANNOT_AGAINST_players:0 "Can't against players"
  gm_bonus:0 "GM"
  send_bonus_action_title:0 "GM Actions"
  send_bonus_action_tooltip:0 "GM Actions"

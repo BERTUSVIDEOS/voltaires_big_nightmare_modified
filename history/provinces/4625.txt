@@ -15,6 +15,7 @@ extra_cost = 16
 center_of_trade = 2
 fort_14th = yes
 
+
 1058.1.1 = {
 	owner = GRA
 	controller = GRA

@@ -1,4 +1,4 @@
-capital = "Ostrzeszów" 
+capital = "Ostrzeszï¿½w" 
 culture = polish
 religion = catholic
 trade_goods = salt
@@ -78,6 +78,13 @@ add_core = KSZ
 	owner = POL
 	controller = POL
 	add_core = POL
+}
+1444.11.12 = {	#BERTUS MOD
+	owner = KSZ
+	controller = KSZ
+	add_core = KSZ
+	remove_core = POL
+	remove_core = WKP
 }
 1569.7.1 = {
 	owner = PLC

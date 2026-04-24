@@ -1,4 +1,4 @@
-capital = "Czarnków" 
+capital = "Czarnkï¿½w" 
 culture = kashubian
 religion = slavic_pagan
 trade_goods = beer
@@ -29,6 +29,15 @@ add_core = POM
 	owner = POL
 	controller = POL
 	add_core = POL
+}
+1444.11.12 = {	#BERTUS MOD
+	owner = WKP
+	controller = WKP
+	add_core = WKP
+	remove_core = POL
+	add_base_tax = 2
+	add_base_manpower = 2
+	fort_14th = yes
 }
 1569.7.1 = {
 	owner = PLC

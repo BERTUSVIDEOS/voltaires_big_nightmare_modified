@@ -8822,6 +8822,7 @@ country_event = {
 		name = ideagroups.1.a #Yes Please!
 		ai_chance = { factor = 1 }
 		trigger = { has_custom_ideas = no }
+		remove_idea_modifiers = yes
 		swap_free_idea_group = yes		#keep progress
 	}
 	option = {

@@ -45,6 +45,12 @@ fort_14th = yes
 	add_core = PCK
 	remove_core = RAA
 }
+1444.11.12 = {	#BERTUS MOD
+	owner = MAZ
+	controller = MAZ
+	add_core = MAZ
+	remove_core = PCK
+}
 1462.2.27 = {
 	owner = MAZ
 	controller = MAZ

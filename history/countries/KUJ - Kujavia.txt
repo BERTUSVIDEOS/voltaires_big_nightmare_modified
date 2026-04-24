@@ -120,3 +120,15 @@ capital = 2756
 	}
 }
 #done 1364.4.5
+1444.11.12 = {	#bertus mod
+	set_government_rank = 2
+	monarch = {
+		name = "Kazimierz III"
+		dynasty = "Piast"
+		birth_date = 1414.1.1
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+	clear_scripted_personalities = yes
+}

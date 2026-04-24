@@ -69,6 +69,13 @@ extra_cost = 8
 	add_core = POL
 }
 1337.1.1 = { fort_14th = no fort_15th = yes }
+1444.11.12 = {	#BERTUS MOD
+	owner = WKP
+	controller = WKP
+	add_core = WKP
+	remove_core = POL
+	remove_core = KSZ
+}
 1569.7.1 = {
 	owner = PLC
 	controller = PLC

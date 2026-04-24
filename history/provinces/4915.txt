@@ -50,6 +50,14 @@ add_core = SIL
 	remove_core = CIE
 	hre = no
 }
+1444.11.12 = {	#BERTUS MOD
+	owner = RCB
+	controller = RCB
+	add_core = RCB
+	remove_core = POL
+	remove_core = KRA
+	remove_core = SDZ
+}
 1569.7.1 = {
 	owner = PLC
 	controller = PLC

@@ -23,7 +23,6 @@ discovered_by = north_american
 	owner = KMM
 	controller = KMM
 	add_core = KMM
-	add_core = FOI
 }
 1453.1.1 = {
 	owner = FRA

@@ -995,8 +995,9 @@ vn_ara_missions_slot_3_a = {
 				set_formable_tier = {
 					tier = 3
 				}
-				custom_tooltip = "Upgrade Ideas"
-				country_event = { id = ideagroups.1 } #Swap Ideas
+                remove_idea_modifiers = yes
+				custom_tooltip = upgrade_ideas_tt
+                swap_free_idea_group = yes		#keep progress
 			}
 			add_legitimacy = 20
 			madrid_area = {

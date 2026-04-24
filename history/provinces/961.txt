@@ -24,6 +24,14 @@ latent_trade_goods = { steel }
 	controller = POL
 	add_core = POL
 }
+1444.11.12 = {	#BERTUS MOD
+	owner = SDZ
+	controller = SDZ
+	add_core = SDZ
+	remove_core = POL
+	remove_core = KRA
+	fort_14th = yes
+}
 1558.1.1 = { religion = protestant }
 1569.7.1 = {
 	owner = PLC

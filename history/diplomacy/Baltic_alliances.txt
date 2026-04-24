@@ -33,6 +33,12 @@ vassal = {
 	first = POL
 	second = MAZ
 	start_date = 1384.10.16
+	end_date = 1444.11.1
+}
+vassal = { 	#bertus mod
+	first = POL
+	second = MAZ
+	start_date = 1444.12.2
 	end_date = 1526.3.9
 }
 vassal = {
@@ -69,9 +75,15 @@ vassal = {
 	first = POL
 	second = PCK
 	start_date = 1434.1.1
-	end_date = 1462.2.27
+	end_date = 1444.11.31
 }
 vassal = {
+	first = POL
+	second = PCK
+	start_date = 1444.12.2
+	end_date = 1462.2.27
+}
+vassal = { 	#bertus mod
 	first = POL
 	second = PCK
 	start_date = 1471.1.1

@@ -11,6 +11,7 @@ owner = BYZ
 controller = BYZ
 add_core = BYZ
 
+
 1204.5.16 = {
 	owner = LAE
 	controller = LAE
@@ -29,7 +30,7 @@ add_core = BYZ
 1453.5.29 = {
 	owner = TUR
 	add_core = TUR
-	capital = "Kumköy"
+	capital = "Kumkï¿½y"
 }
 1459.1.1 = { 
 	culture = turkish

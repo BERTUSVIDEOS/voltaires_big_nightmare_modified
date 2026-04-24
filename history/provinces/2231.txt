@@ -36,6 +36,7 @@ discovered_by = north_american
 	controller = PRO
 	add_core = PRO
 	remove_core = FRA
+	remove_core = DAU
 	fort_15th = yes
 }
 1446.9.27 = { revolt = { type = pretender_rebels size = 0 } controller = REB }

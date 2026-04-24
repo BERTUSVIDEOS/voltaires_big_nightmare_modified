@@ -17,8 +17,8 @@ capital = 4052
 	}
 	queen = {
 		country_of_origin = HUN
-		name = "Erzsébet"
-		dynasty = "Árpád"
+		name = "Erzsï¿½bet"
+		dynasty = "ï¿½rpï¿½d"
 		birth_date = 1128.1.1
 		death_date = 1154.7.21
 		culture = hungarian
@@ -187,7 +187,7 @@ capital = 4052
 	queen = {
 		country_of_origin = SWE
 		name = "Rikissa"
-		dynasty = "af Bjälbo"
+		dynasty = "af Bjï¿½lbo"
 		birth_date = 1270.1.1
 		death_date = 1292.1.1
 		culture = swedish
@@ -197,5 +197,17 @@ capital = 4052
 		mil = 2
 	}
 }
-#1296.2.8 under SDZ
-#1300.1.1 done
+# 1296.2.8 under SDZ
+# 1300.1.1 done
+1444.11.12 = {	#bertus mod
+	set_government_rank = 2
+	monarch = {
+		name = "Przemysl III"
+		dynasty = "Piast"
+		birth_date = 1414.1.1
+		adm = 4
+		dip = 4
+		mil = 4
+	}
+	clear_scripted_personalities = yes
+}

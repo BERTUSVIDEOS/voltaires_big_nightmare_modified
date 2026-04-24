@@ -104,25 +104,34 @@ offermilaccess = {
 }
 declarewar = {
 	condition = {	#bertus mod
-		tooltip = CANNOT_AGAINST_GM
+		tooltip = CANNOT_AGAINST_players
 		potential = {
-			start_date = 1444.11.13
+			start_date = 1444.12.1
 			OR = {
-				tag = TUR
-				tag = HUN
-				tag = BOH
-				tag = POL
-				tag = MAM
+				is_or_was_tag = TUR
+				is_or_was_tag = HUN
+				is_or_was_tag = POL
+				is_or_was_tag = MAM
 			}
 		}
 		allow = {
-			ai = no
+			FROM = {
+				ai = yes
+				if = {
+					limit = {
+						is_subject = yes
+					}
+					overlord = {
+						ai = yes
+					}
+				}
+			}
 		}
 	}
 	condition = {	#bertus mod
 		tooltip = CANNOT_AGAINST_GM
 		potential = {
-			start_date = 1444.11.13
+			start_date = 1444.12.1
 		}
 		allow = {
 			FROM = {
@@ -212,7 +221,7 @@ allianceaction = {
 	condition = {	#bertus mod
 		tooltip = CANNOT_AGAINST_GM
 		potential = {
-			start_date = 1444.11.13
+			start_date = 1444.12.1
 		}
 		allow = {
 			FROM = {
@@ -223,12 +232,13 @@ allianceaction = {
 	condition = {	#bertus mod
 		tooltip = AI_CANNOT_DECLARE_WHEN_STABILITY_LOSS
 		potential = {
+			start_date = 1444.12.1
 			OR = {
-				tag = TUR
-				tag = HUN
-				tag = BOH
-				tag = POL
-				tag = MAM
+				is_or_was_tag = TUR
+				is_or_was_tag = HUN
+				is_or_was_tag = BOH
+				is_or_was_tag = POL
+				is_or_was_tag = MAM
 			}
 		}
 		allow = {
@@ -238,13 +248,14 @@ allianceaction = {
 	condition = {	#bertus mod
 		tooltip = AI_CANNOT_DECLARE_WHEN_STABILITY_LOSS
 		potential = {
+			start_date = 1444.12.1
 			FROM = {
 				OR = {
-					tag = TUR
-					tag = HUN
-					tag = BOH
-					tag = POL
-					tag = MAM
+					is_or_was_tag = TUR
+					is_or_was_tag = HUN
+					is_or_was_tag = BOH
+					is_or_was_tag = POL
+					is_or_was_tag = MAM
 				}
 			}
 		}
@@ -405,13 +416,12 @@ enforce_peace = {
 	condition = {	#bertus mod
 		tooltip = CANNOT_AGAINST_GM
 		potential = {
-			start_date = 1444.11.13
+			start_date = 1444.12.1
 			OR = {
-				tag = TUR
-				tag = HUN
-				tag = BOH
-				tag = POL
-				tag = MAM
+				is_or_was_tag = TUR
+				is_or_was_tag = HUN
+				is_or_was_tag = POL
+				is_or_was_tag = MAM
 			}
 		}
 		allow = {
@@ -421,7 +431,7 @@ enforce_peace = {
 	condition = {	#bertus mod
 		tooltip = CANNOT_AGAINST_GM
 		potential = {
-			start_date = 1444.11.13
+			start_date = 1444.12.1
 		}
 		allow = {
 			FROM = {
@@ -525,7 +535,7 @@ warningaction = {
 	condition = {	#bertus mod
 		tooltip = CANNOT_AGAINST_GM
 		potential = {
-			start_date = 1444.11.13
+			start_date = 1444.12.1
 		}
 		allow = {
 			FROM = {
@@ -548,7 +558,7 @@ tributary_state_action = {
 	condition = {	#bertus mod
 		tooltip = CANNOT_AGAINST_GM
 		potential = {
-			start_date = 1444.11.13
+			start_date = 1444.12.1
 		}
 		allow = {
 			FROM = {
@@ -599,7 +609,7 @@ ask_for_tributary_state_action = {
 	condition = {	#bertus mod
 		tooltip = CANNOT_AGAINST_GM
 		potential = {
-			start_date = 1444.11.13
+			start_date = 1444.12.1
 		}
 		allow = {
 			FROM = {
@@ -635,7 +645,7 @@ invite_to_trade_league = {
 	condition = {	#bertus mod
 		tooltip = CANNOT_AGAINST_GM
 		potential = {
-			start_date = 1444.11.13
+			start_date = 1444.12.1
 		}
 		allow = {
 			FROM = {
@@ -677,7 +687,7 @@ tributary_state_action = {
 	condition = {	#bertus mod
 		tooltip = CANNOT_AGAINST_GM
 		potential = {
-			start_date = 1444.11.13
+			start_date = 1444.12.1
 		}
 		allow = {
 			FROM = {
@@ -730,7 +740,7 @@ ask_for_tributary_state_action = {
 	condition = {	#bertus mod
 		tooltip = CANNOT_AGAINST_GM
 		potential = {
-			start_date = 1444.11.13
+			start_date = 1444.12.1
 		}
 		allow = {
 			FROM = {
@@ -872,7 +882,7 @@ guaranteeaction = {
 	condition = {	#bertus mod
 		tooltip = CANNOT_AGAINST_GM
 		potential = {
-			start_date = 1444.11.13
+			start_date = 1444.12.1
 		}
 		allow = {
 			FROM = {
@@ -889,13 +899,12 @@ threaten_war = {
 	condition = {	#bertus mod
 		tooltip = CANNOT_AGAINST_GM
 		potential = {
-			start_date = 1444.11.13
+			start_date = 1444.12.1
 			OR = {
-				tag = TUR
-				tag = HUN
-				tag = BOH
-				tag = POL
-				tag = MAM
+				is_or_was_tag = TUR
+				is_or_was_tag = HUN
+				is_or_was_tag = POL
+				is_or_was_tag = MAM
 			}
 		}
 		allow = {
@@ -905,7 +914,7 @@ threaten_war = {
 	condition = {	#bertus mod
 		tooltip = CANNOT_AGAINST_GM
 		potential = {
-			start_date = 1444.11.13
+			start_date = 1444.12.1
 		}
 		allow = {
 			FROM = {
@@ -932,7 +941,7 @@ fabricate_claim = {
 	condition = {	#bertus mod
 		tooltip = CANNOT_AGAINST_GM
 		potential = {
-			start_date = 1444.11.13
+			start_date = 1444.12.1
 		}
 		allow = {
 			FROM = {
@@ -976,7 +985,7 @@ intervene_in_war = {
 	condition = {	#bertus mod
 		tooltip = CANNOT_AGAINST_GM
 		potential = {
-			start_date = 1444.11.13
+			start_date = 1444.12.1
 		}
 		allow = {
 			FROM = {

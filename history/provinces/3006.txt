@@ -1,4 +1,4 @@
-capital = "Opatów" 
+capital = "Opatï¿½w" 
 culture = polish
 religion = catholic
 trade_goods = cloth
@@ -21,6 +21,12 @@ add_core = SDZ
 	owner = POL
 	controller = POL
 	add_core = POL
+}
+1444.11.12 = {	#BERTUS MOD
+	owner = SDZ
+	controller = SDZ
+	add_core = SDZ
+	remove_core = POL
 }
 1550.1.1 = { religion = reformed }
 1569.7.1 = {

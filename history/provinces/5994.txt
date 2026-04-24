@@ -1,4 +1,4 @@
-capital = "Piotrków Trybunalski"
+capital = "Piotrkï¿½w Trybunalski"
 culture = polish
 religion = catholic
 trade_goods = spirits
@@ -49,6 +49,25 @@ add_core = SIR
 	controller = POL
 	add_core = POL
 	remove_core = SDZ
+}
+1444.11.12 = {	#BERTUS MOD
+	owner = SIR
+	controller = SIR
+	add_core = SIR
+	remove_core = POL
+	remove_core = SDZ
+	set_base_tax = 7
+	set_base_production = 7
+	set_base_manpower = 7
+	fort_15th = yes
+	add_province_modifier = {
+		name = strong_city
+		duration = -1
+	}
+	add_permanent_province_modifier = {
+		name = great_artisans
+		duration = -1
+	}
 }
 1569.7.1 = {
 	owner = PLC

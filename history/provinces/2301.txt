@@ -1,4 +1,4 @@
-capital = "Wolbórz"
+capital = "Wolbï¿½rz"
 culture = polish
 religion = catholic
 trade_goods = spirits
@@ -48,6 +48,13 @@ add_core = SIR
 	owner = POL
 	controller = POL
 	add_core = POL
+	remove_core = SDZ
+}
+1444.11.12 = {	#BERTUS MOD
+	owner = SIR
+	controller = SIR
+	add_core = SIR
+	remove_core = POL
 	remove_core = SDZ
 }
 1569.7.1 = {

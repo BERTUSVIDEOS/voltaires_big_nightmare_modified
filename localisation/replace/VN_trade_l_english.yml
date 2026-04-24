@@ -200,6 +200,8 @@
  trade_company_champagne: "Champenois Charter"
  TRADE_COMPANY_CHAMPAGNE_Root_Culture_GetName: "[Root.Culture.GetName] Champagne Company"
  TRADE_COMPANY_CHAMPAGNE_European_Trade_Company: "Champagne Trade Company"
+ TRADE_COMPANY_ITALIAN_ISLANDS_Root_Culture_GetName: "[Root.Culture.GetName] Italian Islands Company"
+ TRADE_COMPANY_ITALIAN_ISLANDS_European_Trade_Company: "Italian Islands Trade Company"
  trade_company_saxony: "Upper Saxon Charter"
  TRADE_COMPANY_SAXONY_Root_Culture_GetName: "[Root.Culture.GetName] Upper Saxony Company"
  TRADE_COMPANY_SAXONY_European_Trade_Company: "Upper Saxony Trade Company"

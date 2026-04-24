@@ -34,6 +34,9 @@ add_core = MAZ
 	controller = PCK
 	add_core = PCK
 }
+1444.11.12 = {	#BERTUS MOD
+	remove_core = RAA
+}
 1462.2.27 = {
 	owner = MAZ
 	controller = MAZ

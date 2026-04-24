@@ -32,6 +32,14 @@ add_core = MAZ
 }
 1409.6.1 = { controller = TEU }
 1411.2.1 = { controller = POL }
+1444.11.12 = {	#BERTUS MOD
+	owner = KUJ
+	controller = KUJ
+	add_core = KUJ
+	remove_core = POL
+	add_base_tax = 2
+	add_base_manpower = 2
+}
 1569.7.1 = {
 	owner = PLC
 	controller = PLC

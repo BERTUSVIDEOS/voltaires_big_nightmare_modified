@@ -148,4 +148,16 @@ capital = 2016
 		mil = 4
 	}
 }
-#1300.1.1 or 1305.6.21 to POL
+# 1300.1.1 or 1305.6.21 to POL
+1444.11.12 = {	#bertus mod
+	set_government_rank = 2
+	monarch = {
+		name = "Wladyslaw II"
+		dynasty = "Piast"
+		birth_date = 1414.1.1
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+	clear_scripted_personalities = yes
+}

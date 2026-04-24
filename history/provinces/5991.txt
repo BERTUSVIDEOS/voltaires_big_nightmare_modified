@@ -60,6 +60,13 @@ add_core = SIR
 	controller = POL
 	add_core = POL
 }
+1444.11.12 = {	#BERTUS MOD
+	owner = PCK
+	controller = PCK
+	add_core = PCK
+	remove_core = POL
+	remove_core = SIR
+}
 1569.7.1 = {
 	owner = PLC
 	controller = PLC

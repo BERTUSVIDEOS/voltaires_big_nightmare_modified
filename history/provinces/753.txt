@@ -22,6 +22,7 @@ fort_14th = yes
 	owner = CHP
 	controller = CHP
 	add_core = CHP
+	remove_core = NEV
 	fort_15th = no
 }
 1539.1.1 = {

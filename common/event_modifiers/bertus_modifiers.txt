@@ -1,5 +1,29 @@
 
+non_blockable_strait = {
+	province_trade_power = 0.01
 
+	picture = "unblockable_strait"
+}
+starting_player_bonus_modifier = {
+	global_regiment_cost = -0.50
+	land_maintenance_modifier = -0.50
+	fort_maintenance_modifier = -0.50
+}
+mlo_po_trading_hubs_mission_trade_value = {
+	trade_value_modifier = 0.10
+}
+nerfed_merchant_princes_modifier = {
+	placed_merchant_power = 10
+}
+nerfed_age_of_condottieri_modifier = {
+	mercenary_discipline = 0.05
+}
+nerfed_lowered_power_of_barons_modifier = {
+	development_cost = -0.05
+}
+nerfed_patron_of_music_modifier = {
+	monthly_splendor = 4
+}
 accepted_culture_give_morale_20 = { land_morale = 0.20 development_cost = -0.20 }
 accepted_culture_give_morale_19 = { land_morale = 0.19 development_cost = -0.19 }
 accepted_culture_give_morale_18 = { land_morale = 0.18 development_cost = -0.18 }
@@ -630,6 +654,9 @@ strong_city = {
 	local_manpower = 10
 	tax_income = 36
 	liberty_desire = 100
+	trade_value_modifier = 0.10
+
+	picture = "idea_entwicklung_map"
 }
 great_artisans = {
 	trade_goods_size = 2

@@ -1,4 +1,4 @@
-capital = "Sieciechów" 
+capital = "Sieciechï¿½w" 
 culture = polish
 religion = catholic
 trade_goods = vegetables
@@ -21,6 +21,14 @@ add_core = SDZ
 	owner = POL
 	controller = POL
 	add_core = POL
+}
+1444.11.12 = {	#BERTUS MOD
+	owner = MAZ
+	controller = MAZ
+	add_core = MAZ
+	remove_core = POL
+	remove_core = SDZ
+	fort_15th = yes
 }
 1569.7.1 = {
 	owner = PLC

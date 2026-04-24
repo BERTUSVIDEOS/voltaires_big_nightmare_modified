@@ -55,7 +55,7 @@ discovered_by = north_american
 	owner = GUY
 	controller = GUY
 	add_core = GUY
-	remove_core = GUY
+	remove_core = AMG
 }
 1497.6.3 = {
 	owner = ALE

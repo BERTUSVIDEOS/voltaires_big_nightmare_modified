@@ -24,6 +24,16 @@ center_of_trade = 2
 	controller = POL
 	add_core = POL
 }
+1444.11.12 = {	#BERTUS MOD
+	owner = MAZ
+	controller = MAZ
+	add_core = MAZ
+	remove_core = POL
+	remove_core = SDZ
+	add_center_of_trade_level = -1
+	add_base_tax = 3
+	add_base_manpower = 3
+}
 1490.1.1 = { unrest = 6 }
 1492.1.1 = { unrest = 0 }
 1550.1.1 = { religion = reformed }

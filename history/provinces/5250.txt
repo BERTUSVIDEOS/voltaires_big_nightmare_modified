@@ -61,6 +61,13 @@ add_core = POM
 	remove_core = BRA
 	hre = no
 }
+1444.11.12 = {	#BERTUS MOD
+	owner = WKP
+	controller = WKP
+	add_core = WKP
+	remove_core = POL
+	fort_14th = yes
+}
 1536.1.1 = { religion = protestant }
 1569.7.1 = {
 	owner = PLC

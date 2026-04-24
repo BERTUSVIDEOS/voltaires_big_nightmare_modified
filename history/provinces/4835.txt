@@ -23,9 +23,9 @@ add_core = SKL
 	unrest = 0
 }
 1444.11.12 = {	#BERTUS MOD
-	owner = WRM
-	controller = WRM
-	add_core = WRM
+	owner = SKL
+	controller = SKL
+	add_core = SKL
 	remove_core = TEU
 	add_base_tax = 1
 	add_base_production = 1

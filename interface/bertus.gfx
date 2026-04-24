@@ -1,6 +1,14 @@
 spriteTypes = {
 
 	spriteType = {
+		name = "GFX_unblockable_strait"
+		texturefile = "gfx//interface//ideas_EU4//unblockable_strait.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_entwicklung_map"
+		texturefile = "gfx//interface//ideas_EU4//idea_entwicklung_map.dds"
+	}
+	spriteType = {
 		name = "GFX_alerticon_military_reform2"
 		texturefile = "gfx/interface/alerticon_military_reform2.dds"
 	}

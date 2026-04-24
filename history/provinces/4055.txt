@@ -47,6 +47,9 @@ add_core = AUV
 	add_core = XCB
 	remove_core = BOU
 }
+1444.11.12 = {	#BERTUS MOD
+	remove_core = AUV
+}
 1451.1.1 = {
 	owner = XCB
 	controller = XCB

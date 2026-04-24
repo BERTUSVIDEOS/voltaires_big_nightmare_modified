@@ -11,6 +11,7 @@ owner = BYZ
 controller = BYZ
 add_core = BYZ
 
+
 1080.1.1 = {
 	owner = RUM
 	controller = RUM
@@ -74,7 +75,7 @@ add_core = BYZ
 	remove_core = BYZ
 	religion = sunni
 	culture = turkish
-	capital = "Kadiköy"
+	capital = "Kadikï¿½y"
 }
 1481.6.1 = { revolt = { type = pretender_rebels size = 0 } controller = REB }
 1482.7.26 = { revolt = {} controller = TUR }

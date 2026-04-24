@@ -8,7 +8,7 @@ base_tax = 1
 base_production = 2
 trade_goods = iron
 base_manpower = 1
-capital = "Sokolów"
+capital = "Sokolï¿½w"
 is_city = yes 
 
 1408.1.1 = {
@@ -17,6 +17,13 @@ is_city = yes
 	add_core = LIT
 	add_core = BTY
 	remove_core = MAZ
+}
+1444.11.12 = {	#BERTUS MOD
+	owner = MAZ
+	controller = MAZ
+	add_core = MAZ
+	remove_core = LIT
+	fort_14th = yes
 }
 1569.7.1 = {
 	owner = PLC

@@ -10,6 +10,24 @@ country_decisions = {
 				all_owned_province = { has_seat_in_parliament = yes }
 			}
 		}
+		provinces_to_highlight = {
+			owned_by = ROOT
+			if = {
+				limit = { any_owned_province = { development = 40 has_seat_in_parliament = no } }
+				any_owned_province = { development = 40 has_seat_in_parliament = no }
+			}
+			else_if = {
+				limit = { any_owned_province = { development = 30 has_seat_in_parliament = no } }
+				any_owned_province = { development = 30 has_seat_in_parliament = no }
+			}
+			else_if = {
+				limit = { any_owned_province = { development = 20 has_seat_in_parliament = no } }
+				any_owned_province = { development = 20 has_seat_in_parliament = no }
+			}
+			else = {
+				has_seat_in_parliament = no
+			}
+		}
 		effect = {
 			if = {
 				limit = {any_owned_province = { development = 40 has_seat_in_parliament = no }}

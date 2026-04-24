@@ -27,6 +27,7 @@ add_core = UTR
 	owner = AHA
 	controller = AHA
 	add_core = AHA
+	remove_core = UTR
 }
 1549.11.4 = {
 	owner = NED

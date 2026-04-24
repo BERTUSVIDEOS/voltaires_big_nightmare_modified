@@ -30,7 +30,7 @@ capital = 1218
 		mil = 2
 	}
 }
-#1107 back to POL
+# 1107 back to POL
 
 #Fragmenting
 1138.10.28 = { #also king
@@ -275,6 +275,18 @@ capital = 1218
 	}
 	clear_scripted_personalities = yes
 	add_ruler_personality = architectural_visionary_personality
+}
+1444.11.12 = {	#bertus mod
+	set_government_rank = 2
+	monarch = {
+		name = "Boleslaw V"
+		dynasty = "Piast"
+		birth_date = 1414.1.1
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+	clear_scripted_personalities = yes
 }
 1448.1.1 = {
 	heir = {

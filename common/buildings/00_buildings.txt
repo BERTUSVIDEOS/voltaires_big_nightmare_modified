@@ -257,7 +257,7 @@ college = {	#bertus mod
 	time = 24
 	modifier = {
 		local_development_cost_modifier = -0.05
-		institution_growth = 6
+		institution_growth = 5
 		allowed_num_of_buildings = 1
 	}
 
@@ -1234,7 +1234,7 @@ university = {	#bertus mod
 	time = 24
 	modifier = {
 		local_development_cost_modifier = -0.10
-		institution_growth = 12
+		institution_growth = 10
 		allowed_num_of_buildings = 1
 	}
 	on_built = {

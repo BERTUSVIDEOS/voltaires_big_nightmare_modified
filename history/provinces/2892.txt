@@ -34,6 +34,7 @@ add_core = AUV
 	add_core = XCB
 	remove_core = BOU
 	remove_core = FRA
+	remove_core = SKR
 }
 1451.1.1 = {
 	owner = XCB

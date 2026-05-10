@@ -1,6 +1,6 @@
 
 non_blockable_strait = {
-	province_trade_power = 0.01
+	province_trade_power_value = 0.01
 
 	picture = "unblockable_strait"
 }
